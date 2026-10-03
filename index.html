@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wenhao Wu — Academic Homepage (Pixel Preview)</title>
+<title>Wenhao Wu — Academic Homepage</title>
 <style>
   :root{
     --bg:#f6f2e8;
@@ -299,6 +299,39 @@
   }
   .notes-box a:hover{color:var(--accent);border-color:var(--accent)}
 
+  .news-list{
+    display:flex;
+    flex-direction:column;
+  }
+  .news-item{
+    display:grid;
+    grid-template-columns:110px 1fr;
+    gap:20px;
+    padding:20px 0;
+    border-bottom:2px dashed #aaa390;
+  }
+  .news-item:first-child{padding-top:0}
+  .news-date{
+    font-size:12px;
+    font-weight:800;
+    color:var(--muted);
+    padding-top:3px;
+  }
+  .news-date:before{content:"["}
+  .news-date:after{content:"]"}
+  .news-text{
+    font-size:15px;
+    font-weight:600;
+  }
+  .news-text a{
+    text-decoration:none;
+    border-bottom:1px solid var(--ink);
+  }
+  .news-text a:hover{
+    color:var(--accent);
+    border-color:var(--accent);
+  }
+
   footer{
     margin:54px 0 34px;
     padding:16px 18px;
@@ -333,7 +366,8 @@
       grid-template-columns:1fr;
       gap:24px;
     }
-    .paper{
+    .paper,
+    .news-item{
       grid-template-columns:1fr;
     }
     .year{padding:0}
@@ -347,9 +381,8 @@
     <nav class="pixel-frame">
       <a class="brand" href="#">WENHAO_WU</a>
       <div class="navlinks">
-        <a href="#research">RESEARCH</a>
-        <a href="#publications">PUBLICATIONS</a>
-        <a href="#notes">NOTES</a>
+        <a href="publications.html">PUBLICATIONS</a>
+        <a href="https://c-come.github.io/">NOTES ↗</a>
         <a href="mailto:wenhao008@e.ntu.edu.sg">CONTACT</a>
       </div>
     </nav>
@@ -383,99 +416,37 @@
         </div>
       </header>
 
-      <section id="research">
+      <section id="news">
         <div class="section-grid">
-          <h2>Research</h2>
-          <div>
-            <p class="research-copy">
-              I study algorithmic and economic questions arising from strategic interaction,
-              resource allocation, and matching, with an emphasis on clean theoretical guarantees.
-            </p>
+          <h2>News</h2>
+          <div class="news-list">
+            <div class="news-item">
+              <div class="news-date">2026.10</div>
+              <div class="news-text">
+                New preprint:
+                <a href="https://arxiv.org/abs/2610.01993">Beating One Half for Online Bipartite Matching with Reusable Resources</a>.
+              </div>
+            </div>
 
-            <div class="statline">
-              <span>Algorithmic Game Theory</span>
-              <span>Theoretical Computer Science</span>
-              <span>Mechanism Design</span>
-              <span>Matching Markets</span>
-              <span>Online Algorithms</span>
+            <div class="news-item">
+              <div class="news-date">2026.09</div>
+              <div class="news-text">
+                New preprint:
+                <a href="https://arxiv.org/abs/2609.37997">The Power of Simple Mechanisms: A Tight e-Approximation for Gains from Trade in Matching Markets</a>.
+              </div>
+            </div>
+
+            <div class="news-item">
+              <div class="news-date">2026.09</div>
+              <div class="news-text">
+                New preprint:
+                <a href="https://arxiv.org/abs/2609.18724">Second-Best Gains from Trade in Matching Markets</a>.
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="publications">
-        <div class="section-grid">
-          <h2>Publications</h2>
-          <div class="papers">
-
-            <article class="paper">
-              <div class="year">2026.10</div>
-              <div>
-                <h3 class="paper-title">
-                  <a href="https://arxiv.org/abs/2610.01993">
-                    Beating One Half for Online Bipartite Matching with Reusable Resources
-                  </a>
-                </h3>
-                <div class="authors">
-                  Xiaohui Bei · Zhihao Gavin Tang · <strong>Wenhao Wu</strong>
-                </div>
-                <div class="meta">
-                  <a href="https://arxiv.org/abs/2610.01993">arXiv</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="paper">
-              <div class="year">2026.09</div>
-              <div>
-                <h3 class="paper-title">
-                  <a href="https://arxiv.org/abs/2609.37997">
-                    The Power of Simple Mechanisms: A Tight e-Approximation for Gains from Trade in Matching Markets
-                  </a>
-                </h3>
-                <div class="authors">
-                  Xiaohui Bei · <strong>Wenhao Wu</strong> · Shengwei Zhou
-                </div>
-                <div class="meta">
-                  <a href="https://arxiv.org/abs/2609.37997">arXiv</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="paper">
-              <div class="year">2026.09</div>
-              <div>
-                <h3 class="paper-title">
-                  <a href="https://arxiv.org/abs/2609.18724">
-                    Second-Best Gains from Trade in Matching Markets
-                  </a>
-                </h3>
-                <div class="authors">
-                  Xiaohui Bei · Bo Li · <strong>Wenhao Wu</strong> · Shengwei Zhou
-                </div>
-                <div class="meta">
-                  <a href="https://arxiv.org/abs/2609.18724">arXiv</a>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </section>
-
-      <section id="notes">
-        <div class="section-grid">
-          <h2>Notes</h2>
-          <div class="notes-box pixel-frame">
-            <h3>Research notes & old blog</h3>
-            <p>
-              Earlier notes on theory, paper reading, research ideas, and mathematical curiosities.
-              The archive remains separate from the formal academic homepage.
-            </p>
-            <a href="https://c-come.github.io/">Open archive ↗</a>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="pixel-frame">
