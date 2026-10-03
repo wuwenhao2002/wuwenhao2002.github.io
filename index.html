@@ -332,6 +332,29 @@
     border-color:var(--accent);
   }
 
+  .service-list{
+    display:flex;
+    flex-direction:column;
+  }
+  .service-item{
+    display:grid;
+    grid-template-columns:160px 1fr;
+    gap:20px;
+    padding:6px 0 2px;
+  }
+  .service-role{
+    font-size:13px;
+    font-weight:800;
+    color:var(--ink);
+    text-transform:uppercase;
+    letter-spacing:.04em;
+  }
+  .service-text{
+    font-size:15px;
+    font-weight:600;
+    color:var(--muted);
+  }
+
   footer{
     margin:54px 0 34px;
     padding:16px 18px;
@@ -367,7 +390,8 @@
       gap:24px;
     }
     .paper,
-    .news-item{
+    .news-item,
+    .service-item{
       grid-template-columns:1fr;
     }
     .year{padding:0}
@@ -382,6 +406,7 @@
       <a class="brand" href="#">WENHAO_WU</a>
       <div class="navlinks">
         <a href="publications.html">PUBLICATIONS</a>
+        <a href="experience.html">EXPERIENCE</a>
         <a href="https://c-come.github.io/">NOTES ↗</a>
         <a href="mailto:wenhao008@e.ntu.edu.sg">CONTACT</a>
       </div>
@@ -442,6 +467,18 @@
                 New preprint:
                 <a href="https://arxiv.org/abs/2609.18724">Second-Best Gains from Trade in Matching Markets</a>.
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="service">
+        <div class="section-grid">
+          <h2>Service</h2>
+          <div class="service-list">
+            <div class="service-item">
+              <div class="service-role">Peer Reviewer</div>
+              <div class="service-text">ESA 2026 · TAMC 2026</div>
             </div>
           </div>
         </div>
