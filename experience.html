@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Experience — Wenhao Wu</title>
+<style>
+  :root{
+    --bg:#f6f2e8;
+    --paper:#fffdf8;
+    --ink:#171712;
+    --muted:#47453f;
+    --line:#171712;
+    --accent:#2f6b49;
+    --accent2:#a44b2a;
+    --grid:rgba(23,23,18,.055);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    color:var(--ink);
+    background:var(--bg);
+    font-family:ui-monospace,"SFMono-Regular",Menlo,Monaco,Consolas,"Liberation Mono",monospace;
+    font-weight:500;
+    line-height:1.65;
+  }
+
+  a{color:inherit}
+  .wrap{
+    max-width:1040px;
+    margin:0 auto;
+    padding:0 28px;
+    position:relative;
+  }
+  .wrap:before,
+  .wrap:after{
+    content:"";
+    position:fixed;
+    width:8px;
+    height:8px;
+    background:var(--accent);
+    opacity:.28;
+    pointer-events:none;
+  }
+  .wrap:before{
+    left:18px;
+    bottom:18px;
+    box-shadow:10px 0 0 var(--accent), 0 10px 0 var(--accent);
+  }
+  .wrap:after{
+    right:18px;
+    top:18px;
+    box-shadow:-10px 0 0 var(--accent), 0 10px 0 var(--accent);
+  }
+
+  /* Pixel primitives */
+  .pixel-frame{
+    background:var(--paper);
+    border:3px solid var(--line);
+    box-shadow:
+      6px 0 0 var(--line),
+      0 6px 0 var(--line);
+  }
+  .pixel-label{
+    display:inline-block;
+    background:var(--ink);
+    color:var(--paper);
+    padding:5px 8px 4px;
+    font-size:12px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+  }
+
+  nav{
+    margin-top:24px;
+    padding:14px 18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .brand{
+    text-decoration:none;
+    font-weight:800;
+    letter-spacing:.05em;
+  }
+  .brand:before{content:"> ";color:var(--accent)}
+  .navlinks{display:flex;gap:20px;font-size:13px;font-weight:700}
+  .navlinks a{
+    text-decoration:none;
+    color:var(--muted);
+  }
+  .navlinks a:hover{
+    color:var(--accent);
+  }
+  .navlinks a:hover:before{content:"["}
+  .navlinks a:hover:after{content:"]"}
+
+  .hero{
+    display:grid;
+    grid-template-columns:1fr 230px;
+    gap:54px;
+    align-items:center;
+    padding:78px 0 86px;
+  }
+
+  h1{
+    margin:0 0 8px;
+    font-size:clamp(44px,7vw,76px);
+    line-height:.98;
+    letter-spacing:-.055em;
+    text-transform:uppercase;
+    font-weight:900;
+  }
+  .cn{
+    font-size:21px;
+    color:var(--muted);
+    margin-bottom:28px;
+  }
+  .lead{
+    font-size:19px;
+    max-width:700px;
+    margin:0 0 14px;
+    font-weight:650;
+  }
+  .sublead{
+    color:var(--muted);
+    max-width:720px;
+    margin:0 0 24px;
+    font-weight:550;
+  }
+
+  .links{
+    font-size:14px;
+    font-weight:700;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:0;
+  }
+  .links a{
+    text-decoration:none;
+    border-bottom:2px solid var(--ink);
+  }
+  .links a:hover{
+    color:var(--accent);
+    border-color:var(--accent);
+  }
+  .links span{
+    margin:0 9px;
+    color:#9a9586;
+  }
+
+  .portrait{
+    width:220px;
+    height:270px;
+    position:relative;
+    border:3px solid var(--ink);
+    background:#0c0c10;
+    box-shadow:6px 6px 0 var(--ink);
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .portrait img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
+    image-rendering:pixelated;
+    display:block;
+  }
+
+  section{
+    padding:72px 0;
+    border-top:3px solid var(--ink);
+  }
+  .section-grid{
+    display:grid;
+    grid-template-columns:180px 1fr;
+    gap:44px;
+  }
+  h2{
+    margin:0;
+    font-size:13px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.14em;
+    color:var(--muted);
+  }
+  h2:before{
+    content:"■ ";
+    color:var(--accent);
+  }
+
+  .research-copy{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:25px;
+    line-height:1.5;
+    margin:0;
+    max-width:750px;
+  }
+
+  .statline{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px 18px;
+    margin-top:24px;
+    font-size:12px;
+    font-weight:700;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:.04em;
+  }
+  .statline span:before{content:"+ ";color:var(--accent)}
+
+  .papers{display:flex;flex-direction:column}
+  .paper{
+    display:grid;
+    grid-template-columns:90px 1fr;
+    gap:20px;
+    padding:28px 0;
+    border-bottom:2px dashed #aaa390;
+  }
+  .paper:first-child{padding-top:0}
+  .year{
+    font-size:12px;
+    font-weight:700;
+    color:var(--muted);
+    padding-top:5px;
+  }
+  .year:before{content:"["}
+  .year:after{content:"]"}
+
+  .paper-title{
+    margin:0 0 8px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:23px;
+    line-height:1.35;
+    font-weight:600;
+  }
+  .paper-title a{text-decoration:none}
+  .paper-title a:hover{
+    color:var(--accent);
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+  }
+  .authors{
+    font-size:13px;
+    font-weight:550;
+    color:var(--muted);
+    margin-bottom:8px;
+  }
+  .authors strong{
+    color:var(--ink);
+    font-weight:700;
+  }
+  .meta{
+    display:flex;
+    gap:14px;
+    font-size:12px;
+    font-weight:800;
+    text-transform:uppercase;
+  }
+  .meta a{
+    text-decoration:none;
+    color:var(--accent);
+  }
+  .meta a:before{content:"↳ "}
+
+  .notes-box{
+    padding:24px;
+    position:relative;
+  }
+  .notes-box:before{
+    content:"SAVE DATA / ARCHIVE";
+    position:absolute;
+    top:-15px;
+    left:18px;
+    background:var(--bg);
+    padding:0 8px;
+    font-size:11px;
+    letter-spacing:.12em;
+    color:var(--muted);
+  }
+  .notes-box h3{
+    margin:0 0 8px;
+    font-size:20px;
+  }
+  .notes-box p{
+    margin:0 0 16px;
+    color:var(--muted);
+  }
+  .notes-box a{
+    text-decoration:none;
+    border-bottom:2px solid var(--ink);
+  }
+  .notes-box a:hover{color:var(--accent);border-color:var(--accent)}
+
+  .news-list{
+    display:flex;
+    flex-direction:column;
+  }
+  .news-item{
+    display:grid;
+    grid-template-columns:110px 1fr;
+    gap:20px;
+    padding:20px 0;
+    border-bottom:2px dashed #aaa390;
+  }
+  .news-item:first-child{padding-top:0}
+  .news-date{
+    font-size:12px;
+    font-weight:800;
+    color:var(--muted);
+    padding-top:3px;
+  }
+  .news-date:before{content:"["}
+  .news-date:after{content:"]"}
+  .news-text{
+    font-size:15px;
+    font-weight:600;
+  }
+  .news-text a{
+    text-decoration:none;
+    border-bottom:1px solid var(--ink);
+  }
+  .news-text a:hover{
+    color:var(--accent);
+    border-color:var(--accent);
+  }
+
+  footer{
+    margin:54px 0 34px;
+    padding:16px 18px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    font-size:11px;
+    color:var(--muted);
+  }
+  .blink{
+    display:inline-block;
+    width:8px;height:12px;
+    background:var(--accent);
+    margin-left:5px;
+    vertical-align:-1px;
+    animation:blink 1s steps(1) infinite;
+  }
+  @keyframes blink{50%{opacity:0}}
+
+  @media(max-width:760px){
+    .navlinks{display:none}
+    .hero{
+      grid-template-columns:1fr;
+      gap:38px;
+      padding:58px 0 68px;
+    }
+    .portrait{
+      width:100%;
+      height:210px;
+    }
+    .section-grid{
+      grid-template-columns:1fr;
+      gap:24px;
+    }
+    .paper,
+    .news-item{
+      grid-template-columns:1fr;
+    }
+    .year{padding:0}
+    .research-copy{font-size:21px}
+    footer{flex-direction:column}
+  }
+</style>
+<style>
+  .page-head{
+    padding:78px 0 58px;
+  }
+  .page-head h1{
+    font-size:clamp(42px,7vw,72px);
+    margin-bottom:18px;
+  }
+  .page-head p{
+    margin:0;
+    color:var(--muted);
+    max-width:720px;
+    font-weight:550;
+  }
+  .back-link{
+    display:inline-block;
+    margin-top:18px;
+    font-size:13px;
+    font-weight:800;
+    text-decoration:none;
+    border-bottom:2px solid var(--ink);
+  }
+  .back-link:hover{
+    color:var(--accent);
+    border-color:var(--accent);
+  }
+</style>
+<style>
+  .experience-list{
+    display:flex;
+    flex-direction:column;
+  }
+  .experience-item{
+    display:grid;
+    grid-template-columns:150px 1fr;
+    gap:24px;
+    padding:30px 0;
+    border-bottom:2px dashed #aaa390;
+  }
+  .experience-item:first-child{padding-top:0}
+  .experience-time{
+    font-size:12px;
+    font-weight:800;
+    color:var(--muted);
+    padding-top:5px;
+    text-transform:uppercase;
+  }
+  .experience-time:before{content:"["}
+  .experience-time:after{content:"]"}
+  .experience-title{
+    margin:0 0 6px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:24px;
+    line-height:1.35;
+    font-weight:600;
+  }
+  .experience-place{
+    margin:0 0 10px;
+    font-size:14px;
+    font-weight:800;
+  }
+  .experience-desc{
+    margin:0;
+    color:var(--muted);
+    font-size:14px;
+    font-weight:550;
+    max-width:720px;
+  }
+  @media(max-width:760px){
+    .experience-item{
+      grid-template-columns:1fr;
+      gap:8px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="pixel-frame">
+      <a class="brand" href="index.html">WENHAO_WU</a>
+      <div class="navlinks">
+        <a href="publications.html">PUBLICATIONS</a>
+        <a href="experience.html">EXPERIENCE</a>
+        <a href="https://c-come.github.io/">NOTES ↗</a>
+        <a href="mailto:wenhao008@e.ntu.edu.sg">CONTACT</a>
+      </div>
+    </nav>
+
+    <main>
+      <header class="page-head">
+        <span class="pixel-label">ACADEMIC JOURNEY</span>
+        <h1>Experience</h1>
+        <p>
+          Education, research visits, and academic collaborations.
+        </p>
+        <a class="back-link" href="index.html">← HOME</a>
+      </header>
+
+      <section>
+        <div class="section-grid">
+          <h2>Experience</h2>
+          <div class="experience-list">
+
+            <article class="experience-item">
+              <div class="experience-time">Present</div>
+              <div>
+                <h3 class="experience-title">PhD Student in Mathematics</h3>
+                <p class="experience-place">Nanyang Technological University</p>
+                <p class="experience-desc">
+                  Advised by Prof. Xiaohui Bei.
+                </p>
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-time">Summer 2024</div>
+              <div>
+                <h3 class="experience-title">Research Visit</h3>
+                <p class="experience-place">Shanghai University of Finance and Economics</p>
+                <p class="experience-desc">
+                  Visited during Summer 2024 and collaborated with Zhihao Gavin Tang.
+                </p>
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-time">Undergraduate</div>
+              <div>
+                <h3 class="experience-title">Computer Science and Technology</h3>
+                <p class="experience-place">Huazhong University of Science and Technology</p>
+                <p class="experience-desc">
+                  Collaborated with Qiankun Zhang and Qiang-Sheng Hua.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pixel-frame">
+      <span>© 2026 WENHAO WU</span>
+      <span>SYSTEM READY<span class="blink"></span></span>
+    </footer>
+  </div>
+</body>
+</html>
