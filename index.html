@@ -444,14 +444,36 @@
     box-shadow:2px 2px 0 #2f6b49;
   }
   .visitor-close{
+    position:relative;
+    display:grid;
+    place-items:center;
     width:27px;
     height:27px;
     flex-shrink:0;
+    padding:0;
     border:2px solid var(--paper);
     background:transparent;
     color:var(--paper);
-    font:800 19px/20px ui-monospace,monospace;
+    appearance:none;
+    -webkit-appearance:none;
     cursor:pointer;
+  }
+  /* A true 5x5-pixel X, centered without font metrics or glyph rendering. */
+  .visitor-close::before{
+    content:"";
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:3px;
+    height:3px;
+    background:currentColor;
+    transform:translate(-50%,-50%);
+    box-shadow:
+      -8px -8px 0 currentColor, 8px -8px 0 currentColor,
+      -4px -4px 0 currentColor, 4px -4px 0 currentColor,
+      -4px 4px 0 currentColor, 4px 4px 0 currentColor,
+      -8px 8px 0 currentColor, 8px 8px 0 currentColor;
+    pointer-events:none;
   }
   .visitor-close:hover,
   .visitor-close:focus-visible{
@@ -629,7 +651,7 @@
       <div class="visitor-card-head">
         <span><span class="visitor-status-dot" aria-hidden="true"></span>WORLD_VISITORS</span>
         <button class="visitor-close" id="visitor-close" type="button"
-                aria-label="Close visitor counter" title="Close">×</button>
+                aria-label="Close visitor counter" title="Close"></button>
       </div>
       <div class="visitor-card-body">
         <div class="visitor-card-label">
