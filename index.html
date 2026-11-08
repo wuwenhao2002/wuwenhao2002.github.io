@@ -646,8 +646,8 @@
 
   <!-- Country visits: the iframe stays mounted while minimized, so closing
        the visual panel does not turn off visit logging. -->
-  <aside class="world-counter" id="world-counter" aria-label="Global visitors">
-    <div class="pixel-frame visitor-card" id="visitor-card">
+  <aside class="world-counter is-minimized" id="world-counter" aria-label="Global visitors">
+    <div class="pixel-frame visitor-card" id="visitor-card" aria-hidden="true">
       <div class="visitor-card-head">
         <span><span class="visitor-status-dot" aria-hidden="true"></span>WORLD_VISITORS</span>
         <button class="visitor-close" id="visitor-close" type="button"
@@ -679,18 +679,15 @@
       var card=document.getElementById("visitor-card");
       var close=document.getElementById("visitor-close");
       var tab=document.getElementById("visitor-tab");
-      var key="wuwenhao2002-world-visitors-minimized";
-      var saved=null;
-      try{saved=localStorage.getItem(key)}catch(e){/* storage may be disabled */}
+      // Each page visit starts minimized, regardless of prior interactions.
       function setMinimized(minimized){
         dock.classList.toggle("is-minimized",minimized);
         card.setAttribute("aria-hidden",String(minimized));
         tab.setAttribute("aria-expanded",String(!minimized));
-        try{localStorage.setItem(key,minimized?"yes":"no")}catch(e){}
       }
       close.addEventListener("click",function(){setMinimized(true)});
       tab.addEventListener("click",function(){setMinimized(false)});
-      setMinimized(saved==="yes"||(saved===null&&window.matchMedia("(max-width:760px)").matches));
+      setMinimized(true);
     })();
   </script>
 </body>
