@@ -410,6 +410,116 @@
     .research-copy{font-size:21px}
     footer{flex-direction:column}
   }
+  /* Floating visitor log, based on the site's existing pixel-frame styling. */
+  .world-counter{
+    position:fixed;
+    z-index:50;
+    bottom:22px;
+    right:22px;
+    width:min(310px,calc(100vw - 38px));
+    font-size:12px;
+    line-height:1.45;
+  }
+  .visitor-card{
+    background:var(--paper);
+  }
+  .visitor-card-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+    background:var(--ink);
+    color:var(--paper);
+    padding:9px 10px;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:.08em;
+  }
+  .visitor-status-dot{
+    display:inline-block;
+    width:8px;
+    height:8px;
+    margin-right:7px;
+    background:#71bd77;
+    box-shadow:2px 2px 0 #2f6b49;
+  }
+  .visitor-close{
+    width:27px;
+    height:27px;
+    flex-shrink:0;
+    border:2px solid var(--paper);
+    background:transparent;
+    color:var(--paper);
+    font:800 19px/20px ui-monospace,monospace;
+    cursor:pointer;
+  }
+  .visitor-close:hover,
+  .visitor-close:focus-visible{
+    background:var(--paper);
+    color:var(--ink);
+  }
+  .visitor-card-body{
+    padding:12px 12px 10px;
+  }
+  .visitor-card-label{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+    font-size:12px;
+    font-weight:800;
+    color:var(--accent);
+    letter-spacing:.09em;
+  }
+  .visitor-country-frame{
+    display:block;
+    width:100%;
+    height:108px;
+    border:0;
+    background:var(--paper);
+  }
+  .visitor-note{
+    margin:7px 0 0;
+    font-size:10px;
+    letter-spacing:.025em;
+    color:var(--muted);
+  }
+  .visitor-note a{
+    color:var(--accent);
+    text-decoration:none;
+    border-bottom:1px dotted currentColor;
+  }
+  .visitor-tab{
+    display:none;
+    width:100%;
+    padding:10px 13px;
+    background:var(--paper);
+    color:var(--ink);
+    font:800 12px/1.4 ui-monospace,monospace;
+    letter-spacing:.08em;
+    cursor:pointer;
+    text-align:left;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .visitor-tab:hover,
+  .visitor-tab:focus-visible{
+    background:var(--accent);
+    color:var(--paper);
+  }
+  .world-counter.is-minimized{width:auto;min-width:176px}
+  .world-counter.is-minimized .visitor-card{
+    position:absolute;
+    right:0;
+    bottom:0;
+    visibility:hidden;
+    opacity:0;
+    pointer-events:none;
+  }
+  .world-counter.is-minimized .visitor-tab{display:flex}
+  @media(max-width:760px){
+    .world-counter{right:16px;bottom:16px}
+  }
+
 </style>
 </head>
 <body>
@@ -511,5 +621,55 @@
       <span>SYSTEM READY<span class="blink"></span></span>
     </footer>
   </div>
+
+  <!-- Country visits: the iframe stays mounted while minimized, so closing
+       the visual panel does not turn off visit logging. -->
+  <aside class="world-counter" id="world-counter" aria-label="Global visitors">
+    <div class="pixel-frame visitor-card" id="visitor-card">
+      <div class="visitor-card-head">
+        <span><span class="visitor-status-dot" aria-hidden="true"></span>WORLD_VISITORS</span>
+        <button class="visitor-close" id="visitor-close" type="button"
+                aria-label="Close visitor counter" title="Close">×</button>
+      </div>
+      <div class="visitor-card-body">
+        <div class="visitor-card-label">
+          <span>COUNTRIES / VISITS</span>
+          <span aria-hidden="true">[↗]</span>
+        </div>
+        <iframe class="visitor-country-frame"
+                title="Country-by-country homepage visit counts"
+                src="https://flagcounter.marin.fyi/profile/wuwenhao2002-github-io-2026?bg=fffdf8&amp;badge=2f6b49&amp;text=171712"
+                loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <p class="visitor-note">
+          COUNTS ARE APPROXIMATE ·
+          <a href="https://flagcounter.marin.fyi/" target="_blank" rel="noopener noreferrer">COUNTER INFO ↗</a>
+        </p>
+      </div>
+    </div>
+    <button class="pixel-frame visitor-tab" id="visitor-tab" type="button"
+            aria-label="Show visitor counter" aria-expanded="false">
+      <span>▣ WORLD VISITORS</span><span aria-hidden="true">[+]</span>
+    </button>
+  </aside>
+  <script>
+    (function(){
+      var dock=document.getElementById("world-counter");
+      var card=document.getElementById("visitor-card");
+      var close=document.getElementById("visitor-close");
+      var tab=document.getElementById("visitor-tab");
+      var key="wuwenhao2002-world-visitors-minimized";
+      var saved=null;
+      try{saved=localStorage.getItem(key)}catch(e){/* storage may be disabled */}
+      function setMinimized(minimized){
+        dock.classList.toggle("is-minimized",minimized);
+        card.setAttribute("aria-hidden",String(minimized));
+        tab.setAttribute("aria-expanded",String(!minimized));
+        try{localStorage.setItem(key,minimized?"yes":"no")}catch(e){}
+      }
+      close.addEventListener("click",function(){setMinimized(true)});
+      tab.addEventListener("click",function(){setMinimized(false)});
+      setMinimized(saved==="yes"||(saved===null&&window.matchMedia("(max-width:760px)").matches));
+    })();
+  </script>
 </body>
 </html>
