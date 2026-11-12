@@ -4,7 +4,7 @@
 const $=id=>document.getElementById(id),stage=$("stage"),canvas=$("mapCanvas");
 const ctx=canvas.getContext("2d",{alpha:false}),Graph=window.TCSGraphModel;
 if(!ctx||!Graph){const e=$("mapError");e.hidden=false;e.textContent="Graph rendering is unavailable in this browser.";return;}
-const S={items:[],nodes:[],nodeMap:new Map(),areaCenters:new Map(),areas:[],papersCurated:[],papersHarvested:[],sources:[],paperIndex:Graph.build([]),selected:new Set(),related:new Map(),paperQuery:"",term:"",area:"",review:"all",evidence:"all",matched:[],hovered:null,focus:true,motion:false,view:{x:0,y:0,scale:1},size:{w:1,h:1,dpr:1},pointer:null,paperLimit:30,needsDraw:true,start:performance.now(),time:0,ready:false};
+const S={items:[],nodes:[],nodeMap:new Map(),areaCenters:new Map(),areas:[],papersCurated:[],papersHarvested:[],sources:[],paperIndex:Graph.build([]),selected:new Set(),related:new Map(),paperQuery:"",term:"",area:"",review:"all",evidence:"curated",matched:[],hovered:null,focus:true,motion:false,view:{x:0,y:0,scale:1},size:{w:1,h:1,dpr:1},pointer:null,paperLimit:30,needsDraw:true,start:performance.now(),time:0,ready:false};
 S.motion=!window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const el=(tag,cls="",value="")=>{const node=document.createElement(tag);node.className=cls;node.textContent=value;return node;};
 const hash=s=>{let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return h>>>0;};

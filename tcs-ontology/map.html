@@ -94,8 +94,8 @@
       <div class="lit-filters">
         <div class="paper-search"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg><input id="paperSearch" type="search" placeholder="Search within matching papers…"></div>
         <label for="paperEvidence" class="field-label">ANNOTATION EVIDENCE</label>
-        <select id="paperEvidence"><option value="all">All indexed papers</option><option value="curated">Editorially mapped only</option><option value="harvested">Title-inferred candidates only</option></select>
-        <div id="paperMethod" class="evidence-note"><span class="evidence-icon">i</span><span><b>Evidence matters.</b> Editorial associations and automatically inferred title labels are clearly distinguished. An empty result is not proof of novelty.</span></div>
+        <select id="paperEvidence"><option value="curated" selected>Editorially mapped · Recommended</option><option value="all">All indexed papers (includes unreviewed)</option><option value="harvested">Title-inferred candidates only</option></select>
+        <div id="paperMethod" class="evidence-note"><span class="evidence-icon">i</span><span><b>Source-checked by default.</b> Switch to All indexed papers for automatically inferred title labels; these remain unreviewed. An empty result is not proof of novelty.</span></div>
       </div>
       <div id="mapDetail" class="paper-scroll">
         <div class="empty-papers"><div class="empty-planet"><span>✳</span></div><h3>Find your connection.</h3><p>Choose a concept in the map. Add another to narrow down to papers that use both.</p></div>
