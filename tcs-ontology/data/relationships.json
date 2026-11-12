@@ -1,0 +1,227 @@
+{
+  "schema_version": "0.1.0",
+  "items": [
+    {
+      "source": "game.atomic-congestion-game",
+      "predicate": "is_a",
+      "target": "game.congestion-game",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "game.nonatomic-congestion-game",
+      "predicate": "is_a",
+      "target": "game.congestion-game",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "game.weighted-congestion-game",
+      "predicate": "is_a",
+      "target": "game.congestion-game",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "game.network-congestion-game",
+      "predicate": "is_a",
+      "target": "game.congestion-game",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "game.singleton-congestion-game",
+      "predicate": "is_a",
+      "target": "game.congestion-game",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "auction.first-price-auction",
+      "predicate": "is_a",
+      "target": "auction.sealed-bid-auction",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "auction.second-price-auction",
+      "predicate": "is_a",
+      "target": "auction.sealed-bid-auction",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "auction.simultaneous-first-price-auction",
+      "predicate": "is_a",
+      "target": "auction.first-price-auction",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "auction.sequential-first-price-auction",
+      "predicate": "is_a",
+      "target": "auction.first-price-auction",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "graph_class.tree",
+      "predicate": "is_a",
+      "target": "graph_class.forest",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "graph_class.tree",
+      "predicate": "is_a",
+      "target": "graph_class.bipartite-graph",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "graph_class.forest",
+      "predicate": "is_a",
+      "target": "graph_class.bipartite-graph",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "graph_class.series-parallel-graph",
+      "predicate": "is_a",
+      "target": "graph_class.planar-graph",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "graph_class.cograph",
+      "predicate": "is_a",
+      "target": "graph_class.perfect-graph",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "graph_class.split-graph",
+      "predicate": "is_a",
+      "target": "graph_class.chordal-graph",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "graph_class.chordal-graph",
+      "predicate": "is_a",
+      "target": "graph_class.perfect-graph",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "graph_class.interval-graph",
+      "predicate": "is_a",
+      "target": "graph_class.chordal-graph",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "graph_class.complete-graph",
+      "predicate": "is_a",
+      "target": "graph_class.perfect-graph",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "complexity_class.p",
+      "predicate": "subset_of",
+      "target": "complexity_class.np",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "complexity_class.p",
+      "predicate": "subset_of",
+      "target": "complexity_class.pspace",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "complexity_class.np",
+      "predicate": "subset_of",
+      "target": "complexity_class.pspace",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "complexity_class.pspace",
+      "predicate": "subset_of",
+      "target": "complexity_class.exp",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "complexity_class.rp",
+      "predicate": "subset_of",
+      "target": "complexity_class.bpp",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "complexity_class.zpp",
+      "predicate": "subset_of",
+      "target": "complexity_class.rp",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "complexity_class.l",
+      "predicate": "subset_of",
+      "target": "complexity_class.nl",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "complexity_class.nl",
+      "predicate": "subset_of",
+      "target": "complexity_class.p",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "complexity_class.bpp",
+      "predicate": "subset_of",
+      "target": "complexity_class.pspace",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "complexity_class.fpt",
+      "predicate": "subset_of",
+      "target": "complexity_class.xp",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "game.congestion-game",
+      "predicate": "has_relevant_solution_concept",
+      "target": "equilibrium.pure-nash-equilibrium",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "game.nonatomic-congestion-game",
+      "predicate": "has_relevant_solution_concept",
+      "target": "equilibrium.wardrop-equilibrium",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "game.mean-field-game",
+      "predicate": "has_relevant_solution_concept",
+      "target": "equilibrium.mean-field-equilibrium",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "auction.first-price-auction",
+      "predicate": "has_relevant_solution_concept",
+      "target": "equilibrium.bayesian-nash-equilibrium",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "property.price-of-anarchy",
+      "predicate": "often_analyzed_by",
+      "target": "framework.smoothness-framework",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "technique.randomized-rounding",
+      "predicate": "often_uses",
+      "target": "technique.linear-programming-relaxation",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "problem.minimum-vertex-cover",
+      "predicate": "studied_on",
+      "target": "graph_class.bipartite-graph",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "problem.graph-coloring",
+      "predicate": "studied_on",
+      "target": "graph_class.planar-graph",
+      "review_status": "editorial_seed"
+    },
+    {
+      "source": "model.local-model",
+      "predicate": "studies",
+      "target": "problem.distributed-maximal-independent-set",
+      "review_status": "editorial_seed"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wuwenhao2002.github.io/tcs-ontology/schema/primitive.schema.json",
+  "title": "TCS Ontology primitive",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "kind",
+    "areas",
+    "aliases",
+    "definition",
+    "review_status",
+    "provenance",
+    "source_ids"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z_]+\\.[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "game",
+        "auction",
+        "equilibrium",
+        "property",
+        "assumption",
+        "framework",
+        "graph_class",
+        "problem",
+        "technique",
+        "objective",
+        "task",
+        "complexity_class",
+        "model"
+      ]
+    },
+    "areas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "definition": {
+      "type": "string"
+    },
+    "review_status": {
+      "enum": [
+        "seeded_definition_unverified",
+        "needs_definition",
+        "expert_reviewed"
+      ]
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "applies_to_kinds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "compatible_equilibria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

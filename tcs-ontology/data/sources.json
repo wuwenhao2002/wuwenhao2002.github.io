@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.1.0",
+  "items": [
+    {
+      "id": "cso",
+      "title": "Computer Science Ontology",
+      "url": "https://cso.kmi.open.ac.uk/",
+      "type": "external_vocabulary"
+    },
+    {
+      "id": "openalex",
+      "title": "OpenAlex Keywords",
+      "url": "https://help.openalex.org/data/keywords/",
+      "type": "external_vocabulary"
+    },
+    {
+      "id": "isgci",
+      "title": "Information System on Graph Classes and their Inclusions",
+      "url": "https://www.graphclasses.org/",
+      "type": "external_vocabulary"
+    },
+    {
+      "id": "scheduling-zoo",
+      "title": "Scheduling Zoo",
+      "url": "https://schedulingzoo.lip6.fr/",
+      "type": "external_vocabulary"
+    },
+    {
+      "id": "complexity-zoo",
+      "title": "Complexity Zoo",
+      "url": "https://complexityzoo.net/Complexity_Zoo",
+      "type": "external_vocabulary"
+    },
+    {
+      "id": "nist-dads",
+      "title": "NIST Dictionary of Algorithms and Data Structures",
+      "url": "https://xlinux.nist.gov/dads/",
+      "type": "external_vocabulary"
+    },
+    {
+      "id": "tcs-atlas",
+      "title": "TCS Open Problems Atlas",
+      "url": "https://vaclavrozhon.github.io/atlas/index.html",
+      "type": "external_vocabulary"
+    },
+    {
+      "id": "roughgarden-tardos-2002",
+      "title": "How Bad Is Selfish Routing?",
+      "url": "https://doi.org/10.1145/506147.506153",
+      "type": "paper"
+    },
+    {
+      "id": "rosenthal-1973",
+      "title": "A Class of Games Possessing Pure-Strategy Nash Equilibria",
+      "url": "https://ranger.uta.edu/~weems/NOTES6319/PAPERSONE/rosenthal1973.pdf",
+      "type": "paper"
+    },
+    {
+      "id": "syrgkanis-tardos-2013",
+      "title": "Composable and Efficient Mechanisms",
+      "url": "https://arxiv.org/abs/1211.1325",
+      "type": "paper"
+    }
+  ]
+}

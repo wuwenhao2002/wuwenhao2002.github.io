@@ -1,0 +1,256 @@
+{
+  "schema_version": "0.1.0",
+  "disclaimer": "Generated combinations are question candidates, not verified well-posed problems, novel results, or open problems.",
+  "items": [
+    {
+      "id": "equilibrium-efficiency",
+      "title": "Equilibrium efficiency",
+      "description": "Combine a game or auction with an inefficiency metric and equilibrium concept.",
+      "template": "{metric} of {system} under {equilibrium}",
+      "slots": [
+        {
+          "key": "metric",
+          "label": "Metric",
+          "ids": [
+            "property.price-of-anarchy",
+            "property.price-of-stability"
+          ]
+        },
+        {
+          "key": "system",
+          "label": "Game or auction",
+          "kinds": [
+            "game",
+            "auction"
+          ]
+        },
+        {
+          "key": "equilibrium",
+          "label": "Equilibrium",
+          "kinds": [
+            "equilibrium"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mechanism-properties",
+      "title": "Mechanism design",
+      "description": "Mechanism properties depend on valuations and information assumptions.",
+      "template": "{property} of {system} under {assumption}",
+      "slots": [
+        {
+          "key": "property",
+          "label": "Property",
+          "ids": [
+            "property.truthfulness",
+            "property.incentive-compatibility",
+            "property.revenue-approximation",
+            "property.welfare-approximation",
+            "property.budget-balance"
+          ]
+        },
+        {
+          "key": "system",
+          "label": "Auction",
+          "kinds": [
+            "auction"
+          ]
+        },
+        {
+          "key": "assumption",
+          "label": "Assumption",
+          "kinds": [
+            "assumption"
+          ],
+          "areas": [
+            "Mechanism Design"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "graph-problem-classes",
+      "title": "Graph algorithms",
+      "description": "Combine graph optimization problems, graph classes and algorithmic goals.",
+      "template": "{task} for {problem} on {graph_class}",
+      "slots": [
+        {
+          "key": "task",
+          "label": "Task",
+          "ids": [
+            "task.approximation-algorithm",
+            "task.fixed-parameter-algorithm",
+            "task.polynomial-time-algorithm",
+            "task.tight-lower-bound"
+          ]
+        },
+        {
+          "key": "problem",
+          "label": "Graph problem",
+          "kinds": [
+            "problem"
+          ],
+          "areas": [
+            "Graph Algorithms"
+          ]
+        },
+        {
+          "key": "graph_class",
+          "label": "Graph class",
+          "kinds": [
+            "graph_class"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "online-variations",
+      "title": "Online algorithms",
+      "description": "Compare online problems under arrival models and measures.",
+      "template": "{property} for {problem} under {model}",
+      "slots": [
+        {
+          "key": "property",
+          "label": "Metric",
+          "ids": [
+            "property.competitive-ratio",
+            "property.regret",
+            "property.dynamic-regret"
+          ]
+        },
+        {
+          "key": "problem",
+          "label": "Problem",
+          "kinds": [
+            "problem"
+          ],
+          "areas": [
+            "Online Algorithms"
+          ]
+        },
+        {
+          "key": "model",
+          "label": "Model",
+          "kinds": [
+            "model"
+          ],
+          "areas": [
+            "Online Algorithms"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "distributed-complexity",
+      "title": "Distributed computing",
+      "description": "Complexity questions with explicit distributed communication models.",
+      "template": "{property} of {problem} in {model}",
+      "slots": [
+        {
+          "key": "property",
+          "label": "Complexity",
+          "ids": [
+            "property.round-complexity",
+            "property.message-complexity",
+            "property.locality"
+          ]
+        },
+        {
+          "key": "problem",
+          "label": "Problem",
+          "kinds": [
+            "problem"
+          ],
+          "areas": [
+            "Distributed Computing"
+          ]
+        },
+        {
+          "key": "model",
+          "label": "Model",
+          "kinds": [
+            "model"
+          ],
+          "areas": [
+            "Distributed Computing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "learning-bounds",
+      "title": "Learning theory",
+      "description": "Candidate bounds need specified algorithms and hypothesis classes.",
+      "template": "{property} in {model} under {assumption}",
+      "slots": [
+        {
+          "key": "property",
+          "label": "Measure",
+          "ids": [
+            "property.sample-complexity",
+            "property.generalization-bound",
+            "property.regret-bound"
+          ]
+        },
+        {
+          "key": "model",
+          "label": "Model",
+          "kinds": [
+            "model"
+          ],
+          "areas": [
+            "Learning Theory"
+          ]
+        },
+        {
+          "key": "assumption",
+          "label": "Assumption",
+          "kinds": [
+            "assumption"
+          ],
+          "areas": [
+            "Learning Theory"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scheduling-variations",
+      "title": "Scheduling",
+      "description": "Scheduling environment, objective and computational task.",
+      "template": "{task} for {objective} on {model}",
+      "slots": [
+        {
+          "key": "task",
+          "label": "Task",
+          "ids": [
+            "task.approximation-algorithm",
+            "task.polynomial-time-algorithm",
+            "task.tight-lower-bound"
+          ]
+        },
+        {
+          "key": "objective",
+          "label": "Objective",
+          "kinds": [
+            "objective"
+          ],
+          "areas": [
+            "Scheduling"
+          ]
+        },
+        {
+          "key": "model",
+          "label": "Environment",
+          "kinds": [
+            "model"
+          ],
+          "areas": [
+            "Scheduling"
+          ]
+        }
+      ]
+    }
+  ]
+}

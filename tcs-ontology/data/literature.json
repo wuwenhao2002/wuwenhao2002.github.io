@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "disclaimer": "Evidence pointers are scoped. No entry's absence implies novelty or openness.",
+  "items": [
+    {
+      "id": "lit-rosenthal",
+      "rule_id": "equilibrium-efficiency",
+      "slots": {
+        "metric": "property.price-of-anarchy",
+        "system": "game.congestion-game",
+        "equilibrium": "equilibrium.pure-nash-equilibrium"
+      },
+      "status": "related_literature",
+      "summary": "Foundational equilibrium-existence literature exists for congestion games; PoA bounds require additional cost and welfare specifications.",
+      "source_ids": [
+        "rosenthal-1973"
+      ],
+      "scope_note": "This citation proves equilibrium existence, not a universal price-of-anarchy bound."
+    },
+    {
+      "id": "lit-auction",
+      "rule_id": "equilibrium-efficiency",
+      "slots": {
+        "metric": "property.price-of-anarchy",
+        "system": "auction.first-price-auction",
+        "equilibrium": "equilibrium.bayesian-nash-equilibrium"
+      },
+      "status": "related_literature",
+      "summary": "Smooth-mechanism research studies equilibrium welfare guarantees in Bayesian settings.",
+      "source_ids": [
+        "syrgkanis-tardos-2013"
+      ],
+      "scope_note": "The cited result is not a universal bound for all first-price auction specifications."
+    }
+  ]
+}
