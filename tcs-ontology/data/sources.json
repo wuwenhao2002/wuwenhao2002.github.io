@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.5.0",
+  "schema_version": "0.6.0",
   "items": [
     {
       "id": "cso",
@@ -497,6 +497,210 @@
       "id": "publisher-private-stationarity-2024",
       "title": "How to Make the Gradients Small Privately: Improved Rates for Differentially Private Non-Convex Optimization",
       "url": "https://proceedings.mlr.press/v235/lowy24b.html",
+      "type": "paper"
+    },
+    {
+      "id": "conf-focs26",
+      "title": "FOCS 2026 official accepted papers",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "type": "conference_program"
+    },
+    {
+      "id": "conf-stoc26",
+      "title": "STOC 2026 accepted papers and proceedings TOC",
+      "url": "https://acm-stoc.org/stoc2026/accepted-papers.html",
+      "type": "conference_program"
+    },
+    {
+      "id": "conf-soda26",
+      "title": "SODA 2026 accepted papers",
+      "url": "https://www.siam.org/conferences-events/past-event-archive/soda26/program/accepted-papers/",
+      "type": "conference_program"
+    },
+    {
+      "id": "conf-stoc25",
+      "title": "STOC 2025 official accepted papers",
+      "url": "https://acm-stoc.org/stoc2025/accepted-papers.html",
+      "type": "conference_program"
+    },
+    {
+      "id": "conf-focs25",
+      "title": "FOCS 2025 official accepted papers",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "type": "conference_program"
+    },
+    {
+      "id": "author-assadi",
+      "title": "Sepehr Assadi official research publications",
+      "url": "https://sepehr.assadi.info/index.html",
+      "type": "author_publications"
+    },
+    {
+      "id": "paper-f26-robust-stream",
+      "title": "Adversarial Robustness for Small Frequency Moments and a Weak Equivalence Theorem for Turnstile Streams",
+      "url": "https://arxiv.org/abs/2607.06312",
+      "type": "paper"
+    },
+    {
+      "id": "paper-f26-dynamic-connect",
+      "title": "Dynamic Connectivity, Minimum Spanning Tree, and 2-Edge Connectivity with Polylogarithmic Worst-Case Update Time",
+      "url": "https://arxiv.org/abs/2610.00491",
+      "type": "paper"
+    },
+    {
+      "id": "paper-f26-dynamic-kmeans",
+      "title": "Fully Dynamic Euclidean k-Means",
+      "url": "https://arxiv.org/abs/2507.11256",
+      "type": "paper"
+    },
+    {
+      "id": "paper-f26-turnstile-sketch",
+      "title": "Turnstile Streaming Algorithms Might (Still) as Well Be Linear Sketches, for Polynomial-Length Streams",
+      "url": "https://arxiv.org/abs/2604.22052",
+      "type": "paper"
+    },
+    {
+      "id": "paper-f26-coreset",
+      "title": "A Polynomial Coreset for Furthest Neighbor in Planar Metrics",
+      "url": "https://arxiv.org/abs/2603.28100",
+      "type": "paper"
+    },
+    {
+      "id": "paper-f26-posterior",
+      "title": "Online Algorithms via Minimax and Posterior Matching",
+      "url": "https://arxiv.org/abs/2608.01616",
+      "type": "paper"
+    },
+    {
+      "id": "paper-f26-multicalibration",
+      "title": "Optimal Lower Bounds for Online Multicalibration",
+      "url": "https://arxiv.org/abs/2601.05245",
+      "type": "paper"
+    },
+    {
+      "id": "paper-26-deterministic-multicalibration",
+      "title": "Optimal Deterministic Multicalibration and Omniprediction",
+      "url": "https://arxiv.org/abs/2606.20557",
+      "type": "paper"
+    },
+    {
+      "id": "paper-f26-fpt-branchwidth",
+      "title": "Branch-width of connectivity functions is fixed-parameter tractable",
+      "url": "https://arxiv.org/abs/2601.04756",
+      "type": "paper"
+    },
+    {
+      "id": "paper-f26-fpt-modular",
+      "title": "Optimal FPT-Approximability for Modular Linear Equations",
+      "url": "https://arxiv.org/abs/2604.10369",
+      "type": "paper"
+    },
+    {
+      "id": "paper-s26-treewidth-seth",
+      "title": "k-SUM Hardness Implies Treewidth-SETH",
+      "url": "https://arxiv.org/abs/2510.08185",
+      "type": "paper"
+    },
+    {
+      "id": "paper-f25-stream-diameter",
+      "title": "A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams",
+      "url": "https://arxiv.org/abs/2510.04918",
+      "type": "paper"
+    },
+    {
+      "id": "paper-s25-uniformity-tracking",
+      "title": "Instance-Optimal Uniformity Testing and Tracking",
+      "url": "https://arxiv.org/abs/2508.02637",
+      "type": "paper"
+    },
+    {
+      "id": "paper-s25-simplex-smoothed",
+      "title": "Optimal Smoothed Analysis of the Simplex Method",
+      "url": "https://arxiv.org/abs/2504.04197",
+      "type": "paper"
+    },
+    {
+      "id": "paper-s25-local-lemma",
+      "title": "On the Locality of the Lovasz Local Lemma",
+      "url": "https://arxiv.org/abs/2502.11690",
+      "type": "paper"
+    },
+    {
+      "id": "paper-s26-local-setcover",
+      "title": "Improved Local Computation Algorithms for Greedy Set Cover via Retroactive Updates",
+      "url": "https://arxiv.org/abs/2603.23715",
+      "type": "paper"
+    },
+    {
+      "id": "paper-f26-cellprobe",
+      "title": "A Cell-Probe Lower Bound for Dynamic Boolean Data Structures",
+      "url": "https://arxiv.org/abs/2603.25914",
+      "type": "paper"
+    },
+    {
+      "id": "paper-s26-stream-matching",
+      "title": "Semi-streaming Matching in a Single Pass: A New Framework for Lower Bounds via Blueprints",
+      "url": "https://doi.org/10.1145/3798129.3800811",
+      "type": "paper"
+    },
+    {
+      "id": "paper-s26-smoothed-positive",
+      "title": "Smoothed Analysis of Learning from Positive Samples",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "type": "conference_proceedings"
+    },
+    {
+      "id": "paper-f26-average-color",
+      "title": "Graph k-Coloring in Sublinear Average Time",
+      "url": "https://arxiv.org/abs/2607.26592",
+      "type": "paper"
+    },
+    {
+      "id": "paper-f26-instance-pagerank",
+      "title": "Instance-Optimality of Bidirectional PageRank Estimation",
+      "url": "https://yuvalfilmus.github.io/FOCS-2026-Accepted-Papers/",
+      "type": "abstract_index"
+    },
+    {
+      "id": "paper-f26-online-binpack",
+      "title": "Optimal Online Bin Packing under Prophet Random-Order and Learning-from-Samples Models",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "type": "conference_program"
+    },
+    {
+      "id": "paper-s26-stream-setcover",
+      "title": "Settling the Pass Complexity of Streaming Set Cover",
+      "url": "https://sepehr.assadi.info/index.html",
+      "type": "author_publications"
+    },
+    {
+      "id": "paper-s25-derand-vizing",
+      "title": "Vizing's Theorem in Near-Linear Time",
+      "url": "https://sepehr.assadi.info/index.html",
+      "type": "author_publications"
+    },
+    {
+      "id": "paper-s26-colored-trianglefree",
+      "title": "Fully Dynamic Algorithms for Coloring Triangle-Free Graphs",
+      "url": "https://sepehr.assadi.info/index.html",
+      "type": "author_publications"
+    },
+    {
+      "id": "paper-s25-graph-sketch",
+      "title": "Correlation Clustering and (De)Sparsification: Graph Sketches Can Match Classical Algorithms",
+      "url": "https://sepehr.assadi.info/index.html",
+      "type": "author_publications"
+    },
+    {
+      "id": "paper-s26-lowspace",
+      "title": "Composing Low-Space Algorithms",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "type": "conference_program"
+    },
+    {
+      "id": "paper-s26-retroactive-LCA",
+      "title": "Improved Local Computation Algorithms for Greedy Set Cover via Retroactive Updates",
+      "url": "https://arxiv.org/abs/2603.23715",
       "type": "paper"
     }
   ]

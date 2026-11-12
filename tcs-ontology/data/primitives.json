@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.5.0",
+  "schema_version": "0.6.0",
   "updated_at": "2026-11-13",
   "provenance_note": "Mixed status: source_checked means an editorial source cross-check, not peer or expert review. Other primitives remain unverified candidates. No external bulk data copied.",
   "items": [
@@ -316,6 +316,24 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "assumption.k-sum-hypothesis",
+      "name": "k-SUM Hypothesis",
+      "kind": "assumption",
+      "areas": [
+        "Complexity Theory",
+        "Fine-Grained Complexity"
+      ],
+      "aliases": [],
+      "definition": "Conditional quantitative barrier to improved k-SUM algorithms under explicit numerical-input assumptions.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s26-treewidth-seth"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "assumption.label-noise",
       "name": "Label Noise",
       "kind": "assumption",
@@ -521,6 +539,23 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "assumption.reference-distribution",
+      "name": "Reference Distribution",
+      "kind": "assumption",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "A reference probability distribution used to express smoothness or compare a target distribution.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "paper-s26-smoothed-positive"
+      ]
+    },
+    {
       "id": "assumption.regular-value-distribution",
       "name": "Regular Value Distribution",
       "kind": "assumption",
@@ -715,6 +750,24 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "assumption.treewidth-seth",
+      "name": "Treewidth-SETH",
+      "kind": "assumption",
+      "areas": [
+        "Complexity Theory",
+        "Fine-Grained Complexity"
+      ],
+      "aliases": [],
+      "definition": "Conditional conjecture about SAT running time parameterized by primal graph treewidth, distinct from standard SETH.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s26-treewidth-seth"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "assumption.unit-demand-valuations",
@@ -1652,6 +1705,23 @@
       "reviewed_at": null
     },
     {
+      "id": "equilibrium.proximal-correlated-equilibrium",
+      "name": "Proximal Correlated Equilibrium",
+      "kind": "equilibrium",
+      "areas": [
+        "Algorithmic Game Theory"
+      ],
+      "aliases": [],
+      "definition": "A correlated game outcome satisfying a family of proximal-deviation incentive constraints.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
       "id": "equilibrium.pure-nash-equilibrium",
       "name": "Pure Nash Equilibrium",
       "kind": "equilibrium",
@@ -1827,6 +1897,23 @@
       "reviewed_at": null
     },
     {
+      "id": "framework.by-the-book-analysis",
+      "name": "By-the-Book Analysis",
+      "kind": "framework",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Analyze an algorithm using models grounded in its implementation details and practical choices, going beyond perturbing only the input.",
+      "scope_note": "Source-scoped editorial definition; theorem details require reading the STOC 2026 proceedings.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_2026_abstract"
+    },
+    {
       "id": "framework.circuit-complexity",
       "name": "Circuit Complexity",
       "kind": "framework",
@@ -1885,6 +1972,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "framework.estimator-corrector-learner",
+      "name": "Estimator–Corrector–Learner Framework",
+      "kind": "framework",
+      "areas": [
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A streaming framework combining prediction or learning with corrective estimation to obtain adaptive-robust statistics.",
+      "scope_note": "Paper's mathematical framework is defined for specified statistics and adversary classes; not a universal streaming reduction.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "primary_arxiv_abstract_2026-11-13",
+      "source_ids": [
+        "paper-f26-robust-stream"
+      ]
     },
     {
       "id": "framework.explicit-predictor-learning",
@@ -3091,6 +3195,24 @@
       "reviewed_at": null
     },
     {
+      "id": "lens.adversarially-robust-streaming",
+      "name": "Adversarially Robust Streaming",
+      "kind": "lens",
+      "areas": [
+        "Streaming Algorithms",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Maintain accuracy against streams adapting to earlier revealed outputs, not merely an oblivious input sequence.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-robust-stream"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "lens.algorithmic-sensitivity",
       "name": "Algorithmic Sensitivity",
       "kind": "lens",
@@ -3131,6 +3253,60 @@
       "provenance": "paper_curation_v0.3"
     },
     {
+      "id": "lens.calibration-constraints",
+      "name": "Multicalibration Lens",
+      "kind": "lens",
+      "areas": [
+        "Learning Theory",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Require reliable forecasts across many overlapping groups, rather than calibration only in aggregate.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-multicalibration"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "lens.coreset-compression",
+      "name": "Coreset Compression Lens",
+      "kind": "lens",
+      "areas": [
+        "Approximation Algorithms",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Summarize a large input while preserving an explicit family of objectives to within specified error.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-coreset"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "lens.derandomization",
+      "name": "Derandomization Lens",
+      "kind": "lens",
+      "areas": [
+        "Randomized Algorithms",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Remove random choices while preserving formal runtime, work, depth or approximation guarantees.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs26"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "lens.differential-privacy",
       "name": "Differential Privacy Lens",
       "kind": "lens",
@@ -3151,6 +3327,24 @@
       "provenance": "paper_curation_v0.3"
     },
     {
+      "id": "lens.dynamic-maintenance",
+      "name": "Dynamic Maintenance Lens",
+      "kind": "lens",
+      "areas": [
+        "Data Structures",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Maintain exact or approximate solutions across insertions and deletions, with quantified update and query costs.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-dynamic-connect"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "lens.fault-tolerance",
       "name": "Fault Tolerance Lens",
       "kind": "lens",
@@ -3169,6 +3363,110 @@
       "review_status": "source_checked",
       "reviewed_at": "2026-11-13",
       "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "lens.fine-grained-hardness",
+      "name": "Fine-Grained Hardness Lens",
+      "kind": "lens",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Transfer conjectural quantitative running-time barriers through parameter-preserving reductions.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s26-treewidth-seth"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "lens.instance-adaptivity",
+      "name": "Instance Optimality Lens",
+      "kind": "lens",
+      "areas": [
+        "Property Testing",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Compare algorithm performance against a specified best comparator separately on each instance.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s25-uniformity-tracking"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "lens.language-generation",
+      "name": "Formal Language Generation Lens",
+      "kind": "lens",
+      "areas": [
+        "Logic and Automata"
+      ],
+      "aliases": [],
+      "definition": "Study theoretical guarantees for generating unseen strings from an unknown target language under limited examples.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
+    },
+    {
+      "id": "lens.local-computation",
+      "name": "Local Computation Lens",
+      "kind": "lens",
+      "areas": [
+        "Distributed Computing",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Compute individual components of a globally coherent solution with bounded probes or local communication.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s26-local-setcover"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "lens.meta-complexity",
+      "name": "Meta-Complexity Lens",
+      "kind": "lens",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Study computational hardness of recognizing, proving, or estimating complexity properties of objects themselves.",
+      "scope_note": "Model and assumptions follow the linked 2026 proceedings abstract, not all uses of the terminology.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_FOCS_2026_primary_abstract"
+    },
+    {
+      "id": "lens.parameterized-tractability",
+      "name": "Parameterized Tractability Lens",
+      "kind": "lens",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Study algorithms with f(k)poly(n) time or approximation complexity for a declared parameter k.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-fpt-modular"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "lens.prediction",
@@ -3211,6 +3509,59 @@
       "provenance": "paper_curation_v0.3"
     },
     {
+      "id": "lens.secure-distributed-communication",
+      "name": "Secure Distributed Communication Lens",
+      "kind": "lens",
+      "areas": [
+        "Distributed Computing"
+      ],
+      "aliases": [],
+      "definition": "Design communication protocols preserving confidentiality or integrity despite a specified network eavesdropper or corruption model.",
+      "scope_note": "Model and assumptions follow the linked 2026 proceedings abstract, not all uses of the terminology.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_FOCS_2026_primary_abstract"
+    },
+    {
+      "id": "lens.smoothed-analysis",
+      "name": "Smoothed Analysis Lens",
+      "kind": "lens",
+      "areas": [
+        "Learning Theory",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Analyze inputs after random perturbation of a worst-case instance under an explicit smoothing distribution.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s25-simplex-smoothed"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "lens.space-time-tradeoffs",
+      "name": "Space-Time Tradeoff Lens",
+      "kind": "lens",
+      "areas": [
+        "Data Structures",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Relate stored memory, update time, query complexity, or parallel depth in a fixed computation model.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-cellprobe"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "model.active-learning",
       "name": "Active Learning",
       "kind": "model",
@@ -3224,6 +3575,41 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "model.adaptive-adversary",
+      "name": "Adaptive Adversary Model",
+      "kind": "model",
+      "areas": [
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Allow input updates to depend on an algorithm's past observable outputs under precise feedback rules.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-robust-stream"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "model.adaptive-quantum-measurement",
+      "name": "Adaptive Quantum Measurement",
+      "kind": "model",
+      "areas": [
+        "Quantum Computing",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Subsequent measurements are selected based on previous observed outcomes.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
     },
     {
       "id": "model.add-remove-adjacency",
@@ -3450,6 +3836,23 @@
       "reviewed_at": null
     },
     {
+      "id": "model.catalytic-space",
+      "name": "Catalytic Space",
+      "kind": "model",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Space-bounded computation aided by a large auxiliary memory that must be restored to its original contents.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
+    },
+    {
       "id": "model.cell-probe-model",
       "name": "Cell-Probe Model",
       "kind": "model",
@@ -3559,6 +3962,24 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "model.decremental-updates",
+      "name": "Decremental Update Model",
+      "kind": "model",
+      "areas": [
+        "Data Structures",
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Support deletion-only updates following initialization.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-dynamic-connect"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "model.dense-graph-model",
@@ -3749,6 +4170,23 @@
       ]
     },
     {
+      "id": "model.efi-pairs",
+      "name": "EFI Pairs",
+      "kind": "model",
+      "areas": [
+        "Cryptography"
+      ],
+      "aliases": [],
+      "definition": "Pairs of quantum state ensembles that are efficiently generable, far apart statistically, but computationally indistinguishable.",
+      "scope_note": "Model and assumptions follow the linked 2026 proceedings abstract, not all uses of the terminology.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_FOCS_2026_primary_abstract"
+    },
+    {
       "id": "model.external-memory-model",
       "name": "External Memory Model",
       "kind": "model",
@@ -3860,6 +4298,24 @@
       "reviewed_at": null
     },
     {
+      "id": "model.fully-dynamic-updates",
+      "name": "Fully Dynamic Update Model",
+      "kind": "model",
+      "areas": [
+        "Data Structures",
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Support both insertion and deletion updates over time; distinct from incremental and decremental models.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-dynamic-connect"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "model.fully-homomorphic-encryption",
       "name": "Fully Homomorphic Encryption",
       "kind": "model",
@@ -3922,6 +4378,24 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "model.incremental-updates",
+      "name": "Incremental Update Model",
+      "kind": "model",
+      "areas": [
+        "Data Structures",
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Support insertion-only updates to a previously initialized computational instance.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-dynamic-connect"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "model.insertion-only-stream",
       "name": "Insertion-Only Stream",
       "kind": "model",
@@ -3939,6 +4413,23 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "model.isomorphic-priors",
+      "name": "Isomorphic-Priors Model",
+      "kind": "model",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Algorithmic input model in which one has advance access to information about a graph in the same isomorphism class as the eventual instance.",
+      "scope_note": "Model and assumptions follow the linked 2026 proceedings abstract, not all uses of the terminology.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs26"
+      ],
+      "provenance": "STOC_FOCS_2026_primary_abstract"
+    },
+    {
       "id": "model.job-shop",
       "name": "Job Shop",
       "kind": "model",
@@ -3952,6 +4443,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "model.language-generation-in-limit",
+      "name": "Language Generation in the Limit",
+      "kind": "model",
+      "areas": [
+        "Logic and Automata"
+      ],
+      "aliases": [],
+      "definition": "A model of iterative language output where the learner receives an enumeration and must generate valid unseen examples eventually.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
     },
     {
       "id": "model.linear-bandit",
@@ -4021,6 +4529,23 @@
       ],
       "scope_note": "Usually assumes unique identifiers or a specified symmetry-breaking alternative.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "model.local-node-differential-privacy",
+      "name": "Local Node Differential Privacy",
+      "kind": "model",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Privacy model protecting graph-node data under local randomization and defined adjacency.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-focs26"
+      ]
     },
     {
       "id": "model.mapreduce-model",
@@ -4156,6 +4681,40 @@
       "provenance": "paper_curation_v0.3"
     },
     {
+      "id": "model.nonadaptive-local-query",
+      "name": "Non-Adaptive Local Query Model",
+      "kind": "model",
+      "areas": [
+        "Property Testing"
+      ],
+      "aliases": [],
+      "definition": "A local algorithm's queries are chosen without depending on answers to earlier queries.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
+    },
+    {
+      "id": "model.nonadaptive-preprocessing",
+      "name": "Non-Adaptive Preprocessing",
+      "kind": "model",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Offline advice or preprocessing with online queries not adapting to the challenge input.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
       "id": "model.nonclairvoyant-online-model",
       "name": "Nonclairvoyant Online Model",
       "kind": "model",
@@ -4205,6 +4764,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "model.oblivious-adversary",
+      "name": "Oblivious Adversary Model",
+      "kind": "model",
+      "areas": [
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Fix inputs independently of an algorithm's private randomness and observed outputs.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-robust-stream"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "model.oblivious-transfer",
@@ -4348,6 +4924,23 @@
       "reviewed_at": null
     },
     {
+      "id": "model.partial-enumeration",
+      "name": "Partial Enumeration Model",
+      "kind": "model",
+      "areas": [
+        "Logic and Automata"
+      ],
+      "aliases": [],
+      "definition": "Only an unknown subset of a target language is revealed, raising questions about generation and identification from incomplete examples.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
+    },
+    {
       "id": "model.partially-observable-markov-decision-process",
       "name": "Partially Observable Markov Decision Process",
       "kind": "model",
@@ -4399,6 +4992,23 @@
       "review_status": "source_checked",
       "reviewed_at": "2026-11-13",
       "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "model.polynomial-length-turnstile",
+      "name": "Polynomial-Length Turnstile Model",
+      "kind": "model",
+      "areas": [
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Turnstile frequency vector updates with total stream length bounded by a polynomial.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-turnstile-sketch"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "model.prediction-portfolio",
@@ -4480,6 +5090,24 @@
       "source_ids": [
         "author-yoshida-conferences"
       ]
+    },
+    {
+      "id": "model.prophet-arrivals",
+      "name": "Prophet Arrivals",
+      "kind": "model",
+      "areas": [
+        "Online Algorithms",
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Stochastic sequential arrival model with known distributional assumptions and an offline prophet comparator.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-online-binpack"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "model.prophet-model",
@@ -4753,6 +5381,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "model.semi-streaming",
+      "name": "Semi-Streaming Model",
+      "kind": "model",
+      "areas": [
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Process graph-edge streams with approximately O(n polylog n) memory and a bounded number of passes.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s26-stream-matching"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "model.shared-memory-model",
@@ -5263,6 +5908,23 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.bin-packing",
+      "name": "Bin Packing",
+      "kind": "problem",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Pack items into as few fixed-capacity bins as possible.",
+      "scope_note": "Offline bin packing differs from online bin packing.",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "2026_conference_title"
+    },
+    {
       "id": "problem.binary-search",
       "name": "Binary Search",
       "kind": "problem",
@@ -5520,6 +6182,40 @@
       "provenance": "paper_curation_v0.3"
     },
     {
+      "id": "problem.discrepancy-minimization",
+      "name": "Discrepancy Minimization",
+      "kind": "problem",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Assign signs or colors to minimize maximum imbalance over a set system.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
+    },
+    {
+      "id": "problem.discrete-logarithm",
+      "name": "Discrete Logarithm",
+      "kind": "problem",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Given group generator g and element h, find x such that g raised to x equals h.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
       "id": "problem.distinct-elements-estimation",
       "name": "Distinct Elements Estimation",
       "kind": "problem",
@@ -5574,12 +6270,14 @@
         "Distributed Computing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Produce a maximal graph matching using node-local messages or oracle probes, minimizing rounds or volume.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "reviewed_at": "2026-11-13"
     },
     {
       "id": "problem.distributed-minimum-spanning-tree",
@@ -5680,6 +6378,23 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "problem.dynamic-2-edge-connectivity",
+      "name": "Dynamic 2-Edge Connectivity",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Maintain pairs of vertices still connected after deletion of any single edge amid updates.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-dynamic-connect"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "problem.dynamic-connectivity",
       "name": "Dynamic Connectivity",
       "kind": "problem",
@@ -5727,6 +6442,40 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.dynamic-kmeans",
+      "name": "Dynamic k-Means",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Maintain an approximate Euclidean k-means solution under point insertions and deletions.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-dynamic-kmeans"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "problem.dynamic-mst",
+      "name": "Dynamic Minimum Spanning Tree",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Maintain an exact or approximate minimum spanning tree or forest under graph updates.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-dynamic-connect"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "problem.dynamic-range-counting",
       "name": "Dynamic Range Counting",
       "kind": "problem",
@@ -5770,6 +6519,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.edit-distance",
+      "name": "Edit Distance",
+      "kind": "problem",
+      "areas": [
+        "Data Structures"
+      ],
+      "aliases": [],
+      "definition": "Compute minimum cost to transform sequences or trees by permitted edit operations.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
     },
     {
       "id": "problem.end-of-line",
@@ -5879,6 +6645,41 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.furthest-neighbor",
+      "name": "Furthest Neighbor Query",
+      "kind": "problem",
+      "areas": [
+        "Computational Geometry",
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Find a stored point farthest from a query point under a specified metric.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-coreset"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "problem.gomory-hu-tree",
+      "name": "Gomory-Hu Tree",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Construct a compact weighted tree representing all-pairs minimum-cut values of an undirected graph.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
     },
     {
       "id": "problem.graph-coloring",
@@ -6343,6 +7144,24 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.local-set-cover",
+      "name": "Local Set Cover",
+      "kind": "problem",
+      "areas": [
+        "Approximation Algorithms",
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Answer queries about a globally coherent covering solution using bounded local probes.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s26-local-setcover"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "problem.longest-common-subsequence",
       "name": "Longest Common Subsequence",
       "kind": "problem",
@@ -6553,6 +7372,24 @@
       ]
     },
     {
+      "id": "problem.metric-diameter-streaming",
+      "name": "Streaming Diameter Estimation",
+      "kind": "problem",
+      "areas": [
+        "Streaming Algorithms",
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Estimate metric diameter from insertion-only or turnstile data streams using limited space.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f25-stream-diameter"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "problem.metric-voting",
       "name": "Metric Voting",
       "kind": "problem",
@@ -6755,6 +7592,24 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.modular-linear-equations",
+      "name": "Min-r-Lin over Z_m",
+      "kind": "problem",
+      "areas": [
+        "Complexity Theory",
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Find a small set of modular equations whose deletion makes the rest satisfiable.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-fpt-modular"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "problem.monotonicity-testing",
       "name": "Monotonicity Testing",
       "kind": "problem",
@@ -6819,6 +7674,23 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.negative-weight-shortest-path",
+      "name": "Negative-Weight Shortest Path",
+      "kind": "problem",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Find shortest paths in weighted directed graphs that may contain negative edges, detecting negative cycles when required.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
       "id": "problem.network-capacity",
       "name": "Network Capacity",
       "kind": "problem",
@@ -6834,6 +7706,23 @@
       "source_ids": [
         "author-dinitz-publications"
       ]
+    },
+    {
+      "id": "problem.network-unreliability",
+      "name": "Network Unreliability",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Calculate disconnection probability of a network under a random failure model.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
     },
     {
       "id": "problem.online-ad-allocation",
@@ -6962,6 +7851,24 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.online-multicalibration",
+      "name": "Online Multicalibration",
+      "kind": "problem",
+      "areas": [
+        "Learning Theory",
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Issue sequential forecasts meeting groupwise calibration constraints with quantified error.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-multicalibration"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "problem.online-paging",
       "name": "Online Paging",
       "kind": "problem",
@@ -7026,6 +7933,58 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.page-rank-estimation",
+      "name": "PageRank Estimation",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Estimate PageRank or personalized PageRank with a specified graph query model.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-instance-pagerank"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "problem.parallel-reachability",
+      "name": "Parallel Reachability",
+      "kind": "problem",
+      "areas": [
+        "Distributed Computing",
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Decide directed reachability using algorithms with quantified parallel work and depth.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs26"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "problem.parameterized-branchwidth",
+      "name": "Branchwidth Computation",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Compute a branch decomposition of an oracle-accessed connectivity function parameterized by width.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-fpt-branchwidth"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "problem.parity-game-solving",
       "name": "Parity Game Solving",
       "kind": "problem",
@@ -7086,6 +8045,41 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.planted-structure-detection",
+      "name": "Planted Structure Detection",
+      "kind": "problem",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Detect a hidden clique, biclique, or sparse signal inside a random background.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
+      "id": "problem.positive-only-learning",
+      "name": "Positive-Only Learning",
+      "kind": "problem",
+      "areas": [
+        "Learning Theory",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Learning from positive labeled examples without ordinary negative examples under specified distribution assumptions.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "paper-s26-smoothed-positive"
+      ]
+    },
+    {
       "id": "problem.predecessor-search",
       "name": "Predecessor Search",
       "kind": "problem",
@@ -7117,6 +8111,24 @@
       "provenance": "official_abstract_curation_v0.5",
       "source_ids": [
         "author-yoshida-conferences"
+      ]
+    },
+    {
+      "id": "problem.privacy-auditing",
+      "name": "Privacy Auditing",
+      "kind": "problem",
+      "areas": [
+        "Property Testing",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Test or quantify evidence that an algorithm violates a formal privacy guarantee.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-focs26"
       ]
     },
     {
@@ -7185,6 +8197,24 @@
       "provenance": "publisher_abstract_curation_v0.5",
       "source_ids": [
         "publisher-private-stationarity-2024"
+      ]
+    },
+    {
+      "id": "problem.property-testing",
+      "name": "Property Testing",
+      "kind": "problem",
+      "areas": [
+        "Property Testing",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Distinguish objects satisfying a property from ones far from it with few oracle queries.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-focs26"
       ]
     },
     {
@@ -7282,6 +8312,24 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "problem.quantum-state-certification",
+      "name": "Quantum State Certification",
+      "kind": "problem",
+      "areas": [
+        "Quantum Computing",
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Test closeness of an unknown quantum state to a specified reference with limited measurements.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
       "id": "problem.quantum-state-discrimination",
       "name": "Quantum State Discrimination",
       "kind": "problem",
@@ -7372,6 +8420,24 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.sat-treewidth",
+      "name": "SAT Parameterized by Treewidth",
+      "kind": "problem",
+      "areas": [
+        "Complexity Theory",
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Solve SAT using a primal graph tree decomposition and its width as parameter.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s26-treewidth-seth"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "problem.satisfiability-modulo-theories",
       "name": "Satisfiability Modulo Theories",
       "kind": "problem",
@@ -7430,6 +8496,41 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.secure-broadcast",
+      "name": "Secure Broadcast",
+      "kind": "problem",
+      "areas": [
+        "Distributed Computing"
+      ],
+      "aliases": [],
+      "definition": "Disseminate a message across a network while preserving a declared security guarantee against an eavesdropper.",
+      "scope_note": "Model and assumptions follow the linked 2026 proceedings abstract, not all uses of the terminology.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_FOCS_2026_primary_abstract"
+    },
+    {
+      "id": "problem.semi-streaming-matching",
+      "name": "Semi-Streaming Matching",
+      "kind": "problem",
+      "areas": [
+        "Streaming Algorithms",
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Approximate maximum graph matching with near-linear space and one or several passes.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s26-stream-matching"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "problem.set-cover",
@@ -7590,6 +8691,40 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.stochastic-probing",
+      "name": "Stochastic Probing",
+      "kind": "problem",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Adaptively probe random-valued items under feasibility constraints with a specified reward objective.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
+    },
+    {
+      "id": "problem.stochastic-submodular-probing",
+      "name": "Stochastic Submodular Probing",
+      "kind": "problem",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Maximize expected submodular value by adaptively probing uncertain items under feasibility constraints.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
+    },
+    {
       "id": "problem.streaming-connectivity",
       "name": "Streaming Connectivity",
       "kind": "problem",
@@ -7678,6 +8813,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.sublinear-graph-coloring",
+      "name": "Sublinear Average-Time Graph Coloring",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Color graphs with sublinear average running time over specified input distributions.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-average-color"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "problem.subset-sum",
@@ -7782,6 +8934,24 @@
       "provenance": "paper_curation_v0.3"
     },
     {
+      "id": "problem.treewidth-maintenance",
+      "name": "Dynamic Treewidth Maintenance",
+      "kind": "problem",
+      "areas": [
+        "Data Structures",
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Maintain treewidth or tree decomposition information under a graph update sequence.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
+    },
+    {
       "id": "problem.triangle-detection",
       "name": "Triangle Detection",
       "kind": "problem",
@@ -7829,6 +8999,24 @@
       ],
       "scope_note": "Sample complexity depends on domain size and specified distance.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "problem.uniformity-tracking",
+      "name": "Uniformity Tracking",
+      "kind": "problem",
+      "areas": [
+        "Property Testing",
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Sequentially test deviation from uniformity with instance-dependent sample requirements.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s25-uniformity-tracking"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "problem.value-oracle-submodular-maximization",
@@ -7930,6 +9118,24 @@
       "provenance": "paper_curation_v0.3"
     },
     {
+      "id": "property.adversarial-robustness",
+      "name": "Adversarial Robustness",
+      "kind": "property",
+      "areas": [
+        "Streaming Algorithms",
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A quantified guarantee against a specified adaptive or adversarial input process, not prediction error.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-robust-stream"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "property.algorithmic-robustness",
       "name": "Algorithmic Robustness",
       "kind": "property",
@@ -7945,6 +9151,24 @@
       "source_ids": [
         "p-dinitz-ski"
       ]
+    },
+    {
+      "id": "property.amortized-update-time",
+      "name": "Amortized Update Time",
+      "kind": "property",
+      "areas": [
+        "Data Structures",
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Aggregate update work divided by number of updates over an arbitrary update sequence.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-dynamic-connect"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "property.approximate-core",
@@ -8298,6 +9522,23 @@
       "reviewed_at": null
     },
     {
+      "id": "property.coreset-size",
+      "name": "Coreset Size",
+      "kind": "property",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Number of representatives required for a query-family-specific epsilon approximation.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-coreset"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "property.degeneracy",
       "name": "Degeneracy",
       "kind": "property",
@@ -8524,6 +9765,23 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "property.epsilon-comatching-index",
+      "name": "ε-Comatching Index",
+      "kind": "property",
+      "areas": [
+        "Computational Geometry"
+      ],
+      "aliases": [],
+      "definition": "An extremal/combinatorial parameter introduced in the planar-metric furthest-neighbor coreset analysis.",
+      "scope_note": "Do not confuse with graph maximum matching; paper-specific epsilon parameter and metric definitions apply.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "primary_arxiv_abstract_2026-11-13",
+      "source_ids": [
+        "paper-f26-coreset"
+      ]
+    },
+    {
       "id": "property.equality-of-opportunity",
       "name": "Equality of Opportunity",
       "kind": "property",
@@ -8712,6 +9970,24 @@
       "reviewed_at": null
     },
     {
+      "id": "property.fpt-approximation-ratio",
+      "name": "Parameterized Approximation Guarantee",
+      "kind": "property",
+      "areas": [
+        "Complexity Theory",
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "An approximation ratio achieved in f(k,epsilon)poly(n) time for a chosen parameter k.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-fpt-modular"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "property.generalization-bound",
       "name": "Generalization Bound",
       "kind": "property",
@@ -8742,6 +10018,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.global-calibration",
+      "name": "Global Calibration",
+      "kind": "property",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Calibration of a predictor across its full prediction-output distribution under a chosen error criterion.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
     },
     {
       "id": "property.global-dp-sensitivity",
@@ -8895,6 +10188,7 @@
       "name": "Instance Optimality",
       "kind": "property",
       "areas": [
+        "Data Structures",
         "Online Algorithms"
       ],
       "aliases": [],
@@ -9040,6 +10334,24 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "property.marginal-calibration",
+      "name": "Marginal Calibration",
+      "kind": "property",
+      "areas": [
+        "Learning Theory",
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Control aggregate forecast calibration error rather than every group-conditioned calibration error.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-multicalibration"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "property.max-min-fairness",
       "name": "Max-Min Fairness",
       "kind": "property",
@@ -9089,6 +10401,24 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "property.memory-query-tradeoff",
+      "name": "Memory-Query Tradeoff",
+      "kind": "property",
+      "areas": [
+        "Data Structures",
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Curve relating memory state size to oracle query complexity under fixed preprocessing assumptions.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-cellprobe"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "property.memory-regret-tradeoff",
       "name": "Memory Regret Tradeoff",
       "kind": "property",
@@ -9102,6 +10432,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.memory-sample-tradeoff",
+      "name": "Memory-Sample Tradeoff",
+      "kind": "property",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Lower or upper bounds relating memory to required sample count for statistical detection.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
     },
     {
       "id": "property.message-complexity",
@@ -9155,6 +10502,41 @@
       "reviewed_at": null
     },
     {
+      "id": "property.multiaccuracy",
+      "name": "Multiaccuracy",
+      "kind": "property",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Forecast residuals are approximately unbiased against every test function from a specified class.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
+    },
+    {
+      "id": "property.multicalibration",
+      "name": "Multicalibration",
+      "kind": "property",
+      "areas": [
+        "Learning Theory",
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Calibration that holds for an explicitly specified class of groups and prediction bins.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-multicalibration"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "property.nash-social-welfare",
       "name": "Nash Social Welfare",
       "kind": "property",
@@ -9185,6 +10567,24 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.node-averaged-round-complexity",
+      "name": "Node-Averaged Round Complexity",
+      "kind": "property",
+      "areas": [
+        "Distributed Computing",
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Average termination round over nodes, rather than the round when the last node finishes.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s25-local-lemma"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "property.noise-stability",
@@ -9251,6 +10651,24 @@
       ],
       "scope_note": "Efficiency alone does not imply fairness.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "property.pass-complexity",
+      "name": "Pass Complexity",
+      "kind": "property",
+      "areas": [
+        "Streaming Algorithms",
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Number of allowed sequential scans over streamed input items.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s26-stream-setcover"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "property.pathwidth",
@@ -9525,6 +10943,40 @@
       ],
       "scope_note": "May be infeasible for indivisible goods.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "property.proximal-regret",
+      "name": "Proximal Regret",
+      "kind": "property",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "An online-learning regret notion based on proximal deviations, intermediate between external and swap regret.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
+      "id": "property.quantum-measurement-adaptivity",
+      "name": "Measurement Adaptivity",
+      "kind": "property",
+      "areas": [
+        "Quantum Computing"
+      ],
+      "aliases": [],
+      "definition": "Allow quantum measurement settings to depend on earlier observed outcomes, affecting copy/query complexity.",
+      "scope_note": "Source-scoped editorial definition; theorem details require reading the STOC 2026 proceedings.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_2026_abstract"
     },
     {
       "id": "property.query-complexity-of-testing",
@@ -9938,6 +11390,24 @@
       "reviewed_at": null
     },
     {
+      "id": "property.streaming-space-complexity",
+      "name": "Streaming Space Complexity",
+      "kind": "property",
+      "areas": [
+        "Streaming Algorithms",
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Bits or words of working memory needed for a data-stream algorithm under its accuracy guarantee.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f25-stream-diameter"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "property.symmetry-breaking",
       "name": "Symmetry Breaking",
       "kind": "property",
@@ -9983,6 +11453,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.time-approximation-tradeoff",
+      "name": "Time-Approximation Tradeoff",
+      "kind": "property",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Quantified relation between approximation factor and runtime dependence on a parameter.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
     },
     {
       "id": "property.tolerant-testability",
@@ -10079,6 +11566,23 @@
       "reviewed_at": null
     },
     {
+      "id": "property.validity-breadth-tradeoff",
+      "name": "Validity-Breadth Tradeoff",
+      "kind": "property",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Tradeoff between producing only valid elements of a target language and covering a large fraction of it.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
+    },
+    {
       "id": "property.vc-dimension",
       "name": "VC Dimension",
       "kind": "property",
@@ -10149,6 +11653,24 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "property.work-depth-complexity",
+      "name": "Work-Depth Complexity",
+      "kind": "property",
+      "areas": [
+        "Distributed Computing",
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Total parallel operations and length of the longest dependency path.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs26"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "property.worst-case-algorithmic-sensitivity",
       "name": "Worst-Case Algorithmic Sensitivity",
       "kind": "property",
@@ -10167,6 +11689,24 @@
       "review_status": "source_checked",
       "reviewed_at": "2026-11-13",
       "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "property.worst-case-update-time",
+      "name": "Worst-Case Update Time",
+      "kind": "property",
+      "areas": [
+        "Data Structures",
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Maximum time taken to process any one dynamic input update in a specified data structure model.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-dynamic-connect"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "property.zero-knowledge-property",
@@ -10537,6 +12077,24 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.blueprint-lower-bound",
+      "name": "Blueprint Lower-Bound Framework",
+      "kind": "technique",
+      "areas": [
+        "Streaming Algorithms",
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Use combinatorial blueprint instances to establish streaming matching lower bounds.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s26-stream-matching"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "technique.chernoff-bound",
       "name": "Chernoff Bound",
       "kind": "technique",
@@ -10582,6 +12140,24 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.coreset",
+      "name": "Coreset",
+      "kind": "technique",
+      "areas": [
+        "Approximation Algorithms",
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A small weighted or unweighted representative subset preserving a fixed family of optimization queries.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-coreset"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "technique.count-min-sketch",
@@ -10680,6 +12256,23 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.directed-path-cover",
+      "name": "Directed Path Cover",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Structural cover of directed graph paths supporting deterministic negative-weight shortest paths.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
       "id": "technique.doubling-trick",
       "name": "Doubling Trick",
       "kind": "technique",
@@ -10761,6 +12354,24 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "technique.expander-decomposition",
+      "name": "Expander Decomposition",
+      "kind": "technique",
+      "areas": [
+        "Approximation Algorithms",
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Partition a graph into highly connected pieces while controlling total inter-part edges.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-dynamic-connect"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "technique.fano-inequality",
       "name": "Fano Inequality",
       "kind": "technique",
@@ -10789,6 +12400,41 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.fpt-approximation-scheme",
+      "name": "FPT Approximation Scheme",
+      "kind": "technique",
+      "areas": [
+        "Approximation Algorithms",
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Approach factor one with f(k,epsilon)poly(n) time for a parameterized problem.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-fpt-modular"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "technique.geometric-low-dimensionality",
+      "name": "Low-Dimensionality Reduction",
+      "kind": "technique",
+      "areas": [
+        "Computational Geometry"
+      ],
+      "aliases": [],
+      "definition": "Exploit restricted intrinsic geometric dimension to design approximation algorithms.",
+      "scope_note": "Low-dimensionality is a geometric restriction, not an FPT parameter by default.",
+      "source_ids": [
+        "conf-focs26"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "2026_conference_title"
     },
     {
       "id": "technique.gibbs-sampling",
@@ -10870,6 +12516,24 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.ideal-proof-system",
+      "name": "Ideal Proof System",
+      "kind": "technique",
+      "areas": [
+        "Complexity Theory",
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Algebraic proof system based on polynomial certificates of unsatisfiability.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
       "id": "technique.information-theoretic-lower-bound",
       "name": "Information-Theoretic Lower Bound",
       "kind": "technique",
@@ -10915,6 +12579,24 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.kernelization",
+      "name": "Kernelization",
+      "kind": "technique",
+      "areas": [
+        "Complexity Theory",
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Preprocess a parameterized instance into an equivalent instance with size bounded by a function of k.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-fpt-modular"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "technique.lagrangian-relaxation",
       "name": "Lagrangian Relaxation",
       "kind": "technique",
@@ -10943,6 +12625,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.leverage-score-sampling",
+      "name": "Leverage Score Sampling",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Sample data rows/columns based on their influence in a target subspace to produce a compact approximation.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
     },
     {
       "id": "technique.limited-independence",
@@ -10994,6 +12693,24 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.local-resampling",
+      "name": "Local Resampling",
+      "kind": "technique",
+      "areas": [
+        "Distributed Computing",
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Resample variables to fix local bad events under dependency and local-lemma assumptions.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s25-local-lemma"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "technique.local-search",
       "name": "Local Search",
       "kind": "technique",
@@ -11028,6 +12745,23 @@
       "review_status": "source_checked",
       "reviewed_at": "2026-11-13",
       "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "technique.lp-sampling",
+      "name": "L_p Sampling",
+      "kind": "technique",
+      "areas": [
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Sample an index from a frequency vector with probability approximately proportional to the p-th power of its magnitude.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
     },
     {
       "id": "technique.martingale-concentration",
@@ -11092,6 +12826,24 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.minimax-reduction",
+      "name": "Minimax Reduction",
+      "kind": "technique",
+      "areas": [
+        "Online Algorithms",
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Convert worst-case algorithmic choices to an appropriate minimax or distributional game.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-posterior"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
       "id": "technique.mirror-descent",
       "name": "Mirror Descent",
       "kind": "technique",
@@ -11105,6 +12857,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.multipass-streaming-lower-bound",
+      "name": "Multi-Pass Streaming Lower Bound",
+      "kind": "technique",
+      "areas": [
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Show that a streaming problem requires a specified amount of space at a given number of passes.",
+      "scope_note": "Source-scoped editorial definition; theorem details require reading the STOC 2026 proceedings.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_2026_abstract"
     },
     {
       "id": "technique.multiplicative-weights-update",
@@ -11139,6 +12908,57 @@
       ],
       "scope_note": "Performance depends on convexity, geometry and step sizes.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "technique.oracle-subset-framework",
+      "name": "Oracle Subset Framework",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Meta-algorithmic language for randomized branching procedures on parameterized subset problems.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
+      "id": "technique.padded-decomposition",
+      "name": "Padded Decomposition",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Metric partition that preserves small neighborhoods inside clusters under quantified guarantees.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
+      "id": "technique.parallel-derandomization",
+      "name": "Parallel Derandomization",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Derandomize parallel computation while retaining low total work and depth.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs26"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "technique.perturb-and-project",
@@ -11188,6 +13008,24 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.posterior-matching",
+      "name": "Posterior Matching",
+      "kind": "technique",
+      "areas": [
+        "Online Algorithms",
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Choose online actions reflecting conditional expectations of optimal offline decisions under a prior.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-f26-posterior"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
     },
     {
       "id": "technique.potential-based-amortization",
@@ -11354,6 +13192,23 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.random-restriction",
+      "name": "Random Restriction",
+      "kind": "technique",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Randomly fix a subset of variables or inputs to simplify a circuit or formula while preserving a hard substructure.",
+      "scope_note": "Source-scoped editorial definition; theorem details require reading the STOC 2026 proceedings.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_2026_abstract"
+    },
+    {
       "id": "technique.random-sampling",
       "name": "Random Sampling",
       "kind": "technique",
@@ -11367,6 +13222,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.randomized-branching",
+      "name": "Randomized Branching",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Parameterized search procedure branching probabilistically among candidate decisions.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
     },
     {
       "id": "technique.randomized-rounding",
@@ -11453,6 +13325,40 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.retroactive-updates",
+      "name": "Retroactive Updates",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Change earlier local choices when new oracle information becomes available.",
+      "scope_note": "Editorial cross-check of this concept against the linked research source. Specific theorem assumptions and parameter conventions are not automatically inherited.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "paper-s26-local-setcover"
+      ],
+      "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "technique.round-elimination",
+      "name": "Round Elimination",
+      "kind": "technique",
+      "areas": [
+        "Distributed Computing"
+      ],
+      "aliases": [],
+      "definition": "Convert a fast distributed protocol for a task into one with fewer rounds for a related task, yielding lower bounds.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
+    },
+    {
       "id": "technique.semidefinite-programming-relaxation",
       "name": "Semidefinite Programming Relaxation",
       "kind": "technique",
@@ -11483,6 +13389,40 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.simplex-method",
+      "name": "Simplex Method",
+      "kind": "technique",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A pivoting algorithm for linear programming moving between basic feasible solutions.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
+    },
+    {
+      "id": "technique.spectral-sparsification",
+      "name": "Spectral Sparsification",
+      "kind": "technique",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Construct a sparse graph approximately preserving Laplacian quadratic forms.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
     },
     {
       "id": "technique.stochastic-gradient-descent",
