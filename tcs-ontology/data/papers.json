@@ -1,0 +1,478 @@
+{
+  "schema_version": "0.3.0",
+  "description": "Evidence-indexed representative papers (not an exhaustive or current bibliographic database); each primitive attachment is editorial classification, not formal theorem extraction.",
+  "items": [
+    {
+      "id": "dinitz-ski",
+      "title": "Ski Rental with Distributional Predictions of Unknown Quality",
+      "year": 2026,
+      "venue": "ICML 2026",
+      "authors": [
+        "Michael Dinitz"
+      ],
+      "status": "published",
+      "source_id": "p-dinitz-ski",
+      "scope_note": "Distributional advice of unknown quality in the classical online ski rental setting.",
+      "primitives": [
+        {
+          "primitive_id": "problem.ski-rental",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "model.distributional-prediction",
+          "role": "model"
+        },
+        {
+          "primitive_id": "assumption.unknown-prediction-quality",
+          "role": "assumption"
+        },
+        {
+          "primitive_id": "property.prediction-robustness",
+          "role": "metric"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "dinitz-jrp",
+      "title": "Learning-Augmented Online Algorithms for Nonclairvoyant Joint Replenishment Problem with Deadlines",
+      "year": 2026,
+      "venue": "ICALP 2026",
+      "authors": [
+        "Michael Dinitz"
+      ],
+      "status": "published",
+      "source_id": "p-dinitz-jrp",
+      "scope_note": "Learning-augmented nonclairvoyant scheduling/replenishment; the model does not reveal all deadline information.",
+      "primitives": [
+        {
+          "primitive_id": "problem.joint-replenishment-with-deadlines",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "model.nonclairvoyant-online-model",
+          "role": "model"
+        },
+        {
+          "primitive_id": "property.prediction-error",
+          "role": "metric"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "dinitz-graphcuts",
+      "title": "Differentially Private Algorithms for Graph Cuts: A Shifting Mechanism Approach and More",
+      "year": 2026,
+      "venue": "SODA 2026",
+      "authors": [
+        "Michael Dinitz"
+      ],
+      "status": "published",
+      "source_id": "p-dinitz-graphcuts",
+      "scope_note": "Differential privacy for specific cut problems. The graph adjacency model and accuracy measures are paper-specific.",
+      "primitives": [
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "problem.minimum-k-cut",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "problem.multiway-cut",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "framework.shifting-mechanism",
+          "role": "technique"
+        },
+        {
+          "primitive_id": "property.additive-error",
+          "role": "metric"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "dinitz-distances",
+      "title": "A Generalized Binary Tree Mechanism for Differentially Private Approximation of All-Pair Distances",
+      "year": 2025,
+      "venue": "NeurIPS 2025",
+      "authors": [
+        "Michael Dinitz"
+      ],
+      "status": "published",
+      "source_id": "p-dinitz-distances",
+      "scope_note": "Private approximation of graph distances, using separator-based methods under a specified weighted-edge privacy model.",
+      "primitives": [
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "problem.all-pairs-shortest-paths",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "framework.generalized-binary-tree-mechanism",
+          "role": "technique"
+        },
+        {
+          "primitive_id": "model.edge-weight-differential-privacy",
+          "role": "model"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "dinitz-densest",
+      "title": "Almost Tight Bounds for Differentially Private Densest Subgraph",
+      "year": 2025,
+      "venue": "SODA 2025",
+      "authors": [
+        "Michael Dinitz"
+      ],
+      "status": "published",
+      "source_id": "p-dinitz-densest",
+      "scope_note": "Densest-subgraph approximation with private graph inputs; privacy adjacency and additive error are critical.",
+      "primitives": [
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "problem.densest-subgraph",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "property.additive-error",
+          "role": "metric"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "dinitz-binary",
+      "title": "Binary Search with Distributional Predictions",
+      "year": 2024,
+      "venue": "NeurIPS 2024",
+      "authors": [
+        "Michael Dinitz"
+      ],
+      "status": "published",
+      "source_id": "p-dinitz-binary",
+      "scope_note": "Binary search using distribution-valued advice with distributional distance and information-theoretic measures.",
+      "primitives": [
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "problem.binary-search",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "model.distributional-prediction",
+          "role": "model"
+        },
+        {
+          "primitive_id": "property.wasserstein-distance",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "property.shannon-entropy",
+          "role": "metric"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "dinitz-portfolio",
+      "title": "Algorithms with Prediction Portfolios",
+      "year": 2022,
+      "venue": "NeurIPS 2022",
+      "authors": [
+        "Michael Dinitz"
+      ],
+      "status": "published",
+      "source_id": "p-dinitz-portfolio",
+      "scope_note": "Combines multiple predictors rather than assuming a single advice source.",
+      "primitives": [
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "model.prediction-portfolio",
+          "role": "model"
+        },
+        {
+          "primitive_id": "framework.learning-augmented-algorithms",
+          "role": "technique"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "dinitz-tree",
+      "title": "Tree Search With Predictions",
+      "year": 2026,
+      "venue": "2026 preprint",
+      "authors": [
+        "Michael Dinitz"
+      ],
+      "status": "preprint",
+      "source_id": "p-dinitz-tree",
+      "scope_note": "Learning-augmented query strategies for searching an unknown target in a tree.",
+      "primitives": [
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "problem.tree-search",
+          "role": "problem"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "yoshida-matching",
+      "title": "Low-Sensitivity Matching via Sampling from Gibbs Distributions",
+      "year": 2026,
+      "venue": "SODA 2026",
+      "authors": [
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "p-yoshida-matching",
+      "scope_note": "Sensitivity of randomized matching algorithms; output-distribution perturbation is not DP query sensitivity.",
+      "primitives": [
+        {
+          "primitive_id": "lens.algorithmic-sensitivity",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "problem.maximum-matching",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "technique.gibbs-sampling",
+          "role": "technique"
+        },
+        {
+          "primitive_id": "property.worst-case-algorithmic-sensitivity",
+          "role": "metric"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "yoshida-lower",
+      "title": "Sensitivity Lower Bounds for Approximation Algorithms",
+      "year": 2026,
+      "venue": "SODA 2026",
+      "authors": [
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "p-yoshida-lower",
+      "scope_note": "Lower-bound constructions for approximation under carefully defined input and output perturbations.",
+      "primitives": [
+        {
+          "primitive_id": "lens.algorithmic-sensitivity",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "problem.maximum-cut",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "task.tight-lower-bound",
+          "role": "task"
+        },
+        {
+          "primitive_id": "property.worst-case-algorithmic-sensitivity",
+          "role": "metric"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "yoshida-geometric",
+      "title": "Average Sensitivity of Geometric Algorithms",
+      "year": 2026,
+      "venue": "ITCS 2026",
+      "authors": [
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "p-yoshida-geometric",
+      "scope_note": "Average output sensitivity for geometric optimization; problem-specific sensitivity definitions matter.",
+      "primitives": [
+        {
+          "primitive_id": "lens.algorithmic-sensitivity",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "problem.art-gallery",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "property.average-algorithmic-sensitivity",
+          "role": "metric"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "yoshida-lipschitz",
+      "title": "Pointwise Lipschitz Continuous Graph Algorithms",
+      "year": 2026,
+      "venue": "2026 conference / earlier preprint",
+      "authors": [
+        "Yuichi Yoshida"
+      ],
+      "status": "preprint",
+      "source_id": "p-yoshida-lipschitz",
+      "scope_note": "Pointwise Lipschitz stability of graph algorithms; mathematical guarantees depend on input/output metrics.",
+      "primitives": [
+        {
+          "primitive_id": "lens.algorithmic-sensitivity",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "property.pointwise-lipschitz-continuity",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "technique.regularized-linear-programming",
+          "role": "technique"
+        },
+        {
+          "primitive_id": "problem.minimum-cut",
+          "role": "problem"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "yoshida-regret",
+      "title": "From Average Sensitivity to Small-Loss Regret Bounds under Random-Order Model",
+      "year": 2026,
+      "venue": "2026 preprint",
+      "authors": [
+        "Yuichi Yoshida"
+      ],
+      "status": "preprint",
+      "source_id": "p-yoshida-regret",
+      "scope_note": "Connects stability of offline approximations to online regret under a random-order assumption.",
+      "primitives": [
+        {
+          "primitive_id": "lens.algorithmic-sensitivity",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "property.average-algorithmic-sensitivity",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "model.random-order-model",
+          "role": "model"
+        },
+        {
+          "primitive_id": "property.regret",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "framework.batch-to-online-transformation",
+          "role": "technique"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "yoshida-voting",
+      "title": "Sensitivity and Differential Privacy in Metric Voting with Distortion below Three",
+      "year": 2026,
+      "venue": "2026 preprint",
+      "authors": [
+        "Yuichi Yoshida"
+      ],
+      "status": "preprint",
+      "source_id": "p-yoshida-voting",
+      "scope_note": "Intersecting privacy and sensitivity constraints in metric voting; distortion convention and privacy adjacency matter.",
+      "primitives": [
+        {
+          "primitive_id": "lens.algorithmic-sensitivity",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "problem.metric-voting",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "property.metric-distortion",
+          "role": "metric"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    },
+    {
+      "id": "yoshida-graph",
+      "title": "Average Sensitivity of Graph Algorithms",
+      "year": 2023,
+      "venue": "SIAM Journal on Computing 2023",
+      "authors": [
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "p-yoshida-graph",
+      "scope_note": "Foundational framework for averaging output sensitivity over graph perturbations.",
+      "primitives": [
+        {
+          "primitive_id": "lens.algorithmic-sensitivity",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "property.average-algorithmic-sensitivity",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "assumption.single-edge-deletion",
+          "role": "assumption"
+        }
+      ],
+      "review_status": "editorial_metadata_checked",
+      "novelty_claim": false
+    }
+  ]
+}
