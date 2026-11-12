@@ -320,6 +320,7 @@
       "name": "k-SUM Hypothesis",
       "kind": "assumption",
       "areas": [
+        "Complexity Theory",
         "Fine-Grained Complexity"
       ],
       "aliases": [],
@@ -755,6 +756,7 @@
       "name": "Treewidth-SETH",
       "kind": "assumption",
       "areas": [
+        "Complexity Theory",
         "Fine-Grained Complexity"
       ],
       "aliases": [],
@@ -3180,6 +3182,7 @@
       "name": "Adversarially Robust Streaming",
       "kind": "lens",
       "areas": [
+        "Streaming Algorithms",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -3237,6 +3240,7 @@
       "name": "Multicalibration Lens",
       "kind": "lens",
       "areas": [
+        "Learning Theory",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -3254,6 +3258,7 @@
       "name": "Coreset Compression Lens",
       "kind": "lens",
       "areas": [
+        "Approximation Algorithms",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -3271,6 +3276,7 @@
       "name": "Derandomization Lens",
       "kind": "lens",
       "areas": [
+        "Randomized Algorithms",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -3308,6 +3314,7 @@
       "name": "Dynamic Maintenance Lens",
       "kind": "lens",
       "areas": [
+        "Data Structures",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -3362,6 +3369,7 @@
       "name": "Instance Optimality Lens",
       "kind": "lens",
       "areas": [
+        "Property Testing",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -3379,6 +3387,7 @@
       "name": "Local Computation Lens",
       "kind": "lens",
       "areas": [
+        "Distributed Computing",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -3453,6 +3462,7 @@
       "name": "Smoothed Analysis Lens",
       "kind": "lens",
       "areas": [
+        "Learning Theory",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -3470,6 +3480,7 @@
       "name": "Space-Time Tradeoff Lens",
       "kind": "lens",
       "areas": [
+        "Data Structures",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -3519,6 +3530,7 @@
       "name": "Adaptive Quantum Measurement",
       "kind": "model",
       "areas": [
+        "Quantum Computing",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -3888,6 +3900,7 @@
       "name": "Decremental Update Model",
       "kind": "model",
       "areas": [
+        "Data Structures",
         "Streaming Algorithms"
       ],
       "aliases": [],
@@ -4204,6 +4217,7 @@
       "name": "Fully Dynamic Update Model",
       "kind": "model",
       "areas": [
+        "Data Structures",
         "Streaming Algorithms"
       ],
       "aliases": [],
@@ -4283,6 +4297,7 @@
       "name": "Incremental Update Model",
       "kind": "model",
       "areas": [
+        "Data Structures",
         "Streaming Algorithms"
       ],
       "aliases": [],
@@ -4928,6 +4943,7 @@
       "name": "Prophet Arrivals",
       "kind": "model",
       "areas": [
+        "Online Algorithms",
         "Streaming Algorithms"
       ],
       "aliases": [],
@@ -6480,6 +6496,7 @@
       "name": "Furthest Neighbor Query",
       "kind": "problem",
       "areas": [
+        "Computational Geometry",
         "Graph Algorithms"
       ],
       "aliases": [],
@@ -6976,6 +6993,7 @@
       "name": "Local Set Cover",
       "kind": "problem",
       "areas": [
+        "Approximation Algorithms",
         "Graph Algorithms"
       ],
       "aliases": [],
@@ -7203,6 +7221,7 @@
       "name": "Streaming Diameter Estimation",
       "kind": "problem",
       "areas": [
+        "Streaming Algorithms",
         "Graph Algorithms"
       ],
       "aliases": [],
@@ -7422,6 +7441,7 @@
       "name": "Min-r-Lin over Z_m",
       "kind": "problem",
       "areas": [
+        "Complexity Theory",
         "Graph Algorithms"
       ],
       "aliases": [],
@@ -7680,6 +7700,7 @@
       "name": "Online Multicalibration",
       "kind": "problem",
       "areas": [
+        "Learning Theory",
         "Graph Algorithms"
       ],
       "aliases": [],
@@ -7778,6 +7799,7 @@
       "name": "Parallel Reachability",
       "kind": "problem",
       "areas": [
+        "Distributed Computing",
         "Graph Algorithms"
       ],
       "aliases": [],
@@ -7889,6 +7911,7 @@
       "name": "Positive-Only Learning",
       "kind": "problem",
       "areas": [
+        "Learning Theory",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -7940,6 +7963,7 @@
       "name": "Privacy Auditing",
       "kind": "problem",
       "areas": [
+        "Property Testing",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -8025,6 +8049,7 @@
       "name": "Property Testing",
       "kind": "problem",
       "areas": [
+        "Property Testing",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -8136,6 +8161,7 @@
       "name": "Quantum State Certification",
       "kind": "problem",
       "areas": [
+        "Quantum Computing",
         "Complexity Theory"
       ],
       "aliases": [],
@@ -8243,6 +8269,7 @@
       "name": "SAT Parameterized by Treewidth",
       "kind": "problem",
       "areas": [
+        "Complexity Theory",
         "Graph Algorithms"
       ],
       "aliases": [],
@@ -8320,6 +8347,7 @@
       "name": "Semi-Streaming Matching",
       "kind": "problem",
       "areas": [
+        "Streaming Algorithms",
         "Graph Algorithms"
       ],
       "aliases": [],
@@ -8738,6 +8766,7 @@
       "name": "Dynamic Treewidth Maintenance",
       "kind": "problem",
       "areas": [
+        "Data Structures",
         "Graph Algorithms"
       ],
       "aliases": [],
@@ -8804,6 +8833,7 @@
       "name": "Uniformity Tracking",
       "kind": "problem",
       "areas": [
+        "Property Testing",
         "Graph Algorithms"
       ],
       "aliases": [],
@@ -8920,6 +8950,7 @@
       "name": "Adversarial Robustness",
       "kind": "property",
       "areas": [
+        "Streaming Algorithms",
         "Approximation Algorithms"
       ],
       "aliases": [],
@@ -8954,6 +8985,7 @@
       "name": "Amortized Update Time",
       "kind": "property",
       "areas": [
+        "Data Structures",
         "Approximation Algorithms"
       ],
       "aliases": [],
@@ -9753,6 +9785,7 @@
       "name": "Parameterized Approximation Guarantee",
       "kind": "property",
       "areas": [
+        "Complexity Theory",
         "Approximation Algorithms"
       ],
       "aliases": [],
@@ -9949,6 +9982,7 @@
       "name": "Instance Optimality",
       "kind": "property",
       "areas": [
+        "Data Structures",
         "Online Algorithms"
       ],
       "aliases": [],
@@ -10098,6 +10132,7 @@
       "name": "Marginal Calibration",
       "kind": "property",
       "areas": [
+        "Learning Theory",
         "Approximation Algorithms"
       ],
       "aliases": [],
@@ -10164,6 +10199,7 @@
       "name": "Memory-Query Tradeoff",
       "kind": "property",
       "areas": [
+        "Data Structures",
         "Approximation Algorithms"
       ],
       "aliases": [],
@@ -10264,6 +10300,7 @@
       "name": "Multicalibration",
       "kind": "property",
       "areas": [
+        "Learning Theory",
         "Approximation Algorithms"
       ],
       "aliases": [],
@@ -10313,6 +10350,7 @@
       "name": "Node-Averaged Round Complexity",
       "kind": "property",
       "areas": [
+        "Distributed Computing",
         "Approximation Algorithms"
       ],
       "aliases": [],
@@ -10396,6 +10434,7 @@
       "name": "Pass Complexity",
       "kind": "property",
       "areas": [
+        "Streaming Algorithms",
         "Approximation Algorithms"
       ],
       "aliases": [],
@@ -11132,6 +11171,7 @@
       "name": "Streaming Space Complexity",
       "kind": "property",
       "areas": [
+        "Streaming Algorithms",
         "Approximation Algorithms"
       ],
       "aliases": [],
@@ -11377,6 +11417,7 @@
       "name": "Work-Depth Complexity",
       "kind": "property",
       "areas": [
+        "Distributed Computing",
         "Approximation Algorithms"
       ],
       "aliases": [],
@@ -11414,6 +11455,7 @@
       "name": "Worst-Case Update Time",
       "kind": "property",
       "areas": [
+        "Data Structures",
         "Approximation Algorithms"
       ],
       "aliases": [],
@@ -11799,6 +11841,7 @@
       "name": "Blueprint Lower-Bound Framework",
       "kind": "technique",
       "areas": [
+        "Streaming Algorithms",
         "Randomized Algorithms"
       ],
       "aliases": [],
@@ -11863,6 +11906,7 @@
       "name": "Coreset",
       "kind": "technique",
       "areas": [
+        "Approximation Algorithms",
         "Randomized Algorithms"
       ],
       "aliases": [],
@@ -12074,6 +12118,7 @@
       "name": "Expander Decomposition",
       "kind": "technique",
       "areas": [
+        "Approximation Algorithms",
         "Randomized Algorithms"
       ],
       "aliases": [],
@@ -12121,6 +12166,7 @@
       "name": "FPT Approximation Scheme",
       "kind": "technique",
       "areas": [
+        "Approximation Algorithms",
         "Randomized Algorithms"
       ],
       "aliases": [],
@@ -12234,6 +12280,7 @@
       "name": "Ideal Proof System",
       "kind": "technique",
       "areas": [
+        "Complexity Theory",
         "Randomized Algorithms"
       ],
       "aliases": [],
@@ -12296,6 +12343,7 @@
       "name": "Kernelization",
       "kind": "technique",
       "areas": [
+        "Complexity Theory",
         "Randomized Algorithms"
       ],
       "aliases": [],
@@ -12392,6 +12440,7 @@
       "name": "Local Resampling",
       "kind": "technique",
       "areas": [
+        "Distributed Computing",
         "Randomized Algorithms"
       ],
       "aliases": [],
@@ -12507,6 +12556,7 @@
       "name": "Minimax Reduction",
       "kind": "technique",
       "areas": [
+        "Online Algorithms",
         "Randomized Algorithms"
       ],
       "aliases": [],
@@ -12690,6 +12740,7 @@
       "name": "Posterior Matching",
       "kind": "technique",
       "areas": [
+        "Online Algorithms",
         "Randomized Algorithms"
       ],
       "aliases": [],
