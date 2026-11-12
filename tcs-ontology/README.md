@@ -175,3 +175,12 @@ The v0.4 baseline contained 649 canonical primitives, 43 editorial papers and 13
 ## 2025–2026 breadth-first curation
 
 Latest campaign: 2025–26 FOCS/STOC program paper metadata and selected STOC abstract checks, adding diverse reusable lenses beyond Prediction and Sensitivity. Each paper record retains title, authors, conference, evidence-level tag and source; the map's graph remains an exact co-occurrence index. See [curation rationale](docs/RESEARCH_DISCOVERY_V06.md).
+
+
+### v0.6 research snapshot (13 November 2026)
+
+- 830 canonical typed primitives (421 editorially source-checked) across 21 areas.
+- 159 curated papers, including 64 conference papers added in the v0.6 breadth campaign; 19 have official abstracts checked in this campaign and 45 remain title/program mapped.
+- 130 separately flagged unverified Crossref title candidates; 280 unique paper titles in combined catalog.
+- 117 sources and 223 paper-primitive attachments added during the breadth campaign.
+- Mathematical topic links are editorial, not verified theorem claims; an empty graph intersection is not proof of an open problem.

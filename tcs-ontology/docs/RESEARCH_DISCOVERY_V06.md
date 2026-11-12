@@ -53,3 +53,8 @@ node --test tests/test_graph.cjs tests/test_graph_corpus.cjs
 \`\`\`
 
 The official publication metadata is linked through \`data/sources.json\`; the concept links can be inspected in \`data/papers.json\`. The v0.5 map quick-start panel now surfaces the new research lenses as selectable nodes and still supports multi-primitive AND search.
+
+
+## Quantitative snapshot and limitations
+
+As of 13 November 2026, the broadened corpus has 830 canonical primitives and 159 editorial paper records, plus 130 unreviewed Crossref title candidates. The v0.6 conference study contributes 64 papers and 223 paper-to-primitive assignments; 19 are annotated from actual abstracts and 45 from official paper titles/programs. Do not use these selective counts as popularity statistics or novelty judgments. Two new carefully sourced notions in the expanded FOCS abstracts are the epsilon-comatching index for coreset analyses and the estimator-corrector-learner streaming framework.
