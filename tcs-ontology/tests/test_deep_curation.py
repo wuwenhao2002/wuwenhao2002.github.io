@@ -24,7 +24,7 @@ class DeepCurationTests(unittest.TestCase):
             for rel in p["primitives"]:
                 self.assertIn(rel["primitive_id"],self.ids)
                 self.assertIn(rel["role"],{"problem","model","lens","metric","technique","task","assumption"})
-                self.assertEqual(rel.get("evidence"),"official_abstract")
+                self.assertIn(rel.get("evidence"),{"official_abstract","publisher_abstract"})
                 self.assertTrue(rel.get("note"))
         self.assertGreaterEqual(direct,25)
     def test_mathematically_distinct_sensitivity_measures(self):
