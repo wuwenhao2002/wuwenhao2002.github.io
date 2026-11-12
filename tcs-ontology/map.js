@@ -117,8 +117,22 @@ function areaGalleries(){
   if(x<-190||x>w+190||y<-190||y>h+190)continue;
   ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fillStyle="rgba(50,92,111,.075)";ctx.fill();ctx.strokeStyle="rgba(134,193,214,.13)";ctx.lineWidth=.8;ctx.stroke();
   if(S.view.scale>.28){
-   ctx.fillStyle="rgba(193,219,233,.70)";ctx.textAlign="center";ctx.font="500 10px IBM Plex Mono,monospace";
-   ctx.fillText(a.name.toUpperCase(),x,y-r-10,190);
+   const labels={
+     "Algorithmic Fairness":"FAIRNESS","Algorithmic Game Theory":"GAME THEORY",
+     "Approximation Algorithms":"APPROXIMATION","Complexity Theory":"COMPLEXITY",
+     "Computational Geometry":"GEOMETRY","Computational Social Choice":"SOCIAL CHOICE",
+     "Cryptography":"CRYPTOGRAPHY","Data Structures":"DATA STRUCTURES",
+     "Distributed Computing":"DISTRIBUTED","Fine-Grained Complexity":"FINE-GRAINED",
+     "Graph Algorithms":"GRAPH ALGORITHMS","Learning Theory":"LEARNING",
+     "Logic and Automata":"AUTOMATA","Mechanism Design":"MECHANISM DESIGN",
+     "Online Algorithms":"ONLINE","Property Testing":"PROPERTY TESTING",
+     "Quantum Computing":"QUANTUM","Randomized Algorithms":"RANDOMIZED",
+     "Scheduling":"SCHEDULING","Streaming Algorithms":"STREAMING",
+     "Information Theory":"INFORMATION"
+   };
+   const short=labels[a.name]||a.name.toUpperCase();
+   ctx.fillStyle="rgba(189,224,225,.78)";ctx.textAlign="center";ctx.font="600 10px IBM Plex Mono,monospace";
+   ctx.fillText(short,x,y-r-11,110);
   }
  }
 }
@@ -183,7 +197,7 @@ function draw(){
   const role=selected?3:related?2:hover?3:n.p.kind==="lens"?1:0;
   const rad=selected?9.8:related?7.3:Math.max(2.4,(n.p.kind==="lens"?5.2:n.p.review_status==="source_checked"?3.4:2.4)*Math.sqrt(S.view.scale));
   ctx.globalAlpha=selected?1:related?1:S.selected.size?.20:searchHit?1:S.term?.14:1;
-  if(role>1||hover){sphere(pt.x,pt.y,rad,selected?"#ffc37f":n.c1,selected?"#fff1bd":n.c2,selected,true);}
+  if(role>1||hover){sphere(pt.x,pt.y,rad,selected?"#ffc37f":related?"#52e4bf":n.c1,selected?"#fff1bd":related?"#d2fff1":n.c2,selected,true);}
   else{ctx.fillStyle=n.p.kind==="lens"?"#f9c796":n.p.review_status==="source_checked"?n.c1:"#597385";ctx.beginPath();ctx.arc(pt.x,pt.y,rad,0,Math.PI*2);ctx.fill();}
   ctx.globalAlpha=1;
   const shouldLabel=selected||hover||searchHit||related&&focus||n.p.kind==="lens"&&!S.selected.size||S.view.scale>1.18&&n.p.review_status==="source_checked";
