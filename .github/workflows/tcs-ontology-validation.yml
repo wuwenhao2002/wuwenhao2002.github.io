@@ -72,7 +72,7 @@ jobs:
             exit 0
           fi
           cd tcs-ontology
-          python3 tools/harvest_papers.py --limit 4000
+          python3 tools/harvest_crossref.py --limit 3500 --rows 180
       - name: Push generated corpus only
         run: |
           if [ ! -f tcs-ontology/data/papers-harvested.json ]; then
