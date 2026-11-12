@@ -48,3 +48,41 @@ jobs:
           node --check tcs-ontology/map.js
           node --check tcs-ontology/map-model.js
           node --test tcs-ontology/tests/test_graph.cjs
+
+  harvest-bibliography:
+    # Only this same-repository development branch may write the generated corpus.
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feat/tcs-ontology-paper-graph'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout the source branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Harvest public DBLP metadata into an explicitly unreviewed corpus
+        run: |
+          if [ -f tcs-ontology/data/papers-harvested.json ]; then
+            echo "Already harvested on this branch; skip repeated external fetch"
+            exit 0
+          fi
+          cd tcs-ontology
+          python3 tools/harvest_papers.py --limit 4000
+      - name: Push generated corpus only
+        run: |
+          if [ ! -f tcs-ontology/data/papers-harvested.json ]; then
+            echo "No generated corpus to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tcs-ontology/data/papers-harvested.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data(papers): import title-inferred DBLP metadata with review flags"
+            git push origin HEAD:${{ github.head_ref }}
+          fi
