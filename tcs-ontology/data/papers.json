@@ -259,6 +259,18 @@
         {
           "primitive_id": "framework.learning-augmented-algorithms",
           "role": "technique"
+        },
+        {
+          "primitive_id": "problem.graph-matching",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
+        },
+        {
+          "primitive_id": "problem.online-scheduling",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
         }
       ],
       "review_status": "editorial_metadata_checked",
@@ -385,6 +397,24 @@
         {
           "primitive_id": "property.average-algorithmic-sensitivity",
           "role": "metric"
+        },
+        {
+          "primitive_id": "problem.convex-hull",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
+        },
+        {
+          "primitive_id": "problem.delaunay-triangulation",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
+        },
+        {
+          "primitive_id": "problem.voronoi-diagram",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
         }
       ],
       "review_status": "editorial_metadata_checked",
@@ -530,6 +560,24 @@
         {
           "primitive_id": "assumption.single-edge-deletion",
           "role": "assumption"
+        },
+        {
+          "primitive_id": "problem.minimum-spanning-forest",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
+        },
+        {
+          "primitive_id": "problem.minimum-cut",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
+        },
+        {
+          "primitive_id": "problem.maximum-matching",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
         }
       ],
       "review_status": "editorial_metadata_checked",
@@ -594,6 +642,24 @@
         {
           "primitive_id": "property.approximation-ratio",
           "role": "metric"
+        },
+        {
+          "primitive_id": "property.spanner-lightness",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
+        },
+        {
+          "primitive_id": "property.spanner-stretch",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
+        },
+        {
+          "primitive_id": "property.fault-budget",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
         }
       ],
       "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
@@ -620,6 +686,12 @@
         {
           "primitive_id": "task.approximation-algorithm",
           "role": "task"
+        },
+        {
+          "primitive_id": "property.spanner-stretch",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
         }
       ],
       "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
@@ -680,6 +752,12 @@
         {
           "primitive_id": "graph_class.bounded-treewidth-graph",
           "role": "model"
+        },
+        {
+          "primitive_id": "property.degree-vector-norm",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
         }
       ],
       "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
@@ -1144,6 +1222,12 @@
         {
           "primitive_id": "property.lipschitz-constant",
           "role": "metric"
+        },
+        {
+          "primitive_id": "graph_class.bounded-treewidth-graph",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
         }
       ],
       "source_url": "https://dblp.org/pid/36/4449.html"
@@ -1174,6 +1258,30 @@
         {
           "primitive_id": "property.solution-stability",
           "role": "metric"
+        },
+        {
+          "primitive_id": "problem.minimum-vertex-cover",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
+        },
+        {
+          "primitive_id": "problem.feedback-vertex-set",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
+        },
+        {
+          "primitive_id": "technique.cycle-sparsification",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
+        },
+        {
+          "primitive_id": "property.lipschitz-constant",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
         }
       ],
       "source_url": "https://dblp.org/pid/36/4449.html"
@@ -1198,8 +1306,10 @@
           "role": "lens"
         },
         {
-          "primitive_id": "property.solution-stability",
-          "role": "metric"
+          "primitive_id": "property.noise-stability",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
         }
       ],
       "source_url": "https://dblp.org/pid/36/4449.html"
@@ -1226,6 +1336,12 @@
         {
           "primitive_id": "model.multi-armed-bandit",
           "role": "model"
+        },
+        {
+          "primitive_id": "property.regret",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
         }
       ],
       "source_url": "https://dblp.org/pid/36/4449.html"
@@ -1278,6 +1394,12 @@
         {
           "primitive_id": "problem.graph-sparsification",
           "role": "problem"
+        },
+        {
+          "primitive_id": "problem.spectral-hypergraph-sparsification",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
         }
       ],
       "source_url": "https://dblp.org/pid/36/4449.html"
@@ -1304,6 +1426,18 @@
         {
           "primitive_id": "property.approximation-ratio",
           "role": "metric"
+        },
+        {
+          "primitive_id": "property.bipartiteness-ratio",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
+        },
+        {
+          "primitive_id": "problem.minimum-uncut",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official abstract corroborates the role under this paper's mathematical assumptions."
         }
       ],
       "source_url": "https://dblp.org/pid/36/4449.html"
@@ -1389,7 +1523,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://arxiv.org/abs/2507.11926",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -1414,7 +1548,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Replicability in episodic reinforcement learning and sample complexity"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-batch-online",
@@ -1427,7 +1562,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://openreview.net/forum?id=B6HSIgvyJ3",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -1458,7 +1593,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Low-sensitivity offline approximations imply error-sensitive online regret bounds"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-graph-lipschitz",
@@ -1471,7 +1607,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://www.computer.org/csdl/proceedings-article/focs/2023/189400a762/1T974ffXw3e",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -1508,7 +1644,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Weighted graph algorithms with provable output Lipschitz stability"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-decisiontree-sensitivity",
@@ -1521,7 +1658,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://openreview.net/forum?id=boik01yhssB",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -1546,7 +1683,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Stable decision tree training under changes in input observations"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-low-degree",
@@ -1562,7 +1700,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://doi.org/10.1137/1.9781611977554.ch31",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -1587,7 +1725,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Distribution-free polynomial testing with a low query budget"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-expander-sublinear",
@@ -1600,7 +1739,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://doi.org/10.1137/1.9781611977554.ch180",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -1625,7 +1764,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Sublinear computation under expansion promises and an adjacency-list oracle"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-euclidean-cluster",
@@ -1638,7 +1778,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://openreview.net/forum?id=VM7u8ecLrZV",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -1669,7 +1809,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Stable Euclidean clustering and consequences for consistent online maintenance"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-knapsack-sensitivity",
@@ -1682,7 +1823,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://doi.org/10.4230/LIPIcs.ESA.2022.75",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -1719,7 +1860,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Knapsack stability under random item deletion and incremental random-order updates"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-downsampling",
@@ -1732,7 +1874,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://doi.org/10.4230/LIPIcs.ICALP.2022.71",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -1763,7 +1905,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: High-dimensional distribution-free learning and testing via downsampling"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-decomposable-sparse",
@@ -1814,7 +1957,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://doi.org/10.1137/1.9781611977073.77",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -1851,7 +1994,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Sensitivity-preserving reductions from dynamic programming problems to maximum-weight chains"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-hypergraph-sparsifier",
@@ -1906,7 +2050,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://doi.org/10.1145/3447548.3467361",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -1931,7 +2075,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Local approximate effective resistance under bounded mixing assumptions"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-cvar-submodular",
@@ -1944,7 +2089,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://doi.org/10.24963/ijcai.2021/411",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -1969,7 +2114,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Online maximization of conditional value-at-risk for stochastic submodular objectives"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-mcsp-lower",
@@ -2062,7 +2208,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://doi.org/10.4230/LIPIcs.ITCS.2021.58",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -2099,7 +2245,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Worst-case output sensitivity bounds for matching under edge or vertex deletion"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-bandits-first-second",
@@ -2114,7 +2261,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://papers.nips.cc/paper/2020/hash/15bb63b28926cd083b15e3b97567bbea-Abstract.html",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -2139,7 +2286,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: First- and second-order bounds for adversarial linear bandit learning"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-local-submod",
@@ -2228,7 +2376,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://doi.org/10.1145/3394486.3403166",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -2253,7 +2401,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Stability of spectral clustering under edge perturbations, related to Laplacian eigenvalues"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-real-linearity",
@@ -2375,7 +2524,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2024.57",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -2400,7 +2549,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Stochastic distance applied to connectivity property testing in CONGEST"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-lip-alloc",
@@ -2413,7 +2563,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://doi.org/10.4230/LIPIcs.ICALP.2024.102",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -2450,7 +2600,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Stable allocations in cooperative optimization games through Lipschitz bounds"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-spreading",
@@ -2463,7 +2614,7 @@
       ],
       "status": "published",
       "source_id": "author-yoshida-conferences",
-      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "url": "https://doi.org/10.4230/LIPIcs.ICALP.2024.112",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -2488,7 +2639,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Dynamic network property testing with a bootstrap-percolation rule"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-yoshida-stable-maxcover",
@@ -2541,7 +2693,7 @@
       ],
       "status": "published",
       "source_id": "author-dinitz-publications",
-      "url": "https://www.cs.jhu.edu/~mdinitz/pub.html",
+      "url": "https://doi.org/10.1007/978-3-030-34405-4_6",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -2566,7 +2718,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Wireless reception capacity, inefficiency at coarse-correlated equilibrium and lower bounds"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-dinitz-mobile-cap",
@@ -2581,7 +2734,7 @@
       ],
       "status": "published",
       "source_id": "author-dinitz-publications",
-      "url": "https://www.cs.jhu.edu/~mdinitz/pub.html",
+      "url": "https://doi.org/10.4230/LIPIcs.DISC.2019.14",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -2606,7 +2759,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Peer-to-peer communication under the mobile telephone model and throughput capacity"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-dinitz-degree-norm-spanner",
@@ -2620,7 +2774,7 @@
       ],
       "status": "published",
       "source_id": "author-dinitz-publications",
-      "url": "https://www.cs.jhu.edu/~mdinitz/pub.html",
+      "url": "https://doi.org/10.4230/LIPIcs.APPROX-RANDOM.2019.11",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -2651,7 +2805,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Spanner optimization measured by norms of graph degrees"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-dinitz-lowdiam-expander",
@@ -2706,7 +2861,7 @@
       ],
       "status": "published",
       "source_id": "author-dinitz-publications",
-      "url": "https://www.cs.jhu.edu/~mdinitz/pub.html",
+      "url": "https://proceedings.mlr.press/v151/babay22a.html",
       "review_status": "editorial_abstract_checked",
       "authors_completeness": "official_or_publisher_listing",
       "provenance": "2026-11-13 official author abstract / publisher source",
@@ -2731,7 +2886,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Edge/vertex interventions under stochastic epidemic diffusion; not bootstrap percolation"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-outside-ml-predictions",
@@ -2776,7 +2932,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Foundational prediction-augmented ski rental and nonclairvoyant scheduling"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-outside-caching-advice",
@@ -2820,7 +2977,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Learning-augmented caching with gracefully degrading robustness"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-outside-online-matching-advice",
@@ -2872,7 +3030,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Learning-augmented matching under adversarial and random arrivals"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-outside-fractional-matching",
@@ -2923,7 +3082,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Fractional online matching with a robustness-consistency Pareto tradeoff"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-outside-euclidean-private-mst",
@@ -2969,7 +3129,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Privacy for Euclidean graph minimum spanning trees with point-distance adjacency"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-outside-private-expander",
@@ -3018,7 +3179,8 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Private graph cut sparsification using expander decomposition and additive error control"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     },
     {
       "id": "verified-outside-continual-densest",
@@ -3061,7 +3223,9 @@
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Continual private densest subgraph with streaming space and subsampling"
         }
-      ]
+      ],
+      "reference_resolution": "paper_direct_verified"
     }
-  ]
+  ],
+  "updated_at": "2026-11-13"
 }
