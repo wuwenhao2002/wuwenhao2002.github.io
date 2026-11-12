@@ -4427,6 +4427,12 @@
           "role": "technique",
           "evidence": "official_title",
           "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.isomorphic-priors",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Isomorphic-priors model explicitly named by FOCS 2026 accepted paper."
         }
       ]
     },
@@ -5793,6 +5799,86 @@
           "role": "task",
           "evidence": "official_title",
           "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "reviewed-stoc-meta-quantum",
+      "title": "A Meta-complexity Characterization of Minimal Quantum Cryptography",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Bruno Cavalar",
+        "Boyang Chen",
+        "Andrea Coladangelo",
+        "Matthew Gray",
+        "Zihan Hu",
+        "Zhengfeng Ji",
+        "Xingjian Li"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "STOC 2026 primary proceedings abstract and author list checked",
+      "scope_note": "Paper concepts verified against official STOC 2026 published abstract. No theorem-level inference beyond the abstract.",
+      "primitives": [
+        {
+          "primitive_id": "lens.meta-complexity",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract supports this paper-to-primitive association."
+        },
+        {
+          "primitive_id": "model.efi-pairs",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract supports this paper-to-primitive association."
+        }
+      ]
+    },
+    {
+      "id": "reviewed-stoc-secure-broadcast",
+      "title": "Sub-linear Secure Broadcast and Applications",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Yuval Gelles",
+        "Ilan Komargodski",
+        "Merav Parter"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "STOC 2026 primary proceedings abstract and author list checked",
+      "scope_note": "Paper concepts verified against official STOC 2026 published abstract. No theorem-level inference beyond the abstract.",
+      "primitives": [
+        {
+          "primitive_id": "lens.secure-distributed-communication",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract supports this paper-to-primitive association."
+        },
+        {
+          "primitive_id": "problem.secure-broadcast",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract supports this paper-to-primitive association."
+        },
+        {
+          "primitive_id": "problem.distributed-minimum-spanning-tree",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract supports this paper-to-primitive association."
+        },
+        {
+          "primitive_id": "property.message-complexity",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract supports this paper-to-primitive association."
         }
       ]
     }

@@ -3401,6 +3401,23 @@
       "provenance": "conference_abstract_seed_v0.6"
     },
     {
+      "id": "lens.meta-complexity",
+      "name": "Meta-Complexity Lens",
+      "kind": "lens",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Study computational hardness of recognizing, proving, or estimating complexity properties of objects themselves.",
+      "scope_note": "Model and assumptions follow the linked 2026 proceedings abstract, not all uses of the terminology.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_FOCS_2026_primary_abstract"
+    },
+    {
       "id": "lens.parameterized-tractability",
       "name": "Parameterized Tractability Lens",
       "kind": "lens",
@@ -3456,6 +3473,23 @@
       "review_status": "source_checked",
       "reviewed_at": "2026-11-13",
       "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "lens.secure-distributed-communication",
+      "name": "Secure Distributed Communication Lens",
+      "kind": "lens",
+      "areas": [
+        "Distributed Computing"
+      ],
+      "aliases": [],
+      "definition": "Design communication protocols preserving confidentiality or integrity despite a specified network eavesdropper or corruption model.",
+      "scope_note": "Model and assumptions follow the linked 2026 proceedings abstract, not all uses of the terminology.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_FOCS_2026_primary_abstract"
     },
     {
       "id": "lens.smoothed-analysis",
@@ -4102,6 +4136,23 @@
       ]
     },
     {
+      "id": "model.efi-pairs",
+      "name": "EFI Pairs",
+      "kind": "model",
+      "areas": [
+        "Cryptography"
+      ],
+      "aliases": [],
+      "definition": "Pairs of quantum state ensembles that are efficiently generable, far apart statistically, but computationally indistinguishable.",
+      "scope_note": "Model and assumptions follow the linked 2026 proceedings abstract, not all uses of the terminology.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_FOCS_2026_primary_abstract"
+    },
+    {
       "id": "model.external-memory-model",
       "name": "External Memory Model",
       "kind": "model",
@@ -4326,6 +4377,23 @@
       ],
       "scope_note": "Contrasts with turnstile updates.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "model.isomorphic-priors",
+      "name": "Isomorphic-Priors Model",
+      "kind": "model",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Algorithmic input model in which one has advance access to information about a graph in the same isomorphism class as the eventual instance.",
+      "scope_note": "Model and assumptions follow the linked 2026 proceedings abstract, not all uses of the terminology.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs26"
+      ],
+      "provenance": "STOC_FOCS_2026_primary_abstract"
     },
     {
       "id": "model.job-shop",
@@ -8341,6 +8409,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.secure-broadcast",
+      "name": "Secure Broadcast",
+      "kind": "problem",
+      "areas": [
+        "Distributed Computing"
+      ],
+      "aliases": [],
+      "definition": "Disseminate a message across a network while preserving a declared security guarantee against an eavesdropper.",
+      "scope_note": "Model and assumptions follow the linked 2026 proceedings abstract, not all uses of the terminology.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_FOCS_2026_primary_abstract"
     },
     {
       "id": "problem.semi-streaming-matching",
