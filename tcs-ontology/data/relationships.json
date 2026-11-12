@@ -1,227 +1,352 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "items": [
     {
       "source": "game.atomic-congestion-game",
       "predicate": "is_a",
       "target": "game.congestion-game",
-      "review_status": "editorial_seed"
+      "review_status": "source_checked",
+      "source_ids": [
+        "rosenthal-doi"
+      ],
+      "note": "Classical finite unweighted congestion game."
     },
     {
       "source": "game.nonatomic-congestion-game",
       "predicate": "is_a",
       "target": "game.congestion-game",
-      "review_status": "editorial_seed"
+      "review_status": "source_checked",
+      "source_ids": [
+        "agt-routing"
+      ],
+      "note": "Umbrella relation; not a Rosenthal finite-player game."
     },
     {
       "source": "game.weighted-congestion-game",
       "predicate": "is_a",
       "target": "game.congestion-game",
-      "review_status": "editorial_seed"
+      "review_status": "source_checked",
+      "source_ids": [
+        "weighted-congestion-2005"
+      ],
+      "note": "Broader congestion-game family; does not inherit pure equilibrium existence."
     },
     {
       "source": "game.network-congestion-game",
       "predicate": "is_a",
       "target": "game.congestion-game",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "game.singleton-congestion-game",
       "predicate": "is_a",
       "target": "game.congestion-game",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "auction.first-price-auction",
       "predicate": "is_a",
       "target": "auction.sealed-bid-auction",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "auction.second-price-auction",
       "predicate": "is_a",
       "target": "auction.sealed-bid-auction",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "auction.simultaneous-first-price-auction",
-      "predicate": "is_a",
+      "predicate": "composed_of",
       "target": "auction.first-price-auction",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "auction.sequential-first-price-auction",
-      "predicate": "is_a",
+      "predicate": "composed_of",
       "target": "auction.first-price-auction",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "graph_class.tree",
       "predicate": "is_a",
       "target": "graph_class.forest",
-      "review_status": "editorial_seed"
+      "review_status": "source_checked",
+      "source_ids": [
+        "graph-diestel"
+      ]
     },
     {
       "source": "graph_class.tree",
       "predicate": "is_a",
       "target": "graph_class.bipartite-graph",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "graph_class.forest",
       "predicate": "is_a",
       "target": "graph_class.bipartite-graph",
-      "review_status": "editorial_seed"
+      "review_status": "source_checked",
+      "source_ids": [
+        "graph-diestel"
+      ]
     },
     {
       "source": "graph_class.series-parallel-graph",
       "predicate": "is_a",
       "target": "graph_class.planar-graph",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "graph_class.cograph",
       "predicate": "is_a",
       "target": "graph_class.perfect-graph",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "graph_class.split-graph",
       "predicate": "is_a",
       "target": "graph_class.chordal-graph",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "graph_class.chordal-graph",
       "predicate": "is_a",
       "target": "graph_class.perfect-graph",
-      "review_status": "editorial_seed"
+      "review_status": "source_checked",
+      "source_ids": [
+        "graph-diestel"
+      ]
     },
     {
       "source": "graph_class.interval-graph",
       "predicate": "is_a",
       "target": "graph_class.chordal-graph",
-      "review_status": "editorial_seed"
+      "review_status": "source_checked",
+      "source_ids": [
+        "graph-diestel"
+      ]
     },
     {
       "source": "graph_class.complete-graph",
       "predicate": "is_a",
       "target": "graph_class.perfect-graph",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "complexity_class.p",
       "predicate": "subset_of",
       "target": "complexity_class.np",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "complexity_class.p",
       "predicate": "subset_of",
       "target": "complexity_class.pspace",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "complexity_class.np",
       "predicate": "subset_of",
       "target": "complexity_class.pspace",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "complexity_class.pspace",
       "predicate": "subset_of",
       "target": "complexity_class.exp",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "complexity_class.rp",
       "predicate": "subset_of",
       "target": "complexity_class.bpp",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "complexity_class.zpp",
       "predicate": "subset_of",
       "target": "complexity_class.rp",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "complexity_class.l",
       "predicate": "subset_of",
       "target": "complexity_class.nl",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "complexity_class.nl",
       "predicate": "subset_of",
       "target": "complexity_class.p",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "complexity_class.bpp",
       "predicate": "subset_of",
       "target": "complexity_class.pspace",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "complexity_class.fpt",
       "predicate": "subset_of",
       "target": "complexity_class.xp",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
-      "source": "game.congestion-game",
+      "source": "game.atomic-congestion-game",
       "predicate": "has_relevant_solution_concept",
       "target": "equilibrium.pure-nash-equilibrium",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "game.nonatomic-congestion-game",
       "predicate": "has_relevant_solution_concept",
       "target": "equilibrium.wardrop-equilibrium",
-      "review_status": "editorial_seed"
+      "review_status": "source_checked",
+      "source_ids": [
+        "agt-routing"
+      ]
     },
     {
       "source": "game.mean-field-game",
       "predicate": "has_relevant_solution_concept",
       "target": "equilibrium.mean-field-equilibrium",
-      "review_status": "editorial_seed"
+      "review_status": "source_checked",
+      "source_ids": [
+        "mean-field-2007"
+      ]
     },
     {
       "source": "auction.first-price-auction",
       "predicate": "has_relevant_solution_concept",
       "target": "equilibrium.bayesian-nash-equilibrium",
-      "review_status": "editorial_seed"
+      "review_status": "source_checked",
+      "source_ids": [
+        "auctions-lecture"
+      ]
     },
     {
       "source": "property.price-of-anarchy",
       "predicate": "often_analyzed_by",
       "target": "framework.smoothness-framework",
-      "review_status": "editorial_seed"
+      "review_status": "source_checked",
+      "source_ids": [
+        "agt-roughgarden"
+      ]
     },
     {
       "source": "technique.randomized-rounding",
       "predicate": "often_uses",
       "target": "technique.linear-programming-relaxation",
-      "review_status": "editorial_seed"
+      "review_status": "source_checked",
+      "source_ids": [
+        "approx-stanford"
+      ]
     },
     {
       "source": "problem.minimum-vertex-cover",
       "predicate": "studied_on",
       "target": "graph_class.bipartite-graph",
-      "review_status": "editorial_seed"
+      "review_status": "source_checked",
+      "source_ids": [
+        "graph-diestel"
+      ]
     },
     {
       "source": "problem.graph-coloring",
       "predicate": "studied_on",
       "target": "graph_class.planar-graph",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
     },
     {
       "source": "model.local-model",
       "predicate": "studies",
       "target": "problem.distributed-maximal-independent-set",
-      "review_status": "editorial_seed"
+      "review_status": "editorial_seed",
+      "source_ids": []
+    },
+    {
+      "source": "game.atomic-congestion-game",
+      "predicate": "is_a",
+      "target": "game.potential-game",
+      "review_status": "source_checked",
+      "source_ids": [
+        "rosenthal-doi"
+      ],
+      "note": "Unweighted finite atomic Rosenthal congestion games admit an exact potential."
+    },
+    {
+      "source": "model.congest-model",
+      "predicate": "is_a",
+      "target": "model.local-model",
+      "review_status": "source_checked",
+      "source_ids": [
+        "distributed-suomela"
+      ],
+      "note": "CONGEST has a stricter per-edge bandwidth constraint than LOCAL."
+    },
+    {
+      "source": "model.random-order-model",
+      "predicate": "related_to",
+      "target": "model.secretary-model",
+      "review_status": "source_checked",
+      "source_ids": [
+        "secretaries-prophets"
+      ],
+      "note": "Secretary model imposes a random-order assumption and online irrevocable decisions."
+    },
+    {
+      "source": "problem.distributed-maximal-independent-set",
+      "predicate": "studied_on",
+      "target": "graph_class.bounded-degree-graph",
+      "review_status": "source_checked",
+      "source_ids": [
+        "distributed-suomela"
+      ]
+    },
+    {
+      "source": "model.insertion-only-stream",
+      "predicate": "related_to",
+      "target": "model.turnstile-stream",
+      "review_status": "source_checked",
+      "source_ids": [
+        "stream-cormode"
+      ]
     }
-  ]
+  ],
+  "predicates": {
+    "is_a": "subtype (requires same family of models; do not inherit unquantified theorems)",
+    "subset_of": "class inclusion",
+    "composed_of": "mechanism composition not subtype",
+    "related_to": "nonlogical association",
+    "has_relevant_solution_concept": "often used concept (not universal existence)",
+    "often_analyzed_by": "methodological link",
+    "often_uses": "methodological link",
+    "studied_on": "context",
+    "studies": "model/problem usage"
+  }
 }

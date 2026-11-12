@@ -1,12 +1,12 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "disclaimer": "Generated combinations are question candidates, not verified well-posed problems, novel results, or open problems.",
   "items": [
     {
       "id": "equilibrium-efficiency",
       "title": "Equilibrium efficiency",
-      "description": "Combine a game or auction with an inefficiency metric and equilibrium concept.",
-      "template": "{metric} of {system} under {equilibrium}",
+      "description": "Constrain game/auction, equilibrium concept and cost/welfare objective; verify assumptions and cited literature.",
+      "template": "{metric} of {system} under {equilibrium}, measuring {objective}",
       "slots": [
         {
           "key": "metric",
@@ -30,8 +30,42 @@
           "kinds": [
             "equilibrium"
           ]
+        },
+        {
+          "key": "objective",
+          "label": "Welfare or cost objective",
+          "ids": [
+            "objective.social-welfare",
+            "objective.total-cost"
+          ]
         }
-      ]
+      ],
+      "default_review_filter": "source_checked",
+      "compatibility": {
+        "equilibrium_slot": "equilibrium",
+        "system_slot": "system",
+        "use_explicit_compatible_equilibria": true,
+        "unlisted_behavior": "unreviewed",
+        "deny": [
+          {
+            "system": "game.weighted-congestion-game",
+            "equilibrium": "equilibrium.pure-nash-equilibrium",
+            "reason": "Pure Nash equilibria need not exist for weighted congestion games.",
+            "source_ids": [
+              "weighted-congestion-2005"
+            ]
+          }
+        ],
+        "objective_by_system_kind": {
+          "auction": [
+            "objective.social-welfare"
+          ],
+          "game": [
+            "objective.total-cost"
+          ]
+        }
+      },
+      "risk_note": "The template is only syntactically typed; validate assumptions, mathematical well-posedness and novelty separately."
     },
     {
       "id": "mechanism-properties",
@@ -67,7 +101,9 @@
             "Mechanism Design"
           ]
         }
-      ]
+      ],
+      "default_review_filter": "source_checked",
+      "risk_note": "The template is only syntactically typed; validate assumptions, mathematical well-posedness and novelty separately."
     },
     {
       "id": "graph-problem-classes",
@@ -102,7 +138,9 @@
             "graph_class"
           ]
         }
-      ]
+      ],
+      "default_review_filter": "source_checked",
+      "risk_note": "The template is only syntactically typed; validate assumptions, mathematical well-posedness and novelty separately."
     },
     {
       "id": "online-variations",
@@ -139,7 +177,9 @@
             "Online Algorithms"
           ]
         }
-      ]
+      ],
+      "default_review_filter": "source_checked",
+      "risk_note": "The template is only syntactically typed; validate assumptions, mathematical well-posedness and novelty separately."
     },
     {
       "id": "distributed-complexity",
@@ -176,7 +216,9 @@
             "Distributed Computing"
           ]
         }
-      ]
+      ],
+      "default_review_filter": "source_checked",
+      "risk_note": "The template is only syntactically typed; validate assumptions, mathematical well-posedness and novelty separately."
     },
     {
       "id": "learning-bounds",
@@ -213,7 +255,9 @@
             "Learning Theory"
           ]
         }
-      ]
+      ],
+      "default_review_filter": "source_checked",
+      "risk_note": "The template is only syntactically typed; validate assumptions, mathematical well-posedness and novelty separately."
     },
     {
       "id": "scheduling-variations",
@@ -250,7 +294,9 @@
             "Scheduling"
           ]
         }
-      ]
+      ],
+      "default_review_filter": "source_checked",
+      "risk_note": "The template is only syntactically typed; validate assumptions, mathematical well-posedness and novelty separately."
     }
   ]
 }

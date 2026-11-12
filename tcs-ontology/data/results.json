@@ -1,0 +1,135 @@
+{
+  "schema_version": "0.2.0",
+  "disclaimer": "Editorially source-checked statements are not independently formally verified theorem databases; always inspect original source and exact premises.",
+  "items": [
+    {
+      "id": "rosenthal-pne",
+      "status": "source_checked_statement",
+      "title": "Rosenthal potential and pure equilibrium",
+      "subject_ids": [
+        "game.atomic-congestion-game",
+        "game.potential-game",
+        "equilibrium.pure-nash-equilibrium"
+      ],
+      "statement": "Every finite unweighted congestion game in the Rosenthal model has an exact potential and at least one pure Nash equilibrium.",
+      "assumptions": [
+        "Finite unweighted players",
+        "Each strategy is a subset of resources",
+        "Resource delay is a function of the number of users"
+      ],
+      "source_ids": [
+        "rosenthal-doi",
+        "potential-1996"
+      ],
+      "scope_note": "Does not apply to all weighted congestion games; does not bound Price of Anarchy.",
+      "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "weighted-no-general-pne",
+      "status": "source_checked_statement",
+      "title": "Pure equilibria may fail in weighted congestion",
+      "subject_ids": [
+        "game.weighted-congestion-game",
+        "equilibrium.pure-nash-equilibrium"
+      ],
+      "statement": "There are weighted congestion games, including weighted network games, that do not admit a pure Nash equilibrium.",
+      "assumptions": [
+        "Heterogeneous player weights",
+        "Unrestricted weighted congestion instances"
+      ],
+      "source_ids": [
+        "weighted-congestion-2005"
+      ],
+      "scope_note": "Existence can be recovered under special assumptions, including some linear delay settings; this is a counterexample to universal existence.",
+      "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "finite-affine-poa",
+      "status": "source_checked_statement",
+      "title": "PoA for finite unweighted linear-latency congestion games",
+      "subject_ids": [
+        "game.atomic-congestion-game",
+        "property.price-of-anarchy",
+        "equilibrium.pure-nash-equilibrium"
+      ],
+      "statement": "For finite congestion games with nonnegative linear latency functions and social cost defined as the sum of players' costs, the tight pure price of anarchy bound is 5/2.",
+      "assumptions": [
+        "Finite unweighted congestion game",
+        "Nonnegative linear (affine) latency functions",
+        "Pure Nash equilibrium",
+        "Sum of player costs as objective"
+      ],
+      "source_ids": [
+        "finite-poa-2005"
+      ],
+      "scope_note": "Not a claim for arbitrary latency functions, weighted games, or all definitions of social cost.",
+      "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "first-price-bne-example",
+      "status": "source_checked_statement",
+      "title": "Illustrative Bayesian equilibrium in first-price auction",
+      "subject_ids": [
+        "auction.first-price-auction",
+        "equilibrium.bayesian-nash-equilibrium",
+        "assumption.independent-private-values"
+      ],
+      "statement": "For n risk-neutral bidders with i.i.d. values uniform on [0,1] in a standard single-item first-price auction, bidding (n−1)/n times private value is a symmetric Bayesian Nash equilibrium.",
+      "assumptions": [
+        "Single item",
+        "n symmetric bidders",
+        "Independent uniform [0,1] private values",
+        "Risk neutrality",
+        "Standard sealed bids"
+      ],
+      "source_ids": [
+        "auctions-lecture"
+      ],
+      "scope_note": "An illustrative equilibrium formula, not a universal PoA guarantee.",
+      "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "second-price-truthful",
+      "status": "source_checked_statement",
+      "title": "Truthful bidding is weakly dominant in standard second-price auction",
+      "subject_ids": [
+        "auction.second-price-auction",
+        "property.truthfulness",
+        "property.incentive-compatibility"
+      ],
+      "statement": "In a standard single-item second-price auction with private values and quasilinear payoff, bidding one's true value is a weakly dominant strategy.",
+      "assumptions": [
+        "Single item",
+        "Private values",
+        "Quasilinear utility",
+        "No allocation externalities",
+        "Standard winner and payment rules"
+      ],
+      "source_ids": [
+        "auctions-lecture"
+      ],
+      "scope_note": "Does not claim truthful equilibria are the only Nash equilibria.",
+      "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "efx-distinction",
+      "status": "source_checked_statement",
+      "title": "EFX is distinct from EFX0",
+      "subject_ids": [
+        "property.efx",
+        "property.ef1"
+      ],
+      "statement": "In the standard indivisible-goods setting, EFX checks removal of any positively valued item, while a stronger EFX0 variant also checks items of zero value.",
+      "assumptions": [
+        "Indivisible goods",
+        "Nonnegative valuations",
+        "Standard no-externality allocation model"
+      ],
+      "source_ids": [
+        "fair-division-2022"
+      ],
+      "scope_note": "Definitions may differ when chores, mixed items, or externalities are allowed.",
+      "reviewed_at": "2026-11-12"
+    }
+  ]
+}
