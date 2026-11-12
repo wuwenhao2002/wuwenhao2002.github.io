@@ -538,6 +538,23 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "assumption.reference-distribution",
+      "name": "Reference Distribution",
+      "kind": "assumption",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "A reference probability distribution used to express smoothness or compare a target distribution.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "paper-s26-smoothed-positive"
+      ]
+    },
+    {
       "id": "assumption.regular-value-distribution",
       "name": "Regular Value Distribution",
       "kind": "assumption",
@@ -1684,6 +1701,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "equilibrium.proximal-correlated-equilibrium",
+      "name": "Proximal Correlated Equilibrium",
+      "kind": "equilibrium",
+      "areas": [
+        "Algorithmic Game Theory"
+      ],
+      "aliases": [],
+      "definition": "A correlated game outcome satisfying a family of proximal-deviation incentive constraints.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
     },
     {
       "id": "equilibrium.pure-nash-equilibrium",
@@ -3464,6 +3498,23 @@
       "provenance": "conference_abstract_seed_v0.6"
     },
     {
+      "id": "model.adaptive-quantum-measurement",
+      "name": "Adaptive Quantum Measurement",
+      "kind": "model",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Subsequent measurements are selected based on previous observed outcomes.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
       "id": "model.add-remove-adjacency",
       "name": "Add-Remove Dataset Adjacency",
       "kind": "model",
@@ -4312,6 +4363,23 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "model.local-node-differential-privacy",
+      "name": "Local Node Differential Privacy",
+      "kind": "model",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Privacy model protecting graph-node data under local randomization and defined adjacency.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-focs26"
+      ]
+    },
+    {
       "id": "model.mapreduce-model",
       "name": "MapReduce Model",
       "kind": "model",
@@ -4443,6 +4511,23 @@
       "review_status": "source_checked",
       "reviewed_at": "2026-11-13",
       "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "model.nonadaptive-preprocessing",
+      "name": "Non-Adaptive Preprocessing",
+      "kind": "model",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Offline advice or preprocessing with online queries not adapting to the challenge input.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
     },
     {
       "id": "model.nonclairvoyant-online-model",
@@ -5877,6 +5962,23 @@
       "provenance": "paper_curation_v0.3"
     },
     {
+      "id": "problem.discrete-logarithm",
+      "name": "Discrete Logarithm",
+      "kind": "problem",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Given group generator g and element h, find x such that g raised to x equals h.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
       "id": "problem.distinct-elements-estimation",
       "name": "Distinct Elements Estimation",
       "kind": "problem",
@@ -7295,6 +7397,23 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.negative-weight-shortest-path",
+      "name": "Negative-Weight Shortest Path",
+      "kind": "problem",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Find shortest paths in weighted directed graphs that may contain negative edges, detecting negative cycles when required.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
       "id": "problem.network-capacity",
       "name": "Network Capacity",
       "kind": "problem",
@@ -7630,6 +7749,40 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.planted-structure-detection",
+      "name": "Planted Structure Detection",
+      "kind": "problem",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Detect a hidden clique, biclique, or sparse signal inside a random background.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
+      "id": "problem.positive-only-learning",
+      "name": "Positive-Only Learning",
+      "kind": "problem",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Learning from positive labeled examples without ordinary negative examples under specified distribution assumptions.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "paper-s26-smoothed-positive"
+      ]
+    },
+    {
       "id": "problem.predecessor-search",
       "name": "Predecessor Search",
       "kind": "problem",
@@ -7661,6 +7814,23 @@
       "provenance": "official_abstract_curation_v0.5",
       "source_ids": [
         "author-yoshida-conferences"
+      ]
+    },
+    {
+      "id": "problem.privacy-auditing",
+      "name": "Privacy Auditing",
+      "kind": "problem",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Test or quantify evidence that an algorithm violates a formal privacy guarantee.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-focs26"
       ]
     },
     {
@@ -7729,6 +7899,23 @@
       "provenance": "publisher_abstract_curation_v0.5",
       "source_ids": [
         "publisher-private-stationarity-2024"
+      ]
+    },
+    {
+      "id": "problem.property-testing",
+      "name": "Property Testing",
+      "kind": "problem",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Distinguish objects satisfying a property from ones far from it with few oracle queries.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-focs26"
       ]
     },
     {
@@ -7824,6 +8011,23 @@
       ],
       "scope_note": "Hamiltonian access, simulation time and error tolerance are essential.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "problem.quantum-state-certification",
+      "name": "Quantum State Certification",
+      "kind": "problem",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Test closeness of an unknown quantum state to a specified reference with limited measurements.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
     },
     {
       "id": "problem.quantum-state-discrimination",
@@ -9818,6 +10022,23 @@
       "reviewed_at": null
     },
     {
+      "id": "property.memory-sample-tradeoff",
+      "name": "Memory-Sample Tradeoff",
+      "kind": "property",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Lower or upper bounds relating memory to required sample count for statistical detection.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
       "id": "property.message-complexity",
       "name": "Message Complexity",
       "kind": "property",
@@ -10290,6 +10511,23 @@
       ],
       "scope_note": "May be infeasible for indivisible goods.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "property.proximal-regret",
+      "name": "Proximal Regret",
+      "kind": "property",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "An online-learning regret notion based on proximal deviations, intermediate between external and swap regret.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
     },
     {
       "id": "property.query-complexity-of-testing",
@@ -10765,6 +11003,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.time-approximation-tradeoff",
+      "name": "Time-Approximation Tradeoff",
+      "kind": "property",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Quantified relation between approximation factor and runtime dependence on a parameter.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
     },
     {
       "id": "property.tolerant-testability",
@@ -11530,6 +11785,23 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.directed-path-cover",
+      "name": "Directed Path Cover",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Structural cover of directed graph paths supporting deterministic negative-weight shortest paths.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
       "id": "technique.doubling-trick",
       "name": "Doubling Trick",
       "kind": "technique",
@@ -11752,6 +12024,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.ideal-proof-system",
+      "name": "Ideal Proof System",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Algebraic proof system based on polynomial certificates of unsatisfiability.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
     },
     {
       "id": "technique.information-theoretic-lower-bound",
@@ -12076,6 +12365,40 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "technique.oracle-subset-framework",
+      "name": "Oracle Subset Framework",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Meta-algorithmic language for randomized branching procedures on parameterized subset problems.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
+      "id": "technique.padded-decomposition",
+      "name": "Padded Decomposition",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Metric partition that preserves small neighborhoods inside clusters under quantified guarantees.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
+    },
+    {
       "id": "technique.parallel-derandomization",
       "name": "Parallel Derandomization",
       "kind": "technique",
@@ -12336,6 +12659,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.randomized-branching",
+      "name": "Randomized Branching",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Parameterized search procedure branching probabilistically among candidate decisions.",
+      "scope_note": "Editorially checked against official 2026 conference abstract, not a claim about every theorem or mathematical model with this label.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "STOC_2026_official_abstract",
+      "source_ids": [
+        "conf-stoc26"
+      ]
     },
     {
       "id": "technique.randomized-rounding",
