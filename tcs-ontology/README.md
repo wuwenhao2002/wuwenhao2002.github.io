@@ -4,11 +4,11 @@
 
 [Open the interactive atlas](https://wuwenhao2002.github.io/tcs-ontology/) · [Open the floating primitive map](https://wuwenhao2002.github.io/tcs-ontology/map.html) · [GitHub source directory](https://github.com/wuwenhao2002/wuwenhao2002.github.io/tree/main/tcs-ontology)
 
-> **Status: versioned, partially editorially source-checked seed (v0.5).** The catalog is *not comprehensive* or expert-verified. Generated combinations are candidate research directions, **not certified open problems, verified mathematical questions, or evidence of novelty**.
+> **Status: versioned, partially editorially source-checked seed (v0.6).** The catalog is *not comprehensive* or expert-verified. Generated combinations are candidate research directions, **not certified open problems, verified mathematical questions, or evidence of novelty**.
 
 ## What it does
 
-**v0.5:** paper-driven AND-filter research graph with multi-selection, verified-vs-unreviewed paper filters, and bibliography export. See [docs/PAPER_GRAPH.md](docs/PAPER_GRAPH.md).
+**v0.6:** paper-driven AND-filter research graph with multi-selection, verified-vs-unreviewed paper filters, and bibliography export. See [docs/PAPER_GRAPH.md](docs/PAPER_GRAPH.md).
 
 **v0.3:** interactive [Primitive Universe](./map.html), structured paper-primitive role indexing, and research lenses (prediction, privacy, sensitivity, stability). See [docs/PAPER_COMBINATIONS.md](docs/PAPER_COMBINATIONS.md) for the curated paper sample and its limitations.
 
@@ -165,8 +165,13 @@ These are inspiration / future ingestion sources, **not** assumed sources for ea
 Currently located inside the existing `wuwenhao2002/wuwenhao2002.github.io` site repository, under the isolated `tcs-ontology/` folder, because the connected GitHub integration does not expose a repository-creation operation. A standalone repository can be created later and this directory moved intact. The existing website root files have not been modified.
 
 
-### Paper-driven Graph (v0.5)
+### Paper-driven Graph (v0.6)
 
 The map now uses **only papers as edges**. Click several primitives to take the AND-intersection of their paper membership sets; mint-highlighted nodes co-occur in at least one of those papers. The right bibliography distinguishes manually mapped scholarly papers from title-derived, explicitly unreviewed Crossref metadata. No trend charts, novelty predictions, or semantic-similarity claims are calculated.
 
-The v0.4 baseline contained 649 canonical primitives, 43 editorial papers and 130 conservatively screened title-inferred papers. The v0.5 snapshot adds a substantial official-abstract-checked set; regenerate current counts from the JSON source or `python3 tools/ontology.py quality`. Regenerate these counts from JSON after later updates; they are not completeness claims.
+The v0.4 baseline contained 649 canonical primitives, 43 editorial papers and 130 conservatively screened title-inferred papers. The v0.6 snapshot adds a substantial official-abstract-checked set; regenerate current counts from the JSON source or `python3 tools/ontology.py quality`. Regenerate these counts from JSON after later updates; they are not completeness claims.
+
+
+## 2025–2026 breadth-first curation
+
+Latest campaign: 2025–26 FOCS/STOC program paper metadata and selected STOC abstract checks, adding diverse reusable lenses beyond Prediction and Sensitivity. Each paper record retains title, authors, conference, evidence-level tag and source; the map's graph remains an exact co-occurrence index. See [curation rationale](docs/RESEARCH_DISCOVERY_V06.md).
