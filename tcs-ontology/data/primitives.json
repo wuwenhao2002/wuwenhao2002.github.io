@@ -5739,6 +5739,23 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.bin-packing",
+      "name": "Bin Packing",
+      "kind": "problem",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Pack items into as few fixed-capacity bins as possible.",
+      "scope_note": "Offline bin packing differs from online bin packing.",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "2026_conference_title"
+    },
+    {
       "id": "problem.binary-search",
       "name": "Binary Search",
       "kind": "problem",
@@ -12115,6 +12132,23 @@
         "paper-f26-fpt-modular"
       ],
       "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "technique.geometric-low-dimensionality",
+      "name": "Low-Dimensionality Reduction",
+      "kind": "technique",
+      "areas": [
+        "Computational Geometry"
+      ],
+      "aliases": [],
+      "definition": "Exploit restricted intrinsic geometric dimension to design approximation algorithms.",
+      "scope_note": "Low-dimensionality is a geometric restriction, not an FPT parameter by default.",
+      "source_ids": [
+        "conf-focs26"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "2026_conference_title"
     },
     {
       "id": "technique.gibbs-sampling",

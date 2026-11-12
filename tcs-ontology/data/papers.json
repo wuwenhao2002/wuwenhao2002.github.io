@@ -4273,12 +4273,6 @@
           "role": "problem",
           "evidence": "official_title",
           "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
-        },
-        {
-          "primitive_id": "property.streaming-space-complexity",
-          "role": "metric",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
         }
       ]
     },
@@ -4348,16 +4342,16 @@
           "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
         },
         {
-          "primitive_id": "problem.graph-property-testing",
-          "role": "problem",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
-        },
-        {
           "primitive_id": "model.distribution-testing-model",
           "role": "model",
           "evidence": "official_title",
           "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.property-testing",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "More precise topic inference based on conference title or proceedings abstract."
         }
       ]
     },
@@ -4393,10 +4387,10 @@
           "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
         },
         {
-          "primitive_id": "model.local-edge-differential-privacy",
+          "primitive_id": "model.local-node-differential-privacy",
           "role": "model",
           "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "note": "More precise topic inference based on conference title or proceedings abstract."
         }
       ]
     },
@@ -4431,12 +4425,6 @@
         {
           "primitive_id": "framework.fine-grained-complexity",
           "role": "technique",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
-        },
-        {
-          "primitive_id": "problem.graph-isomorphism",
-          "role": "problem",
           "evidence": "official_title",
           "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
         }
@@ -4511,10 +4499,10 @@
           "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
         },
         {
-          "primitive_id": "lens.parameterized-tractability",
-          "role": "lens",
+          "primitive_id": "technique.geometric-low-dimensionality",
+          "role": "technique",
           "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "note": "More precise topic inference based on conference title or proceedings abstract."
         }
       ]
     },
@@ -4545,12 +4533,6 @@
         {
           "primitive_id": "technique.primal-dual-method",
           "role": "technique",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
-        },
-        {
-          "primitive_id": "graph_class.complete-graph",
-          "role": "model",
           "evidence": "official_title",
           "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
         }
@@ -4625,10 +4607,10 @@
           "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
         },
         {
-          "primitive_id": "model.private-learning",
-          "role": "model",
+          "primitive_id": "problem.privacy-auditing",
+          "role": "problem",
           "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "note": "More precise topic inference based on conference title or proceedings abstract."
         }
       ]
     },
@@ -5105,12 +5087,6 @@
           "role": "model",
           "evidence": "official_abstract",
           "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
-        },
-        {
-          "primitive_id": "game.bayesian-game",
-          "role": "model",
-          "evidence": "official_abstract",
-          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
         }
       ]
     },
@@ -5172,12 +5148,6 @@
       "scope_note": "The paper's official abstract connects these research concepts; detailed theorem assumptions are not reproduced in this ontology.",
       "primitives": [
         {
-          "primitive_id": "model.semi-streaming",
-          "role": "model",
-          "evidence": "official_abstract",
-          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
-        },
-        {
           "primitive_id": "property.streaming-space-complexity",
           "role": "metric",
           "evidence": "official_abstract",
@@ -5188,6 +5158,12 @@
           "role": "task",
           "evidence": "official_abstract",
           "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "model.data-stream-model",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "More precise topic inference based on conference title or proceedings abstract."
         }
       ]
     },
@@ -5228,16 +5204,16 @@
           "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
         },
         {
-          "primitive_id": "problem.online-bin-packing",
+          "primitive_id": "problem.minimum-makespan-scheduling",
           "role": "problem",
           "evidence": "official_abstract",
           "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
         },
         {
-          "primitive_id": "problem.minimum-makespan-scheduling",
+          "primitive_id": "problem.bin-packing",
           "role": "problem",
-          "evidence": "official_abstract",
-          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+          "evidence": "official_title",
+          "note": "More precise topic inference based on conference title or proceedings abstract."
         }
       ]
     },
@@ -5711,12 +5687,6 @@
           "role": "lens",
           "evidence": "official_title",
           "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
-        },
-        {
-          "primitive_id": "technique.random-sampling",
-          "role": "technique",
-          "evidence": "official_title",
-          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
         }
       ]
     },
@@ -5751,12 +5721,6 @@
           "role": "lens",
           "evidence": "official_title",
           "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
-        },
-        {
-          "primitive_id": "technique.dynamic-programming",
-          "role": "technique",
-          "evidence": "official_title",
-          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
         }
       ]
     },
@@ -5788,12 +5752,6 @@
         {
           "primitive_id": "problem.quantum-state-certification",
           "role": "problem",
-          "evidence": "official_title",
-          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
-        },
-        {
-          "primitive_id": "model.quantum-query-model",
-          "role": "model",
           "evidence": "official_title",
           "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
         }
