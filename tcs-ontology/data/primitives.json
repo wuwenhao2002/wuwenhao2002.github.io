@@ -79,6 +79,23 @@
       "reviewed_at": null
     },
     {
+      "id": "assumption.auxiliary-public-data",
+      "name": "Auxiliary Public Data",
+      "kind": "assumption",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "A setting in which a private learner additionally receives nonsensitive publicly available samples or summary information.",
+      "scope_note": "Public and private distributions may differ; sample quantities and their relationship must be specified.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "publisher_abstract_curation_v0.5",
+      "source_ids": [
+        "publisher-private-public-2024"
+      ]
+    },
+    {
       "id": "assumption.boolean-matrix-multiplication-conjecture",
       "name": "Boolean Matrix Multiplication Conjecture",
       "kind": "assumption",
@@ -1870,6 +1887,23 @@
       "reviewed_at": null
     },
     {
+      "id": "framework.explicit-predictor-learning",
+      "name": "Explicit Predictor Learning",
+      "kind": "framework",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Integrate the predictor's online learning rule into the algorithm rather than treating predictions as an immutable external black box.",
+      "scope_note": "Predictor update mechanism, feedback and performance baseline are essential.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "publisher_abstract_curation_v0.5",
+      "source_ids": [
+        "publisher-explicit-predictors-2024"
+      ]
+    },
+    {
       "id": "framework.fine-grained-complexity",
       "name": "Fine-Grained Complexity",
       "kind": "framework",
@@ -3190,6 +3224,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "model.add-remove-adjacency",
+      "name": "Add-Remove Dataset Adjacency",
+      "kind": "model",
+      "areas": [
+        "Cryptography"
+      ],
+      "aliases": [],
+      "definition": "Two datasets are neighbors if one can be obtained from the other by adding or deleting one individual's record.",
+      "scope_note": "Different from replacement adjacency and may allow dataset size to be sensitive.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "publisher_abstract_curation_v0.5",
+      "source_ids": [
+        "publisher-private-mean-2024"
+      ]
     },
     {
       "id": "model.adjacency-matrix-model",
@@ -4623,6 +4674,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "model.replace-one-adjacency",
+      "name": "Replace-One Dataset Adjacency",
+      "kind": "model",
+      "areas": [
+        "Cryptography"
+      ],
+      "aliases": [],
+      "definition": "Two fixed-size datasets are neighbors when they differ in exactly one individual's record.",
+      "scope_note": "Usually differs in privacy sensitivity and composition from add/remove adjacency.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "publisher_abstract_curation_v0.5",
+      "source_ids": [
+        "publisher-private-mean-2024"
+      ]
     },
     {
       "id": "model.secret-sharing",
@@ -6160,6 +6228,40 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.k-median",
+      "name": "k-Median Clustering",
+      "kind": "problem",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Choose k facilities/centers to minimize the sum of distances from demand points to their closest selected center.",
+      "scope_note": "Metric, facility candidate set and weighted/dynamic variants change feasibility and approximation.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "publisher_abstract_curation_v0.5",
+      "source_ids": [
+        "publisher-learning-kmedian-2025"
+      ]
+    },
+    {
+      "id": "problem.k-way-marginal-query",
+      "name": "k-Way Marginal Query",
+      "kind": "problem",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Answer aggregate statistics indexed by subsets of k coordinates of a high-dimensional binary or categorical dataset.",
+      "scope_note": "Query family, sparsity and privacy parameters control sample complexity.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "publisher_abstract_curation_v0.5",
+      "source_ids": [
+        "publisher-perturb-project-2024"
+      ]
+    },
+    {
       "id": "problem.knapsack",
       "name": "Knapsack Problem",
       "kind": "problem",
@@ -6749,6 +6851,23 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.online-bidding",
+      "name": "Online Bidding",
+      "kind": "problem",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [],
+      "definition": "An online search or expenditure problem where an algorithm makes bids without knowing the target threshold and pays the sum of bids until reaching it.",
+      "scope_note": "Bids, costs, stochastic or adversarial targets, and stopping rules define the benchmark.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "publisher_abstract_curation_v0.5",
+      "source_ids": [
+        "publisher-learning-bidding-2025"
+      ]
+    },
+    {
       "id": "problem.online-bin-packing",
       "name": "Online Bin Packing",
       "kind": "problem",
@@ -7018,6 +7137,23 @@
       ]
     },
     {
+      "id": "problem.private-mean-estimation",
+      "name": "Private Mean Estimation",
+      "kind": "problem",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Estimate the mean of a population or empirical dataset under a formal differential privacy constraint.",
+      "scope_note": "Dimension, norm, data bounds and adjacency definition affect minimax error.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "publisher_abstract_curation_v0.5",
+      "source_ids": [
+        "publisher-private-mean-2024"
+      ]
+    },
+    {
       "id": "problem.private-minimum-spanning-tree",
       "name": "Private Minimum Spanning Tree",
       "kind": "problem",
@@ -7032,6 +7168,23 @@
       "provenance": "official_abstract_curation_v0.5",
       "source_ids": [
         "paper-zou-2026"
+      ]
+    },
+    {
+      "id": "problem.private-stationary-point",
+      "name": "Private Stationary Point Finding",
+      "kind": "problem",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Find an approximate stationary point of a possibly nonconvex empirical loss while satisfying differential privacy.",
+      "scope_note": "Gradient norm, smoothness and population/empirical objective must be specified.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "publisher_abstract_curation_v0.5",
+      "source_ids": [
+        "publisher-private-stationarity-2024"
       ]
     },
     {
@@ -7559,6 +7712,23 @@
       ]
     },
     {
+      "id": "problem.synthetic-graph-release",
+      "name": "Synthetic Graph Release",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Release a synthetic graph approximating chosen statistics of a sensitive input graph, often subject to differential privacy.",
+      "scope_note": "The statistics, adjacency relation, and additive/multiplicative errors are separate assumptions.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "publisher_abstract_curation_v0.5",
+      "source_ids": [
+        "publisher-private-synthetic-2025"
+      ]
+    },
+    {
       "id": "problem.tolerant-testing",
       "name": "Tolerant Testing",
       "kind": "problem",
@@ -7625,6 +7795,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.triangle-motif-cut",
+      "name": "Triangle-Motif Cut Preservation",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Preserve counts or weights of triangles crossing cuts when releasing or sparsifying a graph.",
+      "scope_note": "Differs from standard edge-count cut sparsification; motif definition and approximation error matter.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "publisher_abstract_curation_v0.5",
+      "source_ids": [
+        "publisher-private-triangle-2025"
+      ]
     },
     {
       "id": "problem.uniformity-testing",
@@ -10954,6 +11141,23 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "technique.perturb-and-project",
+      "name": "Perturb-and-Project",
+      "kind": "technique",
+      "areas": [
+        "Cryptography"
+      ],
+      "aliases": [],
+      "definition": "A privacy mechanism that perturbs an input representation and projects the noisy result back to the feasible data domain.",
+      "scope_note": "Noise, projection geometry, adjacency and allowed output space determine utility/privacy.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "publisher_abstract_curation_v0.5",
+      "source_ids": [
+        "publisher-perturb-project-2024"
+      ]
+    },
+    {
       "id": "technique.phase-estimation",
       "name": "Phase Estimation",
       "kind": "technique",
@@ -11031,6 +11235,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.privacy-amplification-by-iteration",
+      "name": "Privacy Amplification by Iteration",
+      "kind": "technique",
+      "areas": [
+        "Cryptography"
+      ],
+      "aliases": [],
+      "definition": "Privacy-analysis approach in which repeated noisy iterative updates can improve effective privacy accounting relative to composition bounds.",
+      "scope_note": "Depends on update contractivity, loss geometry and the privacy notion.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "publisher_abstract_curation_v0.5",
+      "source_ids": [
+        "publisher-shifted-interpolation-2024"
+      ]
     },
     {
       "id": "technique.privacy-amplification-by-subsampling",

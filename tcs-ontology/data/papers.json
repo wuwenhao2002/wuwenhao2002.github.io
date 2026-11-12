@@ -3225,6 +3225,484 @@
         }
       ],
       "reference_resolution": "paper_direct_verified"
+    },
+    {
+      "id": "verified-external-2025-online-bidding",
+      "title": "Learning-Augmented Online Bidding in Stochastic Settings",
+      "year": 2025,
+      "venue": "NeurIPS 2025",
+      "authors": [
+        "Spyros Angelopoulos",
+        "Bertrand Simon"
+      ],
+      "source_id": "publisher-learning-bidding-2025",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/618f396e2df006be25412505a793879a-Abstract-Conference.html",
+      "scope_note": "Distributional predictions and randomization in online bidding, optimizing robustness-consistency tradeoffs.",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_listing",
+      "status": "published",
+      "provenance": "publisher_primary_abstract_checked_2026-11-13",
+      "primitives": [
+        {
+          "primitive_id": "problem.online-bidding",
+          "role": "problem",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Distributional predictions and randomization in online bidding, optimizing robustness-consistency tradeoffs."
+        },
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Distributional predictions and randomization in online bidding, optimizing robustness-consistency tradeoffs."
+        },
+        {
+          "primitive_id": "model.distributional-prediction",
+          "role": "model",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Distributional predictions and randomization in online bidding, optimizing robustness-consistency tradeoffs."
+        },
+        {
+          "primitive_id": "property.prediction-consistency",
+          "role": "metric",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Distributional predictions and randomization in online bidding, optimizing robustness-consistency tradeoffs."
+        },
+        {
+          "primitive_id": "property.prediction-robustness",
+          "role": "metric",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Distributional predictions and randomization in online bidding, optimizing robustness-consistency tradeoffs."
+        }
+      ]
+    },
+    {
+      "id": "verified-external-2025-robust-caching",
+      "title": "Robustifying Learning-Augmented Caching Efficiently without Compromising 1-Consistency",
+      "year": 2025,
+      "venue": "NeurIPS 2025",
+      "authors": [
+        "Peng Chen",
+        "Hailiang Zhao",
+        "Jiaji Zhang",
+        "Xueyan Tang",
+        "Yixuan Wang",
+        "Shuiguang Deng"
+      ],
+      "source_id": "publisher-robust-caching-2025",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/b1e7f61f40d68b2177857bfcb195a507-Abstract-Conference.html",
+      "scope_note": "Learning-augmented caching combining one-consistency with robust fallback guarantees.",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_listing",
+      "status": "published",
+      "provenance": "publisher_primary_abstract_checked_2026-11-13",
+      "primitives": [
+        {
+          "primitive_id": "problem.caching-problem",
+          "role": "problem",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Learning-augmented caching combining one-consistency with robust fallback guarantees."
+        },
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Learning-augmented caching combining one-consistency with robust fallback guarantees."
+        },
+        {
+          "primitive_id": "property.prediction-consistency",
+          "role": "metric",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Learning-augmented caching combining one-consistency with robust fallback guarantees."
+        },
+        {
+          "primitive_id": "property.prediction-robustness",
+          "role": "metric",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Learning-augmented caching combining one-consistency with robust fallback guarantees."
+        }
+      ]
+    },
+    {
+      "id": "verified-external-2024-explicit-predictors",
+      "title": "Learning-Augmented Algorithms with Explicit Predictors",
+      "year": 2024,
+      "venue": "NeurIPS 2024",
+      "authors": [
+        "Marek Eliáš",
+        "Haim Kaplan",
+        "Yishay Mansour",
+        "Shay Moran"
+      ],
+      "source_id": "publisher-explicit-predictors-2024",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/b1a72c79ac7512df8d7b573f38143ac4-Abstract-Conference.html",
+      "scope_note": "Online learning of explicit predictor rules during caching and scheduling algorithm execution.",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_listing",
+      "status": "published",
+      "provenance": "publisher_primary_abstract_checked_2026-11-13",
+      "primitives": [
+        {
+          "primitive_id": "framework.explicit-predictor-learning",
+          "role": "technique",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Online learning of explicit predictor rules during caching and scheduling algorithm execution."
+        },
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Online learning of explicit predictor rules during caching and scheduling algorithm execution."
+        },
+        {
+          "primitive_id": "problem.caching-problem",
+          "role": "problem",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Online learning of explicit predictor rules during caching and scheduling algorithm execution."
+        },
+        {
+          "primitive_id": "problem.online-scheduling",
+          "role": "problem",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Online learning of explicit predictor rules during caching and scheduling algorithm execution."
+        }
+      ]
+    },
+    {
+      "id": "verified-external-2025-private-synthetic",
+      "title": "Almost linear time differentially private release of synthetic graphs",
+      "year": 2025,
+      "venue": "AISTATS 2025",
+      "authors": [
+        "Zongrui Zou",
+        "Jingcheng Liu",
+        "Jalaj Upadhyay"
+      ],
+      "source_id": "publisher-private-synthetic-2025",
+      "url": "https://proceedings.mlr.press/v258/zou25a.html",
+      "scope_note": "Private synthetic graph release approximating cuts and spectral forms in almost linear time.",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_listing",
+      "status": "published",
+      "provenance": "publisher_primary_abstract_checked_2026-11-13",
+      "primitives": [
+        {
+          "primitive_id": "problem.synthetic-graph-release",
+          "role": "problem",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Private synthetic graph release approximating cuts and spectral forms in almost linear time."
+        },
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Private synthetic graph release approximating cuts and spectral forms in almost linear time."
+        },
+        {
+          "primitive_id": "problem.private-cut-sparsification",
+          "role": "problem",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Private synthetic graph release approximating cuts and spectral forms in almost linear time."
+        },
+        {
+          "primitive_id": "model.continual-release",
+          "role": "model",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Private synthetic graph release approximating cuts and spectral forms in almost linear time."
+        }
+      ]
+    },
+    {
+      "id": "verified-external-2025-private-motifs",
+      "title": "Differentially Private Synthetic Graphs Preserving Triangle-Motif Cuts",
+      "year": 2025,
+      "venue": "COLT 2025",
+      "authors": [
+        "Pan Peng",
+        "Hangyu Xu"
+      ],
+      "source_id": "publisher-private-triangle-2025",
+      "url": "https://proceedings.mlr.press/v291/peng25a.html",
+      "scope_note": "Synthetic release of triangle-motif cuts using local triangle sensitivity and approximate differential privacy.",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_listing",
+      "status": "published",
+      "provenance": "publisher_primary_abstract_checked_2026-11-13",
+      "primitives": [
+        {
+          "primitive_id": "problem.synthetic-graph-release",
+          "role": "problem",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Synthetic release of triangle-motif cuts using local triangle sensitivity and approximate differential privacy."
+        },
+        {
+          "primitive_id": "problem.triangle-motif-cut",
+          "role": "problem",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Synthetic release of triangle-motif cuts using local triangle sensitivity and approximate differential privacy."
+        },
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Synthetic release of triangle-motif cuts using local triangle sensitivity and approximate differential privacy."
+        },
+        {
+          "primitive_id": "property.local-dp-sensitivity",
+          "role": "metric",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Synthetic release of triangle-motif cuts using local triangle sensitivity and approximate differential privacy."
+        },
+        {
+          "primitive_id": "property.additive-error",
+          "role": "metric",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Synthetic release of triangle-motif cuts using local triangle sensitivity and approximate differential privacy."
+        }
+      ]
+    },
+    {
+      "id": "verified-external-2025-learning-kmedian",
+      "title": "Learning-Augmented Algorithms for k-median via Online Learning",
+      "year": 2025,
+      "venue": "NeurIPS 2025",
+      "authors": [
+        "Anish Hebbar",
+        "Rong Ge",
+        "Amit Kumar",
+        "Debmalya Panigrahi"
+      ],
+      "source_id": "publisher-learning-kmedian-2025",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/b8e2046160a568145af6d42eeef199f4-Abstract-Conference.html",
+      "scope_note": "Learn an online candidate solution across related k-median instances and compare average performance against hindsight.",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_listing",
+      "status": "published",
+      "provenance": "publisher_primary_abstract_checked_2026-11-13",
+      "primitives": [
+        {
+          "primitive_id": "problem.k-median",
+          "role": "problem",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Learn an online candidate solution across related k-median instances and compare average performance against hindsight."
+        },
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Learn an online candidate solution across related k-median instances and compare average performance against hindsight."
+        },
+        {
+          "primitive_id": "model.online-learning",
+          "role": "model",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Learn an online candidate solution across related k-median instances and compare average performance against hindsight."
+        },
+        {
+          "primitive_id": "property.approximation-ratio",
+          "role": "metric",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Learn an online candidate solution across related k-median instances and compare average performance against hindsight."
+        }
+      ]
+    },
+    {
+      "id": "verified-external-2024-private-mean",
+      "title": "Mean Estimation in the Add-Remove Model of Differential Privacy",
+      "year": 2024,
+      "venue": "ICML 2024",
+      "authors": [
+        "Alex Kulesza",
+        "Ananda Theertha Suresh",
+        "Yuyan Wang"
+      ],
+      "source_id": "publisher-private-mean-2024",
+      "url": "https://proceedings.mlr.press/v235/kulesza24a.html",
+      "scope_note": "Compare add/remove and replacement privacy adjacency for private one-dimensional mean estimation.",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_listing",
+      "status": "published",
+      "provenance": "publisher_primary_abstract_checked_2026-11-13",
+      "primitives": [
+        {
+          "primitive_id": "problem.private-mean-estimation",
+          "role": "problem",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Compare add/remove and replacement privacy adjacency for private one-dimensional mean estimation."
+        },
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Compare add/remove and replacement privacy adjacency for private one-dimensional mean estimation."
+        },
+        {
+          "primitive_id": "model.add-remove-adjacency",
+          "role": "model",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Compare add/remove and replacement privacy adjacency for private one-dimensional mean estimation."
+        },
+        {
+          "primitive_id": "model.replace-one-adjacency",
+          "role": "model",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Compare add/remove and replacement privacy adjacency for private one-dimensional mean estimation."
+        }
+      ]
+    },
+    {
+      "id": "verified-external-2024-shifted-interpolation",
+      "title": "Shifted Interpolation for Differential Privacy",
+      "year": 2024,
+      "venue": "ICML 2024",
+      "authors": [
+        "Jinho Bok",
+        "Weijie J Su",
+        "Jason Altschuler"
+      ],
+      "source_id": "publisher-shifted-interpolation-2024",
+      "url": "https://proceedings.mlr.press/v235/bok24a.html",
+      "scope_note": "Refined privacy accounting for noisy iterative gradient methods in f-differential privacy.",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_listing",
+      "status": "published",
+      "provenance": "publisher_primary_abstract_checked_2026-11-13",
+      "primitives": [
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Refined privacy accounting for noisy iterative gradient methods in f-differential privacy."
+        },
+        {
+          "primitive_id": "technique.privacy-amplification-by-iteration",
+          "role": "technique",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Refined privacy accounting for noisy iterative gradient methods in f-differential privacy."
+        },
+        {
+          "primitive_id": "technique.gradient-descent",
+          "role": "technique",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Refined privacy accounting for noisy iterative gradient methods in f-differential privacy."
+        }
+      ]
+    },
+    {
+      "id": "verified-external-2024-perturb-project",
+      "title": "Perturb-and-Project: Differentially Private Similarities and Marginals",
+      "year": 2024,
+      "venue": "ICML 2024",
+      "authors": [
+        "Vincent Cohen-Addad",
+        "Tommaso D’Orsi",
+        "Alessandro Epasto",
+        "Vahab Mirrokni",
+        "Peilin Zhong"
+      ],
+      "source_id": "publisher-perturb-project-2024",
+      "url": "https://proceedings.mlr.press/v235/cohen-addad24a.html",
+      "scope_note": "Perturb input and project to feasible space for privately releasing similarities and k-way marginals.",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_listing",
+      "status": "published",
+      "provenance": "publisher_primary_abstract_checked_2026-11-13",
+      "primitives": [
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Perturb input and project to feasible space for privately releasing similarities and k-way marginals."
+        },
+        {
+          "primitive_id": "technique.perturb-and-project",
+          "role": "technique",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Perturb input and project to feasible space for privately releasing similarities and k-way marginals."
+        },
+        {
+          "primitive_id": "problem.k-way-marginal-query",
+          "role": "problem",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Perturb input and project to feasible space for privately releasing similarities and k-way marginals."
+        }
+      ]
+    },
+    {
+      "id": "verified-external-2024-private-public",
+      "title": "Optimal Differentially Private Model Training with Public Data",
+      "year": 2024,
+      "venue": "ICML 2024",
+      "authors": [
+        "Andrew Lowy",
+        "Zeman Li",
+        "Tianjian Huang",
+        "Meisam Razaviyayn"
+      ],
+      "source_id": "publisher-private-public-2024",
+      "url": "https://proceedings.mlr.press/v235/lowy24a.html",
+      "scope_note": "Analyze optimal private training error with auxiliary public data in central/local DP.",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_listing",
+      "status": "published",
+      "provenance": "publisher_primary_abstract_checked_2026-11-13",
+      "primitives": [
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Analyze optimal private training error with auxiliary public data in central/local DP."
+        },
+        {
+          "primitive_id": "assumption.auxiliary-public-data",
+          "role": "assumption",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Analyze optimal private training error with auxiliary public data in central/local DP."
+        },
+        {
+          "primitive_id": "property.sample-complexity",
+          "role": "metric",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Analyze optimal private training error with auxiliary public data in central/local DP."
+        }
+      ]
+    },
+    {
+      "id": "verified-external-2024-private-stationary",
+      "title": "How to Make the Gradients Small Privately: Improved Rates for Differentially Private Non-Convex Optimization",
+      "year": 2024,
+      "venue": "ICML 2024",
+      "authors": [
+        "Andrew Lowy",
+        "Jonathan Ullman",
+        "Stephen Wright"
+      ],
+      "source_id": "publisher-private-stationarity-2024",
+      "url": "https://proceedings.mlr.press/v235/lowy24b.html",
+      "scope_note": "Private approximate stationary-point computation for nonconvex smooth empirical loss.",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_listing",
+      "status": "published",
+      "provenance": "publisher_primary_abstract_checked_2026-11-13",
+      "primitives": [
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Private approximate stationary-point computation for nonconvex smooth empirical loss."
+        },
+        {
+          "primitive_id": "problem.private-stationary-point",
+          "role": "problem",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Private approximate stationary-point computation for nonconvex smooth empirical loss."
+        },
+        {
+          "primitive_id": "technique.gradient-descent",
+          "role": "technique",
+          "evidence": "publisher_abstract",
+          "note": "Publisher abstract directly supports the use of this concept: Private approximate stationary-point computation for nonconvex smooth empirical loss."
+        }
+      ]
     }
   ],
   "updated_at": "2026-11-13"
