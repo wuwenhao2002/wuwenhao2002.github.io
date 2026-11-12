@@ -51,6 +51,11 @@
       "from": "technique.rejection-method",
       "to": "technique.rejection-sampling",
       "reason": "Canonical synonym of acceptance-rejection sampling"
+    },
+    {
+      "from": "problem.effective-resistance-estimation",
+      "to": "problem.graph-effective-resistance",
+      "reason": "Merge duplicate effective-resistance estimation concept"
     }
   ]
 }

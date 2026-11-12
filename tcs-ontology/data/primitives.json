@@ -5704,23 +5704,6 @@
       "reviewed_at": null
     },
     {
-      "id": "problem.effective-resistance-estimation",
-      "name": "Effective Resistance Estimation",
-      "kind": "problem",
-      "areas": [
-        "Graph Algorithms"
-      ],
-      "aliases": [],
-      "definition": "Estimate the electrical effective resistance between two vertices in a weighted graph.",
-      "scope_note": "Requires conductances and a graph query model; grounded in Laplacian pseudoinverse notions.",
-      "review_status": "source_checked",
-      "reviewed_at": "2026-11-13",
-      "provenance": "official_author_abstract_v0.5",
-      "source_ids": [
-        "author-yoshida-conferences"
-      ]
-    },
-    {
       "id": "problem.end-of-line",
       "name": "End-of-Line",
       "kind": "problem",
@@ -5870,7 +5853,9 @@
       "areas": [
         "Graph Algorithms"
       ],
-      "aliases": [],
+      "aliases": [
+        "Effective Resistance Estimation"
+      ],
       "definition": "Approximate the electrical effective resistance between specified nodes in a weighted graph.",
       "scope_note": "Connectedness, graph weights, precision and local oracle model determine complexity.",
       "review_status": "source_checked",
