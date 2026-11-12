@@ -1940,21 +1940,6 @@
       "reviewed_at": null
     },
     {
-      "id": "framework.potential-function",
-      "name": "Potential Function",
-      "kind": "framework",
-      "areas": [
-        "Algorithmic Game Theory"
-      ],
-      "aliases": [],
-      "definition": "A real-valued function on system states used to track improvements or quantify progress.",
-      "review_status": "seeded_definition_unverified",
-      "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
-    },
-    {
       "id": "framework.potential-games-framework",
       "name": "Potential Games Framework",
       "kind": "framework",
@@ -3859,7 +3844,7 @@
       "review_status": "source_checked",
       "provenance": "manual_seed_v0",
       "source_ids": [
-        "nist-dads-2020"
+        "crypto-boneh-shoup"
       ],
       "scope_note": "Security requires formal hardness assumptions and precise adversary models.",
       "reviewed_at": "2026-11-12"
@@ -4259,7 +4244,7 @@
       "review_status": "source_checked",
       "provenance": "manual_seed_v0",
       "source_ids": [
-        "nist-dads-2020"
+        "crypto-boneh-shoup"
       ],
       "scope_note": "Computational versus statistical zero-knowledge and interaction can differ.",
       "reviewed_at": "2026-11-12"
@@ -6946,9 +6931,9 @@
       "review_status": "source_checked",
       "provenance": "manual_seed_v0",
       "source_ids": [
-        "dp-dwork-roth"
+        "crypto-boneh-shoup"
       ],
-      "scope_note": "Source below does not establish this cryptographic notion; use a cryptography-specific reference before elevating this to source checked.",
+      "scope_note": "Chosen-plaintext indistinguishability refers to cryptographic encryption, not differential privacy. Formalize the experiment and adversarial access.",
       "reviewed_at": "2026-11-12"
     },
     {
@@ -7303,6 +7288,21 @@
       "aliases": [],
       "definition": "",
       "review_status": "needs_definition",
+      "provenance": "manual_seed_v0",
+      "source_ids": [],
+      "scope_note": "",
+      "reviewed_at": null
+    },
+    {
+      "id": "property.potential-function",
+      "name": "Potential Function",
+      "kind": "property",
+      "areas": [
+        "Algorithmic Game Theory"
+      ],
+      "aliases": [],
+      "definition": "A real-valued function on system states used to track improvements or quantify progress.",
+      "review_status": "seeded_definition_unverified",
       "provenance": "manual_seed_v0",
       "source_ids": [],
       "scope_note": "",

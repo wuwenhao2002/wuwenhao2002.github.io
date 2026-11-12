@@ -183,9 +183,9 @@
     },
     {
       "id": "auction-survey-2017",
-      "title": "The Price of Anarchy in Auctions (survey; author index)",
+      "title": "Tim Roughgarden Stanford Algorithmic Game Theory topic index",
       "url": "https://theory.stanford.edu/~tim/topic.html",
-      "type": "survey"
+      "type": "reference"
     },
     {
       "id": "nist-dads-2020",
@@ -198,6 +198,18 @@
       "title": "Sequential Decision Making: Prophets and Secretaries (Simons Institute)",
       "url": "https://simons.berkeley.edu/sequential-decision-making-prophets-secretaries",
       "type": "lecture_notes"
+    },
+    {
+      "id": "crypto-boneh-shoup",
+      "title": "A Graduate Course in Applied Cryptography (Boneh & Shoup)",
+      "url": "https://crypto.stanford.edu/~dabo/cryptobook/",
+      "type": "textbook"
+    },
+    {
+      "id": "firstprice-vickrey",
+      "title": "Bayesian Nash Equilibrium in First-Price Auctions (EconPort, referencing Vickrey 1961)",
+      "url": "https://econport.gsu.edu/content/handbook/auctions/auctionsexperiments/auctionsbneandfirstprice.html",
+      "type": "reference"
     }
   ]
 }

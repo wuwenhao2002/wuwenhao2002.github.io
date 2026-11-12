@@ -46,11 +46,6 @@
       "from": "objective.biobjective-optimization",
       "to": "framework.biobjective-optimization",
       "reason": "Duplicate synonym or misclassified concept in v0.1"
-    },
-    {
-      "from": "property.potential-function",
-      "to": "framework.potential-function",
-      "reason": "Duplicate synonym or misclassified concept in v0.1"
     }
   ]
 }

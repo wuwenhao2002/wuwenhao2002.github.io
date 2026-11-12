@@ -83,7 +83,7 @@
         "Standard sealed bids"
       ],
       "source_ids": [
-        "auctions-lecture"
+        "firstprice-vickrey"
       ],
       "scope_note": "An illustrative equilibrium formula, not a universal PoA guarantee.",
       "reviewed_at": "2026-11-12"
