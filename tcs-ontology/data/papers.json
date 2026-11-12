@@ -5240,6 +5240,603 @@
           "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
         }
       ]
+    },
+    {
+      "id": "conference2025-stoc-locallemma",
+      "title": "On the Locality of the Lovász Local Lemma",
+      "year": 2025,
+      "venue": "STOC 2025",
+      "authors": [
+        "Peter Davies-Peck"
+      ],
+      "source_id": "conf-stoc25",
+      "url": "https://acm-stoc.org/stoc2025/accepted-papers.html",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "technique.local-resampling",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "property.locality",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "model.local-model",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-stoc-smoothed-online",
+      "title": "Agnostic Smoothed Online Learning",
+      "year": 2025,
+      "venue": "STOC 2025",
+      "authors": [
+        "Moïse Blanchard"
+      ],
+      "source_id": "conf-stoc25",
+      "url": "https://acm-stoc.org/stoc2025/accepted-papers.html",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "lens.smoothed-analysis",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "model.online-learning",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "assumption.agnostic-learning",
+          "role": "assumption",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-stoc-catalytic",
+      "title": "The Structure of Catalytic Space: Capturing Randomness and Time via Compression",
+      "year": 2025,
+      "venue": "STOC 2025",
+      "authors": [
+        "James Cook",
+        "Jiatu Li",
+        "Ian Mertz",
+        "Edward Pyne"
+      ],
+      "source_id": "conf-stoc25",
+      "url": "https://acm-stoc.org/stoc2025/accepted-papers.html",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "model.catalytic-space",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "lens.space-time-tradeoffs",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "lens.derandomization",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-stoc-treewidth",
+      "title": "Treewidth Inapproximability and Tight ETH Lower Bound",
+      "year": 2025,
+      "venue": "STOC 2025",
+      "authors": [
+        "Édouard Bonnet"
+      ],
+      "source_id": "conf-stoc25",
+      "url": "https://acm-stoc.org/stoc2025/accepted-papers.html",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "property.treewidth",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "lens.fine-grained-hardness",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "assumption.exponential-time-hypothesis",
+          "role": "assumption",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-stoc-dynamicmatch",
+      "title": "Deterministic Dynamic Maximal Matching in Sublinear Update Time",
+      "year": 2025,
+      "venue": "STOC 2025",
+      "authors": [
+        "Aaron Bernstein",
+        "Sayan Bhattacharya",
+        "Peter Kiss",
+        "Thatchaphol Saranurak"
+      ],
+      "source_id": "conf-stoc25",
+      "url": "https://acm-stoc.org/stoc2025/accepted-papers.html",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "lens.dynamic-maintenance",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "model.fully-dynamic-updates",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "problem.maximal-matching",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "property.amortized-update-time",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-stoc-submod-recourse",
+      "title": "The Cost of Consistency: Submodular Maximization with Constant Recourse",
+      "year": 2025,
+      "venue": "STOC 2025",
+      "authors": [
+        "Paul Duetting",
+        "Federico Fusco",
+        "Silvio Lattanzi",
+        "Ashkan Norouzi-Fard",
+        "Ola Svensson",
+        "Morteza Zadimoghaddam"
+      ],
+      "source_id": "conf-stoc25",
+      "url": "https://acm-stoc.org/stoc2025/accepted-papers.html",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "problem.value-oracle-submodular-maximization",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "property.recourse-bound",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "property.online-output-consistency",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-stoc-probing",
+      "title": "Adaptivity Gaps for Stochastic Probing with Subadditive Functions",
+      "year": 2025,
+      "venue": "STOC 2025",
+      "authors": [
+        "Jian Li",
+        "Yinchen Liu",
+        "Yiran Zhang"
+      ],
+      "source_id": "conf-stoc25",
+      "url": "https://acm-stoc.org/stoc2025/accepted-papers.html",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "problem.stochastic-probing",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "property.adaptivity-gap",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "assumption.subadditive-valuations",
+          "role": "assumption",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-stoc-eth-clique",
+      "title": "Almost Optimal Time Lower Bound for Approximating Parameterized Clique, CSP, and More, under ETH",
+      "year": 2025,
+      "venue": "STOC 2025",
+      "authors": [
+        "Venkatesan Guruswami",
+        "Bingkai Lin",
+        "Xuandi Ren",
+        "Yican Sun",
+        "Kewen Wu"
+      ],
+      "source_id": "conf-stoc25",
+      "url": "https://acm-stoc.org/stoc2025/accepted-papers.html",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "lens.parameterized-tractability",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "lens.fine-grained-hardness",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "assumption.exponential-time-hypothesis",
+          "role": "assumption",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "problem.clique-detection",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-focs-diameter",
+      "title": "A Polynomial Space Lower Bound for Diameter Estimation in Dynamic Streams",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Sanjeev Khanna",
+        "Ashwin Padaki",
+        "Krish Singal",
+        "Erik Waingarten"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "problem.metric-diameter-streaming",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "model.turnstile-stream",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "property.streaming-space-complexity",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-focs-treewidth",
+      "title": "Dynamic Treewidth in Logarithmic Time",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Tuukka Korhonen"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "lens.dynamic-maintenance",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "problem.treewidth-maintenance",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "property.treewidth",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "property.worst-case-update-time",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-focs-gomory",
+      "title": "Deterministic Almost-Linear-Time Gomory-Hu Trees",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Amir Abboud",
+        "Rasmus Kyng",
+        "Jason Li",
+        "Debmalya Panigrahi",
+        "Maximilian Probst",
+        "Thatchaphol Saranurak",
+        "Wuwei Yuan",
+        "Weixuan Yuan"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "problem.gomory-hu-tree",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "problem.minimum-cut",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "lens.derandomization",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-focs-network",
+      "title": "Network Unreliability in Almost-Linear Time",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Debmalya Panigrahi",
+        "Ruoxu Cen",
+        "Jason Li"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "problem.network-unreliability",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "lens.fault-tolerance",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "technique.random-sampling",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-focs-edit",
+      "title": "Dynamic Dyck and Tree Edit Distance: Decompositions and Reductions to String Edit Distance",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Debarati Das",
+        "Jacob Gilbert",
+        "Tomasz Kociumaka",
+        "MohammadTaghi Hajiaghayi",
+        "Barna Saha"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "problem.edit-distance",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "lens.dynamic-maintenance",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "technique.dynamic-programming",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-focs-quantum",
+      "title": "Adversarially robust quantum state learning and testing",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Maryam Aliakbarpour",
+        "Vladimir Braverman",
+        "Nai-Hui Chia",
+        "Yuhan Liu"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "property.adversarial-robustness",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "problem.quantum-state-certification",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "model.quantum-query-model",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
+    },
+    {
+      "id": "conference2025-focs-pair",
+      "title": "Tight Pair Query Lower Bounds for Matching and Earth Mover’s Distance",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Amir Azarmehr",
+        "Soheil Behnezhad",
+        "Mohammad Roghani",
+        "Aviad Rubinstein"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official 2025 accepted title/author metadata; title-only primitive classification",
+      "scope_note": "Verified paper title and authors in official conference program. Subject tags derive from explicit title, not from a theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "problem.maximum-matching",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "property.wasserstein-distance",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        },
+        {
+          "primitive_id": "task.tight-lower-bound",
+          "role": "task",
+          "evidence": "official_title",
+          "note": "Title-level explicit scholarly association from 2025 official conference program; abstract assumptions not verified."
+        }
+      ]
     }
   ],
   "updated_at": "2026-11-13"
