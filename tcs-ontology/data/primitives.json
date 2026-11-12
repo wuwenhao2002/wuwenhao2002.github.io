@@ -6253,12 +6253,14 @@
         "Distributed Computing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Produce a maximal graph matching using node-local messages or oracle probes, minimizing rounds or volume.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "reviewed_at": "2026-11-13"
     },
     {
       "id": "problem.distributed-minimum-spanning-tree",
@@ -7123,23 +7125,6 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
-    },
-    {
-      "id": "problem.local-distributed-maximal-matching",
-      "name": "Distributed Maximal Matching",
-      "kind": "problem",
-      "areas": [
-        "Distributed Computing"
-      ],
-      "aliases": [],
-      "definition": "Produce a maximal graph matching using node-local messages or oracle probes, minimizing rounds or volume.",
-      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
-      "review_status": "source_checked",
-      "reviewed_at": "2026-11-13",
-      "source_ids": [
-        "conf-focs25"
-      ],
-      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
     },
     {
       "id": "problem.local-set-cover",

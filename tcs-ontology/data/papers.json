@@ -6003,12 +6003,6 @@
           "role": "technique",
           "evidence": "official_title",
           "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
-        },
-        {
-          "primitive_id": "property.worst-case-update-time",
-          "role": "metric",
-          "evidence": "official_title",
-          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
         }
       ]
     },
@@ -6202,7 +6196,7 @@
           "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
         },
         {
-          "primitive_id": "problem.local-distributed-maximal-matching",
+          "primitive_id": "problem.distributed-maximal-matching",
           "role": "problem",
           "evidence": "official_title",
           "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
