@@ -3756,6 +3756,23 @@
       "reviewed_at": null
     },
     {
+      "id": "model.catalytic-space",
+      "name": "Catalytic Space",
+      "kind": "model",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Space-bounded computation aided by a large auxiliary memory that must be restored to its original contents.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
+    },
+    {
       "id": "model.cell-probe-model",
       "name": "Cell-Probe Model",
       "kind": "model",
@@ -5979,6 +5996,23 @@
       "provenance": "paper_curation_v0.3"
     },
     {
+      "id": "problem.discrepancy-minimization",
+      "name": "Discrepancy Minimization",
+      "kind": "problem",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Assign signs or colors to minimize maximum imbalance over a set system.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
+    },
+    {
       "id": "problem.discrete-logarithm",
       "name": "Discrete Logarithm",
       "kind": "problem",
@@ -6299,6 +6333,23 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.edit-distance",
+      "name": "Edit Distance",
+      "kind": "problem",
+      "areas": [
+        "Data Structures"
+      ],
+      "aliases": [],
+      "definition": "Compute minimum cost to transform sequences or trees by permitted edit operations.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
+    },
+    {
       "id": "problem.end-of-line",
       "name": "End-of-Line",
       "kind": "problem",
@@ -6423,6 +6474,23 @@
         "paper-f26-coreset"
       ],
       "provenance": "conference_abstract_seed_v0.6"
+    },
+    {
+      "id": "problem.gomory-hu-tree",
+      "name": "Gomory-Hu Tree",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Construct a compact weighted tree representing all-pairs minimum-cut values of an undirected graph.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
     },
     {
       "id": "problem.graph-coloring",
@@ -7448,6 +7516,23 @@
       ]
     },
     {
+      "id": "problem.network-unreliability",
+      "name": "Network Unreliability",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Calculate disconnection probability of a network under a random failure model.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
+    },
+    {
       "id": "problem.online-ad-allocation",
       "name": "Online Ad Allocation",
       "kind": "problem",
@@ -8389,6 +8474,40 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.stochastic-probing",
+      "name": "Stochastic Probing",
+      "kind": "problem",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Adaptively probe random-valued items under feasibility constraints with a specified reward objective.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
+    },
+    {
+      "id": "problem.stochastic-submodular-probing",
+      "name": "Stochastic Submodular Probing",
+      "kind": "problem",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Maximize expected submodular value by adaptively probing uncertain items under feasibility constraints.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
+    },
+    {
       "id": "problem.streaming-connectivity",
       "name": "Streaming Connectivity",
       "kind": "problem",
@@ -8596,6 +8715,23 @@
       "review_status": "source_checked",
       "reviewed_at": "2026-11-13",
       "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "problem.treewidth-maintenance",
+      "name": "Dynamic Treewidth Maintenance",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Maintain treewidth or tree decomposition information under a graph update sequence.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
     },
     {
       "id": "problem.triangle-detection",
@@ -12877,6 +13013,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.spectral-sparsification",
+      "name": "Spectral Sparsification",
+      "kind": "technique",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Construct a sparse graph approximately preserving Laplacian quadratic forms.",
+      "scope_note": "Source-grounded preliminary mathematical definition; particular model assumptions differ across papers.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "official_FOCS_STOC2025_metadata"
     },
     {
       "id": "technique.stochastic-gradient-descent",
