@@ -1,0 +1,45 @@
+name: Harvest DBLP paper metadata (title-inferred, review required)
+on:
+  push:
+    branches:
+      - feat/tcs-ontology-paper-graph
+    paths:
+      - 'tcs-ontology/tools/harvest_papers.py'
+      - '.github/workflows/tcs-ontology-harvest.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tcs-paper-harvest-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    if: github.ref != 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout source branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          ref: ${{ github.ref_name }}
+      - name: Python environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch bibliographic candidates
+        run: |
+          cd tcs-ontology
+          python3 tools/harvest_papers.py --limit 4000
+      - name: Commit reproducible harvested corpus
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tcs-ontology/data/papers-harvested.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data(papers): refresh title-inferred DBLP bibliography corpus"
+            git push origin HEAD:${{ github.ref_name }}
+          fi

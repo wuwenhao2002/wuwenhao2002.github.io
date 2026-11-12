@@ -26,6 +26,9 @@ USER_AGENT="TCSOntology/0.4 (public academic metadata; github.com/wuwenhao2002/w
 PROFILES={
     "Michael Dinitz":"27/2346",
     "Yuichi Yoshida":"36/4449",
+    "Sepehr Assadi":"125/2903",
+    "Tim Roughgarden":"r/TimRoughgarden",
+    "Avrim Blum":"b/AvrimBlum",
 }
 QUERIES=[
     "algorithms with predictions","learning augmented algorithms","distributional predictions",
@@ -54,7 +57,6 @@ PATTERNS={
  "property.prediction-consistency":[r"\bconsistency\b",r"\bconsistent\b"],
  "property.prediction-error":[r"\bprediction error\b"],
  "lens.differential-privacy":[r"\bdifferential(?:ly)? private\b",r"\bdifferential privacy\b"],
- "property.differential-privacy":[r"\bdifferential(?:ly)? private\b",r"\bdifferential privacy\b"],
  "model.edge-differential-privacy":[r"\bedge.differential(?:ly)? private\b",r"\bedge privacy\b"],
  "model.node-differential-privacy":[r"\bnode.differential(?:ly)? private\b",r"\bnode privacy\b"],
  "lens.algorithmic-sensitivity":[r"\b(?:average|low|worst.case|global|pointwise) sensitivity\b",r"\bsensitivity (?:of|lower bounds|in|for)\b"],
@@ -74,8 +76,9 @@ PATTERNS={
  "problem.densest-subgraph":[r"\bdensest subgraph\b"],
  "problem.maximum-cut":[r"\bmax(?:imum)? cut\b"],
  "problem.minimum-cut":[r"\bmin(?:imum)? cut\b"],
- "problem.maximum-matching":[r"\bmaximum matching\b",r"\bmaximal matching\b"], # see caution: maximal is a separate problem
+ "problem.maximum-matching":[r"\bmaximum matching\b"],
  "problem.graph-matching":[r"\bmatching\b"],
+ "problem.maximal-matching":[r"\bmaximal matching\b"],
  "problem.all-pairs-shortest-paths":[r"\ball.pairs (?:shortest )?(?:paths?|distances?)\b"],
  "problem.shortest-path":[r"\bshortest paths?\b"],
  "problem.steiner-tree":[r"\bsteiner tree\b"],
@@ -121,10 +124,10 @@ PATTERNS={
 }
 # Reject overly broad or false-positive interpretations before constructing links.
 REJECT={
- "problem.maximum-matching":[r"\bmaximal matching\b"],
+
  "problem.minimum-cut":[r"\bminimum k.cut\b",r"\bmultiway cut\b"],
  "problem.shortest-path":[r"\ball.pairs shortest paths?\b"],
- "problem.graph-matching":[r"\bmatching lower bounds?\b"], # can still be appropriate elsewhere
+
 }
 ROLE={
  "lens":"lens","property":"metric","problem":"problem","technique":"technique",
