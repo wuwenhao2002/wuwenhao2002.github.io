@@ -1,4 +1,4 @@
-name: TCS Ontology Data Validation
+name: TCS Ontology Integrity & Quality
 
 on:
   push:
@@ -17,6 +17,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,11 +25,22 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Compile scripts and validate ontology
+      - name: Compile and validate ontology
         run: |
-          python3 -m py_compile tcs-ontology/tools/ontology.py
+          python3 -m py_compile tcs-ontology/tools/ontology.py tcs-ontology/tools/quality.py
           cd tcs-ontology
           python3 tools/ontology.py validate
+          python3 tools/ontology.py quality
           python3 -m unittest discover -s tests -v
+      - name: Validate reproducible SQL export
+        run: |
+          cd tcs-ontology
+          python3 tools/ontology.py sqlite --output /tmp/tcs-ontology-ci.sqlite
+          python3 - <<'PY'
+          import sqlite3
+          with sqlite3.connect('/tmp/tcs-ontology-ci.sqlite') as conn:
+              assert not conn.execute('PRAGMA foreign_key_check').fetchall()
+              assert conn.execute('SELECT COUNT(*) FROM primitive').fetchone()[0] >= 500
+          PY
       - name: Check browser JavaScript syntax
         run: node --check tcs-ontology/app.js

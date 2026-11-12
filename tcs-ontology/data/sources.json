@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "items": [
     {
       "id": "cso",
@@ -59,6 +59,198 @@
       "id": "syrgkanis-tardos-2013",
       "title": "Composable and Efficient Mechanisms",
       "url": "https://arxiv.org/abs/1211.1325",
+      "type": "paper"
+    },
+    {
+      "id": "agt-roughgarden",
+      "title": "Twenty Lectures on Algorithmic Game Theory and Stanford CS364A notes",
+      "url": "https://theory.stanford.edu/~tim/notes.html",
+      "type": "textbook"
+    },
+    {
+      "id": "agt-inefficiency",
+      "title": "Introduction to the Inefficiency of Equilibria (Roughgarden & Tardos)",
+      "url": "https://www.cambridge.org/core/books/abs/algorithmic-game-theory/introduction-to-the-inefficiency-of-equilibria/96BDD7AB2E07816D88C4D020BEFF1FFB",
+      "type": "chapter"
+    },
+    {
+      "id": "agt-routing",
+      "title": "Routing Games (Roughgarden)",
+      "url": "https://www.cambridge.org/core/books/abs/algorithmic-game-theory/routing-games/F46FD3C0B8087B5D74A736E37EAC4C4F",
+      "type": "chapter"
+    },
+    {
+      "id": "potential-1996",
+      "title": "Potential Games (Monderer & Shapley, 1996)",
+      "url": "https://doi.org/10.1006/game.1996.0044",
+      "type": "paper"
+    },
+    {
+      "id": "weighted-congestion-2005",
+      "title": "Selfish Unsplittable Flows (2005)",
+      "url": "https://doi.org/10.1016/j.tcs.2005.09.024",
+      "type": "paper"
+    },
+    {
+      "id": "finite-poa-2005",
+      "title": "The Price of Anarchy of Finite Congestion Games (STOC 2005)",
+      "url": "https://doi.org/10.1145/1060590.1060600",
+      "type": "paper"
+    },
+    {
+      "id": "auctions-lecture",
+      "title": "Stanford CS364B / CS269I Auctions Lecture Notes",
+      "url": "https://theory.stanford.edu/~tim/notes.html",
+      "type": "lecture_notes"
+    },
+    {
+      "id": "fair-division-2022",
+      "title": "Algorithmic Fair Allocation of Indivisible Items: A Survey and New Questions",
+      "url": "https://www.sigecom.org/exchanges/volume_20/1/AZIZ.pdf",
+      "type": "survey"
+    },
+    {
+      "id": "graph-diestel",
+      "title": "Graph Theory (Diestel, sixth edition, 2025)",
+      "url": "https://diestel-graph-theory.com/basic.html?level=1",
+      "type": "textbook"
+    },
+    {
+      "id": "approx-stanford",
+      "title": "Stanford MS&E 319: Approximation Algorithms",
+      "url": "https://web.stanford.edu/class/msande319/Approximation%20Algorithm/index.html",
+      "type": "course"
+    },
+    {
+      "id": "complexity-zoo-curated",
+      "title": "Complexity Zoo (reference catalog)",
+      "url": "https://complexityzoo.net/Complexity_Zoo",
+      "type": "reference"
+    },
+    {
+      "id": "online-stanford",
+      "title": "Stanford Algorithms Lecture Notes (online algorithms, randomized order and approximation)",
+      "url": "https://theory.stanford.edu/~tim/notes.html",
+      "type": "lecture_notes"
+    },
+    {
+      "id": "distributed-suomela",
+      "title": "Distributed Algorithms (Suomela; LOCAL and CONGEST model chapters)",
+      "url": "https://jukkasuomela.fi/da2020/",
+      "type": "textbook"
+    },
+    {
+      "id": "learning-shalev",
+      "title": "Understanding Machine Learning: From Theory to Algorithms",
+      "url": "https://www.cambridge.org/core/books/understanding-machine-learning/3059695661405D25673058E43C8BE2A6",
+      "type": "textbook"
+    },
+    {
+      "id": "dp-dwork-roth",
+      "title": "The Algorithmic Foundations of Differential Privacy",
+      "url": "https://doi.org/10.1561/0400000042",
+      "type": "monograph"
+    },
+    {
+      "id": "stream-cormode",
+      "title": "Count-Min Sketch (Cormode, Encyclopedia of Algorithms)",
+      "url": "https://dimacs.rutgers.edu/~graham/pubs/papers/encalgs-cm.pdf",
+      "type": "reference"
+    },
+    {
+      "id": "distributed-lynch",
+      "title": "Distributed Algorithms (Nancy Lynch)",
+      "url": "https://groups.csail.mit.edu/tds/distalgs.html",
+      "type": "textbook"
+    },
+    {
+      "id": "schedule-zoo-research",
+      "title": "The Scheduling Zoo (problem notation and algorithmic landscape)",
+      "url": "https://schedulingzoo.lip6.fr/",
+      "type": "database"
+    },
+    {
+      "id": "rosenthal-doi",
+      "title": "A Class of Games Possessing Pure-Strategy Nash Equilibria (Rosenthal, 1973)",
+      "url": "https://doi.org/10.1007/BF01737559",
+      "type": "paper"
+    },
+    {
+      "id": "mean-field-2007",
+      "title": "Mean Field Games (Lasry & Lions, 2007)",
+      "url": "https://doi.org/10.1007/s11537-007-0657-8",
+      "type": "paper"
+    },
+    {
+      "id": "auction-survey-2017",
+      "title": "Tim Roughgarden Stanford Algorithmic Game Theory topic index",
+      "url": "https://theory.stanford.edu/~tim/topic.html",
+      "type": "reference"
+    },
+    {
+      "id": "nist-dads-2020",
+      "title": "DADS: The On-Line Dictionary of Algorithms and Data Structures (NIST)",
+      "url": "https://www.nist.gov/publications/dads-line-dictionary-algorithms-and-data-structures",
+      "type": "dictionary"
+    },
+    {
+      "id": "secretaries-prophets",
+      "title": "Sequential Decision Making: Prophets and Secretaries (Simons Institute)",
+      "url": "https://simons.berkeley.edu/sequential-decision-making-prophets-secretaries",
+      "type": "lecture_notes"
+    },
+    {
+      "id": "crypto-boneh-shoup",
+      "title": "A Graduate Course in Applied Cryptography (Boneh & Shoup)",
+      "url": "https://crypto.stanford.edu/~dabo/cryptobook/",
+      "type": "textbook"
+    },
+    {
+      "id": "firstprice-vickrey",
+      "title": "Bayesian Nash Equilibrium in First-Price Auctions (EconPort, referencing Vickrey 1961)",
+      "url": "https://econport.gsu.edu/content/handbook/auctions/auctionsexperiments/auctionsbneandfirstprice.html",
+      "type": "reference"
+    },
+    {
+      "id": "pt-goldreich",
+      "title": "Introduction to Property Testing — Oded Goldreich",
+      "url": "https://doi.org/10.1017/9781108135252",
+      "type": "textbook"
+    },
+    {
+      "id": "qc-nielsen",
+      "title": "Quantum Computation and Quantum Information — Nielsen & Chuang",
+      "url": "https://doi.org/10.1017/CBO9780511976667",
+      "type": "textbook"
+    },
+    {
+      "id": "automata-mit",
+      "title": "MIT Theory of Computation course notes",
+      "url": "https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/pages/lecture-notes/",
+      "type": "course"
+    },
+    {
+      "id": "ds-mit",
+      "title": "MIT 6.851 Advanced Data Structures (Demaine)",
+      "url": "https://courses.csail.mit.edu/6.851/spring12/",
+      "type": "course"
+    },
+    {
+      "id": "random-upt",
+      "title": "Probability and Computing, 2nd edition — Mitzenmacher & Upfal",
+      "url": "https://assets.cambridge.org/97811071/54889/toc/9781107154889_toc.pdf",
+      "type": "textbook"
+    },
+    {
+      "id": "fairness-hardt",
+      "title": "Equality of Opportunity in Supervised Learning (Hardt et al.)",
+      "url": "https://arxiv.org/abs/1610.02413",
+      "type": "paper"
+    },
+    {
+      "id": "fairness-dwork",
+      "title": "Fairness Through Awareness (Dwork et al.)",
+      "url": "https://arxiv.org/abs/1104.3913",
       "type": "paper"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "disclaimer": "Evidence pointers are scoped. No entry's absence implies novelty or openness.",
   "items": [
     {
@@ -7,11 +7,12 @@
       "rule_id": "equilibrium-efficiency",
       "slots": {
         "metric": "property.price-of-anarchy",
-        "system": "game.congestion-game",
-        "equilibrium": "equilibrium.pure-nash-equilibrium"
+        "system": "game.atomic-congestion-game",
+        "equilibrium": "equilibrium.pure-nash-equilibrium",
+        "objective": "objective.total-cost"
       },
       "status": "related_literature",
-      "summary": "Foundational equilibrium-existence literature exists for congestion games; PoA bounds require additional cost and welfare specifications.",
+      "summary": "Rosenthal's potential argument gives pure Nash equilibrium existence for finite unweighted congestion games, but it is not a PoA result.",
       "source_ids": [
         "rosenthal-1973"
       ],
@@ -23,7 +24,8 @@
       "slots": {
         "metric": "property.price-of-anarchy",
         "system": "auction.first-price-auction",
-        "equilibrium": "equilibrium.bayesian-nash-equilibrium"
+        "equilibrium": "equilibrium.bayesian-nash-equilibrium",
+        "objective": "objective.social-welfare"
       },
       "status": "related_literature",
       "summary": "Smooth-mechanism research studies equilibrium welfare guarantees in Bayesian settings.",

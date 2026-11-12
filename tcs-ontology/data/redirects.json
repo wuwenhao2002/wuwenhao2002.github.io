@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.2.0",
+  "explanation": "Stable deprecated IDs retained as redirects for bookmarks/API clients; never create two primitive nodes for aliases.",
+  "items": [
+    {
+      "from": "assumption.seth",
+      "to": "assumption.strong-exponential-time-hypothesis",
+      "reason": "Duplicate synonym or misclassified concept in v0.1"
+    },
+    {
+      "from": "assumption.eth",
+      "to": "assumption.exponential-time-hypothesis",
+      "reason": "Duplicate synonym or misclassified concept in v0.1"
+    },
+    {
+      "from": "objective.approximation-ratio",
+      "to": "property.approximation-ratio",
+      "reason": "Duplicate synonym or misclassified concept in v0.1"
+    },
+    {
+      "from": "objective.integrality-gap",
+      "to": "property.integrality-gap",
+      "reason": "Duplicate synonym or misclassified concept in v0.1"
+    },
+    {
+      "from": "objective.resource-augmentation",
+      "to": "assumption.resource-augmentation",
+      "reason": "Duplicate synonym or misclassified concept in v0.1"
+    },
+    {
+      "from": "objective.parameterized-approximation",
+      "to": "task.parameterized-approximation",
+      "reason": "Duplicate synonym or misclassified concept in v0.1"
+    },
+    {
+      "from": "objective.bicriteria-approximation",
+      "to": "task.bicriteria-approximation",
+      "reason": "Duplicate synonym or misclassified concept in v0.1"
+    },
+    {
+      "from": "objective.max-min-fairness",
+      "to": "property.max-min-fairness",
+      "reason": "Duplicate synonym or misclassified concept in v0.1"
+    },
+    {
+      "from": "objective.biobjective-optimization",
+      "to": "framework.biobjective-optimization",
+      "reason": "Duplicate synonym or misclassified concept in v0.1"
+    },
+    {
+      "from": "technique.rejection-method",
+      "to": "technique.rejection-sampling",
+      "reason": "Canonical synonym of acceptance-rejection sampling"
+    }
+  ]
+}

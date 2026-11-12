@@ -2,9 +2,9 @@
 
 **A typed catalog of theoretical computer science primitives and a research-question composer.**
 
-[Open the interactive atlas](https://wuwenhao2002.github.io/tcs-ontology/) · [Source directory](https://github.com/wuwenhao2002/wuwenhao2002.github.io/tree/main/tcs-ontology)
+[Open the interactive atlas](https://wuwenhao2002.github.io/tcs-ontology/) · [GitHub source directory](https://github.com/wuwenhao2002/wuwenhao2002.github.io/tree/main/tcs-ontology)
 
-> **Status: experimental seed (v0.1).** The catalog is *not comprehensive* or expert-verified. Generated combinations are candidate research directions, **not certified open problems, verified mathematical questions, or evidence of novelty**.
+> **Status: versioned, partially editorially source-checked seed (v0.2).** The catalog is *not comprehensive* or expert-verified. Generated combinations are candidate research directions, **not certified open problems, verified mathematical questions, or evidence of novelty**.
 
 ## What it does
 
@@ -29,13 +29,13 @@ tcs-ontology/
 │   ├── relationships.json# Directed conceptual edges
 │   ├── rules.json        # Typed composition templates
 │   ├── literature.json   # Carefully scoped evidence pointers
-│   └── sources.json      # Literature & external resource registry
+│   ├── sources.json      # Literature & external resource registry\n│   ├── redirects.json    # Canonical ID redirects\n│   └── results.json      # Scope-limited source-checked results
 ├── schema/
 │   └── primitive.schema.json
 ├── tools/
-│   └── ontology.py       # Validate/search/compose/export SQLite
+│   ├── ontology.py       # Validate/search/compose/export SQLite\n│   └── quality.py        # Deep referential and editorial quality audit
 └── tests/
-    └── test_ontology.py
+    ├── test_ontology.py\n    └── test_quality.py
 ```
 
 ## Quick start
@@ -54,10 +54,10 @@ For research workflows and AI:
 
 ```bash
 python3 tools/ontology.py validate
-python3 tools/ontology.py stats
+python3 tools/ontology.py stats\npython3 tools/ontology.py quality
 python3 tools/ontology.py search "Price of Anarchy"
 python3 tools/ontology.py search "vertex cover" --kind problem
-python3 tools/ontology.py compose equilibrium-efficiency --limit 10
+python3 tools/ontology.py compose equilibrium-efficiency --limit 10\n# To include tentative candidate vocabulary:\npython3 tools/ontology.py compose graph-problem-classes --include-candidates --limit 10
 python3 tools/ontology.py sqlite --output ./tcs-ontology.sqlite
 python3 -m unittest discover -s tests -v
 ```
@@ -100,7 +100,7 @@ A **literature** entry optionally connects an exact tuple of rule/slot IDs to a 
 | --- | --- |
 | `needs_definition` | Collected seed concept, definition still pending |
 | `seeded_definition_unverified` | Initial editorial definition, needs expert checking |
-| `expert_reviewed` | Reserved for a formally sourced, reviewed entry (none asserted in v0.1) |
+| `source_checked` | Definition and scope editorially checked against linked reference, but **not peer-reviewed** |\n| `expert_reviewed` | Reserved for a formally expert-reviewed entry (none asserted in v0.2) |
 | `related_literature` | Related paper linked with a narrow scope; not a complete state-of-the-art review |
 | No literature link | **Unknown / unreviewed**, never automatically called an open problem |
 
@@ -127,6 +127,16 @@ Do not import entire proprietary datasets, scraped articles, or copyrighted glos
 - Search-backed literature audit for each generated tuple; report `known`, `uncertain`, `inapplicable`, or `open_with_source` only with actual evidence.
 - MCP/API layer and vector retrieval for research agents.
 - Separate standalone repository and automated data quality CI.
+
+## v0.2 review status
+
+The catalog now preserves **588 canonical primitives**, with a **177-entry editorially source-checked core** and **411 entries awaiting review or definitions**, across 19 areas. These are finite editorial snapshots, not a completeness claim. It records 42 typed relations, six scoped result statements, and ten backward-compatible redirects. These values should be regenerated using `python3 tools/ontology.py quality` rather than maintained manually in downstream projects.
+
+The UI initially displays only `source_checked` entries and allows explicitly toggling candidates. Names and IDs from v0.1 are resolved through `data/redirects.json`. Core scientific safeguards include not applying unweighted finite Rosenthal equilibrium guarantees to weighted congestion games, distinguishing single-item auctions from multi-item compositions, and explicitly specifying equilibrium notion and cost versus welfare objectives in efficiency questions.
+
+A **source-checked statement is not a formal proof checker or expert endorsement**: read its premises, original citation, and scope note. References of different authority (primary paper, textbook, lecture note) are typed in `sources.json`. An empty literature association is `unknown`, never `open`.
+
+Read `docs/DATA_GOVERNANCE.md` for curation and review policy, `CONTRIBUTING.md` for review requirements, and `CHANGELOG.md` for versioned releases.
 
 ## Acknowledgments and inspiration
 

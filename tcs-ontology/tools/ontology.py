@@ -41,6 +41,7 @@ def load(name: str) -> list[dict]:
 def catalog() -> dict[str, list[dict]]:
     return {k: load(k) for k in (
         "primitives", "relationships", "rules", "literature", "sources",
+        "results", "redirects",
     )}
 
 
@@ -69,7 +70,7 @@ def validate() -> tuple[dict, list[str]]:
         if not isinstance(item.get("aliases"), list):
             errors.append(f"{ident}: expected aliases list")
         if item.get("review_status") not in (
-            "seeded_definition_unverified", "needs_definition", "expert_reviewed",
+            "seeded_definition_unverified", "needs_definition", "source_checked", "expert_reviewed",
         ):
             errors.append(f"{ident}: unrecognized review status")
         if item.get("review_status") == "expert_reviewed" and not item.get("source_ids"):
@@ -87,7 +88,7 @@ def validate() -> tuple[dict, list[str]]:
             elif not ref.startswith("equilibrium."):
                 errors.append(f"{p['id']}: not an equilibrium {ref}")
     predicates = {
-        "is_a", "subset_of", "often_uses", "related_to",
+        "is_a", "subset_of", "composed_of", "often_uses", "related_to",
         "often_analyzed_by", "has_relevant_solution_concept",
         "studied_on", "studies",
     }
@@ -140,6 +141,8 @@ def validate() -> tuple[dict, list[str]]:
         for ref in item.get("source_ids", []):
             if ref not in source_ids:
                 errors.append(f"literature {item.get('id')}: unknown source {ref}")
+    from quality import audit
+    errors.extend(audit(db))
     return db, errors
 
 
@@ -161,34 +164,66 @@ def slot_choices(slot: dict, primitives: list[dict]) -> list[dict]:
     ]
 
 
-def compose(db: dict, rule_id: str, limit: int, seed: str = "") -> list[dict]:
+def compose(db: dict, rule_id: str, limit: int, seed: str = "",
+            include_candidates: bool = False) -> list[dict]:
+    """Generate well-typed candidates, excluding known-incompatible combinations.
+
+    No result is a novelty claim. All required mathematical assumptions must
+    still be specified. By default only source-checked primitives are selected.
+    """
     rule = next((r for r in db["rules"] if r["id"] == rule_id), None)
     if rule is None:
         raise ValueError(f"Unknown rule: {rule_id}; options: {', '.join(r['id'] for r in db['rules'])}")
     slots = rule["slots"]
     candidates = [slot_choices(s, db["primitives"]) for s in slots]
+    if not include_candidates:
+        candidates = [
+            [p for p in group if p["review_status"] in ("source_checked", "expert_reviewed")]
+            for group in candidates
+        ]
     if seed:
         candidates = [
             sorted(group, key=lambda p: (seed.lower() not in (p["name"] + " " + p["id"]).lower(), p["name"]))
             for group in candidates
         ]
     results = []
+    compat = rule.get("compatibility") or {}
     for combination in itertools.product(*candidates):
         assignment = {slot["key"]: p for slot, p in zip(slots, combination)}
+        system_key = compat.get("system_slot")
+        eq_key = compat.get("equilibrium_slot")
+        system = assignment.get(system_key)
+        equilibrium = assignment.get(eq_key)
+        if system and equilibrium:
+            if any(
+                pair["system"] == system["id"] and pair["equilibrium"] == equilibrium["id"]
+                for pair in compat.get("deny", [])
+            ):
+                continue
+            if compat.get("use_explicit_compatible_equilibria") and system.get("compatible_equilibria"):
+                if equilibrium["id"] not in system["compatible_equilibria"]:
+                    continue
+        if system and "objective" in assignment:
+            allowed = compat.get("objective_by_system_kind", {}).get(system["kind"])
+            if allowed and assignment["objective"]["id"] not in allowed:
+                continue
         title = rule["template"]
         for key, primitive in assignment.items():
             title = title.replace("{" + key + "}", primitive["name"])
-        system = assignment.get("system")
-        eq = assignment.get("equilibrium")
-        warning = None
-        if system is not None and eq is not None and system.get("compatible_equilibria"):
-            if eq["id"] not in system["compatible_equilibria"]:
-                warning = "Selected equilibrium is not listed as typical; verify mathematical compatibility."
+        related_literature = [
+            entry["id"] for entry in db["literature"]
+            if entry["rule_id"] == rule_id
+            and all(assignment.get(key, {}).get("id") == id for key,id in entry["slots"].items())
+        ]
         results.append({
             "title": title, "rule_id": rule_id,
             "slots": {key: p["id"] for key, p in assignment.items()},
-            "validation_status": "candidate_not_literature_checked",
-            "warning": warning,
+            "validation_status": "syntactic_candidate_not_novelty_checked",
+            "exact_tuple_literature_ids": related_literature,
+            "warnings": [
+                rule.get("risk_note", "Always verify mathematical scope and existing literature."),
+                "No result in this dataset proves that this is an open or novel problem.",
+            ],
         })
         if len(results) >= limit:
             break
@@ -244,6 +279,8 @@ def export_sqlite(db: dict, outfile: Path) -> None:
           id TEXT PRIMARY KEY, rule_id TEXT NOT NULL REFERENCES composition_rule(id),
           status TEXT NOT NULL, json TEXT NOT NULL
         );
+        CREATE TABLE redirect (old_id TEXT PRIMARY KEY, new_id TEXT NOT NULL REFERENCES primitive(id), reason TEXT NOT NULL);
+        CREATE TABLE checked_result (id TEXT PRIMARY KEY, statement TEXT NOT NULL, scope_note TEXT NOT NULL, json TEXT NOT NULL);
         CREATE INDEX idx_primitive_name ON primitive(name);
         CREATE INDEX idx_primitive_kind ON primitive(kind);
         CREATE INDEX idx_primitive_area ON primitive_area(area);
@@ -272,6 +309,12 @@ def export_sqlite(db: dict, outfile: Path) -> None:
         for p in db["literature"]:
             con.execute("INSERT INTO literature VALUES (?,?,?,?)",
                         (p["id"], p["rule_id"], p["status"], json.dumps(p)))
+        for link in db.get("redirects", []):
+            con.execute("INSERT INTO redirect VALUES (?,?,?)",
+                        (link["from"], link["to"], link.get("reason", "")))
+        for result in db.get("results", []):
+            con.execute("INSERT INTO checked_result VALUES (?,?,?,?)",
+                        (result["id"], result["statement"], result["scope_note"], json.dumps(result)))
     print(f"Created {outfile} ({len(db['primitives'])} primitives)")
 
 
@@ -281,6 +324,7 @@ def main() -> None:
     sub = ap.add_subparsers(dest="command", required=True)
     sub.add_parser("validate")
     sub.add_parser("stats")
+    sub.add_parser("quality")
     sp = sub.add_parser("search")
     sp.add_argument("query")
     sp.add_argument("--kind")
@@ -290,6 +334,7 @@ def main() -> None:
     cp.add_argument("rule_id")
     cp.add_argument("--limit", type=int, default=10)
     cp.add_argument("--seed", default="")
+    cp.add_argument("--include-candidates", action="store_true")
     sq = sub.add_parser("sqlite")
     sq.add_argument("--output", type=Path, default=ROOT / "tcs-ontology.sqlite")
     args = ap.parse_args()
@@ -298,6 +343,9 @@ def main() -> None:
         print(f"OK: {len(db['primitives'])} primitives, {len(db['relationships'])} relationships, "
               f"{len(db['rules'])} rules, {len(db['literature'])} literature links, "
               f"{len(db['sources'])} sources.")
+    elif args.command == "quality":
+        from quality import report
+        print(json.dumps(report(db), indent=2, ensure_ascii=False))
     elif args.command == "stats":
         print(json.dumps({
             "primitives": len(db["primitives"]),
@@ -322,7 +370,7 @@ def main() -> None:
     elif args.command == "compose":
         if args.limit < 1 or args.limit > 1000:
             ap.error("--limit must be between 1 and 1000")
-        print(json.dumps(compose(db, args.rule_id, args.limit, args.seed),
+        print(json.dumps(compose(db, args.rule_id, args.limit, args.seed, args.include_candidates),
                          indent=2, ensure_ascii=False))
     elif args.command == "sqlite":
         export_sqlite(db, args.output)
