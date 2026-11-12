@@ -36,31 +36,6 @@ def _acyclic(edges: list[dict], predicate: str) -> list[str]:
     for key in list(graph):
         if not colors.get(key):
             visit(key, [])
-    paper_ids = set()
-    for paper in db.get("papers", []):
-        pid = paper.get("id")
-        if pid in paper_ids:
-            errors.append("duplicate paper: " + str(pid))
-        paper_ids.add(pid)
-        if paper.get("source_id") not in source_ids:
-            errors.append("paper with missing evidence source: " + str(pid))
-        if paper.get("year", 0) < 1900 or paper.get("year", 0) > 2100:
-            errors.append("paper year outside expected range: " + str(pid))
-        if not paper.get("title") or not paper.get("venue") or not paper.get("scope_note"):
-            errors.append("underspecified paper: " + str(pid))
-        if not paper.get("primitives"):
-            errors.append("paper with no primitives: " + str(pid))
-        assigned = set()
-        for linked in paper.get("primitives", []):
-            primitive = linked.get("primitive_id")
-            role = linked.get("role")
-            if primitive not in ids:
-                errors.append("paper has dangling primitive: " + str(primitive))
-            if (primitive in assigned):
-                errors.append("duplicate paper-primitive link: " + str(pid) + "/" + str(primitive))
-            assigned.add(primitive)
-            if role not in {"problem","lens","model","metric","technique","assumption","task"}:
-                errors.append("paper invalid concept role: " + str(pid) + "/" + str(role))
     return errors
 
 
@@ -201,6 +176,31 @@ def audit(db: dict[str, list[dict]]) -> list[str]:
         for sid in result["source_ids"]:
             if sid not in source_ids:
                 errors.append("dangling theorem source: " + sid)
+    paper_ids = set()
+    for paper in db.get("papers", []):
+        pid = paper.get("id")
+        if pid in paper_ids:
+            errors.append("duplicate paper: " + str(pid))
+        paper_ids.add(pid)
+        if paper.get("source_id") not in source_ids:
+            errors.append("paper with missing evidence source: " + str(pid))
+        if paper.get("year", 0) < 1900 or paper.get("year", 0) > 2100:
+            errors.append("paper year outside expected range: " + str(pid))
+        if not paper.get("title") or not paper.get("venue") or not paper.get("scope_note"):
+            errors.append("underspecified paper: " + str(pid))
+        if not paper.get("primitives"):
+            errors.append("paper with no primitives: " + str(pid))
+        assigned = set()
+        for linked in paper.get("primitives", []):
+            primitive = linked.get("primitive_id")
+            role = linked.get("role")
+            if primitive not in ids:
+                errors.append("paper has dangling primitive: " + str(primitive))
+            if (primitive in assigned):
+                errors.append("duplicate paper-primitive link: " + str(pid) + "/" + str(primitive))
+            assigned.add(primitive)
+            if role not in {"problem","lens","model","metric","technique","assumption","task"}:
+                errors.append("paper invalid concept role: " + str(pid) + "/" + str(role))
     return errors
 
 
