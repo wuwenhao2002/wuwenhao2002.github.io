@@ -1,0 +1,6 @@
+# Locally generated SQLite databases and Python caches
+*.sqlite
+*.sqlite3
+__pycache__/
+*.py[cod]
+.DS_Store
