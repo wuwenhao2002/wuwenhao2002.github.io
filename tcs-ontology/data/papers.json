@@ -5168,8 +5168,8 @@
         {
           "primitive_id": "model.data-stream-model",
           "role": "model",
-          "evidence": "official_title",
-          "note": "More precise topic inference based on conference title or proceedings abstract."
+          "evidence": "official_abstract",
+          "note": "STOC 2026 official proceedings abstract confirms this paper's model or problem, with paper-specific hypotheses."
         }
       ]
     },
@@ -5218,8 +5218,8 @@
         {
           "primitive_id": "problem.bin-packing",
           "role": "problem",
-          "evidence": "official_title",
-          "note": "More precise topic inference based on conference title or proceedings abstract."
+          "evidence": "official_abstract",
+          "note": "STOC 2026 official proceedings abstract confirms this paper's model or problem, with paper-specific hypotheses."
         }
       ]
     },
