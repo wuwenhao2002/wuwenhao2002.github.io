@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "items": [
     {
       "id": "cso",
@@ -251,6 +251,120 @@
       "id": "fairness-dwork",
       "title": "Fairness Through Awareness (Dwork et al.)",
       "url": "https://arxiv.org/abs/1104.3913",
+      "type": "paper"
+    },
+    {
+      "id": "p-dinitz-ski",
+      "title": "Ski Rental with Distributional Predictions of Unknown Quality",
+      "url": "https://arxiv.org/abs/2602.21104",
+      "type": "paper"
+    },
+    {
+      "id": "p-dinitz-jrp",
+      "title": "Learning-Augmented Online Algorithms for Nonclairvoyant Joint Replenishment Problem with Deadlines",
+      "url": "https://arxiv.org/abs/2511.16094",
+      "type": "paper"
+    },
+    {
+      "id": "p-dinitz-graphcuts",
+      "title": "Differentially Private Algorithms for Graph Cuts: A Shifting Mechanism Approach and More",
+      "url": "https://arxiv.org/abs/2407.06911",
+      "type": "paper"
+    },
+    {
+      "id": "p-dinitz-distances",
+      "title": "A Generalized Binary Tree Mechanism for Differentially Private Approximation of All-Pair Distances",
+      "url": "https://arxiv.org/abs/2504.03354",
+      "type": "paper"
+    },
+    {
+      "id": "p-dinitz-densest",
+      "title": "Almost Tight Bounds for Differentially Private Densest Subgraph",
+      "url": "https://arxiv.org/abs/2308.10316",
+      "type": "paper"
+    },
+    {
+      "id": "p-dinitz-binary",
+      "title": "Binary Search with Distributional Predictions",
+      "url": "https://arxiv.org/abs/2411.16030",
+      "type": "paper"
+    },
+    {
+      "id": "p-dinitz-portfolio",
+      "title": "Algorithms with Prediction Portfolios",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/7f9220f90cc85b0da693643add6618e6-Abstract-Conference.html",
+      "type": "paper"
+    },
+    {
+      "id": "p-dinitz-tree",
+      "title": "Tree Search With Predictions",
+      "url": "https://arxiv.org/abs/2605.27490",
+      "type": "paper"
+    },
+    {
+      "id": "p-dinitz-fault",
+      "title": "Light Edge Fault Tolerant Graph Spanners",
+      "url": "https://arxiv.org/abs/2502.10890",
+      "type": "paper"
+    },
+    {
+      "id": "p-yoshida-matching",
+      "title": "Low-Sensitivity Matching via Sampling from Gibbs Distributions",
+      "url": "https://arxiv.org/abs/2511.16918",
+      "type": "paper"
+    },
+    {
+      "id": "p-yoshida-lower",
+      "title": "Sensitivity Lower Bounds for Approximation Algorithms",
+      "url": "https://doi.org/10.1137/1.9781611978971.149",
+      "type": "paper"
+    },
+    {
+      "id": "p-yoshida-ltc",
+      "title": "Sensitivity Lower Bounds via Locally Testable Codes",
+      "url": "https://arxiv.org/abs/2606.31657",
+      "type": "paper"
+    },
+    {
+      "id": "p-yoshida-geometric",
+      "title": "Average Sensitivity of Geometric Algorithms",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2026.53",
+      "type": "paper"
+    },
+    {
+      "id": "p-yoshida-lipschitz",
+      "title": "Pointwise Lipschitz Continuous Graph Algorithms (preprint, revised conference version)",
+      "url": "https://arxiv.org/abs/2405.08938",
+      "type": "paper"
+    },
+    {
+      "id": "p-yoshida-regret",
+      "title": "From Average Sensitivity to Small-Loss Regret Bounds under Random-Order Model",
+      "url": "https://arxiv.org/abs/2602.09457",
+      "type": "paper"
+    },
+    {
+      "id": "p-yoshida-voting",
+      "title": "Sensitivity and Differential Privacy in Metric Voting with Distortion below Three",
+      "url": "https://arxiv.org/abs/2607.26388",
+      "type": "paper"
+    },
+    {
+      "id": "p-yoshida-graph",
+      "title": "Average Sensitivity of Graph Algorithms",
+      "url": "https://doi.org/10.1137/21M1399592",
+      "type": "paper"
+    },
+    {
+      "id": "p-yoshida-rl",
+      "title": "From Generative to Episodic: Sample-Efficient Replicable Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2507.11926",
+      "type": "paper"
+    },
+    {
+      "id": "p-graph-dp-survey",
+      "title": "SoK: Practical Aspects of Releasing Differentially Private Graphs",
+      "url": "https://doi.org/10.1145/3779208.3805972",
       "type": "paper"
     }
   ]
