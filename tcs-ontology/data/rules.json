@@ -45,7 +45,7 @@
         "equilibrium_slot": "equilibrium",
         "system_slot": "system",
         "use_explicit_compatible_equilibria": true,
-        "unlisted_behavior": "unreviewed",
+        "unlisted_behavior": "require_review",
         "deny": [
           {
             "system": "game.weighted-congestion-game",
