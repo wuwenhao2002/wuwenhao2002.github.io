@@ -5881,6 +5881,420 @@
           "note": "Official STOC 2026 abstract supports this paper-to-primitive association."
         }
       ]
+    },
+    {
+      "id": "program-focs25-parallel-derand",
+      "title": "Towards True Work-Efficiency in Parallel Derandomization: MIS, Maximal Matching, and Hitting Set",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Mohsen Ghaffari",
+        "Christoph Grunau"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official FOCS/STOC program checked, with title-derived roles only",
+      "scope_note": "Paper title and author metadata checked. Concepts are title-grounded and not formal theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "lens.derandomization",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "technique.parallel-derandomization",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "problem.distributed-maximal-independent-set",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "problem.maximal-matching",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "property.work-depth-complexity",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        }
+      ]
+    },
+    {
+      "id": "program-focs25-instance-uniform",
+      "title": "Instance-Optimal Uniformity Testing and Tracking",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Guy Blanc",
+        "Clément Canonne",
+        "Erik Waingarten"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official FOCS/STOC program checked, with title-derived roles only",
+      "scope_note": "Paper title and author metadata checked. Concepts are title-grounded and not formal theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "lens.instance-adaptivity",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "problem.uniformity-tracking",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "property.instance-optimality",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "property.sample-complexity",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        }
+      ]
+    },
+    {
+      "id": "program-focs25-smoothed-simplex",
+      "title": "Optimal Smoothed Analysis of the Simplex Method",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Eleon Bach",
+        "Sophie Huiberts"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official FOCS/STOC program checked, with title-derived roles only",
+      "scope_note": "Paper title and author metadata checked. Concepts are title-grounded and not formal theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "lens.smoothed-analysis",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "technique.simplex-method",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "property.worst-case-update-time",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        }
+      ]
+    },
+    {
+      "id": "program-focs25-nonadaptive-local",
+      "title": "Lower Bounds for Non-adaptive Local Computation Algorithms",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Amir Azarmehr",
+        "Soheil Behnezhad",
+        "Alma Ghafari",
+        "Madhu Sudan"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official FOCS/STOC program checked, with title-derived roles only",
+      "scope_note": "Paper title and author metadata checked. Concepts are title-grounded and not formal theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "lens.local-computation",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "model.nonadaptive-local-query",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "task.tight-lower-bound",
+          "role": "task",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        }
+      ]
+    },
+    {
+      "id": "program-focs25-global-calibration",
+      "title": "How Global Calibration Strengthens Multiaccuracy",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Sílvia Casacuberta",
+        "Parikshit Gopalan",
+        "Varun Kanade",
+        "Omer Reingold"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official FOCS/STOC program checked, with title-derived roles only",
+      "scope_note": "Paper title and author metadata checked. Concepts are title-grounded and not formal theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "lens.calibration-constraints",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "property.global-calibration",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "property.multiaccuracy",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        }
+      ]
+    },
+    {
+      "id": "program-focs25-multi-pass-maxcut",
+      "title": "Multi-Pass Streaming Lower Bounds for Approximating Max-Cut",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Yumou Fei",
+        "Dor Minzer",
+        "Shuo Wang"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official FOCS/STOC program checked, with title-derived roles only",
+      "scope_note": "Paper title and author metadata checked. Concepts are title-grounded and not formal theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "model.data-stream-model",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "property.pass-complexity",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "property.streaming-space-complexity",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "problem.maximum-cut",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "task.tight-lower-bound",
+          "role": "task",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        }
+      ]
+    },
+    {
+      "id": "program-focs25-lp-sampling",
+      "title": "Perfect L_p Sampling with Polylogarithmic Update Time",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "William Swartworth",
+        "David P. Woodruff",
+        "Samson Zhou"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official FOCS/STOC program checked, with title-derived roles only",
+      "scope_note": "Paper title and author metadata checked. Concepts are title-grounded and not formal theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "technique.lp-sampling",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "model.turnstile-stream",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "property.worst-case-update-time",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        }
+      ]
+    },
+    {
+      "id": "program-focs25-round-elimination",
+      "title": "Round Elimination via Self-Reduction: Closing Gaps for Distributed Maximal Matching",
+      "year": 2025,
+      "venue": "FOCS 2025",
+      "authors": [
+        "Seri Khoury",
+        "Aaron Schild"
+      ],
+      "source_id": "conf-focs25",
+      "url": "https://focs.computer.org/2025/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official FOCS/STOC program checked, with title-derived roles only",
+      "scope_note": "Paper title and author metadata checked. Concepts are title-grounded and not formal theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "technique.round-elimination",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "problem.local-distributed-maximal-matching",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "property.round-complexity",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        }
+      ]
+    },
+    {
+      "id": "program-stoc25-generation",
+      "title": "On the Limits of Language Generation: Trade-Offs Between Hallucination and Mode-Collapse",
+      "year": 2025,
+      "venue": "STOC 2025",
+      "authors": [
+        "Alkis Kalavasis",
+        "Anay Mehrotra",
+        "Grigoris Velegkas"
+      ],
+      "source_id": "conf-stoc25",
+      "url": "https://acm-stoc.org/stoc2025/accepted-papers.html",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official FOCS/STOC program checked, with title-derived roles only",
+      "scope_note": "Paper title and author metadata checked. Concepts are title-grounded and not formal theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "lens.language-generation",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "model.language-generation-in-limit",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "property.validity-breadth-tradeoff",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        }
+      ]
+    },
+    {
+      "id": "program-stoc26-partial-generation",
+      "title": "Language Generation and Identification from Partial Enumeration: Tight Density Bounds and Topological Characterizations",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Jon Kleinberg",
+        "Fan Wei"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_program",
+      "provenance": "official FOCS/STOC program checked, with title-derived roles only",
+      "scope_note": "Paper title and author metadata checked. Concepts are title-grounded and not formal theorem extraction.",
+      "primitives": [
+        {
+          "primitive_id": "lens.language-generation",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "This STOC 2026 relationship is visible in the official abstract."
+        },
+        {
+          "primitive_id": "model.partial-enumeration",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "This STOC 2026 relationship is visible in the official abstract."
+        },
+        {
+          "primitive_id": "model.language-generation-in-limit",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "This STOC 2026 relationship is visible in the official abstract."
+        },
+        {
+          "primitive_id": "property.validity-breadth-tradeoff",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "This STOC 2026 relationship is visible in the official abstract."
+        }
+      ]
     }
   ],
   "updated_at": "2026-11-13"

@@ -3383,6 +3383,23 @@
       "provenance": "conference_abstract_seed_v0.6"
     },
     {
+      "id": "lens.language-generation",
+      "name": "Formal Language Generation Lens",
+      "kind": "lens",
+      "areas": [
+        "Logic and Automata"
+      ],
+      "aliases": [],
+      "definition": "Study theoretical guarantees for generating unseen strings from an unknown target language under limited examples.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
+    },
+    {
       "id": "lens.local-computation",
       "name": "Local Computation Lens",
       "kind": "lens",
@@ -4411,6 +4428,23 @@
       "reviewed_at": null
     },
     {
+      "id": "model.language-generation-in-limit",
+      "name": "Language Generation in the Limit",
+      "kind": "model",
+      "areas": [
+        "Logic and Automata"
+      ],
+      "aliases": [],
+      "definition": "A model of iterative language output where the learner receives an enumeration and must generate valid unseen examples eventually.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
+    },
+    {
       "id": "model.linear-bandit",
       "name": "Linear Bandit",
       "kind": "model",
@@ -4628,6 +4662,23 @@
       "review_status": "source_checked",
       "reviewed_at": "2026-11-13",
       "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "model.nonadaptive-local-query",
+      "name": "Non-Adaptive Local Query Model",
+      "kind": "model",
+      "areas": [
+        "Property Testing"
+      ],
+      "aliases": [],
+      "definition": "A local algorithm's queries are chosen without depending on answers to earlier queries.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
     },
     {
       "id": "model.nonadaptive-preprocessing",
@@ -4854,6 +4905,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "model.partial-enumeration",
+      "name": "Partial Enumeration Model",
+      "kind": "model",
+      "areas": [
+        "Logic and Automata"
+      ],
+      "aliases": [],
+      "definition": "Only an unknown subset of a target language is revealed, raising questions about generation and identification from incomplete examples.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
     },
     {
       "id": "model.partially-observable-markov-decision-process",
@@ -7055,6 +7123,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.local-distributed-maximal-matching",
+      "name": "Distributed Maximal Matching",
+      "kind": "problem",
+      "areas": [
+        "Distributed Computing"
+      ],
+      "aliases": [],
+      "definition": "Produce a maximal graph matching using node-local messages or oracle probes, minimizing rounds or volume.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
     },
     {
       "id": "problem.local-set-cover",
@@ -9916,6 +10001,23 @@
       "reviewed_at": null
     },
     {
+      "id": "property.global-calibration",
+      "name": "Global Calibration",
+      "kind": "property",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Calibration of a predictor across its full prediction-output distribution under a chosen error criterion.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
+    },
+    {
       "id": "property.global-dp-sensitivity",
       "name": "Global Query Sensitivity",
       "kind": "property",
@@ -10379,6 +10481,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.multiaccuracy",
+      "name": "Multiaccuracy",
+      "kind": "property",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Forecast residuals are approximately unbiased against every test function from a specified class.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
     },
     {
       "id": "property.multicalibration",
@@ -11428,6 +11547,23 @@
       "reviewed_at": null
     },
     {
+      "id": "property.validity-breadth-tradeoff",
+      "name": "Validity-Breadth Tradeoff",
+      "kind": "property",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Tradeoff between producing only valid elements of a target language and covering a large fraction of it.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
+    },
+    {
       "id": "property.vc-dimension",
       "name": "VC Dimension",
       "kind": "property",
@@ -12472,6 +12608,23 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.leverage-score-sampling",
+      "name": "Leverage Score Sampling",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Sample data rows/columns based on their influence in a target subspace to produce a compact approximation.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
+    },
+    {
       "id": "technique.limited-independence",
       "name": "Limited Independence",
       "kind": "technique",
@@ -12573,6 +12726,23 @@
       "review_status": "source_checked",
       "reviewed_at": "2026-11-13",
       "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "technique.lp-sampling",
+      "name": "L_p Sampling",
+      "kind": "technique",
+      "areas": [
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Sample an index from a frequency vector with probability approximately proportional to the p-th power of its magnitude.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
     },
     {
       "id": "technique.martingale-concentration",
@@ -13153,6 +13323,23 @@
       "provenance": "conference_abstract_seed_v0.6"
     },
     {
+      "id": "technique.round-elimination",
+      "name": "Round Elimination",
+      "kind": "technique",
+      "areas": [
+        "Distributed Computing"
+      ],
+      "aliases": [],
+      "definition": "Convert a fast distributed protocol for a task into one with fewer rounds for a related task, yielding lower bounds.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
+    },
+    {
       "id": "technique.semidefinite-programming-relaxation",
       "name": "Semidefinite Programming Relaxation",
       "kind": "technique",
@@ -13183,6 +13370,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.simplex-method",
+      "name": "Simplex Method",
+      "kind": "technique",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A pivoting algorithm for linear programming moving between basic feasible solutions.",
+      "scope_note": "Definition grounded in the cited conference paper title or official abstract; specify model-specific parameters before making theorem claims.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-focs25"
+      ],
+      "provenance": "FOCS_STOC_2025_2026_breadth_discovery"
     },
     {
       "id": "technique.spectral-sparsification",
