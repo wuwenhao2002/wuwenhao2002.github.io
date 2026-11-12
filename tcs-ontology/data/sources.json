@@ -366,6 +366,18 @@
       "title": "SoK: Practical Aspects of Releasing Differentially Private Graphs",
       "url": "https://doi.org/10.1145/3779208.3805972",
       "type": "paper"
+    },
+    {
+      "id": "official-dinitz-publications",
+      "title": "Michael Dinitz — Official Publications and Abstracts",
+      "url": "https://www.cs.jhu.edu/~mdinitz/pub.html",
+      "type": "author_publications"
+    },
+    {
+      "id": "official-yoshida-dblp",
+      "title": "Yuichi Yoshida — DBLP Publication Metadata",
+      "url": "https://dblp.org/pid/36/4449.html",
+      "type": "bibliography"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.3.1",
+  "schema_version": "0.4.0",
   "description": "Evidence-indexed representative papers (not an exhaustive or current bibliographic database); each primitive attachment is editorial classification, not formal theorem extraction.",
   "items": [
     {
@@ -537,6 +537,806 @@
         "Yuichi Yoshida"
       ],
       "authors_completeness": "not_curated"
+    },
+    {
+      "id": "curated-dinitz-tail-two",
+      "title": "Controlling Tail Risk in Two-Slope Ski Rental",
+      "year": 2025,
+      "venue": "WAOA 2025",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.ski-rental",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "property.tail-risk",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "property.competitive-ratio",
+          "role": "metric"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-light-spanner",
+      "title": "Light Edge Fault Tolerant Graph Spanners",
+      "year": 2025,
+      "venue": "ICALP 2025",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.graph-spanner",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "lens.fault-tolerance",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "property.approximation-ratio",
+          "role": "metric"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-hopset",
+      "title": "Approximation Algorithms for Optimal Hopsets",
+      "year": 2025,
+      "venue": "ICALP 2025",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.hopset",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "task.approximation-algorithm",
+          "role": "task"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-parallel-set-cover",
+      "title": "Parallel Set Cover and Hypergraph Matching via Uniform Random Sampling",
+      "year": 2024,
+      "venue": "DISC 2024",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.set-cover",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "technique.random-sampling",
+          "role": "technique"
+        },
+        {
+          "primitive_id": "model.massively-parallel-computation-model",
+          "role": "model"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-degrees-network",
+      "title": "Degrees and Network Design: New Problems and Approximations",
+      "year": 2024,
+      "venue": "APPROX 2024",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "property.maximum-degree",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "task.approximation-algorithm",
+          "role": "task"
+        },
+        {
+          "primitive_id": "graph_class.bounded-treewidth-graph",
+          "role": "model"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-congestion-demand",
+      "title": "Approximation Algorithms for Minimizing Congestion in Demand-Aware Networks",
+      "year": 2024,
+      "venue": "INFOCOM 2024",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "task.approximation-algorithm",
+          "role": "task"
+        },
+        {
+          "primitive_id": "property.approximation-ratio",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "objective.total-cost",
+          "role": "metric"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-tail-online",
+      "title": "Controlling Tail Risk in Online Ski-Rental",
+      "year": 2024,
+      "venue": "SODA 2024",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.ski-rental",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "property.tail-risk",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "property.competitive-ratio",
+          "role": "metric"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-relative-survivable-2023",
+      "title": "Improved Approximations for Relative Survivable Network Design",
+      "year": 2023,
+      "venue": "WAOA 2023",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "lens.fault-tolerance",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "task.approximation-algorithm",
+          "role": "task"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-edge-emulator",
+      "title": "Epic Fail: Emulators can tolerate polynomially many edge faults for free",
+      "year": 2023,
+      "venue": "ITCS 2023",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.graph-emulator",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "lens.fault-tolerance",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "assumption.single-edge-deletion",
+          "role": "assumption"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-smoothed-dynamic",
+      "title": "Smoothed Analysis of Information Spreading in Dynamic Networks",
+      "year": 2022,
+      "venue": "DISC 2022",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "framework.smoothed-analysis",
+          "role": "technique"
+        },
+        {
+          "primitive_id": "model.dynamic-network-model",
+          "role": "model"
+        },
+        {
+          "primitive_id": "property.round-complexity",
+          "role": "metric"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-relative-survivable-2022",
+      "title": "Relative Survivable Network Design",
+      "year": 2022,
+      "venue": "APPROX 2022",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "lens.fault-tolerance",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "task.approximation-algorithm",
+          "role": "task"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-fair-disaster",
+      "title": "Fair Disaster Containment via Graph-Cut Problems",
+      "year": 2022,
+      "venue": "AISTATS 2022",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.graph-cut",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "property.demographic-parity",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "task.approximation-algorithm",
+          "role": "task"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-vertex-emulator",
+      "title": "Vertex Fault-Tolerant Emulators",
+      "year": 2022,
+      "venue": "ITCS 2022",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.graph-emulator",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "lens.fault-tolerance",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "assumption.single-vertex-deletion",
+          "role": "assumption"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-learned-duals",
+      "title": "Faster Matchings via Learned Duals",
+      "year": 2021,
+      "venue": "NeurIPS 2021",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.graph-matching",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "technique.primal-dual-method",
+          "role": "technique"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-vertex-ft-spanners",
+      "title": "Optimal Vertex Fault-Tolerant Spanners in Polynomial Time",
+      "year": 2021,
+      "venue": "SODA 2021",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.graph-spanner",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "lens.fault-tolerance",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "task.polynomial-time-algorithm",
+          "role": "task"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-efficient-ft-spanners",
+      "title": "Efficient and Simple Algorithms for Fault Tolerant Spanners",
+      "year": 2020,
+      "venue": "PODC 2020",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.graph-spanner",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "lens.fault-tolerance",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "model.congest-model",
+          "role": "model"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-schedule-reconfig",
+      "title": "Scheduling for Weighted Flow and Completion Times in Reconfigurable Networks",
+      "year": 2020,
+      "venue": "INFOCOM 2020",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.online-scheduling",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "objective.weighted-completion-time",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "assumption.resource-augmentation",
+          "role": "assumption"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-lasserre-spanner",
+      "title": "Lasserre Integrality Gaps for Graph Spanners and Related Problems",
+      "year": 2020,
+      "venue": "WAOA 2020",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.graph-spanner",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "property.integrality-gap",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "technique.sum-of-squares-hierarchy",
+          "role": "technique"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-parallel-distance",
+      "title": "Massively Parallel Approximate Distance Sketches",
+      "year": 2019,
+      "venue": "OPODIS 2019",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "model.massively-parallel-computation-model",
+          "role": "model"
+        },
+        {
+          "primitive_id": "problem.shortest-path",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "property.approximation-ratio",
+          "role": "metric"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-dinitz-policy-regret",
+      "title": "Policy Regret in Repeated Games",
+      "year": 2018,
+      "venue": "NeurIPS 2018",
+      "source_id": "official-dinitz-publications",
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "game.repeated-game",
+          "role": "model"
+        },
+        {
+          "primitive_id": "property.policy-regret",
+          "role": "metric"
+        }
+      ],
+      "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
+    },
+    {
+      "id": "curated-yoshida-courcelle",
+      "title": "Courcelle's Theorem for Lipschitz Continuity",
+      "year": 2025,
+      "venue": "ESA 2025",
+      "source_id": "official-yoshida-dblp",
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "property.pointwise-lipschitz-continuity",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "property.lipschitz-constant",
+          "role": "metric"
+        }
+      ],
+      "source_url": "https://dblp.org/pid/36/4449.html"
+    },
+    {
+      "id": "curated-yoshida-covering-lipschitz",
+      "title": "Lipschitz Continuous Algorithms for Covering Problems",
+      "year": 2025,
+      "venue": "SODA 2025",
+      "source_id": "official-yoshida-dblp",
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "property.pointwise-lipschitz-continuity",
+          "role": "metric"
+        },
+        {
+          "primitive_id": "problem.set-cover",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "property.solution-stability",
+          "role": "metric"
+        }
+      ],
+      "source_url": "https://dblp.org/pid/36/4449.html"
+    },
+    {
+      "id": "curated-yoshida-noise-transformer",
+      "title": "Noise Stability of Transformer Models",
+      "year": 2026,
+      "venue": "ICLR 2026",
+      "source_id": "official-yoshida-dblp",
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "lens.algorithmic-stability",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "property.solution-stability",
+          "role": "metric"
+        }
+      ],
+      "source_url": "https://dblp.org/pid/36/4449.html"
+    },
+    {
+      "id": "curated-yoshida-replicable-bandits",
+      "title": "Replicability is Asymptotically Free in Multi-armed Bandits",
+      "year": 2026,
+      "venue": "TMLR 2026",
+      "source_id": "official-yoshida-dblp",
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "lens.replicability",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "model.multi-armed-bandit",
+          "role": "model"
+        }
+      ],
+      "source_url": "https://dblp.org/pid/36/4449.html"
+    },
+    {
+      "id": "curated-yoshida-monotone-dag",
+      "title": "Testing Monotonicity of Real-Valued Functions on DAGs",
+      "year": 2026,
+      "venue": "2026 preprint",
+      "source_id": "official-yoshida-dblp",
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "problem.monotonicity-testing",
+          "role": "problem"
+        },
+        {
+          "primitive_id": "graph_class.directed-acyclic-graph",
+          "role": "model"
+        }
+      ],
+      "source_url": "https://dblp.org/pid/36/4449.html"
+    },
+    {
+      "id": "curated-yoshida-hypergraph-online",
+      "title": "Online Algorithms for Spectral Hypergraph Sparsification",
+      "year": 2026,
+      "venue": "Mathematical Programming 2026",
+      "source_id": "official-yoshida-dblp",
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "model.adversarial-online-model",
+          "role": "model"
+        },
+        {
+          "primitive_id": "problem.graph-sparsification",
+          "role": "problem"
+        }
+      ],
+      "source_url": "https://dblp.org/pid/36/4449.html"
+    },
+    {
+      "id": "curated-yoshida-bipartiteness",
+      "title": "O(log n)-Approximation Algorithms for Bipartiteness Ratio",
+      "year": 2026,
+      "venue": "IPCO 2026",
+      "source_id": "official-yoshida-dblp",
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "task.approximation-algorithm",
+          "role": "task"
+        },
+        {
+          "primitive_id": "property.approximation-ratio",
+          "role": "metric"
+        }
+      ],
+      "source_url": "https://dblp.org/pid/36/4449.html"
+    },
+    {
+      "id": "curated-yoshida-ltc-extension",
+      "title": "Sensitivity Lower Bounds via Locally Testable Codes",
+      "year": 2026,
+      "venue": "2026 preprint",
+      "source_id": "official-yoshida-dblp",
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors": [],
+      "authors_completeness": "not_curated",
+      "status": "bibliographic_record",
+      "review_status": "editorial_metadata_checked",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "primitives": [
+        {
+          "primitive_id": "lens.algorithmic-sensitivity",
+          "role": "lens"
+        },
+        {
+          "primitive_id": "technique.locally-testable-code-reduction",
+          "role": "technique"
+        },
+        {
+          "primitive_id": "task.tight-lower-bound",
+          "role": "task"
+        }
+      ],
+      "source_url": "https://dblp.org/pid/36/4449.html"
     }
   ]
 }
