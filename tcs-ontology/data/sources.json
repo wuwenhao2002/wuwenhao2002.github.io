@@ -210,6 +210,48 @@
       "title": "Bayesian Nash Equilibrium in First-Price Auctions (EconPort, referencing Vickrey 1961)",
       "url": "https://econport.gsu.edu/content/handbook/auctions/auctionsexperiments/auctionsbneandfirstprice.html",
       "type": "reference"
+    },
+    {
+      "id": "pt-goldreich",
+      "title": "Introduction to Property Testing — Oded Goldreich",
+      "url": "https://doi.org/10.1017/9781108135252",
+      "type": "textbook"
+    },
+    {
+      "id": "qc-nielsen",
+      "title": "Quantum Computation and Quantum Information — Nielsen & Chuang",
+      "url": "https://doi.org/10.1017/CBO9780511976667",
+      "type": "textbook"
+    },
+    {
+      "id": "automata-mit",
+      "title": "MIT Theory of Computation course notes",
+      "url": "https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/pages/lecture-notes/",
+      "type": "course"
+    },
+    {
+      "id": "ds-mit",
+      "title": "MIT 6.851 Advanced Data Structures (Demaine)",
+      "url": "https://courses.csail.mit.edu/6.851/spring12/",
+      "type": "course"
+    },
+    {
+      "id": "random-upt",
+      "title": "Probability and Computing, 2nd edition — Mitzenmacher & Upfal",
+      "url": "https://assets.cambridge.org/97811071/54889/excerpt/9781107154889_excerpt.pdf",
+      "type": "textbook"
+    },
+    {
+      "id": "fairness-hardt",
+      "title": "Equality of Opportunity in Supervised Learning (Hardt et al.)",
+      "url": "https://arxiv.org/abs/1610.02413",
+      "type": "paper"
+    },
+    {
+      "id": "fairness-dwork",
+      "title": "Fairness Through Awareness (Dwork et al.)",
+      "url": "https://arxiv.org/abs/1104.3913",
+      "type": "paper"
     }
   ]
 }

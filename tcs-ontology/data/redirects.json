@@ -46,6 +46,11 @@
       "from": "objective.biobjective-optimization",
       "to": "framework.biobjective-optimization",
       "reason": "Duplicate synonym or misclassified concept in v0.1"
+    },
+    {
+      "from": "technique.rejection-method",
+      "to": "technique.rejection-sampling",
+      "reason": "Canonical synonym of acceptance-rejection sampling"
     }
   ]
 }

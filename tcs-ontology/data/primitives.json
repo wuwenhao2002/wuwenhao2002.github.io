@@ -2890,12 +2890,14 @@
         "Property Testing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Graph oracle model allowing adjacency queries for any vertex pair.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "pt-goldreich"
+      ],
+      "scope_note": "Distance normally uses the fraction of possible edges and differs from bounded-degree access.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.adversarial-online-model",
@@ -3014,12 +3016,14 @@
         "Property Testing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Graph oracle model with bounded vertex degree and indexed-neighbor queries.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "pt-goldreich"
+      ],
+      "scope_note": "Distance is usually normalized by degree bound and number of vertices.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.buchi-automaton",
@@ -3044,12 +3048,14 @@
         "Data Structures"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Model requiring algorithms independent of cache parameters while evaluating block-transfer efficiency.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "ds-mit"
+      ],
+      "scope_note": "Often assumes an ideal cache and a tall-cache property.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.cash-register-model",
@@ -3074,12 +3080,14 @@
         "Data Structures"
       ],
       "aliases": [],
-      "definition": "A data-structure complexity model that charges memory-cell accesses.",
-      "review_status": "seeded_definition_unverified",
+      "definition": "Data-structure complexity model charging memory-cell accesses but not local computation.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "ds-mit"
+      ],
+      "scope_note": "Cell size, space budget and update setting matter.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.commitment-scheme",
@@ -3166,12 +3174,14 @@
         "Property Testing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Property testing model representing graphs by adjacency oracle queries with edge-fraction distance.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "pt-goldreich"
+      ],
+      "scope_note": "Dense and bounded-degree models are not interchangeable.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.digital-signature",
@@ -3211,12 +3221,14 @@
         "Property Testing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Sample access model for testing properties of an unknown probability distribution.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "pt-goldreich"
+      ],
+      "scope_note": "Support size, metric and optional probability-evaluation oracles affect bounds.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.dynamic-data-structure",
@@ -3226,12 +3238,14 @@
         "Data Structures"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Structure supporting updates and queries over an evolving collection.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "ds-mit"
+      ],
+      "scope_note": "Specify worst-case, amortized or randomized complexity separately.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.dynamic-graph-stream",
@@ -3271,12 +3285,14 @@
         "Data Structures"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Model charging transfers between limited fast memory and block-based external storage.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "ds-mit"
+      ],
+      "scope_note": "Internal memory and block size are explicit parameters.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.fault-tolerant-distributed-model",
@@ -3316,12 +3332,14 @@
         "Logic and Automata"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "A finite-state machine that processes strings and accepts according to its transition rules.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "automata-mit"
+      ],
+      "scope_note": "Deterministic and nondeterministic variants recognize regular languages.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.flow-shop",
@@ -3564,12 +3582,14 @@
         "Logic and Automata"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Finite-state automaton with multiple possible successors for a symbol.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "automata-mit"
+      ],
+      "scope_note": "Equivalent in language recognition power to deterministic finite automata.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.nonpreemptive-scheduling",
@@ -3735,12 +3755,14 @@
         "Data Structures"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Data structure retaining access to earlier versions after updates.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "ds-mit"
+      ],
+      "scope_note": "Partial and full persistence permit different operations on past states.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.preemptive-scheduling",
@@ -3859,12 +3881,14 @@
         "Logic and Automata"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Automaton equipped with an unbounded stack and finite control.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "automata-mit"
+      ],
+      "scope_note": "Nondeterministic PDAs characterize context-free languages; deterministic PDAs are weaker.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.quantum-circuit-model",
@@ -3874,12 +3898,14 @@
         "Quantum Computing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Quantum model implementing a computation as a sequence of gates on qubits and measurements.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "qc-nielsen"
+      ],
+      "scope_note": "Gate set, precision, uniformity and measurement conventions matter.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.quantum-communication-model",
@@ -3904,12 +3930,14 @@
         "Quantum Computing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Quantum algorithm model measuring cost in coherent oracle calls.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "qc-nielsen"
+      ],
+      "scope_note": "Not the same complexity measure as gate count.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.random-order-model",
@@ -4120,12 +4148,14 @@
         "Data Structures"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Representation approaching an information-theoretic space bound while supporting efficient operations.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "ds-mit"
+      ],
+      "scope_note": "The combinatorial universe and supported queries must be specified.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.symmetric-encryption",
@@ -4165,12 +4195,14 @@
         "Logic and Automata"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Classical computation model with finite control and a read-write tape.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "automata-mit"
+      ],
+      "scope_note": "Time and space bounds must fix the simulation and input conventions.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "model.turnstile-stream",
@@ -4449,12 +4481,14 @@
         "Logic and Automata"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Decide whether a given automaton recognizes any input string.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "automata-mit"
+      ],
+      "scope_note": "Complexity and decidability depend on the automaton model.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "problem.balanced-separator",
@@ -4770,12 +4804,14 @@
         "Property Testing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Determine from samples whether an unknown distribution equals a reference or is sufficiently distant.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "pt-goldreich"
+      ],
+      "scope_note": "Requires a reference representation, support size and distance metric.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "problem.dynamic-connectivity",
@@ -4800,12 +4836,14 @@
         "Data Structures"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Maintain a graph under edge changes and answer whether vertices are connected.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "ds-mit"
+      ],
+      "scope_note": "Directed and undirected settings differ in complexity.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "problem.dynamic-dictionary",
@@ -4920,12 +4958,14 @@
         "Computational Social Choice"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Allocate goods or chores among agents to satisfy a specified fairness criterion.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "fair-division-2022"
+      ],
+      "scope_note": "Divisibility, sign of valuations and externalities alter feasibility.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "problem.feedback-vertex-set",
@@ -4997,12 +5037,14 @@
         "Property Testing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Distinguish a graph having a property from one far from the property using relatively few queries.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "pt-goldreich"
+      ],
+      "scope_note": "Define graph distance, oracle type, tolerance and error probability.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "problem.graph-reachability",
@@ -5119,12 +5161,14 @@
         "Logic and Automata"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Decide whether two formal descriptions recognize the same language.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "automata-mit"
+      ],
+      "scope_note": "Decidable for finite automata; richer grammar models can be undecidable.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "problem.leader-election",
@@ -5149,12 +5193,14 @@
         "Property Testing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Test whether an oracle function is linear or far from every linear function.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "pt-goldreich"
+      ],
+      "scope_note": "Domain, codomain and input distribution are model assumptions.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "problem.liquid-democracy",
@@ -5638,12 +5684,14 @@
         "Data Structures"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Find the greatest stored key not exceeding a query key in an ordered universe.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "ds-mit"
+      ],
+      "scope_note": "Universe size, word width and dynamic/static access change bounds.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "problem.prophet-selection",
@@ -5713,12 +5761,14 @@
         "Quantum Computing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Find a marked item among candidates using a quantum query oracle.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "qc-nielsen"
+      ],
+      "scope_note": "The search domain, number of solutions and oracle model must be specified.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "problem.quantum-simulation",
@@ -5728,12 +5778,14 @@
         "Quantum Computing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Approximate quantum-system evolution or observables on a quantum computational device.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "qc-nielsen"
+      ],
+      "scope_note": "Hamiltonian access, simulation time and error tolerance are essential.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "problem.quantum-state-discrimination",
@@ -6105,12 +6157,14 @@
         "Property Testing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Distinguish inputs close to a property from those significantly farther away.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "pt-goldreich"
+      ],
+      "scope_note": "Requires two specified distance thresholds.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "problem.traveling-salesperson-problem",
@@ -6152,12 +6206,14 @@
         "Property Testing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Determine from samples whether a discrete distribution is uniform or far from uniform.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "pt-goldreich"
+      ],
+      "scope_note": "Sample complexity depends on domain size and specified distance.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "problem.weighted-completion-time-scheduling",
@@ -6490,12 +6546,14 @@
         "Algorithmic Fairness"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Require positive prediction rates to be identical across protected groups.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "fairness-dwork"
+      ],
+      "scope_note": "Does not condition on true outcomes and can conflict with other fairness criteria.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "property.diameter",
@@ -6537,12 +6595,14 @@
         "Property Testing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Minimum normalized modification distance required to satisfy a target property.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "pt-goldreich"
+      ],
+      "scope_note": "The normalization depends on the model and representation.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "property.dominant-strategy-incentive-compatibility",
@@ -6680,12 +6740,14 @@
         "Algorithmic Fairness"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Require equal true-positive rates across protected groups for binary classification.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "fairness-hardt"
+      ],
+      "scope_note": "One-sided relaxation of equalized odds, not demographic parity.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "property.equalized-odds",
@@ -6695,12 +6757,14 @@
         "Algorithmic Fairness"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Require identical true-positive and false-positive rates across protected groups in binary classification.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "fairness-hardt"
+      ],
+      "scope_note": "Conditions on outcome label; differs from demographic parity.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "property.equilibrium-efficiency",
@@ -6815,12 +6879,14 @@
         "Algorithmic Fairness"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Framework enforcing fairness by relating task-specific similarity to output-distribution similarity.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "fairness-dwork"
+      ],
+      "scope_note": "No unique fairness measure without a defensible similarity metric.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "property.fault-tolerance",
@@ -6956,12 +7022,14 @@
         "Algorithmic Fairness"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Require similar individuals under a task metric to receive similar outcome distributions.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "fairness-dwork"
+      ],
+      "scope_note": "Choice of task-specific similarity metric is essential.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "property.individual-rationality",
@@ -7240,12 +7308,14 @@
         "Computational Social Choice"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "No feasible alternative improves one agent without worsening another.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "fair-division-2022"
+      ],
+      "scope_note": "Efficiency alone does not imply fairness.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "property.pathwidth",
@@ -7436,12 +7506,14 @@
         "Computational Social Choice"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Each of n agents receives at least one nth of their value for the complete resource.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "fair-division-2022"
+      ],
+      "scope_note": "May be infeasible for indivisible goods.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "property.query-complexity-of-testing",
@@ -7451,12 +7523,14 @@
         "Property Testing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Number of oracle queries used by a property tester meeting given completeness and soundness requirements.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "pt-goldreich"
+      ],
+      "scope_note": "Adaptivity and oracle model must be specified.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "property.rademacher-complexity",
@@ -8228,12 +8302,14 @@
         "Quantum Computing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Increase the success probability of a coherent quantum subroutine through reflections.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "qc-nielsen"
+      ],
+      "scope_note": "Requires a coherent success predicate and valid inverse circuit.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "technique.ams-sketch",
@@ -8288,12 +8364,14 @@
         "Randomized Algorithms"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Exponential tail bounds for sums of independent Bernoulli or related bounded variables.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "random-upt"
+      ],
+      "scope_note": "Particular versions require independence or other concentration conditions.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "technique.competitive-analysis-framework",
@@ -8365,12 +8443,14 @@
         "Randomized Algorithms"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Place multiple random processes in a common probability space for comparison.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "random-upt"
+      ],
+      "scope_note": "The chosen joint distribution must preserve each process's marginals.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "technique.cut-sparsification",
@@ -8622,12 +8702,14 @@
         "Randomized Algorithms"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Use k-wise independent random variables instead of fully independent variables.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "random-upt"
+      ],
+      "scope_note": "Tail bounds depend on independence degree and statistic.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "technique.linear-programming-relaxation",
@@ -8716,12 +8798,14 @@
         "Randomized Algorithms"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Derandomize an expectation argument by fixing choices while maintaining a promising conditional expectation.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "random-upt"
+      ],
+      "scope_note": "Efficiently computable conditional expectations are usually required.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "technique.metric-embedding",
@@ -8795,12 +8879,14 @@
         "Quantum Computing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Estimate eigenphases of a unitary operator using controlled operations and interference.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "qc-nielsen"
+      ],
+      "scope_note": "State preparation and precision requirements determine performance.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "technique.pipage-rounding",
@@ -8872,12 +8958,14 @@
         "Randomized Algorithms"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Use positive probability of a desirable random outcome to prove an object exists.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "random-upt"
+      ],
+      "scope_note": "Existence alone is not an efficient algorithm.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "technique.quantum-error-correction",
@@ -8887,12 +8975,14 @@
         "Quantum Computing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Encode quantum information redundantly so specified errors can be detected or corrected.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "qc-nielsen"
+      ],
+      "scope_note": "Specify code, noise model and fault-tolerance assumptions.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "technique.quantum-fourier-transform",
@@ -8902,12 +8992,14 @@
         "Quantum Computing"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "Perform the discrete Fourier transform unitarily on quantum computational-basis amplitudes.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "qc-nielsen"
+      ],
+      "scope_note": "Complexity depends on register size and approximation precision.",
+      "reviewed_at": "2026-11-12"
     },
     {
       "id": "technique.quantum-walk",
@@ -8972,28 +9064,15 @@
       "reviewed_at": null
     },
     {
-      "id": "technique.rejection-method",
-      "name": "Rejection Method",
-      "kind": "technique",
-      "areas": [
-        "Randomized Algorithms"
-      ],
-      "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
-      "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
-    },
-    {
       "id": "technique.rejection-sampling",
       "name": "Rejection Sampling",
       "kind": "technique",
       "areas": [
         "Randomized Algorithms"
       ],
-      "aliases": [],
+      "aliases": [
+        "Rejection Method"
+      ],
       "definition": "",
       "review_status": "needs_definition",
       "provenance": "manual_seed_v0",
