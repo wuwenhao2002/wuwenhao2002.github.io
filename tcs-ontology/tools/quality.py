@@ -29,11 +29,11 @@ def _acyclic(edges: list[dict], predicate: str) -> list[str]:
         if colors.get(node) == 2:
             return
         colors[node] = 1
-        for nxt in graph[node]:
+        for nxt in graph.get(node, []):
             visit(nxt, stack + [node])
         colors[node] = 2
 
-    for key in graph:
+    for key in list(graph):
         if not colors.get(key):
             visit(key, [])
     return errors

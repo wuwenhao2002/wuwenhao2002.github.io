@@ -1,8 +1,11 @@
 """Run with: python3 -m unittest discover -s tests -v"""
 import importlib.util
+import sys
 import tempfile
 import unittest
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
 SPEC = importlib.util.spec_from_file_location(
     "ontology", Path(__file__).resolve().parents[1] / "tools" / "ontology.py")

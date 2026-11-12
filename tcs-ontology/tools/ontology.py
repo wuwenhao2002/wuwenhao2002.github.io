@@ -281,7 +281,7 @@ def export_sqlite(db: dict, outfile: Path) -> None:
         );
         CREATE TABLE redirect (old_id TEXT PRIMARY KEY, new_id TEXT NOT NULL REFERENCES primitive(id), reason TEXT NOT NULL);
         CREATE TABLE checked_result (id TEXT PRIMARY KEY, statement TEXT NOT NULL, scope_note TEXT NOT NULL, json TEXT NOT NULL);
-                CREATE INDEX idx_primitive_name ON primitive(name);
+        CREATE INDEX idx_primitive_name ON primitive(name);
         CREATE INDEX idx_primitive_kind ON primitive(kind);
         CREATE INDEX idx_primitive_area ON primitive_area(area);
         CREATE INDEX idx_relationship_target ON relationship(target_id);

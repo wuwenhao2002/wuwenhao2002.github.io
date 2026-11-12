@@ -211,15 +211,16 @@
   }
   function randomize() {
     const rule=state.rules.find(r=>r.id===$("ruleSelect").value);if(!rule)return;
-    const chosen={};
-    for(const slot of rule.slots) {
-      const opts=slotOptions(slot,chosen);if(!opts.length){alertUser("No matching reviewed choices; enable candidate entries.");return;}
-      const selected=opts[Math.floor(Math.random()*opts.length)];chosen[slot.key]=selected.id;
-    }
-    updateComposer();for(const s of rule.slots){const option=$("slot-"+s.key);
-      if([...option.options].some(o=>o.value===chosen[s.key])){option.value=chosen[s.key];}
+    updateComposer();
+    for (const slot of rule.slots) {
+      const options=slotOptions(slot,currentChoice());
+      if (!options.length) {alertUser("No eligible choices; allow candidate entries or choose another template.");return;}
+      const choice=options[Math.floor(Math.random()*options.length)];
+      const select=$("slot-"+slot.key);
+      select.value=choice.id;
       updateComposer(true);
-    } compose();
+    }
+    compose();
   }
   function showSaved() {
     const saved=loadSaved(),root=$("savedList");root.replaceChildren();$("savedCount").textContent=saved.length;
