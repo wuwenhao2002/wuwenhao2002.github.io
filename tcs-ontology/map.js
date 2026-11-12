@@ -117,6 +117,7 @@ function renderSelected(){
 function renderPapers(){
  const root=$("mapDetail");root.replaceChildren();
  if(!state.selected.size){
+  $("mapHeading").textContent="Choose a primitive";
   $("paperCount").textContent="—";$("morePapers").disabled=true;
   root.append(make("div","empty","Select one or more primitives. Only papers containing every selected primitive will appear."));return;
  }
