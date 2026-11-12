@@ -2000,6 +2000,23 @@
       "reviewed_at": null
     },
     {
+      "id": "framework.ordered-graph-limits",
+      "name": "Ordered Graph Limits",
+      "kind": "framework",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Study limits of large dense graphs equipped with an ordering on vertices, using analytic orderon-type objects.",
+      "scope_note": "Ordered limit theory is not equivalent to ordinary graphons because vertex order is substantive.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "framework.parameterized-complexity",
       "name": "Parameterized Complexity",
       "kind": "framework",
@@ -3886,6 +3903,23 @@
       "reviewed_at": null
     },
     {
+      "id": "model.linear-bandit",
+      "name": "Linear Bandit",
+      "kind": "model",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "An online decision model where reward is a linear function of an unknown parameter and only chosen-action feedback is observed.",
+      "scope_note": "Adversarial versus stochastic rewards and action-set geometry alter regret guarantees.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "model.local-computation-algorithm",
       "name": "Local Computation Algorithm",
       "kind": "model",
@@ -3998,6 +4032,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "model.mobile-telephone-network",
+      "name": "Mobile Telephone Network Model",
+      "kind": "model",
+      "areas": [
+        "Distributed Computing"
+      ],
+      "aliases": [],
+      "definition": "A peer-to-peer communication abstraction that constrains which pairwise connections devices can form in a communication round.",
+      "scope_note": "Distinct from unrestricted LOCAL and CONGEST message passing models.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-dinitz-publications"
+      ]
     },
     {
       "id": "model.multi-armed-bandit",
@@ -4713,6 +4764,23 @@
       "reviewed_at": null
     },
     {
+      "id": "model.stochastic-diffusion",
+      "name": "Stochastic Diffusion Model",
+      "kind": "model",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A random propagation process modeling the spread of a state or infection through a contact network.",
+      "scope_note": "SIR, SIS, independent-cascade and threshold contagion models have different transitions.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-dinitz-publications"
+      ]
+    },
+    {
       "id": "model.sublinear-query-model",
       "name": "Sublinear Query Model",
       "kind": "model",
@@ -5297,6 +5365,74 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.convex-hull",
+      "name": "Convex Hull",
+      "kind": "problem",
+      "areas": [
+        "Computational Geometry"
+      ],
+      "aliases": [],
+      "definition": "Compute the smallest convex set containing a given finite point set, or a representation of its boundary.",
+      "scope_note": "Point dimension and input perturbation model affect sensitivity and complexity.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
+      "id": "problem.decision-tree-learning",
+      "name": "Decision Tree Learning",
+      "kind": "problem",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Fit an interpretable tree-structured predictor to a labeled dataset while optimizing accuracy or another empirical objective.",
+      "scope_note": "Tree depth, loss, perturbation and training protocol affect stability guarantees.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
+      "id": "problem.decomposable-submodular-sparsification",
+      "name": "Decomposable Submodular Sparsification",
+      "kind": "problem",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Approximate a sum of many submodular functions by a weighted sum of relatively few component functions.",
+      "scope_note": "The approximation objective and constraints differ from generic graph sparsification.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
+      "id": "problem.delaunay-triangulation",
+      "name": "Delaunay Triangulation",
+      "kind": "problem",
+      "areas": [
+        "Computational Geometry"
+      ],
+      "aliases": [],
+      "definition": "Construct a triangulation whose simplices satisfy the empty-circumsphere property for a finite point set in general position.",
+      "scope_note": "Degeneracies and ambient dimension require explicit handling.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "problem.densest-subgraph",
       "name": "Densest Subgraph",
       "kind": "problem",
@@ -5566,6 +5702,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.effective-resistance-estimation",
+      "name": "Effective Resistance Estimation",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Estimate the electrical effective resistance between two vertices in a weighted graph.",
+      "scope_note": "Requires conductances and a graph query model; grounded in Laplacian pseudoinverse notions.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
     },
     {
       "id": "problem.end-of-line",
@@ -5886,6 +6039,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.homomorphism-testing",
+      "name": "Homomorphism Testing",
+      "kind": "problem",
+      "areas": [
+        "Property Testing"
+      ],
+      "aliases": [],
+      "definition": "Distinguish structures that avoid a fixed relational homomorphism from structures far from avoiding it by using a limited number of queries.",
+      "scope_note": "The target relational structure and distance/tester access model determine characterization.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
     },
     {
       "id": "problem.hopset",
@@ -6298,6 +6468,23 @@
       "provenance": "paper_curation_v0.3"
     },
     {
+      "id": "problem.minimum-circuit-size",
+      "name": "Minimum Circuit Size Problem",
+      "kind": "problem",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Given the truth table of a Boolean function and size threshold, determine whether the function admits a Boolean circuit below the threshold.",
+      "scope_note": "MCSP is a decision problem central to hardness magnification; circuit basis and encoding matter.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "problem.minimum-cut",
       "name": "Minimum Cut",
       "kind": "problem",
@@ -6377,6 +6564,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.minimum-spanning-forest",
+      "name": "Minimum Spanning Forest",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "For each connected component of an undirected weighted graph, compute a minimum-total-weight spanning tree.",
+      "scope_note": "This extends MST to disconnected graphs and is not identical to minimum spanning tree on a disconnected graph.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
     },
     {
       "id": "problem.minimum-spanning-tree",
@@ -7455,6 +7659,23 @@
       ]
     },
     {
+      "id": "problem.voronoi-diagram",
+      "name": "Voronoi Diagram",
+      "kind": "problem",
+      "areas": [
+        "Computational Geometry"
+      ],
+      "aliases": [],
+      "definition": "Partition space into regions associated with the nearest input site under a given metric.",
+      "scope_note": "Metric, tie-breaking and dimensionality define the geometry.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "problem.weighted-completion-time-scheduling",
       "name": "Weighted Completion Time Scheduling",
       "kind": "problem",
@@ -7700,6 +7921,23 @@
       "reviewed_at": null
     },
     {
+      "id": "property.centrality-sensitivity",
+      "name": "Centrality Sensitivity",
+      "kind": "property",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Measure how much the numerical centrality score of a vertex or edge changes under graph perturbations.",
+      "scope_note": "It measures centrality-valued changes rather than the Hamming distance of discrete algorithmic solutions.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "property.chromatic-number",
       "name": "Chromatic Number",
       "kind": "property",
@@ -7867,6 +8105,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.degree-vector-norm",
+      "name": "Degree Vector Norm",
+      "kind": "property",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "The ℓp norm of a graph's vector of vertex degrees, interpolating between edge-count and maximum-degree objectives.",
+      "scope_note": "p, directionality, graph model and degree normalization must be stated.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-dinitz-publications"
+      ]
     },
     {
       "id": "property.demographic-parity",
@@ -8428,6 +8683,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.influence-maximization",
+      "name": "Influence Maximization",
+      "kind": "property",
+      "areas": [
+        "Algorithmic Game Theory"
+      ],
+      "aliases": [],
+      "definition": "An objective measuring total expected spread under a specified stochastic diffusion model and selected initial seeds.",
+      "scope_note": "Diffusion model, seed budget and objective need to be explicit; often formulated as a separate optimization problem.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-dinitz-publications"
+      ]
     },
     {
       "id": "property.instance-optimality",
