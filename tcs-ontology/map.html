@@ -1,39 +1,108 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="TCS Ontology Paper-driven Research Graph: select multiple primitives, explore co-occurrence in indexed papers."><title>Paper-driven Research Graph · TCS Ontology</title><link rel="stylesheet" href="./map.css"></head>
-<body><header class="top"><a class="brand" href="./">TCS<span>⋈</span>ONTOLOGY</a><div class="separator"></div><span class="tag">PAPER-DRIVEN RESEARCH GRAPH</span><div class="spacer"></div><a class="back" href="./">← Primitive Explorer</a></header>
-<main class="layout">
-<aside class="rail">
-<div class="eyebrow">EXPLORE BY PRIMITIVE</div><h1>Research<br><em>Graph.</em></h1>
-<p class="summary">Select one or more concepts. Connected concepts are those appearing together in indexed papers. The paper list requires <strong>every selected concept</strong>.</p>
-<label class="field" for="mapSearch">FIND PRIMITIVES</label><input id="mapSearch" type="search" placeholder="Prediction, Privacy, Matching…" autocomplete="off">
-<label class="field" for="mapArea">AREA</label><select id="mapArea"><option value="">All areas</option></select>
-<label class="field" for="mapStatus">PRIMITIVE REVIEW</label><select id="mapStatus"><option value="all">All primitives</option><option value="source_checked">Source-checked only</option></select>
-<div class="field">MATCHING PRIMITIVES</div><div id="mapMatches" class="matches" role="list" aria-label="Primitive search results"></div>
-<div class="rail-note">Relations here are <strong>paper co-occurrences</strong>, not semantic similarity or inferred theorem dependencies. A title-inferred label needs verification in the paper itself.</div>
-</aside>
-<section class="universe">
-<div class="stage-head">
-<div><span class="eyebrow">THEORY THROUGH PUBLICATIONS</span><h2 id="mapHeading">Choose a primitive</h2></div>
-<div class="stage-actions"><button id="zoomIn" aria-label="Zoom in">+</button><button id="zoomOut" aria-label="Zoom out">−</button><button id="resetView">Fit</button><button id="motionToggle" aria-pressed="false">Pause</button></div>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080e18"><meta name="description" content="TCS Ontology • An interactive, publication-driven atlas of theoretical computer science.">
+  <title>Research Atlas — TCS Ontology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./map.css">
+</head>
+<body>
+<div class="app">
+  <header class="masthead">
+    <a class="brand" href="./" aria-label="TCS Ontology home"><span class="brand-emblem"><span class="emblem-s1"></span><span class="emblem-s2"></span><span class="emblem-dot"></span></span><span class="brand-type">TCS <strong>ONTOLOGY</strong><small>RESEARCH INFRASTRUCTURE</small></span></a>
+    <span class="head-divider"></span><span class="head-context"><span class="status-pulse"></span> PAPER-DRIVEN GRAPH</span>
+    <div class="head-spacer"></div>
+    <a class="head-link" href="./">Concept index <span aria-hidden="true">↗</span></a>
+    <a class="head-link head-github" href="https://github.com/wuwenhao2002/wuwenhao2002.github.io/tree/main/tcs-ontology" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+    <span class="release">ATLAS / V0.5</span>
+  </header>
+
+  <main class="workspace">
+    <aside class="discovery" aria-label="Discover research primitives">
+      <div class="discovery-hero">
+        <div class="eyebrow"><span class="eyebrow-dash"></span> EXPLORE THE FIELD</div>
+        <h1>Ideas are<br><span>connected.</span></h1>
+        <p>Navigate the building blocks of theoretical computer science, connected by the papers that use them together.</p>
+      </div>
+
+      <div class="filter-panel">
+        <label for="mapSearch" class="field-label">SEARCH PRIMITIVES <span class="key-hint">/</span></label>
+        <div class="search-wrap"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg><input id="mapSearch" type="search" placeholder="Prediction, matching, privacy…" autocomplete="off" spellcheck="false"></div>
+
+        <div class="field-label field-top">RESEARCH LENSES <span class="muted-label">QUICK START</span></div>
+        <div class="lens-quick" id="lensQuick" role="group" aria-label="Select a research lens">
+          <button class="lens-chip" data-primitive="lens.prediction"><span class="lens-dot" style="--lens-hue:40"></span>Prediction</button>
+          <button class="lens-chip" data-primitive="lens.differential-privacy"><span class="lens-dot" style="--lens-hue:166"></span>Privacy</button>
+          <button class="lens-chip" data-primitive="lens.algorithmic-sensitivity"><span class="lens-dot" style="--lens-hue:271"></span>Sensitivity</button>
+          <button class="lens-chip" data-primitive="lens.algorithmic-stability"><span class="lens-dot" style="--lens-hue:208"></span>Stability</button>
+        </div>
+
+        <div class="two-filters">
+          <div><label for="mapArea" class="field-label">FIELD</label><select id="mapArea"><option value="">All fields</option></select></div>
+          <div><label for="mapStatus" class="field-label">CONCEPTS</label><select id="mapStatus"><option value="all">All concepts</option><option value="source_checked">Source checked</option></select></div>
+        </div>
+      </div>
+
+      <div class="index-head"><span>PRIMITIVE INDEX</span><span id="primitiveResultsCount" class="index-count">—</span></div>
+      <div id="mapMatches" class="matches" role="list" aria-label="Primitive search results"></div>
+      <div class="discovery-footer">
+        <span class="footer-symbol">◈</span>
+        <div><strong>Source first.</strong><span>Only shared papers establish a connection, never visual proximity.</span></div>
+      </div>
+    </aside>
+
+    <section class="cosmos" aria-label="Interactive primitive constellation">
+      <div class="map-toolbar">
+        <div class="map-toolbar-title"><span class="eyebrow">THE KNOWLEDGE CONSTELLATION</span><h2 id="mapHeading">A universe of research ideas</h2></div>
+        <div class="map-toolbar-actions">
+          <button class="icon-tool" id="zoomOut" title="Zoom out" aria-label="Zoom out">−</button><button class="icon-tool" id="zoomIn" title="Zoom in" aria-label="Zoom in">+</button>
+          <button class="pill-tool" id="resetView" title="Fit all concepts">Fit all</button>
+          <button class="pill-tool" id="focusMode" aria-pressed="true" title="Focus on selected and linked primitives">Focus mode <span class="active-indicator"></span></button>
+          <button class="icon-tool motion-tool" id="motionToggle" aria-label="Pause motion" aria-pressed="false" title="Pause / resume decorative motion">Ⅱ</button>
+        </div>
+      </div>
+
+      <div class="selection-panel" aria-label="Selected primitive intersection">
+        <div class="selection-label"><span class="light-dot"></span><span>ACTIVE FILTERS <em>ALL MUST MATCH</em></span><button id="clearSelection" class="clear-action">Clear all <span>×</span></button></div>
+        <div class="selected-chips" id="selectedChips" aria-live="polite"><span class="empty-chips">Select any primitive to reveal the papers connecting it to others.</span></div>
+      </div>
+
+      <div id="stage" class="stage" role="application" tabindex="0" aria-label="Research graph. Click to add or remove primitive filters. Drag to move, scroll to zoom. Use the searchable primitive list for keyboard navigation.">
+        <canvas id="mapCanvas" aria-hidden="true"></canvas>
+        <div id="hoverTip" class="hover-tip" hidden></div>
+        <div class="map-ambient top-left"><div class="ambient-line"><span class="ambient-bullet"></span> PAPER CO-OCCURRENCE NETWORK</div><div class="ambient-value" id="mapScope">EXPLORE / ATLAS</div></div>
+        <div class="map-ambient bottom-right"><span class="mini-compass"><span class="compass-n">N</span><span class="compass-needle">✦</span></span><span id="mapCounter" class="map-counter">Loading research field…</span></div>
+        <div class="map-bottom-left"><span class="control-key">DRAG</span> PAN <span class="control-divider">·</span> <span class="control-key">SCROLL</span> ZOOM <span class="control-divider">·</span> <span class="control-key">CLICK</span> CONNECT</div>
+        <div id="mapError" class="map-error" hidden role="alert"></div>
+      </div>
+
+      <footer class="map-legend"><div class="legend-group">
+        <span><i class="legend-sphere chosen"></i> Selected</span>
+        <span><i class="legend-sphere related"></i> Linked by papers</span>
+        <span><i class="legend-sphere dormant"></i> Other concepts</span>
+      </div><span class="legend-disclaimer">No link ≠ no existing research</span></footer>
+    </section>
+
+    <aside class="literature" aria-label="Paper matches">
+      <div class="lit-header">
+        <div class="eyebrow">EVIDENCE / LITERATURE</div>
+        <div class="lit-title-row"><h2>Matching papers<span class="heading-period">.</span></h2><span id="paperCount" class="paper-count" aria-live="polite">—</span></div>
+        <p>Publications sharing <strong>every</strong> selected primitive.</p>
+      </div>
+      <div class="lit-filters">
+        <div class="paper-search"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg><input id="paperSearch" type="search" placeholder="Search within matching papers…"></div>
+        <label for="paperEvidence" class="field-label">ANNOTATION EVIDENCE</label>
+        <select id="paperEvidence"><option value="all">All indexed papers</option><option value="curated">Editorially mapped only</option><option value="harvested">Title-inferred candidates only</option></select>
+        <div id="paperMethod" class="evidence-note"><span class="evidence-icon">i</span><span><b>Evidence matters.</b> Editorial associations and automatically inferred title labels are clearly distinguished. An empty result is not proof of novelty.</span></div>
+      </div>
+      <div id="mapDetail" class="paper-scroll">
+        <div class="empty-papers"><div class="empty-planet"><span>✳</span></div><h3>Find your connection.</h3><p>Choose a concept in the map. Add another to narrow down to papers that use both.</p></div>
+      </div>
+      <div class="paper-footer"><button id="morePapers" disabled>Show more papers <span>↓</span></button><button id="exportPapers" title="Download matching paper metadata as JSON">Export ↗</button></div>
+    </aside>
+  </main>
 </div>
-<div class="selection-strip"><div class="selection-head"><span>SELECTED PRIMITIVES <span class="tiny-note">(AND)</span></span><button id="clearSelection" class="clear-btn">Clear all ×</button></div><div id="selectedChips" class="selected-chips" aria-live="polite"><span class="no-selected">Click any node to begin. Click another to add a condition.</span></div></div>
-<div id="stage" class="stage" tabindex="0" role="application" aria-label="Interactive paper graph: click nodes to toggle selection, drag to pan, scroll to zoom. Search results offer keyboard-accessible selection.">
-<canvas id="mapCanvas" aria-hidden="true"></canvas><div id="hoverTip" class="hover-tip" hidden></div>
-<div id="mapError" class="map-error" hidden></div>
-<div class="stage-instruction">CLICK TO ADD/REMOVE · DRAG TO PAN · SCROLL TO ZOOM</div><div id="mapCounter" class="stage-counter" aria-live="off">Loading graph…</div>
-</div>
-<div class="foot">Gold nodes are selected; mint nodes co-occur in at least one paper matching all selections. Grey nodes have no currently recorded link. <span class="tiny-note">Missing coverage ≠ no research exists.</span></div>
-</section>
-<aside class="detail" aria-label="Matching papers">
-<div class="detail-title"><div><span class="eyebrow">PAPERS</span><h2>Literature intersection</h2></div><span id="paperCount" class="paper-count" aria-live="polite">—</span></div>
-<div class="paper-controls">
-<input id="paperSearch" type="search" placeholder="Filter matching paper titles…" aria-label="Search paper titles">
-<label class="field" for="paperEvidence">EVIDENCE LEVEL</label><select id="paperEvidence">
-<option value="all">Curated + title-inferred</option><option value="curated">Curated associations only</option><option value="harvested">Title-inferred only</option>
-</select></div>
-<div class="paper-method" id="paperMethod">Curated links were reviewed editorially. Imported links are derived from explicit title phrases only; paper content has not been checked.</div>
-<div id="mapDetail" class="detail-scroll"><div class="empty"><div>✳</div><h3>Start exploring.</h3><p>Choose concepts on the map. Papers using all selected concepts will appear here.</p></div></div>
-<div class="paper-footer"><button id="morePapers" disabled>Load more papers</button><button id="exportPapers">Export matching JSON ↓</button></div>
-</aside></main>
 <script src="./map-model.js" defer></script><script src="./map.js" defer></script>
 </body></html>
