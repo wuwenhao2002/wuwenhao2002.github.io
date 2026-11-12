@@ -2,11 +2,13 @@
 
 **A typed catalog of theoretical computer science primitives and a research-question composer.**
 
-[Open the interactive atlas](https://wuwenhao2002.github.io/tcs-ontology/) · [GitHub source directory](https://github.com/wuwenhao2002/wuwenhao2002.github.io/tree/main/tcs-ontology)
+[Open the interactive atlas](https://wuwenhao2002.github.io/tcs-ontology/) · [Open the floating primitive map](https://wuwenhao2002.github.io/tcs-ontology/map.html) · [GitHub source directory](https://github.com/wuwenhao2002/wuwenhao2002.github.io/tree/main/tcs-ontology)
 
-> **Status: versioned, partially editorially source-checked seed (v0.2).** The catalog is *not comprehensive* or expert-verified. Generated combinations are candidate research directions, **not certified open problems, verified mathematical questions, or evidence of novelty**.
+> **Status: versioned, partially editorially source-checked seed (v0.3).** The catalog is *not comprehensive* or expert-verified. Generated combinations are candidate research directions, **not certified open problems, verified mathematical questions, or evidence of novelty**.
 
 ## What it does
+
+**v0.3:** new interactive [Primitive Universe](./map.html), structured paper-primitive role indexing, and research lenses (prediction, privacy, sensitivity, stability). See [docs/PAPER_COMBINATIONS.md](docs/PAPER_COMBINATIONS.md) for the curated paper sample and its limitations.
 
 - Browse, filter, search and export TCS primitives across 19 areas, including algorithmic game theory, mechanism design, graph algorithms, approximation, complexity, online/distributed algorithms, learning theory, cryptography, scheduling, streaming, and quantum computing.
 - Each primitive has a stable ID, `kind`, `areas`, aliases, a definition when available, a review state, and source pointers when available.
@@ -22,6 +24,9 @@ This is a **static, Git-friendly knowledge database**. Canonical data is kept in
 ```text
 tcs-ontology/
 ├── index.html            # Static exploration and composition UI
+├── map.html              # Floating interactive map
+├── map.js                # Canvas renderer: zoom/pan/select/search
+├── map.css               # Responsive map styling
 ├── styles.css            # Responsive interface
 ├── app.js                # Browser-only client
 ├── data/
@@ -29,7 +34,8 @@ tcs-ontology/
 │   ├── relationships.json# Directed conceptual edges
 │   ├── rules.json        # Typed composition templates
 │   ├── literature.json   # Carefully scoped evidence pointers
-│   ├── sources.json      # Literature & external resource registry\n│   ├── redirects.json    # Canonical ID redirects\n│   └── results.json      # Scope-limited source-checked results
+│   ├── sources.json      # Literature & external resource registry\n│   ├── redirects.json    # Canonical ID redirects\n│   ├── results.json      # Scope-limited source-checked results
+│   └── papers.json       # Paper/primitive role index
 ├── schema/
 │   └── primitive.schema.json
 ├── tools/
@@ -130,7 +136,7 @@ Do not import entire proprietary datasets, scraped articles, or copyrighted glos
 
 ## v0.2 review status
 
-The catalog now preserves **588 canonical primitives**, with a **177-entry editorially source-checked core** and **411 entries awaiting review or definitions**, across 19 areas. These are finite editorial snapshots, not a completeness claim. It records 42 typed relations, six scoped result statements, and ten backward-compatible redirects. These values should be regenerated using `python3 tools/ontology.py quality` rather than maintained manually in downstream projects.
+The preceding v0.2 catalog contained **588 canonical primitives**, with a **177-entry editorially source-checked core** and **411 entries awaiting review or definitions**, across 19 areas. These are finite editorial snapshots, not a completeness claim. It records 42 typed relations, six scoped result statements, and ten backward-compatible redirects. These values should be regenerated using `python3 tools/ontology.py quality` rather than maintained manually in downstream projects.
 
 The UI initially displays only `source_checked` entries and allows explicitly toggling candidates. Names and IDs from v0.1 are resolved through `data/redirects.json`. Core scientific safeguards include not applying unweighted finite Rosenthal equilibrium guarantees to weighted congestion games, distinguishing single-item auctions from multi-item compositions, and explicitly specifying equilibrium notion and cost versus welfare objectives in efficiency questions.
 
