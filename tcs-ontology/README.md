@@ -4,11 +4,13 @@
 
 [Open the interactive atlas](https://wuwenhao2002.github.io/tcs-ontology/) · [Open the floating primitive map](https://wuwenhao2002.github.io/tcs-ontology/map.html) · [GitHub source directory](https://github.com/wuwenhao2002/wuwenhao2002.github.io/tree/main/tcs-ontology)
 
-> **Status: versioned, partially editorially source-checked seed (v0.3).** The catalog is *not comprehensive* or expert-verified. Generated combinations are candidate research directions, **not certified open problems, verified mathematical questions, or evidence of novelty**.
+> **Status: versioned, partially editorially source-checked seed (v0.4).** The catalog is *not comprehensive* or expert-verified. Generated combinations are candidate research directions, **not certified open problems, verified mathematical questions, or evidence of novelty**.
 
 ## What it does
 
-**v0.3:** new interactive [Primitive Universe](./map.html), structured paper-primitive role indexing, and research lenses (prediction, privacy, sensitivity, stability). See [docs/PAPER_COMBINATIONS.md](docs/PAPER_COMBINATIONS.md) for the curated paper sample and its limitations.
+**v0.4:** paper-driven AND-filter research graph with multi-selection, verified-vs-unreviewed paper filters, and bibliography export. See [docs/PAPER_GRAPH.md](docs/PAPER_GRAPH.md).
+
+**v0.3:** interactive [Primitive Universe](./map.html), structured paper-primitive role indexing, and research lenses (prediction, privacy, sensitivity, stability). See [docs/PAPER_COMBINATIONS.md](docs/PAPER_COMBINATIONS.md) for the curated paper sample and its limitations.
 
 - Browse, filter, search and export TCS primitives across 19 areas, including algorithmic game theory, mechanism design, graph algorithms, approximation, complexity, online/distributed algorithms, learning theory, cryptography, scheduling, streaming, and quantum computing.
 - Each primitive has a stable ID, `kind`, `areas`, aliases, a definition when available, a review state, and source pointers when available.
@@ -25,7 +27,8 @@ This is a **static, Git-friendly knowledge database**. Canonical data is kept in
 tcs-ontology/
 ├── index.html            # Static exploration and composition UI
 ├── map.html              # Floating interactive map
-├── map.js                # Canvas renderer: zoom/pan/select/search
+├── map.js                # Canvas multi-selection and paper intersection UI
+├── map-model.js          # Pure tested paper-membership index
 ├── map.css               # Responsive map styling
 ├── styles.css            # Responsive interface
 ├── app.js                # Browser-only client
@@ -35,7 +38,9 @@ tcs-ontology/
 │   ├── rules.json        # Typed composition templates
 │   ├── literature.json   # Carefully scoped evidence pointers
 │   ├── sources.json      # Literature & external resource registry\n│   ├── redirects.json    # Canonical ID redirects\n│   ├── results.json      # Scope-limited source-checked results
-│   └── papers.json       # Paper/primitive role index
+│   ├── papers.json       # Editorially linked papers
+│   ├── papers-harvested.json # Unreviewed title-inferred bibliography
+│   └── papers-rejected.json # Exclusion/audit registry
 ├── schema/
 │   └── primitive.schema.json
 ├── tools/
@@ -158,3 +163,10 @@ These are inspiration / future ingestion sources, **not** assumed sources for ea
 ## Hosting and ownership
 
 Currently located inside the existing `wuwenhao2002/wuwenhao2002.github.io` site repository, under the isolated `tcs-ontology/` folder, because the connected GitHub integration does not expose a repository-creation operation. A standalone repository can be created later and this directory moved intact. The existing website root files have not been modified.
+
+
+### Paper-driven Graph (v0.4)
+
+The map now uses **only papers as edges**. Click several primitives to take the AND-intersection of their paper membership sets; mint-highlighted nodes co-occur in at least one of those papers. The right bibliography distinguishes manually mapped scholarly papers from title-derived, explicitly unreviewed Crossref metadata. No trend charts, novelty predictions, or semantic-similarity claims are calculated.
+
+Current release snapshot: **649 canonical primitives, 43 editorial papers and 130 conservatively screened title-inferred papers** (170 unique after title deduplication). Regenerate these counts from JSON after later updates; they are not completeness claims.

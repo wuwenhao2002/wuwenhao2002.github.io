@@ -48,5 +48,5 @@ jobs:
           node --check tcs-ontology/app.js
           node --check tcs-ontology/map.js
           node --check tcs-ontology/map-model.js
-          node --test tcs-ontology/tests/test_graph.cjs
+          node --test tcs-ontology/tests/test_graph.cjs tcs-ontology/tests/test_graph_corpus.cjs
 
