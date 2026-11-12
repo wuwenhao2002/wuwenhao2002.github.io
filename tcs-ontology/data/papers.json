@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.5.0",
+  "schema_version": "0.6.0",
   "description": "Evidence-indexed representative papers (not an exhaustive or current bibliographic database); each primitive attachment is editorial classification, not formal theorem extraction.",
   "items": [
     {
@@ -3701,6 +3701,1090 @@
           "role": "technique",
           "evidence": "publisher_abstract",
           "note": "Publisher abstract directly supports the use of this concept: Private approximate stationary-point computation for nonconvex smooth empirical loss."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-dynamic-connect",
+      "title": "Dynamic Connectivity, Minimum Spanning Tree, and 2-Edge Connectivity with Polylogarithmic Worst-Case Update Time",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Simon Meierhans",
+        "Maximilian Probst Gutenberg",
+        "Yu-Cheng Yeh"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.dynamic-maintenance",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.fully-dynamic-updates",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.dynamic-connectivity",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.dynamic-mst",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.dynamic-2-edge-connectivity",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.worst-case-update-time",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-dynamic-kmeans",
+      "title": "Fully Dynamic Euclidean k-Means",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Sayan Bhattacharya",
+        "Martin Costa",
+        "Ermiya Farokhnejad",
+        "Shaofeng Jiang",
+        "Yaonan Jin",
+        "Jianing Lou"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.dynamic-maintenance",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.fully-dynamic-updates",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.dynamic-kmeans",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.euclidean-k-clustering",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-adaptive-fmoments",
+      "title": "Adversarial Robustness for Small Frequency Moments and a Weak Equivalence Theorem for Turnstile Streams",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Elena Gribelyuk",
+        "Honghao Lin",
+        "David P. Woodruff",
+        "Huacheng Yu",
+        "Samson Zhou"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.adversarially-robust-streaming",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.adaptive-adversary",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.turnstile-stream",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.frequency-moment-estimation",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.streaming-space-complexity",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-sketch-equivalence",
+      "title": "Turnstile Streaming Algorithms Might (Still) as Well Be Linear Sketches, for Polynomial-Length Streams",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Cheng Jiang",
+        "Yinchen Liu",
+        "Huacheng Yu"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "model.polynomial-length-turnstile",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.turnstile-stream",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "technique.linear-sketch",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.streaming-space-complexity",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-furthest-coreset",
+      "title": "A Polynomial Coreset for Furthest Neighbor in Planar Metrics",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Kacper Kluk",
+        "Hung Le",
+        "Wojciech Nadara",
+        "Marcin Pilipczuk",
+        "Hector Tierno",
+        "Vinayak Vinayak"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.coreset-compression",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "technique.coreset",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.coreset-size",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.furthest-neighbor",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "graph_class.planar-graph",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-branchwidth",
+      "title": "Branch-width of connectivity functions is fixed-parameter tractable",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Tuukka Korhonen",
+        "Sang-il Oum"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.parameterized-tractability",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.parameterized-branchwidth",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "complexity_class.fpt",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-modular-fpt",
+      "title": "Optimal FPT-Approximability for Modular Linear Equations",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Konrad K. Dabrowski",
+        "Peter Jonsson",
+        "Sebastian Ordyniak",
+        "George Osipov",
+        "Magnus Wahlstrom"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.parameterized-tractability",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.modular-linear-equations",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.fpt-approximation-ratio",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "task.parameterized-approximation",
+          "role": "task",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-online-multicalibration",
+      "title": "Optimal Lower Bounds for Online Multicalibration",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Natalie Collina",
+        "Jiuyao Lu",
+        "Georgy Noarov",
+        "Aaron Roth"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.calibration-constraints",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.multicalibration",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.online-multicalibration",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "task.tight-lower-bound",
+          "role": "task",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-posterior",
+      "title": "Online Algorithms via Minimax and Posterior Matching",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Thomas Kesselheim",
+        "Marco Molinaro",
+        "Kalen Patton",
+        "Sahil Singla"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "technique.minimax-reduction",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "technique.posterior-matching",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.adversarial-online-model",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-binpack",
+      "title": "Optimal Online Bin Packing under Prophet, Random-Order, and Learning-from-Samples Models",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Kailash Gopal Darmasubramanian",
+        "Samyak Jha",
+        "Arindam Khan",
+        "K. V. N. Sreenivas"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "problem.online-bin-packing",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.prophet-arrivals",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.random-order-model",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.competitive-ratio",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-k-color",
+      "title": "Graph k-Coloring in Sublinear Average Time",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Cassandra Marcussen",
+        "Edward Pyne",
+        "Ronitt Rubinfeld",
+        "Asaf Shapira",
+        "Shlomo Tauber"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "problem.sublinear-graph-coloring",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.graph-coloring",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.sublinear-query-model",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-page-rank",
+      "title": "Instance-Optimality of Bidirectional PageRank Estimation",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Mikkel Thorup",
+        "Hanzhi Wang"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.instance-adaptivity",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.instance-optimality",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.page-rank-estimation",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-space-tsp",
+      "title": "Improved space-time tradeoff for TSP via extremal set systems",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Justin Dallant",
+        "László Kozma"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.space-time-tradeoffs",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.traveling-salesperson-problem",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.streaming-space-complexity",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-cellprobe",
+      "title": "An Ω ( (log n / log log n)^2 ) Cell-Probe Lower Bound for Dynamic Boolean Data Structures",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Young Kun Ko"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.space-time-tradeoffs",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.cell-probe-model",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.dynamic-data-structure",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "task.tight-lower-bound",
+          "role": "task",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-private-test",
+      "title": "Efficient and Private Property Testing via Indistinguishability",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Cynthia Dwork",
+        "Pranay Tankala"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.graph-property-testing",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.distribution-testing-model",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-local-node",
+      "title": "Local Node Differential Privacy",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Sofya Raskhodnikova",
+        "Adam Smith",
+        "Connor Wagaman",
+        "Anatoly Zavyalov"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.node-differential-privacy",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.local-edge-differential-privacy",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-isomorphic",
+      "title": "Can We Break Fine-Grained and NP-Hardness Barriers if We’ve Seen the Graph Before? The Isomorphic-Priors Model",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Dani Dorfman",
+        "Simon Döring",
+        "Martin Herold",
+        "Danupon Nanongkai",
+        "Daniel Neuen",
+        "Joachim Spoerhase",
+        "Zihang Wu"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.fine-grained-hardness",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "framework.fine-grained-complexity",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.graph-isomorphism",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-quantum-fault",
+      "title": "Fault-Tolerant Quantum Computation with Adversarial Errors",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Nikolas Breuckmann",
+        "Louis Golowich",
+        "Umesh Vazirani"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.fault-tolerance",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.quantum-circuit-model",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "technique.quantum-error-correction",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-geometry-ptas",
+      "title": "A general framework for geometric problems: Low-dimensionality implies a PTAS",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Alon Hovav",
+        "Yair Bartal",
+        "Lee-Ad Gottlieb"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "task.approximation-algorithm",
+          "role": "task",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.approximation-ratio",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "lens.parameterized-tractability",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-flow-nearlinear",
+      "title": "Combinatorial Minimum Cost Flow in Almost-Linear Time on Dense Graphs",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Bernhard Haeupler",
+        "Yonggang Jiang",
+        "Thatchaphol Saranurak"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "problem.maximum-flow",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "technique.primal-dual-method",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "graph_class.complete-graph",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-mms-truthful",
+      "title": "Truthful-in-Expectation Mechanisms for MMS Approximation",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Moshe Babaioff",
+        "Uriel Feige",
+        "Noam Manaker Morag"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "property.maximin-share",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.truthfulness",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.fair-division",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-private-audit",
+      "title": "The Sample Complexity of Membership Inference and Privacy Auditing",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Mahdi Haghifam",
+        "Adam Smith",
+        "Jonathan Ullman"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.sample-complexity",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.private-learning",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-focs-lowspace",
+      "title": "Composing Low-Space Algorithms",
+      "year": 2026,
+      "venue": "FOCS 2026",
+      "authors": [
+        "Edward Pyne",
+        "Roei Tell"
+      ],
+      "source_id": "conf-focs26",
+      "url": "https://focs.computer.org/2026/accepted-papers/",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.space-time-tradeoffs",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "task.space-complexity",
+          "role": "task",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-stoc-smoothed-positive",
+      "title": "Smoothed Analysis of Learning from Positive Samples",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Jane H. Lee",
+        "Anay Mehrotra",
+        "Manolis Zampetakis"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "lens.smoothed-analysis",
+          "role": "lens",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "model.pac-learning",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.vc-dimension",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.sample-complexity",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-stoc-stream-match",
+      "title": "Semi-streaming Matching in a Single Pass: A New Framework for Lower Bounds via Blueprints",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Sepehr Assadi",
+        "Max Jiang",
+        "Mars Xiang"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "model.semi-streaming",
+          "role": "model",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "problem.semi-streaming-matching",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "technique.blueprint-lower-bound",
+          "role": "technique",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "task.tight-lower-bound",
+          "role": "task",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        }
+      ]
+    },
+    {
+      "id": "program-stoc-stream-setcover",
+      "title": "Settling the Pass Complexity of Streaming Set Cover",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Sepehr Assadi",
+        "Janani Sundaresan"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_metadata_checked",
+      "status": "published",
+      "authors_completeness": "official_conference_program",
+      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "primitives": [
+        {
+          "primitive_id": "problem.streaming-set-cover",
+          "role": "problem",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.pass-complexity",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+        },
+        {
+          "primitive_id": "property.streaming-space-complexity",
+          "role": "metric",
+          "evidence": "official_title",
+          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
         }
       ]
     }
