@@ -1974,6 +1974,23 @@
       "reviewed_at": null
     },
     {
+      "id": "framework.estimator-corrector-learner",
+      "name": "Estimator–Corrector–Learner Framework",
+      "kind": "framework",
+      "areas": [
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A streaming framework combining prediction or learning with corrective estimation to obtain adaptive-robust statistics.",
+      "scope_note": "Paper's mathematical framework is defined for specified statistics and adversary classes; not a universal streaming reduction.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "primary_arxiv_abstract_2026-11-13",
+      "source_ids": [
+        "paper-f26-robust-stream"
+      ]
+    },
+    {
       "id": "framework.explicit-predictor-learning",
       "name": "Explicit Predictor Learning",
       "kind": "framework",
@@ -9746,6 +9763,23 @@
       ],
       "scope_note": "Depends on valuation model and whether goods, chores or externalities are present.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "property.epsilon-comatching-index",
+      "name": "ε-Comatching Index",
+      "kind": "property",
+      "areas": [
+        "Computational Geometry"
+      ],
+      "aliases": [],
+      "definition": "An extremal/combinatorial parameter introduced in the planar-metric furthest-neighbor coreset analysis.",
+      "scope_note": "Do not confuse with graph maximum matching; paper-specific epsilon parameter and metric definitions apply.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "primary_arxiv_abstract_2026-11-13",
+      "source_ids": [
+        "paper-f26-coreset"
+      ]
     },
     {
       "id": "property.equality-of-opportunity",

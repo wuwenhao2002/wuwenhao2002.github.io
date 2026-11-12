@@ -3819,43 +3819,61 @@
         "Huacheng Yu",
         "Samson Zhou"
       ],
-      "source_id": "conf-focs26",
-      "url": "https://focs.computer.org/2026/accepted-papers/",
-      "review_status": "editorial_metadata_checked",
+      "source_id": "paper-f26-robust-stream",
+      "url": "https://arxiv.org/abs/2607.06312",
+      "review_status": "editorial_abstract_checked",
       "status": "published",
       "authors_completeness": "official_conference_program",
-      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
-      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "provenance": "Direct primary arXiv abstract checked 2026-11-13",
+      "scope_note": "Original abstract investigates adversarially robust streaming for small frequency moments and a turnstile equivalence; general discussion also treats Earth Mover's Distance, entropy and k-median within a broader estimator-corrector-learner approach. Distinguish primary theorem subjects from secondary framework applications.",
       "primitives": [
         {
           "primitive_id": "lens.adversarially-robust-streaming",
           "role": "lens",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "model.adaptive-adversary",
           "role": "model",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "model.turnstile-stream",
           "role": "model",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "problem.frequency-moment-estimation",
           "role": "problem",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "property.streaming-space-complexity",
           "role": "metric",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
+        },
+        {
+          "primitive_id": "property.shannon-entropy",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Concept referenced by original arXiv abstract; paper scope restrictions apply."
+        },
+        {
+          "primitive_id": "property.wasserstein-distance",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Concept referenced by original arXiv abstract; paper scope restrictions apply."
+        },
+        {
+          "primitive_id": "framework.estimator-corrector-learner",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Broad estimator–corrector–learner paradigm described in original abstract."
         }
       ]
     },
@@ -3916,43 +3934,49 @@
         "Hector Tierno",
         "Vinayak Vinayak"
       ],
-      "source_id": "conf-focs26",
-      "url": "https://focs.computer.org/2026/accepted-papers/",
-      "review_status": "editorial_metadata_checked",
+      "source_id": "paper-f26-coreset",
+      "url": "https://arxiv.org/abs/2603.28100",
+      "review_status": "editorial_abstract_checked",
       "status": "published",
       "authors_completeness": "official_conference_program",
-      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
-      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "provenance": "Direct primary arXiv abstract checked 2026-11-13",
+      "scope_note": "Original abstract gives a polynomial-size coreset for approximate furthest-neighbor queries in planar metrics and uses an epsilon-comatching index; its guarantee depends on the planar metric setting.",
       "primitives": [
         {
           "primitive_id": "lens.coreset-compression",
           "role": "lens",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "technique.coreset",
           "role": "technique",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "property.coreset-size",
           "role": "metric",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "problem.furthest-neighbor",
           "role": "problem",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "graph_class.planar-graph",
           "role": "model",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
+        },
+        {
+          "primitive_id": "property.epsilon-comatching-index",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Introduced in original abstract as a combinatorial parameter enabling polynomial coreset size."
         }
       ]
     },
@@ -4005,37 +4029,49 @@
         "George Osipov",
         "Magnus Wahlstrom"
       ],
-      "source_id": "conf-focs26",
-      "url": "https://focs.computer.org/2026/accepted-papers/",
-      "review_status": "editorial_metadata_checked",
+      "source_id": "paper-f26-fpt-modular",
+      "url": "https://arxiv.org/abs/2604.10369",
+      "review_status": "editorial_abstract_checked",
       "status": "published",
       "authors_completeness": "official_conference_program",
-      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
-      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "provenance": "Direct primary arXiv abstract checked 2026-11-13",
+      "scope_note": "Original abstract studies fixed-parameter approximation of modular linear equations, with matching conditional bounds under ETH. The parameter, modulus and arity restrictions are essential.",
       "primitives": [
         {
           "primitive_id": "lens.parameterized-tractability",
           "role": "lens",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "problem.modular-linear-equations",
           "role": "problem",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "property.fpt-approximation-ratio",
           "role": "metric",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "task.parameterized-approximation",
           "role": "task",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
+        },
+        {
+          "primitive_id": "complexity_class.fpt",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Concept referenced by original arXiv abstract; paper scope restrictions apply."
+        },
+        {
+          "primitive_id": "assumption.exponential-time-hypothesis",
+          "role": "assumption",
+          "evidence": "official_abstract",
+          "note": "Concept referenced by original arXiv abstract; paper scope restrictions apply."
         }
       ]
     },
@@ -4050,37 +4086,43 @@
         "Georgy Noarov",
         "Aaron Roth"
       ],
-      "source_id": "conf-focs26",
-      "url": "https://focs.computer.org/2026/accepted-papers/",
-      "review_status": "editorial_metadata_checked",
+      "source_id": "paper-f26-multicalibration",
+      "url": "https://arxiv.org/abs/2601.05245",
+      "review_status": "editorial_abstract_checked",
       "status": "published",
       "authors_completeness": "official_conference_program",
-      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
-      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "provenance": "Direct primary arXiv abstract checked 2026-11-13",
+      "scope_note": "Original abstract establishes lower bounds on online multicalibration and distinguishes its group-conditional requirements from marginal calibration; exact group classes, horizons and error metrics are theorem-specific.",
       "primitives": [
         {
           "primitive_id": "lens.calibration-constraints",
           "role": "lens",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "property.multicalibration",
           "role": "metric",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "problem.online-multicalibration",
           "role": "problem",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "task.tight-lower-bound",
           "role": "task",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
+        },
+        {
+          "primitive_id": "property.marginal-calibration",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Concept referenced by original arXiv abstract; paper scope restrictions apply."
         }
       ]
     },
@@ -4095,31 +4137,49 @@
         "Kalen Patton",
         "Sahil Singla"
       ],
-      "source_id": "conf-focs26",
-      "url": "https://focs.computer.org/2026/accepted-papers/",
-      "review_status": "editorial_metadata_checked",
+      "source_id": "paper-f26-posterior",
+      "url": "https://arxiv.org/abs/2608.01616",
+      "review_status": "editorial_abstract_checked",
       "status": "published",
       "authors_completeness": "official_conference_program",
-      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
-      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "provenance": "Direct primary arXiv abstract checked 2026-11-13",
+      "scope_note": "The arXiv abstract develops posterior matching and minimax for online algorithms, with concrete applications including fractional set cover, load balancing, matching, resource allocation, weighted paging, ski rental and metrical task systems. Integral guarantees may require problem-specific rounding.",
       "primitives": [
         {
           "primitive_id": "technique.minimax-reduction",
           "role": "technique",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "technique.posterior-matching",
           "role": "technique",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
         },
         {
           "primitive_id": "model.adversarial-online-model",
           "role": "model",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Source paper's abstract supports this concept association, under its explicit model assumptions."
+        },
+        {
+          "primitive_id": "problem.online-set-cover",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Concept referenced by original arXiv abstract; paper scope restrictions apply."
+        },
+        {
+          "primitive_id": "problem.online-bipartite-matching",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Concept referenced by original arXiv abstract; paper scope restrictions apply."
+        },
+        {
+          "primitive_id": "problem.ski-rental",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Concept referenced by original arXiv abstract; paper scope restrictions apply."
         }
       ]
     },
