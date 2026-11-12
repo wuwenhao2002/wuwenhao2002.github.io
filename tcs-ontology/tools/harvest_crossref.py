@@ -89,7 +89,7 @@ def harvest(limit=3000,rows=180):
     return sorted(matched.values(),key=lambda x:(-x["year"],x["title"]))[:limit],errors
 def main():
     ap=argparse.ArgumentParser()
-    ap.add_argument("--output",type=Path,default=DATA/"papers-harvested.json")
+    ap.add_argument("--output",type=Path,default=DATA/"papers-proposed.json")
     ap.add_argument("--limit",type=int,default=3500)
     ap.add_argument("--rows",type=int,default=180)
     args=ap.parse_args()
