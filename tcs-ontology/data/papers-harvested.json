@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.4.0",
+  "schema_version": "0.4.1",
   "method": "Crossref metadata with conservative explicit-title phrase matching",
   "source": "Crossref REST API",
-  "warning": "Title-derived primitive labels are unreviewed and may be false positives. Paper contents not checked.",
+  "warning": "Unreviewed titles; matching two surface terms does NOT prove the paper uses those mathematical primitives. Review primary sources for scientific conclusions.",
   "items": [
     {
       "id": "crossref:10.1145/3798129.3800868",
@@ -35,41 +35,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3798129.3800868"
-    },
-    {
-      "id": "crossref:10.1007/978-981-92-3507-0_16",
-      "title": "Consistency-Regularized Graph Matching",
-      "year": 2026,
-      "venue": "Lecture Notes in Computer Science",
-      "authors": [
-        "Zhoubo Xu",
-        "Huijie Cong",
-        "Xiaochuan Zhou",
-        "Zizhao Pang"
-      ],
-      "url": "https://doi.org/10.1007/978-981-92-3507-0_16",
-      "crossref_doi": "10.1007/978-981-92-3507-0_16",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-consistency",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-981-92-3507-0_16"
+      "source_url": "https://doi.org/10.1145/3798129.3800868",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-032-18660-7_39",
@@ -103,40 +70,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-032-18660-7_39"
-    },
-    {
-      "id": "crossref:10.21203/rs.3.rs-7262145/v1",
-      "title": "Fault-Tolerant Quantum Communication over r-Robust Graph Topologies under Adversarial and Noisy Conditions",
-      "year": 2026,
-      "venue": "Unspecified",
-      "authors": [
-        "Suresh Kumar Jha",
-        "Siddhanta Kumar Singh",
-        "Aditya Narayan Hati"
-      ],
-      "url": "https://doi.org/10.21203/rs.3.rs-7262145/v1",
-      "crossref_doi": "10.21203/rs.3.rs-7262145/v1",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "lens.fault-tolerance",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.21203/rs.3.rs-7262145/v1"
+      "source_url": "https://doi.org/10.1007/978-3-032-18660-7_39",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.2139/ssrn.7362678",
@@ -168,7 +103,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.2139/ssrn.7362678"
+      "source_url": "https://doi.org/10.2139/ssrn.7362678",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3774904.3792480",
@@ -202,7 +138,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3774904.3792480"
+      "source_url": "https://doi.org/10.1145/3774904.3792480",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-032-17801-5_27",
@@ -240,7 +177,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-032-17801-5_27"
+      "source_url": "https://doi.org/10.1007/978-3-032-17801-5_27",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1609/aaai.v40i43.40991",
@@ -273,7 +211,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1609/aaai.v40i43.40991"
+      "source_url": "https://doi.org/10.1609/aaai.v40i43.40991",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/s11704-025-50627-2",
@@ -307,7 +246,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s11704-025-50627-2"
+      "source_url": "https://doi.org/10.1007/s11704-025-50627-2",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1016/j.tcs.2026.115878",
@@ -341,7 +281,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.tcs.2026.115878"
+      "source_url": "https://doi.org/10.1016/j.tcs.2026.115878",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.2139/ssrn.7387818",
@@ -372,7 +313,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.2139/ssrn.7387818"
+      "source_url": "https://doi.org/10.2139/ssrn.7387818",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.2139/ssrn.7236621",
@@ -406,40 +348,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.2139/ssrn.7236621"
-    },
-    {
-      "id": "crossref:10.3389/fpubh.2025.1644499",
-      "title": "Online bipartite matching methodology for anti-epidemic resources allocation: an adaptive time window based on reinforcement learning",
-      "year": 2026,
-      "venue": "Frontiers in Public Health",
-      "authors": [
-        "Zhiyong Wu",
-        "Sulin Pang",
-        "Suyan He"
-      ],
-      "url": "https://doi.org/10.3389/fpubh.2025.1644499",
-      "crossref_doi": "10.3389/fpubh.2025.1644499",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.online-bipartite-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.3389/fpubh.2025.1644499"
+      "source_url": "https://doi.org/10.2139/ssrn.7236621",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3787968",
@@ -471,7 +381,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3787968"
+      "source_url": "https://doi.org/10.1145/3787968",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1609/aaai.v40i20.38716",
@@ -504,109 +415,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1609/aaai.v40i20.38716"
-    },
-    {
-      "id": "crossref:10.2139/ssrn.7137178",
-      "title": "Regret-Robust Newsvendor Model for a Trade Agent",
-      "year": 2026,
-      "venue": "Unspecified",
-      "authors": [
-        "Haodong Liu",
-        "Zhi Chen",
-        "Chun Cheng",
-        "Sining Wei",
-        "JianJun Wu"
-      ],
-      "url": "https://doi.org/10.2139/ssrn.7137178",
-      "crossref_doi": "10.2139/ssrn.7137178",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "property.regret",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.2139/ssrn.7137178"
-    },
-    {
-      "id": "crossref:10.2139/ssrn.6873360",
-      "title": "Substitution-Dependent Distributional Rental Duration Prediction in Robust Vehicle Inventory Optimization",
-      "year": 2026,
-      "venue": "Unspecified",
-      "authors": [
-        "Zhu Meng",
-        "Ning Zhu",
-        "Chenyi Fu",
-        "Long He"
-      ],
-      "url": "https://doi.org/10.2139/ssrn.6873360",
-      "crossref_doi": "10.2139/ssrn.6873360",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.2139/ssrn.6873360"
-    },
-    {
-      "id": "crossref:10.46793/match.97-2.14426",
-      "title": "The Maximal Matching Polynomial of Hexacyclic Systems",
-      "year": 2026,
-      "venue": "match Communications in Mathematical and in Computer Chemistry",
-      "authors": [
-        "Hanlin Chen",
-        "Guihua Huang",
-        "Sijia Lei"
-      ],
-      "url": "https://doi.org/10.46793/match.97-2.14426",
-      "crossref_doi": "10.46793/match.97-2.14426",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.maximal-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.46793/match.97-2.14426"
+      "source_url": "https://doi.org/10.1609/aaai.v40i20.38716",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3798129.3800910",
@@ -645,39 +455,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3798129.3800910"
-    },
-    {
-      "id": "crossref:10.1016/j.asoc.2026.116835",
-      "title": "TrustAgent-EDU: Public-reference graph learning for auditable student dropout prediction under differential privacy",
-      "year": 2026,
-      "venue": "Applied Soft Computing",
-      "authors": [
-        "Xianghui Meng",
-        "Jionghao Lin"
-      ],
-      "url": "https://doi.org/10.1016/j.asoc.2026.116835",
-      "crossref_doi": "10.1016/j.asoc.2026.116835",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "lens.differential-privacy",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.asoc.2026.116835"
+      "source_url": "https://doi.org/10.1145/3798129.3800910",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1016/j.mlwa.2026.100936",
@@ -708,7 +487,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.mlwa.2026.100936"
+      "source_url": "https://doi.org/10.1016/j.mlwa.2026.100936",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/1.9781611978322.94",
@@ -742,7 +522,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/1.9781611978322.94"
+      "source_url": "https://doi.org/10.1137/1.9781611978322.94",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-031-81396-2_7",
@@ -776,7 +557,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-031-81396-2_7"
+      "source_url": "https://doi.org/10.1007/978-3-031-81396-2_7",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1016/j.dam.2025.10.060",
@@ -796,11 +578,6 @@
           "evidence": "title_exact_phrase"
         },
         {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        },
-        {
           "primitive_id": "task.approximation-algorithm",
           "role": "task",
           "evidence": "title_exact_phrase"
@@ -812,7 +589,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.dam.2025.10.060"
+      "source_url": "https://doi.org/10.1016/j.dam.2025.10.060",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.52202/085713-4014",
@@ -854,7 +632,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.52202/085713-4014"
+      "source_url": "https://doi.org/10.52202/085713-4014",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3746252.3760885",
@@ -889,7 +668,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3746252.3760885"
+      "source_url": "https://doi.org/10.1145/3746252.3760885",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3717823.3718153",
@@ -923,40 +703,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3717823.3718153"
-    },
-    {
-      "id": "crossref:10.1007/978-3-032-12290-2_12",
-      "title": "Differentially Private Compression and the Sensitivity of LZ77",
-      "year": 2025,
-      "venue": "Lecture Notes in Computer Science",
-      "authors": [
-        "Jeremiah Blocki",
-        "Seunghoon Lee",
-        "Brayan Sebastián Yepes-Garcia"
-      ],
-      "url": "https://doi.org/10.1007/978-3-032-12290-2_12",
-      "crossref_doi": "10.1007/978-3-032-12290-2_12",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.differential-privacy",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "lens.algorithmic-sensitivity",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-032-12290-2_12"
+      "source_url": "https://doi.org/10.1145/3717823.3718153",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-981-96-4445-2_17",
@@ -988,7 +736,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-981-96-4445-2_17"
+      "source_url": "https://doi.org/10.1007/978-981-96-4445-2_17",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1016/j.artint.2025.104385",
@@ -1020,7 +769,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.artint.2025.104385"
+      "source_url": "https://doi.org/10.1016/j.artint.2025.104385",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.24963/ijcai.2025/7",
@@ -1054,7 +804,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.24963/ijcai.2025/7"
+      "source_url": "https://doi.org/10.24963/ijcai.2025/7",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.21203/rs.3.rs-7705498/v1",
@@ -1085,71 +836,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.21203/rs.3.rs-7705498/v1"
-    },
-    {
-      "id": "crossref:10.52202/085713-4140",
-      "title": "ForceFM: Enhancing Protein-Ligand Predictions through Force-Guided Flow Matching",
-      "year": 2025,
-      "venue": "Advances in Neural Information Processing Systems 38",
-      "authors": [
-        "HUANLEI GUO",
-        "Song LIU",
-        "Bingyi Jing"
-      ],
-      "url": "https://doi.org/10.52202/085713-4140",
-      "crossref_doi": "10.52202/085713-4140",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.52202/085713-4140"
-    },
-    {
-      "id": "crossref:10.1145/3744715.3744721",
-      "title": "Guest Column: PAC Learning is just Bipartite Matching (Sort of)",
-      "year": 2025,
-      "venue": "ACM SIGACT News",
-      "authors": [
-        "Shaddin Dughmi"
-      ],
-      "url": "https://doi.org/10.1145/3744715.3744721",
-      "crossref_doi": "10.1145/3744715.3744721",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "model.pac-learning",
-          "role": "model",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3744715.3744721"
+      "source_url": "https://doi.org/10.21203/rs.3.rs-7705498/v1",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3763239",
@@ -1188,7 +876,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3763239"
+      "source_url": "https://doi.org/10.1145/3763239",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1016/j.dam.2025.08.063",
@@ -1221,42 +910,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.dam.2025.08.063"
-    },
-    {
-      "id": "crossref:10.18653/v1/2025.nlperspectives-1.17",
-      "title": "LPI-RIT at LeWiDi-2025: Improving Distributional Predictions via Metadata and Loss Reweighting with DisCo",
-      "year": 2025,
-      "venue": "Proceedings of the The 4th Workshop on Perspectivist Approaches to NLP",
-      "authors": [
-        "Mandira Sawkar",
-        "Samay U. Shetty",
-        "Deepak Pandita",
-        "Tharindu Cyril Weerasooriya",
-        "Christopher M. Homan"
-      ],
-      "url": "https://doi.org/10.18653/v1/2025.nlperspectives-1.17",
-      "crossref_doi": "10.18653/v1/2025.nlperspectives-1.17",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "model.distributional-prediction",
-          "role": "model",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.18653/v1/2025.nlperspectives-1.17"
+      "source_url": "https://doi.org/10.1016/j.dam.2025.08.063",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.52202/085713-0262",
@@ -1289,39 +944,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.52202/085713-0262"
-    },
-    {
-      "id": "crossref:10.2298/fil2533981c",
-      "title": "Maximal matching polynomials of phenylene and benzenoid chains",
-      "year": 2025,
-      "venue": "Filomat",
-      "authors": [
-        "Hanlin Chen",
-        "Yuwan Zhang"
-      ],
-      "url": "https://doi.org/10.2298/fil2533981c",
-      "crossref_doi": "10.2298/fil2533981c",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.maximal-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.2298/fil2533981c"
+      "source_url": "https://doi.org/10.52202/085713-0262",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1016/j.ejor.2025.02.012",
@@ -1353,106 +977,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.ejor.2025.02.012"
-    },
-    {
-      "id": "crossref:10.1186/s13059-025-03644-0",
-      "title": "Mumemto: efficient maximal matching across pangenomes",
-      "year": 2025,
-      "venue": "Genome Biology",
-      "authors": [
-        "Vikram S. Shivakumar",
-        "Ben Langmead"
-      ],
-      "url": "https://doi.org/10.1186/s13059-025-03644-0",
-      "crossref_doi": "10.1186/s13059-025-03644-0",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.maximal-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1186/s13059-025-03644-0"
-    },
-    {
-      "id": "crossref:10.55041/ijsrem55406",
-      "title": "OPTI-Recourse: Interpretable Credit Risk Prediction and Actionable Recourse",
-      "year": 2025,
-      "venue": "International Journal of Scientific Research in Engineering and Management",
-      "authors": [
-        "Ms. Saranya Raj",
-        "Rakshit Jain",
-        "Ram Sagar Choudhary",
-        "Abhishek Kumar Garg",
-        "Anushka Singh"
-      ],
-      "url": "https://doi.org/10.55041/ijsrem55406",
-      "crossref_doi": "10.55041/ijsrem55406",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "property.recourse-bound",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.55041/ijsrem55406"
-    },
-    {
-      "id": "crossref:10.1016/j.disc.2025.114547",
-      "title": "On the roots of maximal matching polynomials",
-      "year": 2025,
-      "venue": "Discrete Mathematics",
-      "authors": [
-        "Matt Burnham",
-        "Aysel Erey"
-      ],
-      "url": "https://doi.org/10.1016/j.disc.2025.114547",
-      "crossref_doi": "10.1016/j.disc.2025.114547",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.maximal-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.disc.2025.114547"
+      "source_url": "https://doi.org/10.1016/j.ejor.2025.02.012",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/s00453-025-01299-8",
@@ -1484,7 +1010,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s00453-025-01299-8"
+      "source_url": "https://doi.org/10.1007/s00453-025-01299-8",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/s10107-024-02184-y",
@@ -1516,7 +1043,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s10107-024-02184-y"
+      "source_url": "https://doi.org/10.1007/s10107-024-02184-y",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3694906.3743313",
@@ -1548,7 +1076,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3694906.3743313"
+      "source_url": "https://doi.org/10.1145/3694906.3743313",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3736252.3742631",
@@ -1585,39 +1114,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3736252.3742631"
-    },
-    {
-      "id": "crossref:10.1007/978-3-032-04584-3_26",
-      "title": "Robust Distributed Robotic Matching",
-      "year": 2025,
-      "venue": "Springer Proceedings in Advanced Robotics",
-      "authors": [
-        "Lior Strichash",
-        "Noa Agmon"
-      ],
-      "url": "https://doi.org/10.1007/978-3-032-04584-3_26",
-      "crossref_doi": "10.1007/978-3-032-04584-3_26",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-032-04584-3_26"
+      "source_url": "https://doi.org/10.1145/3736252.3742631",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1109/focs63196.2025.00120",
@@ -1649,7 +1147,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/focs63196.2025.00120"
+      "source_url": "https://doi.org/10.1109/focs63196.2025.00120",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1109/lcsys.2025.3570978",
@@ -1680,39 +1179,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/lcsys.2025.3570978"
-    },
-    {
-      "id": "crossref:10.1002/oca.3323",
-      "title": "Shapley Effects as a Global Sensitivity Metric for Robust Design and Control",
-      "year": 2025,
-      "venue": "Optimal Control Applications and Methods",
-      "authors": [
-        "Adrian Stein",
-        "Tarunraj Singh"
-      ],
-      "url": "https://doi.org/10.1002/oca.3323",
-      "crossref_doi": "10.1002/oca.3323",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "lens.algorithmic-sensitivity",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1002/oca.3323"
+      "source_url": "https://doi.org/10.1109/lcsys.2025.3570978",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1134/s1064562425601131",
@@ -1744,7 +1212,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1134/s1064562425601131"
+      "source_url": "https://doi.org/10.1134/s1064562425601131",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.36120/2587-3636.v35i1.97-102",
@@ -1776,7 +1245,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.36120/2587-3636.v35i1.97-102"
+      "source_url": "https://doi.org/10.36120/2587-3636.v35i1.97-102",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.52202/079017-2871",
@@ -1817,7 +1287,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.52202/079017-2871"
+      "source_url": "https://doi.org/10.52202/079017-2871",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3689625",
@@ -1851,7 +1322,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3689625"
+      "source_url": "https://doi.org/10.1145/3689625",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.65109/wkem9998",
@@ -1883,116 +1355,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.65109/wkem9998"
-    },
-    {
-      "id": "crossref:10.3390/electronics13244950",
-      "title": "Enhanced Kalman Filter with Dummy Nodes and Prediction Confidence for Bipartite Graph Matching in 3D Multi-Object Tracking",
-      "year": 2024,
-      "venue": "Electronics",
-      "authors": [
-        "Shaoyu Sun",
-        "Chunyang Wang",
-        "Bo Xiao",
-        "Xuelian Liu",
-        "Chunhao Shi",
-        "Rongliang Sun",
-        "Ruijie Han"
-      ],
-      "url": "https://doi.org/10.3390/electronics13244950",
-      "crossref_doi": "10.3390/electronics13244950",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.3390/electronics13244950"
-    },
-    {
-      "id": "crossref:10.1609/socs.v17i1.31579",
-      "title": "Evaluating Distributional Predictions of Search Time: Put Up or Shut Up Games (Extended Abstract)",
-      "year": 2024,
-      "venue": "Proceedings of the International Symposium on Combinatorial Search",
-      "authors": [
-        "Sean Mariasin",
-        "Andrew Coles",
-        "Erez Karpas",
-        "Wheeler Ruml",
-        "Solomon Eyal Shimony",
-        "Shahaf Shperberg"
-      ],
-      "url": "https://doi.org/10.1609/socs.v17i1.31579",
-      "crossref_doi": "10.1609/socs.v17i1.31579",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "model.distributional-prediction",
-          "role": "model",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1609/socs.v17i1.31579"
-    },
-    {
-      "id": "crossref:10.1109/bibm62325.2024.10821930",
-      "title": "Graph Matching Based Graph Self-Supervised Learning for Molecular Property Prediction",
-      "year": 2024,
-      "venue": "2024 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)",
-      "authors": [
-        "Hongxiang Lin",
-        "Yixiao Zhou",
-        "Huiying Hu",
-        "Zhicheng He",
-        "Runzhi Wu",
-        "Xiaoqing Lyu"
-      ],
-      "url": "https://doi.org/10.1109/bibm62325.2024.10821930",
-      "crossref_doi": "10.1109/bibm62325.2024.10821930",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/bibm62325.2024.10821930"
+      "source_url": "https://doi.org/10.65109/wkem9998",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.52202/079017-0420",
@@ -2025,7 +1389,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.52202/079017-0420"
+      "source_url": "https://doi.org/10.52202/079017-0420",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.52202/079017-0816",
@@ -2065,7 +1430,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.52202/079017-0816"
+      "source_url": "https://doi.org/10.52202/079017-0816",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1287/opre.2023.0339",
@@ -2098,7 +1464,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1287/opre.2023.0339"
+      "source_url": "https://doi.org/10.1287/opre.2023.0339",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3673660.3655074",
@@ -2135,7 +1502,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3673660.3655074"
+      "source_url": "https://doi.org/10.1145/3673660.3655074",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-031-60924-4_22",
@@ -2168,7 +1536,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-031-60924-4_22"
+      "source_url": "https://doi.org/10.1007/978-3-031-60924-4_22",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3626183.3659982",
@@ -2200,39 +1569,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3626183.3659982"
-    },
-    {
-      "id": "crossref:10.1007/s00199-024-01566-9",
-      "title": "Prediction algorithms in matching platforms",
-      "year": 2024,
-      "venue": "Economic Theory",
-      "authors": [
-        "Saara Hämäläinen",
-        "Vaiva Petrikaitė"
-      ],
-      "url": "https://doi.org/10.1007/s00199-024-01566-9",
-      "crossref_doi": "10.1007/s00199-024-01566-9",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s00199-024-01566-9"
+      "source_url": "https://doi.org/10.1145/3626183.3659982",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.52202/079017-1008",
@@ -2264,7 +1602,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.52202/079017-1008"
+      "source_url": "https://doi.org/10.52202/079017-1008",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/1.9781611977936.29",
@@ -2295,7 +1634,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/1.9781611977936.29"
+      "source_url": "https://doi.org/10.1137/1.9781611977936.29",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1142/s0129054122460042",
@@ -2329,39 +1669,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1142/s0129054122460042"
-    },
-    {
-      "id": "crossref:10.1007/978-3-031-42697-1_10",
-      "title": "Average Sensitivity of Nested Canalizing Multivalued Functions",
-      "year": 2023,
-      "venue": "Lecture Notes in Computer Science",
-      "authors": [
-        "Élisabeth Remy",
-        "Paul Ruet"
-      ],
-      "url": "https://doi.org/10.1007/978-3-031-42697-1_10",
-      "crossref_doi": "10.1007/978-3-031-42697-1_10",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.algorithmic-sensitivity",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "property.average-algorithmic-sensitivity",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-031-42697-1_10"
+      "source_url": "https://doi.org/10.1142/s0129054122460042",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1109/isncc58260.2023.10323834",
@@ -2394,7 +1703,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/isncc58260.2023.10323834"
+      "source_url": "https://doi.org/10.1109/isncc58260.2023.10323834",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/1.9781611977554.ch184",
@@ -2436,7 +1746,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/1.9781611977554.ch184"
+      "source_url": "https://doi.org/10.1137/1.9781611977554.ch184",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-031-38906-1_23",
@@ -2470,7 +1781,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-031-38906-1_23"
+      "source_url": "https://doi.org/10.1007/978-3-031-38906-1_23",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/1.9781611977554.ch100",
@@ -2509,7 +1821,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/1.9781611977554.ch100"
+      "source_url": "https://doi.org/10.1137/1.9781611977554.ch100",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/1.9781611977554.ch6",
@@ -2540,41 +1853,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/1.9781611977554.ch6"
-    },
-    {
-      "id": "crossref:10.1109/icsp58490.2023.10248619",
-      "title": "Emotional Polar Predictions Based on Matching Prompts",
-      "year": 2023,
-      "venue": "2023 8th International Conference on Intelligent Computing and Signal Processing (ICSP)",
-      "authors": [
-        "Zhangping Yang",
-        "Xia Ye",
-        "Hantao Xu",
-        "Pujie Zhao"
-      ],
-      "url": "https://doi.org/10.1109/icsp58490.2023.10248619",
-      "crossref_doi": "10.1109/icsp58490.2023.10248619",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/icsp58490.2023.10248619"
+      "source_url": "https://doi.org/10.1137/1.9781611977554.ch6",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3617360",
@@ -2607,7 +1887,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3617360"
+      "source_url": "https://doi.org/10.1145/3617360",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/s10107-023-02025-4",
@@ -2639,7 +1920,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s10107-023-02025-4"
+      "source_url": "https://doi.org/10.1007/s10107-023-02025-4",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/1.9781611977554.ch78",
@@ -2672,7 +1954,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/1.9781611977554.ch78"
+      "source_url": "https://doi.org/10.1137/1.9781611977554.ch78",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1109/cdc49753.2023.10383591",
@@ -2708,68 +1991,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/cdc49753.2023.10383591"
-    },
-    {
-      "id": "crossref:10.22199/issn.0717-6279-5608",
-      "title": "Maximal matching cover pebbling number for variants of hypercube",
-      "year": 2023,
-      "venue": "Proyecciones (Antofagasta)",
-      "authors": [
-        "S. Sarah Surya",
-        "Lian Mathew Koipuram"
-      ],
-      "url": "https://doi.org/10.22199/issn.0717-6279-5608",
-      "crossref_doi": "10.22199/issn.0717-6279-5608",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.maximal-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.22199/issn.0717-6279-5608"
-    },
-    {
-      "id": "crossref:10.56726/irjmets46035",
-      "title": "ONLINE MAP MATCHING WITH ROUTE PREDICTION TO PREDICTING CRIME HOTSPOTS",
-      "year": 2023,
-      "venue": "International Research Journal of Modernization in Engineering Technology and Science",
-      "authors": [],
-      "url": "https://doi.org/10.56726/irjmets46035",
-      "crossref_doi": "10.56726/irjmets46035",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.56726/irjmets46035"
+      "source_url": "https://doi.org/10.1109/cdc49753.2023.10383591",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1109/iccworkshops57953.2023.10283750",
@@ -2803,7 +2026,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/iccworkshops57953.2023.10283750"
+      "source_url": "https://doi.org/10.1109/iccworkshops57953.2023.10283750",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1287/moor.2022.0242",
@@ -2838,42 +2062,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1287/moor.2022.0242"
-    },
-    {
-      "id": "crossref:10.1007/s11280-023-01136-4",
-      "title": "Personalized sampling graph collection with local differential privacy for link prediction",
-      "year": 2023,
-      "venue": "World Wide Web",
-      "authors": [
-        "Linyu Jiang",
-        "Yukun Yan",
-        "Zhihong Tian",
-        "Zuobin Xiong",
-        "Qilong Han"
-      ],
-      "url": "https://doi.org/10.1007/s11280-023-01136-4",
-      "crossref_doi": "10.1007/s11280-023-01136-4",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "lens.differential-privacy",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s11280-023-01136-4"
+      "source_url": "https://doi.org/10.1287/moor.2022.0242",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.3844/jcssp.2023.610.618",
@@ -2905,7 +2095,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.3844/jcssp.2023.610.618"
+      "source_url": "https://doi.org/10.3844/jcssp.2023.610.618",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.65109/phkg3707",
@@ -2938,7 +2129,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.65109/phkg3707"
+      "source_url": "https://doi.org/10.65109/phkg3707",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3627985",
@@ -2973,7 +2165,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3627985"
+      "source_url": "https://doi.org/10.1145/3627985",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1109/tsusc.2023.3329995",
@@ -3008,7 +2201,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/tsusc.2023.3329995"
+      "source_url": "https://doi.org/10.1109/tsusc.2023.3329995",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-031-38906-1_6",
@@ -3043,7 +2237,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-031-38906-1_6"
+      "source_url": "https://doi.org/10.1007/978-3-031-38906-1_6",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1016/j.orl.2023.03.004",
@@ -3074,7 +2269,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.orl.2023.03.004"
+      "source_url": "https://doi.org/10.1016/j.orl.2023.03.004",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.52202/068431-0414",
@@ -3107,7 +2303,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.52202/068431-0414"
+      "source_url": "https://doi.org/10.52202/068431-0414",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1287/moor.2022.1292",
@@ -3139,7 +2336,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1287/moor.2022.1292"
+      "source_url": "https://doi.org/10.1287/moor.2022.1292",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/s10107-022-01853-0",
@@ -3173,7 +2371,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s10107-022-01853-0"
+      "source_url": "https://doi.org/10.1007/s10107-022-01853-0",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/1.9781611977073.77",
@@ -3205,7 +2404,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/1.9781611977073.77"
+      "source_url": "https://doi.org/10.1137/1.9781611977073.77",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.52202/068431-2354",
@@ -3237,106 +2437,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.52202/068431-2354"
-    },
-    {
-      "id": "crossref:10.3390/jcp2040042",
-      "title": "Calibrating the Attack to Sensitivity in Differentially Private Mechanisms",
-      "year": 2022,
-      "venue": "Journal of Cybersecurity and Privacy",
-      "authors": [
-        "Ayşe Ünsal",
-        "Melek Önen"
-      ],
-      "url": "https://doi.org/10.3390/jcp2040042",
-      "crossref_doi": "10.3390/jcp2040042",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.differential-privacy",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "lens.algorithmic-sensitivity",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.3390/jcp2040042"
-    },
-    {
-      "id": "crossref:10.1186/s12859-022-04996-1",
-      "title": "Densest subgraph-based methods for protein-protein interaction hot spot prediction",
-      "year": 2022,
-      "venue": "BMC Bioinformatics",
-      "authors": [
-        "Ruiming Li",
-        "Jung-Yu Lee",
-        "Jinn-Moon Yang",
-        "Tatsuya Akutsu"
-      ],
-      "url": "https://doi.org/10.1186/s12859-022-04996-1",
-      "crossref_doi": "10.1186/s12859-022-04996-1",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.densest-subgraph",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1186/s12859-022-04996-1"
-    },
-    {
-      "id": "crossref:10.1145/3523227.3546781",
-      "title": "Dynamic Global Sensitivity for Differentially Private Contextual Bandits",
-      "year": 2022,
-      "venue": "Proceedings of the 16th ACM Conference on Recommender Systems",
-      "authors": [
-        "Huazheng Wang",
-        "David Zhao",
-        "Hongning Wang"
-      ],
-      "url": "https://doi.org/10.1145/3523227.3546781",
-      "crossref_doi": "10.1145/3523227.3546781",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.differential-privacy",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "lens.algorithmic-sensitivity",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3523227.3546781"
+      "source_url": "https://doi.org/10.52202/068431-2354",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1287/ijoc.2022.1168",
@@ -3368,40 +2470,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1287/ijoc.2022.1168"
-    },
-    {
-      "id": "crossref:10.1140/epjds/s13688-022-00356-4",
-      "title": "Explaining human mobility predictions through a pattern matching algorithm",
-      "year": 2022,
-      "venue": "EPJ Data Science",
-      "authors": [
-        "Kamil Smolak",
-        "Witold Rohm",
-        "Katarzyna Sila-Nowicka"
-      ],
-      "url": "https://doi.org/10.1140/epjds/s13688-022-00356-4",
-      "crossref_doi": "10.1140/epjds/s13688-022-00356-4",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1140/epjds/s13688-022-00356-4"
+      "source_url": "https://doi.org/10.1287/ijoc.2022.1168",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.65109/psce2714",
@@ -3434,7 +2504,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.65109/psce2714"
+      "source_url": "https://doi.org/10.65109/psce2714",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-030-94676-0_12",
@@ -3466,7 +2537,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-030-94676-0_12"
+      "source_url": "https://doi.org/10.1007/978-3-030-94676-0_12",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3490486.3538296",
@@ -3500,7 +2572,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3490486.3538296"
+      "source_url": "https://doi.org/10.1145/3490486.3538296",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/s10878-022-00916-4",
@@ -3534,7 +2607,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s10878-022-00916-4"
+      "source_url": "https://doi.org/10.1007/s10878-022-00916-4",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1609/aaai.v36i8.20854",
@@ -3566,7 +2640,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1609/aaai.v36i8.20854"
+      "source_url": "https://doi.org/10.1609/aaai.v36i8.20854",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1016/j.tcs.2022.01.008",
@@ -3580,11 +2655,6 @@
       "crossref_doi": "10.1016/j.tcs.2022.01.008",
       "metadata_source": "Crossref REST API",
       "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
         {
           "primitive_id": "property.price-of-anarchy",
           "role": "metric",
@@ -3602,7 +2672,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.tcs.2022.01.008"
+      "source_url": "https://doi.org/10.1016/j.tcs.2022.01.008",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.52202/068431-1058",
@@ -3644,7 +2715,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.52202/068431-1058"
+      "source_url": "https://doi.org/10.52202/068431-1058",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1109/bigcom57025.2022.00025",
@@ -3677,42 +2749,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/bigcom57025.2022.00025"
-    },
-    {
-      "id": "crossref:10.1109/trustcom56396.2022.00087",
-      "title": "Privacy-Preserving Robust Federated Learning with Distributed Differential Privacy",
-      "year": 2022,
-      "venue": "2022 IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
-      "authors": [
-        "Fayao Wang",
-        "Yuanyuan He",
-        "Yunchuan Guo",
-        "Peizhi Li",
-        "Xinyu Wei"
-      ],
-      "url": "https://doi.org/10.1109/trustcom56396.2022.00087",
-      "crossref_doi": "10.1109/trustcom56396.2022.00087",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "lens.differential-privacy",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/trustcom56396.2022.00087"
+      "source_url": "https://doi.org/10.1109/bigcom57025.2022.00025",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.65109/xjtb4641",
@@ -3747,7 +2785,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.65109/xjtb4641"
+      "source_url": "https://doi.org/10.65109/xjtb4641",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3512747",
@@ -3780,7 +2819,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3512747"
+      "source_url": "https://doi.org/10.1145/3512747",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/s10107-022-01803-w",
@@ -3812,7 +2852,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s10107-022-01803-w"
+      "source_url": "https://doi.org/10.1007/s10107-022-01803-w",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1609/aaai.v35i12.17331",
@@ -3851,7 +2892,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1609/aaai.v35i12.17331"
+      "source_url": "https://doi.org/10.1609/aaai.v35i12.17331",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/1.9781611976496.12",
@@ -3885,7 +2927,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/1.9781611976496.12"
+      "source_url": "https://doi.org/10.1137/1.9781611976496.12",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/1.9781611976465.43",
@@ -3917,241 +2960,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/1.9781611976465.43"
-    },
-    {
-      "id": "crossref:10.1109/cvprw53098.2021.00509",
-      "title": "Detecting and Matching Related Objects with One Proposal Multiple Predictions",
-      "year": 2021,
-      "venue": "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
-      "authors": [
-        "Yang Liu",
-        "Luiz G. Hafemann",
-        "Michael Jamieson",
-        "Mehrsan Javan"
-      ],
-      "url": "https://doi.org/10.1109/cvprw53098.2021.00509",
-      "crossref_doi": "10.1109/cvprw53098.2021.00509",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/cvprw53098.2021.00509"
-    },
-    {
-      "id": "crossref:10.3390/su131910540",
-      "title": "Digital Destination Matching: Practices, Priorities and Predictions",
-      "year": 2021,
-      "venue": "Sustainability",
-      "authors": [
-        "Mary-Ann Cooper",
-        "Raquel Camprubí",
-        "Erdogan Koc",
-        "Ralf Buckley"
-      ],
-      "url": "https://doi.org/10.3390/su131910540",
-      "crossref_doi": "10.3390/su131910540",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.3390/su131910540"
-    },
-    {
-      "id": "crossref:10.1051/ro/2021086",
-      "title": "Improved robust shortest paths by penalized investments",
-      "year": 2021,
-      "venue": "RAIRO - Operations Research",
-      "authors": [
-        "Francisco Pérez-Galarce",
-        "Alfredo Candia-Véjar",
-        "Guido Maculan",
-        "Nelson Maculan"
-      ],
-      "url": "https://doi.org/10.1051/ro/2021086",
-      "crossref_doi": "10.1051/ro/2021086",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.shortest-path",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1051/ro/2021086"
-    },
-    {
-      "id": "crossref:10.1145/3448016.3452813",
-      "title": "Residual Sensitivity for Differentially Private Multi-Way Joins",
-      "year": 2021,
-      "venue": "Proceedings of the 2021 International Conference on Management of Data",
-      "authors": [
-        "Wei Dong",
-        "Ke Yi"
-      ],
-      "url": "https://doi.org/10.1145/3448016.3452813",
-      "crossref_doi": "10.1145/3448016.3452813",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.differential-privacy",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "lens.algorithmic-sensitivity",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3448016.3452813"
-    },
-    {
-      "id": "crossref:10.1109/isit45174.2021.9518151",
-      "title": "Robust Local Differential Privacy",
-      "year": 2021,
-      "venue": "2021 IEEE International Symposium on Information Theory (ISIT)",
-      "authors": [
-        "Milan Lopuhaä-Zwakenberg",
-        "Jasper Goseling"
-      ],
-      "url": "https://doi.org/10.1109/isit45174.2021.9518151",
-      "crossref_doi": "10.1109/isit45174.2021.9518151",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "lens.differential-privacy",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/isit45174.2021.9518151"
-    },
-    {
-      "id": "crossref:10.1145/3465456.3467590",
-      "title": "Robust Repeated First Price Auctions",
-      "year": 2021,
-      "venue": "Proceedings of the 22nd ACM Conference on Economics and Computation",
-      "authors": [
-        "Shipra Agrawal",
-        "Eric Balkanski",
-        "Vahab Mirrokni",
-        "Balasubramanian Sivan"
-      ],
-      "url": "https://doi.org/10.1145/3465456.3467590",
-      "crossref_doi": "10.1145/3465456.3467590",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "auction.first-price-auction",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3465456.3467590"
-    },
-    {
-      "id": "crossref:10.1016/b978-0-32-389863-8.00013-7",
-      "title": "Robust fault-tolerant attitude control",
-      "year": 2021,
-      "venue": "Fault-Tolerant Attitude Control of Spacecraft",
-      "authors": [
-        "Qinglei Hu",
-        "Bing Xiao",
-        "Bo Li",
-        "Youmin Zhang"
-      ],
-      "url": "https://doi.org/10.1016/b978-0-32-389863-8.00013-7",
-      "crossref_doi": "10.1016/b978-0-32-389863-8.00013-7",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "lens.fault-tolerance",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/b978-0-32-389863-8.00013-7"
+      "source_url": "https://doi.org/10.1137/1.9781611976465.43",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3406325.3451028",
@@ -4185,7 +2995,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3406325.3451028"
+      "source_url": "https://doi.org/10.1145/3406325.3451028",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3465456.3467597",
@@ -4216,7 +3027,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3465456.3467597"
+      "source_url": "https://doi.org/10.1145/3465456.3467597",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/1.9781611976496.10",
@@ -4253,39 +3065,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/1.9781611976496.10"
-    },
-    {
-      "id": "crossref:10.1007/s42979-021-01001-z",
-      "title": "Some Consistency Rules for Graph Matching",
-      "year": 2021,
-      "venue": "SN Computer Science",
-      "authors": [
-        "Badreddine Benreguia",
-        "Hamouma Moumen"
-      ],
-      "url": "https://doi.org/10.1007/s42979-021-01001-z",
-      "crossref_doi": "10.1007/s42979-021-01001-z",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-consistency",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s42979-021-01001-z"
+      "source_url": "https://doi.org/10.1137/1.9781611976496.10",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/1.9781611976465.114",
@@ -4317,7 +3098,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/1.9781611976465.114"
+      "source_url": "https://doi.org/10.1137/1.9781611976465.114",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.24963/ijcai.2021/29",
@@ -4350,44 +3132,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.24963/ijcai.2021/29"
-    },
-    {
-      "id": "crossref:10.1109/mapr53640.2021.9585273",
-      "title": "Unweighted Bipartite Matching For Robust Vehicle Counting",
-      "year": 2021,
-      "venue": "2021 International Conference on Multimedia Analysis and Pattern Recognition (MAPR)",
-      "authors": [
-        "Khanh Ho",
-        "Huy Bao Le",
-        "Khoa Van Nguyen",
-        "Thua Nguyen",
-        "Tien Do",
-        "Thanh Duc Ngo",
-        "Thanh-Son Nguyen"
-      ],
-      "url": "https://doi.org/10.1109/mapr53640.2021.9585273",
-      "crossref_doi": "10.1109/mapr53640.2021.9585273",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/mapr53640.2021.9585273"
+      "source_url": "https://doi.org/10.24963/ijcai.2021/29",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1109/tvt.2021.3090042",
@@ -4422,7 +3168,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/tvt.2021.3090042"
+      "source_url": "https://doi.org/10.1109/tvt.2021.3090042",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.4316/jacsm.202001004",
@@ -4454,7 +3201,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.4316/jacsm.202001004"
+      "source_url": "https://doi.org/10.4316/jacsm.202001004",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3379552",
@@ -4487,7 +3235,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3379552"
+      "source_url": "https://doi.org/10.1145/3379552",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.31838/ijpr/2020.12.03.111",
@@ -4521,7 +3270,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.31838/ijpr/2020.12.03.111"
+      "source_url": "https://doi.org/10.31838/ijpr/2020.12.03.111",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3381525",
@@ -4553,7 +3303,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3381525"
+      "source_url": "https://doi.org/10.1145/3381525",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/s10878-020-00583-3",
@@ -4586,7 +3337,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s10878-020-00583-3"
+      "source_url": "https://doi.org/10.1007/s10878-020-00583-3",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3394486.3403166",
@@ -4618,7 +3370,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3394486.3403166"
+      "source_url": "https://doi.org/10.1145/3394486.3403166",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3391403.3399470",
@@ -4655,7 +3408,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3391403.3399470"
+      "source_url": "https://doi.org/10.1145/3391403.3399470",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1609/aaai.v34i02.5582",
@@ -4686,7 +3440,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1609/aaai.v34i02.5582"
+      "source_url": "https://doi.org/10.1609/aaai.v34i02.5582",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/19m1279241",
@@ -4722,7 +3477,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/19m1279241"
+      "source_url": "https://doi.org/10.1137/19m1279241",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1109/focs46700.2020.00046",
@@ -4756,40 +3512,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/focs46700.2020.00046"
-    },
-    {
-      "id": "crossref:10.1016/j.biocontrol.2020.104217",
-      "title": "Ground-truthing climate-matching predictions in a post-release evaluation",
-      "year": 2020,
-      "venue": "Biological Control",
-      "authors": [
-        "Phillippa C. Muskett",
-        "Iain D. Paterson",
-        "Julie A. Coetzee"
-      ],
-      "url": "https://doi.org/10.1016/j.biocontrol.2020.104217",
-      "crossref_doi": "10.1016/j.biocontrol.2020.104217",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.biocontrol.2020.104217"
+      "source_url": "https://doi.org/10.1109/focs46700.2020.00046",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1609/aaai.v34i04.5827",
@@ -4822,76 +3546,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1609/aaai.v34i04.5827"
-    },
-    {
-      "id": "crossref:10.1109/ismar50242.2020.00036",
-      "title": "Learning Bipartite Graph Matching for Robust Visual Localization",
-      "year": 2020,
-      "venue": "2020 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)",
-      "authors": [
-        "Hailin Yu",
-        "Weicai Ye",
-        "Youji Feng",
-        "Hujun Bao",
-        "Guofeng Zhang"
-      ],
-      "url": "https://doi.org/10.1109/ismar50242.2020.00036",
-      "crossref_doi": "10.1109/ismar50242.2020.00036",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/ismar50242.2020.00036"
-    },
-    {
-      "id": "crossref:10.1111/cobi.13492",
-      "title": "Matching expert range maps with species distribution model predictions",
-      "year": 2020,
-      "venue": "Conservation Biology",
-      "authors": [
-        "Kumar Mainali",
-        "Trevor Hefley",
-        "Leslie Ries",
-        "William F. Fagan"
-      ],
-      "url": "https://doi.org/10.1111/cobi.13492",
-      "crossref_doi": "10.1111/cobi.13492",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1111/cobi.13492"
+      "source_url": "https://doi.org/10.1609/aaai.v34i04.5827",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.31838/ijpr/2021.13.01.314",
@@ -4920,7 +3576,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.31838/ijpr/2021.13.01.314"
+      "source_url": "https://doi.org/10.31838/ijpr/2021.13.01.314",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3399676",
@@ -4952,7 +3609,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3399676"
+      "source_url": "https://doi.org/10.1145/3399676",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1109/focs46700.2020.00041",
@@ -4986,7 +3644,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/focs46700.2020.00041"
+      "source_url": "https://doi.org/10.1109/focs46700.2020.00041",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.65109/ocnn5096",
@@ -5018,7 +3677,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.65109/ocnn5096"
+      "source_url": "https://doi.org/10.65109/ocnn5096",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/s10878-020-00641-w",
@@ -5056,44 +3716,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s10878-020-00641-w"
-    },
-    {
-      "id": "crossref:10.3233/jhs-200635",
-      "title": "Prediction optimization of diffusion paths in social networks using integration of ant colony and densest subgraph algorithms",
-      "year": 2020,
-      "venue": "Journal of High Speed Networks",
-      "authors": [
-        "Kasra Majbouri Yazdi",
-        "Adel Majbouri Yazdi",
-        "Saeid Khodayi",
-        "Jingyu Hou",
-        "Wanlei Zhou",
-        "Saeed Saedy",
-        "Mehrdad Rostami"
-      ],
-      "url": "https://doi.org/10.3233/jhs-200635",
-      "crossref_doi": "10.3233/jhs-200635",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.densest-subgraph",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.3233/jhs-200635"
+      "source_url": "https://doi.org/10.1007/s10878-020-00641-w",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-030-57980-7_10",
@@ -5124,7 +3748,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-030-57980-7_10"
+      "source_url": "https://doi.org/10.1007/978-3-030-57980-7_10",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/1.9781611975482.115",
@@ -5157,7 +3782,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/1.9781611975482.115"
+      "source_url": "https://doi.org/10.1137/1.9781611975482.115",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1609/aaai.v33i01.33011877",
@@ -5191,7 +3817,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1609/aaai.v33i01.33011877"
+      "source_url": "https://doi.org/10.1609/aaai.v33i01.33011877",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3344999",
@@ -5224,7 +3851,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3344999"
+      "source_url": "https://doi.org/10.1145/3344999",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3328526.3329579",
@@ -5258,7 +3886,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3328526.3329579"
+      "source_url": "https://doi.org/10.1145/3328526.3329579",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/s10479-019-03235-w",
@@ -5292,41 +3921,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s10479-019-03235-w"
-    },
-    {
-      "id": "crossref:10.1093/bioinformatics/btz373",
-      "title": "Representation transfer for differentially private drug sensitivity prediction",
-      "year": 2019,
-      "venue": "Bioinformatics",
-      "authors": [
-        "Teppo Niinimäki",
-        "Mikko A Heikkilä",
-        "Antti Honkela",
-        "Samuel Kaski"
-      ],
-      "url": "https://doi.org/10.1093/bioinformatics/btz373",
-      "crossref_doi": "10.1093/bioinformatics/btz373",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "lens.differential-privacy",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1093/bioinformatics/btz373"
+      "source_url": "https://doi.org/10.1007/s10479-019-03235-w",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/18m1207880",
@@ -5360,7 +3956,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/18m1207880"
+      "source_url": "https://doi.org/10.1137/18m1207880",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1016/j.tcs.2019.10.012",
@@ -5392,7 +3989,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.tcs.2019.10.012"
+      "source_url": "https://doi.org/10.1016/j.tcs.2019.10.012",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1016/j.orl.2019.01.008",
@@ -5424,7 +4022,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.orl.2019.01.008"
+      "source_url": "https://doi.org/10.1016/j.orl.2019.01.008",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-030-17953-3_14",
@@ -5462,7 +4061,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-030-17953-3_14"
+      "source_url": "https://doi.org/10.1007/978-3-030-17953-3_14",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3328526.3329636",
@@ -5494,7 +4094,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3328526.3329636"
+      "source_url": "https://doi.org/10.1145/3328526.3329636",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-662-59204-5_7",
@@ -5525,7 +4126,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-662-59204-5_7"
+      "source_url": "https://doi.org/10.1007/978-3-662-59204-5_7",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/s10707-019-00359-w",
@@ -5561,7 +4163,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s10707-019-00359-w"
+      "source_url": "https://doi.org/10.1007/s10707-019-00359-w",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.37094/adyujsci.540858",
@@ -5592,7 +4195,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.37094/adyujsci.540858"
+      "source_url": "https://doi.org/10.37094/adyujsci.540858",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.14232/actacyb.23.3.2018.10",
@@ -5624,109 +4228,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.14232/actacyb.23.3.2018.10"
-    },
-    {
-      "id": "crossref:10.1007/s10287-018-0313-1",
-      "title": "Distributionally robust simple integer recourse",
-      "year": 2018,
-      "venue": "Computational Management Science",
-      "authors": [
-        "Weijun Xie",
-        "Shabbir Ahmed"
-      ],
-      "url": "https://doi.org/10.1007/s10287-018-0313-1",
-      "crossref_doi": "10.1007/s10287-018-0313-1",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "property.recourse-bound",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/s10287-018-0313-1"
-    },
-    {
-      "id": "crossref:10.1186/s13062-017-0203-4",
-      "title": "Efficient differentially private learning improves drug sensitivity prediction",
-      "year": 2018,
-      "venue": "Biology Direct",
-      "authors": [
-        "Antti Honkela",
-        "Mrinal Das",
-        "Arttu Nieminen",
-        "Onur Dikmen",
-        "Samuel Kaski"
-      ],
-      "url": "https://doi.org/10.1186/s13062-017-0203-4",
-      "crossref_doi": "10.1186/s13062-017-0203-4",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "lens.differential-privacy",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1186/s13062-017-0203-4"
-    },
-    {
-      "id": "crossref:10.1007/jhep08(2018)090",
-      "title": "Higgs-boson plus dijets: higher-order matching for high-energy predictions",
-      "year": 2018,
-      "venue": "Journal of High Energy Physics",
-      "authors": [
-        "Jeppe R. Andersen",
-        "Tuomas Hapola",
-        "Marian Heil",
-        "Andreas Maier",
-        "Jennifer M. Smillie"
-      ],
-      "url": "https://doi.org/10.1007/jhep08(2018)090",
-      "crossref_doi": "10.1007/jhep08(2018)090",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/jhep08(2018)090"
+      "source_url": "https://doi.org/10.14232/actacyb.23.3.2018.10",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-319-94776-1_27",
@@ -5758,41 +4261,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-319-94776-1_27"
-    },
-    {
-      "id": "crossref:10.1145/3191801.3191812",
-      "title": "Map-matching using shortest paths",
-      "year": 2018,
-      "venue": "Proceedings of the 3rd International Workshop on Interactive and Spatial Computing",
-      "authors": [
-        "Erin Chambers",
-        "Brittany Terese Fasy",
-        "Yusu Wang",
-        "Carola Wenk"
-      ],
-      "url": "https://doi.org/10.1145/3191801.3191812",
-      "crossref_doi": "10.1145/3191801.3191812",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.shortest-path",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3191801.3191812"
+      "source_url": "https://doi.org/10.1007/978-3-319-94776-1_27",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.15407/kvt191.01.032",
@@ -5823,40 +4293,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.15407/kvt191.01.032"
-    },
-    {
-      "id": "crossref:10.1016/j.trb.2018.11.010",
-      "title": "Network congestion games are robust to variable demand",
-      "year": 2018,
-      "venue": "Transportation Research Part B: Methodological",
-      "authors": [
-        "José Correa",
-        "Ruben Hoeksma",
-        "Marc Schröder"
-      ],
-      "url": "https://doi.org/10.1016/j.trb.2018.11.010",
-      "crossref_doi": "10.1016/j.trb.2018.11.010",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "game.congestion-game",
-          "role": "model",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1016/j.trb.2018.11.010"
+      "source_url": "https://doi.org/10.15407/kvt191.01.032",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-319-89441-6_19",
@@ -5889,7 +4327,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-319-89441-6_19"
+      "source_url": "https://doi.org/10.1007/978-3-319-89441-6_19",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1137/1.9781611975031.61",
@@ -5922,40 +4361,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1137/1.9781611975031.61"
-    },
-    {
-      "id": "crossref:10.1109/tits.2018.2812147",
-      "title": "Online Map Matching With Route Prediction",
-      "year": 2018,
-      "venue": "IEEE Transactions on Intelligent Transportation Systems",
-      "authors": [
-        "Shun Taguchi",
-        "Satoshi Koide",
-        "Takayoshi Yoshimura"
-      ],
-      "url": "https://doi.org/10.1109/tits.2018.2812147",
-      "crossref_doi": "10.1109/tits.2018.2812147",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/tits.2018.2812147"
+      "source_url": "https://doi.org/10.1137/1.9781611975031.61",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1609/aaai.v32i1.11434",
@@ -5989,39 +4396,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1609/aaai.v32i1.11434"
-    },
-    {
-      "id": "crossref:10.1109/icdm.2018.00157",
-      "title": "Robust Densest Subgraph Discovery",
-      "year": 2018,
-      "venue": "2018 IEEE International Conference on Data Mining (ICDM)",
-      "authors": [
-        "Atsushi Miyauchi",
-        "Akiko Takeda"
-      ],
-      "url": "https://doi.org/10.1109/icdm.2018.00157",
-      "crossref_doi": "10.1109/icdm.2018.00157",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "property.prediction-robustness",
-          "role": "metric",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.densest-subgraph",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1109/icdm.2018.00157"
+      "source_url": "https://doi.org/10.1609/aaai.v32i1.11434",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-030-03232-6_6",
@@ -6054,7 +4430,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-030-03232-6_6"
+      "source_url": "https://doi.org/10.1007/978-3-030-03232-6_6",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1007/978-3-319-89441-6_23",
@@ -6088,39 +4465,8 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-319-89441-6_23"
-    },
-    {
-      "id": "crossref:10.1007/978-3-319-74953-2_8",
-      "title": "Time Predictions: Matching the Method to the Situation",
-      "year": 2018,
-      "venue": "Time Predictions",
-      "authors": [
-        "Torleif Halkjelsvik",
-        "Magne Jørgensen"
-      ],
-      "url": "https://doi.org/10.1007/978-3-319-74953-2_8",
-      "crossref_doi": "10.1007/978-3-319-74953-2_8",
-      "metadata_source": "Crossref REST API",
-      "primitives": [
-        {
-          "primitive_id": "lens.prediction",
-          "role": "lens",
-          "evidence": "title_exact_phrase"
-        },
-        {
-          "primitive_id": "problem.graph-matching",
-          "role": "problem",
-          "evidence": "title_exact_phrase"
-        }
-      ],
-      "review_status": "title_inferred_unverified",
-      "link_evidence": "title_exact_phrase",
-      "source_id": null,
-      "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
-      "authors_completeness": "dblp_metadata",
-      "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1007/978-3-319-74953-2_8"
+      "source_url": "https://doi.org/10.1007/978-3-319-89441-6_23",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     },
     {
       "id": "crossref:10.1145/3209582.3209605",
@@ -6156,7 +4502,9 @@
       "scope_note": "Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness": "dblp_metadata",
       "status": "bibliographic_metadata",
-      "source_url": "https://doi.org/10.1145/3209582.3209605"
+      "source_url": "https://doi.org/10.1145/3209582.3209605",
+      "curation_note": "Title-only matches retained after heuristic domain and context screening. Paper semantics remain unverified."
     }
-  ]
+  ],
+  "screening": "Conservative TCS domain filtering + prediction-context validation, title evidence only."
 }
