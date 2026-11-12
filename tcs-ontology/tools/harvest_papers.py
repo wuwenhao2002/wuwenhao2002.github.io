@@ -199,7 +199,7 @@ def annotate(paper,valid):
       "link_evidence":"title_exact_phrase","source_id":None,
       "scope_note":"Labels inferred from explicit title terms only; paper content and mathematical uses NOT reviewed.",
       "authors_completeness":"dblp_metadata","status":"bibliographic_metadata",
-      "source_url":paper["url"]}
+      "source_url":paper.get("url","") }
 def harvest(profiles,queries,valid,max_items):
     seen={}
     errors=[]
