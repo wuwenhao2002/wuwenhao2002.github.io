@@ -11,7 +11,7 @@ from urllib.parse import urlsplit
 
 STATUSES = {"needs_definition", "seeded_definition_unverified", "source_checked", "expert_reviewed"}
 RELATIONS = {"is_a", "subset_of", "composed_of", "related_to", "has_relevant_solution_concept",
-             "often_analyzed_by", "often_uses", "studied_on", "studies"}
+             "often_analyzed_by", "often_uses", "studied_on", "studies", "has_variant"}
 
 
 def _acyclic(edges: list[dict], predicate: str) -> list[str]:
@@ -176,6 +176,31 @@ def audit(db: dict[str, list[dict]]) -> list[str]:
         for sid in result["source_ids"]:
             if sid not in source_ids:
                 errors.append("dangling theorem source: " + sid)
+    paper_ids = set()
+    for paper in db.get("papers", []):
+        pid = paper.get("id")
+        if pid in paper_ids:
+            errors.append("duplicate paper: " + str(pid))
+        paper_ids.add(pid)
+        if paper.get("source_id") not in source_ids:
+            errors.append("paper with missing evidence source: " + str(pid))
+        if paper.get("year", 0) < 1900 or paper.get("year", 0) > 2100:
+            errors.append("paper year outside expected range: " + str(pid))
+        if not paper.get("title") or not paper.get("venue") or not paper.get("scope_note"):
+            errors.append("underspecified paper: " + str(pid))
+        if not paper.get("primitives"):
+            errors.append("paper with no primitives: " + str(pid))
+        assigned = set()
+        for linked in paper.get("primitives", []):
+            primitive = linked.get("primitive_id")
+            role = linked.get("role")
+            if primitive not in ids:
+                errors.append("paper has dangling primitive: " + str(primitive))
+            if (primitive in assigned):
+                errors.append("duplicate paper-primitive link: " + str(pid) + "/" + str(primitive))
+            assigned.add(primitive)
+            if role not in {"problem","lens","model","metric","technique","assumption","task"}:
+                errors.append("paper invalid concept role: " + str(pid) + "/" + str(role))
     return errors
 
 
@@ -196,5 +221,7 @@ def report(db: dict[str, list[dict]]) -> dict[str, Any]:
         "results_with_scoped_assumptions": len(db.get("results", [])),
         "redirects": len(db.get("redirects", [])),
         "sources": len(db["sources"]),
+        "indexed_papers": len(db.get("papers", [])),
+        "paper_primitive_links": sum(len(p["primitives"]) for p in db.get("papers", [])),
         "unreviewed_examples": [p["id"] for p in items if p["review_status"]=="needs_definition"][:20],
     }

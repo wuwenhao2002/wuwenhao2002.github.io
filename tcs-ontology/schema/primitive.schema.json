@@ -38,7 +38,8 @@
         "objective",
         "task",
         "complexity_class",
-        "model"
+        "model",
+        "lens"
       ]
     },
     "areas": {

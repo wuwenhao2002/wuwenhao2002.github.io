@@ -25,7 +25,7 @@ DATA = ROOT / "data"
 KINDS = {
     "game", "auction", "equilibrium", "property", "assumption", "framework",
     "graph_class", "problem", "technique", "objective", "task",
-    "complexity_class", "model",
+    "complexity_class", "model", "lens",
 }
 ID_PATTERN = re.compile(r"^[a-z_]+\.[a-z0-9]+(?:-[a-z0-9]+)*$")
 
@@ -41,7 +41,7 @@ def load(name: str) -> list[dict]:
 def catalog() -> dict[str, list[dict]]:
     return {k: load(k) for k in (
         "primitives", "relationships", "rules", "literature", "sources",
-        "results", "redirects",
+        "results", "redirects", "papers",
     )}
 
 
@@ -90,7 +90,7 @@ def validate() -> tuple[dict, list[str]]:
     predicates = {
         "is_a", "subset_of", "composed_of", "often_uses", "related_to",
         "often_analyzed_by", "has_relevant_solution_concept",
-        "studied_on", "studies",
+        "studied_on", "studies", "has_variant",
     }
     edges = set()
     for edge in db["relationships"]:
@@ -281,6 +281,8 @@ def export_sqlite(db: dict, outfile: Path) -> None:
         );
         CREATE TABLE redirect (old_id TEXT PRIMARY KEY, new_id TEXT NOT NULL REFERENCES primitive(id), reason TEXT NOT NULL);
         CREATE TABLE checked_result (id TEXT PRIMARY KEY, statement TEXT NOT NULL, scope_note TEXT NOT NULL, json TEXT NOT NULL);
+        CREATE TABLE paper (id TEXT PRIMARY KEY,title TEXT NOT NULL,year INTEGER NOT NULL,venue TEXT NOT NULL,source_id TEXT NOT NULL REFERENCES source(id),scope_note TEXT NOT NULL);
+        CREATE TABLE paper_primitive (paper_id TEXT NOT NULL REFERENCES paper(id),primitive_id TEXT NOT NULL REFERENCES primitive(id),role TEXT NOT NULL,PRIMARY KEY(paper_id,primitive_id));
         CREATE INDEX idx_primitive_name ON primitive(name);
         CREATE INDEX idx_primitive_kind ON primitive(kind);
         CREATE INDEX idx_primitive_area ON primitive_area(area);
@@ -315,6 +317,12 @@ def export_sqlite(db: dict, outfile: Path) -> None:
         for result in db.get("results", []):
             con.execute("INSERT INTO checked_result VALUES (?,?,?,?)",
                         (result["id"], result["statement"], result["scope_note"], json.dumps(result)))
+        for paper in db.get("papers", []):
+            con.execute("INSERT INTO paper VALUES (?,?,?,?,?,?)",
+                        (paper["id"], paper["title"], paper["year"], paper["venue"], paper["source_id"], paper["scope_note"]))
+            for ref in paper["primitives"]:
+                con.execute("INSERT INTO paper_primitive VALUES (?,?,?)",
+                            (paper["id"], ref["primitive_id"], ref["role"]))
     print(f"Created {outfile} ({len(db['primitives'])} primitives)")
 
 

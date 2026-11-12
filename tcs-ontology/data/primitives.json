@@ -1,6 +1,6 @@
 {
-  "schema_version": "0.2.0",
-  "updated_at": "2026-11-12",
+  "schema_version": "0.3.0",
+  "updated_at": "2026-11-13",
   "provenance_note": "Mixed status: source_checked means an editorial source cross-check, not peer or expert review. Other primitives remain unverified candidates. No external bulk data copied.",
   "items": [
     {
@@ -389,6 +389,25 @@
       "reviewed_at": null
     },
     {
+      "id": "assumption.neighboring-datasets",
+      "name": "Neighboring Datasets",
+      "kind": "assumption",
+      "areas": [
+        "Cryptography"
+      ],
+      "aliases": [
+        "Dataset Adjacency"
+      ],
+      "definition": "Two inputs related by a specified record insertion, deletion or replacement convention.",
+      "scope_note": "Adjacency is part of the DP definition and must be explicit.",
+      "source_ids": [
+        "p-graph-dp-survey"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "assumption.no-overbidding",
       "name": "No Overbidding",
       "kind": "assumption",
@@ -547,6 +566,25 @@
       "reviewed_at": null
     },
     {
+      "id": "assumption.single-edge-deletion",
+      "name": "Single-Edge Deletion",
+      "kind": "assumption",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [
+        "Edge Deletion"
+      ],
+      "definition": "Perturbation comparing a graph with the graph after removing one edge.",
+      "scope_note": "Not the same as edge-weight change or vertex removal.",
+      "source_ids": [
+        "p-yoshida-matching"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "assumption.single-parameter-valuations",
       "name": "Single-Parameter Valuations",
       "kind": "assumption",
@@ -560,6 +598,25 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "assumption.single-vertex-deletion",
+      "name": "Single-Vertex Deletion",
+      "kind": "assumption",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [
+        "Vertex Deletion"
+      ],
+      "definition": "Perturbation comparing a graph with a graph after removing one vertex and its incident edges.",
+      "scope_note": "May change much more information than single edge deletion.",
+      "source_ids": [
+        "p-yoshida-graph"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "assumption.standard-model-cryptography",
@@ -656,6 +713,25 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "assumption.unknown-prediction-quality",
+      "name": "Unknown Prediction Quality",
+      "kind": "assumption",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [
+        "Unknown Advice Accuracy"
+      ],
+      "definition": "The algorithm is not given the magnitude of the prediction error as an input parameter.",
+      "scope_note": "Error may appear in the analysis even when unknown to the algorithm.",
+      "source_ids": [
+        "p-dinitz-ski"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "assumption.xos-valuations",
@@ -1685,6 +1761,25 @@
       "reviewed_at": null
     },
     {
+      "id": "framework.batch-to-online-transformation",
+      "name": "Batch-to-Online Transformation",
+      "kind": "framework",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [
+        "Offline-to-Online Reduction"
+      ],
+      "definition": "A reduction transforming offline approximation/stability properties into online regret or competitive performance.",
+      "scope_note": "Random-order assumptions and sensitivity hypotheses affect guarantees.",
+      "source_ids": [
+        "p-yoshida-regret"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "framework.bayesian-games-framework",
       "name": "Bayesian Games Framework",
       "kind": "framework",
@@ -1805,6 +1900,26 @@
       "reviewed_at": null
     },
     {
+      "id": "framework.generalized-binary-tree-mechanism",
+      "name": "Generalized Binary Tree Mechanism",
+      "kind": "framework",
+      "areas": [
+        "Graph Algorithms",
+        "Cryptography"
+      ],
+      "aliases": [
+        "Recursive Separator Mechanism"
+      ],
+      "definition": "A private algorithm design framework extending the binary tree aggregation method to recursively separable graph problems.",
+      "scope_note": "Depends on graph separator structure and weight adjacency.",
+      "source_ids": [
+        "p-dinitz-distances"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "framework.hardness-of-approximation",
       "name": "Hardness of Approximation",
       "kind": "framework",
@@ -1848,6 +1963,26 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "framework.learning-augmented-algorithms",
+      "name": "Learning-Augmented Algorithms",
+      "kind": "framework",
+      "areas": [
+        "Online Algorithms",
+        "Learning Theory"
+      ],
+      "aliases": [
+        "Algorithms with Predictions"
+      ],
+      "definition": "An algorithmic paradigm combining learned advice with traditional provable worst-case or error-sensitive guarantees.",
+      "scope_note": "Consistency and robustness are separately quantified relative to a baseline.",
+      "source_ids": [
+        "p-dinitz-ski"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "framework.no-regret-learning",
@@ -1983,6 +2118,26 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "framework.shifting-mechanism",
+      "name": "Shifting Mechanism",
+      "kind": "framework",
+      "areas": [
+        "Graph Algorithms",
+        "Cryptography"
+      ],
+      "aliases": [
+        "Private Shifting Method"
+      ],
+      "definition": "A mechanism design approach using transformations or shifts to obtain differentially private combinatorial solutions.",
+      "scope_note": "Established for cuts in a specific paper; do not apply universally to all graph problems.",
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "framework.smoothness-framework",
@@ -2868,6 +3023,126 @@
       "reviewed_at": null
     },
     {
+      "id": "lens.algorithmic-sensitivity",
+      "name": "Algorithmic Sensitivity",
+      "kind": "lens",
+      "areas": [
+        "Graph Algorithms",
+        "Approximation Algorithms"
+      ],
+      "aliases": [
+        "Output Sensitivity"
+      ],
+      "definition": "A cross-cutting analysis of how much an algorithm's output or output distribution changes after an allowed small input perturbation.",
+      "scope_note": "Distinct from the sensitivity of a numeric DP query; state perturbation and output metric.",
+      "source_ids": [
+        "p-yoshida-matching"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "lens.algorithmic-stability",
+      "name": "Algorithmic Stability Lens",
+      "kind": "lens",
+      "areas": [
+        "Graph Algorithms",
+        "Learning Theory"
+      ],
+      "aliases": [
+        "Stability Lens"
+      ],
+      "definition": "A lens demanding stable outputs or behaviors when related input instances are perturbed.",
+      "scope_note": "Can refer to distinct metrics such as average sensitivity and Lipschitz continuity.",
+      "source_ids": [
+        "p-yoshida-graph"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "lens.differential-privacy",
+      "name": "Differential Privacy Lens",
+      "kind": "lens",
+      "areas": [
+        "Graph Algorithms",
+        "Cryptography"
+      ],
+      "aliases": [
+        "Private Algorithm Lens"
+      ],
+      "definition": "A cross-cutting requirement that an algorithm satisfy a formal differential privacy guarantee for neighboring inputs.",
+      "scope_note": "Graph adjacency model and privacy parameters determine what is protected.",
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "lens.fault-tolerance",
+      "name": "Fault Tolerance Lens",
+      "kind": "lens",
+      "areas": [
+        "Graph Algorithms",
+        "Distributed Computing"
+      ],
+      "aliases": [
+        "Fault Robustness"
+      ],
+      "definition": "A lens requiring structural or algorithmic guarantees to survive a bounded number of specified faults.",
+      "scope_note": "Specify edge versus vertex faults, budget and surviving guarantee.",
+      "source_ids": [
+        "p-dinitz-fault"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "lens.prediction",
+      "name": "Prediction Lens",
+      "kind": "lens",
+      "areas": [
+        "Online Algorithms",
+        "Learning Theory"
+      ],
+      "aliases": [
+        "Algorithms with Predictions"
+      ],
+      "definition": "A cross-cutting approach using an externally supplied estimate or distribution to improve an algorithm while retaining an explicit guarantee for inaccurate advice.",
+      "scope_note": "Predicted quantity, accuracy measure, baseline and robustness must be specified.",
+      "source_ids": [
+        "p-dinitz-ski"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "lens.replicability",
+      "name": "Replicability Lens",
+      "kind": "lens",
+      "areas": [
+        "Learning Theory",
+        "Randomized Algorithms"
+      ],
+      "aliases": [
+        "Replicable Learning"
+      ],
+      "definition": "A lens studying whether runs on independent samples using shared internal randomness agree with high probability.",
+      "scope_note": "Different from privacy and input-output sensitivity, even if related.",
+      "source_ids": [
+        "p-yoshida-rl"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "model.active-learning",
       "name": "Active Learning",
       "kind": "model",
@@ -3231,6 +3506,26 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "model.distributional-prediction",
+      "name": "Distributional Prediction",
+      "kind": "model",
+      "areas": [
+        "Online Algorithms",
+        "Learning Theory"
+      ],
+      "aliases": [
+        "Probabilistic Prediction"
+      ],
+      "definition": "Advice model supplying a probability distribution over unknown outcomes or inputs.",
+      "scope_note": "Different from single point advice; distributional errors require a transport or divergence measure.",
+      "source_ids": [
+        "p-dinitz-binary"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "model.dynamic-data-structure",
       "name": "Dynamic Data Structure",
       "kind": "model",
@@ -3276,6 +3571,46 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "model.edge-differential-privacy",
+      "name": "Edge Differential Privacy",
+      "kind": "model",
+      "areas": [
+        "Graph Algorithms",
+        "Cryptography"
+      ],
+      "aliases": [
+        "Edge DP"
+      ],
+      "definition": "Graph differential privacy where neighbors differ by an allowed edge insertion or deletion.",
+      "scope_note": "Privacy does not automatically cover removal of all edges incident to a person.",
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "model.edge-weight-differential-privacy",
+      "name": "Edge-Weight Differential Privacy",
+      "kind": "model",
+      "areas": [
+        "Graph Algorithms",
+        "Cryptography"
+      ],
+      "aliases": [
+        "Weight DP"
+      ],
+      "definition": "Graph differential privacy where neighboring weighted graphs differ in one bounded edge-weight change.",
+      "scope_note": "Can keep graph topology public; differs from edge-existence adjacency.",
+      "source_ids": [
+        "p-dinitz-distances"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "model.external-memory-model",
@@ -3481,6 +3816,26 @@
       "reviewed_at": null
     },
     {
+      "id": "model.local-edge-differential-privacy",
+      "name": "Local Edge Differential Privacy",
+      "kind": "model",
+      "areas": [
+        "Graph Algorithms",
+        "Cryptography"
+      ],
+      "aliases": [
+        "LEDP"
+      ],
+      "definition": "A local/distributed privacy notion where an edge's sensitive information is protected through local mechanisms or protocols.",
+      "scope_note": "Different trust and communication assumptions from centralized edge DP.",
+      "source_ids": [
+        "p-dinitz-densest"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "model.local-model",
       "name": "LOCAL Model",
       "kind": "model",
@@ -3573,6 +3928,64 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "model.node-differential-privacy",
+      "name": "Node Differential Privacy",
+      "kind": "model",
+      "areas": [
+        "Graph Algorithms",
+        "Cryptography"
+      ],
+      "aliases": [
+        "Node DP"
+      ],
+      "definition": "Graph differential privacy where neighboring graphs differ by the presence of a vertex and incident edges.",
+      "scope_note": "Typically a larger perturbation than edge DP; conventions vary.",
+      "source_ids": [
+        "p-graph-dp-survey"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "model.non-signaling-locality-model",
+      "name": "Non-Signaling Locality Model",
+      "kind": "model",
+      "areas": [
+        "Distributed Computing"
+      ],
+      "aliases": [
+        "Non-Signaling Model"
+      ],
+      "definition": "A generalized locality model limiting which correlations of local outputs can signal information from distant inputs.",
+      "scope_note": "Formal non-signaling constraints differ from standard message-passing LOCAL.",
+      "source_ids": [
+        "p-yoshida-lower"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "model.nonclairvoyant-online-model",
+      "name": "Nonclairvoyant Online Model",
+      "kind": "model",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [
+        "Non-Clairvoyance"
+      ],
+      "definition": "An online information model hiding some job or request characteristics when a decision must be made.",
+      "scope_note": "Specify which parameters are hidden and when feedback arrives.",
+      "source_ids": [
+        "p-dinitz-jrp"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "model.nondeterministic-finite-automaton",
@@ -3763,6 +4176,44 @@
       ],
       "scope_note": "Partial and full persistence permit different operations on past states.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "model.point-prediction",
+      "name": "Point Prediction",
+      "kind": "model",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [
+        "Scalar Prediction"
+      ],
+      "definition": "Advice model supplying one estimated item, location, value or parameter rather than a distribution.",
+      "scope_note": "Prediction distance needs an explicit target and error metric.",
+      "source_ids": [
+        "p-dinitz-binary"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "model.prediction-portfolio",
+      "name": "Prediction Portfolio",
+      "kind": "model",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [
+        "Multiple Predictors"
+      ],
+      "definition": "An algorithm receives multiple predictors and can select or combine them during execution.",
+      "scope_note": "Predictor selection and number of predictors affect guarantees.",
+      "source_ids": [
+        "p-dinitz-portfolio"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "model.preemptive-scheduling",
@@ -4474,6 +4925,25 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.art-gallery",
+      "name": "Art Gallery Problem",
+      "kind": "problem",
+      "areas": [
+        "Computational Geometry"
+      ],
+      "aliases": [
+        "Art Gallery"
+      ],
+      "definition": "Place guards within a geometric region so their visibility covers the region using few guards.",
+      "scope_note": "Polygon geometry, allowable guard locations, and approximation criteria matter.",
+      "source_ids": [
+        "p-yoshida-geometric"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "problem.automata-emptiness",
       "name": "Automata Emptiness",
       "kind": "problem",
@@ -4519,6 +4989,26 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.binary-search",
+      "name": "Binary Search",
+      "kind": "problem",
+      "areas": [
+        "Data Structures",
+        "Online Algorithms"
+      ],
+      "aliases": [
+        "Sorted Array Search"
+      ],
+      "definition": "Locate a target by adaptive comparisons within a sorted sequence.",
+      "scope_note": "Query model and prediction type determine query complexity.",
+      "source_ids": [
+        "p-dinitz-binary"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "problem.boolean-satisfiability",
@@ -4669,6 +5159,25 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.densest-subgraph",
+      "name": "Densest Subgraph",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [
+        "DSG"
+      ],
+      "definition": "Choose a nonempty graph vertex subset maximizing a specified density, often induced edges per vertex.",
+      "scope_note": "Graph weights and density normalization matter.",
+      "source_ids": [
+        "p-dinitz-densest"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "problem.distinct-elements-estimation",
@@ -5139,6 +5648,25 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.joint-replenishment-with-deadlines",
+      "name": "Joint Replenishment with Deadlines",
+      "kind": "problem",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [
+        "JRP-D"
+      ],
+      "definition": "Serve requests under deadlines via joint and item-specific replenishment actions with associated costs.",
+      "scope_note": "Clairvoyance of deadlines and ordering constraints are critical.",
+      "source_ids": [
+        "p-dinitz-jrp"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "problem.judgment-aggregation",
       "name": "Judgment Aggregation",
       "kind": "problem",
@@ -5233,6 +5761,63 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.maximum-clique",
+      "name": "Maximum Clique",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [
+        "Max Clique"
+      ],
+      "definition": "Find a largest subset of vertices that form a complete graph.",
+      "scope_note": "Do not confuse maximum clique with maximal clique.",
+      "source_ids": [
+        "p-yoshida-lower"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "problem.maximum-coverage",
+      "name": "Maximum Coverage",
+      "kind": "problem",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [
+        "Maximum k-Coverage"
+      ],
+      "definition": "Choose at most k sets maximizing the total size or weight of their union.",
+      "scope_note": "Cardinality constraints and coverage objective must be fixed.",
+      "source_ids": [
+        "p-yoshida-ltc"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "problem.maximum-cut",
+      "name": "Maximum Cut",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [
+        "Max Cut"
+      ],
+      "definition": "Partition a graph into two sides to maximize crossing-edge weight.",
+      "scope_note": "Different from the minimum cut objective.",
+      "source_ids": [
+        "p-yoshida-lower"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "problem.maximum-flow",
       "name": "Maximum Flow",
       "kind": "problem",
@@ -5286,6 +5871,25 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "problem.metric-voting",
+      "name": "Metric Voting",
+      "kind": "problem",
+      "areas": [
+        "Computational Social Choice"
+      ],
+      "aliases": [
+        "Metric Social Choice"
+      ],
+      "definition": "Choose social outcomes using ordinal rankings when true utilities are related to an underlying metric.",
+      "scope_note": "The distortion objective and voter adjacency definitions are essential for privacy analysis.",
+      "source_ids": [
+        "p-yoshida-voting"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "problem.minimum-cut",
       "name": "Minimum Cut",
       "kind": "problem",
@@ -5331,6 +5935,25 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.minimum-k-cut",
+      "name": "Minimum k-Cut",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [
+        "Min k Cut"
+      ],
+      "definition": "Remove a minimum-weight edge set that leaves at least k connected components.",
+      "scope_note": "Different from multiway cut; fixed and variable k have different regimes.",
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "problem.minimum-makespan-scheduling",
@@ -5412,6 +6035,25 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.multiway-cut",
+      "name": "Multiway Cut",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [
+        "Multi-Terminal Cut"
+      ],
+      "definition": "Find a minimum-weight cut separating a given collection of distinct terminals.",
+      "scope_note": "Terminals and their requirement for separation define the problem.",
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "problem.nash-equilibrium-computation",
@@ -6184,6 +6826,25 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.tree-search",
+      "name": "Tree Search",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [
+        "Tree Target Search"
+      ],
+      "definition": "Find a hidden target vertex in a tree through adaptive queries and path-direction feedback.",
+      "scope_note": "Query feedback and tree structural parameters affect bounds.",
+      "source_ids": [
+        "p-dinitz-tree"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "problem.triangle-detection",
       "name": "Triangle Detection",
       "kind": "problem",
@@ -6261,6 +6922,26 @@
       "reviewed_at": null
     },
     {
+      "id": "property.additive-error",
+      "name": "Additive Error",
+      "kind": "property",
+      "areas": [
+        "Graph Algorithms",
+        "Approximation Algorithms"
+      ],
+      "aliases": [
+        "Additive Loss"
+      ],
+      "definition": "An additive deviation between an algorithmic value and a chosen target or optimal benchmark.",
+      "scope_note": "Different from a multiplicative approximation factor and from privacy budget.",
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "property.approximation-ratio",
       "name": "Approximation Ratio",
       "kind": "property",
@@ -6291,6 +6972,26 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.average-algorithmic-sensitivity",
+      "name": "Average Algorithmic Sensitivity",
+      "kind": "property",
+      "areas": [
+        "Graph Algorithms",
+        "Approximation Algorithms"
+      ],
+      "aliases": [
+        "Average Sensitivity"
+      ],
+      "definition": "Average distance between output distributions before and after an elementary input perturbation sampled from a defined distribution.",
+      "scope_note": "Often averaged over deleted graph edges with earth-mover output distance; conventions vary.",
+      "source_ids": [
+        "p-yoshida-graph"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "property.bayesian-incentive-compatibility",
@@ -6936,6 +7637,25 @@
       "reviewed_at": null
     },
     {
+      "id": "property.global-dp-sensitivity",
+      "name": "Global Query Sensitivity",
+      "kind": "property",
+      "areas": [
+        "Cryptography"
+      ],
+      "aliases": [
+        "Global Sensitivity"
+      ],
+      "definition": "Largest change in a numeric query over all neighboring pairs of datasets for a selected norm.",
+      "scope_note": "A query-noise calibration parameter, not the algorithmic output-distribution sensitivity.",
+      "source_ids": [
+        "p-graph-dp-survey"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "property.group-fairness",
       "name": "Group Fairness",
       "kind": "property",
@@ -7126,6 +7846,25 @@
       "reviewed_at": null
     },
     {
+      "id": "property.lipschitz-constant",
+      "name": "Lipschitz Constant",
+      "kind": "property",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [
+        "Algorithmic Lipschitz Constant"
+      ],
+      "definition": "Coefficient controlling output change relative to a quantified input change for a chosen algorithm or map.",
+      "scope_note": "Meaningless without specified metrics and perturbation neighborhood.",
+      "source_ids": [
+        "p-yoshida-lipschitz"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "property.local-checkability",
       "name": "Local Checkability",
       "kind": "property",
@@ -7139,6 +7878,25 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.local-dp-sensitivity",
+      "name": "Local Query Sensitivity",
+      "kind": "property",
+      "areas": [
+        "Cryptography"
+      ],
+      "aliases": [
+        "Local Sensitivity"
+      ],
+      "definition": "Largest change of a fixed query over datasets adjacent to a specified dataset.",
+      "scope_note": "Dataset-dependent; distinct from global DP sensitivity and randomized algorithmic sensitivity.",
+      "source_ids": [
+        "p-graph-dp-survey"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "property.locality",
@@ -7237,6 +7995,25 @@
       ],
       "scope_note": "Not determined solely by round complexity.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "property.metric-distortion",
+      "name": "Metric Distortion",
+      "kind": "property",
+      "areas": [
+        "Computational Social Choice"
+      ],
+      "aliases": [
+        "Voting Distortion"
+      ],
+      "definition": "Worst-case ratio comparing social cost of an ordinal voting rule to the optimal alternative given an underlying metric.",
+      "scope_note": "Distortion for randomized rules uses expected cost and its own conventions.",
+      "source_ids": [
+        "p-yoshida-voting"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "property.monotonicity-of-voting",
@@ -7348,6 +8125,25 @@
       "reviewed_at": null
     },
     {
+      "id": "property.pointwise-lipschitz-continuity",
+      "name": "Pointwise Lipschitz Continuity",
+      "kind": "property",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [
+        "Pointwise Lipschitz Algorithms"
+      ],
+      "definition": "Stable algorithmic behavior quantified by a Lipschitz bound between outputs under changes in input weights or data.",
+      "scope_note": "Requires input and output metrics and coupling conventions.",
+      "source_ids": [
+        "p-yoshida-lipschitz"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "property.policy-regret",
       "name": "Policy Regret",
       "kind": "property",
@@ -7391,6 +8187,63 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.prediction-consistency",
+      "name": "Prediction Consistency",
+      "kind": "property",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [
+        "Consistency"
+      ],
+      "definition": "Algorithmic performance guarantee in the case of exact or exceptionally accurate predictions.",
+      "scope_note": "Performance benchmark and additive versus multiplicative convention matter.",
+      "source_ids": [
+        "p-dinitz-ski"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "property.prediction-error",
+      "name": "Prediction Error",
+      "kind": "property",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [
+        "Advice Error"
+      ],
+      "definition": "A model-specific distance between the advice and the realized target, instance or distribution.",
+      "scope_note": "Can mean absolute location error, inversions, or Wasserstein distance; must be fixed explicitly.",
+      "source_ids": [
+        "p-dinitz-jrp"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "property.prediction-robustness",
+      "name": "Prediction Robustness",
+      "kind": "property",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [
+        "Robustness to Bad Predictions"
+      ],
+      "definition": "A performance guarantee that remains bounded under arbitrarily poor predictions.",
+      "scope_note": "Does not imply resistance to arbitrary changes in the computational model.",
+      "source_ids": [
+        "p-dinitz-ski"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "property.price-of-anarchy",
@@ -7548,6 +8401,26 @@
       "reviewed_at": null
     },
     {
+      "id": "property.recourse-bound",
+      "name": "Recourse Bound",
+      "kind": "property",
+      "areas": [
+        "Online Algorithms",
+        "Dynamic Algorithms"
+      ],
+      "aliases": [
+        "Recourse"
+      ],
+      "definition": "Bound on the number or cost of modifications to a maintained solution after a data update.",
+      "scope_note": "Not the same as computational update time or differential privacy.",
+      "source_ids": [
+        "p-yoshida-lipschitz"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "property.regret",
       "name": "Regret",
       "kind": "property",
@@ -7694,6 +8567,25 @@
       "reviewed_at": null
     },
     {
+      "id": "property.shannon-entropy",
+      "name": "Shannon Entropy",
+      "kind": "property",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [
+        "Entropy"
+      ],
+      "definition": "Expected information content of a discrete distribution expressed as minus the probability-weighted logarithm.",
+      "scope_note": "Logarithm base affects units; not equivalent to prediction quality.",
+      "source_ids": [
+        "p-dinitz-binary"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "property.simulation-based-security",
       "name": "Simulation-Based Security",
       "kind": "property",
@@ -7739,6 +8631,25 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.solution-stability",
+      "name": "Solution Stability",
+      "kind": "property",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [
+        "Output Stability"
+      ],
+      "definition": "A requirement that an algorithm output nearby feasible solutions when the input changes slightly.",
+      "scope_note": "Perturbations and output distance require separate definition.",
+      "source_ids": [
+        "p-yoshida-matching"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "property.soundness",
@@ -7972,6 +8883,27 @@
       "reviewed_at": null
     },
     {
+      "id": "property.wasserstein-distance",
+      "name": "Wasserstein Distance",
+      "kind": "property",
+      "areas": [
+        "Online Algorithms",
+        "Learning Theory"
+      ],
+      "aliases": [
+        "Earth Mover's Distance",
+        "EMD"
+      ],
+      "definition": "An optimal-transport distance between distributions induced by a ground metric.",
+      "scope_note": "Order p and ground metric must be specified; Wasserstein-1 is often called Earth Mover's Distance.",
+      "source_ids": [
+        "p-dinitz-binary"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "property.welfare-approximation",
       "name": "Welfare Approximation",
       "kind": "property",
@@ -7987,6 +8919,26 @@
       ],
       "scope_note": "Specify truthfulness, valuation assumptions and approximation orientation.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "property.worst-case-algorithmic-sensitivity",
+      "name": "Worst-Case Algorithmic Sensitivity",
+      "kind": "property",
+      "areas": [
+        "Graph Algorithms",
+        "Approximation Algorithms"
+      ],
+      "aliases": [
+        "Worst-Case Sensitivity"
+      ],
+      "definition": "The largest output-distribution distance over an allowed family of small input perturbations.",
+      "scope_note": "Yoshida-style output sensitivity is not DP query sensitivity.",
+      "source_ids": [
+        "p-yoshida-matching"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "property.zero-knowledge-property",
@@ -8560,6 +9512,25 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.gibbs-sampling",
+      "name": "Gibbs Sampling",
+      "kind": "technique",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [
+        "Gibbs Distribution Sampling"
+      ],
+      "definition": "Sampling combinatorial solutions with probabilities weighted exponentially by score or energy.",
+      "scope_note": "Temperature, partition function, and sampling runtime must be specified.",
+      "source_ids": [
+        "p-yoshida-matching"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
+    },
+    {
       "id": "technique.gradient-descent",
       "name": "Gradient Descent",
       "kind": "technique",
@@ -8759,6 +9730,25 @@
       ],
       "scope_note": "Approximation guarantees require landscape or exchange properties.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "technique.locally-testable-code-reduction",
+      "name": "Locally Testable Code Reduction",
+      "kind": "technique",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [
+        "LTC Hardness Reduction"
+      ],
+      "definition": "Use locally testable codes to construct reductions that transfer sensitivity lower bounds to CSP problems.",
+      "scope_note": "Reduction must preserve the perturbation relation and output metric.",
+      "source_ids": [
+        "p-yoshida-ltc"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "technique.martingale-concentration",
@@ -9062,6 +10052,26 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.regularized-linear-programming",
+      "name": "Regularized Linear Programming",
+      "kind": "technique",
+      "areas": [
+        "Graph Algorithms",
+        "Approximation Algorithms"
+      ],
+      "aliases": [
+        "Regularized LP"
+      ],
+      "definition": "Solve an optimization relaxation with an additional regularizer that encourages stable outputs.",
+      "scope_note": "Strong convexity, norm, and rounding determine the Lipschitz guarantee.",
+      "source_ids": [
+        "p-yoshida-lipschitz"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "paper_curation_v0.3"
     },
     {
       "id": "technique.rejection-sampling",

@@ -2,7 +2,7 @@
 /* TCS Ontology 0.2: DOM-only rendering (never execute database text as markup). */
 (function () {
   const state = { items: [], byId: new Map(), edges: [], rules: [], refs: [], literature: [],
-    results: [], redirects: new Map(), selected: null, idea: null, page: 0, view: "explore",
+    results: [], papers: [], redirects: new Map(), selected: null, idea: null, page: 0, view: "explore",
     ready: false, query: "", status: "source_checked", kind: "", area: "", graphDepth: 1 };
   const PAGE = 18, KEY = "tcs-ontology-ideas-v2", $ = id => document.getElementById(id);
   const node = (tag, cls = "", value = "") => { const e = document.createElement(tag); e.className = cls; e.textContent = value; return e; };
@@ -123,6 +123,19 @@
         if (e.note) row.append(node("div","tiny muted",e.note));graph.append(row);});
       box.append(graph);
     } else box.append(node("p","detail-intro","No manually entered relationships yet."));
+    const papers=state.papers.filter(paper=>paper.primitives.some(ref=>ref.primitive_id===p.id));
+    box.append(node("div","detail-sub","RESEARCH PAPERS · "+papers.length));
+    if(papers.length){
+      for(const paper of papers.slice().sort((a,b)=>b.year-a.year).slice(0,9)){
+        const s=src(paper.source_id);
+        const e=node("div","detail-paper");
+        if(s)addLink(e,paper.title,s.url);
+        e.append(node("div","tiny muted",paper.venue+" · "+paper.primitives.find(ref=>ref.primitive_id===p.id).role));
+        box.append(e);
+      }
+    }
+    const mapLink=node("a","secondary small","Locate in floating map ✳");mapLink.href="./map.html#"+encodeURIComponent(p.id);
+    mapLink.style.marginTop="14px";box.append(mapLink);
     const results=state.results.filter(r=>r.subject_ids.includes(p.id));
     box.append(node("div","detail-sub","SCOPED RESULTS · "+results.length));
     for (const r of results) {
@@ -254,6 +267,26 @@
       const total=state.items.filter(p=>p.source_ids.includes(s.id)).length;
       card.append(node("p","",total+" linked primitive(s). A reference is not a claim of formal expert approval."));root.append(card);}
   }
+  function renderPapers(){
+    const root=$("paperList");if(!root)return;root.replaceChildren();
+    const sorted=state.papers.slice().sort((a,b)=>b.year-a.year||a.title.localeCompare(b.title));
+    for(const paper of sorted){
+      const card=node("article","paper-card");
+      card.append(node("div","eyebrow",paper.venue+" · "+paper.status.toUpperCase()));
+      const title=node("h3","",paper.title);card.append(title);
+      const r=src(paper.source_id);if(r)addLink(card,"View source",r.url,"paper-source");
+      card.append(node("p","",paper.scope_note));
+      const tags=node("div","paper-primitives");
+      for(const ref of paper.primitives){
+        const p=find(ref.primitive_id);if(!p)continue;
+        const button=node("button","paper-primitive",p.name);
+        button.title=ref.role;
+        button.onclick=()=>{setView("explore");state.selected=p.id;inspect(p);renderCatalog();deepLink(p.id);};
+        tags.append(button);
+      }
+      card.append(tags);root.append(card);
+    }
+  }
   function fillFilter(select, values, fallback) {
     select.replaceChildren();const all=node("option","",fallback);all.value="";select.append(all);
     values.sort().forEach(value=>{const opt=node("option","",fmt(value));opt.value=value;select.append(opt);});
@@ -265,7 +298,7 @@
     $("statRelations").textContent=state.edges.length;
     $("statTemplates").textContent=state.rules.length;
     $("reviewedStat").textContent=verified+" source-checked / "+(state.items.length-verified)+" awaiting review";
-    $("sourceSummary").textContent=state.refs.length+" source records · "+state.results.length+" scoped results · "+state.redirects.size+" redirects";
+    $("sourceSummary").textContent=state.refs.length+" source records · "+state.papers.length+" indexed papers · "+state.results.length+" scoped results · "+state.redirects.size+" redirects";
   }
   async function fetchJSON(name, signal) {
     const response=await fetch("./data/"+name+".json",{cache:"no-cache",signal});
@@ -274,23 +307,23 @@
     return data.items;
   }
   async function init() {
-    const names=["primitives","relationships","rules","literature","sources","results","redirects"];
+    const names=["primitives","relationships","rules","literature","sources","results","redirects","papers"];
     const abort=new AbortController(), timeout=setTimeout(()=>abort.abort(),15000);
     try{
-      const [items,edges,rules,literature,refs,results,redirects]=await Promise.all(names.map(name=>fetchJSON(name,abort.signal)));
+      const [items,edges,rules,literature,refs,results,redirects,papers]=await Promise.all(names.map(name=>fetchJSON(name,abort.signal)));
       if(!items.length)throw new Error("Empty primitive catalog.");
       if(new Set(items.map(x=>x.id)).size!==items.length)throw new Error("Duplicate primitive IDs; fix data before publishing.");
       const map=new Map(items.map(x=>[x.id,x]));
       for(const e of edges)if(!map.has(e.source)||!map.has(e.target))throw new Error("Dangling relationship in source data.");
       state.items=items;state.byId=map;state.edges=edges;state.rules=rules;state.refs=refs;
-      state.results=results;state.literature=literature;state.redirects=new Map(redirects.map(x=>[x.from,x.to]));state.ready=true;
+      state.results=results;state.literature=literature;state.papers=papers;state.redirects=new Map(redirects.map(x=>[x.from,x.to]));state.ready=true;
       fillFilter($("kindFilter"),[...new Set(items.map(x=>x.kind))],"All types");
       fillFilter($("areaFilter"),[...new Set(items.flatMap(x=>x.areas))],"All areas");
       fillFilter($("reviewFilter"),["all","source_checked","needs_definition","seeded_definition_unverified"],"All review states");
       $("reviewFilter").value="source_checked";state.status="source_checked";
       $("ruleSelect").replaceChildren();
       for(const r of rules){const op=node("option","",r.title);op.value=r.id;$("ruleSelect").append(op);}
-      updateComposer();renderCatalog();listSources();auditSummary();showSaved();followHash();
+      updateComposer();renderCatalog();listSources();renderPapers();auditSummary();showSaved();followHash();
       $("loadingState").hidden=true;
     }catch(e){const box=$("loadingState");box.hidden=false;box.textContent="Could not load validated ontology data ("+e.message+"). Retry after checking connection, then report persistent errors on GitHub.";
       $("resultCount").textContent="DATA UNAVAILABLE";const b=node("button","secondary small","Retry loading");b.onclick=()=>location.reload();box.append(b);

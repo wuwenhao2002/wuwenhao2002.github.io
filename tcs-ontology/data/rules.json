@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "disclaimer": "Generated combinations are question candidates, not verified well-posed problems, novel results, or open problems.",
   "items": [
     {
@@ -297,6 +297,155 @@
       ],
       "default_review_filter": "source_checked",
       "risk_note": "The template is only syntactically typed; validate assumptions, mathematical well-posedness and novelty separately."
+    },
+    {
+      "id": "predictions-for-algorithms",
+      "title": "Algorithms with predictions",
+      "description": "Apply a prediction model and measure to an online problem.",
+      "template": "{problem} with {prediction}: {metric} bounds",
+      "slots": [
+        {
+          "key": "problem",
+          "label": "Problem",
+          "ids": [
+            "problem.ski-rental",
+            "problem.binary-search",
+            "problem.joint-replenishment-with-deadlines",
+            "problem.online-bipartite-matching",
+            "problem.tree-search"
+          ]
+        },
+        {
+          "key": "prediction",
+          "label": "Prediction format",
+          "ids": [
+            "model.point-prediction",
+            "model.distributional-prediction",
+            "model.prediction-portfolio"
+          ]
+        },
+        {
+          "key": "metric",
+          "label": "Performance property",
+          "ids": [
+            "property.prediction-robustness",
+            "property.prediction-consistency",
+            "property.prediction-error"
+          ]
+        }
+      ],
+      "default_review_filter": "source_checked",
+      "risk_note": "Specify prediction target, error metric, benchmark and consistency/robustness tradeoff; novelty unknown."
+    },
+    {
+      "id": "private-graph-algorithms",
+      "title": "Differentially private graph algorithms",
+      "description": "Study private optimization under distinct graph adjacency models.",
+      "template": "{problem} under {privacy_model}: {metric}",
+      "slots": [
+        {
+          "key": "problem",
+          "label": "Graph problem",
+          "ids": [
+            "problem.minimum-k-cut",
+            "problem.multiway-cut",
+            "problem.densest-subgraph",
+            "problem.all-pairs-shortest-paths"
+          ]
+        },
+        {
+          "key": "privacy_model",
+          "label": "Privacy model",
+          "ids": [
+            "model.edge-differential-privacy",
+            "model.node-differential-privacy",
+            "model.edge-weight-differential-privacy"
+          ]
+        },
+        {
+          "key": "metric",
+          "label": "Quality measure",
+          "ids": [
+            "property.additive-error",
+            "property.approximation-ratio"
+          ]
+        }
+      ],
+      "default_review_filter": "source_checked",
+      "risk_note": "Specify neighboring-graph relation, epsilon/delta, weight bounds, approximate output and error probability."
+    },
+    {
+      "id": "stable-graph-algorithms",
+      "title": "Sensitivity of algorithms",
+      "description": "Combine a problem, output-stability measure, and perturbation model.",
+      "template": "{metric} of {problem} after {perturbation}",
+      "slots": [
+        {
+          "key": "metric",
+          "label": "Sensitivity notion",
+          "ids": [
+            "property.average-algorithmic-sensitivity",
+            "property.worst-case-algorithmic-sensitivity",
+            "property.pointwise-lipschitz-continuity"
+          ]
+        },
+        {
+          "key": "problem",
+          "label": "Algorithmic problem",
+          "ids": [
+            "problem.maximum-matching",
+            "problem.minimum-cut",
+            "problem.maximum-cut",
+            "problem.densest-subgraph",
+            "problem.art-gallery"
+          ]
+        },
+        {
+          "key": "perturbation",
+          "label": "Perturbation",
+          "ids": [
+            "assumption.single-edge-deletion",
+            "assumption.single-vertex-deletion"
+          ]
+        }
+      ],
+      "default_review_filter": "source_checked",
+      "risk_note": "Define randomized coupling, output distance, perturbation distribution and approximation ratio; not interchangeable with DP global sensitivity."
+    },
+    {
+      "id": "crosscutting-lenses",
+      "title": "Cross-cutting research lenses",
+      "description": "Pair a problem and a reusable lens to investigate feasibility and tradeoffs.",
+      "template": "{lens} for {problem}: {metric}",
+      "slots": [
+        {
+          "key": "lens",
+          "label": "Research lens",
+          "kinds": [
+            "lens"
+          ]
+        },
+        {
+          "key": "problem",
+          "label": "Problem",
+          "kinds": [
+            "problem"
+          ]
+        },
+        {
+          "key": "metric",
+          "label": "Property",
+          "ids": [
+            "property.prediction-robustness",
+            "property.additive-error",
+            "property.average-algorithmic-sensitivity",
+            "property.regret",
+            "property.metric-distortion"
+          ]
+        }
+      ],
+      "default_review_filter": "source_checked",
+      "risk_note": "This is an exploratory cross-product, not a mathematically validated research question."
     }
   ]
 }

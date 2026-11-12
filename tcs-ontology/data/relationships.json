@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "items": [
     {
       "source": "game.atomic-congestion-game",
@@ -336,6 +336,236 @@
       "source_ids": [
         "stream-cormode"
       ]
+    },
+    {
+      "source": "lens.prediction",
+      "predicate": "has_variant",
+      "target": "model.point-prediction",
+      "source_ids": [
+        "p-dinitz-binary"
+      ],
+      "review_status": "source_checked",
+      "note": "Model or metric variant, not strict logical subtype."
+    },
+    {
+      "source": "lens.prediction",
+      "predicate": "has_variant",
+      "target": "model.distributional-prediction",
+      "source_ids": [
+        "p-dinitz-binary"
+      ],
+      "review_status": "source_checked",
+      "note": "Model or metric variant, not strict logical subtype."
+    },
+    {
+      "source": "lens.prediction",
+      "predicate": "has_variant",
+      "target": "model.prediction-portfolio",
+      "source_ids": [
+        "p-dinitz-binary"
+      ],
+      "review_status": "source_checked",
+      "note": "Model or metric variant, not strict logical subtype."
+    },
+    {
+      "source": "lens.differential-privacy",
+      "predicate": "has_variant",
+      "target": "model.edge-differential-privacy",
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "review_status": "source_checked",
+      "note": "Model or metric variant, not strict logical subtype."
+    },
+    {
+      "source": "lens.differential-privacy",
+      "predicate": "has_variant",
+      "target": "model.node-differential-privacy",
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "review_status": "source_checked",
+      "note": "Model or metric variant, not strict logical subtype."
+    },
+    {
+      "source": "lens.differential-privacy",
+      "predicate": "has_variant",
+      "target": "model.edge-weight-differential-privacy",
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "review_status": "source_checked",
+      "note": "Model or metric variant, not strict logical subtype."
+    },
+    {
+      "source": "lens.differential-privacy",
+      "predicate": "has_variant",
+      "target": "model.local-edge-differential-privacy",
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "review_status": "source_checked",
+      "note": "Model or metric variant, not strict logical subtype."
+    },
+    {
+      "source": "lens.algorithmic-sensitivity",
+      "predicate": "has_variant",
+      "target": "property.average-algorithmic-sensitivity",
+      "source_ids": [
+        "p-yoshida-matching"
+      ],
+      "review_status": "source_checked",
+      "note": "Model or metric variant, not strict logical subtype."
+    },
+    {
+      "source": "lens.algorithmic-sensitivity",
+      "predicate": "has_variant",
+      "target": "property.worst-case-algorithmic-sensitivity",
+      "source_ids": [
+        "p-yoshida-matching"
+      ],
+      "review_status": "source_checked",
+      "note": "Model or metric variant, not strict logical subtype."
+    },
+    {
+      "source": "lens.algorithmic-sensitivity",
+      "predicate": "has_variant",
+      "target": "property.pointwise-lipschitz-continuity",
+      "source_ids": [
+        "p-yoshida-matching"
+      ],
+      "review_status": "source_checked",
+      "note": "Model or metric variant, not strict logical subtype."
+    },
+    {
+      "source": "lens.prediction",
+      "predicate": "related_to",
+      "target": "framework.learning-augmented-algorithms",
+      "source_ids": [
+        "p-dinitz-ski"
+      ],
+      "review_status": "source_checked",
+      "note": "Supported as a relation studied in the linked paper, not a universal theorem."
+    },
+    {
+      "source": "lens.algorithmic-sensitivity",
+      "predicate": "related_to",
+      "target": "property.solution-stability",
+      "source_ids": [
+        "p-yoshida-matching"
+      ],
+      "review_status": "source_checked",
+      "note": "Supported as a relation studied in the linked paper, not a universal theorem."
+    },
+    {
+      "source": "lens.algorithmic-stability",
+      "predicate": "related_to",
+      "target": "property.recourse-bound",
+      "source_ids": [
+        "p-yoshida-lipschitz"
+      ],
+      "review_status": "source_checked",
+      "note": "Supported as a relation studied in the linked paper, not a universal theorem."
+    },
+    {
+      "source": "lens.differential-privacy",
+      "predicate": "related_to",
+      "target": "property.global-dp-sensitivity",
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "review_status": "source_checked",
+      "note": "Supported as a relation studied in the linked paper, not a universal theorem."
+    },
+    {
+      "source": "lens.differential-privacy",
+      "predicate": "related_to",
+      "target": "property.local-dp-sensitivity",
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "review_status": "source_checked",
+      "note": "Supported as a relation studied in the linked paper, not a universal theorem."
+    },
+    {
+      "source": "problem.binary-search",
+      "predicate": "related_to",
+      "target": "model.distributional-prediction",
+      "source_ids": [
+        "p-dinitz-binary"
+      ],
+      "review_status": "source_checked",
+      "note": "Supported as a relation studied in the linked paper, not a universal theorem."
+    },
+    {
+      "source": "problem.minimum-k-cut",
+      "predicate": "related_to",
+      "target": "lens.differential-privacy",
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "review_status": "source_checked",
+      "note": "Supported as a relation studied in the linked paper, not a universal theorem."
+    },
+    {
+      "source": "problem.densest-subgraph",
+      "predicate": "related_to",
+      "target": "lens.differential-privacy",
+      "source_ids": [
+        "p-dinitz-densest"
+      ],
+      "review_status": "source_checked",
+      "note": "Supported as a relation studied in the linked paper, not a universal theorem."
+    },
+    {
+      "source": "problem.maximum-matching",
+      "predicate": "related_to",
+      "target": "lens.algorithmic-sensitivity",
+      "source_ids": [
+        "p-yoshida-matching"
+      ],
+      "review_status": "source_checked",
+      "note": "Supported as a relation studied in the linked paper, not a universal theorem."
+    },
+    {
+      "source": "problem.metric-voting",
+      "predicate": "related_to",
+      "target": "lens.algorithmic-sensitivity",
+      "source_ids": [
+        "p-yoshida-voting"
+      ],
+      "review_status": "source_checked",
+      "note": "Supported as a relation studied in the linked paper, not a universal theorem."
+    },
+    {
+      "source": "problem.metric-voting",
+      "predicate": "related_to",
+      "target": "lens.differential-privacy",
+      "source_ids": [
+        "p-yoshida-voting"
+      ],
+      "review_status": "source_checked",
+      "note": "Supported as a relation studied in the linked paper, not a universal theorem."
+    },
+    {
+      "source": "problem.art-gallery",
+      "predicate": "related_to",
+      "target": "lens.algorithmic-sensitivity",
+      "source_ids": [
+        "p-yoshida-geometric"
+      ],
+      "review_status": "source_checked",
+      "note": "Supported as a relation studied in the linked paper, not a universal theorem."
+    },
+    {
+      "source": "property.average-algorithmic-sensitivity",
+      "predicate": "related_to",
+      "target": "framework.batch-to-online-transformation",
+      "source_ids": [
+        "p-yoshida-regret"
+      ],
+      "review_status": "source_checked",
+      "note": "Supported as a relation studied in the linked paper, not a universal theorem."
     }
   ],
   "predicates": {
@@ -347,6 +577,7 @@
     "often_analyzed_by": "methodological link",
     "often_uses": "methodological link",
     "studied_on": "context",
-    "studies": "model/problem usage"
+    "studies": "model/problem usage",
+    "has_variant": "Model/measure variant, not a logical theorem-inheriting subtype."
   }
 }
