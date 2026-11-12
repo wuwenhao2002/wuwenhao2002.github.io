@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.3.0",
+  "schema_version": "0.5.0",
   "items": [
     {
       "id": "cso",
@@ -378,6 +378,126 @@
       "title": "Yuichi Yoshida — DBLP Publication Metadata",
       "url": "https://dblp.org/pid/36/4449.html",
       "type": "bibliography"
+    },
+    {
+      "id": "author-yoshida-conferences",
+      "title": "Yuichi Yoshida — Conference Publications and Official Abstracts",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "type": "author_publications"
+    },
+    {
+      "id": "author-dinitz-publications",
+      "title": "Michael Dinitz — Publications and Official Abstracts",
+      "url": "https://www.cs.jhu.edu/~mdinitz/pub.html",
+      "type": "author_publications"
+    },
+    {
+      "id": "paper-purohit-2018",
+      "title": "Improving Online Algorithms via ML Predictions",
+      "url": "https://proceedings.neurips.cc/paper/2018/hash/73a427badebe0e32caa2e1fc7530b7f3-Abstract.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-lykouris-2018",
+      "title": "Competitive Caching with Machine Learned Advice",
+      "url": "https://proceedings.mlr.press/v80/lykouris18a.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-choo-2024",
+      "title": "Online bipartite matching with imperfect advice",
+      "url": "https://proceedings.mlr.press/v235/choo24a.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-choo-2025",
+      "title": "Learning-Augmented Online Bipartite Fractional Matching",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/0b8705a611ed1ce19cdb759031078705-Abstract-Conference.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-zou-2026",
+      "title": "Differentially Private Minimum Spanning Tree in Euclidean Graphs",
+      "url": "https://proceedings.mlr.press/v300/zou26a.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-aamand-2025",
+      "title": "Breaking the n^1.5 Additive Error Barrier for Private and Efficient Graph Sparsification via Private Expander Decomposition",
+      "url": "https://proceedings.mlr.press/v267/aamand25b",
+      "type": "paper"
+    },
+    {
+      "id": "paper-zhou-2026",
+      "title": "Continual Release of Densest Subgraphs: Privacy Amplification & Sublinear Space via Subsampling",
+      "url": "https://doi.org/10.1137/1.9781611978964.13",
+      "type": "paper"
+    },
+    {
+      "id": "publisher-learning-bidding-2025",
+      "title": "Learning-Augmented Online Bidding in Stochastic Settings",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/618f396e2df006be25412505a793879a-Abstract-Conference.html",
+      "type": "paper"
+    },
+    {
+      "id": "publisher-robust-caching-2025",
+      "title": "Robustifying Learning-Augmented Caching Efficiently without Compromising 1-Consistency",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/b1e7f61f40d68b2177857bfcb195a507-Abstract-Conference.html",
+      "type": "paper"
+    },
+    {
+      "id": "publisher-explicit-predictors-2024",
+      "title": "Learning-Augmented Algorithms with Explicit Predictors",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/b1a72c79ac7512df8d7b573f38143ac4-Abstract-Conference.html",
+      "type": "paper"
+    },
+    {
+      "id": "publisher-private-synthetic-2025",
+      "title": "Almost linear time differentially private release of synthetic graphs",
+      "url": "https://proceedings.mlr.press/v258/zou25a.html",
+      "type": "paper"
+    },
+    {
+      "id": "publisher-private-triangle-2025",
+      "title": "Differentially Private Synthetic Graphs Preserving Triangle-Motif Cuts",
+      "url": "https://proceedings.mlr.press/v291/peng25a.html",
+      "type": "paper"
+    },
+    {
+      "id": "publisher-learning-kmedian-2025",
+      "title": "Learning-Augmented Algorithms for k-median via Online Learning",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/b8e2046160a568145af6d42eeef199f4-Abstract-Conference.html",
+      "type": "paper"
+    },
+    {
+      "id": "publisher-private-mean-2024",
+      "title": "Mean Estimation in the Add-Remove Model of Differential Privacy",
+      "url": "https://proceedings.mlr.press/v235/kulesza24a.html",
+      "type": "paper"
+    },
+    {
+      "id": "publisher-shifted-interpolation-2024",
+      "title": "Shifted Interpolation for Differential Privacy",
+      "url": "https://proceedings.mlr.press/v235/bok24a.html",
+      "type": "paper"
+    },
+    {
+      "id": "publisher-perturb-project-2024",
+      "title": "Perturb-and-Project: Differentially Private Similarities and Marginals",
+      "url": "https://proceedings.mlr.press/v235/cohen-addad24a.html",
+      "type": "paper"
+    },
+    {
+      "id": "publisher-private-public-2024",
+      "title": "Optimal Differentially Private Model Training with Public Data",
+      "url": "https://proceedings.mlr.press/v235/lowy24a.html",
+      "type": "paper"
+    },
+    {
+      "id": "publisher-private-stationarity-2024",
+      "title": "How to Make the Gradients Small Privately: Improved Rates for Differentially Private Non-Convex Optimization",
+      "url": "https://proceedings.mlr.press/v235/lowy24b.html",
+      "type": "paper"
     }
   ]
 }

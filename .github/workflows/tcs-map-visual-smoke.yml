@@ -1,0 +1,42 @@
+name: TCS Research Atlas Browser Smoke
+
+on:
+  pull_request:
+    paths:
+      - 'tcs-ontology/map.html'
+      - 'tcs-ontology/map.css'
+      - 'tcs-ontology/map.js'
+      - 'tcs-ontology/map-model.js'
+      - 'tcs-ontology/tests/visual_smoke.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated browser test dependency
+        run: |
+          python3 -m pip install --disable-pip-version-check playwright==1.56.0
+          python3 -m playwright install --with-deps chromium
+      - name: Launch static map preview
+        run: |
+          python3 -m http.server --bind 127.0.0.1 --directory tcs-ontology 8765 > /tmp/tcs-map-server.log 2>&1 &
+          echo $! > /tmp/tcs-map-server.pid
+          sleep 2
+      - name: Verify mouse selection, AND intersection and responsive screenshots
+        run: python3 tcs-ontology/tests/visual_smoke.py
+      - name: Upload visual snapshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tcs-map-v05-browser-snapshots
+          path: tcs-ontology/visual-test-output/
+          if-no-files-found: ignore

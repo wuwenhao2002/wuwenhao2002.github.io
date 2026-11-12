@@ -1,248 +1,410 @@
 "use strict";
-/* All highlights and filtered paper lists are computed exclusively from stored paper memberships. */
-(()=>{
-const $=id=>document.getElementById(id),stage=$("stage"),canvas=$("mapCanvas"),ctx=canvas.getContext("2d");
-const Graph=window.TCSGraphModel;
-if(!Graph){$("mapError").hidden=false;$("mapError").textContent="Graph model could not load.";return;}
-const state={nodes:[],nodeById:new Map(),items:[],papersCurated:[],papersHarvested:[],sources:[],centers:new Map(),
-  graph:Graph.build([]),selected:new Set(),related:new Map(),selectedPapers:[],
-  hovered:null,search:"",area:"",status:"all",evidence:"all",paperSearch:"",
-  panX:0,panY:0,scale:1,w:0,h:0,dpr:1,paused:false,reduced:matchMedia("(prefers-reduced-motion: reduce)").matches,
-  dragging:false,dragged:false,lastX:0,lastY:0,lastTime:0,frame:0,visiblePapers:40};
-const make=(tag,cls="",text="")=>{const x=document.createElement(tag);x.className=cls;x.textContent=text;return x;};
-const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
+/* TCS Ontology v0.5 — scientific Canvas atlas. Only real indexed papers define edges. */
+(() => {
+const $=id=>document.getElementById(id),stage=$("stage"),canvas=$("mapCanvas");
+const ctx=canvas.getContext("2d",{alpha:false}),Graph=window.TCSGraphModel;
+if(!ctx||!Graph){const e=$("mapError");e.hidden=false;e.textContent="Graph rendering is unavailable in this browser.";return;}
+const S={items:[],nodes:[],nodeMap:new Map(),areaCenters:new Map(),areas:[],papersCurated:[],papersHarvested:[],sources:[],paperIndex:Graph.build([]),selected:new Set(),related:new Map(),paperQuery:"",term:"",area:"",review:"all",evidence:"curated",matched:[],hovered:null,focus:true,motion:false,view:{x:0,y:0,scale:1},size:{w:1,h:1,dpr:1},pointer:null,paperLimit:30,needsDraw:true,start:performance.now(),time:0,ready:false};
+S.motion=!window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const el=(tag,cls="",value="")=>{const node=document.createElement(tag);node.className=cls;node.textContent=value;return node;};
 const hash=s=>{let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return h>>>0;};
-const rand=(s,n)=>hash(s+"|"+n)/4294967295;
-const hue=s=>150+Math.round(rand(s,3)*140);
-const source=id=>state.sources.find(s=>s.id===id);
-function link(root,title,url,cls="paper-source"){try{const u=new URL(url,location.href);if(u.protocol!=="https:")return;const a=make("a",cls,title+" ↗");a.href=u.href;a.target="_blank";a.rel="noopener noreferrer";root.append(a);}catch{}}
-function setupNodes(){
- const areas=[...new Set(state.items.map(p=>p.areas[0]))].sort();
- const groups=new Map(areas.map(a=>[a,[]]));
- // All primitives are nodes, even if no indexed paper mentions them.
- for(const p of state.items)groups.get(p.areas[0]).push(p);
- areas.forEach((area,i)=>{const angle=2.39996323*i,r=110+210*Math.sqrt(i+.4);state.centers.set(area,{x:Math.cos(angle)*r*1.13,y:Math.sin(angle)*r*.87});});
- for(const area of areas){
-  const nodes=groups.get(area).sort((a,b)=>a.id.localeCompare(b.id)),c=state.centers.get(area);
-  nodes.forEach((p,i)=>{const theta=2.39996323*i+rand(p.id,4)*.6,r=15+16*Math.sqrt(i);
-   const n={id:p.id,p,area,x:c.x+Math.cos(theta)*r*(.82+rand(p.id,5)*.3),y:c.y+Math.sin(theta)*r*(.75+rand(p.id,6)*.22),
-      radius:p.kind==="lens"?5.7:p.review_status==="source_checked"?3.1:2.3,phase:rand(p.id,7)*6.28,phase2:rand(p.id,8)*6.28};
-   state.nodes.push(n);state.nodeById.set(n.id,n);
-  });
- }
-}
-function visible(n){return state.selected.has(n.id)||(!state.area||n.p.areas.includes(state.area))&&(state.status==="all"||n.p.review_status===state.status);}
-function pos(n,t=0){const move=state.paused||state.reduced?0:1;return{x:state.w/2+state.panX+(n.x+Math.sin(t*.44+n.phase)*2.4*move)*state.scale,y:state.h/2+state.panY+(n.y+Math.cos(t*.35+n.phase2)*2.2*move)*state.scale};}
-function resize(){const b=stage.getBoundingClientRect();state.w=Math.max(100,b.width);state.h=Math.max(100,b.height);state.dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(state.w*state.dpr);canvas.height=Math.round(state.h*state.dpr);ctx.setTransform(state.dpr,0,0,state.dpr,0,0);draw();}
-function fit(){if(!state.nodes.length)return;const x=Math.max(...state.nodes.map(n=>Math.abs(n.x)))+65,y=Math.max(...state.nodes.map(n=>Math.abs(n.y)))+65;state.scale=clamp(Math.min((state.w-60)/(2*x),(state.h-60)/(2*y)),.13,2);state.panX=0;state.panY=0;draw();}
-function matchingPrimitive(n){const q=state.search.toLowerCase().trim();return !q||[n.p.id,n.p.name,...n.p.aliases].some(s=>s.toLowerCase().includes(q));}
-function color(n){
- if(state.selected.has(n.id))return "#f9c584";
- if(state.selected.size>0){
-   if(state.related.has(n.id))return "#8be9bc";
-   return "#354c53";
- }
- if(n.p.kind==="lens")return "#f4c48b";
- if(n.p.review_status==="source_checked")return "hsl("+hue(n.area)+",65%,70%)";
- return "#527077";
-}
-function draw(t=state.lastTime){
- if(!state.nodes.length)return;state.lastTime=t;
- ctx.fillStyle="#0b191d";ctx.fillRect(0,0,state.w,state.h);
- const grid=Math.max(21,57*state.scale);
- ctx.strokeStyle="rgba(94,152,134,.06)";ctx.lineWidth=.65;
- for(let x=(state.w/2+state.panX)%grid;x<state.w;x+=grid){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,state.h);ctx.stroke();}
- for(let y=(state.h/2+state.panY)%grid;y<state.h;y+=grid){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(state.w,y);ctx.stroke();}
- for(const [area,c] of state.centers){
-   if(state.area&&area!==state.area)continue;
-   const x=state.w/2+state.panX+c.x*state.scale,y=state.h/2+state.panY+c.y*state.scale;
-   if(x< -300||x>state.w+300||y< -300||y>state.h+300)continue;
-   ctx.beginPath();ctx.arc(x,y,78*state.scale+14,0,Math.PI*2);ctx.strokeStyle="hsla("+hue(area)+",60%,65%,.13)";ctx.stroke();
-   ctx.font="10px monospace";ctx.fillStyle="#628e85";ctx.textAlign="center";ctx.fillText(area.toUpperCase().slice(0,28),x,y-78*state.scale-13);
- }
- // Highlighted edges only exist if a paper contains all selected primitive IDs.
- if(state.selected.size>0){
-   ctx.lineWidth=1.1;ctx.strokeStyle="rgba(133,236,187,.26)";
-   const selectedNodes=[...state.selected].map(id=>state.nodeById.get(id)).filter(Boolean);
-   for(const [id] of state.related){
-     const n=state.nodeById.get(id);if(!n||!visible(n))continue;
-     const b=pos(n,t);
-     for(const x of selectedNodes){const a=pos(x,t);ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}
-   }
- }
- let rendered=0;
- const labels=[];
- for(const n of state.nodes){
-  if(!visible(n))continue;
-  const pt=pos(n,t);if(pt.x<-35||pt.x>state.w+35||pt.y<-35||pt.y>state.h+35)continue;
-  rendered++;const isSelected=state.selected.has(n.id),isRelated=state.related.has(n.id),hit=matchingPrimitive(n);
-  const emphasized=isSelected||isRelated||n===state.hovered,rad=Math.max(n.p.kind==="lens"?4:2,n.radius*state.scale*(emphasized?1.6:1));
-  ctx.globalAlpha=state.search&&!hit&&!isSelected?.15:state.selected.size&&!emphasized?.43:1;
-  if(isSelected||n===state.hovered){ctx.beginPath();ctx.arc(pt.x,pt.y,rad+7,0,Math.PI*2);ctx.strokeStyle=isSelected?"#ffdfaa":"#adf7d8";ctx.lineWidth=isSelected?2:1.3;ctx.stroke();}
-  ctx.beginPath();ctx.arc(pt.x,pt.y,rad,0,Math.PI*2);ctx.fillStyle=color(n);ctx.fill();
-  ctx.globalAlpha=1;
-  if(isSelected||n===state.hovered||state.search&&hit||state.scale>1.3&&(isRelated||n.p.kind==="lens")){
-    labels.push({x:pt.x+rad+6,y:pt.y+3,label:n.p.name,kind:isSelected?2:isRelated?1:0});
+const noise=(s,n)=>hash(s+"·"+n)/4294967295;
+const clamp=(x,a,b)=>Math.min(Math.max(x,a),b);
+const palette=[["#73e9d1","#a1fff0"],["#e3b4ff","#f2d5ff"],["#89b7ff","#cee3ff"],["#f5c48f","#ffdfb2"],["#ff9ea2","#ffd3cd"],["#8ce3b8","#c9ffda"],["#84d9ff","#d0f3ff"]];
+const colors=area=>palette[hash(area)%palette.length];
+const pName=id=>S.nodeMap.get(id)?.p.name||id;
+function paperHref(p){const raw=p.url||p.source_url||S.sources.find(s=>s.id===p.source_id)?.url||"";try{const u=new URL(raw);return u.protocol==="https:"?u.href:null;}catch{return null;}}
+function link(parent,text,url,cls="paper-source"){if(!url)return;const a=el("a",cls,text);a.href=url;a.rel="noopener noreferrer";a.target="_blank";parent.append(a);return a;}
+function setup(){
+ const byArea=new Map();
+ for(const p of S.items){const area=p.areas?.[0]||"Other";if(!byArea.has(area))byArea.set(area,[]);byArea.get(area).push(p);}
+ S.areas=[...byArea.keys()].sort((a,b)=>a.localeCompare(b));
+ const n=S.areas.length,cols=Math.ceil(Math.sqrt(n*1.55)),rows=Math.ceil(n/cols);
+ const placements=S.areas.map((name,i)=>{
+   const col=i%cols,row=Math.floor(i/cols);
+   const x=(col-(cols-1)/2)*255+(row%2)*65;
+   const y=(row-(rows-1)/2)*247;
+   return {name,x,y,color:colors(name),index:i};
+ });
+ for(const a of placements)S.areaCenters.set(a.name,a);
+ for(const [area,items] of byArea){
+  items.sort((a,b)=>a.id.localeCompare(b.id));
+  const c=S.areaCenters.get(area);
+  for(let i=0;i<items.length;i++){
+   const p=items[i],angle=2.39996323*i+noise(p.id,5)*.5,r=18+12.5*Math.sqrt(i);
+   const node={id:p.id,p,area,x:c.x+Math.cos(angle)*r*(.9+noise(p.id,9)*.2),y:c.y+Math.sin(angle)*r*(.82+noise(p.id,10)*.3),
+    fx:0,fy:0,rank:0,phase:noise(p.id,11)*6.283,phase2:noise(p.id,12)*6.283,c1:c.color[0],c2:c.color[1]};
+   S.nodes.push(node);S.nodeMap.set(p.id,node);
   }
  }
- labels.sort((a,b)=>a.kind-b.kind);
- ctx.textAlign="left";
- for(const l of labels.slice(-70)){
-   ctx.fillStyle=l.kind===2?"#ffdda5":l.kind===1?"#ade6c6":"#b5d5c7";
-   ctx.font=(l.kind===2?"bold 13":"11")+"px sans-serif";
-   ctx.fillText(l.label,l.x,l.y,170);
+}
+function allowed(n){return S.selected.has(n.id)||(!S.area||n.p.areas.includes(S.area))&&(S.review==="all"||n.p.review_status===S.review);}
+function matchesTerm(n){const q=S.term.trim().toLowerCase();return !q||[n.p.name,n.id,...(n.p.aliases||[])].some(x=>x.toLowerCase().includes(q));}
+function clearRelated(){S.related=Graph.related(S.paperIndex,[...S.selected]);S.matched=Graph.matching(S.paperIndex,[...S.selected],S.paperQuery);}
+function computeFocus(){
+ const selected=[...S.selected].map(id=>S.nodeMap.get(id)).filter(Boolean);
+ if(!selected.length)return;
+ const len=selected.length;
+ selected.forEach((node,i)=>{
+  let x=0,y=0;
+  if(len>1){const a=-Math.PI/2+i*2*Math.PI/len,r=44+Math.min(len*12,55);x=Math.cos(a)*r;y=Math.sin(a)*r;}
+  node.fx=x;node.fy=y;node.rank=1000;
+ });
+ const others=[...S.related].map(([id,count])=>({node:S.nodeMap.get(id),count}))
+   .filter(x=>x.node&&!S.selected.has(x.node.id)).sort((a,b)=>b.count-a.count||a.node.p.name.localeCompare(b.node.p.name));
+ // Multi-ring layout, with enough separation to keep first-order neighbors legible.
+ let cursor=0;
+ for(let ring=0;cursor<others.length;ring++){
+  const capacity=10+ring*7;
+  const inRing=others.slice(cursor,cursor+capacity);
+  const r=165+ring*108;
+  inRing.forEach((record,i)=>{
+   const a=-Math.PI/2+(i+.25*(ring%2))*2*Math.PI/inRing.length;
+   record.node.fx=Math.cos(a)*r;record.node.fy=Math.sin(a)*r*.87;record.node.rank=record.count;
+  });
+  cursor+=inRing.length;
  }
- $("mapCounter").textContent=state.selected.size?
-   state.related.size+" linked primitives · "+state.graph.papers.length+" indexed papers":
-   state.nodes.length+" primitive nodes";
 }
-function hit(x,y){let picked=null,min=16;for(const n of state.nodes){if(!visible(n))continue;const p=pos(n),dist=Math.hypot(x-p.x,y-p.y);if(dist<Math.max(9,n.radius*state.scale+5)&&dist<min){min=dist;picked=n;}}return picked;}
-function setSelection(ids,updateUrl=true){
- state.selected=new Set(ids.filter(x=>state.nodeById.has(x)));
- state.visiblePapers=40;
- state.related=Graph.related(state.graph,[...state.selected]);
- state.selectedPapers=Graph.matching(state.graph,[...state.selected]);
- renderSelected();renderPapers();matches();draw();
- if(updateUrl)history.replaceState(null,"",state.selected.size?"#select="+encodeURIComponent([...state.selected].join(",")):"./map.html");
+function resetCamera(){
+ S.view.x=0;S.view.y=0;
+ if(S.selected.size&&S.focus){
+  S.view.scale=clamp(Math.min(S.size.w/720,S.size.h/680),.7,1.15);
+ } else{
+  const maxX=Math.max(...S.nodes.map(n=>Math.abs(n.x)))+150,maxY=Math.max(...S.nodes.map(n=>Math.abs(n.y)))+110;
+  S.view.scale=clamp(Math.min((S.size.w-90)/(2*maxX),(S.size.h-90)/(2*maxY)),.18,1.4);
+ }
+ S.needsDraw=true;
 }
-function toggle(n,center=false){if(!n)return;const list=[...state.selected];if(state.selected.has(n.id))list.splice(list.indexOf(n.id),1);else list.push(n.id);if(center){state.panX=-n.x*state.scale;state.panY=-n.y*state.scale;}setSelection(list);}
-function renderSelected(){
+function coords(n,t=S.time){
+ let x=n.x,y=n.y;
+ if(S.selected.size&&S.focus&&(S.selected.has(n.id)||S.related.has(n.id))){x=n.fx;y=n.fy;}
+ const drift=S.motion?(S.selected.size&&S.focus?1:2):0;
+ x+=Math.sin(t*.33+n.phase)*drift;y+=Math.cos(t*.29+n.phase2)*drift*.7;
+ return{x:S.size.w/2+S.view.x+x*S.view.scale,y:S.size.h/2+S.view.y+y*S.view.scale};
+}
+function sizeToCanvas(){
+ const b=stage.getBoundingClientRect();S.size.w=Math.max(100,b.width);S.size.h=Math.max(100,b.height);S.size.dpr=Math.min(devicePixelRatio||1,2);
+ canvas.width=Math.floor(S.size.w*S.size.dpr);canvas.height=Math.floor(S.size.h*S.size.dpr);
+ canvas.style.width=S.size.w+"px";canvas.style.height=S.size.h+"px";ctx.setTransform(S.size.dpr,0,0,S.size.dpr,0,0);
+ if(S.ready)resetCamera();
+ S.needsDraw=true;
+}
+const inside=p=>p.x>-30&&p.x<S.size.w+30&&p.y>-30&&p.y<S.size.h+30;
+function background(){
+ const {w,h}=S.size;
+ ctx.fillStyle="#0a1423";ctx.fillRect(0,0,w,h);
+ const nebula=ctx.createRadialGradient(w*.52,h*.48,10,w*.52,h*.48,Math.max(w,h)*.76);
+ nebula.addColorStop(0,"#152b40");nebula.addColorStop(.44,"#101e30");nebula.addColorStop(1,"#080f1b");
+ ctx.fillStyle=nebula;ctx.fillRect(0,0,w,h);
+ // Lightweight deterministic star field, independent of scrolling.
+ for(let i=0;i<110;i++){
+  const x=noise("star"+i,1)*w,y=noise("star"+i,2)*h,r=.35+noise("star"+i,3)*.9;
+  ctx.fillStyle=i%6===0?"rgba(151,228,219,.42)":"rgba(156,184,221,.15)";
+  ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();
+ }
+ const vx=S.view.x+w/2,vy=S.view.y+h/2;
+ ctx.strokeStyle="rgba(134,172,203,.045)";ctx.lineWidth=.6;
+ for(let x=vx%74;x<w;x+=74){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,h);ctx.stroke();}
+ for(let y=vy%74;y<h;y+=74){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w,y);ctx.stroke();}
+}
+function areaGalleries(){
+ if(S.selected.size&&S.focus)return;
+ const {w,h}=S.size;
+ for(const a of S.areaCenters.values()){
+  if(S.area&&a.name!==S.area)continue;
+  const x=w/2+S.view.x+a.x*S.view.scale,y=h/2+S.view.y+a.y*S.view.scale;
+  const r=Math.max(23,80*S.view.scale);
+  if(x<-190||x>w+190||y<-190||y>h+190)continue;
+  ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fillStyle="rgba(50,92,111,.075)";ctx.fill();ctx.strokeStyle="rgba(134,193,214,.13)";ctx.lineWidth=.8;ctx.stroke();
+  if(S.view.scale>.28){
+   const labels={
+     "Algorithmic Fairness":"FAIRNESS","Algorithmic Game Theory":"GAME THEORY",
+     "Approximation Algorithms":"APPROXIMATION","Complexity Theory":"COMPLEXITY",
+     "Computational Geometry":"GEOMETRY","Computational Social Choice":"SOCIAL CHOICE",
+     "Cryptography":"CRYPTOGRAPHY","Data Structures":"DATA STRUCTURES",
+     "Distributed Computing":"DISTRIBUTED","Fine-Grained Complexity":"FINE-GRAINED",
+     "Graph Algorithms":"GRAPH ALGORITHMS","Learning Theory":"LEARNING",
+     "Logic and Automata":"AUTOMATA","Mechanism Design":"MECHANISM DESIGN",
+     "Online Algorithms":"ONLINE","Property Testing":"PROPERTY TESTING",
+     "Quantum Computing":"QUANTUM","Randomized Algorithms":"RANDOMIZED",
+     "Scheduling":"SCHEDULING","Streaming Algorithms":"STREAMING",
+     "Information Theory":"INFORMATION"
+   };
+   const short=labels[a.name]||a.name.toUpperCase();
+   ctx.fillStyle="rgba(189,224,225,.78)";ctx.textAlign="center";ctx.font="600 10px IBM Plex Mono,monospace";
+   ctx.fillText(short,x,y-r-11,110);
+  }
+ }
+}
+function focusOrbits(){
+ if(!S.selected.size||!S.focus)return;
+ const origin={x:S.size.w/2+S.view.x,y:S.size.h/2+S.view.y};
+ const n=S.related.size,ringCount=Math.min(7,Math.ceil((n+10)/11));
+ ctx.setLineDash([3,8]);ctx.lineWidth=.9;
+ for(let i=0;i<ringCount;i++){
+  const rx=(165+108*i)*S.view.scale,ry=rx*.87;
+  if(rx>S.size.w*1.4&&ry>S.size.h*1.4)break;
+  ctx.beginPath();ctx.ellipse(origin.x,origin.y,rx,ry,0,0,Math.PI*2);
+  ctx.strokeStyle=i%2?"rgba(95,188,184,.11)":"rgba(127,176,214,.13)";ctx.stroke();
+ }
+ ctx.setLineDash([]);
+ const glow=ctx.createRadialGradient(origin.x,origin.y,8,origin.x,origin.y,180*S.view.scale);
+ glow.addColorStop(0,"rgba(255,198,120,.09)");glow.addColorStop(1,"rgba(255,198,120,0)");
+ ctx.fillStyle=glow;ctx.beginPath();ctx.arc(origin.x,origin.y,Math.max(40,180*S.view.scale),0,Math.PI*2);ctx.fill();
+}
+function links(t){
+ if(!S.selected.size)return;
+ const active=[...S.selected].map(id=>S.nodeMap.get(id)).filter(Boolean);
+ const neighbors=[...S.related.keys()].map(id=>S.nodeMap.get(id)).filter(n=>n&&allowed(n));
+ ctx.save();
+ for(const n of neighbors){
+  const to=coords(n,t);
+  if(!inside(to))continue;
+  for(const source of active){
+   const from=coords(source,t),midX=(from.x+to.x)/2,midY=(from.y+to.y)/2;
+   ctx.beginPath();ctx.moveTo(from.x,from.y);
+   ctx.quadraticCurveTo(midX+(to.y-from.y)*.05,midY-(to.x-from.x)*.05,to.x,to.y);
+   ctx.strokeStyle="rgba(109,226,199,.17)";ctx.lineWidth=.85;ctx.stroke();
+  }
+ }
+ ctx.restore();
+}
+function sphere(x,y,r,c1,c2,selected=false,glow=false){
+ if(glow){
+  const halo=ctx.createRadialGradient(x,y,r*.6,x,y,r*5);
+  halo.addColorStop(0,selected?"rgba(255,207,142,.26)":"rgba(110,239,207,.18)");
+  halo.addColorStop(1,"rgba(110,239,207,0)");
+  ctx.fillStyle=halo;ctx.beginPath();ctx.arc(x,y,r*5,0,Math.PI*2);ctx.fill();
+ }
+ const fill=ctx.createRadialGradient(x-r*.35,y-r*.45,.1,x,y,r*1.12);
+ fill.addColorStop(0,c2);fill.addColorStop(.5,c1);fill.addColorStop(1,selected?"#946543":"#254754");
+ ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fillStyle=fill;ctx.fill();
+ ctx.strokeStyle=selected?"rgba(255,226,173,.84)":"rgba(190,255,244,.46)";
+ ctx.lineWidth=selected?1.5:.5;ctx.stroke();
+}
+function draw(){
+ if(!S.ready)return;
+ background();areaGalleries();focusOrbits();links(S.time);
+ const labelQueue=[];let rendered=0;
+ for(const n of S.nodes){
+  if(!allowed(n))continue;
+  const pt=coords(n,S.time);
+  if(!inside(pt))continue;
+  rendered++;
+  const selected=S.selected.has(n.id),related=S.related.has(n.id),hover=n===S.hovered,searchHit=S.term&&matchesTerm(n);
+  const focus=S.selected.size>0&&S.focus;
+  if(focus&&!selected&&!related)continue; // Suppress unrelated dots in focus mode only.
+  const role=selected?3:related?2:hover?3:n.p.kind==="lens"?1:0;
+  const rad=selected?9.8:related?7.3:Math.max(2.4,(n.p.kind==="lens"?5.2:n.p.review_status==="source_checked"?3.4:2.4)*Math.sqrt(S.view.scale));
+  ctx.globalAlpha=selected?1:related?1:S.selected.size?.20:searchHit?1:S.term?.14:1;
+  if(role>1||hover){sphere(pt.x,pt.y,rad,selected?"#ffc37f":related?"#52e4bf":n.c1,selected?"#fff1bd":related?"#d2fff1":n.c2,selected,true);}
+  else{ctx.fillStyle=n.p.kind==="lens"?"#f9c796":n.p.review_status==="source_checked"?n.c1:"#597385";ctx.beginPath();ctx.arc(pt.x,pt.y,rad,0,Math.PI*2);ctx.fill();}
+  ctx.globalAlpha=1;
+  const shouldLabel=selected||hover||searchHit||related&&focus||n.p.kind==="lens"&&!S.selected.size||S.view.scale>1.18&&n.p.review_status==="source_checked";
+  if(shouldLabel)labelQueue.push({x:pt.x+rad+7,y:pt.y-1,text:n.p.name,priority:selected?4:hover?5:related?3:searchHit?3:n.p.kind==="lens"?2:1});
+ }
+ labelQueue.sort((a,b)=>b.priority-a.priority);
+ const occupied=[];
+ for(const label of labelQueue){
+  const fontSize=label.priority>=4?13:label.priority>=3?11.6:10.5;
+  ctx.font=(label.priority>=4?"600 ":"500 ")+fontSize+"px Space Grotesk, sans-serif";
+  const width=Math.min(205,ctx.measureText(label.text).width),h=17;
+  const rect={x:label.x,y:label.y-11,w:width,h};
+  if(label.x+width>S.size.w-7||label.y<9||label.y>S.size.h-10)continue;
+  if(occupied.some(x=>rect.x<x.x+x.w+7&&rect.x+rect.w+7>x.x&&rect.y<x.y+x.h+3&&rect.y+rect.h+3>x.y))continue;
+  occupied.push(rect);
+  if(label.priority>=3){
+   ctx.fillStyle="rgba(14,29,42,.74)";ctx.fillRect(rect.x-3,rect.y-3,width+8,h+5);
+  }
+  ctx.fillStyle=label.priority>=4?"#ffdfaf":label.priority>=3?"#c5fae7":"#a3bdca";
+  ctx.textAlign="left";ctx.fillText(label.text,label.x,label.y,205);
+  if(occupied.length>65)break;
+ }
+ $("mapCounter").textContent=S.selected.size?"CO-USED / "+S.related.size+" CONCEPTS":"INDEX / "+S.nodes.length+" CONCEPTS";
+ $("mapScope").textContent=S.selected.size?(S.selected.size+" SELECTED · "+S.matched.length+" MATCHING PAPERS"):"EXPLORE / FULL FIELD";
+}
+function hitTest(x,y){
+ const prioritized=S.nodes.filter(n=>allowed(n)&&(!S.selected.size||!S.focus||S.selected.has(n.id)||S.related.has(n.id)));
+ let best=null,min=18;
+ for(const n of prioritized){
+  const pt=coords(n);const r=S.selected.has(n.id)?16:S.related.has(n.id)?13:10;
+  const d=Math.hypot(pt.x-x,pt.y-y);
+  if(d<r&&d<min){best=n;min=d;}
+ }
+ return best;
+}
+function update(){
+ S.related=Graph.related(S.paperIndex,[...S.selected]);S.matched=Graph.matching(S.paperIndex,[...S.selected],S.paperQuery);
+ computeFocus();renderChips();renderPapers();renderIndex();
+ $("mapHeading").textContent=S.selected.size?[...S.selected].map(pName).join(" + "):"A universe of research ideas";
+ document.querySelectorAll(".lens-chip").forEach(b=>{const on=S.selected.has(b.dataset.primitive);b.classList.toggle("active",on);b.setAttribute("aria-pressed",String(on));});
+ S.needsDraw=true;
+}
+function selection(ids,setHash=true,recenter=true){
+ S.selected=new Set(ids.filter(id=>S.nodeMap.has(id)));
+ S.paperLimit=30;update();if(recenter)resetCamera();
+ if(setHash){
+  const hashText=S.selected.size?"#select="+encodeURIComponent([...S.selected].join(",")):"";
+  history.replaceState(null,"",location.pathname+location.search+hashText);
+ }
+}
+function toggle(n){if(!n)return;const ids=[...S.selected],i=ids.indexOf(n.id);if(i>=0)ids.splice(i,1);else ids.push(n.id);selection(ids);}
+function renderChips(){
  const root=$("selectedChips");root.replaceChildren();
- if(!state.selected.size){root.append(make("span","no-selected","Click any node to begin. Click another to add a condition."));return;}
- for(const id of state.selected){
-   const node=state.nodeById.get(id);if(!node)continue;
-   const chip=make("button","selected-chip",node.p.name+"  ×");chip.type="button";chip.title="Remove "+node.p.name;chip.onclick=()=>toggle(node);root.append(chip);
+ if(!S.selected.size){root.append(el("span","empty-chips","Select any primitive to reveal the papers connecting it to others."));return;}
+ for(const id of S.selected){const pill=el("button","selected-chip");pill.type="button";pill.append(el("span","",pName(id)),el("span","chip-x","×"));pill.setAttribute("aria-label","Remove "+pName(id));pill.onclick=()=>toggle(S.nodeMap.get(id));root.append(pill);}
+}
+function renderIndex(){
+ if(!S.ready)return;
+ const q=S.term.trim().toLowerCase();
+ let rows=S.nodes.filter(n=>allowed(n)&&matchesTerm(n));
+ rows.sort((a,b)=>{
+  const score=n=>(S.selected.has(n.id)?1000:0)+(S.related.get(n.id)||0)*9+(n.p.kind==="lens"?7:0)+(q&&n.p.name.toLowerCase().startsWith(q)?30:0);
+  return score(b)-score(a)||a.p.name.localeCompare(b.p.name);
+ });
+ $("primitiveResultsCount").textContent=rows.length.toLocaleString();
+ const root=$("mapMatches");root.replaceChildren();
+ if(!rows.length){root.append(el("div","empty-index","No concepts found. Try a broader search."));return;}
+ for(const n of rows.slice(0,q?100:60)){
+  const button=el("button","match"+(S.selected.has(n.id)?" selected":""));button.type="button";
+  const glyph=el("span","result-symbol",n.p.kind==="lens"?"✦":n.p.kind==="problem"?"⬡":n.p.kind==="property"?"◇":"·");
+  const txt=el("span","result-body");
+  txt.append(el("span","result-name",n.p.name),el("small","",n.area+" / "+n.p.kind));
+  button.append(glyph,txt);
+  const count=S.paperIndex.byPrimitive.get(n.id)?.size||0;
+  if(count)button.append(el("span","result-count",String(count)));
+  button.onclick=()=>toggle(n);root.append(button);
  }
+ if(rows.length>(q?100:60))root.append(el("div","index-overflow","Search to narrow "+(rows.length-(q?100:60))+" additional concepts."));
 }
 function renderPapers(){
  const root=$("mapDetail");root.replaceChildren();
- if(!state.selected.size){
-  $("mapHeading").textContent="Choose a primitive";
-  $("paperCount").textContent="—";$("morePapers").disabled=true;
-  root.append(make("div","empty","Select one or more primitives. Only papers containing every selected primitive will appear."));return;
+ if(!S.selected.size){$("paperCount").textContent="—";$("morePapers").disabled=true;
+  const empty=el("div","empty-papers"),orb=el("div","empty-planet");orb.append(el("span","","✳"));
+  empty.append(orb,el("h3","","Find your connection."),el("p","","Choose a concept in the map. Add another to see papers that combine them."));root.append(empty);return;
  }
- const filtered=Graph.matching(state.graph,[...state.selected],state.paperSearch);
- $("paperCount").textContent=filtered.length.toLocaleString();
- $("mapHeading").textContent=[...state.selected].map(id=>state.nodeById.get(id)?.p.name||id).join(" + ");
- if(!filtered.length){
-  root.append(make("div","empty","No indexed papers match all selected primitives and text filters. This does not imply the combination is unstudied."));
-  $("morePapers").disabled=true;return;
- }
- for(const paper of filtered.slice(0,state.visiblePapers)){
-  const box=make("article","paper-card");
-  const curated=paper.review_status!=="title_inferred_unverified";
-  box.append(make("span","evidence-badge"+(curated?"":" machine"),curated?"EDITORIAL CURATION":"TITLE INFERENCE · UNREVIEWED"));
-  const h=make("h3","",paper.title);box.append(h);
-  box.append(make("div","paper-meta",String(paper.year||"")+" · "+String(paper.venue||"Unspecified")));
-  if(paper.authors?.length)box.append(make("p","paper-authors",paper.authors.join(", ")));
-  const linkTo=paper.url||paper.source_url||source(paper.source_id)?.url;
-  if(linkTo)link(box,"Open paper record",linkTo);
-  if(paper.scope_note&&curated)box.append(make("p","paper-authors",paper.scope_note));
-  const tags=make("div","paper-matches");
-  for(const ref of paper.primitives){
-    const other=state.nodeById.get(ref.primitive_id);
-    if(!other||state.selected.has(other.id))continue;
-    const tag=make("button","paper-match",other.p.name);
-    tag.title="Add this primitive to the AND filter";tag.onclick=()=>toggle(other,true);tags.append(tag);
+ const papers=Graph.matching(S.paperIndex,[...S.selected],S.paperQuery);
+ $("paperCount").textContent=papers.length.toLocaleString();$("morePapers").disabled=papers.length<=S.paperLimit;
+ if(!papers.length){const empty=el("div","empty-papers"),orb=el("div","empty-planet");orb.append(el("span","","◌"));
+  empty.append(orb,el("h3","","No indexed intersection."),el("p","","Try removing a filter or including title-derived candidates. No match does not mean no published research."));root.append(empty);return;}
+ for(const paper of papers.slice(0,S.paperLimit)){
+  const box=el("article","paper-card");
+  const manual=paper.review_status!=="title_inferred_unverified";
+  box.append(el("span","evidence-badge"+(manual?"":" machine"),manual?"EDITORIAL MAPPING":"TITLE-INFERRED · UNREVIEWED"));
+  const title=el("h3"),url=paperHref(paper);
+  if(url)link(title,paper.title,url,"paper-title-link");else title.textContent=paper.title;
+  box.append(title);
+  box.append(el("div","paper-meta",String(paper.year||"Undated")+"   /   "+String(paper.venue||"Unspecified")));
+  if(paper.authors?.length)box.append(el("div","paper-authors",paper.authors.slice(0,8).join(", ")+(paper.authors.length>8?" et al.":"")));
+  const roleList=el("div","paper-matches");
+  for(const entry of paper.primitives){
+   const n=S.nodeMap.get(entry.primitive_id);
+   if(!n||S.selected.has(n.id))continue;
+   const button=el("button","paper-match",n.p.name+"  +");button.type="button";button.title="Include "+n.p.name+" in paper intersection";
+   button.onclick=()=>toggle(n);roleList.append(button);
   }
-  if(tags.childElementCount)box.append(tags);
+  if(roleList.childElementCount)box.append(roleList);
+  if(url)link(box,"VIEW SOURCE ↗",url,"paper-source");
   root.append(box);
  }
- $("morePapers").disabled=filtered.length<=state.visiblePapers;
 }
-function matches(){
- const list=state.nodes.filter(n=>visible(n)&&matchingPrimitive(n)).sort((a,b)=>{
-  const q=state.search.toLowerCase().trim();
-  if(q){const aa=a.p.name.toLowerCase().startsWith(q)?0:1,bb=b.p.name.toLowerCase().startsWith(q)?0:1;if(aa!==bb)return aa-bb;}
-  return a.p.name.localeCompare(b.p.name);
- });
- const root=$("mapMatches");root.replaceChildren();
- for(const n of list.slice(0,65)){
-   const b=make("button","match"+(state.selected.has(n.id)?" selected":""),n.p.name);
-   b.append(make("small","",n.p.kind+" · "+n.area+(state.selected.has(n.id)?" · SELECTED":"")));
-   b.onclick=()=>toggle(n,true);root.append(b);
- }
- if(list.length>65)root.append(make("div","meta-row","+"+(list.length-65)+" more · refine search"));
- if(!list.length)root.append(make("div","meta-row","No matching primitives"));
- draw();
+function evidenceLayer(){
+ const all=Graph.mergePapers(S.papersCurated,S.papersHarvested);
+ const selected=S.evidence==="curated"?S.papersCurated:S.evidence==="harvested"?S.papersHarvested:all;
+ S.paperIndex=Graph.build(selected,new Set(S.nodes.map(n=>n.id)));
+ S.paperLimit=30;update();if(S.selected.size&&S.focus)resetCamera();
 }
-function loadEvidence(){
- const all=Graph.mergePapers(state.papersCurated,state.papersHarvested);
- const papers=state.evidence==="curated"?state.papersCurated:state.evidence==="harvested"?state.papersHarvested:all;
- state.graph=Graph.build(papers,new Set(state.nodeById.keys()));
- state.related=Graph.related(state.graph,[...state.selected]);
- state.selectedPapers=Graph.matching(state.graph,[...state.selected]);
- state.visiblePapers=40;
- renderPapers();draw();
+function zoomAt(factor,x=S.size.w/2,y=S.size.h/2){
+ const k=clamp(S.view.scale*factor,.13,4.4)/S.view.scale;
+ S.view.x=x-S.size.w/2-(x-S.size.w/2-S.view.x)*k;
+ S.view.y=y-S.size.h/2-(y-S.size.h/2-S.view.y)*k;S.view.scale*=k;S.needsDraw=true;
 }
-function zoom(factor,x=state.w/2,y=state.h/2){
- const before=state.scale,after=clamp(before*factor,.13,5),relative=after/before;
- state.panX=x-state.w/2-(x-state.w/2-state.panX)*relative;
- state.panY=y-state.h/2-(y-state.h/2-state.panY)*relative;state.scale=after;draw();
-}
-stage.addEventListener("pointerdown",e=>{if(e.button!==0)return;stage.setPointerCapture(e.pointerId);state.dragging=true;state.dragged=false;state.lastX=e.clientX;state.lastY=e.clientY;stage.classList.add("dragging");});
+stage.addEventListener("pointerdown",e=>{if(e.button!==0)return;stage.setPointerCapture(e.pointerId);S.pointer={x:e.clientX,y:e.clientY,dragged:false};stage.classList.add("dragging");});
 stage.addEventListener("pointermove",e=>{
- const b=stage.getBoundingClientRect(),x=e.clientX-b.left,y=e.clientY-b.top;
- if(state.dragging){const dx=e.clientX-state.lastX,dy=e.clientY-state.lastY;state.panX+=dx;state.panY+=dy;state.lastX=e.clientX;state.lastY=e.clientY;
-  if(Math.abs(dx)+Math.abs(dy)>1)state.dragged=true;draw();return;}
- state.hovered=hit(x,y);const tip=$("hoverTip");tip.hidden=!state.hovered;
- if(state.hovered){tip.textContent=state.hovered.p.name;tip.style.left=clamp(x+14,0,state.w-240)+"px";tip.style.top=clamp(y+12,0,state.h-50)+"px";}draw();
-});
-stage.addEventListener("pointerup",e=>{const r=stage.getBoundingClientRect();if(state.dragging&&!state.dragged){const n=hit(e.clientX-r.left,e.clientY-r.top);if(n)toggle(n);}state.dragging=false;stage.classList.remove("dragging");});
-stage.addEventListener("pointercancel",()=>{state.dragging=false;stage.classList.remove("dragging");});
-stage.addEventListener("pointerleave",()=>{state.hovered=null;$("hoverTip").hidden=true;draw();});
-stage.addEventListener("wheel",e=>{e.preventDefault();const r=stage.getBoundingClientRect();zoom(e.deltaY>0?.86:1.16,e.clientX-r.left,e.clientY-r.top);},{passive:false});
-stage.addEventListener("keydown",e=>{
- if(["+","=","-","0","ArrowLeft","ArrowRight","ArrowUp","ArrowDown","Escape"].includes(e.key)){
-  e.preventDefault();if(e.key==="Escape")setSelection([]);
-  else if(e.key==="0")fit();else if(e.key==="+"||e.key==="=")zoom(1.2);else if(e.key==="-")zoom(.82);
-  else{const v=45;state.panX+=e.key==="ArrowLeft"?v:e.key==="ArrowRight"?-v:0;state.panY+=e.key==="ArrowUp"?v:e.key==="ArrowDown"?-v:0;draw();}
+ const rect=stage.getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top;
+ if(S.pointer){const dx=e.clientX-S.pointer.x,dy=e.clientY-S.pointer.y;S.pointer.x=e.clientX;S.pointer.y=e.clientY;if(Math.abs(dx)+Math.abs(dy)>2)S.pointer.dragged=true;S.view.x+=dx;S.view.y+=dy;S.needsDraw=true;return;}
+ const n=hitTest(x,y);S.hovered=n;
+ const tip=$("hoverTip");tip.hidden=!n;
+ if(n){tip.replaceChildren(el("span","tip-heading",n.p.name),el("span","tip-meta",n.area+" / "+n.p.kind));
+  const count=S.paperIndex.byPrimitive.get(n.id)?.size||0;
+  tip.append(el("span","tip-hint",S.selected.has(n.id)?"Click to remove":count+" indexed papers · Click to add"));
+  const right=Math.min(S.size.w-290,Math.max(14,x+18));
+  tip.style.left=right+"px";tip.style.top=clamp(y-18,15,S.size.h-125)+"px";
  }
+ S.needsDraw=true;
 });
-$("zoomIn").onclick=()=>zoom(1.25);$("zoomOut").onclick=()=>zoom(.8);$("resetView").onclick=fit;
-$("motionToggle").onclick=()=>{state.paused=!state.paused;$("motionToggle").textContent=state.paused?"Resume":"Pause";$("motionToggle").setAttribute("aria-pressed",String(state.paused));draw();};
-$("clearSelection").onclick=()=>setSelection([]);
-$("mapSearch").oninput=e=>{state.search=e.target.value;matches();};
-$("mapArea").onchange=e=>{state.area=e.target.value;matches();};
-$("mapStatus").onchange=e=>{state.status=e.target.value;matches();};
-$("paperEvidence").onchange=e=>{state.evidence=e.target.value;loadEvidence();};
-$("paperSearch").oninput=e=>{state.paperSearch=e.target.value;state.visiblePapers=40;renderPapers();};
-$("morePapers").onclick=()=>{state.visiblePapers+=40;renderPapers();};
+stage.addEventListener("pointerup",e=>{
+ if(!S.pointer)return;const rect=stage.getBoundingClientRect();
+ if(!S.pointer.dragged){const hit=hitTest(e.clientX-rect.left,e.clientY-rect.top);if(hit)toggle(hit);}
+ S.pointer=null;stage.classList.remove("dragging");S.needsDraw=true;
+});
+stage.addEventListener("pointercancel",()=>{S.pointer=null;stage.classList.remove("dragging");});
+stage.addEventListener("pointerleave",()=>{S.hovered=null;$("hoverTip").hidden=true;S.needsDraw=true;});
+stage.addEventListener("wheel",e=>{e.preventDefault();const rect=stage.getBoundingClientRect();zoomAt(e.deltaY>0?.88:1.14,e.clientX-rect.left,e.clientY-rect.top);},{passive:false});
+stage.addEventListener("keydown",e=>{
+ if(!["ArrowLeft","ArrowRight","ArrowUp","ArrowDown","0","+","=","-","Escape"].includes(e.key))return;
+ e.preventDefault();
+ if(e.key==="Escape")selection([]);
+ else if(e.key==="0")resetCamera();
+ else if(e.key==="+"||e.key==="=")zoomAt(1.2);
+ else if(e.key==="-")zoomAt(.82);
+ else{const step=48;S.view.x+=e.key==="ArrowLeft"?step:e.key==="ArrowRight"?-step:0;S.view.y+=e.key==="ArrowUp"?step:e.key==="ArrowDown"?-step:0;S.needsDraw=true;}
+});
+$("zoomIn").onclick=()=>zoomAt(1.22);
+$("zoomOut").onclick=()=>zoomAt(.82);
+$("resetView").onclick=resetCamera;
+$("focusMode").onclick=()=>{S.focus=!S.focus;$("focusMode").setAttribute("aria-pressed",String(S.focus));resetCamera();};
+$("motionToggle").onclick=()=>{S.motion=!S.motion;$("motionToggle").textContent=S.motion?"Ⅱ":"▶";$("motionToggle").setAttribute("aria-pressed",String(!S.motion));S.needsDraw=true;};
+$("clearSelection").onclick=()=>selection([]);
+$("mapSearch").oninput=e=>{S.term=e.target.value;renderIndex();S.needsDraw=true;};
+$("mapArea").onchange=e=>{S.area=e.target.value;renderIndex();S.needsDraw=true;};
+$("mapStatus").onchange=e=>{S.review=e.target.value;renderIndex();S.needsDraw=true;};
+$("paperEvidence").onchange=e=>{S.evidence=e.target.value;evidenceLayer();};
+$("paperSearch").oninput=e=>{S.paperQuery=e.target.value;S.paperLimit=30;renderPapers();};
+$("morePapers").onclick=()=>{S.paperLimit+=30;renderPapers();};
 $("exportPapers").onclick=()=>{
- const items=state.selected.size?Graph.matching(state.graph,[...state.selected],state.paperSearch):[];
- const data=JSON.stringify({schema_version:"0.4.0",selected_primitives:[...state.selected],evidence:state.evidence,
-  disclaimer:"Bibliographic data with human or unverified title-derived primitive labels; no novelty claim.",items},null,2);
- const blob=new Blob([data],{type:"application/json;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
- a.href=url;a.download="tcs-ontology-paper-intersection.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),500);
+ const papers=S.selected.size?Graph.matching(S.paperIndex,[...S.selected],S.paperQuery):[];
+ const data=JSON.stringify({schema_version:"0.5.0",selected_primitives:[...S.selected],evidence:S.evidence,items:papers,warning:"Editorially mapped or title-inferred bibliographic labels; not independently peer-reviewed."},null,2);
+ const file=new Blob([data],{type:"application/json;charset=utf-8"}),url=URL.createObjectURL(file),a=document.createElement("a");
+ a.href=url;a.download="tcs-ontology-paper-graph.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),600);
 };
-new ResizeObserver(resize).observe(stage);
-function animate(t){if(!state.paused&&!state.reduced&&!document.hidden&&t-state.frame>44){state.frame=t;draw(t/1000);}requestAnimationFrame(animate);}
-async function fetchData(name,signal,optional=false){
- try{const res=await fetch("./data/"+name+".json",{cache:"no-cache",signal});if(!res.ok)throw Error(name+": HTTP "+res.status);
- const d=await res.json();if(!Array.isArray(d.items))throw Error(name+": malformed items");return d.items;}
- catch(e){if(optional)return [];throw e;}
+document.querySelectorAll("[data-primitive]").forEach(button=>button.onclick=()=>{
+ const n=S.nodeMap.get(button.dataset.primitive);if(n)toggle(n);
+});
+document.addEventListener("keydown",e=>{
+ const tag=document.activeElement?.tagName;
+ if(e.key==="/"&&tag!=="INPUT"&&tag!=="TEXTAREA"&&tag!=="SELECT"){e.preventDefault();$("mapSearch").focus();}
+});
+let resizeObserver=new ResizeObserver(sizeToCanvas);resizeObserver.observe(stage);
+function animate(now){
+ S.time=(now-S.start)/1000;
+ if(!document.hidden&&(S.needsDraw||S.motion)){draw();S.needsDraw=false;}
+ requestAnimationFrame(animate);
+}
+async function json(name,signal,optional=false){
+ try{const r=await fetch("./data/"+name+".json",{cache:"no-cache",signal});if(!r.ok)throw Error(name+" HTTP "+r.status);
+  const data=await r.json();if(!Array.isArray(data.items))throw Error("Invalid "+name+" data");return data.items;
+ }catch(error){if(optional)return [];throw error;}
 }
 async function init(){
- const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),18000);
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),18000);
  try{
-  [state.items,state.papersCurated,state.papersHarvested,state.sources]=await Promise.all([
-   fetchData("primitives",abort.signal),fetchData("papers",abort.signal),
-   fetchData("papers-harvested",abort.signal,true),fetchData("sources",abort.signal)]);
-  state.byId=new Map(state.items.map(p=>[p.id,p]));
-  if(state.byId.size!==state.items.length)throw Error("duplicate primitive IDs");
-  // The curated corpus is the benchmark source of paper-to-primitive membership.
-  setupNodes();
-  for(const p of state.papersCurated)for(const ref of p.primitives||[])if(!state.byId.has(ref.primitive_id))throw Error("curated paper has unknown primitive: "+ref.primitive_id);
-  loadEvidence();
-  const areas=[...new Set(state.items.flatMap(p=>p.areas))].sort();
-  for(const area of areas){const op=make("option","",area);op.value=area;$("mapArea").append(op);}
-  resize();fit();matches();renderPapers();
+  [S.items,S.papersCurated,S.papersHarvested,S.sources]=await Promise.all([
+   json("primitives",controller.signal),json("papers",controller.signal),json("papers-harvested",controller.signal,true),json("sources",controller.signal)
+  ]);
+  setup();S.ready=true;
+  for(const area of [...new Set(S.items.flatMap(p=>p.areas))].sort()){const op=el("option","",area);op.value=area;$("mapArea").append(op);}
+  sizeToCanvas();
+  evidenceLayer();
   let ids=[];
   if(location.hash.startsWith("#select=")){try{ids=decodeURIComponent(location.hash.slice(8)).split(",");}catch{ids=[];}}
   else if(location.hash){try{ids=[decodeURIComponent(location.hash.slice(1))];}catch{ids=[];}}
-  if(ids.length)setSelection(ids,false);
+  selection(ids,false,false);
+  resetCamera();
+  $("motionToggle").textContent=S.motion?"Ⅱ":"▶";
+  $("motionToggle").setAttribute("aria-pressed",String(!S.motion));
   requestAnimationFrame(animate);
- }catch(e){$("mapError").hidden=false;$("mapError").textContent="Could not load the research graph: "+e.message;console.error(e);}
+ }catch(error){const m=$("mapError");m.hidden=false;m.textContent="Could not initialize research atlas: "+error.message;console.error(error);}
  finally{clearTimeout(timer);}
 }
 init();
