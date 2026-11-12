@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.1",
   "disclaimer": "Editorially source-checked statements are not independently formally verified theorem databases; always inspect original source and exact premises.",
   "items": [
     {
@@ -130,6 +130,120 @@
       ],
       "scope_note": "Definitions may differ when chores, mixed items, or externalities are allowed.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "dinitz-distributional-ski-bound",
+      "status": "source_checked_statement",
+      "title": "Distributional prediction for ski rental with unknown error",
+      "statement": "For ski rental with buy cost b, the cited paper gives an expected-cost upper bound of OPT + O(min(max(eta,1)*sqrt(b), b*log(b))), with eta the Wasserstein-1 distance between the predicted and true distributions; the algorithm does not require eta as input.",
+      "assumptions": [
+        "Classical ski rental with buy cost b",
+        "Unknown true distribution over ski days",
+        "Predicted distribution",
+        "eta is Wasserstein-1 distance"
+      ],
+      "scope_note": "From the paper abstract; constants, edge cases and lower-bound conditions must be checked in the source. Not a universal result for arbitrary online problems.",
+      "subject_ids": [
+        "lens.prediction",
+        "model.distributional-prediction",
+        "property.wasserstein-distance",
+        "property.prediction-robustness"
+      ],
+      "source_ids": [
+        "p-dinitz-ski"
+      ],
+      "reviewed_at": "2026-11-13"
+    },
+    {
+      "id": "dinitz-binary-search-entropy-bound",
+      "status": "source_checked_statement",
+      "title": "Binary search with distributional advice",
+      "statement": "The cited paper gives query complexity O(H(p) + log(eta)) under its distributional prediction and error conventions, with H(p) the target distribution entropy and eta the Earth Mover's Distance to the prediction.",
+      "assumptions": [
+        "Search in sorted array",
+        "Known or unknown true target distribution per paper model",
+        "Predicted target distribution",
+        "Specified Earth Mover's Distance metric"
+      ],
+      "scope_note": "Asymptotic expression is taken from the abstract and depends on the paper's conventions when eta is small; consult the paper for exact logarithmic normalization.",
+      "subject_ids": [
+        "problem.binary-search",
+        "model.distributional-prediction",
+        "property.shannon-entropy",
+        "property.wasserstein-distance"
+      ],
+      "source_ids": [
+        "p-dinitz-binary"
+      ],
+      "reviewed_at": "2026-11-13"
+    },
+    {
+      "id": "yoshida-gibbs-matching-sensitivity",
+      "status": "source_checked_statement",
+      "title": "Gibbs sampling gives approximation and sensitivity tradeoffs for matching",
+      "statement": "The paper constructs, for every fixed approximation parameter epsilon > 0, an (1-epsilon)-approximation matching algorithm with sensitivity Delta^{O(1/epsilon)} for bounded-degree graphs, using Gibbs-distribution sampling.",
+      "assumptions": [
+        "Maximum matching problem",
+        "Degree parameter Delta",
+        "Specified edge-deletion perturbation and Wasserstein/Hamming output metric",
+        "epsilon positive and relevant runtime constraints"
+      ],
+      "scope_note": "From the abstract. The result does not apply without qualification to weighted matchings, all output metrics, or DP noise calibration.",
+      "subject_ids": [
+        "problem.maximum-matching",
+        "property.worst-case-algorithmic-sensitivity",
+        "technique.gibbs-sampling"
+      ],
+      "source_ids": [
+        "p-yoshida-matching"
+      ],
+      "reviewed_at": "2026-11-13"
+    },
+    {
+      "id": "yoshida-voting-privacy-sensitivity-distortion",
+      "status": "source_checked_statement",
+      "title": "Metric voting combines sensitivity, privacy and sub-three distortion",
+      "statement": "The cited paper studies randomized metric voting rules with distortion strictly below three and separate stability/privacy guarantees under one-voter deletion or replacement, respectively.",
+      "assumptions": [
+        "Ordinal metric voting",
+        "Specified voting rule class",
+        "One-voter deletion for sensitivity",
+        "One-voter replacement for approximate differential privacy"
+      ],
+      "scope_note": "The sensitivity and privacy guarantees use different adjacency conventions, and the paper's constants and distributions must be consulted for formal statements.",
+      "subject_ids": [
+        "problem.metric-voting",
+        "lens.algorithmic-sensitivity",
+        "lens.differential-privacy",
+        "property.metric-distortion"
+      ],
+      "source_ids": [
+        "p-yoshida-voting"
+      ],
+      "reviewed_at": "2026-11-13"
+    },
+    {
+      "id": "dinitz-private-cuts-shifting",
+      "status": "source_checked_statement",
+      "title": "Private cut optimization via shifting and other mechanisms",
+      "statement": "The cited paper gives edge-differentially private approximation algorithms for multiway cut and minimum k-cut; for constant k it reports optimal additive-error scaling O(k log n) when privacy parameters are fixed.",
+      "assumptions": [
+        "Graph with defined edge adjacency",
+        "Minimum k-cut or multiway cut",
+        "Privacy parameter treated as fixed for the quoted asymptotic",
+        "Appropriate graph and terminal assumptions"
+      ],
+      "scope_note": "Shifting mechanism addresses part of the suite; minimum k-cut uses a different exponential mechanism argument. Do not attribute every bound to shifting.",
+      "subject_ids": [
+        "problem.minimum-k-cut",
+        "problem.multiway-cut",
+        "framework.shifting-mechanism",
+        "model.edge-differential-privacy"
+      ],
+      "source_ids": [
+        "p-dinitz-graphcuts"
+      ],
+      "reviewed_at": "2026-11-13"
     }
   ]
 }

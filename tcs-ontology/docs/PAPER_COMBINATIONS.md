@@ -39,3 +39,10 @@ Open \`map.html\` or use the "Primitive Map" entry in the main atlas. The Canvas
 ## Limitations
 
 The paper index is curated, not a systematic literature review; absence of paper relations is **not** evidence of an open problem. Formal mathematical theorem conditions remain to be extracted. No automatic novelty, relevance, or completeness certification is attempted.
+
+
+## Author metadata and provenance
+
+`featured_researchers` is the subset of people used to select papers for the sample. `authors` is a verified complete author list only where `authors_completeness` is `verified_from_arxiv`; otherwise `authors` is intentionally empty rather than misleadingly abbreviated. Publication metadata should be checked against original venue pages, not inferred solely from the preprint submission year.
+
+Several selected paper abstracts have been independently opened and checked, and short statements have been entered in `data/results.json` with the exact perturbation / model scope. These are still *editorial source-checked statements*, not machine-verified theorems.

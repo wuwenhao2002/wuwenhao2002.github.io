@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.3.0",
+  "schema_version": "0.3.1",
   "description": "Evidence-indexed representative papers (not an exhaustive or current bibliographic database); each primitive attachment is editorial classification, not formal theorem extraction.",
   "items": [
     {
@@ -8,6 +8,7 @@
       "year": 2026,
       "venue": "ICML 2026",
       "authors": [
+        "Qiming Cui",
         "Michael Dinitz"
       ],
       "status": "published",
@@ -36,7 +37,10 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors_completeness": "verified_from_arxiv"
     },
     {
       "id": "dinitz-jrp",
@@ -44,7 +48,9 @@
       "year": 2026,
       "venue": "ICALP 2026",
       "authors": [
-        "Michael Dinitz"
+        "Michael Dinitz",
+        "Jeremy T. Fineman",
+        "Seeun William Umboh"
       ],
       "status": "published",
       "source_id": "p-dinitz-jrp",
@@ -68,7 +74,10 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors_completeness": "verified_from_arxiv"
     },
     {
       "id": "dinitz-graphcuts",
@@ -76,7 +85,10 @@
       "year": 2026,
       "venue": "SODA 2026",
       "authors": [
-        "Michael Dinitz"
+        "Rishi Chandra",
+        "Michael Dinitz",
+        "Chenglin Fan",
+        "Zongrui Zou"
       ],
       "status": "published",
       "source_id": "p-dinitz-graphcuts",
@@ -104,7 +116,10 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors_completeness": "verified_from_arxiv"
     },
     {
       "id": "dinitz-distances",
@@ -112,7 +127,11 @@
       "year": 2025,
       "venue": "NeurIPS 2025",
       "authors": [
-        "Michael Dinitz"
+        "Michael Dinitz",
+        "Chenglin Fan",
+        "Jingcheng Liu",
+        "Jalaj Upadhyay",
+        "Zongrui Zou"
       ],
       "status": "published",
       "source_id": "p-dinitz-distances",
@@ -136,7 +155,10 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors_completeness": "verified_from_arxiv"
     },
     {
       "id": "dinitz-densest",
@@ -144,7 +166,10 @@
       "year": 2025,
       "venue": "SODA 2025",
       "authors": [
-        "Michael Dinitz"
+        "Michael Dinitz",
+        "Satyen Kale",
+        "Silvio Lattanzi",
+        "Sergei Vassilvitskii"
       ],
       "status": "published",
       "source_id": "p-dinitz-densest",
@@ -164,7 +189,10 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors_completeness": "verified_from_arxiv"
     },
     {
       "id": "dinitz-binary",
@@ -172,7 +200,12 @@
       "year": 2024,
       "venue": "NeurIPS 2024",
       "authors": [
-        "Michael Dinitz"
+        "Michael Dinitz",
+        "Sungjin Im",
+        "Thomas Lavastida",
+        "Benjamin Moseley",
+        "Aidin Niaparast",
+        "Sergei Vassilvitskii"
       ],
       "status": "published",
       "source_id": "p-dinitz-binary",
@@ -200,16 +233,17 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors_completeness": "verified_from_arxiv"
     },
     {
       "id": "dinitz-portfolio",
       "title": "Algorithms with Prediction Portfolios",
       "year": 2022,
       "venue": "NeurIPS 2022",
-      "authors": [
-        "Michael Dinitz"
-      ],
+      "authors": [],
       "status": "published",
       "source_id": "p-dinitz-portfolio",
       "scope_note": "Combines multiple predictors rather than assuming a single advice source.",
@@ -228,7 +262,10 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors_completeness": "not_curated"
     },
     {
       "id": "dinitz-tree",
@@ -236,7 +273,8 @@
       "year": 2026,
       "venue": "2026 preprint",
       "authors": [
-        "Michael Dinitz"
+        "Michael Dinitz",
+        "Bob Dong"
       ],
       "status": "preprint",
       "source_id": "p-dinitz-tree",
@@ -252,7 +290,10 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Michael Dinitz"
+      ],
+      "authors_completeness": "verified_from_arxiv"
     },
     {
       "id": "yoshida-matching",
@@ -260,7 +301,8 @@
       "year": 2026,
       "venue": "SODA 2026",
       "authors": [
-        "Yuichi Yoshida"
+        "Yuichi Yoshida",
+        "Zihan Zhang"
       ],
       "status": "published",
       "source_id": "p-yoshida-matching",
@@ -284,16 +326,17 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors_completeness": "verified_from_arxiv"
     },
     {
       "id": "yoshida-lower",
       "title": "Sensitivity Lower Bounds for Approximation Algorithms",
       "year": 2026,
       "venue": "SODA 2026",
-      "authors": [
-        "Yuichi Yoshida"
-      ],
+      "authors": [],
       "status": "published",
       "source_id": "p-yoshida-lower",
       "scope_note": "Lower-bound constructions for approximation under carefully defined input and output perturbations.",
@@ -316,16 +359,17 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors_completeness": "not_curated"
     },
     {
       "id": "yoshida-geometric",
       "title": "Average Sensitivity of Geometric Algorithms",
       "year": 2026,
       "venue": "ITCS 2026",
-      "authors": [
-        "Yuichi Yoshida"
-      ],
+      "authors": [],
       "status": "published",
       "source_id": "p-yoshida-geometric",
       "scope_note": "Average output sensitivity for geometric optimization; problem-specific sensitivity definitions matter.",
@@ -344,7 +388,10 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors_completeness": "not_curated"
     },
     {
       "id": "yoshida-lipschitz",
@@ -352,7 +399,10 @@
       "year": 2026,
       "venue": "2026 conference / earlier preprint",
       "authors": [
-        "Yuichi Yoshida"
+        "Quanquan C. Liu",
+        "Grigoris Velegkas",
+        "Yuichi Yoshida",
+        "Felix Zhou"
       ],
       "status": "preprint",
       "source_id": "p-yoshida-lipschitz",
@@ -376,7 +426,10 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors_completeness": "verified_from_arxiv"
     },
     {
       "id": "yoshida-regret",
@@ -384,6 +437,7 @@
       "year": 2026,
       "venue": "2026 preprint",
       "authors": [
+        "Shinsaku Sakaue",
         "Yuichi Yoshida"
       ],
       "status": "preprint",
@@ -412,7 +466,10 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors_completeness": "verified_from_arxiv"
     },
     {
       "id": "yoshida-voting",
@@ -420,6 +477,9 @@
       "year": 2026,
       "venue": "2026 preprint",
       "authors": [
+        "Shinsaku Sakaue",
+        "Kaito Fujii",
+        "Soh Kumabe",
         "Yuichi Yoshida"
       ],
       "status": "preprint",
@@ -444,16 +504,17 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors_completeness": "verified_from_arxiv"
     },
     {
       "id": "yoshida-graph",
       "title": "Average Sensitivity of Graph Algorithms",
       "year": 2023,
       "venue": "SIAM Journal on Computing 2023",
-      "authors": [
-        "Yuichi Yoshida"
-      ],
+      "authors": [],
       "status": "published",
       "source_id": "p-yoshida-graph",
       "scope_note": "Foundational framework for averaging output sensitivity over graph perturbations.",
@@ -472,7 +533,10 @@
         }
       ],
       "review_status": "editorial_metadata_checked",
-      "novelty_claim": false
+      "featured_researchers": [
+        "Yuichi Yoshida"
+      ],
+      "authors_completeness": "not_curated"
     }
   ]
 }
