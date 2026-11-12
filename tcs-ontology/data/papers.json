@@ -2103,7 +2103,7 @@
           "note": "Role checked against publication abstract: Online maximization of conditional value-at-risk for stochastic submodular objectives"
         },
         {
-          "primitive_id": "technique.conditional-value-at-risk",
+          "primitive_id": "property.conditional-value-at-risk",
           "role": "metric",
           "evidence": "official_abstract",
           "note": "Role checked against publication abstract: Online maximization of conditional value-at-risk for stochastic submodular objectives"

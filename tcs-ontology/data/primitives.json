@@ -6077,6 +6077,23 @@
       ]
     },
     {
+      "id": "problem.influence-maximization",
+      "name": "Influence Maximization",
+      "kind": "problem",
+      "areas": [
+        "Algorithmic Game Theory"
+      ],
+      "aliases": [],
+      "definition": "An objective measuring total expected spread under a specified stochastic diffusion model and selected initial seeds.",
+      "scope_note": "Diffusion model, seed budget and objective need to be explicit; often formulated as a separate optimization problem. Classified as optimization problem, not property.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_author_abstract_v0.5",
+      "source_ids": [
+        "author-dinitz-publications"
+      ]
+    },
+    {
       "id": "problem.integer-programming-feasibility",
       "name": "Integer Programming Feasibility",
       "kind": "problem",
@@ -8017,6 +8034,23 @@
       "reviewed_at": null
     },
     {
+      "id": "property.conditional-value-at-risk",
+      "name": "Conditional Value at Risk",
+      "kind": "property",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A downside-risk objective measuring expected loss in a specified worst tail of a probability distribution.",
+      "scope_note": "CVaR is typically an objective or risk measure rather than an algorithm; level alpha must be specified. Classified as risk measure, not technique.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "property.condorcet-consistency",
       "name": "Condorcet Consistency",
       "kind": "property",
@@ -8668,23 +8702,6 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
-    },
-    {
-      "id": "property.influence-maximization",
-      "name": "Influence Maximization",
-      "kind": "property",
-      "areas": [
-        "Algorithmic Game Theory"
-      ],
-      "aliases": [],
-      "definition": "An objective measuring total expected spread under a specified stochastic diffusion model and selected initial seeds.",
-      "scope_note": "Diffusion model, seed budget and objective need to be explicit; often formulated as a separate optimization problem.",
-      "review_status": "source_checked",
-      "reviewed_at": "2026-11-13",
-      "provenance": "official_author_abstract_v0.5",
-      "source_ids": [
-        "author-dinitz-publications"
-      ]
     },
     {
       "id": "property.instance-optimality",
@@ -10363,23 +10380,6 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
-    },
-    {
-      "id": "technique.conditional-value-at-risk",
-      "name": "Conditional Value at Risk",
-      "kind": "technique",
-      "areas": [
-        "Online Algorithms"
-      ],
-      "aliases": [],
-      "definition": "A downside-risk objective measuring expected loss in a specified worst tail of a probability distribution.",
-      "scope_note": "CVaR is typically an objective or risk measure rather than an algorithm; level alpha must be specified.",
-      "review_status": "source_checked",
-      "reviewed_at": "2026-11-13",
-      "provenance": "official_abstract_curation_v0.5",
-      "source_ids": [
-        "author-yoshida-conferences"
-      ]
     },
     {
       "id": "technique.configuration-lp",

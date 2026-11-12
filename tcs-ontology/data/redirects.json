@@ -56,6 +56,16 @@
       "from": "problem.effective-resistance-estimation",
       "to": "problem.graph-effective-resistance",
       "reason": "Merge duplicate effective-resistance estimation concept"
+    },
+    {
+      "from": "technique.conditional-value-at-risk",
+      "to": "property.conditional-value-at-risk",
+      "reason": "Risk metric, not an algorithmic technique"
+    },
+    {
+      "from": "property.influence-maximization",
+      "to": "problem.influence-maximization",
+      "reason": "Optimization problem, not a mathematical predicate"
     }
   ]
 }
