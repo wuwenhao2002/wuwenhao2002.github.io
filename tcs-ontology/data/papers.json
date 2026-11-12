@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.4.0",
+  "schema_version": "0.5.0",
   "description": "Evidence-indexed representative papers (not an exhaustive or current bibliographic database); each primitive attachment is editorial classification, not formal theorem extraction.",
   "items": [
     {
@@ -1337,6 +1337,1731 @@
         }
       ],
       "source_url": "https://dblp.org/pid/36/4449.html"
+    },
+    {
+      "id": "verified-yoshida-consistent-pca",
+      "title": "Consistent PCA and Spectral Clustering",
+      "year": 2026,
+      "venue": "AISTATS 2026",
+      "authors": [
+        "Satoshi Hara",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Online subspace stability under additional data using regularization",
+      "scope_note": "Online subspace stability under additional data using regularization",
+      "primitives": [
+        {
+          "primitive_id": "problem.principal-component-analysis",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Online subspace stability under additional data using regularization"
+        },
+        {
+          "primitive_id": "problem.spectral-clustering",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Online subspace stability under additional data using regularization"
+        },
+        {
+          "primitive_id": "property.online-output-consistency",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Online subspace stability under additional data using regularization"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-replicable-rl",
+      "title": "From Generative to Episodic: Sample-Efficient Replicable RL",
+      "year": 2026,
+      "venue": "ICML 2026",
+      "authors": [
+        "Max Hopkins",
+        "Sihan Liu",
+        "Christopher Ye",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Replicability in episodic reinforcement learning and sample complexity",
+      "scope_note": "Replicability in episodic reinforcement learning and sample complexity",
+      "primitives": [
+        {
+          "primitive_id": "lens.replicability",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Replicability in episodic reinforcement learning and sample complexity"
+        },
+        {
+          "primitive_id": "model.reinforcement-learning",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Replicability in episodic reinforcement learning and sample complexity"
+        },
+        {
+          "primitive_id": "property.sample-complexity",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Replicability in episodic reinforcement learning and sample complexity"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-batch-online",
+      "title": "A Batch-to-Online Transformation under Random-Order Model",
+      "year": 2023,
+      "venue": "NeurIPS 2023",
+      "authors": [
+        "Jing Dong",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Low-sensitivity offline approximations imply error-sensitive online regret bounds",
+      "scope_note": "Low-sensitivity offline approximations imply error-sensitive online regret bounds",
+      "primitives": [
+        {
+          "primitive_id": "framework.batch-to-online-transformation",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Low-sensitivity offline approximations imply error-sensitive online regret bounds"
+        },
+        {
+          "primitive_id": "model.random-order-model",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Low-sensitivity offline approximations imply error-sensitive online regret bounds"
+        },
+        {
+          "primitive_id": "property.average-algorithmic-sensitivity",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Low-sensitivity offline approximations imply error-sensitive online regret bounds"
+        },
+        {
+          "primitive_id": "property.regret",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Low-sensitivity offline approximations imply error-sensitive online regret bounds"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-graph-lipschitz",
+      "title": "Lipschitz Continuous Algorithms for Graph Problems",
+      "year": 2023,
+      "venue": "FOCS 2023",
+      "authors": [
+        "Soh Kumabe",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Weighted graph algorithms with provable output Lipschitz stability",
+      "scope_note": "Weighted graph algorithms with provable output Lipschitz stability",
+      "primitives": [
+        {
+          "primitive_id": "lens.algorithmic-stability",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Weighted graph algorithms with provable output Lipschitz stability"
+        },
+        {
+          "primitive_id": "property.lipschitz-constant",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Weighted graph algorithms with provable output Lipschitz stability"
+        },
+        {
+          "primitive_id": "problem.minimum-spanning-tree",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Weighted graph algorithms with provable output Lipschitz stability"
+        },
+        {
+          "primitive_id": "problem.shortest-path",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Weighted graph algorithms with provable output Lipschitz stability"
+        },
+        {
+          "primitive_id": "problem.maximum-matching",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Weighted graph algorithms with provable output Lipschitz stability"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-decisiontree-sensitivity",
+      "title": "Average Sensitivity of Decision Tree Learning",
+      "year": 2023,
+      "venue": "ICLR 2023",
+      "authors": [
+        "Satoshi Hara",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Stable decision tree training under changes in input observations",
+      "scope_note": "Stable decision tree training under changes in input observations",
+      "primitives": [
+        {
+          "primitive_id": "problem.decision-tree-learning",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable decision tree training under changes in input observations"
+        },
+        {
+          "primitive_id": "property.average-algorithmic-sensitivity",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable decision tree training under changes in input observations"
+        },
+        {
+          "primitive_id": "property.solution-stability",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable decision tree training under changes in input observations"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-low-degree",
+      "title": "Low Degree Testing over the Reals",
+      "year": 2023,
+      "venue": "SODA 2023",
+      "authors": [
+        "Vipul Arora",
+        "Arnab Bhattacharyya",
+        "Noah Fleming",
+        "Esty Kelman",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Distribution-free polynomial testing with a low query budget",
+      "scope_note": "Distribution-free polynomial testing with a low query budget",
+      "primitives": [
+        {
+          "primitive_id": "problem.low-degree-testing",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Distribution-free polynomial testing with a low query budget"
+        },
+        {
+          "primitive_id": "model.distribution-testing-model",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Distribution-free polynomial testing with a low query budget"
+        },
+        {
+          "primitive_id": "property.query-complexity-of-testing",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Distribution-free polynomial testing with a low query budget"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-expander-sublinear",
+      "title": "Sublinear-Time Algorithms for Max Cut, Max E2Lin(q), and Unique Label Cover on Expanders",
+      "year": 2023,
+      "venue": "SODA 2023",
+      "authors": [
+        "Pan Peng",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Sublinear computation under expansion promises and an adjacency-list oracle",
+      "scope_note": "Sublinear computation under expansion promises and an adjacency-list oracle",
+      "primitives": [
+        {
+          "primitive_id": "problem.maximum-cut",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Sublinear computation under expansion promises and an adjacency-list oracle"
+        },
+        {
+          "primitive_id": "graph_class.expander-graph",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Sublinear computation under expansion promises and an adjacency-list oracle"
+        },
+        {
+          "primitive_id": "model.sublinear-query-model",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Sublinear computation under expansion promises and an adjacency-list oracle"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-euclidean-cluster",
+      "title": "Average Sensitivity of Euclidean k-Clustering",
+      "year": 2022,
+      "venue": "NeurIPS 2022",
+      "authors": [
+        "Yuichi Yoshida",
+        "Shinji Ito"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Stable Euclidean clustering and consequences for consistent online maintenance",
+      "scope_note": "Stable Euclidean clustering and consequences for consistent online maintenance",
+      "primitives": [
+        {
+          "primitive_id": "problem.euclidean-k-clustering",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable Euclidean clustering and consequences for consistent online maintenance"
+        },
+        {
+          "primitive_id": "property.average-algorithmic-sensitivity",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable Euclidean clustering and consequences for consistent online maintenance"
+        },
+        {
+          "primitive_id": "property.recourse-bound",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable Euclidean clustering and consequences for consistent online maintenance"
+        },
+        {
+          "primitive_id": "model.random-order-model",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable Euclidean clustering and consequences for consistent online maintenance"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-knapsack-sensitivity",
+      "title": "Average sensitivity of the Knapsack Problem",
+      "year": 2022,
+      "venue": "ESA 2022",
+      "authors": [
+        "Soh Kumabe",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Knapsack stability under random item deletion and incremental random-order updates",
+      "scope_note": "Knapsack stability under random item deletion and incremental random-order updates",
+      "primitives": [
+        {
+          "primitive_id": "problem.knapsack",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Knapsack stability under random item deletion and incremental random-order updates"
+        },
+        {
+          "primitive_id": "problem.incremental-knapsack",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Knapsack stability under random item deletion and incremental random-order updates"
+        },
+        {
+          "primitive_id": "property.average-algorithmic-sensitivity",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Knapsack stability under random item deletion and incremental random-order updates"
+        },
+        {
+          "primitive_id": "property.recourse-bound",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Knapsack stability under random item deletion and incremental random-order updates"
+        },
+        {
+          "primitive_id": "model.random-order-model",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Knapsack stability under random item deletion and incremental random-order updates"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-downsampling",
+      "title": "Downsampling for Testing and Learning in Product Distributions",
+      "year": 2022,
+      "venue": "ICALP 2022",
+      "authors": [
+        "Nathaniel Harms",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "High-dimensional distribution-free learning and testing via downsampling",
+      "scope_note": "High-dimensional distribution-free learning and testing via downsampling",
+      "primitives": [
+        {
+          "primitive_id": "technique.downsampling",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: High-dimensional distribution-free learning and testing via downsampling"
+        },
+        {
+          "primitive_id": "model.product-distribution",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: High-dimensional distribution-free learning and testing via downsampling"
+        },
+        {
+          "primitive_id": "problem.monotonicity-testing",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: High-dimensional distribution-free learning and testing via downsampling"
+        },
+        {
+          "primitive_id": "problem.distribution-free-learning",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: High-dimensional distribution-free learning and testing via downsampling"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-decomposable-sparse",
+      "title": "Sparsification of Decomposable Submodular Functions",
+      "year": 2022,
+      "venue": "AAAI 2022",
+      "authors": [
+        "Akbar Rafiey",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Sparse approximation of a large sum of submodular components",
+      "scope_note": "Sparse approximation of a large sum of submodular components",
+      "primitives": [
+        {
+          "primitive_id": "problem.decomposable-submodular-sparsification",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Sparse approximation of a large sum of submodular components"
+        },
+        {
+          "primitive_id": "technique.random-sampling",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Sparse approximation of a large sum of submodular components"
+        },
+        {
+          "primitive_id": "task.approximation-algorithm",
+          "role": "task",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Sparse approximation of a large sum of submodular components"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-dp-sensitivity",
+      "title": "Average Sensitivity of Dynamic Programming",
+      "year": 2022,
+      "venue": "SODA 2022",
+      "authors": [
+        "Soh Kumabe",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Sensitivity-preserving reductions from dynamic programming problems to maximum-weight chains",
+      "scope_note": "Sensitivity-preserving reductions from dynamic programming problems to maximum-weight chains",
+      "primitives": [
+        {
+          "primitive_id": "technique.dynamic-programming",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Sensitivity-preserving reductions from dynamic programming problems to maximum-weight chains"
+        },
+        {
+          "primitive_id": "problem.maximum-weight-chain",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Sensitivity-preserving reductions from dynamic programming problems to maximum-weight chains"
+        },
+        {
+          "primitive_id": "problem.longest-increasing-subsequence",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Sensitivity-preserving reductions from dynamic programming problems to maximum-weight chains"
+        },
+        {
+          "primitive_id": "problem.knapsack",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Sensitivity-preserving reductions from dynamic programming problems to maximum-weight chains"
+        },
+        {
+          "primitive_id": "property.average-algorithmic-sensitivity",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Sensitivity-preserving reductions from dynamic programming problems to maximum-weight chains"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-hypergraph-sparsifier",
+      "title": "Spectral Hypergraph Sparsifiers of Nearly Linear Size",
+      "year": 2021,
+      "venue": "FOCS 2021",
+      "authors": [
+        "Michael Kapralov",
+        "Robert Krauthgamer",
+        "Jakab Tardos",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Nearly linear-size spectral hypergraph sparsification with nonlinear energy structure",
+      "scope_note": "Nearly linear-size spectral hypergraph sparsification with nonlinear energy structure",
+      "primitives": [
+        {
+          "primitive_id": "problem.spectral-hypergraph-sparsification",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Nearly linear-size spectral hypergraph sparsification with nonlinear energy structure"
+        },
+        {
+          "primitive_id": "problem.graph-sparsification",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Nearly linear-size spectral hypergraph sparsification with nonlinear energy structure"
+        },
+        {
+          "primitive_id": "property.approximation-ratio",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Nearly linear-size spectral hypergraph sparsification with nonlinear energy structure"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-effective-resistance",
+      "title": "Local Algorithms for Estimating Effective Resistance",
+      "year": 2021,
+      "venue": "KDD 2021",
+      "authors": [
+        "Daniel Lopatta",
+        "Pan Peng",
+        "Yuichi Yoshida",
+        "Gramoz Goranci"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Local approximate effective resistance under bounded mixing assumptions",
+      "scope_note": "Local approximate effective resistance under bounded mixing assumptions",
+      "primitives": [
+        {
+          "primitive_id": "problem.graph-effective-resistance",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Local approximate effective resistance under bounded mixing assumptions"
+        },
+        {
+          "primitive_id": "model.local-computation-algorithm",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Local approximate effective resistance under bounded mixing assumptions"
+        },
+        {
+          "primitive_id": "property.additive-error",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Local approximate effective resistance under bounded mixing assumptions"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-cvar-submodular",
+      "title": "Online Risk-Averse Submodular Maximization",
+      "year": 2021,
+      "venue": "IJCAI 2021",
+      "authors": [
+        "Tasuku Soma",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Online maximization of conditional value-at-risk for stochastic submodular objectives",
+      "scope_note": "Online maximization of conditional value-at-risk for stochastic submodular objectives",
+      "primitives": [
+        {
+          "primitive_id": "problem.value-oracle-submodular-maximization",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Online maximization of conditional value-at-risk for stochastic submodular objectives"
+        },
+        {
+          "primitive_id": "technique.conditional-value-at-risk",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Online maximization of conditional value-at-risk for stochastic submodular objectives"
+        },
+        {
+          "primitive_id": "model.online-learning",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Online maximization of conditional value-at-risk for stochastic submodular objectives"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-mcsp-lower",
+      "title": "One-Tape Turing Machine and Branching Program Lower Bounds for MCSP",
+      "year": 2021,
+      "venue": "STACS 2021",
+      "authors": [
+        "Mahdi Cheraghchi",
+        "Shuichi Hirahara",
+        "Dimitrios Myrisiotis",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Circuit lower bounds and hardness magnification for minimum circuit size",
+      "scope_note": "Circuit lower bounds and hardness magnification for minimum circuit size",
+      "primitives": [
+        {
+          "primitive_id": "problem.minimum-circuit-size",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Circuit lower bounds and hardness magnification for minimum circuit size"
+        },
+        {
+          "primitive_id": "framework.circuit-complexity",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Circuit lower bounds and hardness magnification for minimum circuit size"
+        },
+        {
+          "primitive_id": "task.tight-lower-bound",
+          "role": "task",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Circuit lower bounds and hardness magnification for minimum circuit size"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-ordered-limits",
+      "title": "Ordered Graph Limits and Their Applications",
+      "year": 2021,
+      "venue": "ITCS 2021",
+      "authors": [
+        "Omri Ben-Eliezer",
+        "Eldar Fischer",
+        "Amit Levi",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Graph limits with orderon representations and testing applications",
+      "scope_note": "Graph limits with orderon representations and testing applications",
+      "primitives": [
+        {
+          "primitive_id": "framework.ordered-graph-limits",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Graph limits with orderon representations and testing applications"
+        },
+        {
+          "primitive_id": "problem.graph-property-testing",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Graph limits with orderon representations and testing applications"
+        },
+        {
+          "primitive_id": "graph_class.random-graph",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Graph limits with orderon representations and testing applications"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-matching-worst",
+      "title": "Sensitivity Analysis of the Maximum Matching Problem",
+      "year": 2021,
+      "venue": "ITCS 2021",
+      "authors": [
+        "Yuichi Yoshida",
+        "Samson Zhou"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Worst-case output sensitivity bounds for matching under edge or vertex deletion",
+      "scope_note": "Worst-case output sensitivity bounds for matching under edge or vertex deletion",
+      "primitives": [
+        {
+          "primitive_id": "problem.maximum-matching",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Worst-case output sensitivity bounds for matching under edge or vertex deletion"
+        },
+        {
+          "primitive_id": "property.worst-case-algorithmic-sensitivity",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Worst-case output sensitivity bounds for matching under edge or vertex deletion"
+        },
+        {
+          "primitive_id": "assumption.single-edge-deletion",
+          "role": "assumption",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Worst-case output sensitivity bounds for matching under edge or vertex deletion"
+        },
+        {
+          "primitive_id": "assumption.single-vertex-deletion",
+          "role": "assumption",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Worst-case output sensitivity bounds for matching under edge or vertex deletion"
+        },
+        {
+          "primitive_id": "property.recourse-bound",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Worst-case output sensitivity bounds for matching under edge or vertex deletion"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-bandits-first-second",
+      "title": "Tight First- and Second-Order Regret Bounds for Adversarial Linear Bandits",
+      "year": 2020,
+      "venue": "NeurIPS 2020",
+      "authors": [
+        "Shinji Ito",
+        "Shuichi Hirahara",
+        "Tasuku Soma",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "First- and second-order bounds for adversarial linear bandit learning",
+      "scope_note": "First- and second-order bounds for adversarial linear bandit learning",
+      "primitives": [
+        {
+          "primitive_id": "model.linear-bandit",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: First- and second-order bounds for adversarial linear bandit learning"
+        },
+        {
+          "primitive_id": "property.regret",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: First- and second-order bounds for adversarial linear bandit learning"
+        },
+        {
+          "primitive_id": "technique.multiplicative-weights-update",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: First- and second-order bounds for adversarial linear bandit learning"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-local-submod",
+      "title": "Weakly Submodular Function Maximization Using Local Submodularity Ratio",
+      "year": 2020,
+      "venue": "ISAAC 2020",
+      "authors": [
+        "Richard Santiago",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Approximation of weakly submodular objectives with local ratios",
+      "scope_note": "Approximation of weakly submodular objectives with local ratios",
+      "primitives": [
+        {
+          "primitive_id": "problem.value-oracle-submodular-maximization",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Approximation of weakly submodular objectives with local ratios"
+        },
+        {
+          "primitive_id": "property.local-submodularity-ratio",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Approximation of weakly submodular objectives with local ratios"
+        },
+        {
+          "primitive_id": "technique.greedy-approximation",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Approximation of weakly submodular objectives with local ratios"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-private-submod",
+      "title": "Fast and Private Submodular and k-Submodular Functions Maximization with Matroid Constraints",
+      "year": 2020,
+      "venue": "ICML 2020",
+      "authors": [
+        "Akbar Rafiey",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Privacy-preserving submodular optimization subject to matroid constraints",
+      "scope_note": "Privacy-preserving submodular optimization subject to matroid constraints",
+      "primitives": [
+        {
+          "primitive_id": "problem.value-oracle-submodular-maximization",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Privacy-preserving submodular optimization subject to matroid constraints"
+        },
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Privacy-preserving submodular optimization subject to matroid constraints"
+        },
+        {
+          "primitive_id": "property.approximation-ratio",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Privacy-preserving submodular optimization subject to matroid constraints"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-spectral-stable",
+      "title": "Average Sensitivity of Spectral Clustering",
+      "year": 2020,
+      "venue": "KDD 2020",
+      "authors": [
+        "Pan Peng",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Stability of spectral clustering under edge perturbations, related to Laplacian eigenvalues",
+      "scope_note": "Stability of spectral clustering under edge perturbations, related to Laplacian eigenvalues",
+      "primitives": [
+        {
+          "primitive_id": "problem.spectral-clustering",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stability of spectral clustering under edge perturbations, related to Laplacian eigenvalues"
+        },
+        {
+          "primitive_id": "property.average-algorithmic-sensitivity",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stability of spectral clustering under edge perturbations, related to Laplacian eigenvalues"
+        },
+        {
+          "primitive_id": "property.spectral-gap",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stability of spectral clustering under edge perturbations, related to Laplacian eigenvalues"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-real-linearity",
+      "title": "Distribution-Free Testing of Linear Functions on R^n",
+      "year": 2020,
+      "venue": "ITCS 2020",
+      "authors": [
+        "Noah Fleming",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Linearity testing over reals with unknown input distribution",
+      "scope_note": "Linearity testing over reals with unknown input distribution",
+      "primitives": [
+        {
+          "primitive_id": "problem.linearity-testing",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Linearity testing over reals with unknown input distribution"
+        },
+        {
+          "primitive_id": "model.distribution-testing-model",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Linearity testing over reals with unknown input distribution"
+        },
+        {
+          "primitive_id": "property.query-complexity-of-testing",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Linearity testing over reals with unknown input distribution"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-homomorphism",
+      "title": "Testability of Homomorphism Inadmissibility: Property Testing Meets Database Theory",
+      "year": 2019,
+      "venue": "PODS 2019",
+      "authors": [
+        "Hubie Chen",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Relational homomorphism property testing with graph and database interpretations",
+      "scope_note": "Relational homomorphism property testing with graph and database interpretations",
+      "primitives": [
+        {
+          "primitive_id": "problem.homomorphism-testing",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Relational homomorphism property testing with graph and database interpretations"
+        },
+        {
+          "primitive_id": "problem.graph-property-testing",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Relational homomorphism property testing with graph and database interpretations"
+        },
+        {
+          "primitive_id": "property.query-complexity-of-testing",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Relational homomorphism property testing with graph and database interpretations"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-centrality",
+      "title": "Sensitivity Analysis of Centralities on Unweighted Networks",
+      "year": 2019,
+      "venue": "WWW 2019",
+      "authors": [
+        "Shogo Murai",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Numerical sensitivity of graph centrality values; not algorithmic output-set sensitivity",
+      "scope_note": "Numerical sensitivity of graph centrality values; not algorithmic output-set sensitivity",
+      "primitives": [
+        {
+          "primitive_id": "property.centrality-sensitivity",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Numerical sensitivity of graph centrality values; not algorithmic output-set sensitivity"
+        },
+        {
+          "primitive_id": "assumption.single-edge-deletion",
+          "role": "assumption",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Numerical sensitivity of graph centrality values; not algorithmic output-set sensitivity"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-stochastic-dist",
+      "title": "Stochastic Distance in Property Testing",
+      "year": 2024,
+      "venue": "RANDOM 2024",
+      "authors": [
+        "Uri Meir",
+        "Gregory Schwartzman",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Stochastic distance applied to connectivity property testing in CONGEST",
+      "scope_note": "Stochastic distance applied to connectivity property testing in CONGEST",
+      "primitives": [
+        {
+          "primitive_id": "property.stochastic-distance",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stochastic distance applied to connectivity property testing in CONGEST"
+        },
+        {
+          "primitive_id": "problem.graph-property-testing",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stochastic distance applied to connectivity property testing in CONGEST"
+        },
+        {
+          "primitive_id": "model.congest-model",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stochastic distance applied to connectivity property testing in CONGEST"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-lip-alloc",
+      "title": "Lipschitz Continuous Allocations for Optimization Games",
+      "year": 2024,
+      "venue": "ICALP 2024",
+      "authors": [
+        "Soh Kumabe",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Stable allocations in cooperative optimization games through Lipschitz bounds",
+      "scope_note": "Stable allocations in cooperative optimization games through Lipschitz bounds",
+      "primitives": [
+        {
+          "primitive_id": "model.optimization-game",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable allocations in cooperative optimization games through Lipschitz bounds"
+        },
+        {
+          "primitive_id": "property.lipschitz-constant",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable allocations in cooperative optimization games through Lipschitz bounds"
+        },
+        {
+          "primitive_id": "property.approximate-core",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable allocations in cooperative optimization games through Lipschitz bounds"
+        },
+        {
+          "primitive_id": "problem.maximum-matching",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable allocations in cooperative optimization games through Lipschitz bounds"
+        },
+        {
+          "primitive_id": "problem.minimum-spanning-tree",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable allocations in cooperative optimization games through Lipschitz bounds"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-spreading",
+      "title": "Testing Spreading Behavior in Networks with Arbitrary Topologies",
+      "year": 2024,
+      "venue": "ICALP 2024",
+      "authors": [
+        "Augusto Modanese",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Dynamic network property testing with a bootstrap-percolation rule",
+      "scope_note": "Dynamic network property testing with a bootstrap-percolation rule",
+      "primitives": [
+        {
+          "primitive_id": "model.bootstrap-percolation",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Dynamic network property testing with a bootstrap-percolation rule"
+        },
+        {
+          "primitive_id": "problem.spreading-rule-testing",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Dynamic network property testing with a bootstrap-percolation rule"
+        },
+        {
+          "primitive_id": "property.query-complexity-of-testing",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Dynamic network property testing with a bootstrap-percolation rule"
+        }
+      ]
+    },
+    {
+      "id": "verified-yoshida-stable-maxcover",
+      "title": "Stable Max Coverage Under a Cardinality Constraint",
+      "year": 2026,
+      "venue": "NeurIPS 2026",
+      "authors": [
+        "Themistoklis Haris",
+        "Fabian Christian Spaeh",
+        "Nithin Varma",
+        "Yuichi Yoshida"
+      ],
+      "status": "published",
+      "source_id": "author-yoshida-conferences",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Stable maximum coverage from entropy-regularized relaxation and common-seed rounding",
+      "scope_note": "Stable maximum coverage from entropy-regularized relaxation and common-seed rounding",
+      "primitives": [
+        {
+          "primitive_id": "problem.maximum-coverage",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable maximum coverage from entropy-regularized relaxation and common-seed rounding"
+        },
+        {
+          "primitive_id": "property.solution-stability",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable maximum coverage from entropy-regularized relaxation and common-seed rounding"
+        },
+        {
+          "primitive_id": "property.approximation-ratio",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Stable maximum coverage from entropy-regularized relaxation and common-seed rounding"
+        }
+      ]
+    },
+    {
+      "id": "verified-dinitz-reception-cap",
+      "title": "Reception Capacity: Definitions, Game Theory, and Hardness",
+      "year": 2019,
+      "venue": "ALGOSENSORS 2019",
+      "authors": [
+        "Naomi Ephraim",
+        "Michael Dinitz"
+      ],
+      "status": "published",
+      "source_id": "author-dinitz-publications",
+      "url": "https://www.cs.jhu.edu/~mdinitz/pub.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Wireless reception capacity, inefficiency at coarse-correlated equilibrium and lower bounds",
+      "scope_note": "Wireless reception capacity, inefficiency at coarse-correlated equilibrium and lower bounds",
+      "primitives": [
+        {
+          "primitive_id": "problem.network-capacity",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Wireless reception capacity, inefficiency at coarse-correlated equilibrium and lower bounds"
+        },
+        {
+          "primitive_id": "equilibrium.coarse-correlated-equilibrium",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Wireless reception capacity, inefficiency at coarse-correlated equilibrium and lower bounds"
+        },
+        {
+          "primitive_id": "task.tight-lower-bound",
+          "role": "task",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Wireless reception capacity, inefficiency at coarse-correlated equilibrium and lower bounds"
+        }
+      ]
+    },
+    {
+      "id": "verified-dinitz-mobile-cap",
+      "title": "The Capacity of Smartphone Peer-to-Peer Networks",
+      "year": 2019,
+      "venue": "DISC 2019",
+      "authors": [
+        "Michael Dinitz",
+        "Magnús Halldórsson",
+        "Calvin Newport",
+        "Alex Weaver"
+      ],
+      "status": "published",
+      "source_id": "author-dinitz-publications",
+      "url": "https://www.cs.jhu.edu/~mdinitz/pub.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Peer-to-peer communication under the mobile telephone model and throughput capacity",
+      "scope_note": "Peer-to-peer communication under the mobile telephone model and throughput capacity",
+      "primitives": [
+        {
+          "primitive_id": "problem.network-capacity",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Peer-to-peer communication under the mobile telephone model and throughput capacity"
+        },
+        {
+          "primitive_id": "model.mobile-telephone-network",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Peer-to-peer communication under the mobile telephone model and throughput capacity"
+        },
+        {
+          "primitive_id": "property.round-complexity",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Peer-to-peer communication under the mobile telephone model and throughput capacity"
+        }
+      ]
+    },
+    {
+      "id": "verified-dinitz-degree-norm-spanner",
+      "title": "Approximating the Norms of Graph Spanners",
+      "year": 2019,
+      "venue": "APPROX 2019",
+      "authors": [
+        "Eden Chlamtáč",
+        "Michael Dinitz",
+        "Thomas Robinson"
+      ],
+      "status": "published",
+      "source_id": "author-dinitz-publications",
+      "url": "https://www.cs.jhu.edu/~mdinitz/pub.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Spanner optimization measured by norms of graph degrees",
+      "scope_note": "Spanner optimization measured by norms of graph degrees",
+      "primitives": [
+        {
+          "primitive_id": "problem.graph-spanner",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Spanner optimization measured by norms of graph degrees"
+        },
+        {
+          "primitive_id": "property.degree-vector-norm",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Spanner optimization measured by norms of graph degrees"
+        },
+        {
+          "primitive_id": "property.spanner-stretch",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Spanner optimization measured by norms of graph degrees"
+        },
+        {
+          "primitive_id": "task.approximation-algorithm",
+          "role": "task",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Spanner optimization measured by norms of graph degrees"
+        }
+      ]
+    },
+    {
+      "id": "verified-dinitz-lowdiam-expander",
+      "title": "Large Low-Diameter Graphs are Good Expanders",
+      "year": 2018,
+      "venue": "ESA 2018",
+      "authors": [
+        "Michael Dinitz",
+        "Michael Schapira",
+        "Gal Shahaf"
+      ],
+      "status": "published",
+      "source_id": "author-dinitz-publications",
+      "url": "https://www.cs.jhu.edu/~mdinitz/pub.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Relations between low diameter and expansion in large graphs",
+      "scope_note": "Relations between low diameter and expansion in large graphs",
+      "primitives": [
+        {
+          "primitive_id": "graph_class.expander-graph",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Relations between low diameter and expansion in large graphs"
+        },
+        {
+          "primitive_id": "property.diameter",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Relations between low diameter and expansion in large graphs"
+        },
+        {
+          "primitive_id": "property.expansion",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Relations between low diameter and expansion in large graphs"
+        }
+      ]
+    },
+    {
+      "id": "verified-dinitz-epidemic-control",
+      "title": "Controlling Epidemic Spread using Probabilistic Diffusion Models on Networks",
+      "year": 2022,
+      "venue": "AISTATS 2022",
+      "authors": [
+        "Amy Babay",
+        "Michael Dinitz",
+        "Aravind Srinivasan",
+        "Leonidas Tsepenekas",
+        "Anil Vullikanti"
+      ],
+      "status": "published",
+      "source_id": "author-dinitz-publications",
+      "url": "https://www.cs.jhu.edu/~mdinitz/pub.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Edge/vertex interventions under stochastic epidemic diffusion; not bootstrap percolation",
+      "scope_note": "Edge/vertex interventions under stochastic epidemic diffusion; not bootstrap percolation",
+      "primitives": [
+        {
+          "primitive_id": "model.stochastic-diffusion",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Edge/vertex interventions under stochastic epidemic diffusion; not bootstrap percolation"
+        },
+        {
+          "primitive_id": "problem.graph-cut",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Edge/vertex interventions under stochastic epidemic diffusion; not bootstrap percolation"
+        },
+        {
+          "primitive_id": "assumption.single-edge-deletion",
+          "role": "assumption",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Edge/vertex interventions under stochastic epidemic diffusion; not bootstrap percolation"
+        }
+      ]
+    },
+    {
+      "id": "verified-outside-ml-predictions",
+      "title": "Improving Online Algorithms via ML Predictions",
+      "year": 2018,
+      "venue": "NeurIPS 2018",
+      "authors": [
+        "Manish Purohit",
+        "Zoya Svitkina",
+        "Ravi Kumar"
+      ],
+      "status": "published",
+      "source_id": "paper-purohit-2018",
+      "url": "https://proceedings.neurips.cc/paper/2018/hash/73a427badebe0e32caa2e1fc7530b7f3-Abstract.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Foundational prediction-augmented ski rental and nonclairvoyant scheduling",
+      "scope_note": "Foundational prediction-augmented ski rental and nonclairvoyant scheduling",
+      "primitives": [
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Foundational prediction-augmented ski rental and nonclairvoyant scheduling"
+        },
+        {
+          "primitive_id": "problem.ski-rental",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Foundational prediction-augmented ski rental and nonclairvoyant scheduling"
+        },
+        {
+          "primitive_id": "problem.online-scheduling",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Foundational prediction-augmented ski rental and nonclairvoyant scheduling"
+        },
+        {
+          "primitive_id": "property.prediction-robustness",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Foundational prediction-augmented ski rental and nonclairvoyant scheduling"
+        }
+      ]
+    },
+    {
+      "id": "verified-outside-caching-advice",
+      "title": "Competitive Caching with Machine Learned Advice",
+      "year": 2018,
+      "venue": "ICML 2018",
+      "authors": [
+        "Thodoris Lykouris",
+        "Sergei Vassilvitskii"
+      ],
+      "status": "published",
+      "source_id": "paper-lykouris-2018",
+      "url": "https://proceedings.mlr.press/v80/lykouris18a.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Learning-augmented caching with gracefully degrading robustness",
+      "scope_note": "Learning-augmented caching with gracefully degrading robustness",
+      "primitives": [
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Learning-augmented caching with gracefully degrading robustness"
+        },
+        {
+          "primitive_id": "problem.caching-problem",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Learning-augmented caching with gracefully degrading robustness"
+        },
+        {
+          "primitive_id": "property.competitive-ratio",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Learning-augmented caching with gracefully degrading robustness"
+        },
+        {
+          "primitive_id": "property.prediction-robustness",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Learning-augmented caching with gracefully degrading robustness"
+        }
+      ]
+    },
+    {
+      "id": "verified-outside-online-matching-advice",
+      "title": "Online bipartite matching with imperfect advice",
+      "year": 2024,
+      "venue": "ICML 2024",
+      "authors": [
+        "Davin Choo",
+        "Themistoklis Gouleakis",
+        "Chun Kai Ling",
+        "Arnab Bhattacharyya"
+      ],
+      "status": "published",
+      "source_id": "paper-choo-2024",
+      "url": "https://proceedings.mlr.press/v235/choo24a.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Learning-augmented matching under adversarial and random arrivals",
+      "scope_note": "Learning-augmented matching under adversarial and random arrivals",
+      "primitives": [
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Learning-augmented matching under adversarial and random arrivals"
+        },
+        {
+          "primitive_id": "problem.online-bipartite-matching",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Learning-augmented matching under adversarial and random arrivals"
+        },
+        {
+          "primitive_id": "model.random-order-model",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Learning-augmented matching under adversarial and random arrivals"
+        },
+        {
+          "primitive_id": "property.prediction-consistency",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Learning-augmented matching under adversarial and random arrivals"
+        },
+        {
+          "primitive_id": "property.prediction-robustness",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Learning-augmented matching under adversarial and random arrivals"
+        }
+      ]
+    },
+    {
+      "id": "verified-outside-fractional-matching",
+      "title": "Learning-Augmented Online Bipartite Fractional Matching",
+      "year": 2025,
+      "venue": "NeurIPS 2025",
+      "authors": [
+        "XianJun Davin Choo",
+        "Billy Jin",
+        "Yongho Shin"
+      ],
+      "status": "published",
+      "source_id": "paper-choo-2025",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/0b8705a611ed1ce19cdb759031078705-Abstract-Conference.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Fractional online matching with a robustness-consistency Pareto tradeoff",
+      "scope_note": "Fractional online matching with a robustness-consistency Pareto tradeoff",
+      "primitives": [
+        {
+          "primitive_id": "lens.prediction",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Fractional online matching with a robustness-consistency Pareto tradeoff"
+        },
+        {
+          "primitive_id": "problem.online-bipartite-matching",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Fractional online matching with a robustness-consistency Pareto tradeoff"
+        },
+        {
+          "primitive_id": "model.fractional-online-matching",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Fractional online matching with a robustness-consistency Pareto tradeoff"
+        },
+        {
+          "primitive_id": "property.prediction-robustness",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Fractional online matching with a robustness-consistency Pareto tradeoff"
+        },
+        {
+          "primitive_id": "property.prediction-consistency",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Fractional online matching with a robustness-consistency Pareto tradeoff"
+        }
+      ]
+    },
+    {
+      "id": "verified-outside-euclidean-private-mst",
+      "title": "Differentially Private Minimum Spanning Tree in Euclidean Graphs",
+      "year": 2026,
+      "venue": "AISTATS 2026",
+      "authors": [
+        "Zongrui Zou",
+        "Alessandro Epasto",
+        "Chenglin Fan",
+        "Rudrajit Das"
+      ],
+      "status": "published",
+      "source_id": "paper-zou-2026",
+      "url": "https://proceedings.mlr.press/v300/zou26a.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Privacy for Euclidean graph minimum spanning trees with point-distance adjacency",
+      "scope_note": "Privacy for Euclidean graph minimum spanning trees with point-distance adjacency",
+      "primitives": [
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Privacy for Euclidean graph minimum spanning trees with point-distance adjacency"
+        },
+        {
+          "primitive_id": "problem.private-minimum-spanning-tree",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Privacy for Euclidean graph minimum spanning trees with point-distance adjacency"
+        },
+        {
+          "primitive_id": "problem.minimum-spanning-tree",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Privacy for Euclidean graph minimum spanning trees with point-distance adjacency"
+        },
+        {
+          "primitive_id": "property.additive-error",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Privacy for Euclidean graph minimum spanning trees with point-distance adjacency"
+        }
+      ]
+    },
+    {
+      "id": "verified-outside-private-expander",
+      "title": "Breaking the n^1.5 Additive Error Barrier for Private and Efficient Graph Sparsification via Private Expander Decomposition",
+      "year": 2025,
+      "venue": "ICML 2025",
+      "authors": [
+        "Anders Aamand",
+        "Justin Y. Chen",
+        "Mina Dalirrooyfard",
+        "Slobodan Mitrović",
+        "Yuriy Nevmyvaka",
+        "Sandeep Silwal",
+        "Yinzhan Xu"
+      ],
+      "status": "published",
+      "source_id": "paper-aamand-2025",
+      "url": "https://proceedings.mlr.press/v267/aamand25b",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Private graph cut sparsification using expander decomposition and additive error control",
+      "scope_note": "Private graph cut sparsification using expander decomposition and additive error control",
+      "primitives": [
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Private graph cut sparsification using expander decomposition and additive error control"
+        },
+        {
+          "primitive_id": "problem.private-cut-sparsification",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Private graph cut sparsification using expander decomposition and additive error control"
+        },
+        {
+          "primitive_id": "technique.private-expander-decomposition",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Private graph cut sparsification using expander decomposition and additive error control"
+        },
+        {
+          "primitive_id": "property.additive-error",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Private graph cut sparsification using expander decomposition and additive error control"
+        }
+      ]
+    },
+    {
+      "id": "verified-outside-continual-densest",
+      "title": "Continual Release of Densest Subgraphs: Privacy Amplification & Sublinear Space via Subsampling",
+      "year": 2026,
+      "venue": "SOSA 2026",
+      "authors": [
+        "Felix Zhou"
+      ],
+      "status": "published",
+      "source_id": "paper-zhou-2026",
+      "url": "https://doi.org/10.1137/1.9781611978964.13",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "official_or_publisher_listing",
+      "provenance": "2026-11-13 official author abstract / publisher source",
+      "abstract_scope": "Continual private densest subgraph with streaming space and subsampling",
+      "scope_note": "Continual private densest subgraph with streaming space and subsampling",
+      "primitives": [
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Continual private densest subgraph with streaming space and subsampling"
+        },
+        {
+          "primitive_id": "problem.densest-subgraph",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Continual private densest subgraph with streaming space and subsampling"
+        },
+        {
+          "primitive_id": "model.continual-release",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Continual private densest subgraph with streaming space and subsampling"
+        },
+        {
+          "primitive_id": "technique.privacy-amplification-by-subsampling",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Role checked against publication abstract: Continual private densest subgraph with streaming space and subsampling"
+        }
+      ]
     }
   ]
 }
