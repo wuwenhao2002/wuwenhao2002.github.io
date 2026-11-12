@@ -41,8 +41,12 @@ jobs:
           with sqlite3.connect('/tmp/tcs-ontology-ci.sqlite') as conn:
               assert not conn.execute('PRAGMA foreign_key_check').fetchall()
               assert conn.execute('SELECT COUNT(*) FROM primitive').fetchone()[0] >= 500
+              assert conn.execute('SELECT COUNT(*) FROM imported_paper').fetchone()[0] >= 100
           PY
       - name: Check browser JavaScript syntax
         run: |
           node --check tcs-ontology/app.js
           node --check tcs-ontology/map.js
+          node --check tcs-ontology/map-model.js
+          node --test tcs-ontology/tests/test_graph.cjs tcs-ontology/tests/test_graph_corpus.cjs
+

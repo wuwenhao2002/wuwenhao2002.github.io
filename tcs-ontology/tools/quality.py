@@ -201,6 +201,35 @@ def audit(db: dict[str, list[dict]]) -> list[str]:
             assigned.add(primitive)
             if role not in {"problem","lens","model","metric","technique","assumption","task"}:
                 errors.append("paper invalid concept role: " + str(pid) + "/" + str(role))
+    imported_ids=set()
+    for paper in db.get("papers-harvested", []):
+        pid=paper.get("id")
+        if pid in imported_ids:
+            errors.append("duplicate harvested paper: "+str(pid))
+        imported_ids.add(pid)
+        if paper.get("review_status")!="title_inferred_unverified":
+            errors.append("harvested paper incorrectly claimed as reviewed: "+str(pid))
+        if paper.get("metadata_source") not in ("Crossref REST API","DBLP search API","DBLP author XML"):
+            errors.append("unsupported paper metadata source: "+str(pid))
+        if not paper.get("title") or not paper.get("url") or not paper.get("venue"):
+            errors.append("incomplete harvested record: "+str(pid))
+        if not str(paper.get("url","")).startswith("https://"):
+            errors.append("insecure harvested paper URL: "+str(pid))
+        if not isinstance(paper.get("year"),int) or not 2018<=paper["year"]<=2026:
+            errors.append("harvested paper outside included years: "+str(pid))
+        labels=paper.get("primitives",[])
+        if len(labels)<2:
+            errors.append("harvested paper with too few distinct title labels: "+str(pid))
+        values=set()
+        for ref in labels:
+            rid=ref.get("primitive_id")
+            if rid not in ids:
+                errors.append("harvested paper invalid primitive: "+str(pid)+"/"+str(rid))
+            if rid in values:
+                errors.append("harvested paper duplicate primitive: "+str(pid)+"/"+str(rid))
+            values.add(rid)
+            if ref.get("evidence")!="title_exact_phrase":
+                errors.append("harvested paper lacks title-evidence flag: "+str(pid)+"/"+str(rid))
     return errors
 
 
@@ -222,6 +251,7 @@ def report(db: dict[str, list[dict]]) -> dict[str, Any]:
         "redirects": len(db.get("redirects", [])),
         "sources": len(db["sources"]),
         "indexed_papers": len(db.get("papers", [])),
+        "title_inferred_papers": len(db.get("papers-harvested", [])),
         "paper_primitive_links": sum(len(p["primitives"]) for p in db.get("papers", [])),
         "unreviewed_examples": [p["id"] for p in items if p["review_status"]=="needs_definition"][:20],
     }

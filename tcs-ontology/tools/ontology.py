@@ -41,7 +41,7 @@ def load(name: str) -> list[dict]:
 def catalog() -> dict[str, list[dict]]:
     return {k: load(k) for k in (
         "primitives", "relationships", "rules", "literature", "sources",
-        "results", "redirects", "papers",
+        "results", "redirects", "papers", "papers-harvested",
     )}
 
 
@@ -283,6 +283,22 @@ def export_sqlite(db: dict, outfile: Path) -> None:
         CREATE TABLE checked_result (id TEXT PRIMARY KEY, statement TEXT NOT NULL, scope_note TEXT NOT NULL, json TEXT NOT NULL);
         CREATE TABLE paper (id TEXT PRIMARY KEY,title TEXT NOT NULL,year INTEGER NOT NULL,venue TEXT NOT NULL,source_id TEXT NOT NULL REFERENCES source(id),scope_note TEXT NOT NULL);
         CREATE TABLE paper_primitive (paper_id TEXT NOT NULL REFERENCES paper(id),primitive_id TEXT NOT NULL REFERENCES primitive(id),role TEXT NOT NULL,PRIMARY KEY(paper_id,primitive_id));
+        CREATE TABLE imported_paper (
+          id TEXT PRIMARY KEY,
+          title TEXT NOT NULL,
+          year INTEGER NOT NULL,
+          venue TEXT NOT NULL,
+          paper_url TEXT NOT NULL,
+          review_status TEXT NOT NULL,
+          source TEXT NOT NULL
+        );
+        CREATE TABLE imported_paper_primitive (
+          paper_id TEXT NOT NULL REFERENCES imported_paper(id),
+          primitive_id TEXT NOT NULL REFERENCES primitive(id),
+          role TEXT NOT NULL,
+          PRIMARY KEY (paper_id, primitive_id)
+        );
+        CREATE INDEX idx_imported_primitive_id ON imported_paper_primitive(primitive_id);
         CREATE INDEX idx_primitive_name ON primitive(name);
         CREATE INDEX idx_primitive_kind ON primitive(kind);
         CREATE INDEX idx_primitive_area ON primitive_area(area);
@@ -322,6 +338,13 @@ def export_sqlite(db: dict, outfile: Path) -> None:
                         (paper["id"], paper["title"], paper["year"], paper["venue"], paper["source_id"], paper["scope_note"]))
             for ref in paper["primitives"]:
                 con.execute("INSERT INTO paper_primitive VALUES (?,?,?)",
+                            (paper["id"], ref["primitive_id"], ref["role"]))
+        for paper in db.get("papers-harvested", []):
+            con.execute("INSERT INTO imported_paper VALUES (?,?,?,?,?,?,?)",
+                        (paper["id"], paper["title"], paper["year"], paper["venue"],
+                         paper["url"], paper["review_status"], paper["metadata_source"]))
+            for ref in paper["primitives"]:
+                con.execute("INSERT INTO imported_paper_primitive VALUES (?,?,?)",
                             (paper["id"], ref["primitive_id"], ref["role"]))
     print(f"Created {outfile} ({len(db['primitives'])} primitives)")
 

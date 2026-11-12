@@ -1,0 +1,271 @@
+{
+  "schema_version": "0.4.1",
+  "description": "Excluded automatically proposed bibliographic matches with editorial exclusion reasons; does not imply publications are irrelevant scientifically.",
+  "items": [
+    {
+      "id": "crossref:10.1007/978-981-92-3507-0_16",
+      "title": "Consistency-Regularized Graph Matching",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.21203/rs.3.rs-7262145/v1",
+      "title": "Fault-Tolerant Quantum Communication over r-Robust Graph Topologies under Adversarial and Noisy Conditions",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.3389/fpubh.2025.1644499",
+      "title": "Online bipartite matching methodology for anti-epidemic resources allocation: an adaptive time window based on reinforcement learning",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.2139/ssrn.7137178",
+      "title": "Regret-Robust Newsvendor Model for a Trade Agent",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.2139/ssrn.6873360",
+      "title": "Substitution-Dependent Distributional Rental Duration Prediction in Robust Vehicle Inventory Optimization",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.46793/match.97-2.14426",
+      "title": "The Maximal Matching Polynomial of Hexacyclic Systems",
+      "reason": "matching polynomial is a distinct invariant, not the matching-algorithm primitive"
+    },
+    {
+      "id": "crossref:10.1016/j.asoc.2026.116835",
+      "title": "TrustAgent-EDU: Public-reference graph learning for auditable student dropout prediction under differential privacy",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1007/978-3-032-12290-2_12",
+      "title": "Differentially Private Compression and the Sensitivity of LZ77",
+      "reason": "fewer than two unambiguous primitive terms after contextual disambiguation"
+    },
+    {
+      "id": "crossref:10.52202/085713-4140",
+      "title": "ForceFM: Enhancing Protein-Ligand Predictions through Force-Guided Flow Matching",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1145/3744715.3744721",
+      "title": "Guest Column: PAC Learning is just Bipartite Matching (Sort of)",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.18653/v1/2025.nlperspectives-1.17",
+      "title": "LPI-RIT at LeWiDi-2025: Improving Distributional Predictions via Metadata and Loss Reweighting with DisCo",
+      "reason": "applied prediction or statistical sensitivity outside target graph/algorithmic theory"
+    },
+    {
+      "id": "crossref:10.2298/fil2533981c",
+      "title": "Maximal matching polynomials of phenylene and benzenoid chains",
+      "reason": "matching polynomial is a distinct invariant, not the matching-algorithm primitive"
+    },
+    {
+      "id": "crossref:10.1186/s13059-025-03644-0",
+      "title": "Mumemto: efficient maximal matching across pangenomes",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.55041/ijsrem55406",
+      "title": "OPTI-Recourse: Interpretable Credit Risk Prediction and Actionable Recourse",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1016/j.disc.2025.114547",
+      "title": "On the roots of maximal matching polynomials",
+      "reason": "matching polynomial is a distinct invariant, not the matching-algorithm primitive"
+    },
+    {
+      "id": "crossref:10.1007/978-3-032-04584-3_26",
+      "title": "Robust Distributed Robotic Matching",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1002/oca.3323",
+      "title": "Shapley Effects as a Global Sensitivity Metric for Robust Design and Control",
+      "reason": "applied prediction or statistical sensitivity outside target graph/algorithmic theory"
+    },
+    {
+      "id": "crossref:10.3390/electronics13244950",
+      "title": "Enhanced Kalman Filter with Dummy Nodes and Prediction Confidence for Bipartite Graph Matching in 3D Multi-Object Tracking",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1609/socs.v17i1.31579",
+      "title": "Evaluating Distributional Predictions of Search Time: Put Up or Shut Up Games (Extended Abstract)",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1109/bibm62325.2024.10821930",
+      "title": "Graph Matching Based Graph Self-Supervised Learning for Molecular Property Prediction",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1007/s00199-024-01566-9",
+      "title": "Prediction algorithms in matching platforms",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1007/978-3-031-42697-1_10",
+      "title": "Average Sensitivity of Nested Canalizing Multivalued Functions",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1109/icsp58490.2023.10248619",
+      "title": "Emotional Polar Predictions Based on Matching Prompts",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.22199/issn.0717-6279-5608",
+      "title": "Maximal matching cover pebbling number for variants of hypercube",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.56726/irjmets46035",
+      "title": "ONLINE MAP MATCHING WITH ROUTE PREDICTION TO PREDICTING CRIME HOTSPOTS",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1007/s11280-023-01136-4",
+      "title": "Personalized sampling graph collection with local differential privacy for link prediction",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.3390/jcp2040042",
+      "title": "Calibrating the Attack to Sensitivity in Differentially Private Mechanisms",
+      "reason": "fewer than two unambiguous primitive terms after contextual disambiguation"
+    },
+    {
+      "id": "crossref:10.1186/s12859-022-04996-1",
+      "title": "Densest subgraph-based methods for protein-protein interaction hot spot prediction",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1145/3523227.3546781",
+      "title": "Dynamic Global Sensitivity for Differentially Private Contextual Bandits",
+      "reason": "fewer than two unambiguous primitive terms after contextual disambiguation"
+    },
+    {
+      "id": "crossref:10.1140/epjds/s13688-022-00356-4",
+      "title": "Explaining human mobility predictions through a pattern matching algorithm",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1109/trustcom56396.2022.00087",
+      "title": "Privacy-Preserving Robust Federated Learning with Distributed Differential Privacy",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1109/cvprw53098.2021.00509",
+      "title": "Detecting and Matching Related Objects with One Proposal Multiple Predictions",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.3390/su131910540",
+      "title": "Digital Destination Matching: Practices, Priorities and Predictions",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1051/ro/2021086",
+      "title": "Improved robust shortest paths by penalized investments",
+      "reason": "fewer than two unambiguous primitive terms after contextual disambiguation"
+    },
+    {
+      "id": "crossref:10.1145/3448016.3452813",
+      "title": "Residual Sensitivity for Differentially Private Multi-Way Joins",
+      "reason": "fewer than two unambiguous primitive terms after contextual disambiguation"
+    },
+    {
+      "id": "crossref:10.1109/isit45174.2021.9518151",
+      "title": "Robust Local Differential Privacy",
+      "reason": "fewer than two unambiguous primitive terms after contextual disambiguation"
+    },
+    {
+      "id": "crossref:10.1145/3465456.3467590",
+      "title": "Robust Repeated First Price Auctions",
+      "reason": "fewer than two unambiguous primitive terms after contextual disambiguation"
+    },
+    {
+      "id": "crossref:10.1016/b978-0-32-389863-8.00013-7",
+      "title": "Robust fault-tolerant attitude control",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1007/s42979-021-01001-z",
+      "title": "Some Consistency Rules for Graph Matching",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1109/mapr53640.2021.9585273",
+      "title": "Unweighted Bipartite Matching For Robust Vehicle Counting",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1016/j.biocontrol.2020.104217",
+      "title": "Ground-truthing climate-matching predictions in a post-release evaluation",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1109/ismar50242.2020.00036",
+      "title": "Learning Bipartite Graph Matching for Robust Visual Localization",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1111/cobi.13492",
+      "title": "Matching expert range maps with species distribution model predictions",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.3233/jhs-200635",
+      "title": "Prediction optimization of diffusion paths in social networks using integration of ant colony and densest subgraph algorithms",
+      "reason": "applied prediction or statistical sensitivity outside target graph/algorithmic theory"
+    },
+    {
+      "id": "crossref:10.1093/bioinformatics/btz373",
+      "title": "Representation transfer for differentially private drug sensitivity prediction",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1007/s10287-018-0313-1",
+      "title": "Distributionally robust simple integer recourse",
+      "reason": "fewer than two unambiguous primitive terms after contextual disambiguation"
+    },
+    {
+      "id": "crossref:10.1186/s13062-017-0203-4",
+      "title": "Efficient differentially private learning improves drug sensitivity prediction",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1007/jhep08(2018)090",
+      "title": "Higgs-boson plus dijets: higher-order matching for high-energy predictions",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1145/3191801.3191812",
+      "title": "Map-matching using shortest paths",
+      "reason": "fewer than two unambiguous primitive terms after contextual disambiguation"
+    },
+    {
+      "id": "crossref:10.1016/j.trb.2018.11.010",
+      "title": "Network congestion games are robust to variable demand",
+      "reason": "fewer than two unambiguous primitive terms after contextual disambiguation"
+    },
+    {
+      "id": "crossref:10.1109/tits.2018.2812147",
+      "title": "Online Map Matching With Route Prediction",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    },
+    {
+      "id": "crossref:10.1109/icdm.2018.00157",
+      "title": "Robust Densest Subgraph Discovery",
+      "reason": "fewer than two unambiguous primitive terms after contextual disambiguation"
+    },
+    {
+      "id": "crossref:10.1007/978-3-319-74953-2_8",
+      "title": "Time Predictions: Matching the Method to the Situation",
+      "reason": "non-TCS application, matching-homonym, or unreviewed domain ambiguity"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+name: Propose bibliographic refresh for review
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Retrieve publicly available bibliographic metadata
+        run: |
+          cd tcs-ontology
+          python3 tools/harvest_crossref.py --limit 3500 --rows 180
+          python3 tools/screen_papers.py
+          python3 tools/ontology.py validate
+          python3 -m unittest discover -s tests -v
+      - name: Create an isolated review branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="bibliography/crossref-refresh-${{ github.run_id }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add tcs-ontology/data/papers-harvested.json tcs-ontology/data/papers-rejected.json
+          if git diff --cached --quiet; then
+            echo "No bibliographic changes"
+            exit 0
+          fi
+          git commit -m "data: propose title-derived bibliographic records for human review"
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" --title "Review: Crossref title-inferred bibliography refresh" \
+            --body "Unverified, title-derived suggestions only. Review uncertain primitive roles and venue scope before merging." || \
+            echo "PR creation disabled; review the pushed branch manually."

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.3.0",
+  "schema_version": "0.4.0",
   "updated_at": "2026-11-13",
   "provenance_note": "Mixed status: source_checked means an editorial source cross-check, not peer or expert review. Other primitives remain unverified candidates. No external bulk data copied.",
   "items": [
@@ -2138,6 +2138,23 @@
       "review_status": "source_checked",
       "reviewed_at": "2026-11-13",
       "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "framework.smoothed-analysis",
+      "name": "Smoothed Analysis",
+      "kind": "framework",
+      "areas": [
+        "Randomized Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Analyze algorithmic performance when an adversarial input is modified by a specified random perturbation.",
+      "scope_note": "Perturbation distribution and magnitude determine the model.",
+      "source_ids": [
+        "official-dinitz-publications"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_publication_curation_v0.4"
     },
     {
       "id": "framework.smoothness-framework",
@@ -5524,6 +5541,40 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "problem.graph-cut",
+      "name": "Graph Cut",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Study the edges crossing a vertex partition, with an optimization objective such as minimizing or maximizing crossing weight.",
+      "scope_note": "The cut objective and terminal constraints must be stated.",
+      "source_ids": [
+        "official-dinitz-publications"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_publication_curation_v0.4"
+    },
+    {
+      "id": "problem.graph-emulator",
+      "name": "Graph Emulator",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Construct a sparse graph, not necessarily a subgraph of the input, that approximately preserves pairwise distances.",
+      "scope_note": "Emulators may use new edges/weights; differ from spanners.",
+      "source_ids": [
+        "official-dinitz-publications"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_publication_curation_v0.4"
+    },
+    {
       "id": "problem.graph-isomorphism",
       "name": "Graph Isomorphism",
       "kind": "problem",
@@ -5537,6 +5588,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.graph-matching",
+      "name": "Graph Matching",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Find a set of graph edges with pairwise disjoint endpoints satisfying a stated optimization or maximality objective.",
+      "scope_note": "Maximum-cardinality matching and inclusion-wise maximal matching are distinct objectives; do not conflate them.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "bibliography_grounded_v0.4",
+      "source_ids": [
+        "graph-diestel"
+      ]
     },
     {
       "id": "problem.graph-property-testing",
@@ -5569,6 +5637,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.graph-spanner",
+      "name": "Graph Spanner",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Find or construct a sparse graph substructure that approximately preserves original pairwise distances.",
+      "scope_note": "Specify multiplicative stretch, edge or vertex faults, weights and directedness.",
+      "source_ids": [
+        "official-dinitz-publications"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_publication_curation_v0.4"
     },
     {
       "id": "problem.graph-sparsification",
@@ -5631,6 +5716,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.hopset",
+      "name": "Hopset Optimization",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Add auxiliary shortcut edges to approximately preserve pairwise distances using few hops while minimizing added edges.",
+      "scope_note": "Stretch, hopbound, directedness and allowed edge weights determine the problem.",
+      "source_ids": [
+        "official-dinitz-publications"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_publication_curation_v0.4"
     },
     {
       "id": "problem.integer-programming-feasibility",
@@ -5759,6 +5861,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.maximal-matching",
+      "name": "Maximal Matching",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Find a matching to which no additional edge can be added while preserving vertex-disjointness.",
+      "scope_note": "A maximal matching need not be a maximum-cardinality matching.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "bibliography_grounded_v0.4",
+      "source_ids": [
+        "graph-diestel"
+      ]
     },
     {
       "id": "problem.maximum-clique",
@@ -6940,6 +7059,23 @@
       "review_status": "source_checked",
       "reviewed_at": "2026-11-13",
       "provenance": "paper_curation_v0.3"
+    },
+    {
+      "id": "property.algorithmic-robustness",
+      "name": "Algorithmic Robustness",
+      "kind": "property",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A formal guarantee that an algorithm maintains bounded performance as an uncertainty or prediction parameter degrades.",
+      "scope_note": "Unlike an informal claim of robustness, must state the exact perturbation family and benchmark.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "bibliography_grounded_v0.4",
+      "source_ids": [
+        "p-dinitz-ski"
+      ]
     },
     {
       "id": "property.approximation-ratio",
@@ -8740,6 +8876,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.tail-risk",
+      "name": "Tail Risk",
+      "kind": "property",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A probabilistic upper-tail guarantee on an algorithm's realized cost or competitive ratio.",
+      "scope_note": "Fix threshold gamma and maximum allowed violation probability delta.",
+      "source_ids": [
+        "official-dinitz-publications"
+      ],
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_publication_curation_v0.4"
     },
     {
       "id": "property.teaching-dimension",
