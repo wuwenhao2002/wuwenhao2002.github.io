@@ -63,6 +63,7 @@
       "enum": [
         "seeded_definition_unverified",
         "needs_definition",
+        "source_checked",
         "expert_reviewed"
       ]
     },
@@ -71,6 +72,7 @@
     },
     "source_ids": {
       "type": "array",
+      "uniqueItems": true,
       "items": {
         "type": "string"
       }
@@ -86,6 +88,16 @@
       "items": {
         "type": "string"
       }
+    },
+    "scope_note": {
+      "type": "string"
+    },
+    "reviewed_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
     }
   }
 }
