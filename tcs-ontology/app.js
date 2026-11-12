@@ -15,7 +15,9 @@
     alertUser.t = setTimeout(() => t.classList.remove("show"), 3200); }
   function message(tag, cls, label) { return node(tag, cls, label); }
   function addLink(box, label, url, cls = "detail-link") {
-    const a = node("a", cls, label + " ↗"); a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer"; box.append(a); return a;
+    let safe; try { safe = new URL(url, window.location.href); } catch { return null; }
+    if (safe.protocol !== "https:") return null;
+    const a = node("a", cls, label + " ↗"); a.href = safe.href; a.target = "_blank"; a.rel = "noopener noreferrer"; box.append(a); return a;
   }
   function pill(box, title, klass = "") { box.append(node("span", "chip " + klass, title)); }
   function download(filename, data, type = "application/json") {
@@ -23,7 +25,21 @@
     const a = document.createElement("a"); a.href = url; a.download = filename; a.click();
     setTimeout(() => URL.revokeObjectURL(url), 600);
   }
-  function loadSaved() { try { const a = JSON.parse(localStorage.getItem(KEY) || "[]"); return Array.isArray(a) ? a : []; } catch { return []; } }
+  function loadSaved() {
+    try {
+      const current=localStorage.getItem(KEY);
+      if(current !== null) {
+        const value=JSON.parse(current);
+        return Array.isArray(value) ? value.filter(x=>x && typeof x.title==="string" && x.slots && x.rule_id) : [];
+      }
+      const legacy=JSON.parse(localStorage.getItem("tcs-ontology-saved") || "[]");
+      if (!Array.isArray(legacy)) return [];
+      const migrated=legacy.filter(x=>x && typeof x.title==="string" && x.slots && x.rule_id)
+        .map(x=>({...x,validation_status:x.validation_status||"legacy_candidate_unverified"}));
+      if(migrated.length) localStorage.setItem(KEY,JSON.stringify(migrated));
+      return migrated;
+    } catch { return []; }
+  }
   function persist(items) { try { localStorage.setItem(KEY, JSON.stringify(items)); return true; }
     catch { alertUser("Local storage unavailable: use Export saved JSON."); return false; } }
   function setView(id, scroll = true) {
