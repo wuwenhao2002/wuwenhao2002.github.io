@@ -1,17 +1,39 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Interactive TCS Ontology map with all primitive nodes and evidence-linked research lenses."><title>Primitive Map | TCS Ontology</title><link rel="stylesheet" href="./map.css"></head><body>
-<header class="top"><a class="brand" href="./">TCS<span>⋈</span>ONTOLOGY</a><div class="separator"></div><span class="tag">PRIMITIVE MAP <b>v0.3</b></span><div class="spacer"></div><a class="back" href="./">← Atlas</a><a class="back" href="./#primitive=lens.prediction">Prediction ↗</a></header>
-<main class="layout"><aside class="rail"><div class="eyebrow">A SPATIAL FIELD GUIDE TO THEORY</div><h1>Primitive<br><em>Universe.</em></h1><p class="summary">Explore every TCS concept as a clickable point. Research lenses connect domains, while paper evidence reveals combinations studied in practice.</p>
-<div class="metrics" id="metrics" aria-live="polite">Loading the atlas…</div>
-<label for="mapSearch" class="field">FIND A PRIMITIVE</label><input id="mapSearch" type="search" placeholder="Search prediction, sensitivity…" aria-label="Search primitives">
-<label for="mapArea" class="field">RESEARCH AREA</label><select id="mapArea"><option value="">All research areas</option></select>
-<label for="mapStatus" class="field">REVIEW STATUS</label><select id="mapStatus"><option value="all">All primitives</option><option value="source_checked">Source-checked only</option></select>
-<div class="hint"><span class="swatch lens"></span><span>Research lens</span><span class="swatch checked"></span><span>Source-checked</span><span class="swatch draft"></span><span>Candidate</span></div>
-<div class="rail-note">Node positions reflect <b>research area groupings</b>, not semantic embedding distances. Motion is decorative, not evidence. Paper connections are editorial classifications, not novelty claims.</div>
-<div class="field">SEARCH RESULTS / KEYBOARD ACCESS</div><div id="mapMatches" class="matches" role="list" aria-label="Matching primitives"></div></aside>
-<section class="universe"><div class="stage-head"><div><span class="eyebrow">INTERACTIVE KNOWLEDGE MAP</span><h2 id="mapHeading">All concepts</h2></div><div class="stage-actions"><button id="zoomIn" aria-label="Zoom in">+</button><button id="zoomOut" aria-label="Zoom out">−</button><button id="resetView">Fit</button><button id="motionToggle" aria-pressed="false">Pause motion</button></div></div>
-<div id="stage" class="stage" tabindex="0" role="application" aria-label="Interactive ontology map. Drag to pan, scroll to zoom, click a node to inspect. Use the searchable list at left for keyboard access.">
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="TCS Ontology Paper-driven Research Graph: select multiple primitives, explore co-occurrence in indexed papers."><title>Paper-driven Research Graph · TCS Ontology</title><link rel="stylesheet" href="./map.css"></head>
+<body><header class="top"><a class="brand" href="./">TCS<span>⋈</span>ONTOLOGY</a><div class="separator"></div><span class="tag">PAPER-DRIVEN RESEARCH GRAPH</span><div class="spacer"></div><a class="back" href="./">← Primitive Explorer</a></header>
+<main class="layout">
+<aside class="rail">
+<div class="eyebrow">EXPLORE BY PRIMITIVE</div><h1>Research<br><em>Graph.</em></h1>
+<p class="summary">Select one or more concepts. Connected concepts are those appearing together in indexed papers. The paper list requires <strong>every selected concept</strong>.</p>
+<label class="field" for="mapSearch">FIND PRIMITIVES</label><input id="mapSearch" type="search" placeholder="Prediction, Privacy, Matching…" autocomplete="off">
+<label class="field" for="mapArea">AREA</label><select id="mapArea"><option value="">All areas</option></select>
+<label class="field" for="mapStatus">PRIMITIVE REVIEW</label><select id="mapStatus"><option value="all">All primitives</option><option value="source_checked">Source-checked only</option></select>
+<div class="field">MATCHING PRIMITIVES</div><div id="mapMatches" class="matches" role="list" aria-label="Primitive search results"></div>
+<div class="rail-note">Relations here are <strong>paper co-occurrences</strong>, not semantic similarity or inferred theorem dependencies. A title-inferred label needs verification in the paper itself.</div>
+</aside>
+<section class="universe">
+<div class="stage-head">
+<div><span class="eyebrow">THEORY THROUGH PUBLICATIONS</span><h2 id="mapHeading">Choose a primitive</h2></div>
+<div class="stage-actions"><button id="zoomIn" aria-label="Zoom in">+</button><button id="zoomOut" aria-label="Zoom out">−</button><button id="resetView">Fit</button><button id="motionToggle" aria-pressed="false">Pause</button></div>
+</div>
+<div class="selection-strip"><div class="selection-head"><span>SELECTED PRIMITIVES <span class="tiny-note">(AND)</span></span><button id="clearSelection" class="clear-btn">Clear all ×</button></div><div id="selectedChips" class="selected-chips" aria-live="polite"><span class="no-selected">Click any node to begin. Click another to add a condition.</span></div></div>
+<div id="stage" class="stage" tabindex="0" role="application" aria-label="Interactive paper graph: click nodes to toggle selection, drag to pan, scroll to zoom. Search results offer keyboard-accessible selection.">
 <canvas id="mapCanvas" aria-hidden="true"></canvas><div id="hoverTip" class="hover-tip" hidden></div>
-<div class="stage-instruction">DRAG TO PAN · SCROLL TO ZOOM · CLICK TO INSPECT</div><div class="stage-counter" id="mapCounter">Loading…</div><div id="mapError" class="map-error" hidden></div></div>
-<div class="foot">The layout is deterministic per primitive ID. All matching nodes remain on the map; labels are selectively shown for legibility. <a href="./">Browse as list ↗</a></div></section>
-<aside class="detail"><div class="detail-title"><span class="eyebrow">SELECTED PRIMITIVE</span><button id="clearSelection" aria-label="Clear selection">×</button></div><div id="mapDetail" class="detail-scroll"><div class="empty"><div>✳</div><h3>Choose a node.</h3><p>Click a floating concept in the map, or use the search results on the left.</p></div></div></aside></main>
-<script src="./map.js" defer></script></body></html>
+<div id="mapError" class="map-error" hidden></div>
+<div class="stage-instruction">CLICK TO ADD/REMOVE · DRAG TO PAN · SCROLL TO ZOOM</div><div id="mapCounter" class="stage-counter" aria-live="off">Loading graph…</div>
+</div>
+<div class="foot">Gold nodes are selected; mint nodes co-occur in at least one paper matching all selections. Grey nodes have no currently recorded link. <span class="tiny-note">Missing coverage ≠ no research exists.</span></div>
+</section>
+<aside class="detail" aria-label="Matching papers">
+<div class="detail-title"><div><span class="eyebrow">PAPERS</span><h2>Literature intersection</h2></div><span id="paperCount" class="paper-count" aria-live="polite">—</span></div>
+<div class="paper-controls">
+<input id="paperSearch" type="search" placeholder="Filter matching paper titles…" aria-label="Search paper titles">
+<label class="field" for="paperEvidence">EVIDENCE LEVEL</label><select id="paperEvidence">
+<option value="all">Curated + title-inferred</option><option value="curated">Curated associations only</option><option value="harvested">Title-inferred only</option>
+</select></div>
+<div class="paper-method" id="paperMethod">Curated links were reviewed editorially. Imported links are derived from explicit title phrases only; paper content has not been checked.</div>
+<div id="mapDetail" class="detail-scroll"><div class="empty"><div>✳</div><h3>Start exploring.</h3><p>Choose concepts on the map. Papers using all selected concepts will appear here.</p></div></div>
+<div class="paper-footer"><button id="morePapers" disabled>Load more papers</button><button id="exportPapers">Export matching JSON ↓</button></div>
+</aside></main>
+<script src="./map-model.js" defer></script><script src="./map.js" defer></script>
+</body></html>
