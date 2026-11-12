@@ -88,7 +88,7 @@ def validate() -> tuple[dict, list[str]]:
             elif not ref.startswith("equilibrium."):
                 errors.append(f"{p['id']}: not an equilibrium {ref}")
     predicates = {
-        "is_a", "subset_of", "often_uses", "related_to",
+        "is_a", "subset_of", "composed_of", "often_uses", "related_to",
         "often_analyzed_by", "has_relevant_solution_concept",
         "studied_on", "studies",
     }
