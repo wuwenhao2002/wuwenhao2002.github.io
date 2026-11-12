@@ -1895,6 +1895,23 @@
       "reviewed_at": null
     },
     {
+      "id": "framework.by-the-book-analysis",
+      "name": "By-the-Book Analysis",
+      "kind": "framework",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Analyze an algorithm using models grounded in its implementation details and practical choices, going beyond perturbing only the input.",
+      "scope_note": "Source-scoped editorial definition; theorem details require reading the STOC 2026 proceedings.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_2026_abstract"
+    },
+    {
       "id": "framework.circuit-complexity",
       "name": "Circuit Complexity",
       "kind": "framework",
@@ -10530,6 +10547,23 @@
       ]
     },
     {
+      "id": "property.quantum-measurement-adaptivity",
+      "name": "Measurement Adaptivity",
+      "kind": "property",
+      "areas": [
+        "Quantum Computing"
+      ],
+      "aliases": [],
+      "definition": "Allow quantum measurement settings to depend on earlier observed outcomes, affecting copy/query complexity.",
+      "scope_note": "Source-scoped editorial definition; theorem details require reading the STOC 2026 proceedings.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_2026_abstract"
+    },
+    {
       "id": "property.query-complexity-of-testing",
       "name": "Query Complexity of Testing",
       "kind": "property",
@@ -12331,6 +12365,23 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.multipass-streaming-lower-bound",
+      "name": "Multi-Pass Streaming Lower Bound",
+      "kind": "technique",
+      "areas": [
+        "Streaming Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Show that a streaming problem requires a specified amount of space at a given number of passes.",
+      "scope_note": "Source-scoped editorial definition; theorem details require reading the STOC 2026 proceedings.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_2026_abstract"
+    },
+    {
       "id": "technique.multiplicative-weights-update",
       "name": "Multiplicative Weights Update",
       "kind": "technique",
@@ -12644,6 +12695,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.random-restriction",
+      "name": "Random Restriction",
+      "kind": "technique",
+      "areas": [
+        "Complexity Theory"
+      ],
+      "aliases": [],
+      "definition": "Randomly fix a subset of variables or inputs to simplify a circuit or formula while preserving a hard substructure.",
+      "scope_note": "Source-scoped editorial definition; theorem details require reading the STOC 2026 proceedings.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "source_ids": [
+        "conf-stoc26"
+      ],
+      "provenance": "STOC_2026_abstract"
     },
     {
       "id": "technique.random-sampling",

@@ -4787,6 +4787,459 @@
           "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
         }
       ]
+    },
+    {
+      "id": "reviewed-stoc-padded",
+      "title": "Deterministic Padded Decompositions and Negative-Weight Shortest Paths",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Jason Li"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_stoc2026",
+      "provenance": "STOC 2026 primary proceedings abstract and author list checked 2026-11-13",
+      "scope_note": "The paper's official abstract connects these research concepts; detailed theorem assumptions are not reproduced in this ontology.",
+      "primitives": [
+        {
+          "primitive_id": "lens.derandomization",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "technique.padded-decomposition",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "problem.negative-weight-shortest-path",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "reviewed-stoc-pathcover",
+      "title": "Deterministic Negative-Weight Shortest Paths in Nearly Linear Time via Path Covers",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Bernhard Haeupler",
+        "Yonggang Jiang",
+        "Thatchaphol Saranurak"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_stoc2026",
+      "provenance": "STOC 2026 primary proceedings abstract and author list checked 2026-11-13",
+      "scope_note": "The paper's official abstract connects these research concepts; detailed theorem assumptions are not reproduced in this ontology.",
+      "primitives": [
+        {
+          "primitive_id": "lens.derandomization",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "technique.directed-path-cover",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "problem.negative-weight-shortest-path",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "reviewed-stoc-quantum-cert",
+      "title": "Few Single-Qubit Measurements Suffice to Certify Any Quantum State",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Meghal Gupta",
+        "William He",
+        "Ryan O'Donnell"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_stoc2026",
+      "provenance": "STOC 2026 primary proceedings abstract and author list checked 2026-11-13",
+      "scope_note": "The paper's official abstract connects these research concepts; detailed theorem assumptions are not reproduced in this ontology.",
+      "primitives": [
+        {
+          "primitive_id": "problem.quantum-state-certification",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "model.adaptive-quantum-measurement",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "property.quantum-measurement-adaptivity",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "reviewed-stoc-planted",
+      "title": "A Unified Approach to Memory-Sample Tradeoffs for Detecting Planted Structures",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Sumegha Garg",
+        "Jabari Hastings",
+        "Chirag Pabbaraju",
+        "Vatsal Sharan"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_stoc2026",
+      "provenance": "STOC 2026 primary proceedings abstract and author list checked 2026-11-13",
+      "scope_note": "The paper's official abstract connects these research concepts; detailed theorem assumptions are not reproduced in this ontology.",
+      "primitives": [
+        {
+          "primitive_id": "lens.space-time-tradeoffs",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "problem.planted-structure-detection",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "property.memory-sample-tradeoff",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "model.semi-streaming",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "reviewed-stoc-ips",
+      "title": "Lower Bounds against the Ideal Proof System in Finite Fields",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Tal Elbaz",
+        "Nashlen Govindasamy",
+        "Jiaqi Lu",
+        "Iddo Tzameret"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_stoc2026",
+      "provenance": "STOC 2026 primary proceedings abstract and author list checked 2026-11-13",
+      "scope_note": "The paper's official abstract connects these research concepts; detailed theorem assumptions are not reproduced in this ontology.",
+      "primitives": [
+        {
+          "primitive_id": "technique.ideal-proof-system",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "framework.proof-complexity",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "task.tight-lower-bound",
+          "role": "task",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "reviewed-stoc-oracle-fpt",
+      "title": "Oracle Subset Problems: A Meta-algorithm for FPT Approximation via Random Walks",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Ishan Chakraborty",
+        "Tanmay Inamdar",
+        "Ariel Kulik",
+        "Madhumita Kundu",
+        "Saket Saurabh"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_stoc2026",
+      "provenance": "STOC 2026 primary proceedings abstract and author list checked 2026-11-13",
+      "scope_note": "The paper's official abstract connects these research concepts; detailed theorem assumptions are not reproduced in this ontology.",
+      "primitives": [
+        {
+          "primitive_id": "lens.parameterized-tractability",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "technique.oracle-subset-framework",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "technique.randomized-branching",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "property.time-approximation-tradeoff",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "reviewed-stoc-cryptanalytic",
+      "title": "Non-adaptive Cryptanalytic Time-Space Lower Bounds via a Shearer-Like Inequality for Permutations",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Itai Dinur",
+        "Nathan Keller",
+        "Avichai Marmor"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_stoc2026",
+      "provenance": "STOC 2026 primary proceedings abstract and author list checked 2026-11-13",
+      "scope_note": "The paper's official abstract connects these research concepts; detailed theorem assumptions are not reproduced in this ontology.",
+      "primitives": [
+        {
+          "primitive_id": "lens.space-time-tradeoffs",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "model.nonadaptive-preprocessing",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "problem.discrete-logarithm",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "reviewed-stoc-proximal",
+      "title": "Proximal Regret and Proximal Correlated Equilibria: A New Tractable Solution Concept for Online Learning and Games",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Yang Cai",
+        "Constantinos Daskalakis",
+        "Haipeng Luo",
+        "Chen-Yu Wei",
+        "Weiqiang Zheng"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_stoc2026",
+      "provenance": "STOC 2026 primary proceedings abstract and author list checked 2026-11-13",
+      "scope_note": "The paper's official abstract connects these research concepts; detailed theorem assumptions are not reproduced in this ontology.",
+      "primitives": [
+        {
+          "primitive_id": "property.proximal-regret",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "equilibrium.proximal-correlated-equilibrium",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "model.online-learning",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "game.bayesian-game",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "reviewed-stoc-simplex",
+      "title": "Beyond Smoothed Analysis: Analyzing the Simplex Method By-the-Book",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Eleon Bach",
+        "Alexander E. Black",
+        "Sophie Huiberts",
+        "Sean Kafer"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_stoc2026",
+      "provenance": "STOC 2026 primary proceedings abstract and author list checked 2026-11-13",
+      "scope_note": "The paper's official abstract connects these research concepts; detailed theorem assumptions are not reproduced in this ontology.",
+      "primitives": [
+        {
+          "primitive_id": "framework.by-the-book-analysis",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "lens.smoothed-analysis",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "technique.linear-programming-relaxation",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "reviewed-stoc-privacy-mult-pass",
+      "title": "Optimal Single-Pass Streaming Lower Bounds for Approximating CSPs",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Noah G. Singer",
+        "Madhur Tulsiani",
+        "Santhoshini Velusamy"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_stoc2026",
+      "provenance": "STOC 2026 primary proceedings abstract and author list checked 2026-11-13",
+      "scope_note": "The paper's official abstract connects these research concepts; detailed theorem assumptions are not reproduced in this ontology.",
+      "primitives": [
+        {
+          "primitive_id": "model.semi-streaming",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "property.streaming-space-complexity",
+          "role": "metric",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "task.tight-lower-bound",
+          "role": "task",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "reviewed-stoc-fine-grained-binpack",
+      "title": "Tight (S)ETH-Based Lower Bounds for Pseudopolynomial Algorithms for Bin Packing and Multi-machine Scheduling",
+      "year": 2026,
+      "venue": "STOC 2026",
+      "authors": [
+        "Karl Bringmann",
+        "Anita Dürr",
+        "Karol Węgrzycki"
+      ],
+      "source_id": "conf-stoc26",
+      "url": "https://acm-stoc.org/stoc2026/toc.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "official_stoc2026",
+      "provenance": "STOC 2026 primary proceedings abstract and author list checked 2026-11-13",
+      "scope_note": "The paper's official abstract connects these research concepts; detailed theorem assumptions are not reproduced in this ontology.",
+      "primitives": [
+        {
+          "primitive_id": "lens.fine-grained-hardness",
+          "role": "lens",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "assumption.strong-exponential-time-hypothesis",
+          "role": "assumption",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "assumption.exponential-time-hypothesis",
+          "role": "assumption",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "problem.online-bin-packing",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        },
+        {
+          "primitive_id": "problem.minimum-makespan-scheduling",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 proceedings abstract supports this primitive; read source for exact theorem hypotheses."
+        }
+      ]
     }
   ],
   "updated_at": "2026-11-13"
