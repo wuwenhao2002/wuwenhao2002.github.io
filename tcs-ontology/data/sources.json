@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.3.0",
+  "schema_version": "0.5.0",
   "items": [
     {
       "id": "cso",
@@ -378,6 +378,60 @@
       "title": "Yuichi Yoshida — DBLP Publication Metadata",
       "url": "https://dblp.org/pid/36/4449.html",
       "type": "bibliography"
+    },
+    {
+      "id": "author-yoshida-conferences",
+      "title": "Yuichi Yoshida — Conference Publications and Official Abstracts",
+      "url": "https://research.nii.ac.jp/~yyoshida/conferences.html",
+      "type": "author_publications"
+    },
+    {
+      "id": "author-dinitz-publications",
+      "title": "Michael Dinitz — Publications and Official Abstracts",
+      "url": "https://www.cs.jhu.edu/~mdinitz/pub.html",
+      "type": "author_publications"
+    },
+    {
+      "id": "paper-purohit-2018",
+      "title": "Improving Online Algorithms via ML Predictions",
+      "url": "https://proceedings.neurips.cc/paper/2018/hash/73a427badebe0e32caa2e1fc7530b7f3-Abstract.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-lykouris-2018",
+      "title": "Competitive Caching with Machine Learned Advice",
+      "url": "https://proceedings.mlr.press/v80/lykouris18a.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-choo-2024",
+      "title": "Online bipartite matching with imperfect advice",
+      "url": "https://proceedings.mlr.press/v235/choo24a.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-choo-2025",
+      "title": "Learning-Augmented Online Bipartite Fractional Matching",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/0b8705a611ed1ce19cdb759031078705-Abstract-Conference.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-zou-2026",
+      "title": "Differentially Private Minimum Spanning Tree in Euclidean Graphs",
+      "url": "https://proceedings.mlr.press/v300/zou26a.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-aamand-2025",
+      "title": "Breaking the n^1.5 Additive Error Barrier for Private and Efficient Graph Sparsification via Private Expander Decomposition",
+      "url": "https://proceedings.mlr.press/v267/aamand25b",
+      "type": "paper"
+    },
+    {
+      "id": "paper-zhou-2026",
+      "title": "Continual Release of Densest Subgraphs: Privacy Amplification & Sublinear Space via Subsampling",
+      "url": "https://doi.org/10.1137/1.9781611978964.13",
+      "type": "paper"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.4.0",
+  "schema_version": "0.5.0",
   "updated_at": "2026-11-13",
   "provenance_note": "Mixed status: source_checked means an editorial source cross-check, not peer or expert review. Other primitives remain unverified candidates. No external bulk data copied.",
   "items": [
@@ -3301,6 +3301,23 @@
       "reviewed_at": null
     },
     {
+      "id": "model.bootstrap-percolation",
+      "name": "Bootstrap Percolation",
+      "kind": "model",
+      "areas": [
+        "Distributed Computing"
+      ],
+      "aliases": [],
+      "definition": "A spreading process in which infected nodes persist and healthy nodes become infected when enough neighbors are already infected.",
+      "scope_note": "The infection threshold and time horizon must be specified.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "model.bounded-degree-graph-model",
       "name": "Bounded-Degree Graph Model",
       "kind": "model",
@@ -3442,6 +3459,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "model.continual-release",
+      "name": "Continual Release Model",
+      "kind": "model",
+      "areas": [
+        "Cryptography"
+      ],
+      "aliases": [],
+      "definition": "A privacy model requiring an algorithm to release intermediate results as a data stream or graph evolves.",
+      "scope_note": "Privacy composition and the distinction between event-level and user-level adjacency matter.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "paper-zhou-2026"
+      ]
     },
     {
       "id": "model.data-stream-model",
@@ -3630,6 +3664,23 @@
       "provenance": "paper_curation_v0.3"
     },
     {
+      "id": "model.edge-weight-privacy",
+      "name": "Edge-Weight Privacy",
+      "kind": "model",
+      "areas": [
+        "Cryptography"
+      ],
+      "aliases": [],
+      "definition": "A graph-private input model protecting bounded modifications to edge weights while retaining a specified public topology.",
+      "scope_note": "Not identical to edge insertion/deletion privacy.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "paper-zou-2026"
+      ]
+    },
+    {
       "id": "model.external-memory-model",
       "name": "External Memory Model",
       "kind": "model",
@@ -3707,6 +3758,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "model.fractional-online-matching",
+      "name": "Fractional Online Matching",
+      "kind": "model",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [],
+      "definition": "An online bipartite allocation model assigning fractional amounts to matching edges subject to capacity constraints.",
+      "scope_note": "Distinct from integral matching; online advice and dual constraints alter guarantees.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "paper-choo-2025"
+      ]
     },
     {
       "id": "model.full-information-model",
@@ -4129,6 +4197,23 @@
       "reviewed_at": null
     },
     {
+      "id": "model.optimization-game",
+      "name": "Optimization Game",
+      "kind": "model",
+      "areas": [
+        "Algorithmic Game Theory"
+      ],
+      "aliases": [],
+      "definition": "A cooperative game whose characteristic value for a coalition is given by an underlying optimization problem.",
+      "scope_note": "Different matching, spanning-tree and other optimization games have different payoff allocation conditions.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "model.pac-learning",
       "name": "PAC Learning",
       "kind": "model",
@@ -4278,6 +4363,23 @@
       "reviewed_at": null
     },
     {
+      "id": "model.product-distribution",
+      "name": "Product Distribution",
+      "kind": "model",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "A multivariate distribution whose coordinates are mutually independent so its law factors across dimensions.",
+      "scope_note": "Not equivalent to identical coordinate distributions or a known marginal law.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "model.prophet-model",
       "name": "Prophet Model",
       "kind": "model",
@@ -4406,6 +4508,23 @@
       ],
       "scope_note": "Not the same complexity measure as gate count.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "model.random-arrival-order",
+      "name": "Random Arrival Order",
+      "kind": "model",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [],
+      "definition": "An online model receiving an adversarially chosen multiset or collection of inputs in uniformly random order.",
+      "scope_note": "Not independent draws from a distribution; related to but can differ from secretary models.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "paper-choo-2024"
+      ]
     },
     {
       "id": "model.random-order-model",
@@ -5323,6 +5442,23 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "problem.distribution-free-learning",
+      "name": "Distribution-Free Learning",
+      "kind": "problem",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Learn a hypothesis without assuming the unknown data distribution belongs to a specified parametric family.",
+      "scope_note": "Distribution-free sampling still typically assumes i.i.d. examples; agnostic and realizable variants differ.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "problem.distribution-identity-testing",
       "name": "Distribution Identity Testing",
       "kind": "problem",
@@ -5462,6 +5598,23 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.euclidean-k-clustering",
+      "name": "Euclidean k-Clustering",
+      "kind": "problem",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Choose k centers in Euclidean space minimizing a specified power of point-to-center distances.",
+      "scope_note": "Includes k-means and k-median-style objectives; metric, dimension and loss exponent matter.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "problem.exact-cover",
       "name": "Exact Cover",
       "kind": "problem",
@@ -5556,6 +5709,23 @@
       "review_status": "source_checked",
       "reviewed_at": "2026-11-13",
       "provenance": "official_publication_curation_v0.4"
+    },
+    {
+      "id": "problem.graph-effective-resistance",
+      "name": "Effective Resistance Estimation",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Approximate the electrical effective resistance between specified nodes in a weighted graph.",
+      "scope_note": "Connectedness, graph weights, precision and local oracle model determine complexity.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
     },
     {
       "id": "problem.graph-emulator",
@@ -5735,6 +5905,23 @@
       "provenance": "official_publication_curation_v0.4"
     },
     {
+      "id": "problem.incremental-knapsack",
+      "name": "Incremental Knapsack",
+      "kind": "problem",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Maintain a feasible high-value knapsack solution as items arrive sequentially.",
+      "scope_note": "Arrival order, feasibility, and the number of solution replacements must be stated.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "problem.integer-programming-feasibility",
       "name": "Integer Programming Feasibility",
       "kind": "problem",
@@ -5748,6 +5935,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.interval-scheduling",
+      "name": "Interval Scheduling",
+      "kind": "problem",
+      "areas": [
+        "Scheduling"
+      ],
+      "aliases": [],
+      "definition": "Select compatible intervals with no temporal overlap to maximize cardinality or total reward.",
+      "scope_note": "Weighted and unweighted variants and tie conventions differ.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
     },
     {
       "id": "problem.joint-replenishment-with-deadlines",
@@ -5782,6 +5986,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.knapsack",
+      "name": "Knapsack Problem",
+      "kind": "problem",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Given items with values and weights and a capacity budget, select a subset of maximum value whose total weight fits the budget.",
+      "scope_note": "Exact, approximate, online, and bounded-weight variants use different models.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
     },
     {
       "id": "problem.language-equivalence",
@@ -5846,6 +6067,57 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.longest-common-subsequence",
+      "name": "Longest Common Subsequence",
+      "kind": "problem",
+      "areas": [
+        "Data Structures"
+      ],
+      "aliases": [],
+      "definition": "Find a longest sequence occurring as a subsequence of each of two input strings.",
+      "scope_note": "Subsequence is not substring; alphabet and input models can matter.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
+      "id": "problem.longest-increasing-subsequence",
+      "name": "Longest Increasing Subsequence",
+      "kind": "problem",
+      "areas": [
+        "Data Structures"
+      ],
+      "aliases": [],
+      "definition": "Find a longest subsequence of a sequence whose elements are strictly increasing.",
+      "scope_note": "Strict versus non-strict monotonicity and weighted variants need separation.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
+      "id": "problem.low-degree-testing",
+      "name": "Low-Degree Testing",
+      "kind": "problem",
+      "areas": [
+        "Property Testing"
+      ],
+      "aliases": [],
+      "definition": "Test whether a function is a low-degree polynomial or is far from every such polynomial under a specified distribution.",
+      "scope_note": "Domain, support, degree and oracle access govern query bounds.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
     },
     {
       "id": "problem.manipulation-of-voting",
@@ -5990,6 +6262,23 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "problem.maximum-weight-chain",
+      "name": "Maximum Weight Chain",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Find a maximum-weight chain in a partially ordered or transitive directed acyclic graph.",
+      "scope_note": "Graph representation and chain order affect feasible solutions.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "problem.metric-voting",
       "name": "Metric Voting",
       "kind": "problem",
@@ -6109,6 +6398,23 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "problem.minimum-uncut",
+      "name": "Minimum Uncut",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Find a bipartition of graph vertices minimizing the weight of edges whose endpoints lie on the same side.",
+      "scope_note": "Related but not identical to Max-Cut in guarantees under varying normalization.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "problem.minimum-vertex-cover",
       "name": "Minimum Vertex Cover",
       "kind": "problem",
@@ -6203,6 +6509,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "problem.network-capacity",
+      "name": "Network Capacity",
+      "kind": "problem",
+      "areas": [
+        "Distributed Computing"
+      ],
+      "aliases": [],
+      "definition": "Optimize sustained feasible communication throughput under a specified communication and demand model.",
+      "scope_note": "Pairwise, broadcast, all-to-all, reception capacity and wireless interference differ.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-dinitz-publications"
+      ]
     },
     {
       "id": "problem.online-ad-allocation",
@@ -6453,6 +6776,57 @@
       ],
       "scope_note": "Universe size, word width and dynamic/static access change bounds.",
       "reviewed_at": "2026-11-12"
+    },
+    {
+      "id": "problem.principal-component-analysis",
+      "name": "Principal Component Analysis",
+      "kind": "problem",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Find a low-dimensional subspace capturing maximal sample variance or minimizing squared reconstruction error.",
+      "scope_note": "Centered data, target dimension and online consistency are separate assumptions.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
+      "id": "problem.private-cut-sparsification",
+      "name": "Private Cut Sparsification",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Release a sparse approximation to graph cuts while satisfying an explicit graph differential privacy definition.",
+      "scope_note": "Cut approximation may have both multiplicative and additive error; edge privacy model must be fixed.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "paper-aamand-2025"
+      ]
+    },
+    {
+      "id": "problem.private-minimum-spanning-tree",
+      "name": "Private Minimum Spanning Tree",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Compute or release an approximate minimum spanning tree under an explicit privacy adjacency and output convention.",
+      "scope_note": "Euclidean data point privacy and general graph edge privacy are different.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "paper-zou-2026"
+      ]
     },
     {
       "id": "problem.prophet-selection",
@@ -6776,6 +7150,57 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.spectral-clustering",
+      "name": "Spectral Clustering",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Use eigenvectors of a graph Laplacian or similarity matrix to obtain a graph partition or clustering.",
+      "scope_note": "Normalized/unnormalized Laplacian, k and post-processing alter results.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
+      "id": "problem.spectral-hypergraph-sparsification",
+      "name": "Spectral Hypergraph Sparsification",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Construct a sparse weighted hypergraph approximately preserving a chosen hypergraph spectral or energy form.",
+      "scope_note": "Nonlinear hypergraph Laplacians and multiplicative or additive error require explicit definitions.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
+      "id": "problem.spreading-rule-testing",
+      "name": "Spreading Rule Testing",
+      "kind": "problem",
+      "areas": [
+        "Property Testing"
+      ],
+      "aliases": [],
+      "definition": "Test whether a dynamic network state evolves according to a specified local propagation rule or is far from it.",
+      "scope_note": "Query access to time states, topology and error/distance model determines bounds.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "problem.stable-matching",
       "name": "Stable Matching",
       "kind": "problem",
@@ -6911,6 +7336,23 @@
       "reviewed_at": null
     },
     {
+      "id": "problem.survivable-network-design",
+      "name": "Survivable Network Design",
+      "kind": "problem",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Find a minimum-cost subgraph meeting prescribed connectivity requirements under failures.",
+      "scope_note": "Terminal pairs, edge/vertex connectivity and relative versus absolute faults vary.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-dinitz-publications"
+      ]
+    },
+    {
       "id": "problem.tolerant-testing",
       "name": "Tolerant Testing",
       "kind": "problem",
@@ -6996,6 +7438,23 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "problem.value-oracle-submodular-maximization",
+      "name": "Submodular Maximization",
+      "kind": "problem",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Maximize a submodular set function under a specified feasibility constraint using value queries or explicit input.",
+      "scope_note": "Monotone, non-monotone, matroid, cardinality and k-submodular variants differ.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "problem.weighted-completion-time-scheduling",
       "name": "Weighted Completion Time Scheduling",
       "kind": "problem",
@@ -7075,6 +7534,23 @@
       "provenance": "bibliography_grounded_v0.4",
       "source_ids": [
         "p-dinitz-ski"
+      ]
+    },
+    {
+      "id": "property.approximate-core",
+      "name": "Approximate Core",
+      "kind": "property",
+      "areas": [
+        "Computational Social Choice"
+      ],
+      "aliases": [],
+      "definition": "A relaxation of the cooperative-game core allowing a controlled multiplicative or additive violation of coalition constraints.",
+      "scope_note": "Characteristic function and exact approximation notion must be specified.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
       ]
     },
     {
@@ -7158,6 +7634,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.bipartiteness-ratio",
+      "name": "Bipartiteness Ratio",
+      "kind": "property",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A graph conductance-like quantity measuring how close a vertex subset is to supporting a bipartite structure.",
+      "scope_note": "Trevisan-style definitions depend on edge volume and internal/crossing penalties.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
     },
     {
       "id": "property.braess-paradox",
@@ -7726,6 +8219,23 @@
       "reviewed_at": "2026-11-12"
     },
     {
+      "id": "property.fault-budget",
+      "name": "Fault Budget",
+      "kind": "property",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A bound on the number or nature of edge or vertex failures tolerated while maintaining a required property.",
+      "scope_note": "Fault type, adversarial adaptivity and path/post-fault requirements must be stated.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-dinitz-publications"
+      ]
+    },
+    {
       "id": "property.fault-tolerance",
       "name": "Fault Tolerance",
       "kind": "property",
@@ -8035,6 +8545,23 @@
       "provenance": "paper_curation_v0.3"
     },
     {
+      "id": "property.local-submodularity-ratio",
+      "name": "Local Submodularity Ratio",
+      "kind": "property",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Quantify how closely a set function obeys a submodular-type marginal-gain inequality on selected local configurations.",
+      "scope_note": "Not the same as global submodularity or a fixed approximation factor.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "property.locality",
       "name": "Locality",
       "kind": "property",
@@ -8199,6 +8726,23 @@
       "reviewed_at": null
     },
     {
+      "id": "property.noise-stability",
+      "name": "Noise Stability",
+      "kind": "property",
+      "areas": [
+        "Learning Theory"
+      ],
+      "aliases": [],
+      "definition": "Quantify how strongly a function or model output correlates under specified random perturbations of its inputs.",
+      "scope_note": "Distinct from one-coordinate average sensitivity and algorithmic output stability.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "property.one-sided-error",
       "name": "One-Sided Error",
       "kind": "property",
@@ -8212,6 +8756,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.online-output-consistency",
+      "name": "Online Output Consistency",
+      "kind": "property",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Measure how much a sequence of maintained outputs changes as new input items arrive.",
+      "scope_note": "Requires a distance on outputs and a rule for aggregating changes; not prediction consistency.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
     },
     {
       "id": "property.pareto-optimality",
@@ -8803,6 +9364,40 @@
       "reviewed_at": null
     },
     {
+      "id": "property.spanner-lightness",
+      "name": "Spanner Lightness",
+      "kind": "property",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Weight of a distance-preserving spanner relative to an explicitly chosen minimum-weight reference structure.",
+      "scope_note": "For fault-tolerant spanners an MST baseline may be inappropriate; alternative connectivity preservers are used.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-dinitz-publications"
+      ]
+    },
+    {
+      "id": "property.spanner-stretch",
+      "name": "Spanner Stretch",
+      "kind": "property",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Worst-case multiplicative distortion of graph distances when measured in a spanner or emulator.",
+      "scope_note": "Finite distances, failures and weighted/directed conventions matter.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-dinitz-publications"
+      ]
+    },
+    {
       "id": "property.spectral-gap",
       "name": "Spectral Gap",
       "kind": "property",
@@ -8810,12 +9405,14 @@
         "Graph Algorithms"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
+      "definition": "An eigenvalue separation associated with a specified graph operator such as its Laplacian or transition matrix.",
+      "review_status": "source_checked",
       "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "source_ids": [
+        "author-yoshida-conferences"
+      ],
+      "scope_note": "Operator, eigenvalue ordering and normalization are essential.",
+      "reviewed_at": "2026-11-13"
     },
     {
       "id": "property.stability-of-learning",
@@ -8831,6 +9428,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "property.stochastic-distance",
+      "name": "Stochastic Distance",
+      "kind": "property",
+      "areas": [
+        "Property Testing"
+      ],
+      "aliases": [],
+      "definition": "Measure the number or amount of random perturbation required to make a graph likely to satisfy a given property.",
+      "scope_note": "Unlike edit distance, the definition has a probability threshold and a perturbation distribution.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
     },
     {
       "id": "property.strategyproof-voting",
@@ -9494,6 +10108,23 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.conditional-value-at-risk",
+      "name": "Conditional Value at Risk",
+      "kind": "technique",
+      "areas": [
+        "Online Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A downside-risk objective measuring expected loss in a specified worst tail of a probability distribution.",
+      "scope_note": "CVaR is typically an objective or risk measure rather than an algorithm; level alpha must be specified.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "technique.configuration-lp",
       "name": "Configuration LP",
       "kind": "technique",
@@ -9573,6 +10204,23 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.cycle-sparsification",
+      "name": "Cycle Sparsification",
+      "kind": "technique",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Reduce graph cycle constraints or represented cycles while maintaining properties needed for approximation and rounding.",
+      "scope_note": "The covering-problem method of Kumabe–Yoshida has scope-specific assumptions.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "technique.dependent-rounding",
       "name": "Dependent Rounding",
       "kind": "technique",
@@ -9603,6 +10251,23 @@
       "reviewed_at": null
     },
     {
+      "id": "technique.downsampling",
+      "name": "Downsampling",
+      "kind": "technique",
+      "areas": [
+        "Property Testing"
+      ],
+      "aliases": [],
+      "definition": "A sampling-based reduction for testing or learning under high-dimensional product distributions.",
+      "scope_note": "The technique in Harms–Yoshida uses geometric isoperimetry; not arbitrary lossless random subsampling.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
+    },
+    {
       "id": "technique.dual-fitting",
       "name": "Dual Fitting",
       "kind": "technique",
@@ -9616,6 +10281,23 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.dynamic-programming",
+      "name": "Dynamic Programming",
+      "kind": "technique",
+      "areas": [
+        "Approximation Algorithms"
+      ],
+      "aliases": [],
+      "definition": "Solve overlapping subproblems by storing and combining values or solutions indexed by states.",
+      "scope_note": "State space and transitions determine time and space; not every dynamic program is stable under perturbations.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "author-yoshida-conferences"
+      ]
     },
     {
       "id": "technique.empirical-risk-minimization",
@@ -10092,6 +10774,40 @@
       "source_ids": [],
       "scope_note": "",
       "reviewed_at": null
+    },
+    {
+      "id": "technique.privacy-amplification-by-subsampling",
+      "name": "Privacy Amplification by Subsampling",
+      "kind": "technique",
+      "areas": [
+        "Cryptography"
+      ],
+      "aliases": [],
+      "definition": "A privacy technique using random subsampling to reduce the effective information exposure of an analysis.",
+      "scope_note": "Amplification bounds depend on sampling scheme, adjacency and base mechanism.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "paper-zhou-2026"
+      ]
+    },
+    {
+      "id": "technique.private-expander-decomposition",
+      "name": "Private Expander Decomposition",
+      "kind": "technique",
+      "areas": [
+        "Graph Algorithms"
+      ],
+      "aliases": [],
+      "definition": "A graph decomposition technique implemented under differential privacy to support accurate cut sparsification.",
+      "scope_note": "Decomposition guarantees, privacy model and sparsification error are paper-specific.",
+      "review_status": "source_checked",
+      "reviewed_at": "2026-11-13",
+      "provenance": "official_abstract_curation_v0.5",
+      "source_ids": [
+        "paper-aamand-2025"
+      ]
     },
     {
       "id": "technique.probabilistic-method",
