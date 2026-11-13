@@ -1128,6 +1128,354 @@
       "title": "A Polynomial Approximation Scheme for Scheduling on Uniform Processors: Using the Dual Approximation Approach",
       "url": "https://doi.org/10.1137/0217033",
       "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-dinur-pcp07",
+      "title": "The PCP Theorem by Gap Amplification",
+      "url": "https://www.cs.umd.edu/users/gasarch/TOPICS/pcp/dinur.pdf",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-valiant-permanent79",
+      "title": "The Complexity of Computing the Permanent",
+      "url": "https://doi.org/10.1016/0304-3975(79)90044-6",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-stockmeyer-ph76",
+      "title": "The Polynomial-Time Hierarchy",
+      "url": "https://doi.org/10.1016/0304-3975(76)90061-X",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-chandra-alternation81",
+      "title": "Alternation",
+      "url": "https://doi.org/10.1145/322234.322243",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-reingold-logspace08",
+      "title": "Undirected Connectivity in Log-Space",
+      "url": "https://doi.org/10.1145/1391289.1391291",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-kernel-counting23",
+      "title": "Kernelization for Counting Problems on Graphs: Preserving the Number of Minimum Solutions",
+      "url": "https://arxiv.org/abs/2310.04303",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-semitotal-dom25",
+      "title": "On the Parameterized Complexity of Semitotal Domination on Graph Classes",
+      "url": "https://arxiv.org/abs/2506.17485",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-approx-nash-finegrain26",
+      "title": "The Fine-Grained Complexity of Approximate Nash Equilibrium and Free Games",
+      "url": "https://arxiv.org/abs/2609.07136",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-roughgarden-smooth09",
+      "title": "Intrinsic Robustness of the Price of Anarchy",
+      "url": "https://doi.org/10.1145/1536414.1536485",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-weighted-pne11",
+      "title": "Approximate Pure Nash Equilibria in Weighted Congestion Games: Existence, Efficient Computation, and Structure",
+      "url": "https://arxiv.org/abs/1107.2248",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-weighted-potential21",
+      "title": "On approximate pure Nash equilibria in weighted congestion games with polynomial latencies",
+      "url": "https://doi.org/10.1016/j.jcss.2020.10.007",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-shapley-network04",
+      "title": "The Price of Stability for Network Design with Fair Cost Allocation",
+      "url": "https://doi.org/10.1109/FOCS.2004.68",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-qre95",
+      "title": "Quantal Response Equilibria for Normal Form Games",
+      "url": "https://doi.org/10.1006/game.1995.1023",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-mean-field-games07",
+      "title": "Mean Field Games",
+      "url": "https://doi.org/10.1007/s11537-007-0657-8",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-graphical-games01",
+      "title": "Graphical Models for Game Theory",
+      "url": "https://arxiv.org/abs/1301.2281",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-animal-conflict73",
+      "title": "The Logic of Animal Conflict",
+      "url": "https://doi.org/10.1038/246015a0",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-shapley-stochastic53",
+      "title": "Stochastic Games",
+      "url": "https://www2.cs.siu.edu/~hexmoor/classes/CS539-F10/Shapley.pdf",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-vickrey-secondprice61",
+      "title": "Counterspeculation, Auctions, and Competitive Sealed Tenders",
+      "url": "https://doi.org/10.1111/j.1540-6261.1961.tb02789.x",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-milgrom-weber82",
+      "title": "A Theory of Auctions and Competitive Bidding",
+      "url": "https://www.kellogg.northwestern.edu/academics-research/research/detail/1982/a-theory-of-auctions-and-competitive-bidding/",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-myerson-satterthwaite83",
+      "title": "Efficient Mechanisms for Bilateral Trading",
+      "url": "https://doi.org/10.1016/0022-0531(83)90048-0",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-edelman-gsp07",
+      "title": "Internet Advertising and the Generalized Second-Price Auction: Selling Billions of Dollars Worth of Keywords",
+      "url": "https://doi.org/10.1257/aer.97.1.242",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-archer-tardos01",
+      "title": "Truthful Mechanisms for One-Parameter Agents",
+      "url": "https://research.google/pubs/truthful-mechanisms-for-one-parameter-agents/",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-matroid-prophet12",
+      "title": "Matroid Prophet Inequalities",
+      "url": "https://doi.org/10.1145/2213977.2213991",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-stability-generalization02",
+      "title": "Stability and Generalization",
+      "url": "https://www.jmlr.org/papers/v2/bousquet02a.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-rademacher-risk02",
+      "title": "Rademacher and Gaussian Complexities: Risk Bounds and Structural Results",
+      "url": "https://www.jmlr.org/papers/v3/bartlett02a.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-federated-averaging17",
+      "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+      "url": "https://proceedings.mlr.press/v54/mcmahan17a.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-thompson-contextual13",
+      "title": "Thompson Sampling for Contextual Bandits with Linear Payoffs",
+      "url": "https://proceedings.mlr.press/v28/agrawal13.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-kearns-statquery98",
+      "title": "Efficient Noise-Tolerant Learning from Statistical Queries",
+      "url": "https://doi.org/10.1145/293347.293351",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-naor-commitment91",
+      "title": "Bit Commitment Using Pseudorandomness",
+      "url": "https://research.ibm.com/publications/bit-commitment-using-pseudorandomness",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-paillier-standard99",
+      "title": "Public-Key Cryptosystems Based on Composite Degree Residuosity Classes",
+      "url": "https://doi.org/10.1007/3-540-48910-X_16",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-chor-pir95",
+      "title": "Private Information Retrieval",
+      "url": "https://doi.org/10.1109/SFCS.1995.492461",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-goyal-abe06",
+      "title": "Attribute-Based Encryption for Fine-Grained Access Control of Encrypted Data",
+      "url": "https://doi.org/10.1145/1180405.1180418",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-gennaro-vc10",
+      "title": "Non-Interactive Verifiable Computing: Outsourcing Computation to Untrusted Workers",
+      "url": "https://netsec.ethz.ch/publications/papers/gennaro_gentry_parno_verifiable.pdf",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-cramer-shoup03",
+      "title": "Design and Analysis of Practical Public-Key Encryption Schemes Secure against Adaptive Chosen Ciphertext Attack",
+      "url": "https://doi.org/10.1137/S0097539702403773",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-cramer-hashproof01",
+      "title": "Universal Hash Proofs and a Paradigm for Adaptive Chosen Ciphertext Secure Public-Key Encryption",
+      "url": "https://www.brics.dk/RS/01/37/index.html",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-rlwe10",
+      "title": "On Ideal Lattices and Learning with Errors over Rings",
+      "url": "https://doi.org/10.1007/978-3-642-13190-5_1",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-spielman-teng-spectral11",
+      "title": "Spectral Sparsification of Graphs",
+      "url": "https://doi.org/10.1137/08074489X",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-perfect-graph06",
+      "title": "The Strong Perfect Graph Theorem",
+      "url": "https://doi.org/10.4007/annals.2006.164.51",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-color-degeneracy20",
+      "title": "Graph Coloring via Degeneracy in Streaming and Other Space-Conscious Models",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICALP.2020.11",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-kloks-fill97",
+      "title": "On Treewidth and Minimum Fill-In of Asteroidal Triple-Free Graphs",
+      "url": "https://doi.org/10.1016/S0304-3975(96)00206-X",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-adwords-matching07",
+      "title": "AdWords and Generalized Online Matching",
+      "url": "https://doi.org/10.1145/1284320.1284321",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-online-advice-tape17",
+      "title": "Online Algorithms with Advice: The Tape Model",
+      "url": "https://doi.org/10.1016/j.ic.2017.03.001",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-meyerson-facility01",
+      "title": "Online Facility Location",
+      "url": "https://doi.org/10.1109/SFCS.2001.959917",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-vitter-reservoir85",
+      "title": "Random Sampling with a Reservoir",
+      "url": "https://doi.org/10.1145/3147.3165",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-mergeable-2013",
+      "title": "Mergeable Summaries",
+      "url": "https://doi.org/10.1145/2500128",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-ahn-guha-semistream09",
+      "title": "Graph Sparsification in the Semi-streaming Model",
+      "url": "https://arxiv.org/abs/0902.0140",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-ahn-graph-sketch12",
+      "title": "Graph Sketches: Sparsification, Spanners, and Subgraphs",
+      "url": "https://doi.org/10.1145/2213556.2213560",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-peters-proportionality21",
+      "title": "Proportionality and Strategyproofness in Multiwinner Elections",
+      "url": "https://arxiv.org/abs/2104.08594",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-faliszewski-bribery09",
+      "title": "How Hard Is Bribery in Elections?",
+      "url": "https://doi.org/10.1613/JAIR.2676",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-liquid-democracy18",
+      "title": "Liquid Democracy: An Algorithmic Perspective",
+      "url": "https://doi.org/10.1609/aaai.v32i1.11468",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-truthful-budget21",
+      "title": "Truthful Aggregation of Budget Proposals",
+      "url": "https://doi.org/10.1016/j.jet.2021.105234",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-manipulation-voting89",
+      "title": "The Computational Difficulty of Manipulating an Election",
+      "url": "https://www.cs.cmu.edu/~arielpro/mfai_papers/BTT89.pdf",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-alur-dill94",
+      "title": "A Theory of Timed Automata",
+      "url": "https://doi.org/10.1016/0304-3975(94)90010-8",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-dpllt04",
+      "title": "DPLL(T): Fast Decision Procedures",
+      "url": "https://doi.org/10.1007/978-3-540-27813-9_14",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-garey-shop76",
+      "title": "The Complexity of Flowshop and Jobshop Scheduling",
+      "url": "https://doi.org/10.1287/moor.1.2.117",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-jobshop-1991",
+      "title": "The Complexity of Shop-Scheduling Problems with Two or Three Jobs",
+      "url": "https://doi.org/10.1016/0377-2217(91)90066-5",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-raussendorf-mbqc03",
+      "title": "Measurement-Based Quantum Computation on Cluster States",
+      "url": "https://doi.org/10.1103/PhysRevA.68.022312",
+      "type": "paper"
+    },
+    {
+      "id": "paper-bib-round2-kempe-hamiltonian06",
+      "title": "The Complexity of the Local Hamiltonian Problem",
+      "url": "https://doi.org/10.1137/S0097539704445226",
+      "type": "paper"
     }
   ]
 }
