@@ -15423,8 +15423,8 @@
     {
       "id": "round4extra-20261113-two-sided-property15",
       "title": "Two-sided Error Proximity Oblivious Testing",
-      "year": 2015,
-      "venue": "Random Structures & Algorithms 48(2), online 2014",
+      "year": 2016,
+      "venue": "Random Structures & Algorithms 48(2), published online December 2014",
       "authors": [
         "Oded Goldreich",
         "Igor Shinkar"
@@ -15553,26 +15553,26 @@
       "status": "published",
       "review_status": "editorial_metadata_checked",
       "authors_completeness": "publisher_or_author_publication_checked",
-      "provenance": "Round 4 supplementary original-publisher/author literature review, 2026-11-13; topic-level tags only",
+      "provenance": "2026-11-13 published proceedings metadata plus historical complexity review; links to TQBF/PSPACE require primary proof verification.",
       "scope_note": "Original automata/logic word-problem paper with quantified Boolean alternations and polynomial-space completeness context, which requires consulting the paper's exact reductions rather than assuming all regular-expression equivalence variants are PSPACE-complete.",
       "primitives": [
         {
           "primitive_id": "problem.quantified-boolean-formula",
           "role": "problem",
-          "evidence": "publisher_metadata_and_secondary_reference",
-          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+          "evidence": "historical_primary_metadata_secondary_complexity_review",
+          "note": "Historical relation described in Stanford Encyclopedia and mathematical-complexity literature; theorem-level derivation is not audited."
         },
         {
           "primitive_id": "complexity_class.pspace-complete",
           "role": "model",
-          "evidence": "publisher_metadata_and_secondary_reference",
-          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+          "evidence": "historical_primary_metadata_secondary_complexity_review",
+          "note": "Historical relation described in Stanford Encyclopedia and mathematical-complexity literature; theorem-level derivation is not audited."
         },
         {
           "primitive_id": "problem.language-equivalence",
           "role": "problem",
-          "evidence": "publisher_metadata_and_secondary_reference",
-          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+          "evidence": "historical_primary_metadata_secondary_complexity_review",
+          "note": "Historical relation described in Stanford Encyclopedia and mathematical-complexity literature; theorem-level derivation is not audited."
         }
       ]
     }
