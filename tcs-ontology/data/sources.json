@@ -1776,6 +1776,264 @@
       "title": "A Model of Computation for MapReduce",
       "url": "https://doi.org/10.1137/1.9781611973075.76",
       "type": "paper"
+    },
+    {
+      "id": "round4-20261113-harsanyi-bayesian67",
+      "title": "Games with Incomplete Information Played by 'Bayesian' Players, I-III: Part I. The Basic Model",
+      "url": "https://doi.org/10.1287/mnsc.14.3.159",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-coordination-graphs22",
+      "title": "Coordination Games on Weighted Directed Graphs",
+      "url": "https://doi.org/10.1287/moor.2021.1159",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-coalition-subsidies11",
+      "title": "Subsidies, Stability, and Restricted Cooperation in Coalitional Games",
+      "url": "https://doi.org/10.5591/978-1-57735-516-8/IJCAI11-060",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-facility-cover-games10",
+      "title": "Non-Cooperative Facility Location and Covering Games",
+      "url": "https://doi.org/10.1016/j.tcs.2010.02.005",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-costsharing-setcover05",
+      "title": "Strategyproof Cost-Sharing Mechanisms for Set Cover and Facility Location Games",
+      "url": "https://doi.org/10.1016/j.dss.2004.08.004",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-allpay-complete96",
+      "title": "The All-Pay Auction with Complete Information",
+      "url": "https://doi.org/10.1007/BF01211819",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-multiunit-budgets12",
+      "title": "Multi-unit Auctions with Budget Limits",
+      "url": "https://doi.org/10.1016/j.geb.2011.08.003",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-core-select-package08",
+      "title": "Core-Selecting Package Auctions",
+      "url": "https://doi.org/10.1007/s00182-007-0100-7",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-sequential-externality12",
+      "title": "Sequential Auctions and Externalities",
+      "url": "https://doi.org/10.1137/1.9781611973099.70",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-single-sample-revenue15",
+      "title": "Revenue Maximization with a Single Sample",
+      "url": "https://doi.org/10.1016/j.geb.2014.03.011",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-truthful-lp05",
+      "title": "Truthful and Near-Optimal Mechanism Design via Linear Programming",
+      "url": "https://doi.org/10.1109/SFCS.2005.76",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-active-agnostic09",
+      "title": "Agnostic Active Learning",
+      "url": "https://doi.org/10.1016/j.jcss.2008.07.003",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-covariate-iwcv07",
+      "title": "Covariate Shift Adaptation by Importance Weighted Cross Validation",
+      "url": "https://www.jmlr.org/papers/v8/sugiyama07a.html",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-teaching-dimension95",
+      "title": "On the Complexity of Teaching",
+      "url": "https://doi.org/10.1006/jcss.1995.1003",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-fano-lecam97",
+      "title": "Assouad, Fano, and Le Cam",
+      "url": "https://web.stanford.edu/class/stats300a/REFS/yu1997assouad.pdf",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-calibrated-bayesian82",
+      "title": "The Well-Calibrated Bayesian",
+      "url": "https://doi.org/10.1080/01621459.1982.10477856",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-online-convex03",
+      "title": "Online Convex Programming and Generalized Infinitesimal Gradient Ascent",
+      "url": "https://dblp.org/rec/conf/icml/Zinkevich03",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-online-survey12",
+      "title": "Online Learning and Online Convex Optimization",
+      "url": "https://doi.org/10.1561/2200000018",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-margin-svm00",
+      "title": "Bounds on Error Expectation for Support Vector Machines",
+      "url": "https://doi.org/10.1162/089976600300015042",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-jain-vazirani01",
+      "title": "Approximation Algorithms for Metric Facility Location and k-Median Problems Using the Primal-Dual Schema and Lagrangian Relaxation",
+      "url": "https://doi.org/10.1145/375827.375845",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-karmarkar-karp82",
+      "title": "An Efficient Approximation Scheme for the One-Dimensional Bin-Packing Problem",
+      "url": "https://doi.org/10.1109/SFCS.1982.61",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-continuous-local11",
+      "title": "Continuous Local Search",
+      "url": "https://doi.org/10.1137/1.9781611973082.62",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-parity-games17",
+      "title": "Deciding Parity Games in Quasipolynomial Time",
+      "url": "https://doi.org/10.1145/3055399.3055409",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-private-weightpaths16",
+      "title": "Shortest Paths and Distances with Differential Privacy",
+      "url": "https://arxiv.org/abs/1511.04631",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-local-edge-triangles25",
+      "title": "Robust Privacy-Preserving Triangle Counting under Edge Local Differential Privacy",
+      "url": "https://doi.org/10.1145/3725348",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-functional-sec11",
+      "title": "Functional Encryption: Definitions and Challenges",
+      "url": "https://cs.stanford.edu/people/dabo/pubs/abstracts/functional.html",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-statistical-commit09",
+      "title": "Statistically Hiding Commitments and Statistical Zero-Knowledge Arguments from Any One-Way Function",
+      "url": "https://doi.org/10.1137/080725404",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-lattice-trapdoor08",
+      "title": "Trapdoors for Hard Lattices and New Cryptographic Constructions",
+      "url": "https://doi.org/10.1145/1374376.1374407",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-bounded-graph-testing02",
+      "title": "Property Testing in Bounded Degree Graphs",
+      "url": "https://doi.org/10.1007/s00453-001-0078-7",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-navigating-nets04",
+      "title": "Navigating Nets: Simple Algorithms for Proximity Search",
+      "url": "https://research.ibm.com/publications/navigating-nets-simple-algorithms-for-proximity-search",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-retroactive-data07",
+      "title": "Retroactive Data Structures",
+      "url": "https://doi.org/10.1145/1240233.1240236",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-decremental-reach14",
+      "title": "Sublinear-Time Decremental Algorithms for Single-Source Reachability and Shortest Paths on Directed Graphs",
+      "url": "https://doi.org/10.1145/2591796.2591869",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-limited-indep95",
+      "title": "Chernoff–Hoeffding Bounds for Applications with Limited Independence",
+      "url": "https://doi.org/10.1137/S089548019223872X",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-path-coupling97",
+      "title": "Path Coupling: A Technique for Proving Rapid Mixing in Markov Chains",
+      "url": "https://doi.org/10.1109/SFCS.1997.646111",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-gallager-mst83",
+      "title": "A Distributed Algorithm for Minimum-Weight Spanning Trees",
+      "url": "https://doi.org/10.1145/357195.357200",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-usenix-graphstats21",
+      "title": "Locally Differentially Private Analysis of Graph Statistics",
+      "url": "https://www.usenix.org/conference/usenixsecurity21/presentation/imola",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-walukiewicz-pushdown01",
+      "title": "Pushdown Processes: Games and Model-Checking",
+      "url": "https://doi.org/10.1006/inco.2000.2894",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-hopcroft-equivalence71",
+      "title": "A Linear Algorithm for Testing Equivalence of Finite Automata",
+      "url": "https://ecommons.cornell.edu/entities/publication/aa8cfe15-dcea-4be5-ae03-359120f548ea",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-quantum-comms98",
+      "title": "Quantum vs. Classical Communication and Computation",
+      "url": "https://doi.org/10.1145/276698.276713",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-scheduling-resources83",
+      "title": "Scheduling Subject to Resource Constraints: Classification and Complexity",
+      "url": "https://doi.org/10.1016/0166-218X(83)90012-4",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-tardiness-lawler77",
+      "title": "A 'Pseudopolynomial' Algorithm for Sequencing Jobs to Minimize Total Tardiness",
+      "url": "https://doi.org/10.1016/S0167-5060(08)70742-8",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-maxflow-sched05",
+      "title": "On-line Scheduling to Minimize Max Flow Time: An Optimal Preemptive Algorithm",
+      "url": "https://doi.org/10.1016/j.orl.2004.10.006",
+      "type": "paper"
+    },
+    {
+      "id": "round4-20261113-release-preempt04",
+      "title": "Minimizing Total Completion Time Subject to Job Release Dates and Preemption Penalties",
+      "url": "https://doi.org/10.1023/B:JOSH.0000031424.35504.c4",
+      "type": "paper"
     }
   ]
 }
