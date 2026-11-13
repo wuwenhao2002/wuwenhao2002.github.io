@@ -10,7 +10,7 @@
 
 **v0.6:** paper-driven AND-filter research graph with multi-selection, verified-vs-unreviewed paper filters, and bibliography export. See [docs/PAPER_GRAPH.md](docs/PAPER_GRAPH.md).
 
-**Literature coverage (13 November 2026):** 288 editorial paper records and 130 separately labeled title-inferred candidates. Together they link 607 of 830 canonical primitives (73.1%); 223 primitives remain without any indexed paper. Every newly curated paper in the two November coverage passes links at least two distinct canonical IDs. The bibliography is **selective** and the status labels do not imply theorem-level checking. See [the second-round coverage audit](docs/LITERATURE_COVERAGE_ROUND2.md).
+**Literature coverage (13 November 2026):** 338 editorial paper records and 130 separately marked title-inferred candidates. Together they link **684 of 830 canonical primitives (82.4%)**, with **146 primitives** still missing indexed papers. The latest round added 50 scoped papers, each referencing at least two distinct canonical IDs. The ontology taxonomy audit also retyped Time Complexity and Query Complexity from tasks into sourced resource properties, preserving redirect compatibility. Paper co-occurrence and bibliography metadata do **not** establish theorem validity or novelty. See [the third-round coverage and taxonomy audit](docs/LITERATURE_COVERAGE_ROUND3.md).
 
 **v0.3:** interactive [Primitive Universe](./map.html), structured paper-primitive role indexing, and research lenses (prediction, privacy, sensitivity, stability). See [docs/PAPER_COMBINATIONS.md](docs/PAPER_COMBINATIONS.md) for the curated paper sample and its limitations.
 
