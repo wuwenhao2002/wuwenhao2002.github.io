@@ -2034,6 +2034,60 @@
       "title": "Minimizing Total Completion Time Subject to Job Release Dates and Preemption Penalties",
       "url": "https://doi.org/10.1023/B:JOSH.0000031424.35504.c4",
       "type": "paper"
+    },
+    {
+      "id": "round4extra-20261113-network-creation06",
+      "title": "On Nash Equilibria for a Network Creation Game",
+      "url": "https://doi.org/10.1145/1109557.1109568",
+      "type": "paper"
+    },
+    {
+      "id": "round4extra-20261113-node-averaged20",
+      "title": "How long it takes for an ordinary node with an ordinary id to output?",
+      "url": "https://doi.org/10.1016/j.tcs.2019.01.023",
+      "type": "paper"
+    },
+    {
+      "id": "round4extra-20261113-succinct-rmq10",
+      "title": "Optimal Succinctness for Range Minimum Queries",
+      "url": "https://doi.org/10.1007/978-3-642-12200-2_16",
+      "type": "paper"
+    },
+    {
+      "id": "round4extra-20261113-batch-release05",
+      "title": "Minimizing makespan on a single batching machine with release times and non-identical job sizes",
+      "url": "https://doi.org/10.1016/j.orl.2004.04.009",
+      "type": "paper"
+    },
+    {
+      "id": "round4extra-20261113-circuit-value75",
+      "title": "The Circuit Value Problem is Log Space Complete for P",
+      "url": "https://doi.org/10.1145/990518.990519",
+      "type": "paper"
+    },
+    {
+      "id": "round4extra-20261113-two-sided-property15",
+      "title": "Two-sided Error Proximity Oblivious Testing",
+      "url": "https://doi.org/10.1002/rsa.20582",
+      "type": "paper"
+    },
+    {
+      "id": "round4extra-20261113-ov-concrete26",
+      "title": "New and Improved Concrete Lower Bounds for Orthogonal Vectors",
+      "url": "https://eccc.weizmann.ac.il/report/2026/121/",
+      "type": "paper"
+    },
+    {
+      "id": "round4extra-20261113-incremental-sssp21",
+      "title": "Incremental Single Source Shortest Paths in Sparse Digraphs",
+      "url": "https://doi.org/10.1137/1.9781611976465.146",
+      "type": "paper"
+    },
+    {
+      "id": "round4extra-20261113-stockmeyer-meyer73",
+      "title": "Word Problems Requiring Exponential Time: Preliminary Report",
+      "url": "https://doi.org/10.1145/800125.804029",
+      "type": "paper"
     }
   ]
 }
