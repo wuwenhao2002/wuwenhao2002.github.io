@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.5 — 2026-11-13
+
+- Focused Research Atlas maintenance: filtered bibliography and highlighted neighbors now share the same exact paper membership set.
+- Preserved the camera across viewport resizes and fitted the actual visible constellation, including on narrow screens.
+- Corrected cumulative drag detection and multi-pointer handling; added two-finger graph navigation without unintended selection.
+- Loaded essential concepts/editorial papers independently of supplementary candidates and source references. Unavailable layers are labelled and disabled until retry succeeds; required-data failures have an in-page retry.
+- Added loader, viewport/input and recovery regressions plus desktop/mobile Chromium recovery checks. Corpus data and evidence tiers are unchanged.
+
+
 ## 0.6.4 — 2026-11-13
 
 - Fixed the catalog’s All review states filter, added shareable catalog filters, and preserved session ideas for export when browser storage is blocked or full.

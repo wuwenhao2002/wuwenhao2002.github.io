@@ -76,4 +76,9 @@ button{border:0;color:inherit;background:transparent}svg{flex-shrink:0}::selecti
 
 /* v0.5 visual review corrections from actual Chromium desktop/mobile screenshots */
 .lit-filters{align-items:stretch}.lit-filters .paper-search{width:100%;min-width:0}.lit-filters .paper-search input{min-width:0;width:100%}.lit-filters select{width:100%;min-width:0}
+.map-load-status{display:flex;flex-shrink:0;align-items:center;gap:12px;padding:10px 18px;border-bottom:1px solid var(--seam);background:#17302f;color:#c6e9dd;font:12px/1.5 var(--font)}
+.map-load-status[hidden],.map-load-status button[hidden]{display:none}.map-load-status span{flex:1}.map-load-status button{flex-shrink:0;border:1px solid #6aa694;border-radius:5px;padding:6px 10px;color:#d6fff0;background:#25483e;font:11px var(--mono)}
+.map-load-status[data-state="warning"]{background:#342c25;color:#f3d3aa}.map-load-status[data-state="warning"] button{background:#473b2e;border-color:#ae8b60;color:#ffe3be}
+.map-toolbar-actions button:disabled,.filter-panel button:disabled{opacity:.45;cursor:wait}.lit-filters select option:disabled{color:#7b8e99}
 @media(max-width:780px){.lit-filters{display:flex;flex-direction:column;align-items:stretch}.lit-filters .paper-search{width:100%;box-sizing:border-box}.lit-filters .field-label{width:100%}}
+

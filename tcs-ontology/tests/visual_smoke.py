@@ -109,6 +109,46 @@ def inspect_blocked_storage(browser):
     assert len(saved["items"]) == 1 and saved["items"][0]["title"]
     context.close()
 
+
+def inspect_map_recovery(browser):
+    context = browser.new_context(viewport={"width": 390, "height": 844}, is_mobile=True, has_touch=True)
+    page = context.new_page()
+    held_requests = []
+    for name in ("sources", "papers-harvested"):
+        page.route(f"**/data/{name}.json", lambda route: held_requests.append(route))
+    with page.expect_request("**/data/sources.json"), page.expect_request("**/data/papers-harvested.json"):
+        page.goto(URL + "#select=lens.prediction&evidence=all", wait_until="domcontentloaded")
+    # Supplementary requests remain paused: the core atlas must already work.
+    page.wait_for_function("document.querySelector('#mapCounter').textContent.includes('INDEX /')")
+    assert page.locator("#paperEvidence").input_value() == "all"
+    page.locator("#paperEvidence").select_option("curated")
+    assert int(page.locator("#paperCount").inner_text().replace(",", "")) > 0
+    assert page.locator('#paperEvidence option[value="all"]').is_disabled()
+    assert page.locator("#mapLoadStatus").is_visible()
+    for route in held_requests:
+        route.abort()
+    page.wait_for_function("document.querySelector('#mapLoadMessage').textContent.includes('Title-inferred') && document.querySelector('#mapLoadMessage').textContent.includes('source references')")
+    assert page.locator("#mapError").is_hidden(), "Supplementary failure broke the core atlas"
+    page.unroute_all(behavior="wait")
+    page.locator("#retryMapData").click()
+    page.wait_for_function("!document.querySelector('#paperEvidence option[value=all]').disabled")
+    page.wait_for_function("document.querySelector('#mapLoadStatus').hidden")
+    assert page.locator("#paperEvidence").input_value() == "curated", "Completed background load overwrote the visitor's choice"
+    page.screenshot(path=str(OUT / "mobile-map-recovered.png"), full_page=True, animations="disabled")
+    context.close()
+
+    context = browser.new_context()
+    page = context.new_page()
+    page.route("**/data/primitives.json", lambda route: route.fulfill(status=503, body="temporarily unavailable"))
+    page.goto(URL, wait_until="domcontentloaded")
+    page.locator("#mapError").wait_for(state="visible")
+    assert page.locator("#retryMapData").is_visible()
+    page.unroute_all(behavior="wait")
+    page.locator("#retryMapData").click()
+    page.wait_for_function("document.querySelector('#mapCounter').textContent.includes('INDEX /')")
+    assert page.locator("#mapError").is_hidden()
+    context.close()
+
 def main():
     with sync_playwright() as p:
         browser=p.chromium.launch(headless=True,args=["--no-sandbox"])
@@ -119,6 +159,7 @@ def main():
         inspect_catalog(desktop, "desktop")
         inspect_catalog(mobile, "mobile")
         inspect_blocked_storage(browser)
+        inspect_map_recovery(browser)
         browser.close()
         print("Real-browser catalog, storage and map smoke tests passed:",result1,result2)
 

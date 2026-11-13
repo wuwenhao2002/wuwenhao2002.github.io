@@ -2,9 +2,11 @@
 /* TCS Ontology v0.5 — scientific Canvas atlas. Only real indexed papers define edges. */
 (() => {
 const $=id=>document.getElementById(id),stage=$("stage"),canvas=$("mapCanvas");
-const ctx=canvas.getContext("2d",{alpha:false}),Graph=window.TCSGraphModel;
-if(!ctx||!Graph){const e=$("mapError");e.hidden=false;e.textContent="Graph rendering is unavailable in this browser.";return;}
-const S={items:[],nodes:[],nodeMap:new Map(),areaCenters:new Map(),areas:[],papersCurated:[],papersHarvested:[],sources:[],paperIndex:Graph.build([]),selected:new Set(),related:new Map(),paperQuery:"",term:"",area:"",review:"all",evidence:"curated",matched:[],hovered:null,focus:true,motion:false,view:{x:0,y:0,scale:1},size:{w:1,h:1,dpr:1},pointer:null,paperLimit:30,needsDraw:true,start:performance.now(),time:0,ready:false};
+const ctx=canvas.getContext("2d",{alpha:false}),Graph=window.TCSGraphModel,Data=window.TCSMapData;
+if(!ctx||!Graph||!Data){const e=$("mapError");e.hidden=false;e.textContent="Graph rendering is unavailable. Reload the page or try a current browser.";$("mapLoadStatus").hidden=true;return;}
+const S={items:[],nodes:[],nodeMap:new Map(),areaCenters:new Map(),areas:[],papersCurated:[],papersHarvested:[],sources:[],paperIndex:Graph.build([]),selected:new Set(),related:new Map(),paperQuery:"",term:"",area:"",review:"all",evidence:"curated",matched:[],hovered:null,focus:true,motion:false,view:{x:0,y:0,scale:1},size:{w:1,h:1,dpr:1},pointers:new Map(),gesture:null,paperLimit:30,needsDraw:true,start:performance.now(),time:0,ready:false};
+const supplementary={sources:"pending","papers-harvested":"pending"};
+let pendingEvidence=null,loadController=null,loadGeneration=0,animationStarted=false;
 S.motion=!window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const el=(tag,cls="",value="")=>{const node=document.createElement(tag);node.className=cls;node.textContent=value;return node;};
 const hash=s=>{let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return h>>>0;};
@@ -40,7 +42,6 @@ function setup(){
 }
 function allowed(n){return S.selected.has(n.id)||(!S.area||n.p.areas.includes(S.area))&&(S.review==="all"||n.p.review_status===S.review);}
 function matchesTerm(n){const q=S.term.trim().toLowerCase();return !q||[n.p.name,n.id,...(n.p.aliases||[])].some(x=>x.toLowerCase().includes(q));}
-function clearRelated(){S.related=Graph.related(S.paperIndex,[...S.selected]);S.matched=Graph.matching(S.paperIndex,[...S.selected],S.paperQuery);}
 function computeFocus(){
  const selected=[...S.selected].map(id=>S.nodeMap.get(id)).filter(Boolean);
  if(!selected.length)return;
@@ -66,13 +67,10 @@ function computeFocus(){
  }
 }
 function resetCamera(){
- S.view.x=0;S.view.y=0;
- if(S.selected.size&&S.focus){
-  S.view.scale=clamp(Math.min(S.size.w/720,S.size.h/680),.7,1.15);
- } else{
-  const maxX=Math.max(...S.nodes.map(n=>Math.abs(n.x)))+150,maxY=Math.max(...S.nodes.map(n=>Math.abs(n.y)))+110;
-  S.view.scale=clamp(Math.min((S.size.w-90)/(2*maxX),(S.size.h-90)/(2*maxY)),.18,1.4);
- }
+ const focused=S.selected.size>0&&S.focus;
+ const visible=S.nodes.filter(n=>allowed(n)&&(!focused||S.selected.has(n.id)||S.related.has(n.id)));
+ const points=visible.map(n=>focused?{x:n.fx,y:n.fy}:{x:n.x,y:n.y});
+ S.view=Graph.fitView(points,S.size.w,S.size.h,focused?1.15:1.4);
  S.needsDraw=true;
 }
 function coords(n,t=S.time){
@@ -83,10 +81,12 @@ function coords(n,t=S.time){
  return{x:S.size.w/2+S.view.x+x*S.view.scale,y:S.size.h/2+S.view.y+y*S.view.scale};
 }
 function sizeToCanvas(){
- const b=stage.getBoundingClientRect();S.size.w=Math.max(100,b.width);S.size.h=Math.max(100,b.height);S.size.dpr=Math.min(devicePixelRatio||1,2);
+ const b=stage.getBoundingClientRect(),w=Math.max(100,b.width),h=Math.max(100,b.height),dpr=Math.min(devicePixelRatio||1,2);
+ if(w===S.size.w&&h===S.size.h&&dpr===S.size.dpr)return;
+ S.size={w,h,dpr};
  canvas.width=Math.floor(S.size.w*S.size.dpr);canvas.height=Math.floor(S.size.h*S.size.dpr);
  canvas.style.width=S.size.w+"px";canvas.style.height=S.size.h+"px";ctx.setTransform(S.size.dpr,0,0,S.size.dpr,0,0);
- if(S.ready)resetCamera();
+ // Keep the current world center and zoom when browser chrome or viewport size changes.
  S.needsDraw=true;
 }
 const inside=p=>p.x>-30&&p.x<S.size.w+30&&p.y>-30&&p.y<S.size.h+30;
@@ -236,23 +236,25 @@ function hitTest(x,y){
  return best;
 }
 function update(){
- S.related=Graph.related(S.paperIndex,[...S.selected]);S.matched=Graph.matching(S.paperIndex,[...S.selected],S.paperQuery);
+ S.related=Graph.related(S.paperIndex,[...S.selected],S.paperQuery);S.matched=Graph.matching(S.paperIndex,[...S.selected],S.paperQuery);
  computeFocus();renderChips();renderPapers();renderIndex();renderSummary();
  $("mapHeading").textContent=S.selected.size?[...S.selected].map(pName).join(" + "):"A universe of research ideas";
  document.querySelectorAll(".lens-chip").forEach(b=>{const on=S.selected.has(b.dataset.primitive);b.classList.toggle("active",on);b.setAttribute("aria-pressed",String(on));});
  S.needsDraw=true;
 }
 function syncView(){
- const hashText=Graph.writeView({...S,selected:[...S.selected]});
+ const hashText=Graph.writeView({...S,evidence:pendingEvidence||S.evidence,selected:[...S.selected]});
  try{history.replaceState(null,"",location.pathname+location.search+hashText);}catch{/* A restricted embed can still browse the graph. */}
 }
 function restoreView(){
  if(!S.ready)return;
  const view=Graph.readView(location.hash,new Set(S.nodeMap.keys()),new Set(S.items.flatMap(p=>p.areas)));
+ pendingEvidence=view.evidence!=="curated"&&supplementary["papers-harvested"]!=="ready"?view.evidence:null;
+ if(pendingEvidence)view.evidence="curated";
  for(const key of ["term","paperQuery","area","review","evidence","focus"])S[key]=view[key];
  S.selected=new Set(view.selected);
  $("mapSearch").value=S.term;$("paperSearch").value=S.paperQuery;$("mapArea").value=S.area;
- $("mapStatus").value=S.review;$("paperEvidence").value=S.evidence;
+ $("mapStatus").value=S.review;$("paperEvidence").value=pendingEvidence||S.evidence;
  $("focusMode").setAttribute("aria-pressed",String(S.focus));
  evidenceLayer();resetCamera();
 }
@@ -337,7 +339,7 @@ function evidenceLayer(){
  S.paperLimit=30;update();if(S.selected.size&&S.focus)resetCamera();
 }
 function zoomAt(factor,x=S.size.w/2,y=S.size.h/2){
- const k=clamp(S.view.scale*factor,.13,4.4)/S.view.scale;
+ const k=clamp(S.view.scale*factor,.03,4.4)/S.view.scale;
  S.view.x=x-S.size.w/2-(x-S.size.w/2-S.view.x)*k;
  S.view.y=y-S.size.h/2-(y-S.size.h/2-S.view.y)*k;S.view.scale*=k;S.needsDraw=true;
 }
@@ -347,10 +349,42 @@ function renderMotionControl(){
  button.setAttribute("aria-pressed",String(!S.motion));
  button.setAttribute("aria-label",S.motion?"Pause motion":"Resume motion");
 }
-stage.addEventListener("pointerdown",e=>{if(e.button!==0)return;stage.setPointerCapture(e.pointerId);S.pointer={x:e.clientX,y:e.clientY,dragged:false};stage.classList.add("dragging");});
+function pointerPosition(e){const rect=stage.getBoundingClientRect();return {x:e.clientX-rect.left,y:e.clientY-rect.top};}
+function gesturePosition(){
+ const [a,b]=S.pointers.values();
+ return b?{x:(a.x+b.x)/2,y:(a.y+b.y)/2,distance:Math.hypot(a.x-b.x,a.y-b.y)}:{...a,distance:0};
+}
+function finishPointer(e,cancelled=false){
+ if(!S.pointers.has(e.pointerId))return;
+ const last=S.pointers.get(e.pointerId),point=pointerPosition(e);
+ const tap=!cancelled&&S.pointers.size===1&&!S.gesture.multi&&!S.gesture.dragged&&
+   S.gesture.travel+Math.hypot(point.x-last.x,point.y-last.y)<=5;
+ S.pointers.delete(e.pointerId);
+ if(!S.pointers.size){S.gesture=null;stage.classList.remove("dragging");}
+ else{S.gesture.multi=true;S.gesture.dragged=true;}
+ if(tap)toggle(hitTest(point.x,point.y));
+ S.needsDraw=true;
+}
+stage.addEventListener("pointerdown",e=>{
+ if(e.button!==0||S.pointers.has(e.pointerId))return;
+ S.pointers.set(e.pointerId,pointerPosition(e));
+ if(!S.gesture)S.gesture={travel:0,dragged:false,multi:false};
+ if(S.pointers.size>1){S.gesture.multi=true;S.gesture.dragged=true;}
+ stage.setPointerCapture(e.pointerId);stage.classList.add("dragging");
+ S.hovered=null;$("hoverTip").hidden=true;S.needsDraw=true;
+});
 stage.addEventListener("pointermove",e=>{
  const rect=stage.getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top;
- if(S.pointer){const dx=e.clientX-S.pointer.x,dy=e.clientY-S.pointer.y;S.pointer.x=e.clientX;S.pointer.y=e.clientY;if(Math.abs(dx)+Math.abs(dy)>2)S.pointer.dragged=true;S.view.x+=dx;S.view.y+=dy;S.needsDraw=true;return;}
+ if(S.pointers.size){
+  if(!S.pointers.has(e.pointerId))return;
+  const before=gesturePosition(),last=S.pointers.get(e.pointerId);
+  S.gesture.travel+=Math.hypot(x-last.x,y-last.y);
+  if(S.gesture.travel>5)S.gesture.dragged=true;
+  S.pointers.set(e.pointerId,{x,y});const after=gesturePosition();
+  if(S.pointers.size>1&&before.distance>0&&after.distance>0)zoomAt(after.distance/before.distance,before.x,before.y);
+  S.view.x+=after.x-before.x;S.view.y+=after.y-before.y;
+  S.needsDraw=true;return;
+ }
  const n=hitTest(x,y);S.hovered=n;
  const tip=$("hoverTip");tip.hidden=!n;
  if(n){tip.replaceChildren(el("span","tip-heading",n.p.name),el("span","tip-meta",n.area+" / "+n.p.kind));
@@ -361,12 +395,9 @@ stage.addEventListener("pointermove",e=>{
  }
  S.needsDraw=true;
 });
-stage.addEventListener("pointerup",e=>{
- if(!S.pointer)return;const rect=stage.getBoundingClientRect();
- if(!S.pointer.dragged){const hit=hitTest(e.clientX-rect.left,e.clientY-rect.top);if(hit)toggle(hit);}
- S.pointer=null;stage.classList.remove("dragging");S.needsDraw=true;
-});
-stage.addEventListener("pointercancel",()=>{S.pointer=null;stage.classList.remove("dragging");});
+stage.addEventListener("pointerup",e=>finishPointer(e));
+stage.addEventListener("pointercancel",e=>finishPointer(e,true));
+stage.addEventListener("lostpointercapture",e=>finishPointer(e,true));
 stage.addEventListener("pointerleave",()=>{S.hovered=null;$("hoverTip").hidden=true;S.needsDraw=true;});
 stage.addEventListener("wheel",e=>{e.preventDefault();const rect=stage.getBoundingClientRect();zoomAt(e.deltaY>0?.88:1.14,e.clientX-rect.left,e.clientY-rect.top);},{passive:false});
 stage.addEventListener("keydown",e=>{
@@ -387,8 +418,8 @@ $("clearSelection").onclick=()=>selection([]);
 $("mapSearch").oninput=e=>{S.term=e.target.value;renderIndex();S.needsDraw=true;syncView();};
 $("mapArea").onchange=e=>{S.area=e.target.value;renderIndex();S.needsDraw=true;syncView();};
 $("mapStatus").onchange=e=>{S.review=e.target.value;renderIndex();S.needsDraw=true;syncView();};
-$("paperEvidence").onchange=e=>{S.evidence=e.target.value;evidenceLayer();syncView();};
-$("paperSearch").oninput=e=>{S.paperQuery=e.target.value;S.paperLimit=30;S.matched=Graph.matching(S.paperIndex,[...S.selected],S.paperQuery);renderPapers();renderSummary();S.needsDraw=true;syncView();};
+$("paperEvidence").onchange=e=>{pendingEvidence=null;S.evidence=e.target.value;evidenceLayer();syncView();};
+$("paperSearch").oninput=e=>{S.paperQuery=e.target.value;S.paperLimit=30;update();syncView();};
 $("morePapers").onclick=()=>{S.paperLimit+=30;renderPapers();};
 $("exportPapers").onclick=()=>{
  const papers=S.selected.size?S.matched:[];
@@ -411,26 +442,69 @@ function animate(now){
  if(!document.hidden&&(S.needsDraw||S.motion)){draw();S.needsDraw=false;}
  requestAnimationFrame(animate);
 }
-async function json(name,signal,optional=false){
- try{const r=await fetch("./data/"+name+".json",{cache:"no-cache",signal});if(!r.ok)throw Error(name+" HTTP "+r.status);
-  const data=await r.json();if(!Array.isArray(data.items))throw Error("Invalid "+name+" data");return data.items;
- }catch(error){if(optional)return [];throw error;}
+function setCoreBusy(busy){
+ stage.setAttribute("aria-busy",String(busy));
+ for(const id of ["mapSearch","mapArea","mapStatus","paperSearch","paperEvidence","zoomIn","zoomOut","resetView","focusMode","motionToggle","clearSelection","exportPapers"])$(id).disabled=busy;
+ document.querySelectorAll("[data-primitive]").forEach(button=>button.disabled=busy);
+}
+function renderLoadStatus(){
+ const box=$("mapLoadStatus"),retry=$("retryMapData");
+ const failed=Object.keys(supplementary).filter(name=>supplementary[name]==="failed");
+ const pending=Object.values(supplementary).some(status=>status==="pending");
+ for(const option of $("paperEvidence").options){if(option.value!=="curated")option.disabled=supplementary["papers-harvested"]!=="ready";}
+ $("paperEvidence").value=pendingEvidence||S.evidence;
+ box.hidden=!failed.length&&!pending;box.dataset.state=failed.length?"warning":"loading";
+ const notices=[];
+ if(supplementary["papers-harvested"]==="failed")notices.push("Title-inferred candidates are unavailable; editorial papers remain available.");
+ if(supplementary.sources==="failed")notices.push("Supplementary source references are unavailable; direct paper links remain available.");
+ if(pendingEvidence)notices.push("The requested evidence layer is not ready. Showing editorial papers meanwhile; choose Editorially mapped to cancel the pending switch.");
+ if(pending)notices.push("Atlas ready. Loading supplementary references and title-inferred candidates…");
+ $("mapLoadMessage").textContent=notices.join(" ");retry.hidden=!failed.length;retry.disabled=false;
+}
+async function loadSupplement(name,generation){
+ supplementary[name]="pending";renderLoadStatus();
+ try{
+  const items=await Data.load(name,{signal:loadController.signal});
+  if(generation!==loadGeneration)return;
+  supplementary[name]="ready";
+  if(name==="sources"){S.sources=items;renderPapers();}
+  else{
+   S.papersHarvested=items;
+   if(pendingEvidence){S.evidence=pendingEvidence;pendingEvidence=null;$("paperEvidence").value=S.evidence;}
+   if(S.evidence!=="curated")evidenceLayer();
+   syncView();
+  }
+ }catch(error){if(generation!==loadGeneration)return;supplementary[name]="failed";console.warn("Supplementary atlas data unavailable:",name,error);}
+ finally{if(generation===loadGeneration)renderLoadStatus();}
 }
 async function init(){
- const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),18000);
+ loadController?.abort();loadController=new AbortController();const generation=++loadGeneration;
+ S.ready=false;setCoreBusy(true);$("mapError").hidden=true;
+ $("mapLoadStatus").hidden=false;$("mapLoadStatus").dataset.state="loading";
+ $("mapLoadMessage").textContent="Loading concepts and editorial paper index…";$("retryMapData").hidden=true;
+ supplementary.sources="pending";supplementary["papers-harvested"]="pending";
  try{
-  [S.items,S.papersCurated,S.papersHarvested,S.sources]=await Promise.all([
-   json("primitives",controller.signal),json("papers",controller.signal),json("papers-harvested",controller.signal,true),json("sources",controller.signal)
-  ]);
+  const [items,papers]=await Promise.all([Data.load("primitives",{signal:loadController.signal,nonEmpty:true}),Data.load("papers",{signal:loadController.signal,nonEmpty:true})]);
+  if(generation!==loadGeneration)return;
+  if(new Set(items.map(p=>p.id)).size!==items.length)throw new Error("Duplicate primitive IDs");
+  S.items=items;S.papersCurated=papers;S.papersHarvested=[];S.sources=[];
+  S.nodes=[];S.nodeMap.clear();S.areaCenters.clear();
   setup();S.ready=true;
+  const all=el("option","","All fields");all.value="";$("mapArea").replaceChildren(all);
   for(const area of [...new Set(S.items.flatMap(p=>p.areas))].sort()){const op=el("option","",area);op.value=area;$("mapArea").append(op);}
-  sizeToCanvas();
-  restoreView();
-  renderMotionControl();
-
-  requestAnimationFrame(animate);
- }catch(error){const m=$("mapError");m.hidden=false;m.textContent="Could not initialize research atlas: "+error.message;console.error(error);}
- finally{clearTimeout(timer);}
+  sizeToCanvas();setCoreBusy(false);restoreView();renderMotionControl();renderLoadStatus();
+  if(!animationStarted){animationStarted=true;requestAnimationFrame(animate);}
+  loadSupplement("sources",generation);loadSupplement("papers-harvested",generation);
+ }catch(error){
+  if(generation!==loadGeneration)return;loadController.abort();S.ready=false;setCoreBusy(true);
+  const m=$("mapError");m.hidden=false;m.textContent="The essential research index could not load. Check your connection and use Retry loading.";
+  $("mapLoadStatus").hidden=false;$("mapLoadStatus").dataset.state="warning";$("mapLoadMessage").textContent="Research index unavailable. Your link and filters are preserved.";
+  $("retryMapData").hidden=false;$("retryMapData").disabled=false;console.error("Atlas initialization:",error);
+ }
 }
+$("retryMapData").onclick=()=>{
+ if(!S.ready){init();return;}
+ for(const name of Object.keys(supplementary))if(supplementary[name]==="failed")loadSupplement(name,loadGeneration);
+};
 init();
 })();

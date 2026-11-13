@@ -34,7 +34,13 @@ The visualization defaults to the curated tier. Choose Both layers explicitly to
 
 ## Shareable views
 
-The address retains selected canonical IDs, primitive search, area/review filters, paper evidence tier, bibliography search and focus mode. Reloading a copied link restores those controls; old primitive links remain supported. Paper-search counts and the canvas summary refer to the same filtered bibliography. Selection uses keyboard-accessible buttons with explicit pressed states.
+The address retains selected canonical IDs, primitive search, area/review filters, paper evidence tier, bibliography search and focus mode. Reloading a copied link restores those controls; old primitive links remain supported. Paper-search counts, the canvas summary and mint-highlighted neighbors refer to the same filtered bibliography. Selection uses keyboard-accessible buttons with explicit pressed states.
+
+## Navigation and recovery
+
+Fit all uses the bounds of the visible constellation. Resizing the viewport preserves the current pan and zoom; mouse dragging and two-finger panning/pinching navigate without adding a selection. Use the primitive index for keyboard selection.
+
+The core atlas becomes available after concepts and editorial paper records load. Supplementary source references and title-inferred records load independently. While a candidate layer is pending or unavailable, its evidence options are disabled and a visible status offers retry. This is an availability state, not a zero-paper result. Required-data errors can also be retried without reloading the page.
 
 ## Data model and SQLite
 
