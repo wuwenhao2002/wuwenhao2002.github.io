@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.2 — 2026-11-13
+
+- Third targeted multi-primitive paper round: +50 curated papers, 154 new paper–primitive assignments, +77 previously unlinked canonical primitives. Total paper-linked coverage is 684/830 (82.4%), including the separate optional unreviewed harvest layer.
+- Retired two wrongly typed `task` nodes (`time-complexity`, `query-complexity`) and replaced them with sourced `property` canonical IDs; added legacy redirects rather than breaking references.
+- Corrected the mathematical problem definition and source of `Influence Maximization` to Kempe–Kleinberg–Tardos.
+- Added publisher/author evidence links, scope cautions, regression tests for canonical IDs / duplicate-title rejection / multi-primitive membership, and a detailed coverage audit in `docs/LITERATURE_COVERAGE_ROUND3.md`.
+- The presence/absence of a paper link does not certify scientific novelty; metadata checks, abstract checks and theorem-level validation remain distinct.
+
+
 ## 0.6.1 — 2026-11-13
 
 - Expanded the multi-primitive paper graph through two targeted literature campaigns: 129 additional papers compared with the original 159-paper snapshot, spanning complexity, game theory, mechanism design, cryptography, learning, scheduling, distributed/streaming and graph algorithms.
