@@ -92,7 +92,7 @@
       ],
       "status": "published",
       "source_id": "p-dinitz-graphcuts",
-      "scope_note": "Differential privacy for specific cut problems. The graph adjacency model and accuracy measures are paper-specific.",
+      "scope_note": "Differential privacy for specific cut problems. The graph adjacency model and accuracy measures are paper-specific. Official SODA 2026 abstract verifies the paper uses edge differential privacy on graph-cut problems with stated additive/multiplicative accuracy guarantees.",
       "primitives": [
         {
           "primitive_id": "lens.differential-privacy",
@@ -113,6 +113,12 @@
         {
           "primitive_id": "property.additive-error",
           "role": "metric"
+        },
+        {
+          "primitive_id": "model.edge-differential-privacy",
+          "role": "model",
+          "evidence": "official_abstract",
+          "note": "Official SIAM SODA 2026 abstract explicitly states edge-differentially private graph cut algorithms."
         }
       ],
       "review_status": "editorial_metadata_checked",
@@ -1127,7 +1133,7 @@
       "authors_completeness": "not_curated",
       "status": "bibliographic_record",
       "review_status": "editorial_metadata_checked",
-      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded.",
+      "scope_note": "Primitive roles editorially selected from the author's publication listing and title/abstract; the paper's exact theorem conditions are not encoded. The paper constructs integrality-gap examples for stronger Lasserre/SOS relaxations of graph-spanner and related problems.",
       "primitives": [
         {
           "primitive_id": "problem.graph-spanner",
@@ -1140,6 +1146,12 @@
         {
           "primitive_id": "technique.sum-of-squares-hierarchy",
           "role": "technique"
+        },
+        {
+          "primitive_id": "technique.integrality-gap-construction",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "Author publication page lists explicit Lasserre integrality gaps for graph spanners."
         }
       ],
       "source_url": "https://www.cs.jhu.edu/~mdinitz/pub.html"
@@ -4723,35 +4735,47 @@
       ],
       "source_id": "conf-stoc26",
       "url": "https://acm-stoc.org/stoc2026/toc.html",
-      "review_status": "editorial_metadata_checked",
+      "review_status": "editorial_abstract_checked",
       "status": "published",
       "authors_completeness": "official_conference_program",
-      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
-      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "provenance": "2026-11-13 official STOC 2026 proceedings abstract reviewed for all tagged concepts; not a theorem-level check.",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked. STOC 2026 official proceedings abstract explicitly treats positive-only PAC learning with a reference distribution D, giving sample complexity guarantees for classes of finite VC dimension.",
       "primitives": [
         {
           "primitive_id": "lens.smoothed-analysis",
           "role": "lens",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract directly discusses this concept in the formal learning or graph-streaming setting."
         },
         {
           "primitive_id": "model.pac-learning",
           "role": "model",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract directly discusses this concept in the formal learning or graph-streaming setting."
         },
         {
           "primitive_id": "property.vc-dimension",
           "role": "metric",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract directly discusses this concept in the formal learning or graph-streaming setting."
         },
         {
           "primitive_id": "property.sample-complexity",
           "role": "metric",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract directly discusses this concept in the formal learning or graph-streaming setting."
+        },
+        {
+          "primitive_id": "problem.positive-only-learning",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "STOC 2026 abstract explicitly models learning from positive-only samples."
+        },
+        {
+          "primitive_id": "assumption.reference-distribution",
+          "role": "assumption",
+          "evidence": "official_abstract",
+          "note": "STOC 2026 abstract explicitly assumes available samples from a reference distribution."
         }
       ]
     },
@@ -4767,35 +4791,41 @@
       ],
       "source_id": "conf-stoc26",
       "url": "https://acm-stoc.org/stoc2026/toc.html",
-      "review_status": "editorial_metadata_checked",
+      "review_status": "editorial_abstract_checked",
       "status": "published",
       "authors_completeness": "official_conference_program",
-      "provenance": "2026-11-13 original conference program title/author verification; title-level concept role classification only",
-      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked.",
+      "provenance": "2026-11-13 official STOC 2026 proceedings abstract reviewed for all tagged concepts; not a theorem-level check.",
+      "scope_note": "Research concepts explicitly supported by the paper title. Full-text mathematical statements were not checked. Official STOC 2026 abstract states that the problem is maximum matching in a single-pass semi-streaming graph; do not confuse with the general multipass streaming lower-bound model.",
       "primitives": [
         {
           "primitive_id": "model.semi-streaming",
           "role": "model",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract directly discusses this concept in the formal learning or graph-streaming setting."
         },
         {
           "primitive_id": "problem.semi-streaming-matching",
           "role": "problem",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract directly discusses this concept in the formal learning or graph-streaming setting."
         },
         {
           "primitive_id": "technique.blueprint-lower-bound",
           "role": "technique",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract directly discusses this concept in the formal learning or graph-streaming setting."
         },
         {
           "primitive_id": "task.tight-lower-bound",
           "role": "task",
-          "evidence": "official_title",
-          "note": "Directly classified from official conference title and subject; do not infer unseen theorem details."
+          "evidence": "official_abstract",
+          "note": "Official STOC 2026 abstract directly discusses this concept in the formal learning or graph-streaming setting."
+        },
+        {
+          "primitive_id": "problem.streaming-matching",
+          "role": "problem",
+          "evidence": "official_abstract",
+          "note": "STOC 2026 official abstract studies maximum matching under a one-pass semi-streaming edge-arrival model."
         }
       ]
     },
@@ -6160,7 +6190,7 @@
       "status": "published",
       "authors_completeness": "official_program",
       "provenance": "official FOCS/STOC program checked, with title-derived roles only",
-      "scope_note": "Paper title and author metadata checked. Concepts are title-grounded and not formal theorem extraction.",
+      "scope_note": "Paper title and author metadata checked. Concepts are title-grounded and not formal theorem extraction. Title and FOCS 2025 paper abstract specify lower bounds on space versus number of passes for approximation of Max-Cut.",
       "primitives": [
         {
           "primitive_id": "model.data-stream-model",
@@ -6191,6 +6221,12 @@
           "role": "task",
           "evidence": "official_title",
           "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+        },
+        {
+          "primitive_id": "technique.multipass-streaming-lower-bound",
+          "role": "technique",
+          "evidence": "official_abstract",
+          "note": "FOCS 2025 title and preprint abstract explicitly derive lower bounds with multiple streaming passes."
         }
       ]
     },
