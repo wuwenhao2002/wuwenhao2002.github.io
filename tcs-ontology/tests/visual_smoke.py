@@ -119,7 +119,7 @@ def inspect_map_recovery(browser):
     with page.expect_request("**/data/sources.json"), page.expect_request("**/data/papers-harvested.json"):
         page.goto(URL + "#select=lens.prediction&evidence=all", wait_until="domcontentloaded")
     # Supplementary requests remain paused: the core atlas must already work.
-    page.wait_for_function("document.querySelector('#mapCounter').textContent.includes('INDEX /')")
+    page.wait_for_function("document.querySelector('#stage').getAttribute('aria-busy')==='false' && document.querySelectorAll('#selectedChips button').length===1")
     assert page.locator("#paperEvidence").input_value() == "all"
     page.locator("#paperEvidence").select_option("curated")
     assert int(page.locator("#paperCount").inner_text().replace(",", "")) > 0
