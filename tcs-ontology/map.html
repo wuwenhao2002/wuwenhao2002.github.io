@@ -16,7 +16,7 @@
     <div class="head-spacer"></div>
     <a class="head-link" href="./">Concept index <span aria-hidden="true">↗</span></a>
     <a class="head-link head-github" href="https://github.com/wuwenhao2002/wuwenhao2002.github.io/tree/main/tcs-ontology" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
-    <span class="release">ATLAS / V0.6</span>
+    <span class="release">ATLAS / V0.6.5</span>
   </header>
 
   <main class="workspace">
@@ -71,6 +71,11 @@
         </div>
       </div>
 
+      <div id="mapLoadStatus" class="map-load-status" role="status" aria-live="polite">
+        <span id="mapLoadMessage">Loading concepts and editorial paper index…</span>
+        <button id="retryMapData" type="button" hidden>Retry loading</button>
+      </div>
+
       <div class="selection-panel" aria-label="Selected primitive intersection">
         <div class="selection-label"><span class="light-dot"></span><span>ACTIVE FILTERS <em>ALL MUST MATCH</em></span><button id="clearSelection" class="clear-action">Clear all <span>×</span></button></div>
         <div class="selected-chips" id="selectedChips" aria-live="polite"><span class="empty-chips">Select any primitive to reveal the papers connecting it to others.</span></div>
@@ -111,5 +116,5 @@
     </aside>
   </main>
 </div>
-<script src="./map-model.js" defer></script><script src="./map.js" defer></script>
+<script src="./map-model.js" defer></script><script src="./map-data.js" defer></script><script src="./map.js" defer></script>
 </body></html>

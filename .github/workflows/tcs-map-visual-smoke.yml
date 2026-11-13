@@ -10,6 +10,7 @@ on:
       - 'tcs-ontology/map.css'
       - 'tcs-ontology/map.js'
       - 'tcs-ontology/map-model.js'
+      - 'tcs-ontology/map-data.js'
       - 'tcs-ontology/tests/visual_smoke.py'
   workflow_dispatch:
 
