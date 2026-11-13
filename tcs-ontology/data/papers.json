@@ -9408,16 +9408,16 @@
       "id": "round2-20261113-kernel-counting23",
       "title": "Kernelization for Counting Problems on Graphs: Preserving the Number of Minimum Solutions",
       "year": 2023,
-      "venue": "arXiv preprint",
+      "venue": "IPEC 2023",
       "authors": [
         "Bart M. P. Jansen",
         "Bart van der Steenhoven"
       ],
       "source_id": "paper-bib-round2-kernel-counting23",
-      "url": "https://arxiv.org/abs/2310.04303",
+      "url": "https://doi.org/10.4230/LIPIcs.IPEC.2023.27",
       "review_status": "editorial_abstract_checked",
-      "status": "preprint",
-      "authors_completeness": "publisher_or_author_metadata",
+      "status": "published",
+      "authors_completeness": "official_proceedings",
       "provenance": "Targeted multi-primitive literature curation, 2026-11-13; evidence sourced from public publisher/author abstracts when available",
       "scope_note": "Develops counting-preserving kernelization for minimum feedback vertex sets and minimum dominating sets in planar graphs; the latter is the scoped dominating-set link.",
       "primitives": [
@@ -9451,7 +9451,7 @@
       "id": "round2-20261113-semitotal-dom25",
       "title": "On the Parameterized Complexity of Semitotal Domination on Graph Classes",
       "year": 2025,
-      "venue": "arXiv preprint",
+      "venue": "arXiv preprint (2025)",
       "authors": [
         "Lukas Retschmeier"
       ],
@@ -10041,14 +10041,8 @@
       "status": "published",
       "authors_completeness": "publisher_or_author_metadata",
       "provenance": "Targeted multi-primitive literature curation, 2026-11-13; evidence sourced from public publisher/author abstracts when available",
-      "scope_note": "Characterizes bilateral trade under independent private values and demonstrates inefficiency constraints for incentive compatible, individually rational and no-subsidy mechanisms.",
+      "scope_note": "Characterizes bilateral trade under independent private values and demonstrates inefficiency constraints for incentive compatible, individually rational and no-subsidy mechanisms. Bilateral trade is not treated as synonymous with a general double-auction mechanism.",
       "primitives": [
-        {
-          "primitive_id": "auction.double-auction",
-          "role": "model",
-          "evidence": "publisher_or_author_abstract",
-          "note": "Scoped editorial topic connection, not formal theorem extraction."
-        },
         {
           "primitive_id": "property.bayesian-incentive-compatibility",
           "role": "metric",
@@ -10551,12 +10545,6 @@
           "role": "model",
           "evidence": "publisher_or_author_abstract",
           "note": "Scoped editorial topic connection, not formal theorem extraction."
-        },
-        {
-          "primitive_id": "property.semantic-security",
-          "role": "metric",
-          "evidence": "publisher_or_author_abstract",
-          "note": "Scoped editorial topic connection, not formal theorem extraction."
         }
       ]
     },
@@ -10791,12 +10779,16 @@
       "title": "Graph Coloring via Degeneracy in Streaming and Other Space-Conscious Models",
       "year": 2020,
       "venue": "ICALP 2020",
-      "authors": [],
+      "authors": [
+        "Suman K. Bera",
+        "Amit Chakrabarti",
+        "Prantar Ghosh"
+      ],
       "source_id": "paper-bib-round2-color-degeneracy20",
       "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICALP.2020.11",
       "review_status": "editorial_abstract_checked",
       "status": "published",
-      "authors_completeness": "publisher_or_author_metadata",
+      "authors_completeness": "official_proceedings",
       "provenance": "Targeted multi-primitive literature curation, 2026-11-13; evidence sourced from public publisher/author abstracts when available",
       "scope_note": "Studies graph coloring parameterized by degeneracy in data streaming, graph-query, MPC and congested-clique/LOCAL settings, with corresponding resource lower bounds.",
       "primitives": [
@@ -10914,12 +10906,18 @@
       "title": "Online Algorithms with Advice: The Tape Model",
       "year": 2017,
       "venue": "Information and Computation",
-      "authors": [],
+      "authors": [
+        "Hans-Joachim Böckenhauer",
+        "Dennis Komm",
+        "Rastislav Královič",
+        "Richard Královič",
+        "Tobias Mömke"
+      ],
       "source_id": "paper-bib-round2-online-advice-tape17",
       "url": "https://doi.org/10.1016/j.ic.2017.03.001",
       "review_status": "editorial_abstract_checked",
       "status": "published",
-      "authors_completeness": "publisher_or_author_metadata",
+      "authors_completeness": "institutional_repository",
       "provenance": "Targeted multi-primitive literature curation, 2026-11-13; evidence sourced from public publisher/author abstracts when available",
       "scope_note": "Studies advice-bit requirements for paging, job-shop scheduling and routing, explicitly distinguishing deterministic and randomized baselines.",
       "primitives": [
@@ -11164,8 +11162,8 @@
     {
       "id": "round2-20261113-peters-proportionality21",
       "title": "Proportionality and Strategyproofness in Multiwinner Elections",
-      "year": 2021,
-      "venue": "AAMAS 2018; corrected arXiv versions",
+      "year": 2018,
+      "venue": "AAMAS 2018; corrected 2024 arXiv manuscript",
       "authors": [
         "Dominik Peters"
       ],
