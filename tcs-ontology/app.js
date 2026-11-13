@@ -5,6 +5,10 @@
     results: [], papers: [], redirects: new Map(), selected: null, idea: null, page: 0, view: "explore",
     ready: false, query: "", status: "source_checked", kind: "", area: "", graphDepth: 1 };
   const PAGE = 18, KEY = "tcs-ontology-ideas-v2", $ = id => document.getElementById(id);
+  const VIEWS = new Set(["explore", "compose", "saved", "papers", "sources"]), renderedViews = new Set();
+  let savedIdeas = null, unreadableStorage = false, unsavedIdeas = false;
+  const validIdea = x => x && typeof x.title === "string" && typeof x.rule_id === "string"
+    && x.slots && typeof x.slots === "object" && !Array.isArray(x.slots);
   const node = (tag, cls = "", value = "") => { const e = document.createElement(tag); e.className = cls; e.textContent = value; return e; };
   const find = id => state.byId.get(state.redirects.get(id) || id);
   const src = id => state.refs.find(x => x.id === id);
@@ -25,34 +29,88 @@
     const a = document.createElement("a"); a.href = url; a.download = filename; a.click();
     setTimeout(() => URL.revokeObjectURL(url), 600);
   }
-  function loadSaved() {
-    try {
-      const current=localStorage.getItem(KEY);
-      if(current !== null) {
-        const value=JSON.parse(current);
-        return Array.isArray(value) ? value.filter(x=>x && typeof x.title==="string" && x.slots && x.rule_id) : [];
-      }
-      const legacy=JSON.parse(localStorage.getItem("tcs-ontology-saved") || "[]");
-      if (!Array.isArray(legacy)) return [];
-      const migrated=legacy.filter(x=>x && typeof x.title==="string" && x.slots && x.rule_id)
-        .map(x=>({...x,validation_status:x.validation_status||"legacy_candidate_unverified"}));
-      if(migrated.length) localStorage.setItem(KEY,JSON.stringify(migrated));
-      return migrated;
-    } catch { return []; }
+  function storageNotice(message = "") {
+    const box = $("storageStatus"); box.textContent = message; box.hidden = !message;
   }
-  function persist(items) { try { localStorage.setItem(KEY, JSON.stringify(items)); return true; }
-    catch { alertUser("Local storage unavailable: use Export saved JSON."); return false; } }
-  function setView(id, scroll = true) {
+  function loadSaved() {
+    if (savedIdeas !== null) return savedIdeas;
+    savedIdeas = [];
+    try {
+      const current = localStorage.getItem(KEY);
+      if (current !== null) {
+        const value = JSON.parse(current);
+        if (!Array.isArray(value)) throw new Error("Invalid saved collection");
+        savedIdeas = value.filter(validIdea);
+      } else {
+        const legacy = JSON.parse(localStorage.getItem("tcs-ontology-saved") || "[]");
+        if (!Array.isArray(legacy)) throw new Error("Invalid legacy collection");
+        savedIdeas = legacy.filter(validIdea).map(x => ({...x,
+          validation_status: x.validation_status || "legacy_candidate_unverified"}));
+        if (savedIdeas.length) persist(savedIdeas);
+      }
+    } catch {
+      unreadableStorage = true;
+      storageNotice("Saved browser data could not be read and has been left untouched. New ideas stay in this tab only; export them before leaving.");
+    }
+    return savedIdeas;
+  }
+  function persist(items) {
+    savedIdeas = items.slice();
+    try {
+      if (unreadableStorage) throw new Error("Preserve unreadable browser data");
+      localStorage.setItem(KEY, JSON.stringify(savedIdeas)); unsavedIdeas = false; storageNotice(); return true;
+    } catch {
+      unsavedIdeas = true;
+      storageNotice("Browser storage is unavailable or unreadable. Changes stay in this tab only; export saved JSON before leaving.");
+      return false;
+    }
+  }
+  function syncURL() {
+    if (!state.ready) return;
+    const url = new URL(location.href);
+    const values = {q: state.query, kind: state.kind, area: state.area,
+      review: state.status === "source_checked" ? "" : state.status || "all",
+      page: state.page ? String(state.page + 1) : "", view: state.view === "explore" ? "" : state.view};
+    for (const [key, value] of Object.entries(values)) {
+      if (value) url.searchParams.set(key, value); else url.searchParams.delete(key);
+    }
+    if (state.view !== "explore" && url.hash.startsWith("#primitive=")) url.hash = "";
+    if (url.href !== location.href) history.replaceState(null, "", url.href);
+  }
+  function restoreURL() {
+    const params = new URL(location.href).searchParams;
+    state.query = params.get("q") || "";
+    state.kind = state.items.some(x => x.kind === params.get("kind")) ? params.get("kind") : "";
+    state.area = state.items.some(x => x.areas.includes(params.get("area"))) ? params.get("area") : "";
+    const review = params.get("review");
+    state.status = ["all", ...state.items.map(x => x.review_status)].includes(review) ? review : "source_checked";
+    const page = params.get("page");
+    state.page = /^\d+$/.test(page || "") && Number.isSafeInteger(Number(page)) ? Math.max(0, Number(page) - 1) : 0;
+    $("search").value = state.query; $("kindFilter").value = state.kind;
+    $("areaFilter").value = state.area; $("reviewFilter").value = state.status;
+    setView(VIEWS.has(params.get("view")) ? params.get("view") : "explore", false, false);
+  }
+  function setView(id, scroll = true, sync = true) {
+    if (!VIEWS.has(id)) return;
     state.view = id; document.querySelectorAll(".view").forEach(v => v.classList.toggle("hidden", v.id !== id));
-    document.querySelectorAll(".tab").forEach(t => { t.classList.toggle("active", t.dataset.view === id); t.setAttribute("aria-selected", t.dataset.view === id ? "true" : "false"); });
+    document.querySelectorAll(".tab[data-view]").forEach(t => {
+      const active = t.dataset.view === id; t.classList.toggle("active", active);
+      if (active) t.setAttribute("aria-current", "page"); else t.removeAttribute("aria-current");
+    });
     if (id === "saved") showSaved();
+    if (state.ready && !renderedViews.has(id)) {
+      if (id === "papers") renderPapers();
+      if (id === "sources") listSources();
+      renderedViews.add(id);
+    }
+    if (sync) syncURL();
     if (scroll) document.querySelector(".tabs").scrollIntoView({behavior: "smooth", block: "start"});
   }
   function deepLink(id) { const hash = "#primitive=" + encodeURIComponent(id); if (location.hash !== hash) history.replaceState(null, "", hash); }
   function followHash() {
-    if (!location.hash.startsWith("#primitive=")) return;
+    if (!state.ready || !location.hash.startsWith("#primitive=")) return;
     let id; try { id = decodeURIComponent(location.hash.slice("#primitive=".length)); } catch { return; }
-    const x = find(id); if (x) { setView("explore", false); state.selected = x.id; inspect(x); renderCatalog(); }
+    const x = find(id); if (x) { setView("explore", false); state.selected = x.id; inspect(x); renderCatalog(); deepLink(x.id); }
   }
   function matching(items, text) {
     const tokens = norm(text).trim().split(/\s+/).filter(Boolean);
@@ -70,7 +128,7 @@
   function listed() {
     let items = state.items.filter(x => (!state.kind || x.kind === state.kind)
       && (!state.area || x.areas.includes(state.area))
-      && (state.status === "all" || x.review_status === state.status));
+      && (!state.status || state.status === "all" || x.review_status === state.status));
     return matching(items, state.query);
   }
   function renderCatalog() {
@@ -86,6 +144,7 @@
     for (const x of visible) {
       const button = node("button","result-item" + (state.selected===x.id ? " selected" : ""));
       button.type = "button"; button.setAttribute("aria-label","Inspect "+x.name);
+      button.setAttribute("aria-pressed", state.selected === x.id ? "true" : "false");
       const text = node("div"); text.append(node("div","result-title",x.name));
       text.append(node("div","result-desc",x.definition || "Candidate vocabulary entry — definition pending review."));
       const badges = node("div","chips"); pill(badges,fmt(x.kind),"kind");
@@ -94,6 +153,7 @@
       button.onclick=()=>{state.selected=x.id;inspect(x);renderCatalog();deepLink(x.id);};
       target.append(button);
     }
+    syncURL();
   }
   function linkedPrimitive(box, id, suffix="") {
     const p = find(id); if (!p) return;
@@ -152,6 +212,9 @@
     else for(const sid of p.source_ids){const s=src(sid);if(s)addLink(box,s.title,s.url);}
     const share=node("button","secondary small","Copy canonical ID");share.style.marginTop="17px";
     share.onclick=()=>copy(p.id);box.append(share);
+    const shareLink=node("button","secondary small","Copy link");shareLink.style.marginTop="17px";
+    shareLink.onclick=()=>{const url=new URL(location.href);url.searchParams.delete("view");
+      url.hash="primitive="+encodeURIComponent(p.id);copy(url.href);};box.append(shareLink);
     const use=node("button","primary","Use in composer ↗");use.style.marginTop="12px";use.onclick=()=>seedComposer(p);
     box.append(use);
   }
@@ -272,9 +335,10 @@
     const sorted=state.papers.slice().sort((a,b)=>b.year-a.year||a.title.localeCompare(b.title));
     for(const paper of sorted){
       const card=node("article","paper-card");
-      card.append(node("div","eyebrow",paper.venue+" · "+paper.status.toUpperCase()));
+      card.append(node("div","eyebrow",paper.venue+" · "+fmt(paper.status || "bibliographic_record").toUpperCase()));
       const title=node("h3","",paper.title);card.append(title);
       const r=src(paper.source_id);if(r)addLink(card,"View source",r.url,"paper-source");
+      card.append(node("div","tiny muted","Editorial topic links: "+fmt(paper.review_status || "review_pending")));
       card.append(node("p","",paper.scope_note));
       const tags=node("div","paper-primitives");
       for(const ref of paper.primitives){
@@ -319,23 +383,26 @@
       state.results=results;state.literature=literature;state.papers=papers;state.redirects=new Map(redirects.map(x=>[x.from,x.to]));state.ready=true;
       fillFilter($("kindFilter"),[...new Set(items.map(x=>x.kind))],"All types");
       fillFilter($("areaFilter"),[...new Set(items.flatMap(x=>x.areas))],"All areas");
-      fillFilter($("reviewFilter"),["all","source_checked","needs_definition","seeded_definition_unverified"],"All review states");
+      fillFilter($("reviewFilter"),[...new Set(items.map(x=>x.review_status))],"All review states");
+      $("reviewFilter").options[0].value="all";
       $("reviewFilter").value="source_checked";state.status="source_checked";
       $("ruleSelect").replaceChildren();
       for(const r of rules){const op=node("option","",r.title);op.value=r.id;$("ruleSelect").append(op);}
-      updateComposer();renderCatalog();listSources();renderPapers();auditSummary();showSaved();followHash();
+      updateComposer();auditSummary();showSaved();restoreURL();renderCatalog();followHash();
       $("loadingState").hidden=true;
     }catch(e){const box=$("loadingState");box.hidden=false;box.textContent="Could not load validated ontology data ("+e.message+"). Retry after checking connection, then report persistent errors on GitHub.";
       $("resultCount").textContent="DATA UNAVAILABLE";const b=node("button","secondary small","Retry loading");b.onclick=()=>location.reload();box.append(b);
       console.error("TCS ontology initialization:",e);
     }finally{clearTimeout(timeout);}
   }
-  document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>setView(t.dataset.view));
+  document.querySelectorAll(".tab[data-view]").forEach(t=>t.onclick=()=>setView(t.dataset.view));
   $("goComposer").onclick=()=>setView("compose");$("goExplorer").onclick=()=>setView("explore");
   $("search").oninput=e=>{state.query=e.target.value;state.page=0;renderCatalog();};
   $("kindFilter").onchange=e=>{state.kind=e.target.value;state.page=0;renderCatalog();};
   $("areaFilter").onchange=e=>{state.area=e.target.value;state.page=0;renderCatalog();};
-  $("reviewFilter").onchange=e=>{state.status=e.target.value;state.page=0;renderCatalog();};
+  $("reviewFilter").onchange=e=>{state.status=e.target.value || "all";state.page=0;renderCatalog();};
+  $("resetFilters").onclick=()=>{state.query="";state.kind="";state.area="";state.status="source_checked";state.page=0;
+    $("search").value="";$("kindFilter").value="";$("areaFilter").value="";$("reviewFilter").value="source_checked";renderCatalog();};
   $("prevPage").onclick=()=>{if(state.page>0){state.page--;renderCatalog();}};
   $("nextPage").onclick=()=>{state.page++;renderCatalog();};
   $("ruleSelect").onchange=()=>updateComposer();
@@ -343,15 +410,21 @@
   $("generateButton").onclick=compose;$("shuffleButton").onclick=randomize;
   $("saveIdea").onclick=()=>{if(!state.idea)return;const saved=loadSaved();
     if(saved.some(x=>x.rule_id===state.idea.rule_id&&JSON.stringify(x.slots)===JSON.stringify(state.idea.slots))){alertUser("Already in your collection.");return;}
-    saved.push({...state.idea});if(persist(saved)){showSaved();alertUser("Candidate saved in this browser.");}};
+    saved.push({...state.idea});const stored=persist(saved);showSaved();alertUser(stored?"Candidate saved in this browser.":"Kept for this tab only. Export saved JSON before leaving.");};
   $("copyIdea").onclick=()=>{if(state.idea)copy(state.idea.title+"\n"+state.idea.warnings.join("\n"));};
-  $("downloadIdeas").onclick=()=>download("tcs-ontology-ideas.json",JSON.stringify({schema_version:"0.2.0",warning:"Unverified research ideas, not open problems",items:loadSaved()},null,2));
+  $("exportSaved").onclick=$("downloadIdeas").onclick=()=>download("tcs-ontology-ideas.json",JSON.stringify({schema_version:"0.2.0",warning:"Unverified research ideas, not open problems",items:loadSaved()},null,2));
   $("downloadJson").onclick=()=>download("tcs-ontology-primitives.json",JSON.stringify({schema_version:"0.2.0",filter:{status:state.status,kind:state.kind,area:state.area,search:state.query},items:listed()},null,2));
   $("downloadCsv").onclick=()=>{const columns=["id","name","kind","areas","aliases","definition","scope_note","review_status","source_ids"];
     const quote=v=>'"'+String(Array.isArray(v)?v.join("; "):v??"").replaceAll('"','""')+'"';
     download("tcs-ontology-primitives.csv",columns.join(",")+"\r\n"+listed().map(p=>columns.map(c=>quote(p[c])).join(",")).join("\r\n"),"text/csv");};
   $("helpButton").onclick=()=>$("about").showModal();
   document.addEventListener("keydown",e=>{if(e.key==="/"&&!["INPUT","TEXTAREA","SELECT"].includes(document.activeElement?.tagName)&&state.view==="explore"){e.preventDefault();$("search").focus();}});
+  window.addEventListener("storage",event=>{
+    if (event.key !== KEY && event.key !== null) return;
+    if (unsavedIdeas) {storageNotice("Saved ideas changed in another tab. Export this tab's unsaved ideas before leaving to keep both versions.");return;}
+    savedIdeas=null;unreadableStorage=false;showSaved();
+  });
   window.addEventListener("hashchange",followHash);
+  window.addEventListener("popstate",()=>{if(state.ready){restoreURL();renderCatalog();followHash();}});
   init();
 })();

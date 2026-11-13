@@ -3,6 +3,9 @@ name: TCS Research Atlas Browser Smoke
 on:
   pull_request:
     paths:
+      - 'tcs-ontology/index.html'
+      - 'tcs-ontology/app.js'
+      - 'tcs-ontology/styles.css'
       - 'tcs-ontology/map.html'
       - 'tcs-ontology/map.css'
       - 'tcs-ontology/map.js'
@@ -31,12 +34,13 @@ jobs:
           python3 -m http.server --bind 127.0.0.1 --directory tcs-ontology 8765 > /tmp/tcs-map-server.log 2>&1 &
           echo $! > /tmp/tcs-map-server.pid
           sleep 2
-      - name: Verify mouse selection, AND intersection and responsive screenshots
+      - name: Verify catalog, graph filters, sharing and responsive screenshots
         run: python3 tcs-ontology/tests/visual_smoke.py
       - name: Upload visual snapshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: tcs-map-v05-browser-snapshots
+          name: tcs-atlas-browser-snapshots
           path: tcs-ontology/visual-test-output/
           if-no-files-found: ignore
+

@@ -62,10 +62,17 @@ class RoundThreeCoverageTests(unittest.TestCase):
             seen.add(key)
 
     def test_new_coverage_is_from_actual_paper_memberships(self):
+        # Round-four and future numbered campaigns are not the historical
+        # baseline for round three. Keep genuine coverage gains testable as the
+        # cumulative bibliography grows.
+        def precedes_batch(paper):
+            campaign = re.match(r"^round(\d+)(?:extra)?-20261113-", paper["id"])
+            return campaign is None or int(campaign.group(1)) < 3
+
         previous = {
             x["primitive_id"]
             for p in self.papers + self.harvested
-            if not p["id"].startswith(PREFIX)
+            if precedes_batch(p)
             for x in p["primitives"]
         }
         now = previous | {
@@ -99,3 +106,4 @@ class RoundThreeCoverageTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

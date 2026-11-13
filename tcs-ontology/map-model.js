@@ -67,5 +67,29 @@
         .some(s=>String(s||"").toLowerCase().includes(q)))
       .sort((a,b)=>Number(b.year||0)-Number(a.year||0)||a.title.localeCompare(b.title));
   }
-  return {key,mergePapers,build,intersect,related,matching};
+  function readView(hash="",validIds=null,validAreas=null){
+    const raw=String(hash).replace(/^#/,""),params=new URLSearchParams(raw.includes("=")?raw:"");
+    let legacy="";
+    if(raw&&!raw.includes("=")){try{legacy=decodeURIComponent(raw);}catch{legacy="";}}
+    const selected=[...new Set((params.get("select")||legacy).split(","))]
+      .filter(id=>id&&(!validIds||validIds.has(id)));
+    const area=params.get("area")||"";
+    return {selected,term:params.get("q")||"",paperQuery:params.get("paper")||"",
+      area:!validAreas||validAreas.has(area)?area:"",
+      review:params.get("review")==="source_checked"?"source_checked":"all",
+      evidence:["all","harvested"].includes(params.get("evidence"))?params.get("evidence"):"curated",
+      focus:params.get("focus")!=="0"};
+  }
+  function writeView(view){
+    const params=new URLSearchParams();
+    if(view.selected?.length)params.set("select",[...new Set(view.selected)].join(","));
+    if(view.term)params.set("q",view.term);
+    if(view.area)params.set("area",view.area);
+    if(view.review==="source_checked")params.set("review",view.review);
+    if(["all","harvested"].includes(view.evidence))params.set("evidence",view.evidence);
+    if(view.paperQuery)params.set("paper",view.paperQuery);
+    if(view.focus===false)params.set("focus","0");
+    return params.size?"#"+params.toString():"";
+  }
+  return {key,mergePapers,build,intersect,related,matching,readView,writeView};
 });

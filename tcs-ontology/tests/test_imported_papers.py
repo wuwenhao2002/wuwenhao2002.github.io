@@ -1,6 +1,7 @@
 """Harvested corpus integrity and SQLite export contract."""
 import sys
 import sqlite3
+from contextlib import closing
 import tempfile
 from pathlib import Path
 import unittest
@@ -26,10 +27,11 @@ class ImportedBibliographyTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             path=Path(temp)/"paper-graph.sqlite"
             ontology.export_sqlite(self.data,path)
-            with sqlite3.connect(path) as con:
+            with closing(sqlite3.connect(path)) as con:
                 a=con.execute("SELECT COUNT(*) FROM paper").fetchone()[0]
                 b=con.execute("SELECT COUNT(*) FROM imported_paper").fetchone()[0]
                 self.assertEqual(a,len(self.data["papers"]))
                 self.assertEqual(b,len(self.data["papers-harvested"]))
                 self.assertEqual(con.execute("PRAGMA foreign_key_check").fetchall(),[])
 if __name__=="__main__":unittest.main()
+

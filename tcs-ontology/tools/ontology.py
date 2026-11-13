@@ -18,6 +18,7 @@ import re
 import sqlite3
 import sys
 from collections import Counter
+from contextlib import closing
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -234,7 +235,7 @@ def export_sqlite(db: dict, outfile: Path) -> None:
     outfile.parent.mkdir(parents=True, exist_ok=True)
     if outfile.exists():
         outfile.unlink()
-    with sqlite3.connect(outfile) as con:
+    with closing(sqlite3.connect(outfile)) as con, con:
         con.executescript("""
         PRAGMA foreign_keys=ON;
         CREATE TABLE primitive (
@@ -409,3 +410,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

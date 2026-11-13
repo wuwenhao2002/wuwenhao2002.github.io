@@ -8,6 +8,7 @@ from __future__ import annotations
 from collections import Counter, defaultdict
 from typing import Any
 from urllib.parse import urlsplit
+import unicodedata
 
 STATUSES = {"needs_definition", "seeded_definition_unverified", "source_checked", "expert_reviewed"}
 RELATIONS = {"is_a", "subset_of", "composed_of", "related_to", "has_relevant_solution_concept",
@@ -238,6 +239,28 @@ def report(db: dict[str, list[dict]]) -> dict[str, Any]:
     kinds = Counter(p["kind"] for p in items)
     areas = Counter(a for p in items for a in p["areas"])
     statuses = Counter(p["review_status"] for p in items)
+    valid_ids = {p["id"] for p in items}
+    # Match map-model.js: curated records win duplicate titles/IDs, and only
+    # canonical memberships count toward graph coverage.
+    seen_titles, seen_ids = set(), set()
+    merged = []
+    for paper in [*db.get("papers", []), *db.get("papers-harvested", [])]:
+        title = unicodedata.normalize("NFKD", str(paper.get("title", ""))).lower()
+        title = " ".join("".join(
+            char if unicodedata.category(char)[0] in "LN" else " "
+            for char in title
+        ).split())
+        if not title or title in seen_titles or paper.get("id") in seen_ids:
+            continue
+        seen_titles.add(title)
+        seen_ids.add(paper.get("id"))
+        merged.append(paper)
+    def covered(papers):
+        return {link["primitive_id"] for paper in papers
+                for link in paper.get("primitives", [])
+                if link.get("primitive_id") in valid_ids}
+    curated_ids = covered(db.get("papers", []))
+    combined_ids = covered(merged)
     return {
         "total": len(items),
         "review_status": dict(sorted(statuses.items())),
@@ -252,6 +275,13 @@ def report(db: dict[str, list[dict]]) -> dict[str, Any]:
         "sources": len(db["sources"]),
         "indexed_papers": len(db.get("papers", [])),
         "title_inferred_papers": len(db.get("papers-harvested", [])),
+        "distinct_indexed_papers": len(merged),
+        "paper_coverage": {
+            "curated_primitives": len(curated_ids),
+            "combined_primitives": len(combined_ids),
+            "unlinked_primitives": len(valid_ids - combined_ids),
+        },
         "paper_primitive_links": sum(len(p["primitives"]) for p in db.get("papers", [])),
         "unreviewed_examples": [p["id"] for p in items if p["review_status"]=="needs_definition"][:20],
     }
+

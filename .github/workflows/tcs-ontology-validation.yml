@@ -31,6 +31,7 @@ jobs:
           cd tcs-ontology
           python3 tools/ontology.py validate
           python3 tools/ontology.py quality
+          python3 tools/update_snapshot.py --check
           python3 -m unittest discover -s tests -v
       - name: Validate reproducible SQL export
         run: |
@@ -48,5 +49,6 @@ jobs:
           node --check tcs-ontology/app.js
           node --check tcs-ontology/map.js
           node --check tcs-ontology/map-model.js
-          node --test tcs-ontology/tests/test_graph.cjs tcs-ontology/tests/test_graph_corpus.cjs
+          node --test tcs-ontology/tests/*.cjs
+
 

@@ -1,4 +1,4 @@
-# Paper-driven Research Graph (v0.4)
+# Paper-driven Research Graph
 
 ## Primary definition
 
@@ -19,7 +19,7 @@ No cosine similarity, knowledge-graph edges, proximity on the canvas, or languag
 
 **Rejected title candidates** (`data/papers-rejected.json`): exclusions of non-TCS applications, spurious matching terminology, mismatched prediction robustness or general sensitivity, and ambiguous single-label cases. Keep this list to prevent false pairs being silently reintroduced.
 
-The visualization defaults to both tiers to maximize discoverability; choose Curated only when scientific precision is more important than coverage. Do not claim a research topic is open because the paper list is empty.
+The visualization defaults to the curated tier. Choose Both layers explicitly to include title-inferred candidates; this expands discovery without upgrading their evidence status. Do not claim a research topic is open because the paper list is empty.
 
 ## UI semantics
 
@@ -31,6 +31,10 @@ The visualization defaults to both tiers to maximize discoverability; choose Cur
 - Zoom and pan with the mouse or keyboard; press Escape to clear selection.
 - Export the currently matched paper records and selected IDs as JSON.
 - Reduced-motion settings are respected. Nothing requires an external graph-rendering service.
+
+## Shareable views
+
+The address retains selected canonical IDs, primitive search, area/review filters, paper evidence tier, bibliography search and focus mode. Reloading a copied link restores those controls; old primitive links remain supported. Paper-search counts and the canvas summary refer to the same filtered bibliography. Selection uses keyboard-accessible buttons with explicit pressed states.
 
 ## Data model and SQLite
 
@@ -64,7 +68,7 @@ python3 tools/screen_papers.py --input data/papers-proposed.json
 python3 tools/ontology.py validate
 python3 tools/ontology.py quality
 python3 -m unittest discover -s tests -v
-node --test tests/test_graph.cjs tests/test_graph_corpus.cjs
+node --test tests/*.cjs
 ```
 
 A manual, opt-in GitHub workflow can generate a **review branch and pull request**. No scheduled import silently alters the curated corpus. Each proposed record requires title/venue inspection, and ambiguous links require full-text confirmation before promoting their evidence status.
@@ -72,3 +76,4 @@ A manual, opt-in GitHub workflow can generate a **review branch and pull request
 ## Scientific limitations
 
 The current pipeline is title-first and intentionally conservative. A paper often studies many primitives that do not appear literally in its title: these cannot be inferred reliably from metadata alone. A full-text or abstract annotation workflow with per-link evidence snippets and expert review would substantially improve recall. Dates, venues, and author metadata must be checked against the original publisher before used in a formal citation.
+

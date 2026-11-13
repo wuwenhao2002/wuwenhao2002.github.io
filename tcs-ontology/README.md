@@ -4,17 +4,38 @@
 
 [Open the interactive atlas](https://wuwenhao2002.github.io/tcs-ontology/) · [Open the floating primitive map](https://wuwenhao2002.github.io/tcs-ontology/map.html) · [GitHub source directory](https://github.com/wuwenhao2002/wuwenhao2002.github.io/tree/main/tcs-ontology)
 
-> **Status: versioned, partially editorially source-checked seed (v0.6).** The catalog is *not comprehensive* or expert-verified. Generated combinations are candidate research directions, **not certified open problems, verified mathematical questions, or evidence of novelty**.
+> **Status: versioned, partially editorially source-checked seed (v0.6.4).** The catalog is *not comprehensive* or expert-verified. Generated combinations are candidate research directions, **not certified open problems, verified mathematical questions, or evidence of novelty**.
 
 ## What it does
 
 **v0.6:** paper-driven AND-filter research graph with multi-selection, verified-vs-unreviewed paper filters, and bibliography export. See [docs/PAPER_GRAPH.md](docs/PAPER_GRAPH.md).
 
-**Literature coverage (13 November 2026):** 390 curated paper records plus 130 separately marked title-inferred candidates; together these cover **757 / 830 canonical primitives (91.2%)**, leaving **73 without indexed paper links**. Curated papers alone cover 755 primitives. Round four added 52 multi-primitive papers, each with at least two valid canonical IDs, and repaired six original-publication paper tags that were missing from the graph. Published abstract checks are editorial topic classifications, not full-text theorem or expert verification. See [the round-four coverage and remaining-ID audit](docs/LITERATURE_COVERAGE_ROUND4.md).
+<!-- corpus-snapshot:start -->
+## Current data snapshot
+
+Generated from canonical JSON with `python3 tools/update_snapshot.py`.
+
+| Measure | Current value |
+| --- | ---: |
+| Canonical primitives | 830 |
+| Research areas | 21 |
+| Editorially source-checked primitives | 423 |
+| Curated paper records | 390 |
+| Separately marked title-inferred records | 130 |
+| Distinct indexed papers after title/ID deduplication | 511 |
+| Primitives linked to curated papers | 755 / 830 |
+| Primitives linked to either paper tier | 757 / 830 (91.2%) |
+| Primitives without an indexed paper | 73 |
+| Bibliographic sources | 348 |
+
+Editorial source/abstract checks are not expert review or theorem verification. An empty paper intersection never establishes novelty or an open problem.
+<!-- corpus-snapshot:end -->
+
+For the round-four literature campaign and remaining-ID audit, see [docs/LITERATURE_COVERAGE_ROUND4.md](docs/LITERATURE_COVERAGE_ROUND4.md).
 
 **v0.3:** interactive [Primitive Universe](./map.html), structured paper-primitive role indexing, and research lenses (prediction, privacy, sensitivity, stability). See [docs/PAPER_COMBINATIONS.md](docs/PAPER_COMBINATIONS.md) for the curated paper sample and its limitations.
 
-- Browse, filter, search and export TCS primitives across 19 areas, including algorithmic game theory, mechanism design, graph algorithms, approximation, complexity, online/distributed algorithms, learning theory, cryptography, scheduling, streaming, and quantum computing.
+- Browse, filter, search and export TCS primitives across multiple areas, including algorithmic game theory, mechanism design, graph algorithms, approximation, complexity, online/distributed algorithms, learning theory, cryptography, scheduling, streaming, and quantum computing.
 - Each primitive has a stable ID, `kind`, `areas`, aliases, a definition when available, a review state, and source pointers when available.
 - Follow typed directional relations (`is_a`, `subset_of`, `studied_on`, etc.).
 - Compose candidate questions using **typed templates** rather than arbitrarily joining words. Example: **Price of Anarchy × First-Price Auction × Bayesian Nash Equilibrium**.
@@ -39,16 +60,20 @@ tcs-ontology/
 │   ├── relationships.json# Directed conceptual edges
 │   ├── rules.json        # Typed composition templates
 │   ├── literature.json   # Carefully scoped evidence pointers
-│   ├── sources.json      # Literature & external resource registry\n│   ├── redirects.json    # Canonical ID redirects\n│   ├── results.json      # Scope-limited source-checked results
+│   ├── sources.json      # Literature & external resource registry
+│   ├── redirects.json    # Canonical ID redirects
+│   ├── results.json      # Scope-limited source-checked results
 │   ├── papers.json       # Editorially linked papers
 │   ├── papers-harvested.json # Unreviewed title-inferred bibliography
 │   └── papers-rejected.json # Exclusion/audit registry
 ├── schema/
 │   └── primitive.schema.json
 ├── tools/
-│   ├── ontology.py       # Validate/search/compose/export SQLite\n│   └── quality.py        # Deep referential and editorial quality audit
+│   ├── ontology.py       # Validate/search/compose/export SQLite
+│   └── quality.py        # Deep referential and editorial quality audit
 └── tests/
-    ├── test_ontology.py\n    └── test_quality.py
+    ├── test_ontology.py
+    └── test_quality.py
 ```
 
 ## Quick start
@@ -67,10 +92,14 @@ For research workflows and AI:
 
 ```bash
 python3 tools/ontology.py validate
-python3 tools/ontology.py stats\npython3 tools/ontology.py quality
+python3 tools/ontology.py stats
+python3 tools/ontology.py quality
+python3 tools/update_snapshot.py --check
 python3 tools/ontology.py search "Price of Anarchy"
 python3 tools/ontology.py search "vertex cover" --kind problem
-python3 tools/ontology.py compose equilibrium-efficiency --limit 10\n# To include tentative candidate vocabulary:\npython3 tools/ontology.py compose graph-problem-classes --include-candidates --limit 10
+python3 tools/ontology.py compose equilibrium-efficiency --limit 10
+# To include tentative candidate vocabulary:
+python3 tools/ontology.py compose graph-problem-classes --include-candidates --limit 10
 python3 tools/ontology.py sqlite --output ./tcs-ontology.sqlite
 python3 -m unittest discover -s tests -v
 ```
@@ -113,7 +142,8 @@ A **literature** entry optionally connects an exact tuple of rule/slot IDs to a 
 | --- | --- |
 | `needs_definition` | Collected seed concept, definition still pending |
 | `seeded_definition_unverified` | Initial editorial definition, needs expert checking |
-| `source_checked` | Definition and scope editorially checked against linked reference, but **not peer-reviewed** |\n| `expert_reviewed` | Reserved for a formally expert-reviewed entry (none asserted in v0.2) |
+| `source_checked` | Definition and scope editorially checked against linked reference, but **not peer-reviewed** |
+| `expert_reviewed` | Reserved for a formally expert-reviewed entry (none asserted in v0.2) |
 | `related_literature` | Related paper linked with a narrow scope; not a complete state-of-the-art review |
 | No literature link | **Unknown / unreviewed**, never automatically called an open problem |
 
@@ -179,10 +209,6 @@ The v0.4 baseline contained 649 canonical primitives, 43 editorial papers and 13
 Latest campaign: 2025–26 FOCS/STOC program paper metadata and selected STOC abstract checks, adding diverse reusable lenses beyond Prediction and Sensitivity. Each paper record retains title, authors, conference, evidence-level tag and source; the map's graph remains an exact co-occurrence index. See [curation rationale](docs/RESEARCH_DISCOVERY_V06.md).
 
 
-### v0.6 research snapshot (13 November 2026)
+### Original v0.6 breadth campaign
 
-- 830 canonical typed primitives (421 editorially source-checked) across 21 areas.
-- 159 curated papers, including 64 conference papers added in the v0.6 breadth campaign; 19 have official abstracts checked in this campaign and 45 remain title/program mapped.
-- 130 separately flagged unverified Crossref title candidates; 280 unique paper titles in combined catalog.
-- 117 sources and 223 paper-primitive attachments added during the breadth campaign.
-- Mathematical topic links are editorial, not verified theorem claims; an empty graph intersection is not proof of an open problem.
+The original breadth campaign added 64 conference papers (19 abstract-checked and 45 title/program mapped), 117 sources and 223 paper–primitive attachments. Subsequent curation rounds expanded that historical snapshot; use the generated current snapshot above for live counts.

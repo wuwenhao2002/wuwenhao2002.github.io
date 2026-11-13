@@ -63,10 +63,12 @@ class MapAndPapersTests(unittest.TestCase):
             db=ontology.require_valid()
             output=Path(d)/"test.sqlite"
             ontology.export_sqlite(db,output)
-            with sqlite3.connect(output) as conn:
+            from contextlib import closing
+            with closing(sqlite3.connect(output)) as conn:
                 self.assertFalse(conn.execute("PRAGMA foreign_key_check").fetchall())
                 self.assertEqual(conn.execute("SELECT COUNT(*) FROM paper").fetchone()[0],len(self.papers))
                 self.assertGreater(conn.execute("SELECT COUNT(*) FROM paper_primitive").fetchone()[0],35)
 
 if __name__=="__main__":
     unittest.main()
+
