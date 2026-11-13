@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.3 — 2026-11-13
+
+- Round-four high-coverage literature campaign: 52 additional curated research papers, 176 direct paper-to-primitive assignments and six repaired associations from original STOC/FOCS/SODA papers. The strict at-least-two-valid-IDs-per-new-paper rule was preserved.
+- Paper-linked coverage increased from 684/830 (82.4%) to 757/830 (91.2%); 73 canonical primitives remain without an indexed paper. Curated-only coverage is 755/830, with 130 previously unreviewed harvested records still separate.
+- Evidence tiers for STOC 2026 positive-only learning and streaming matching, and FOCS 2025 multi-pass Max-Cut, were raised only after inspecting their official/author abstracts. One-sided and two-sided property-testing error, edge vs local-edge differential privacy, and statistical vs perfect hiding remain distinct.
+- Corrections to bibliographic year/venue metadata, source-scope notes, and a targeted regression suite are documented in `docs/LITERATURE_COVERAGE_ROUND4.md`, with all 73 remaining unlinked canonical IDs.
+- No further primitives were removed solely for lacking paper coverage; paper co-occurrence is not a validated theorem relationship.
+
+
 ## 0.6.2 — 2026-11-13
 
 - Third targeted multi-primitive paper round: +50 curated papers, 154 new paper–primitive assignments, +77 previously unlinked canonical primitives. Total paper-linked coverage is 684/830 (82.4%), including the separate optional unreviewed harvest layer.
