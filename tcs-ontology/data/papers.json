@@ -11598,6 +11598,1623 @@
           "note": "Scoped editorial topic connection, not formal theorem extraction."
         }
       ]
+    },
+    {
+      "id": "round3-20261113-karp72",
+      "title": "Reducibility Among Combinatorial Problems",
+      "year": 1972,
+      "venue": "Complexity of Computer Computations",
+      "authors": [
+        "Richard M. Karp"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-karp72",
+      "url": "https://doi.org/10.1007/978-1-4684-2001-2_9",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "A catalogue of NP-complete decision problems via polynomial many-one reductions. Exact 0-1 integer-programming, Hamiltonian circuit and knapsack formulations should not be generalized to all numerical-input variants.",
+      "primitives": [
+        {
+          "primitive_id": "framework.karp-reduction",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.exact-cover",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.partition-problem",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.subset-sum",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.hamiltonian-cycle",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.integer-programming-feasibility",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.maximum-clique",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.3-sat",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-lautemann83",
+      "title": "BPP and the polynomial hierarchy",
+      "year": 1983,
+      "venue": "Information Processing Letters",
+      "authors": [
+        "Clemens Lautemann"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-lautemann83",
+      "url": "https://doi.org/10.1016/0020-0190(83)90044-3",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Counting-style proof that BPP is contained in the second level of the polynomial hierarchy; this does not establish equality.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.bpp",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "complexity_class.ph",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "complexity_class.sigma-2-p",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-papadimitriou94",
+      "title": "On the complexity of the parity argument and other inefficient proofs of existence",
+      "year": 1994,
+      "venue": "Journal of Computer and System Sciences",
+      "authors": [
+        "Christos H. Papadimitriou"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-papadimitriou94",
+      "url": "https://doi.org/10.1016/S0022-0000(05)80063-7",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Introduces total-search complexity subclasses associated with parity and local-optimality arguments, including PPAD-style implicit graph search and equilibrium search. Distinguish PLS from PPAD.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.tfnp",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "complexity_class.ppad",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "complexity_class.pls",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.end-of-line",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-immerman88",
+      "title": "Nondeterministic Space is Closed under Complementation",
+      "year": 1988,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Neil Immerman"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-immerman88",
+      "url": "https://doi.org/10.1137/0217058",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Establishes closure of nondeterministic space under complement and uses graph reachability counting; the coNP complexity-class tag would be merely an analogy and is dropped.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.nl",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.graph-reachability",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-hastad86",
+      "title": "Almost Optimal Lower Bounds for Small Depth Circuits",
+      "year": 1986,
+      "venue": "STOC 1986",
+      "authors": [
+        "Johan Håstad"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-hastad86",
+      "url": "https://doi.org/10.1145/12130.12132",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Circuit size lower bounds use random restrictions/switching lemmas for bounded-depth circuits; not for arbitrary computational models.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.ac0",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "technique.random-restriction",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "task.lower-bound",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-downey95",
+      "title": "Fixed-Parameter Tractability and Completeness I: Basic Results",
+      "year": 1995,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Rod G. Downey",
+        "Michael R. Fellows"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-downey95",
+      "url": "https://doi.org/10.1137/S0097539792228228",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Introduces the W hierarchy and W[2]-completeness of parameterized dominating set. The W[t] hierarchy is not equivalent to NP completeness.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.w1",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "complexity_class.w2",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "framework.parameterized-complexity",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "framework.parameterized-reduction",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.minimum-dominating-set",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "task.parameterized-hardness",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-valiant-vazirani86",
+      "title": "NP is as Easy as Detecting Unique Solutions",
+      "year": 1986,
+      "venue": "Theoretical Computer Science",
+      "authors": [
+        "Leslie G. Valiant",
+        "Vijay V. Vazirani"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-valiant-vazirani86",
+      "url": "https://doi.org/10.1016/0304-3975(86)90135-0",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "A randomized reduction isolates unique satisfying assignments; it is not a deterministic many-one reduction to unique-SAT.",
+      "primitives": [
+        {
+          "primitive_id": "framework.randomized-reduction",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.boolean-satisfiability",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "complexity_class.np",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-bernstein-vazirani97",
+      "title": "Quantum Complexity Theory",
+      "year": 1997,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Ethan Bernstein",
+        "Umesh Vazirani"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-bernstein-vazirani97",
+      "url": "https://doi.org/10.1137/S0097539796300921",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Introduces quantum computation/complexity machinery and oracle comparisons, without asserting BQP equals BPP.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.bqp",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "complexity_class.bpp",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "model.turing-machine",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-babai-moran88",
+      "title": "Arthur-Merlin Games: A Randomized Proof System, and a Hierarchy of Complexity Classes",
+      "year": 1988,
+      "venue": "Journal of Computer and System Sciences",
+      "authors": [
+        "László Babai",
+        "Shlomo Moran"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-babai-moran88",
+      "url": "https://doi.org/10.1016/0022-0000(88)90028-1",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Studies public-coin randomized interactive proofs and AM/MA hierarchy, not the collapse of IP to NP.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.am",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "complexity_class.ma",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "framework.interactive-proof",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "complexity_class.np",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-lampis26",
+      "title": "k-SUM Hardness Implies Treewidth-SETH",
+      "year": 2026,
+      "venue": "SODA 2026 / arXiv manuscript",
+      "authors": [
+        "Michael Lampis"
+      ],
+      "status": "preprint",
+      "source_id": "round3-20261113-lampis26",
+      "url": "https://arxiv.org/abs/2510.08185",
+      "review_status": "editorial_metadata_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Derives treewidth-parameterized SAT barriers from k-SUM hypotheses, contingent on exact forms of the conjectures.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.k-sum-hypothesis",
+          "role": "assumption",
+          "evidence": "bibliographic_metadata_and_topic",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "assumption.treewidth-seth",
+          "role": "assumption",
+          "evidence": "bibliographic_metadata_and_topic",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.sat-treewidth",
+          "role": "problem",
+          "evidence": "bibliographic_metadata_and_topic",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "task.conditional-lower-bound",
+          "role": "task",
+          "evidence": "bibliographic_metadata_and_topic",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-papad-roughgarden08",
+      "title": "Computing correlated equilibria in multi-player games",
+      "year": 2008,
+      "venue": "Journal of the ACM",
+      "authors": [
+        "Christos H. Papadimitriou",
+        "Tim Roughgarden"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-papad-roughgarden08",
+      "url": "https://doi.org/10.1145/1379759.1379762",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Polynomial-time correlated-equilibrium computation for specified succinct multiplayer game families; different from polynomial-time mixed Nash computation.",
+      "primitives": [
+        {
+          "primitive_id": "game.anonymous-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "game.graphical-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "game.congestion-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "equilibrium.correlated-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "framework.equilibrium-computation",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-dask-anonymous08",
+      "title": "Computing Equilibria in Anonymous Games",
+      "year": 2008,
+      "venue": "arXiv preprint / conference version",
+      "authors": [
+        "Constantinos Daskalakis",
+        "Christos H. Papadimitriou"
+      ],
+      "status": "preprint",
+      "source_id": "round3-20261113-dask-anonymous08",
+      "url": "https://arxiv.org/abs/0710.5582",
+      "review_status": "editorial_metadata_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Approximate Nash equilibrium algorithms for anonymous games; approximation parameter and number of strategies matter.",
+      "primitives": [
+        {
+          "primitive_id": "game.anonymous-game",
+          "role": "model",
+          "evidence": "bibliographic_metadata_and_topic",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "equilibrium.approximate-nash-equilibrium",
+          "role": "model",
+          "evidence": "bibliographic_metadata_and_topic",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "framework.equilibrium-computation",
+          "role": "technique",
+          "evidence": "bibliographic_metadata_and_topic",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-conitzer-sandholm06",
+      "title": "Computing the Optimal Strategy to Commit to",
+      "year": 2006,
+      "venue": "ACM Conference on Electronic Commerce",
+      "authors": [
+        "Vincent Conitzer",
+        "Tuomas Sandholm"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-conitzer-sandholm06",
+      "url": "https://www.cs.cmu.edu/~sandholm/Computing%20commitment%20strategy.ec06.pdf",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Computes optimal commitment strategies for a leader in normal-form and Bayesian games; specific information assumptions apply.",
+      "primitives": [
+        {
+          "primitive_id": "game.stackelberg-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "equilibrium.stackelberg-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "game.bayesian-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "framework.bayesian-games-framework",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-kreps-wilson82",
+      "title": "Sequential Equilibria",
+      "year": 1982,
+      "venue": "Econometrica",
+      "authors": [
+        "David M. Kreps",
+        "Robert Wilson"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-kreps-wilson82",
+      "url": "https://www.gsb.stanford.edu/faculty-research/publications/sequential-equilibrium",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Sequential equilibrium is an equilibrium refinement in dynamic games; it is related to, but is not synonymous with, perfect Bayesian equilibrium.",
+      "primitives": [
+        {
+          "primitive_id": "framework.equilibrium-refinement",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "equilibrium.subgame-perfect-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-braess-roughgarden06",
+      "title": "On the Severity of Braess's Paradox: Designing Networks for Selfish Users Is Hard",
+      "year": 2006,
+      "venue": "Journal of Computer and System Sciences",
+      "authors": [
+        "Tim Roughgarden"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-braess-roughgarden06",
+      "url": "https://doi.org/10.1016/j.jcss.2005.05.009",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Studies equilibrium routing and the effects of removing/adding edges. Anomalies depend on demand and latency functions.",
+      "primitives": [
+        {
+          "primitive_id": "property.braess-paradox",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "game.network-congestion-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "game.routing-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "property.price-of-anarchy",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-kempe-influence15",
+      "title": "Maximizing the Spread of Influence through a Social Network",
+      "year": 2015,
+      "venue": "Theory of Computing",
+      "authors": [
+        "David Kempe",
+        "Jon Kleinberg",
+        "Éva Tardos"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-kempe-influence15",
+      "url": "https://doi.org/10.4086/toc.2015.v011a004",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Greedy seed-selection approximation exploits submodularity of expected cascade size under specified independent-cascade and threshold models.",
+      "primitives": [
+        {
+          "primitive_id": "problem.influence-maximization",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "technique.submodular-maximization",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-bertsimas-fair11",
+      "title": "The Price of Fairness",
+      "year": 2011,
+      "venue": "Operations Research",
+      "authors": [
+        "Dimitris Bertsimas",
+        "Vivek F. Farias",
+        "Nikolaos Trichakis"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-bertsimas-fair11",
+      "url": "https://doi.org/10.1287/opre.1100.0865",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Quantifies objective efficiency loss for proportional fairness and max-min fairness in centralized resource allocation; neither is automatically Nash equilibrium.",
+      "primitives": [
+        {
+          "primitive_id": "property.max-min-fairness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "property.proportional-fairness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "property.price-of-fairness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "objective.social-welfare",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-gul-stacchetti99",
+      "title": "Walrasian Equilibrium with Gross Substitutes",
+      "year": 1999,
+      "venue": "Journal of Economic Theory",
+      "authors": [
+        "Faruk Gul",
+        "Ennio Stacchetti"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-gul-stacchetti99",
+      "url": "https://doi.org/10.1006/jeth.1999.2531",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Studies Walrasian equilibrium for GS preferences, including unit-demand as a special case and selected VCG payment comparisons.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.gross-substitutes",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "assumption.unit-demand-valuations",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "auction.vcg-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-ausubel04",
+      "title": "An Efficient Ascending-Bid Auction for Multiple Objects",
+      "year": 2004,
+      "venue": "American Economic Review",
+      "authors": [
+        "Lawrence M. Ausubel"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-ausubel04",
+      "url": "https://doi.org/10.1257/0002828043052330",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Develops a dynamic ascending-price clinching auction for multiple identical goods, distinct from generic fixed-price sealed-bid mechanisms.",
+      "primitives": [
+        {
+          "primitive_id": "auction.multi-unit-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "property.efficiency-of-auctions",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-irving-roommates85",
+      "title": "An Efficient Algorithm for the Stable Roommates Problem",
+      "year": 1985,
+      "venue": "Journal of Algorithms",
+      "authors": [
+        "Robert W. Irving"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-irving-roommates85",
+      "url": "https://doi.org/10.1016/0196-6774(85)90033-1",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Provides algorithm for stable matching in the non-bipartite roommates preference model; stability is not guaranteed to exist.",
+      "primitives": [
+        {
+          "primitive_id": "problem.roommates-problem",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.stable-matching",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-judgment-list07",
+      "title": "Strategy-Proof Judgment Aggregation",
+      "year": 2007,
+      "venue": "Economics and Philosophy",
+      "authors": [
+        "Christian List"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-judgment-list07",
+      "url": "https://www.cambridge.org/core/journals/economics-and-philosophy/article/abs/strategyproof-judgment-aggregation/6A185A5FA5748D8C76238BC314284ABB",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Analyzes incentives for misreporting judgments in collective aggregation. Strategic vulnerability is related to voting manipulation but not identical to electoral candidate voting.",
+      "primitives": [
+        {
+          "primitive_id": "problem.judgment-aggregation",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "property.strategyproof-voting",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.manipulation-of-voting",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-moulin-condorcet88",
+      "title": "Condorcet's Principle Implies the No Show Paradox",
+      "year": 1988,
+      "venue": "Journal of Economic Theory",
+      "authors": [
+        "Hervé Moulin"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-moulin-condorcet88",
+      "url": "https://doi.org/10.1016/0022-0531(88)90253-0",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Establishes no-show paradox for Condorcet-consistent voting rules; no-show/participation is distinct from monotonicity, so latter tag is removed.",
+      "primitives": [
+        {
+          "primitive_id": "property.condorcet-consistency",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.social-choice-function-computation",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-dijkstra-self74",
+      "title": "Self-Stabilizing Systems in Spite of Distributed Control",
+      "year": 1974,
+      "venue": "Communications of the ACM",
+      "authors": [
+        "Edsger W. Dijkstra"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-dijkstra-self74",
+      "url": "https://doi.org/10.1145/361179.361202",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Self-stabilization from arbitrary states is an autonomous recovery notion in a small distributed mutual-exclusion model; not a guarantee against arbitrary Byzantine adversaries.",
+      "primitives": [
+        {
+          "primitive_id": "property.self-stabilization",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "property.fault-tolerance",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-herlihy-waitfree91",
+      "title": "Wait-Free Synchronization",
+      "year": 1991,
+      "venue": "ACM Transactions on Programming Languages and Systems",
+      "authors": [
+        "Maurice Herlihy"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-herlihy-waitfree91",
+      "url": "https://doi.org/10.1145/114005.102808",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Classifies shared-memory synchronization primitives by consensus numbers and wait-free implementability. Lock-freedom is weaker than wait-freedom.",
+      "primitives": [
+        {
+          "primitive_id": "property.wait-freedom",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "model.shared-memory-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.consensus",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-linial-saks93",
+      "title": "Low Diameter Graph Decompositions",
+      "year": 1993,
+      "venue": "Combinatorica",
+      "authors": [
+        "Nathan Linial",
+        "Michael Saks"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-linial-saks93",
+      "url": "https://doi.org/10.1007/BF01303516",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Distributed low-diameter decomposition algorithms and their local communication costs, not graph treewidth decomposition.",
+      "primitives": [
+        {
+          "primitive_id": "problem.distributed-network-decomposition",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "model.synchronous-message-passing",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "property.round-complexity",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-bar-yossef-triangle02",
+      "title": "Reductions in Streaming Algorithms, with an Application to Counting Triangles in Graphs",
+      "year": 2002,
+      "venue": "SODA 2002",
+      "authors": [
+        "Ziv Bar-Yossef",
+        "Ravi Kumar",
+        "D. Sivakumar"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-bar-yossef-triangle02",
+      "url": "https://research.ibm.com/publications/reductions-in-streaming-algorithms-with-an-application-to-counting-triangles-in-graphs",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Uses reductions for space bounds on graph streaming triangle counting; multi-pass lower bound is a separate model and should not be inferred here.",
+      "primitives": [
+        {
+          "primitive_id": "problem.streaming-triangle-counting",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "model.graph-streaming-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-bansal-discrepancy10",
+      "title": "Constructive Algorithms for Discrepancy Minimization",
+      "year": 2010,
+      "venue": "FOCS 2010",
+      "authors": [
+        "Nikhil Bansal"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-bansal-discrepancy10",
+      "url": "https://doi.org/10.1109/FOCS.2010.7",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Uses semidefinite programming/random walk to constructively achieve discrepancy bounds previously established non-constructively.",
+      "primitives": [
+        {
+          "primitive_id": "problem.discrepancy-minimization",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "technique.semidefinite-programming-relaxation",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "technique.probabilistic-method",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-jain-steiner01",
+      "title": "A Factor 2 Approximation Algorithm for the Generalized Steiner Network Problem",
+      "year": 2001,
+      "venue": "Combinatorica",
+      "authors": [
+        "Kamal Jain"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-jain-steiner01",
+      "url": "https://doi.org/10.1007/S004930170004",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "2-approximation from iterative rounding for undirected generalized Steiner network connectivity requirements; not all variants of survivable network design.",
+      "primitives": [
+        {
+          "primitive_id": "technique.iterative-rounding",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.survivable-network-design",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.steiner-tree",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-ageev-pipage04",
+      "title": "Pipage Rounding: A New Method of Constructing Algorithms with Proven Performance Guarantee",
+      "year": 2004,
+      "venue": "Journal of Combinatorial Optimization",
+      "authors": [
+        "A. A. Ageev",
+        "M. I. Sviridenko"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-ageev-pipage04",
+      "url": "https://doi.org/10.1023/B:JOCO.0000038913.96607.C2",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Pipage rounding gives deterministic approximation guarantees for several allocation/coverage problems; it is not the same as local search.",
+      "primitives": [
+        {
+          "primitive_id": "technique.pipage-rounding",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "property.approximation-ratio",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-sherali-adams90",
+      "title": "A Hierarchy of Relaxations between the Continuous and Convex Hull Representations for Zero-One Programming Problems",
+      "year": 1990,
+      "venue": "SIAM Journal on Discrete Mathematics",
+      "authors": [
+        "Hanif D. Sherali",
+        "Warren P. Adams"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-sherali-adams90",
+      "url": "https://doi.org/10.1137/0403036",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Defines a hierarchy of lift-and-project relaxations for binary programming; the gap depends on the objective and relaxation level.",
+      "primitives": [
+        {
+          "primitive_id": "technique.sherali-adams-hierarchy",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.integer-programming-feasibility",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-charikar-facility99",
+      "title": "Improved Combinatorial Algorithms for the Facility Location and k-Median Problems",
+      "year": 1999,
+      "venue": "FOCS 1999",
+      "authors": [
+        "Moses Charikar",
+        "Sudipto Guha"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-charikar-facility99",
+      "url": "https://doi.org/10.1109/SFFCS.1999.814609",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Analyzes local-search approximation techniques for uncapacitated facility location and k-median, with model-specific guarantees.",
+      "primitives": [
+        {
+          "primitive_id": "technique.local-search",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.k-median",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "property.approximation-ratio",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-mcmahan-ftrl11",
+      "title": "Follow-the-Regularized-Leader and Mirror Descent: Equivalence Theorems and L1 Regularization",
+      "year": 2011,
+      "venue": "AISTATS 2011 / PMLR 15",
+      "authors": [
+        "H. Brendan McMahan"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-mcmahan-ftrl11",
+      "url": "https://proceedings.mlr.press/v15/mcmahan11b.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Proves FTRL/mirror-descent equivalences for specified online convex optimization updates; algorithms are not universally identical.",
+      "primitives": [
+        {
+          "primitive_id": "technique.follow-the-regularized-leader",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "technique.online-mirror-descent",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "technique.mirror-descent",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.online-convex-optimization",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-imase-waxman91",
+      "title": "Dynamic Steiner Tree Problem",
+      "year": 1991,
+      "venue": "SIAM Journal on Discrete Mathematics",
+      "authors": [
+        "Makoto Imase",
+        "Bernard M. Waxman"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-imase-waxman91",
+      "url": "https://doi.org/10.1137/0404033",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Considers both irrevocable nonrearrangeable and rearrangeable Steiner routing, with distinct worst-case guarantees.",
+      "primitives": [
+        {
+          "primitive_id": "problem.online-steiner-tree",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "model.recourse-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.steiner-tree",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-russo-vanroy14",
+      "title": "Learning to Optimize Via Posterior Sampling",
+      "year": 2014,
+      "venue": "Mathematics of Operations Research",
+      "authors": [
+        "Daniel Russo",
+        "Benjamin Van Roy"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-russo-vanroy14",
+      "url": "https://doi.org/10.1287/moor.2014.0650",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Posterior sampling regret analysis uses eluder dimension and information-theoretic quantities for specified function classes.",
+      "primitives": [
+        {
+          "primitive_id": "property.eluder-dimension",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "technique.thompson-sampling",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "property.regret-bound",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-kaelbling-pomdp98",
+      "title": "Planning and Acting in Partially Observable Stochastic Domains",
+      "year": 1998,
+      "venue": "Artificial Intelligence",
+      "authors": [
+        "Leslie Pack Kaelbling",
+        "Michael L. Littman",
+        "Anthony R. Cassandra"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-kaelbling-pomdp98",
+      "url": "https://doi.org/10.1016/S0004-3702(98)00023-X",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Treats the belief-state reformulation and policy planning for partially observable MDPs; fully observed MDPs are the comparison case.",
+      "primitives": [
+        {
+          "primitive_id": "model.markov-decision-process",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "model.partially-observable-markov-decision-process",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-kasiv-private11",
+      "title": "What Can We Learn Privately?",
+      "year": 2011,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Shiva Prasad Kasiviswanathan",
+        "Homin K. Lee",
+        "Kobbi Nissim",
+        "Sofya Raskhodnikova",
+        "Adam Smith"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-kasiv-private11",
+      "url": "https://doi.org/10.1137/090756090",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Characterizes private learning and a connection between local private learning and statistical-query learnability; distinguish central and local DP.",
+      "primitives": [
+        {
+          "primitive_id": "model.private-learning",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "model.statistical-query-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "property.differential-privacy",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "model.agnostic-pac-learning",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-indyk-motwani98",
+      "title": "Approximate Nearest Neighbors: Towards Removing the Curse of Dimensionality",
+      "year": 1998,
+      "venue": "STOC 1998",
+      "authors": [
+        "Piotr Indyk",
+        "Rajeev Motwani"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-indyk-motwani98",
+      "url": "https://doi.org/10.1145/276698.276876",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Uses locality-sensitive hashing to obtain high-dimensional approximate nearest neighbor search with preprocessing/space-query tradeoffs; not an exact NN guarantee.",
+      "primitives": [
+        {
+          "primitive_id": "problem.nearest-neighbor-search",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "technique.hashing",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "property.memory-query-tradeoff",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-bellare-rogaway93",
+      "title": "Random Oracles are Practical: A Paradigm for Designing Efficient Protocols",
+      "year": 1993,
+      "venue": "ACM CCS 1993",
+      "authors": [
+        "Mihir Bellare",
+        "Phillip Rogaway"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-bellare-rogaway93",
+      "url": "https://doi.org/10.1145/168588.168596",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Uses the ideal random-oracle heuristic to analyze efficient cryptographic constructions; these results are not automatically standard-model guarantees.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.random-oracle-model",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "model.digital-signature",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "model.public-key-encryption",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-benor-mpc88",
+      "title": "Completeness Theorems for Non-Cryptographic Fault-Tolerant Distributed Computation",
+      "year": 1988,
+      "venue": "STOC 1988",
+      "authors": [
+        "Michael Ben-Or",
+        "Shafi Goldwasser",
+        "Avi Wigderson"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-benor-mpc88",
+      "url": "https://doi.org/10.1145/62212.62213",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Information-theoretic multiparty secure computation against a bounded number of faulty parties uses share-based secret representations; threat model is scoped.",
+      "primitives": [
+        {
+          "primitive_id": "model.secret-sharing",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "model.secure-multiparty-computation",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "property.fault-tolerance",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-gmw-mental87",
+      "title": "How to Play ANY Mental Game",
+      "year": 1987,
+      "venue": "STOC 1987",
+      "authors": [
+        "Oded Goldreich",
+        "Silvio Micali",
+        "Avi Wigderson"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-gmw-mental87",
+      "url": "https://doi.org/10.1145/28395.28420",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Cryptographic protocols for secure evaluation of functions; depends on computational assumptions, not unconditionally secure in every setting.",
+      "primitives": [
+        {
+          "primitive_id": "model.secure-multiparty-computation",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "model.zero-knowledge-proof",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-afks-testing00",
+      "title": "Efficient Testing of Large Graphs",
+      "year": 2000,
+      "venue": "Combinatorica",
+      "authors": [
+        "Noga Alon",
+        "Eldar Fischer",
+        "Michael Krivelevich",
+        "Mario Szegedy"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-afks-testing00",
+      "url": "https://doi.org/10.1007/s004930070001",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Develops graph property tests with dense-graph distance conventions, not bounded-degree neighbor-query access.",
+      "primitives": [
+        {
+          "primitive_id": "model.adjacency-matrix-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "model.dense-graph-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-clark-unitdisk90",
+      "title": "Unit Disk Graphs",
+      "year": 1990,
+      "venue": "Discrete Mathematics",
+      "authors": [
+        "Brent N. Clark",
+        "Charles J. Colbourn",
+        "David S. Johnson"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-clark-unitdisk90",
+      "url": "https://doi.org/10.1016/0012-365X(90)90358-O",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Distinguishes NP-hard independent-set and domination problems on unit disk graphs from polynomial clique finding when geometry is provided.",
+      "primitives": [
+        {
+          "primitive_id": "graph_class.unit-disk-graph",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.maximum-independent-set",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.minimum-dominating-set",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "problem.maximum-clique",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-mcsherry-talwar07",
+      "title": "Mechanism Design via Differential Privacy",
+      "year": 2007,
+      "venue": "FOCS 2007",
+      "authors": [
+        "Frank McSherry",
+        "Kunal Talwar"
+      ],
+      "status": "published",
+      "source_id": "round3-20261113-mcsherry-talwar07",
+      "url": "https://doi.org/10.1109/FOCS.2007.66",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 targeted multi-primitive primary-source search; editorial, not theorem-level verification",
+      "scope_note": "Shows approximate truthfulness induced by differential privacy, not exact DSIC; a different objective than conventional truthful auctions.",
+      "primitives": [
+        {
+          "primitive_id": "property.differential-privacy",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        },
+        {
+          "primitive_id": "framework.algorithmic-mechanism-design",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
+        }
+      ]
     }
   ],
   "updated_at": "2026-11-13"
