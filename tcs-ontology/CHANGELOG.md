@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.1 — 2026-11-13
+
+- Expanded the multi-primitive paper graph through two targeted literature campaigns: 129 additional papers compared with the original 159-paper snapshot, spanning complexity, game theory, mechanism design, cryptography, learning, scheduling, distributed/streaming and graph algorithms.
+- The second pass contributed 58 papers, 212 paper–primitive links, and 123 previously paper-unlinked canonical primitives. Combined (curated + explicitly unreviewed harvested) coverage now stands at 607/830 (73.1%), with 223 still unlinked.
+- Preserved the strict acceptance rule of two or more distinct existing primitive IDs for every added paper; bibliography citations and per-paper scope notes are retained. The paper graph co-occurrence is not a theorem relation.
+- Corrected IPEC 2023 publisher metadata, checked publication author lists and removed overbroad concept associations; added regression checks at `tests/test_round2_paper_coverage.py`.
+- See `docs/LITERATURE_COVERAGE_ROUND2.md` for coverage methodology, the area breakdown, caveats and follow-up targets. Editorial abstract checks are not expert review.
+
+
 ## v0.5.0 — 2026-11-13
 
 - Rebuilt the Paper-driven Research Graph's visual language: desktop/phone research workstation, orbited related-node focus with a gentle animated starfield, luminous nodes, clearer typography and label collision avoidance.
