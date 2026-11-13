@@ -1734,6 +1734,48 @@
       "title": "Mechanism Design via Differential Privacy",
       "url": "https://doi.org/10.1109/FOCS.2007.66",
       "type": "paper"
+    },
+    {
+      "id": "round3-20261113-borodin-cook-sort82",
+      "title": "A Time-Space Tradeoff for Sorting on a General Sequential Model of Computation",
+      "url": "https://doi.org/10.1137/0211022",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-beals-quantumquery01",
+      "title": "Quantum Lower Bounds by Polynomials",
+      "url": "https://doi.org/10.1145/502090.502097",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-ruzzo-nc81",
+      "title": "On Uniform Circuit Complexity",
+      "url": "https://doi.org/10.1016/0022-0000(81)90038-6",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-bennett-gill81",
+      "title": "Relative to a Random Oracle A, P^A != NP^A != co-NP^A with Probability 1",
+      "url": "https://doi.org/10.1137/0210008",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-ramalingam-reps96",
+      "title": "An Incremental Algorithm for a Generalization of the Shortest-Path Problem",
+      "url": "https://doi.org/10.1006/jagm.1996.0046",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-patrascu-thorup06",
+      "title": "Time-Space Trade-Offs for Predecessor Search",
+      "url": "https://doi.org/10.1145/1132516.1132551",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-mapreduce-efficiency10",
+      "title": "A Model of Computation for MapReduce",
+      "url": "https://doi.org/10.1137/1.9781611973075.76",
+      "type": "paper"
     }
   ]
 }
