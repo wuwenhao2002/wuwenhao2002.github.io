@@ -702,6 +702,432 @@
       "title": "Improved Local Computation Algorithms for Greedy Set Cover via Retroactive Updates",
       "url": "https://arxiv.org/abs/2603.23715",
       "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-cook71",
+      "title": "The complexity of theorem-proving procedures",
+      "url": "https://doi.org/10.1145/800157.805047",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-shamir92",
+      "title": "IP = PSPACE",
+      "url": "https://doi.org/10.1145/146585.146609",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-nash09",
+      "title": "The Complexity of Computing a Nash Equilibrium",
+      "url": "https://doi.org/10.1137/070699652",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-luks82",
+      "title": "Isomorphism of graphs of bounded valence can be tested in polynomial time",
+      "url": "https://doi.org/10.1016/0022-0000(82)90009-5",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-fabrikant04",
+      "title": "The Complexity of Pure Nash Equilibria",
+      "url": "https://doi.org/10.1145/1007352.1007445",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-dynamic-conjectures14",
+      "title": "Popular Conjectures Imply Strong Lower Bounds for Dynamic Problems",
+      "url": "https://doi.org/10.1109/FOCS.2014.53",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-matching-triangles18",
+      "title": "Matching Triangles and Basing Hardness on an Extremely Popular Conjecture",
+      "url": "https://doi.org/10.1137/15M1050987",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-backurs-indyk15",
+      "title": "Edit Distance Cannot Be Computed in Strongly Subquadratic Time (unless SETH is false)",
+      "url": "https://arxiv.org/abs/1412.0348",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-rosenthal73",
+      "title": "A Class of Games Possessing Pure-Strategy Nash Equilibria",
+      "url": "https://doi.org/10.1007/BF01737559",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-monderer96",
+      "title": "Potential Games",
+      "url": "https://doi.org/10.1006/game.1996.0044",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-hart-colell00",
+      "title": "A Simple Adaptive Procedure Leading to Correlated Equilibrium",
+      "url": "https://doi.org/10.1111/1468-0262.00153",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-roughgarden-tardos02",
+      "title": "How Bad Is Selfish Routing?",
+      "url": "https://doi.org/10.1145/581771.581776",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-nisan-ronen01",
+      "title": "Algorithmic Mechanism Design",
+      "url": "https://doi.org/10.1006/game.1999.0790",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-myerson81",
+      "title": "Optimal Auction Design",
+      "url": "https://doi.org/10.1287/moor.6.1.58",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-simult-first-price16",
+      "title": "Tight Bounds for the Price of Anarchy of Simultaneous First Price Auctions",
+      "url": "https://arxiv.org/abs/1312.2371",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-dobzinski12",
+      "title": "Truthful Randomized Mechanisms for Combinatorial Auctions",
+      "url": "https://doi.org/10.1016/j.jcss.2011.02.010",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-cai-daskalakis-weinberg12",
+      "title": "Optimal Multi-Dimensional Mechanism Design: Reducing Revenue to Welfare Maximization",
+      "url": "https://economics.princeton.edu/working-papers/optimal-multi-dimensional-mechanism-design-reducing-revenue-to-welfare-maximization/",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-goldwasser-micali84",
+      "title": "Probabilistic encryption",
+      "url": "https://doi.org/10.1016/0022-0000(84)90070-9",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-gmr89",
+      "title": "The Knowledge Complexity of Interactive Proof Systems",
+      "url": "https://doi.org/10.1137/0218012",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-dmns06",
+      "title": "Calibrating Noise to Sensitivity in Private Data Analysis",
+      "url": "https://doi.org/10.1007/11681878_14",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-regev05",
+      "title": "On lattices, learning with errors, random linear codes, and cryptography",
+      "url": "https://doi.org/10.1145/1060590.1060603",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-gentry09",
+      "title": "Fully homomorphic encryption using ideal lattices",
+      "url": "https://doi.org/10.1145/1536414.1536440",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-hill99",
+      "title": "A Pseudorandom Generator from any One-way Function",
+      "url": "https://doi.org/10.1137/S0097539793244708",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-ggm86",
+      "title": "How to construct random functions",
+      "url": "https://doi.org/10.1145/6490.6503",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-naor-yung89",
+      "title": "Universal one-way hash functions and their cryptographic applications",
+      "url": "https://doi.org/10.1145/73007.73011",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-canetti01",
+      "title": "Universally composable security: A new paradigm for cryptographic protocols",
+      "url": "https://research.ibm.com/publications/universally-composable-security-a-new-paradigm-for-cryptographic-protocols",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-luks-minors08",
+      "title": "Linearity of grid minors in treewidth with applications through bidimensionality",
+      "url": "https://doi.org/10.1007/s00493-008-2140-4",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-valiant84",
+      "title": "A Theory of the Learnable",
+      "url": "https://doi.org/10.1145/1968.1972",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-auer02",
+      "title": "Finite-time Analysis of the Multiarmed Bandit Problem",
+      "url": "https://doi.org/10.1023/A:1013689704352",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-flaxman05",
+      "title": "Online convex optimization in the bandit setting: gradient descent without a gradient",
+      "url": "https://www.microsoft.com/en-us/research/publication/online-convex-optimization-in-the-bandit-setting-gradient-descent-without-a-gradient/",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-hardtfair16",
+      "title": "Equality of Opportunity in Supervised Learning",
+      "url": "https://arxiv.org/abs/1610.02413",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-awareness12",
+      "title": "Fairness Through Awareness",
+      "url": "https://arxiv.org/abs/1104.3913",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-chaudhury21",
+      "title": "Fair and Efficient Allocations under Subadditive Valuations",
+      "url": "https://doi.org/10.1609/aaai.v35i6.16665",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-aziz15",
+      "title": "Justified Representation in Approval-Based Committee Voting",
+      "url": "https://doi.org/10.1609/aaai.v29i1.9324",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-bartholdi92",
+      "title": "How hard is it to control an election?",
+      "url": "https://doi.org/10.1016/0895-7177(92)90085-Y",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-hyperloglog07",
+      "title": "HyperLogLog: the analysis of a near-optimal cardinality estimation algorithm",
+      "url": "https://doi.org/10.46298/dmtcs.3545",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-countmin05",
+      "title": "An improved data stream summary: the count-min sketch and its applications",
+      "url": "https://doi.org/10.1016/j.jalgor.2003.12.001",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-countsketch04",
+      "title": "Finding frequent items in data streams",
+      "url": "https://doi.org/10.1016/S0304-3975(03)00400-6",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-ams99",
+      "title": "The Space Complexity of Approximating the Frequency Moments",
+      "url": "https://doi.org/10.1006/jcss.1997.1545",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-window02",
+      "title": "Maintaining Stream Statistics over Sliding Windows",
+      "url": "https://doi.org/10.1137/S0097539701398363",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-quantiles98",
+      "title": "Approximate medians and other quantiles in one pass and with limited memory",
+      "url": "https://research.ibm.com/publications/approximate-medians-and-other-quantiles-in-one-pass-and-with-limited-memory",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-tolerant06",
+      "title": "Tolerant Property Testing and Distance Approximation",
+      "url": "https://doi.org/10.1016/j.jcss.2006.03.002",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-tolerant-vs06",
+      "title": "Tolerant Versus Intolerant Testing for Boolean Properties",
+      "url": "https://doi.org/10.4086/toc.2006.v002a009",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-flp85",
+      "title": "Impossibility of Distributed Consensus with One Faulty Process",
+      "url": "https://doi.org/10.1145/3149.214121",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-byzantine82",
+      "title": "The Byzantine Generals Problem",
+      "url": "https://doi.org/10.1145/357172.357176",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-naor-stockmeyer95",
+      "title": "What Can be Computed Locally?",
+      "url": "https://doi.org/10.1137/S0097539793254571",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-linial92",
+      "title": "Locality in Distributed Graph Algorithms",
+      "url": "https://epubs.siam.org/doi/10.1137/0221015",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-holm01",
+      "title": "Poly-logarithmic deterministic fully-dynamic algorithms for connectivity, minimum spanning tree, 2-edge, and biconnectivity",
+      "url": "https://doi.org/10.1145/502090.502095",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-persist89",
+      "title": "Making data structures persistent",
+      "url": "https://doi.org/10.1016/0022-0000(89)90034-2",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-cache-btree05",
+      "title": "Cache-Oblivious B-Trees",
+      "url": "https://doi.org/10.1137/S0097539701389956",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-vardi-wolper86",
+      "title": "An Automata-Theoretic Approach to Automatic Program Verification",
+      "url": "https://lics.siglog.org/archive/1986/VardiWolper-AnAutomataTheoretic.html",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-vardi-logics86",
+      "title": "Automata-theoretic techniques for modal logics of programs",
+      "url": "https://doi.org/10.1016/0022-0000(86)90026-7",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-pnueli89",
+      "title": "On the synthesis of a reactive module",
+      "url": "https://doi.org/10.1145/75277.75293",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-shor99",
+      "title": "Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer",
+      "url": "https://doi.org/10.1137/S0036144598347011",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-amplitude02",
+      "title": "Quantum Amplitude Amplification and Estimation",
+      "url": "https://arxiv.org/abs/quant-ph/0005055",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-hsp-kitaev95",
+      "title": "Quantum measurements and the Abelian Stabilizer Problem",
+      "url": "https://arxiv.org/abs/quant-ph/9511026",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-ambainis07",
+      "title": "Quantum Walk Algorithm for Element Distinctness",
+      "url": "https://doi.org/10.1137/S0097539705447311",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-dependent10",
+      "title": "Dependent Randomized Rounding via Exchange Properties of Combinatorial Structures",
+      "url": "https://research.ibm.com/publications/dependent-randomized-rounding-via-exchange-properties-of-combinatorial-structures",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-frt04",
+      "title": "A tight bound on approximating arbitrary metrics by tree metrics",
+      "url": "https://doi.org/10.1016/j.jcss.2004.04.011",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-arv04",
+      "title": "Expander Flows, Geometric Embeddings and Graph Partitioning",
+      "url": "https://arxiv.org/abs/cs/0407021",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-kst90",
+      "title": "An optimal algorithm for on-line bipartite matching",
+      "url": "https://doi.org/10.1145/100216.100262",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-weighted-online-match94",
+      "title": "On-line algorithms for weighted bipartite matching and stable marriages",
+      "url": "https://doi.org/10.1016/0304-3975(94)90042-6",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-matroid-secretary07",
+      "title": "Matroids, secretary problems, and online mechanisms",
+      "url": "https://www.microsoft.com/en-us/research/publication/matroids-secretary-problems-and-online-mechanisms/",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-buchbinder-naor09",
+      "title": "Online Primal-Dual Algorithms for Covering and Packing",
+      "url": "https://doi.org/10.1287/moor.1080.0363",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-paging85",
+      "title": "Amortized Efficiency of List Update and Paging Rules",
+      "url": "https://doi.org/10.1145/2786.2793",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-scheduling-lst90",
+      "title": "Approximation algorithms for scheduling unrelated parallel machines",
+      "url": "https://doi.org/10.1007/BF01585745",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-scheduling-hall97",
+      "title": "Scheduling to Minimize Average Completion Time: Off-Line and On-Line Approximation Algorithms",
+      "url": "https://doi.org/10.1287/moor.22.3.513",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-scheduling-lawler73",
+      "title": "Optimal Sequencing of a Single Machine Subject to Precedence Constraints",
+      "url": "https://doi.org/10.1287/mnsc.19.5.544",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-open-shop76",
+      "title": "Open Shop Scheduling to Minimize Finish Time",
+      "url": "https://doi.org/10.1145/321978.321985",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-graham66",
+      "title": "Bounds for Certain Multiprocessing Anomalies",
+      "url": "https://doi.org/10.1002/j.1538-7305.1966.tb01709.x",
+      "type": "paper"
+    },
+    {
+      "id": "coverage-20261113-hochbaum-shmoys88",
+      "title": "A Polynomial Approximation Scheme for Scheduling on Uniform Processors: Using the Dual Approximation Approach",
+      "url": "https://doi.org/10.1137/0217033",
+      "type": "paper"
     }
   ]
 }
