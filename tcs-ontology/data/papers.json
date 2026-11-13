@@ -15220,6 +15220,361 @@
           "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
         }
       ]
+    },
+    {
+      "id": "round4extra-20261113-network-creation06",
+      "title": "On Nash Equilibria for a Network Creation Game",
+      "year": 2006,
+      "venue": "SODA 2006",
+      "authors": [
+        "Susanne Albers",
+        "Stefan Eilts",
+        "Eyal Even-Dar",
+        "Yishay Mansour",
+        "Liam Roditty"
+      ],
+      "source_id": "round4extra-20261113-network-creation06",
+      "url": "https://doi.org/10.1145/1109557.1109568",
+      "status": "published",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_publication_checked",
+      "provenance": "Round 4 supplementary original-publisher/author literature review, 2026-11-13; topic-level tags only",
+      "scope_note": "Studies networks built by strategic edge-purchasing agents; tree-equilibrium claims depend on edge price α and network size.",
+      "primitives": [
+        {
+          "primitive_id": "game.network-creation-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "equilibrium.pure-nash-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "property.price-of-anarchy",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "graph_class.tree",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        }
+      ]
+    },
+    {
+      "id": "round4extra-20261113-node-averaged20",
+      "title": "How long it takes for an ordinary node with an ordinary id to output?",
+      "year": 2020,
+      "venue": "Theoretical Computer Science 811",
+      "authors": [
+        "Laurent Feuilloley"
+      ],
+      "source_id": "round4extra-20261113-node-averaged20",
+      "url": "https://doi.org/10.1016/j.tcs.2019.01.023",
+      "status": "published",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_publication_checked",
+      "provenance": "Round 4 supplementary original-publisher/author literature review, 2026-11-13; topic-level tags only",
+      "scope_note": "Contrasts node-averaged versus worst-node and ID-averaged LOCAL round complexity; leader election is a specific separation example.",
+      "primitives": [
+        {
+          "primitive_id": "property.node-averaged-round-complexity",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "problem.leader-election",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "property.local-checkability",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "property.round-complexity",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        }
+      ]
+    },
+    {
+      "id": "round4extra-20261113-succinct-rmq10",
+      "title": "Optimal Succinctness for Range Minimum Queries",
+      "year": 2010,
+      "venue": "LATIN 2010",
+      "authors": [
+        "Johannes Fischer"
+      ],
+      "source_id": "round4extra-20261113-succinct-rmq10",
+      "url": "https://doi.org/10.1007/978-3-642-12200-2_16",
+      "status": "published",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_publication_checked",
+      "provenance": "Round 4 supplementary original-publisher/author literature review, 2026-11-13; topic-level tags only",
+      "scope_note": "Constructs a 2n+o(n)-bit static RMQ index with O(1) queries when the original array is not available after preprocessing; not a dynamic RMQ algorithm.",
+      "primitives": [
+        {
+          "primitive_id": "model.succinct-data-structure",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "problem.range-minimum-query",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "property.memory-query-tradeoff",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        }
+      ]
+    },
+    {
+      "id": "round4extra-20261113-batch-release05",
+      "title": "Minimizing makespan on a single batching machine with release times and non-identical job sizes",
+      "year": 2005,
+      "venue": "Operations Research Letters 33(2)",
+      "authors": [
+        "Shuguang Li",
+        "Guojun Li",
+        "Xiaoli Wang",
+        "Qiming Liu"
+      ],
+      "source_id": "round4extra-20261113-batch-release05",
+      "url": "https://doi.org/10.1016/j.orl.2004.04.009",
+      "status": "published",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_publication_checked",
+      "provenance": "Round 4 supplementary original-publisher/author literature review, 2026-11-13; topic-level tags only",
+      "scope_note": "Approximation for batch makespan with release dates and non-identical job sizes on one batching machine.",
+      "primitives": [
+        {
+          "primitive_id": "problem.batch-scheduling",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "problem.scheduling-with-release-dates",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "objective.makespan-minimization",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        }
+      ]
+    },
+    {
+      "id": "round4extra-20261113-circuit-value75",
+      "title": "The Circuit Value Problem is Log Space Complete for P",
+      "year": 1975,
+      "venue": "ACM SIGACT News 7(1)",
+      "authors": [
+        "Richard E. Ladner"
+      ],
+      "source_id": "round4extra-20261113-circuit-value75",
+      "url": "https://doi.org/10.1145/990518.990519",
+      "status": "published",
+      "review_status": "editorial_metadata_checked",
+      "authors_completeness": "publisher_or_author_publication_checked",
+      "provenance": "Round 4 supplementary original-publisher/author literature review, 2026-11-13; topic-level tags only",
+      "scope_note": "Establishes P-completeness under logspace many-one reductions for Boolean circuit evaluation; not NP-completeness of circuit satisfiability.",
+      "primitives": [
+        {
+          "primitive_id": "problem.circuit-value-problem",
+          "role": "problem",
+          "evidence": "publisher_metadata_and_secondary_reference",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "complexity_class.p",
+          "role": "model",
+          "evidence": "publisher_metadata_and_secondary_reference",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "task.completeness-proof",
+          "role": "task",
+          "evidence": "publisher_metadata_and_secondary_reference",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        }
+      ]
+    },
+    {
+      "id": "round4extra-20261113-two-sided-property15",
+      "title": "Two-sided Error Proximity Oblivious Testing",
+      "year": 2015,
+      "venue": "Random Structures & Algorithms 48(2), online 2014",
+      "authors": [
+        "Oded Goldreich",
+        "Igor Shinkar"
+      ],
+      "source_id": "round4extra-20261113-two-sided-property15",
+      "url": "https://doi.org/10.1002/rsa.20582",
+      "status": "published",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_publication_checked",
+      "provenance": "Round 4 supplementary original-publisher/author literature review, 2026-11-13; topic-level tags only",
+      "scope_note": "Contrasts one-sided and two-sided error in proximity-oblivious property testing with constant oracle-query complexity; examples include graph properties. Not the same as graph adjacency models.",
+      "primitives": [
+        {
+          "primitive_id": "property.two-sided-error",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "property.one-sided-error",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "problem.graph-property-testing",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "property.query-complexity",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        }
+      ]
+    },
+    {
+      "id": "round4extra-20261113-ov-concrete26",
+      "title": "New and Improved Concrete Lower Bounds for Orthogonal Vectors",
+      "year": 2026,
+      "venue": "ECCC TR26-121 (preprint)",
+      "authors": [
+        "Tameem Choudhury",
+        "Nutan Limaye",
+        "Karteek Sreenivasaiah",
+        "Srikanth Srinivasan"
+      ],
+      "source_id": "round4extra-20261113-ov-concrete26",
+      "url": "https://eccc.weizmann.ac.il/report/2026/121/",
+      "status": "preprint",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_publication_checked",
+      "provenance": "Round 4 supplementary original-publisher/author literature review, 2026-11-13; topic-level tags only",
+      "scope_note": "Defines the OV conjecture and proves unconditional analogues for restricted monotone/constant-depth circuit and formula models; does not resolve general OV conjecture.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.orthogonal-vectors-conjecture",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "task.lower-bound",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "complexity_class.ac0",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        }
+      ]
+    },
+    {
+      "id": "round4extra-20261113-incremental-sssp21",
+      "title": "Incremental Single Source Shortest Paths in Sparse Digraphs",
+      "year": 2021,
+      "venue": "SODA 2021",
+      "authors": [
+        "Shiri Chechik",
+        "Tianyi Zhang"
+      ],
+      "source_id": "round4extra-20261113-incremental-sssp21",
+      "url": "https://doi.org/10.1137/1.9781611976465.146",
+      "status": "published",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_publication_checked",
+      "provenance": "Round 4 supplementary original-publisher/author literature review, 2026-11-13; topic-level tags only",
+      "scope_note": "Maintains approximate weighted directed SSSP under insertions only, with explicit total update time; not a decremental deletion model.",
+      "primitives": [
+        {
+          "primitive_id": "model.incremental-updates",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "problem.single-source-shortest-paths",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "problem.dynamic-shortest-path",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        }
+      ]
+    },
+    {
+      "id": "round4extra-20261113-stockmeyer-meyer73",
+      "title": "Word Problems Requiring Exponential Time: Preliminary Report",
+      "year": 1973,
+      "venue": "STOC 1973",
+      "authors": [
+        "Larry J. Stockmeyer",
+        "Albert R. Meyer"
+      ],
+      "source_id": "round4extra-20261113-stockmeyer-meyer73",
+      "url": "https://doi.org/10.1145/800125.804029",
+      "status": "published",
+      "review_status": "editorial_metadata_checked",
+      "authors_completeness": "publisher_or_author_publication_checked",
+      "provenance": "Round 4 supplementary original-publisher/author literature review, 2026-11-13; topic-level tags only",
+      "scope_note": "Original automata/logic word-problem paper with quantified Boolean alternations and polynomial-space completeness context, which requires consulting the paper's exact reductions rather than assuming all regular-expression equivalence variants are PSPACE-complete.",
+      "primitives": [
+        {
+          "primitive_id": "problem.quantified-boolean-formula",
+          "role": "problem",
+          "evidence": "publisher_metadata_and_secondary_reference",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "complexity_class.pspace-complete",
+          "role": "model",
+          "evidence": "publisher_metadata_and_secondary_reference",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        },
+        {
+          "primitive_id": "problem.language-equivalence",
+          "role": "problem",
+          "evidence": "publisher_metadata_and_secondary_reference",
+          "note": "Context-scoped publication support, not an independently checked mathematical theorem."
+        }
+      ]
     }
   ],
   "updated_at": "2026-11-13"
