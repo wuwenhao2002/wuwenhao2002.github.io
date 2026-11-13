@@ -6953,13 +6953,13 @@
         "Algorithmic Game Theory"
       ],
       "aliases": [],
-      "definition": "An objective measuring total expected spread under a specified stochastic diffusion model and selected initial seeds.",
-      "scope_note": "Diffusion model, seed budget and objective need to be explicit; often formulated as a separate optimization problem. Classified as optimization problem, not property.",
+      "definition": "Given a graph, a specified stochastic influence-diffusion process, and a seed budget, select a seed set that maximizes the expected eventual number (or total weight) of activated nodes.",
+      "scope_note": "An optimization problem, not a numerical objective. For independent-cascade and specified threshold variants, monotonicity and submodularity justify greedy approximation; model assumptions and the seed budget are essential.",
       "review_status": "source_checked",
       "reviewed_at": "2026-11-13",
-      "provenance": "official_author_abstract_v0.5",
+      "provenance": "publisher-abstract-checked-2026-11-13",
       "source_ids": [
-        "author-dinitz-publications"
+        "round3-20261113-kempe-influence15"
       ]
     },
     {
@@ -11938,19 +11938,21 @@
       "reviewed_at": "2026-11-12"
     },
     {
-      "id": "task.query-complexity",
+      "id": "property.query-complexity",
       "name": "Query Complexity",
-      "kind": "task",
+      "kind": "property",
       "areas": [
         "Complexity Theory"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
-      "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "definition": "For an algorithm with access to an input oracle, its query complexity is the maximum or appropriately quantified number of oracle calls needed to meet a specified accuracy or success criterion.",
+      "review_status": "source_checked",
+      "provenance": "taxonomy-audit-2026-11-13",
+      "source_ids": [
+        "pt-goldreich"
+      ],
+      "scope_note": "Not a computational task. Specify oracle access, adaptivity, randomized or quantum query model, worst-case versus expected queries, and error/approximation parameters.",
+      "reviewed_at": "2026-11-13"
     },
     {
       "id": "task.space-complexity",
@@ -11985,19 +11987,22 @@
       "reviewed_at": "2026-11-12"
     },
     {
-      "id": "task.time-complexity",
+      "id": "property.time-complexity",
       "name": "Time Complexity",
-      "kind": "task",
+      "kind": "property",
       "areas": [
         "Complexity Theory"
       ],
       "aliases": [],
-      "definition": "",
-      "review_status": "needs_definition",
-      "provenance": "manual_seed_v0",
-      "source_ids": [],
-      "scope_note": "",
-      "reviewed_at": null
+      "definition": "For a specified computation model and input size, the time complexity of an algorithm is its number of primitive computational steps as a function of input size (with worst-case, expected, or other quantification explicitly stated).",
+      "review_status": "source_checked",
+      "provenance": "taxonomy-audit-2026-11-13",
+      "source_ids": [
+        "pt-goldreich",
+        "coverage-20261113-cook71"
+      ],
+      "scope_note": "Not a computational task. Machine cost conventions, encoding, input size, uniformity and whether complexity is worst-case/expected/amortized must be fixed.",
+      "reviewed_at": "2026-11-13"
     },
     {
       "id": "task.upper-bound",
