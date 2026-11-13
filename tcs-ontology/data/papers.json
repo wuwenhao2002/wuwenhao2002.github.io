@@ -6349,6 +6349,2932 @@
           "note": "This STOC 2026 relationship is visible in the official abstract."
         }
       ]
+    },
+    {
+      "id": "coverage-20261113-cook71",
+      "title": "The complexity of theorem-proving procedures",
+      "year": 1971,
+      "venue": "STOC 1971",
+      "authors": [
+        "Stephen A. Cook"
+      ],
+      "source_id": "coverage-20261113-cook71",
+      "url": "https://doi.org/10.1145/800157.805047",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Establishes a polynomial-time reducibility and nondeterministic-computation foundation for satisfiability-type hardness; reductions do not transfer to arbitrary unrelated instances.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.np",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "complexity_class.np-complete",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "framework.polynomial-time-reduction",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.boolean-satisfiability",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.subgraph-isomorphism",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-shamir92",
+      "title": "IP = PSPACE",
+      "year": 1992,
+      "venue": "Journal of the ACM",
+      "authors": [
+        "Adi Shamir"
+      ],
+      "source_id": "coverage-20261113-shamir92",
+      "url": "https://doi.org/10.1145/146585.146609",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Shows the equivalence of polynomial-space computation and polynomial-round interactive proof systems.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.pspace",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "framework.interactive-proof",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-nash09",
+      "title": "The Complexity of Computing a Nash Equilibrium",
+      "year": 2009,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Constantinos Daskalakis",
+        "Paul W. Goldberg",
+        "Christos H. Papadimitriou"
+      ],
+      "source_id": "coverage-20261113-nash09",
+      "url": "https://doi.org/10.1137/070699652",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Studies the PPAD-completeness of finding a mixed Nash equilibrium in finite games; not an assertion about all game models.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.ppad",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "equilibrium.mixed-nash-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "framework.equilibrium-computation",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-luks82",
+      "title": "Isomorphism of graphs of bounded valence can be tested in polynomial time",
+      "year": 1982,
+      "venue": "Journal of Computer and System Sciences",
+      "authors": [
+        "Eugene M. Luks"
+      ],
+      "source_id": "coverage-20261113-luks82",
+      "url": "https://doi.org/10.1016/0022-0000(82)90009-5",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Polynomial-time graph isomorphism is obtained for graphs of bounded degree, not general graph isomorphism.",
+      "primitives": [
+        {
+          "primitive_id": "problem.graph-isomorphism",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "graph_class.bounded-degree-graph",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-fabrikant04",
+      "title": "The Complexity of Pure Nash Equilibria",
+      "year": 2004,
+      "venue": "STOC 2004",
+      "authors": [
+        "Alex Fabrikant",
+        "Christos H. Papadimitriou",
+        "Kunal Talwar"
+      ],
+      "source_id": "coverage-20261113-fabrikant04",
+      "url": "https://doi.org/10.1145/1007352.1007445",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Studies computational hardness of pure equilibria in congestion games, with PLS-completeness in general versus tractable symmetric-network cases.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.pls",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "equilibrium.pure-nash-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "game.congestion-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "framework.potential-games-framework",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-dynamic-conjectures14",
+      "title": "Popular Conjectures Imply Strong Lower Bounds for Dynamic Problems",
+      "year": 2014,
+      "venue": "FOCS 2014",
+      "authors": [
+        "Amir Abboud",
+        "Virginia Vassilevska Williams"
+      ],
+      "source_id": "coverage-20261113-dynamic-conjectures14",
+      "url": "https://doi.org/10.1109/FOCS.2014.53",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Provides separately scoped conditional dynamic lower bounds under several alternative fine-grained conjectures; it does not equate those conjectures.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.3sum-conjecture",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "assumption.apsp-conjecture",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "assumption.boolean-matrix-multiplication-conjecture",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "assumption.strong-exponential-time-hypothesis",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.dynamic-shortest-path",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.graph-reachability",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.triangle-detection",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.dynamic-connectivity-query",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-matching-triangles18",
+      "title": "Matching Triangles and Basing Hardness on an Extremely Popular Conjecture",
+      "year": 2018,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Amir Abboud",
+        "Virginia Vassilevska Williams",
+        "Huacheng Yu"
+      ],
+      "source_id": "coverage-20261113-matching-triangles18",
+      "url": "https://doi.org/10.1137/15M1050987",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Conditional bounds rely on the disjunction of 3SUM, APSP and SETH; this does not establish an unconditional polynomial lower bound.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.3sum-conjecture",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "assumption.apsp-conjecture",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "assumption.strong-exponential-time-hypothesis",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.triangle-detection",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "task.lower-bound",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-backurs-indyk15",
+      "title": "Edit Distance Cannot Be Computed in Strongly Subquadratic Time (unless SETH is false)",
+      "year": 2015,
+      "venue": "STOC 2015",
+      "authors": [
+        "Arturs Backurs",
+        "Piotr Indyk"
+      ],
+      "source_id": "coverage-20261113-backurs-indyk15",
+      "url": "https://arxiv.org/abs/1412.0348",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Establishes a conditional edit-distance lower bound by reduction from CNF satisfiability under SETH.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.strong-exponential-time-hypothesis",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.edit-distance",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.boolean-satisfiability",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-rosenthal73",
+      "title": "A Class of Games Possessing Pure-Strategy Nash Equilibria",
+      "year": 1973,
+      "venue": "International Journal of Game Theory",
+      "authors": [
+        "Robert W. Rosenthal"
+      ],
+      "source_id": "coverage-20261113-rosenthal73",
+      "url": "https://doi.org/10.1007/BF01737559",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "A finite unweighted congestion-game potential argument yields existence of pure equilibria; not a weighted-congestion result.",
+      "primitives": [
+        {
+          "primitive_id": "game.congestion-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "game.atomic-congestion-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "equilibrium.pure-nash-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "framework.potential-games-framework",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-monderer96",
+      "title": "Potential Games",
+      "year": 1996,
+      "venue": "Games and Economic Behavior",
+      "authors": [
+        "Dov Monderer",
+        "Lloyd S. Shapley"
+      ],
+      "source_id": "coverage-20261113-monderer96",
+      "url": "https://doi.org/10.1006/game.1996.0044",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Characterizes several classes of potential games and their equilibrium properties, without extending to every strategic game.",
+      "primitives": [
+        {
+          "primitive_id": "game.potential-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "framework.potential-games-framework",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "equilibrium.pure-nash-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-hart-colell00",
+      "title": "A Simple Adaptive Procedure Leading to Correlated Equilibrium",
+      "year": 2000,
+      "venue": "Econometrica",
+      "authors": [
+        "Sergiu Hart",
+        "Andreu Mas-Colell"
+      ],
+      "source_id": "coverage-20261113-hart-colell00",
+      "url": "https://doi.org/10.1111/1468-0262.00153",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Studies an adaptive regret-matching process with empirical-play convergence to correlated equilibria of finite games.",
+      "primitives": [
+        {
+          "primitive_id": "equilibrium.correlated-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "framework.no-regret-learning",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "equilibrium.no-regret-outcome",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-roughgarden-tardos02",
+      "title": "How Bad Is Selfish Routing?",
+      "year": 2002,
+      "venue": "Journal of the ACM",
+      "authors": [
+        "Tim Roughgarden",
+        "Éva Tardos"
+      ],
+      "source_id": "coverage-20261113-roughgarden-tardos02",
+      "url": "https://doi.org/10.1145/581771.581776",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Compares selfish nonatomic routing with optimal routing for specified latency classes; PoA guarantee depends on latency assumptions.",
+      "primitives": [
+        {
+          "primitive_id": "game.routing-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "game.nonatomic-congestion-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "equilibrium.wardrop-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.price-of-anarchy",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "objective.total-cost",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-nisan-ronen01",
+      "title": "Algorithmic Mechanism Design",
+      "year": 2001,
+      "venue": "Games and Economic Behavior",
+      "authors": [
+        "Noam Nisan",
+        "Amir Ronen"
+      ],
+      "source_id": "coverage-20261113-nisan-ronen01",
+      "url": "https://doi.org/10.1006/game.1999.0790",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Introduces algorithmic mechanism design, focusing on truthful computation with privately held agent data, including scheduling tasks.",
+      "primitives": [
+        {
+          "primitive_id": "framework.algorithmic-mechanism-design",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.incentive-compatibility",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.strategyproofness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.unrelated-parallel-machines",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-myerson81",
+      "title": "Optimal Auction Design",
+      "year": 1981,
+      "venue": "Mathematics of Operations Research",
+      "authors": [
+        "Roger B. Myerson"
+      ],
+      "source_id": "coverage-20261113-myerson81",
+      "url": "https://doi.org/10.1287/moor.6.1.58",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Derives revenue-optimal single-item auction mechanisms for private-value distributional models; applicability is distribution-specific.",
+      "primitives": [
+        {
+          "primitive_id": "property.bayesian-incentive-compatibility",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "assumption.independent-private-values",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "auction.reserve-price-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.revenue-approximation",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-simult-first-price16",
+      "title": "Tight Bounds for the Price of Anarchy of Simultaneous First Price Auctions",
+      "year": 2016,
+      "venue": "ACM Transactions on Economics and Computation",
+      "authors": [
+        "George Christodoulou",
+        "Annamária Kovács",
+        "Alkmini Sgouritsa",
+        "Bo Tang"
+      ],
+      "source_id": "coverage-20261113-simult-first-price16",
+      "url": "https://arxiv.org/abs/1312.2371",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Analyzes welfare inefficiency of simultaneous first-price auctions under specified valuation classes and equilibrium assumptions.",
+      "primitives": [
+        {
+          "primitive_id": "auction.simultaneous-first-price-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "auction.first-price-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "assumption.xos-valuations",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "assumption.submodular-valuations",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.price-of-anarchy",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-dobzinski12",
+      "title": "Truthful Randomized Mechanisms for Combinatorial Auctions",
+      "year": 2012,
+      "venue": "Journal of Computer and System Sciences",
+      "authors": [
+        "Shahar Dobzinski",
+        "Noam Nisan",
+        "Michael Schapira"
+      ],
+      "source_id": "coverage-20261113-dobzinski12",
+      "url": "https://doi.org/10.1016/j.jcss.2011.02.010",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Gives universally truthful randomized combinatorial-auction mechanisms with welfare approximation guarantees for stated bidder valuations.",
+      "primitives": [
+        {
+          "primitive_id": "auction.combinatorial-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.incentive-compatibility",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.strategyproofness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "assumption.submodular-valuations",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "objective.social-welfare",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.welfare-approximation",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-cai-daskalakis-weinberg12",
+      "title": "Optimal Multi-Dimensional Mechanism Design: Reducing Revenue to Welfare Maximization",
+      "year": 2012,
+      "venue": "FOCS 2012",
+      "authors": [
+        "Yang Cai",
+        "Constantinos Daskalakis",
+        "S. Matthew Weinberg"
+      ],
+      "source_id": "coverage-20261113-cai-daskalakis-weinberg12",
+      "url": "https://economics.princeton.edu/working-papers/optimal-multi-dimensional-mechanism-design-reducing-revenue-to-welfare-maximization/",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Reduces Bayesian revenue maximization to welfare maximization using virtual VCG allocation rules under independent bidders.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.independent-private-values",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "auction.combinatorial-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "auction.vcg-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "objective.social-welfare",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.bayesian-incentive-compatibility",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-goldwasser-micali84",
+      "title": "Probabilistic encryption",
+      "year": 1984,
+      "venue": "Journal of Computer and System Sciences",
+      "authors": [
+        "Shafi Goldwasser",
+        "Silvio Micali"
+      ],
+      "source_id": "coverage-20261113-goldwasser-micali84",
+      "url": "https://doi.org/10.1016/0022-0000(84)90070-9",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Introduces semantic secrecy for probabilistic public-key encryption, the foundation of the later IND-CPA formalization; modern terminology is retrospective.",
+      "primitives": [
+        {
+          "primitive_id": "model.public-key-encryption",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.semantic-security",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.ind-cpa-security",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-gmr89",
+      "title": "The Knowledge Complexity of Interactive Proof Systems",
+      "year": 1989,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Shafi Goldwasser",
+        "Silvio Micali",
+        "Charles Rackoff"
+      ],
+      "source_id": "coverage-20261113-gmr89",
+      "url": "https://doi.org/10.1137/0218012",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Formalizes knowledge leakage in interactive proof systems; zero knowledge and completeness/soundness remain distinct definitions.",
+      "primitives": [
+        {
+          "primitive_id": "framework.interactive-proof",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.zero-knowledge-proof",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.zero-knowledge-property",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.completeness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.soundness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-dmns06",
+      "title": "Calibrating Noise to Sensitivity in Private Data Analysis",
+      "year": 2006,
+      "venue": "TCC 2006",
+      "authors": [
+        "Cynthia Dwork",
+        "Frank McSherry",
+        "Kobbi Nissim",
+        "Adam Smith"
+      ],
+      "source_id": "coverage-20261113-dmns06",
+      "url": "https://doi.org/10.1007/11681878_14",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Noise scale is calibrated to query sensitivity under explicitly defined adjacent databases; does not imply privacy under every graph adjacency.",
+      "primitives": [
+        {
+          "primitive_id": "property.differential-privacy",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.global-dp-sensitivity",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "assumption.neighboring-datasets",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-regev05",
+      "title": "On lattices, learning with errors, random linear codes, and cryptography",
+      "year": 2005,
+      "venue": "STOC 2005",
+      "authors": [
+        "Oded Regev"
+      ],
+      "source_id": "coverage-20261113-regev05",
+      "url": "https://doi.org/10.1145/1060590.1060603",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Introduces LWE worst-case-to-average-case lattice reductions and public-key encryption construction in its specified classical/quantum hardness settings.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.learning-with-errors-assumption",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.public-key-encryption",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "framework.average-case-complexity",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-gentry09",
+      "title": "Fully homomorphic encryption using ideal lattices",
+      "year": 2009,
+      "venue": "STOC 2009",
+      "authors": [
+        "Craig Gentry"
+      ],
+      "source_id": "coverage-20261113-gentry09",
+      "url": "https://doi.org/10.1145/1536414.1536440",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Constructs fully homomorphic public-key encryption from ideal-lattice assumptions; it does not imply IND-CCA security.",
+      "primitives": [
+        {
+          "primitive_id": "model.fully-homomorphic-encryption",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.public-key-encryption",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.semantic-security",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-hill99",
+      "title": "A Pseudorandom Generator from any One-way Function",
+      "year": 1999,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Johan Håstad",
+        "Russell Impagliazzo",
+        "Leonid A. Levin",
+        "Michael Luby"
+      ],
+      "source_id": "coverage-20261113-hill99",
+      "url": "https://doi.org/10.1137/S0097539793244708",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Establishes pseudorandom generator existence from any one-way function, with the standard computational-security quantification.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.one-way-functions",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.pseudorandom-generator",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-ggm86",
+      "title": "How to construct random functions",
+      "year": 1986,
+      "venue": "Journal of the ACM",
+      "authors": [
+        "Oded Goldreich",
+        "Shafi Goldwasser",
+        "Silvio Micali"
+      ],
+      "source_id": "coverage-20261113-ggm86",
+      "url": "https://doi.org/10.1145/6490.6503",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Constructs pseudorandom function families from weaker computational pseudorandom primitives; these are not information-theoretically random functions.",
+      "primitives": [
+        {
+          "primitive_id": "model.pseudorandom-function",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.pseudorandom-generator",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "assumption.one-way-functions",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-naor-yung89",
+      "title": "Universal one-way hash functions and their cryptographic applications",
+      "year": 1989,
+      "venue": "STOC 1989",
+      "authors": [
+        "Moni Naor",
+        "Moti Yung"
+      ],
+      "source_id": "coverage-20261113-naor-yung89",
+      "url": "https://doi.org/10.1145/73007.73011",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Derives universal one-way hashing and one-way-function-based digital signatures; target collision resistance is not general collision resistance.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.one-way-functions",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.digital-signature",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-canetti01",
+      "title": "Universally composable security: A new paradigm for cryptographic protocols",
+      "year": 2001,
+      "venue": "FOCS 2001",
+      "authors": [
+        "Ran Canetti"
+      ],
+      "source_id": "coverage-20261113-canetti01",
+      "url": "https://research.ibm.com/publications/universally-composable-security-a-new-paradigm-for-cryptographic-protocols",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Develops a simulation-based UC security framework and applies its definitions to specific cryptographic tasks; it does not claim all listed primitives universally realizable under all setups.",
+      "primitives": [
+        {
+          "primitive_id": "property.universally-composable-security",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.simulation-based-security",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.secure-multiparty-computation",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.commitment-scheme",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.oblivious-transfer",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.zero-knowledge-proof",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.public-key-encryption",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-luks-minors08",
+      "title": "Linearity of grid minors in treewidth with applications through bidimensionality",
+      "year": 2008,
+      "venue": "Combinatorica",
+      "authors": [
+        "Erik D. Demaine",
+        "MohammadTaghi Hajiaghayi"
+      ],
+      "source_id": "coverage-20261113-luks-minors08",
+      "url": "https://doi.org/10.1007/s00493-008-2140-4",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Uses excluded-minor and bounded-genus graph structures in bidimensionality-based separator and algorithmic bounds.",
+      "primitives": [
+        {
+          "primitive_id": "graph_class.minor-free-graph",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "graph_class.bounded-genus-graph",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.balanced-separator",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "task.fixed-parameter-algorithm",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-valiant84",
+      "title": "A Theory of the Learnable",
+      "year": 1984,
+      "venue": "Communications of the ACM",
+      "authors": [
+        "Leslie G. Valiant"
+      ],
+      "source_id": "coverage-20261113-valiant84",
+      "url": "https://doi.org/10.1145/1968.1972",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Introduces formal efficient learnability from examples in the PAC tradition; realizable learning results are not agnostic learning claims.",
+      "primitives": [
+        {
+          "primitive_id": "property.learnability",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "assumption.realizability",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.pac-learning",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-auer02",
+      "title": "Finite-time Analysis of the Multiarmed Bandit Problem",
+      "year": 2002,
+      "venue": "Machine Learning",
+      "authors": [
+        "Peter Auer",
+        "Nicolò Cesa-Bianchi",
+        "Paul Fischer"
+      ],
+      "source_id": "coverage-20261113-auer02",
+      "url": "https://doi.org/10.1023/A:1013689704352",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Provides finite-time regret bounds for UCB-style exploration in stochastic multi-armed bandits; not an adversarial-bandit guarantee.",
+      "primitives": [
+        {
+          "primitive_id": "model.bandit-feedback-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.regret-bound",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "technique.upper-confidence-bound",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.exploration-exploitation-tradeoff",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-flaxman05",
+      "title": "Online convex optimization in the bandit setting: gradient descent without a gradient",
+      "year": 2005,
+      "venue": "SODA 2005",
+      "authors": [
+        "Abraham D. Flaxman",
+        "Adam Tauman Kalai",
+        "H. Brendan McMahan"
+      ],
+      "source_id": "coverage-20261113-flaxman05",
+      "url": "https://www.microsoft.com/en-us/research/publication/online-convex-optimization-in-the-bandit-setting-gradient-descent-without-a-gradient/",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Studies bandit-feedback online convex optimization via randomized gradient estimates and regret; contrasts full-information feedback.",
+      "primitives": [
+        {
+          "primitive_id": "problem.online-convex-optimization",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.bandit-feedback-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.regret-bound",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.full-information-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-hardtfair16",
+      "title": "Equality of Opportunity in Supervised Learning",
+      "year": 2016,
+      "venue": "NeurIPS 2016",
+      "authors": [
+        "Moritz Hardt",
+        "Eric Price",
+        "Nathan Srebro"
+      ],
+      "source_id": "coverage-20261113-hardtfair16",
+      "url": "https://arxiv.org/abs/1610.02413",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Introduces group-conditional error-rate fairness criteria for prediction, including equal opportunity as a relaxation of equalized odds.",
+      "primitives": [
+        {
+          "primitive_id": "property.equality-of-opportunity",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.equalized-odds",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.group-fairness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-awareness12",
+      "title": "Fairness Through Awareness",
+      "year": 2012,
+      "venue": "ITCS 2012",
+      "authors": [
+        "Cynthia Dwork",
+        "Moritz Hardt",
+        "Toniann Pitassi",
+        "Omer Reingold",
+        "Richard Zemel"
+      ],
+      "source_id": "coverage-20261113-awareness12",
+      "url": "https://arxiv.org/abs/1104.3913",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Studies metric-based individual fairness and compares with group statistical parity and privacy; the notions are not equivalent.",
+      "primitives": [
+        {
+          "primitive_id": "property.fairness-through-awareness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.individual-fairness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.group-fairness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.differential-privacy",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-chaudhury21",
+      "title": "Fair and Efficient Allocations under Subadditive Valuations",
+      "year": 2021,
+      "venue": "AAAI 2021",
+      "authors": [
+        "Bhaskar Ray Chaudhury",
+        "Jugal Garg",
+        "Ruta Mehta"
+      ],
+      "source_id": "coverage-20261113-chaudhury21",
+      "url": "https://doi.org/10.1609/aaai.v35i6.16665",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Approximation guarantees for EFX and Nash welfare under subadditive valuations; EF1 is discussed for additive valuations, not the theorem's output for all valuation classes.",
+      "primitives": [
+        {
+          "primitive_id": "problem.envy-free-allocation",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.efx",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.nash-social-welfare",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.ef1",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.envy-freeness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-aziz15",
+      "title": "Justified Representation in Approval-Based Committee Voting",
+      "year": 2015,
+      "venue": "AAAI 2015",
+      "authors": [
+        "Haris Aziz",
+        "Markus Brill",
+        "Vincent Conitzer",
+        "Edith Elkind",
+        "Rupert Freeman",
+        "Toby Walsh"
+      ],
+      "source_id": "coverage-20261113-aziz15",
+      "url": "https://doi.org/10.1609/aaai.v29i1.9324",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Formalizes justified representation and extended justified representation in approval-based committee elections, not arbitrary electoral systems.",
+      "primitives": [
+        {
+          "primitive_id": "problem.committee-selection",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.winner-determination",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.justified-representation",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.proportionality",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-bartholdi92",
+      "title": "How hard is it to control an election?",
+      "year": 1992,
+      "venue": "Mathematical and Computer Modelling",
+      "authors": [
+        "John J. Bartholdi III",
+        "Craig A. Tovey",
+        "Michael A. Trick"
+      ],
+      "source_id": "coverage-20261113-bartholdi92",
+      "url": "https://doi.org/10.1016/0895-7177(92)90085-Y",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Studies computational hardness of election control for particular rules; the NP-hardness does not apply to all control actions and systems.",
+      "primitives": [
+        {
+          "primitive_id": "problem.control-of-elections",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.winner-determination",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "framework.hardness-of-approximation",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "complexity_class.np-complete",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-hyperloglog07",
+      "title": "HyperLogLog: the analysis of a near-optimal cardinality estimation algorithm",
+      "year": 2007,
+      "venue": "Discrete Mathematics & Theoretical Computer Science",
+      "authors": [
+        "Philippe Flajolet",
+        "Éric Fusy",
+        "Olivier Gandouet",
+        "Frédéric Meunier"
+      ],
+      "source_id": "coverage-20261113-hyperloglog07",
+      "url": "https://doi.org/10.46298/dmtcs.3545",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Analyzes approximate distinct counting in large streams with compact sketch representations; the original sketch is not an arbitrary deletion-capable stream algorithm.",
+      "primitives": [
+        {
+          "primitive_id": "technique.hyperloglog",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.distinct-elements-estimation",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.insertion-only-stream",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-countmin05",
+      "title": "An improved data stream summary: the count-min sketch and its applications",
+      "year": 2005,
+      "venue": "Journal of Algorithms",
+      "authors": [
+        "Graham Cormode",
+        "S. Muthukrishnan"
+      ],
+      "source_id": "coverage-20261113-countmin05",
+      "url": "https://doi.org/10.1016/j.jalgor.2003.12.001",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Provides Count-Min sketch and frequency/quantile streaming applications, with one-sided frequency-estimation error in insertion streams.",
+      "primitives": [
+        {
+          "primitive_id": "technique.count-min-sketch",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.heavy-hitters",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.streaming-quantiles",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-countsketch04",
+      "title": "Finding frequent items in data streams",
+      "year": 2004,
+      "venue": "Theoretical Computer Science",
+      "authors": [
+        "Moses Charikar",
+        "Kevin Chen",
+        "Martin Farach-Colton"
+      ],
+      "source_id": "coverage-20261113-countsketch04",
+      "url": "https://doi.org/10.1016/S0304-3975(03)00400-6",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Studies limited-space frequency estimation and heavy hitters using Count Sketch; this is not Count-Min Sketch.",
+      "primitives": [
+        {
+          "primitive_id": "technique.count-sketch",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.heavy-hitters",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-ams99",
+      "title": "The Space Complexity of Approximating the Frequency Moments",
+      "year": 1999,
+      "venue": "Journal of Computer and System Sciences",
+      "authors": [
+        "Noga Alon",
+        "Yossi Matias",
+        "Mario Szegedy"
+      ],
+      "source_id": "coverage-20261113-ams99",
+      "url": "https://doi.org/10.1006/jcss.1997.1545",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Develops randomized small-space frequency-moment methods including the distinct-item moment F0 in a sequential stream.",
+      "primitives": [
+        {
+          "primitive_id": "technique.ams-sketch",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.distinct-elements-estimation",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.cash-register-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-window02",
+      "title": "Maintaining Stream Statistics over Sliding Windows",
+      "year": 2002,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Mayur Datar",
+        "Aristides Gionis",
+        "Piotr Indyk",
+        "Rajeev Motwani"
+      ],
+      "source_id": "coverage-20261113-window02",
+      "url": "https://doi.org/10.1137/S0097539701398363",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Studies summary statistics for a moving window over data streams, including counts and Lp norms; not an algorithm that automatically handles general arbitrary quantiles.",
+      "primitives": [
+        {
+          "primitive_id": "model.sliding-window-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.insertion-only-stream",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.streaming-quantiles",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-quantiles98",
+      "title": "Approximate medians and other quantiles in one pass and with limited memory",
+      "year": 1998,
+      "venue": "SIGMOD 1998",
+      "authors": [
+        "Gurmeet Singh Manku",
+        "Sridhar Rajagopalan",
+        "Bruce G. Lindsay"
+      ],
+      "source_id": "coverage-20261113-quantiles98",
+      "url": "https://research.ibm.com/publications/approximate-medians-and-other-quantiles-in-one-pass-and-with-limited-memory",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Develops compact single-pass quantile summaries and discusses random sampling to reduce space.",
+      "primitives": [
+        {
+          "primitive_id": "problem.streaming-quantiles",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.insertion-only-stream",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "technique.reservoir-sampling",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-tolerant06",
+      "title": "Tolerant Property Testing and Distance Approximation",
+      "year": 2006,
+      "venue": "Journal of Computer and System Sciences",
+      "authors": [
+        "Michal Parnas",
+        "Dana Ron",
+        "Ronitt Rubinfeld"
+      ],
+      "source_id": "coverage-20261113-tolerant06",
+      "url": "https://doi.org/10.1016/j.jcss.2006.03.002",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Links tolerant testing and quantitative estimation of distance to a property; the distance metric depends on the testing model.",
+      "primitives": [
+        {
+          "primitive_id": "problem.tolerant-testing",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.distance-to-property",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.tolerant-testability",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-tolerant-vs06",
+      "title": "Tolerant Versus Intolerant Testing for Boolean Properties",
+      "year": 2006,
+      "venue": "Theory of Computing",
+      "authors": [
+        "Eldar Fischer",
+        "Lance Fortnow"
+      ],
+      "source_id": "coverage-20261113-tolerant-vs06",
+      "url": "https://doi.org/10.4086/toc.2006.v002a009",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Distinguishes tolerant testing complexities for Boolean properties, including learning-related considerations.",
+      "primitives": [
+        {
+          "primitive_id": "problem.tolerant-testing",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.tolerant-testability",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.agnostic-pac-learning",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-flp85",
+      "title": "Impossibility of Distributed Consensus with One Faulty Process",
+      "year": 1985,
+      "venue": "Journal of the ACM",
+      "authors": [
+        "Michael J. Fischer",
+        "Nancy A. Lynch",
+        "Michael S. Paterson"
+      ],
+      "source_id": "coverage-20261113-flp85",
+      "url": "https://doi.org/10.1145/3149.214121",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Proves deterministic asynchronous consensus impossible with even one possible crash fault under FLP assumptions; not a universal impossibility for randomized/synchronous models.",
+      "primitives": [
+        {
+          "primitive_id": "problem.consensus",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.asynchronous-message-passing",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.fault-tolerance",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.fault-tolerant-distributed-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-byzantine82",
+      "title": "The Byzantine Generals Problem",
+      "year": 1982,
+      "venue": "ACM Transactions on Programming Languages and Systems",
+      "authors": [
+        "Leslie Lamport",
+        "Robert Shostak",
+        "Marshall Pease"
+      ],
+      "source_id": "coverage-20261113-byzantine82",
+      "url": "https://doi.org/10.1145/357172.357176",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Studies agreement under Byzantine faulty participants in message passing, with feasibility thresholds depending on communication assumptions.",
+      "primitives": [
+        {
+          "primitive_id": "problem.byzantine-agreement",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.consensus",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.fault-tolerance",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.synchronous-message-passing",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-naor-stockmeyer95",
+      "title": "What Can be Computed Locally?",
+      "year": 1995,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Moni Naor",
+        "Larry Stockmeyer"
+      ],
+      "source_id": "coverage-20261113-naor-stockmeyer95",
+      "url": "https://doi.org/10.1137/S0097539793254571",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Studies local distributed computation and locally checkable graph labeling on bounded-degree networks.",
+      "primitives": [
+        {
+          "primitive_id": "property.local-checkability",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.distributed-vertex-coloring",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.symmetry-breaking",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-linial92",
+      "title": "Locality in Distributed Graph Algorithms",
+      "year": 1992,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Nathan Linial"
+      ],
+      "source_id": "coverage-20261113-linial92",
+      "url": "https://epubs.siam.org/doi/10.1137/0221015",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Gives fundamental locality and coloring complexity bounds for synchronous distributed graph algorithms.",
+      "primitives": [
+        {
+          "primitive_id": "problem.distributed-vertex-coloring",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.symmetry-breaking",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.synchronous-message-passing",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-holm01",
+      "title": "Poly-logarithmic deterministic fully-dynamic algorithms for connectivity, minimum spanning tree, 2-edge, and biconnectivity",
+      "year": 2001,
+      "venue": "Journal of the ACM",
+      "authors": [
+        "Jacob Holm",
+        "Kristian de Lichtenberg",
+        "Mikkel Thorup"
+      ],
+      "source_id": "coverage-20261113-holm01",
+      "url": "https://doi.org/10.1145/502090.502095",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Maintains connectivity, minimum spanning forest and 2-edge connectivity under edge insertion and deletion with amortized update bounds; models differ from pure incremental-only algorithms.",
+      "primitives": [
+        {
+          "primitive_id": "problem.dynamic-connectivity-query",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.edge-connectivity",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.incremental-updates",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.decremental-updates",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.fully-dynamic-updates",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.minimum-spanning-tree",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-persist89",
+      "title": "Making data structures persistent",
+      "year": 1989,
+      "venue": "Journal of Computer and System Sciences",
+      "authors": [
+        "James R. Driscoll",
+        "Neil Sarnak",
+        "Daniel D. Sleator",
+        "Robert E. Tarjan"
+      ],
+      "source_id": "coverage-20261113-persist89",
+      "url": "https://doi.org/10.1016/0022-0000(89)90034-2",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Shows persistence transformations for linked structures and persistent search trees supporting queries, insertions and deletions.",
+      "primitives": [
+        {
+          "primitive_id": "model.persistent-data-structure",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.dynamic-dictionary",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-cache-btree05",
+      "title": "Cache-Oblivious B-Trees",
+      "year": 2005,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Michael A. Bender",
+        "Erik D. Demaine",
+        "Martin Farach-Colton"
+      ],
+      "source_id": "coverage-20261113-cache-btree05",
+      "url": "https://doi.org/10.1137/S0097539701389956",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Constructs dynamic cache-oblivious search trees whose block-transfer performance is analyzed relative to external-memory B-trees.",
+      "primitives": [
+        {
+          "primitive_id": "model.cache-oblivious-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.external-memory-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.dynamic-dictionary",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.predecessor-search",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-vardi-wolper86",
+      "title": "An Automata-Theoretic Approach to Automatic Program Verification",
+      "year": 1986,
+      "venue": "LICS 1986",
+      "authors": [
+        "Moshe Y. Vardi",
+        "Pierre Wolper"
+      ],
+      "source_id": "coverage-20261113-vardi-wolper86",
+      "url": "https://lics.siglog.org/archive/1986/VardiWolper-AnAutomataTheoretic.html",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Presents automata-based model checking for finite-state concurrent programs, using automata to represent temporal specifications.",
+      "primitives": [
+        {
+          "primitive_id": "problem.model-checking",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.finite-automaton",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.automata-emptiness",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-vardi-logics86",
+      "title": "Automata-theoretic techniques for modal logics of programs",
+      "year": 1986,
+      "venue": "Journal of Computer and System Sciences",
+      "authors": [
+        "Moshe Y. Vardi",
+        "Pierre Wolper"
+      ],
+      "source_id": "coverage-20261113-vardi-logics86",
+      "url": "https://doi.org/10.1016/0022-0000(86)90026-7",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Reduces logical satisfiability to emptiness of automata over infinite trees; does not claim equivalence to arbitrary regular-language equivalence.",
+      "primitives": [
+        {
+          "primitive_id": "problem.automata-emptiness",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.finite-automaton",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.language-equivalence",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-pnueli89",
+      "title": "On the synthesis of a reactive module",
+      "year": 1989,
+      "venue": "POPL 1989",
+      "authors": [
+        "Amir Pnueli",
+        "Roni Rosner"
+      ],
+      "source_id": "coverage-20261113-pnueli89",
+      "url": "https://doi.org/10.1145/75277.75293",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Uses infinite-tree Rabin-automata emptiness in reactive-module synthesis; Rabin and parity acceptance are not automatically interchangeable tags.",
+      "primitives": [
+        {
+          "primitive_id": "problem.reactive-synthesis",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.automata-emptiness",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-shor99",
+      "title": "Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer",
+      "year": 1999,
+      "venue": "SIAM Review",
+      "authors": [
+        "Peter W. Shor"
+      ],
+      "source_id": "coverage-20261113-shor99",
+      "url": "https://doi.org/10.1137/S0036144598347011",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Quantum algorithms for factorization and discrete logarithms use period-finding Fourier methods; their existence challenges classical discrete-log hardness.",
+      "primitives": [
+        {
+          "primitive_id": "technique.quantum-fourier-transform",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "assumption.discrete-logarithm-assumption",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.hidden-subgroup-problem",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-amplitude02",
+      "title": "Quantum Amplitude Amplification and Estimation",
+      "year": 2002,
+      "venue": "Contemporary Mathematics",
+      "authors": [
+        "Gilles Brassard",
+        "Peter Høyer",
+        "Michele Mosca",
+        "Alain Tapp"
+      ],
+      "source_id": "coverage-20261113-amplitude02",
+      "url": "https://arxiv.org/abs/quant-ph/0005055",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Generalizes Grover search via amplitude amplification and provides quantum amplitude estimation in a query-oracle model.",
+      "primitives": [
+        {
+          "primitive_id": "technique.amplitude-amplification",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.quantum-search",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.quantum-query-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-hsp-kitaev95",
+      "title": "Quantum measurements and the Abelian Stabilizer Problem",
+      "year": 1995,
+      "venue": "arXiv preprint",
+      "authors": [
+        "Alexei Yu. Kitaev"
+      ],
+      "source_id": "coverage-20261113-hsp-kitaev95",
+      "url": "https://arxiv.org/abs/quant-ph/9511026",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Uses eigenvalue measurement/phase-estimation style techniques for the abelian stabilizer problem and finite-abelian quantum Fourier transforms.",
+      "primitives": [
+        {
+          "primitive_id": "problem.hidden-subgroup-problem",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "technique.phase-estimation",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "technique.quantum-fourier-transform",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-ambainis07",
+      "title": "Quantum Walk Algorithm for Element Distinctness",
+      "year": 2007,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Andris Ambainis"
+      ],
+      "source_id": "coverage-20261113-ambainis07",
+      "url": "https://doi.org/10.1137/S0097539705447311",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Uses quantum walks for element-distinctness query complexity; no generic speedup for all graph problems is implied.",
+      "primitives": [
+        {
+          "primitive_id": "technique.quantum-walk",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.quantum-query-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-dependent10",
+      "title": "Dependent Randomized Rounding via Exchange Properties of Combinatorial Structures",
+      "year": 2010,
+      "venue": "FOCS 2010",
+      "authors": [
+        "Chandra Chekuri",
+        "Jan Vondrák",
+        "Rico Zenklusen"
+      ],
+      "source_id": "coverage-20261113-dependent10",
+      "url": "https://research.ibm.com/publications/dependent-randomized-rounding-via-exchange-properties-of-combinatorial-structures",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Analyzes swap-rounding under matroid exchange constraints and concentration of linear and submodular functions.",
+      "primitives": [
+        {
+          "primitive_id": "technique.dependent-rounding",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "technique.martingale-concentration",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "technique.chernoff-bound",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "technique.submodular-maximization",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-frt04",
+      "title": "A tight bound on approximating arbitrary metrics by tree metrics",
+      "year": 2004,
+      "venue": "Journal of Computer and System Sciences",
+      "authors": [
+        "Jittat Fakcharoenphol",
+        "Satish Rao",
+        "Kunal Talwar"
+      ],
+      "source_id": "coverage-20261113-frt04",
+      "url": "https://doi.org/10.1016/j.jcss.2004.04.011",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Establishes logarithmic-distortion randomized tree embeddings for arbitrary finite metrics, with algorithmic implications.",
+      "primitives": [
+        {
+          "primitive_id": "technique.metric-embedding",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "technique.tree-embedding",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "graph_class.metric-graph",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-arv04",
+      "title": "Expander Flows, Geometric Embeddings and Graph Partitioning",
+      "year": 2004,
+      "venue": "STOC 2004",
+      "authors": [
+        "Sanjeev Arora",
+        "Satish Rao",
+        "Umesh Vazirani"
+      ],
+      "source_id": "coverage-20261113-arv04",
+      "url": "https://arxiv.org/abs/cs/0407021",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Develops SDP and expander-flow techniques for sparse cuts, balanced separators, and graph conductance approximation.",
+      "primitives": [
+        {
+          "primitive_id": "problem.balanced-separator",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.conductance",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "technique.semidefinite-programming-relaxation",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "technique.expander-decomposition",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-kst90",
+      "title": "An optimal algorithm for on-line bipartite matching",
+      "year": 1990,
+      "venue": "STOC 1990",
+      "authors": [
+        "Richard M. Karp",
+        "Umesh V. Vazirani",
+        "Vijay V. Vazirani"
+      ],
+      "source_id": "coverage-20261113-kst90",
+      "url": "https://doi.org/10.1145/100216.100262",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Studies randomized online bipartite matching in the adversarial arrival setting; distinct from stochastic-order matching models.",
+      "primitives": [
+        {
+          "primitive_id": "model.online-bipartite-matching-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.online-bipartite-matching",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "graph_class.bipartite-graph",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.competitive-analysis",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-weighted-online-match94",
+      "title": "On-line algorithms for weighted bipartite matching and stable marriages",
+      "year": 1994,
+      "venue": "Theoretical Computer Science",
+      "authors": [
+        "Samir Khuller",
+        "Stephen G. Mitchell",
+        "Vijay V. Vazirani"
+      ],
+      "source_id": "coverage-20261113-weighted-online-match94",
+      "url": "https://doi.org/10.1016/0304-3975(94)90042-6",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Analyzes competitive online metric bipartite matching and a distinct online stable-marriage instability objective.",
+      "primitives": [
+        {
+          "primitive_id": "problem.online-metric-matching",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.stable-matching",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.competitive-analysis",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-matroid-secretary07",
+      "title": "Matroids, secretary problems, and online mechanisms",
+      "year": 2007,
+      "venue": "SODA 2007",
+      "authors": [
+        "Moshe Babaioff",
+        "Nicole Immorlica",
+        "Robert Kleinberg"
+      ],
+      "source_id": "coverage-20261113-matroid-secretary07",
+      "url": "https://www.microsoft.com/en-us/research/publication/matroids-secretary-problems-and-online-mechanisms/",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Studies value-maximizing matroid secretary selection under random-order irrevocable arrivals, with implications for online mechanism design.",
+      "primitives": [
+        {
+          "primitive_id": "model.secretary-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.secretary-selection",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.random-arrival-order",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "objective.social-welfare",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-buchbinder-naor09",
+      "title": "Online Primal-Dual Algorithms for Covering and Packing",
+      "year": 2009,
+      "venue": "Mathematics of Operations Research",
+      "authors": [
+        "Niv Buchbinder",
+        "Joseph (Seffi) Naor"
+      ],
+      "source_id": "coverage-20261113-buchbinder-naor09",
+      "url": "https://doi.org/10.1287/moor.1080.0363",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Develops online primal-dual methods for fractional and integral covering and packing, measured via competitive analysis.",
+      "primitives": [
+        {
+          "primitive_id": "technique.primal-dual-online-algorithm",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.competitive-analysis",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "technique.competitive-analysis-framework",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-paging85",
+      "title": "Amortized Efficiency of List Update and Paging Rules",
+      "year": 1985,
+      "venue": "Communications of the ACM",
+      "authors": [
+        "Daniel D. Sleator",
+        "Robert E. Tarjan"
+      ],
+      "source_id": "coverage-20261113-paging85",
+      "url": "https://doi.org/10.1145/2786.2793",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Analyzes move-to-front and LRU paging against offline benchmarks with amortized performance guarantees.",
+      "primitives": [
+        {
+          "primitive_id": "problem.online-paging",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "property.competitive-analysis",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "technique.potential-based-amortization",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-scheduling-lst90",
+      "title": "Approximation algorithms for scheduling unrelated parallel machines",
+      "year": 1990,
+      "venue": "Mathematical Programming",
+      "authors": [
+        "Jan Karel Lenstra",
+        "David B. Shmoys",
+        "Éva Tardos"
+      ],
+      "source_id": "coverage-20261113-scheduling-lst90",
+      "url": "https://doi.org/10.1007/BF01585745",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Gives a 2-approximation and conditional 3/2 lower bound for minimizing makespan on unrelated machines via LP-based rounding.",
+      "primitives": [
+        {
+          "primitive_id": "model.unrelated-parallel-machines",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "objective.makespan",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "objective.makespan-minimization",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "task.inapproximability-bound",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "technique.randomized-rounding",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-scheduling-hall97",
+      "title": "Scheduling to Minimize Average Completion Time: Off-Line and On-Line Approximation Algorithms",
+      "year": 1997,
+      "venue": "Mathematics of Operations Research",
+      "authors": [
+        "Leslie A. Hall",
+        "Andreas S. Schulz",
+        "David B. Shmoys",
+        "Joel Wein"
+      ],
+      "source_id": "coverage-20261113-scheduling-hall97",
+      "url": "https://doi.org/10.1287/moor.22.3.513",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Uses LP-guided scheduling and online approximation guarantees for weighted completion-time objectives.",
+      "primitives": [
+        {
+          "primitive_id": "objective.total-completion-time",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.weighted-completion-time-scheduling",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.online-scheduling-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-scheduling-lawler73",
+      "title": "Optimal Sequencing of a Single Machine Subject to Precedence Constraints",
+      "year": 1973,
+      "venue": "Management Science",
+      "authors": [
+        "Eugene L. Lawler"
+      ],
+      "source_id": "coverage-20261113-scheduling-lawler73",
+      "url": "https://doi.org/10.1287/mnsc.19.5.544",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Gives an exact sequencing procedure for single-machine precedence constraints with general nondecreasing completion-cost functions, including lateness-type objectives as special cases.",
+      "primitives": [
+        {
+          "primitive_id": "model.single-machine-scheduling",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.scheduling-with-precedence-constraints",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "objective.maximum-lateness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-open-shop76",
+      "title": "Open Shop Scheduling to Minimize Finish Time",
+      "year": 1976,
+      "venue": "Journal of the ACM",
+      "authors": [
+        "Teofilo Gonzalez",
+        "Sartaj Sahni"
+      ],
+      "source_id": "coverage-20261113-open-shop76",
+      "url": "https://doi.org/10.1145/321978.321985",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Contrasts preemptive and nonpreemptive open-shop scheduling for finish-time minimization and hardness.",
+      "primitives": [
+        {
+          "primitive_id": "model.open-shop",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.preemptive-scheduling",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.nonpreemptive-scheduling",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "objective.makespan-minimization",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-graham66",
+      "title": "Bounds for Certain Multiprocessing Anomalies",
+      "year": 1966,
+      "venue": "Bell System Technical Journal",
+      "authors": [
+        "Ronald L. Graham"
+      ],
+      "source_id": "coverage-20261113-graham66",
+      "url": "https://doi.org/10.1002/j.1538-7305.1966.tb01709.x",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "Derives list-scheduling performance bounds under identical processors and precedence-constrained nonpreemptive jobs.",
+      "primitives": [
+        {
+          "primitive_id": "model.identical-parallel-machines",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "problem.scheduling-with-precedence-constraints",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.nonpreemptive-scheduling",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "objective.makespan-minimization",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
+    },
+    {
+      "id": "coverage-20261113-hochbaum-shmoys88",
+      "title": "A Polynomial Approximation Scheme for Scheduling on Uniform Processors: Using the Dual Approximation Approach",
+      "year": 1988,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Dorit S. Hochbaum",
+        "David B. Shmoys"
+      ],
+      "source_id": "coverage-20261113-hochbaum-shmoys88",
+      "url": "https://doi.org/10.1137/0217033",
+      "review_status": "editorial_abstract_checked",
+      "status": "published",
+      "authors_completeness": "checked_against_publication_or_author",
+      "provenance": "2026-11-13 targeted multi-primitive literature search; publisher/author abstract checked",
+      "scope_note": "PTAS for makespan on uniform-speed processors using dual approximation; uniform machines are not identical machines in general.",
+      "primitives": [
+        {
+          "primitive_id": "objective.makespan-minimization",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "objective.makespan",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "task.bicriteria-approximation",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        },
+        {
+          "primitive_id": "model.identical-parallel-machines",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Connection checked against publisher or author description; see paper-specific scope note."
+        }
+      ]
     }
   ],
   "updated_at": "2026-11-13"
