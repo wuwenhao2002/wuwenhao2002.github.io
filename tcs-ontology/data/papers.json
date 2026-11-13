@@ -6186,47 +6186,47 @@
       ],
       "source_id": "conf-focs25",
       "url": "https://focs.computer.org/2025/accepted-papers/",
-      "review_status": "editorial_metadata_checked",
+      "review_status": "editorial_abstract_checked",
       "status": "published",
       "authors_completeness": "official_program",
-      "provenance": "official FOCS/STOC program checked, with title-derived roles only",
+      "provenance": "FOCS 2025 official accepted paper and arXiv abstract checked on 2026-11-13; topic-level concept role classification only.",
       "scope_note": "Paper title and author metadata checked. Concepts are title-grounded and not formal theorem extraction. Title and FOCS 2025 paper abstract specify lower bounds on space versus number of passes for approximation of Max-Cut.",
       "primitives": [
         {
           "primitive_id": "model.data-stream-model",
           "role": "model",
-          "evidence": "official_title",
-          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+          "evidence": "official_abstract",
+          "note": "The paper's FOCS 2025 title and published author abstract explicitly substantiate this scoped streaming complexity concept; not theorem-level review."
         },
         {
           "primitive_id": "property.pass-complexity",
           "role": "metric",
-          "evidence": "official_title",
-          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+          "evidence": "official_abstract",
+          "note": "The paper's FOCS 2025 title and published author abstract explicitly substantiate this scoped streaming complexity concept; not theorem-level review."
         },
         {
           "primitive_id": "property.streaming-space-complexity",
           "role": "metric",
-          "evidence": "official_title",
-          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+          "evidence": "official_abstract",
+          "note": "The paper's FOCS 2025 title and published author abstract explicitly substantiate this scoped streaming complexity concept; not theorem-level review."
         },
         {
           "primitive_id": "problem.maximum-cut",
           "role": "problem",
-          "evidence": "official_title",
-          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+          "evidence": "official_abstract",
+          "note": "The paper's FOCS 2025 title and published author abstract explicitly substantiate this scoped streaming complexity concept; not theorem-level review."
         },
         {
           "primitive_id": "task.tight-lower-bound",
           "role": "task",
-          "evidence": "official_title",
-          "note": "Concept explicitly linked by accepted-paper title, with abstract not universally examined."
+          "evidence": "official_abstract",
+          "note": "The paper's FOCS 2025 title and published author abstract explicitly substantiate this scoped streaming complexity concept; not theorem-level review."
         },
         {
           "primitive_id": "technique.multipass-streaming-lower-bound",
           "role": "technique",
           "evidence": "official_abstract",
-          "note": "FOCS 2025 title and preprint abstract explicitly derive lower bounds with multiple streaming passes."
+          "note": "The paper's FOCS 2025 title and published author abstract explicitly substantiate this scoped streaming complexity concept; not theorem-level review."
         }
       ]
     },
