@@ -1476,6 +1476,264 @@
       "title": "The Complexity of the Local Hamiltonian Problem",
       "url": "https://doi.org/10.1137/S0097539704445226",
       "type": "paper"
+    },
+    {
+      "id": "round3-20261113-karp72",
+      "title": "Reducibility Among Combinatorial Problems",
+      "url": "https://doi.org/10.1007/978-1-4684-2001-2_9",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-lautemann83",
+      "title": "BPP and the polynomial hierarchy",
+      "url": "https://doi.org/10.1016/0020-0190(83)90044-3",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-papadimitriou94",
+      "title": "On the complexity of the parity argument and other inefficient proofs of existence",
+      "url": "https://doi.org/10.1016/S0022-0000(05)80063-7",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-immerman88",
+      "title": "Nondeterministic Space is Closed under Complementation",
+      "url": "https://doi.org/10.1137/0217058",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-hastad86",
+      "title": "Almost Optimal Lower Bounds for Small Depth Circuits",
+      "url": "https://doi.org/10.1145/12130.12132",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-downey95",
+      "title": "Fixed-Parameter Tractability and Completeness I: Basic Results",
+      "url": "https://doi.org/10.1137/S0097539792228228",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-valiant-vazirani86",
+      "title": "NP is as Easy as Detecting Unique Solutions",
+      "url": "https://doi.org/10.1016/0304-3975(86)90135-0",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-bernstein-vazirani97",
+      "title": "Quantum Complexity Theory",
+      "url": "https://doi.org/10.1137/S0097539796300921",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-babai-moran88",
+      "title": "Arthur-Merlin Games: A Randomized Proof System, and a Hierarchy of Complexity Classes",
+      "url": "https://doi.org/10.1016/0022-0000(88)90028-1",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-lampis26",
+      "title": "k-SUM Hardness Implies Treewidth-SETH",
+      "url": "https://arxiv.org/abs/2510.08185",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-papad-roughgarden08",
+      "title": "Computing correlated equilibria in multi-player games",
+      "url": "https://doi.org/10.1145/1379759.1379762",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-dask-anonymous08",
+      "title": "Computing Equilibria in Anonymous Games",
+      "url": "https://arxiv.org/abs/0710.5582",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-conitzer-sandholm06",
+      "title": "Computing the Optimal Strategy to Commit to",
+      "url": "https://www.cs.cmu.edu/~sandholm/Computing%20commitment%20strategy.ec06.pdf",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-kreps-wilson82",
+      "title": "Sequential Equilibria",
+      "url": "https://www.gsb.stanford.edu/faculty-research/publications/sequential-equilibrium",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-braess-roughgarden06",
+      "title": "On the Severity of Braess's Paradox: Designing Networks for Selfish Users Is Hard",
+      "url": "https://doi.org/10.1016/j.jcss.2005.05.009",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-kempe-influence15",
+      "title": "Maximizing the Spread of Influence through a Social Network",
+      "url": "https://doi.org/10.4086/toc.2015.v011a004",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-bertsimas-fair11",
+      "title": "The Price of Fairness",
+      "url": "https://doi.org/10.1287/opre.1100.0865",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-gul-stacchetti99",
+      "title": "Walrasian Equilibrium with Gross Substitutes",
+      "url": "https://doi.org/10.1006/jeth.1999.2531",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-ausubel04",
+      "title": "An Efficient Ascending-Bid Auction for Multiple Objects",
+      "url": "https://doi.org/10.1257/0002828043052330",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-irving-roommates85",
+      "title": "An Efficient Algorithm for the Stable Roommates Problem",
+      "url": "https://doi.org/10.1016/0196-6774(85)90033-1",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-judgment-list07",
+      "title": "Strategy-Proof Judgment Aggregation",
+      "url": "https://www.cambridge.org/core/journals/economics-and-philosophy/article/abs/strategyproof-judgment-aggregation/6A185A5FA5748D8C76238BC314284ABB",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-moulin-condorcet88",
+      "title": "Condorcet's Principle Implies the No Show Paradox",
+      "url": "https://doi.org/10.1016/0022-0531(88)90253-0",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-dijkstra-self74",
+      "title": "Self-Stabilizing Systems in Spite of Distributed Control",
+      "url": "https://doi.org/10.1145/361179.361202",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-herlihy-waitfree91",
+      "title": "Wait-Free Synchronization",
+      "url": "https://doi.org/10.1145/114005.102808",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-linial-saks93",
+      "title": "Low Diameter Graph Decompositions",
+      "url": "https://doi.org/10.1007/BF01303516",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-bar-yossef-triangle02",
+      "title": "Reductions in Streaming Algorithms, with an Application to Counting Triangles in Graphs",
+      "url": "https://research.ibm.com/publications/reductions-in-streaming-algorithms-with-an-application-to-counting-triangles-in-graphs",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-bansal-discrepancy10",
+      "title": "Constructive Algorithms for Discrepancy Minimization",
+      "url": "https://doi.org/10.1109/FOCS.2010.7",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-jain-steiner01",
+      "title": "A Factor 2 Approximation Algorithm for the Generalized Steiner Network Problem",
+      "url": "https://doi.org/10.1007/S004930170004",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-ageev-pipage04",
+      "title": "Pipage Rounding: A New Method of Constructing Algorithms with Proven Performance Guarantee",
+      "url": "https://doi.org/10.1023/B:JOCO.0000038913.96607.C2",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-sherali-adams90",
+      "title": "A Hierarchy of Relaxations between the Continuous and Convex Hull Representations for Zero-One Programming Problems",
+      "url": "https://doi.org/10.1137/0403036",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-charikar-facility99",
+      "title": "Improved Combinatorial Algorithms for the Facility Location and k-Median Problems",
+      "url": "https://doi.org/10.1109/SFFCS.1999.814609",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-mcmahan-ftrl11",
+      "title": "Follow-the-Regularized-Leader and Mirror Descent: Equivalence Theorems and L1 Regularization",
+      "url": "https://proceedings.mlr.press/v15/mcmahan11b.html",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-imase-waxman91",
+      "title": "Dynamic Steiner Tree Problem",
+      "url": "https://doi.org/10.1137/0404033",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-russo-vanroy14",
+      "title": "Learning to Optimize Via Posterior Sampling",
+      "url": "https://doi.org/10.1287/moor.2014.0650",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-kaelbling-pomdp98",
+      "title": "Planning and Acting in Partially Observable Stochastic Domains",
+      "url": "https://doi.org/10.1016/S0004-3702(98)00023-X",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-kasiv-private11",
+      "title": "What Can We Learn Privately?",
+      "url": "https://doi.org/10.1137/090756090",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-indyk-motwani98",
+      "title": "Approximate Nearest Neighbors: Towards Removing the Curse of Dimensionality",
+      "url": "https://doi.org/10.1145/276698.276876",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-bellare-rogaway93",
+      "title": "Random Oracles are Practical: A Paradigm for Designing Efficient Protocols",
+      "url": "https://doi.org/10.1145/168588.168596",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-benor-mpc88",
+      "title": "Completeness Theorems for Non-Cryptographic Fault-Tolerant Distributed Computation",
+      "url": "https://doi.org/10.1145/62212.62213",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-gmw-mental87",
+      "title": "How to Play ANY Mental Game",
+      "url": "https://doi.org/10.1145/28395.28420",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-afks-testing00",
+      "title": "Efficient Testing of Large Graphs",
+      "url": "https://doi.org/10.1007/s004930070001",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-clark-unitdisk90",
+      "title": "Unit Disk Graphs",
+      "url": "https://doi.org/10.1016/0012-365X(90)90358-O",
+      "type": "paper"
+    },
+    {
+      "id": "round3-20261113-mcsherry-talwar07",
+      "title": "Mechanism Design via Differential Privacy",
+      "url": "https://doi.org/10.1109/FOCS.2007.66",
+      "type": "paper"
     }
   ]
 }
