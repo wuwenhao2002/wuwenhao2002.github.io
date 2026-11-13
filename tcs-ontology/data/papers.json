@@ -13471,6 +13471,1719 @@
           "note": "Scoping and resource-model conditions in paper-specific summary apply."
         }
       ]
+    },
+    {
+      "id": "round4-20261113-harsanyi-bayesian67",
+      "title": "Games with Incomplete Information Played by 'Bayesian' Players, I-III: Part I. The Basic Model",
+      "year": 1967,
+      "venue": "Management Science 14(3)",
+      "authors": [
+        "John C. Harsanyi"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-harsanyi-bayesian67",
+      "url": "https://doi.org/10.1287/mnsc.14.3.159",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Harsanyi type-space/common-prior transformation represents incomplete-information games; Bayesian equilibrium correspondence is established in the multipart study.",
+      "primitives": [
+        {
+          "primitive_id": "game.bayesian-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "equilibrium.bayesian-nash-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "framework.bayesian-games-framework",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-coordination-graphs22",
+      "title": "Coordination Games on Weighted Directed Graphs",
+      "year": 2022,
+      "venue": "Mathematics of Operations Research 47(2)",
+      "authors": [
+        "Krzysztof R. Apt",
+        "Sunil Simon",
+        "Dominik Wojtczak"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-coordination-graphs22",
+      "url": "https://doi.org/10.1287/moor.2021.1159",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Polynomial coalition-improvement paths yield strong equilibria only for specified graph classes and weight/bonus conditions; arbitrary directed coordination games may lack pure equilibria.",
+      "primitives": [
+        {
+          "primitive_id": "game.coordination-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "equilibrium.strong-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.convergence-rate",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.equilibrium-existence",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-coalition-subsidies11",
+      "title": "Subsidies, Stability, and Restricted Cooperation in Coalitional Games",
+      "year": 2011,
+      "venue": "IJCAI 2011",
+      "authors": [
+        "Reshef Meir",
+        "Jeffrey S. Rosenschein",
+        "Enrico Malizia"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-coalition-subsidies11",
+      "url": "https://doi.org/10.5591/978-1-57735-516-8/IJCAI11-060",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Subsidies can restore a nonempty cooperative core in restricted transferable-utility coalitional games; core stability is not a Nash equilibrium claim.",
+      "primitives": [
+        {
+          "primitive_id": "game.coalitional-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.core-stability",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.equilibrium-existence",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-facility-cover-games10",
+      "title": "Non-Cooperative Facility Location and Covering Games",
+      "year": 2010,
+      "venue": "Theoretical Computer Science 411",
+      "authors": [
+        "Jean Cardinal",
+        "Martin Hoefer"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-facility-cover-games10",
+      "url": "https://doi.org/10.1016/j.tcs.2010.02.005",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Models noncooperative covering/facility-location with shared purchasable integer resources; existence and PoA depend on integer-programming and player constraints.",
+      "primitives": [
+        {
+          "primitive_id": "game.facility-location-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "game.resource-allocation-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "equilibrium.approximate-nash-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.price-of-anarchy",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.equilibrium-existence",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-costsharing-setcover05",
+      "title": "Strategyproof Cost-Sharing Mechanisms for Set Cover and Facility Location Games",
+      "year": 2005,
+      "venue": "Decision Support Systems 39(1)",
+      "authors": [
+        "Nikhil R. Devanur",
+        "Milena Mihail",
+        "Vijay V. Vazirani"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-costsharing-setcover05",
+      "url": "https://doi.org/10.1016/j.dss.2004.08.004",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Uses dual-fitting approximations to design strategyproof cost-sharing mechanisms in set-cover/facility-location games with partial cost recovery; not exact budget balance.",
+      "primitives": [
+        {
+          "primitive_id": "technique.dual-fitting",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "game.facility-location-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.core-stability",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.strategyproofness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.budget-balance",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-allpay-complete96",
+      "title": "The All-Pay Auction with Complete Information",
+      "year": 1996,
+      "venue": "Economic Theory 8(2)",
+      "authors": [
+        "Michael R. Baye",
+        "Dan Kovenock",
+        "Casper G. de Vries"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-allpay-complete96",
+      "url": "https://doi.org/10.1007/BF01211819",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Equilibria of complete-information first-price all-pay auctions may be asymmetric even with symmetric bidders, and revenue equivalence can fail across such equilibria.",
+      "primitives": [
+        {
+          "primitive_id": "auction.all-pay-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "assumption.symmetric-bidders",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.revenue-equivalence",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.equilibrium-selection",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-multiunit-budgets12",
+      "title": "Multi-unit Auctions with Budget Limits",
+      "year": 2012,
+      "venue": "Games and Economic Behavior 74(2)",
+      "authors": [
+        "Shahar Dobzinski",
+        "Ron Lavi",
+        "Noam Nisan"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-multiunit-budgets12",
+      "url": "https://doi.org/10.1016/j.geb.2011.08.003",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "In indivisible multiunit markets with budgets, deterministic DSIC/IR/no-subsidy mechanisms cannot always attain Pareto optimality; public budgets permit clinching-type special cases.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.budget-constraints",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "auction.multi-unit-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.individual-rationality",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.dominant-strategy-incentive-compatibility",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.pareto-optimality",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-core-select-package08",
+      "title": "Core-Selecting Package Auctions",
+      "year": 2008,
+      "venue": "International Journal of Game Theory 36",
+      "authors": [
+        "Robert Day",
+        "Paul Milgrom"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-core-select-package08",
+      "url": "https://doi.org/10.1007/s00182-007-0100-7",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Core selection for reported package values, and bidder-optimal core allocations, have scoped incentive properties; general core-selecting auctions are not truthful dominant-strategy mechanisms.",
+      "primitives": [
+        {
+          "primitive_id": "auction.core-selecting-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "auction.combinatorial-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.core-stability",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.strategyproofness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-sequential-externality12",
+      "title": "Sequential Auctions and Externalities",
+      "year": 2012,
+      "venue": "SODA 2012",
+      "authors": [
+        "Renato Paes Leme",
+        "Vasilis Syrgkanis",
+        "Éva Tardos"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-sequential-externality12",
+      "url": "https://doi.org/10.1137/1.9781611973099.70",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Sequential first-price item auctions achieve at least half optimal welfare for unit-demand bidders in any SPE; for submodular bidders guarantees may fail.",
+      "primitives": [
+        {
+          "primitive_id": "auction.sequential-first-price-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "equilibrium.subgame-perfect-equilibrium",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "assumption.unit-demand-valuations",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "assumption.submodular-valuations",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.equilibrium-efficiency",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-single-sample-revenue15",
+      "title": "Revenue Maximization with a Single Sample",
+      "year": 2015,
+      "venue": "Games and Economic Behavior 91",
+      "authors": [
+        "Peerapong Dhangwatnotai",
+        "Tim Roughgarden",
+        "Qiqi Yan"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-single-sample-revenue15",
+      "url": "https://doi.org/10.1016/j.geb.2014.03.011",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Under scoped distributional assumptions, a bidder-derived single sample sets reserves to approximate Bayesian optimal revenue without knowing the exact prior.",
+      "primitives": [
+        {
+          "primitive_id": "property.prior-independence",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.revenue-approximation",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "auction.reserve-price-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "assumption.limited-information",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-truthful-lp05",
+      "title": "Truthful and Near-Optimal Mechanism Design via Linear Programming",
+      "year": 2005,
+      "venue": "FOCS 2005",
+      "authors": [
+        "Ron Lavi",
+        "Chaitanya Swamy"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-truthful-lp05",
+      "url": "https://doi.org/10.1109/SFCS.2005.76",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Uses convex decompositions of LP fractional allocations to construct truthful-in-expectation approximation mechanisms, not universally truthful deterministic ones.",
+      "primitives": [
+        {
+          "primitive_id": "auction.multi-unit-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "auction.combinatorial-auction",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.integrality-gap",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.incentive-compatibility",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.welfare-approximation",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-active-agnostic09",
+      "title": "Agnostic Active Learning",
+      "year": 2009,
+      "venue": "Journal of Computer and System Sciences 75(1)",
+      "authors": [
+        "Maria-Florina Balcan",
+        "Alina Beygelzimer",
+        "John Langford"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-active-agnostic09",
+      "url": "https://doi.org/10.1016/j.jcss.2008.07.003",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Agnostic active learning tolerates arbitrary label noise under an IID unlabeled example stream; sample gains are proved for specified classes/distributions.",
+      "primitives": [
+        {
+          "primitive_id": "model.active-learning",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "assumption.adversarial-noise",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "assumption.iid-samples",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.agnostic-pac-learning",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-covariate-iwcv07",
+      "title": "Covariate Shift Adaptation by Importance Weighted Cross Validation",
+      "year": 2007,
+      "venue": "Journal of Machine Learning Research 8",
+      "authors": [
+        "Masashi Sugiyama",
+        "Matthias Krauledat",
+        "Klaus-Robert Müller"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-covariate-iwcv07",
+      "url": "https://www.jmlr.org/papers/v8/sugiyama07a.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Importance weighting corrects a shift in feature marginals when conditional labels given features remain invariant; not arbitrary concept drift.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.covariate-shift",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "assumption.distribution-shift",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "assumption.iid-samples",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-teaching-dimension95",
+      "title": "On the Complexity of Teaching",
+      "year": 1995,
+      "venue": "Journal of Computer and System Sciences 50(1)",
+      "authors": [
+        "Sally A. Goldman",
+        "Michael J. Kearns"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-teaching-dimension95",
+      "url": "https://doi.org/10.1006/jcss.1995.1003",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Formalizes teaching dimension through a helpful teacher selecting examples in a variant of online concept learning; distinct from active learning by learner-selected queries.",
+      "primitives": [
+        {
+          "primitive_id": "property.teaching-dimension",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.online-learning-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.learnability",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-fano-lecam97",
+      "title": "Assouad, Fano, and Le Cam",
+      "year": 1997,
+      "venue": "Festschrift for Lucien Le Cam: Research Papers in Probability and Statistics",
+      "authors": [
+        "Bin Yu"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-fano-lecam97",
+      "url": "https://web.stanford.edu/class/stats300a/REFS/yu1997assouad.pdf",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Research chapter comparing Assouad/Fano/Le Cam methods for minimax nonparametric statistical estimation lower bounds; not one universal interchangeable inequality.",
+      "primitives": [
+        {
+          "primitive_id": "technique.fano-inequality",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "technique.le-cam-method",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "technique.information-theoretic-lower-bound",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "task.lower-bound",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-calibrated-bayesian82",
+      "title": "The Well-Calibrated Bayesian",
+      "year": 1982,
+      "venue": "Journal of the American Statistical Association 77(379)",
+      "authors": [
+        "A. P. Dawid"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-calibrated-bayesian82",
+      "url": "https://doi.org/10.1080/01621459.1982.10477856",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Connects long-run calibration of sequential Bayesian probability forecasts with coherence in a repeated prediction setting; online forecast feedback differs from standard adversarial regret.",
+      "primitives": [
+        {
+          "primitive_id": "property.calibration",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.online-learning-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-online-convex03",
+      "title": "Online Convex Programming and Generalized Infinitesimal Gradient Ascent",
+      "year": 2003,
+      "venue": "ICML 2003",
+      "authors": [
+        "Martin Zinkevich"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-online-convex03",
+      "url": "https://dblp.org/rec/conf/icml/Zinkevich03",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Online projected gradients provide regret guarantees including dynamic regret against a path-length-bounded comparator; not unrestricted comparator sequences.",
+      "primitives": [
+        {
+          "primitive_id": "model.online-learning-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.dynamic-regret",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "problem.online-convex-optimization",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.no-regret-guarantee",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-online-survey12",
+      "title": "Online Learning and Online Convex Optimization",
+      "year": 2012,
+      "venue": "Foundations and Trends in Machine Learning 4(2)",
+      "authors": [
+        "Shai Shalev-Shwartz"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-online-survey12",
+      "url": "https://doi.org/10.1561/2200000018",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Published survey of formal online learning, OCO, regret and the doubling trick; classified as an academic survey, not an original theorem discovery.",
+      "primitives": [
+        {
+          "primitive_id": "model.online-learning-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "technique.doubling-trick",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.no-regret-guarantee",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "problem.online-convex-optimization",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-margin-svm00",
+      "title": "Bounds on Error Expectation for Support Vector Machines",
+      "year": 2000,
+      "venue": "Neural Computation 12(9)",
+      "authors": [
+        "Vladimir Vapnik",
+        "Olivier Chapelle"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-margin-svm00",
+      "url": "https://doi.org/10.1162/089976600300015042",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Uses support-vector geometry (span and margin-related capacity) to derive generalization-error expectations; not a universal hard-margin assumption.",
+      "primitives": [
+        {
+          "primitive_id": "property.generalization-bound",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.learnability",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-jain-vazirani01",
+      "title": "Approximation Algorithms for Metric Facility Location and k-Median Problems Using the Primal-Dual Schema and Lagrangian Relaxation",
+      "year": 2001,
+      "venue": "Journal of the ACM 48(2)",
+      "authors": [
+        "Kamal Jain",
+        "Vijay V. Vazirani"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-jain-vazirani01",
+      "url": "https://doi.org/10.1145/375827.375845",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "A classic *offline* primal-dual plus Lagrangian-relaxation algorithm for metric facility location/k-median; the online primal-dual tag is not justified and should be dropped.",
+      "primitives": [
+        {
+          "primitive_id": "technique.lagrangian-relaxation",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "problem.k-median",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.approximation-ratio",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-karmarkar-karp82",
+      "title": "An Efficient Approximation Scheme for the One-Dimensional Bin-Packing Problem",
+      "year": 1982,
+      "venue": "FOCS 1982",
+      "authors": [
+        "Narendra Karmarkar",
+        "Richard M. Karp"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-karmarkar-karp82",
+      "url": "https://doi.org/10.1109/SFCS.1982.61",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Bin packing fractional configurations/column generation underpin asymptotic approximation algorithms; additive O(epsilon^-2) bins are not exactly a PTAS bound.",
+      "primitives": [
+        {
+          "primitive_id": "technique.configuration-lp",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.approximation-ratio",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "task.approximation-algorithm",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-continuous-local11",
+      "title": "Continuous Local Search",
+      "year": 2011,
+      "venue": "SODA 2011",
+      "authors": [
+        "Constantinos Daskalakis",
+        "Christos H. Papadimitriou"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-continuous-local11",
+      "url": "https://doi.org/10.1137/1.9781611973082.62",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Introduces CLS as a class contained in PPAD ∩ PLS with continuous local optimization; includes specific stochastic games, not all of them.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.cls",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "complexity_class.ppad",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "complexity_class.pls",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "game.stochastic-game",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-parity-games17",
+      "title": "Deciding Parity Games in Quasipolynomial Time",
+      "year": 2017,
+      "venue": "STOC 2017",
+      "authors": [
+        "Cristian S. Calude",
+        "Sanjay Jain",
+        "Bakhadyr Khoussainov",
+        "Wei Li",
+        "Frank Stephan"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-parity-games17",
+      "url": "https://doi.org/10.1145/3055399.3055409",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Obtains quasi-polynomial parity-game time and FPT time parameterized by priority count, improving an earlier XP bound.",
+      "primitives": [
+        {
+          "primitive_id": "problem.parity-game-solving",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "complexity_class.xp",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "task.fixed-parameter-algorithm",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-private-weightpaths16",
+      "title": "Shortest Paths and Distances with Differential Privacy",
+      "year": 2016,
+      "venue": "arXiv preprint (2015; 2016 publication under review)",
+      "authors": [
+        "Adam Sealfon"
+      ],
+      "status": "preprint",
+      "source_id": "round4-20261113-private-weightpaths16",
+      "url": "https://arxiv.org/abs/1511.04631",
+      "review_status": "editorial_metadata_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Graph topology is public; neighboring private edge-weight functions have bounded ℓ1 distance. Studies private shortest paths/all-pairs distances, not edge-insertion privacy.",
+      "primitives": [
+        {
+          "primitive_id": "model.edge-weight-privacy",
+          "role": "model",
+          "evidence": "public_bibliographic_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "problem.single-source-shortest-paths",
+          "role": "problem",
+          "evidence": "public_bibliographic_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "lens.differential-privacy",
+          "role": "lens",
+          "evidence": "public_bibliographic_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-local-edge-triangles25",
+      "title": "Robust Privacy-Preserving Triangle Counting under Edge Local Differential Privacy",
+      "year": 2025,
+      "venue": "Proceedings of the ACM on Management of Data 3(3)",
+      "authors": [
+        "Yizhang He",
+        "Kai Wang",
+        "Wenjie Zhang",
+        "Xuemin Lin",
+        "Ying Zhang",
+        "Wei Ni"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-local-edge-triangles25",
+      "url": "https://doi.org/10.1145/3725348",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Vertex-centric private graph triangle counting with *local edge* protection and global sensitivity analysis; not a streaming insertion-only algorithm.",
+      "primitives": [
+        {
+          "primitive_id": "model.local-edge-differential-privacy",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.global-dp-sensitivity",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-functional-sec11",
+      "title": "Functional Encryption: Definitions and Challenges",
+      "year": 2011,
+      "venue": "TCC 2011",
+      "authors": [
+        "Dan Boneh",
+        "Amit Sahai",
+        "Brent Waters"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-functional-sec11",
+      "url": "https://cs.stanford.edu/people/dabo/pubs/abstracts/functional.html",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Defines functional encryption security and shows a specific simulation notion cannot be met in the standard model but can in the random-oracle model; not an unconditional impossibility for all FE.",
+      "primitives": [
+        {
+          "primitive_id": "model.functional-encryption",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.simulation-based-security",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "assumption.random-oracle-model",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "assumption.standard-model-cryptography",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-statistical-commit09",
+      "title": "Statistically Hiding Commitments and Statistical Zero-Knowledge Arguments from Any One-Way Function",
+      "year": 2009,
+      "venue": "SIAM Journal on Computing 39(3)",
+      "authors": [
+        "Iftach Haitner",
+        "Minh-Huyen Nguyen",
+        "Shien Jin Ong",
+        "Omer Reingold",
+        "Salil Vadhan"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-statistical-commit09",
+      "url": "https://doi.org/10.1137/080725404",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Constructs *statistically* hiding commitments from one-way functions. Perfect hiding is strictly stronger, so that tag is not justified and is dropped.",
+      "primitives": [
+        {
+          "primitive_id": "property.computational-binding",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.commitment-scheme",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "assumption.one-way-functions",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-lattice-trapdoor08",
+      "title": "Trapdoors for Hard Lattices and New Cryptographic Constructions",
+      "year": 2008,
+      "venue": "STOC 2008",
+      "authors": [
+        "Craig Gentry",
+        "Chris Peikert",
+        "Vinod Vaikuntanathan"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-lattice-trapdoor08",
+      "url": "https://doi.org/10.1145/1374376.1374407",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Develops lattice-based trapdoor constructions, hash-and-sign signatures and identity-based encryption; the particular collision-resistance and quantum-security tags need precise assumptions.",
+      "primitives": [
+        {
+          "primitive_id": "assumption.collision-resistance",
+          "role": "assumption",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.digital-signature",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.public-key-encryption",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-bounded-graph-testing02",
+      "title": "Property Testing in Bounded Degree Graphs",
+      "year": 2002,
+      "venue": "Algorithmica 32(2)",
+      "authors": [
+        "Oded Goldreich",
+        "Dana Ron"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-bounded-graph-testing02",
+      "url": "https://doi.org/10.1007/s00453-001-0078-7",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Bounded-degree neighbor-list oracle with normalized incidence distance; for tested connectivity/cycle-freeness properties algorithms have one-sided error and sublinear query bounds.",
+      "primitives": [
+        {
+          "primitive_id": "model.bounded-degree-graph-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.one-sided-error",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.query-complexity",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-navigating-nets04",
+      "title": "Navigating Nets: Simple Algorithms for Proximity Search",
+      "year": 2004,
+      "venue": "SODA 2004",
+      "authors": [
+        "Robert Krauthgamer",
+        "James R. Lee"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-navigating-nets04",
+      "url": "https://research.ibm.com/publications/navigating-nets-simple-algorithms-for-proximity-search",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Proximity data structure in bounded doubling dimension supports search and insertions/deletions; not a generic graph-dynamic-update model.",
+      "primitives": [
+        {
+          "primitive_id": "property.doubling-dimension",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "problem.range-searching",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "problem.nearest-neighbor-search",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-retroactive-data07",
+      "title": "Retroactive Data Structures",
+      "year": 2007,
+      "venue": "ACM Transactions on Algorithms 3(2)",
+      "authors": [
+        "Erik D. Demaine",
+        "John Iacono",
+        "Stefan Langerman"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-retroactive-data07",
+      "url": "https://doi.org/10.1145/1240233.1240236",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Studies arbitrary historical insertion/deletion of operations and contrasts retroactivity with persistence; not all persistent structures admit efficient retroactivity.",
+      "primitives": [
+        {
+          "primitive_id": "technique.retroactive-updates",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.persistent-data-structure",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "problem.dynamic-dictionary",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-decremental-reach14",
+      "title": "Sublinear-Time Decremental Algorithms for Single-Source Reachability and Shortest Paths on Directed Graphs",
+      "year": 2014,
+      "venue": "STOC 2014",
+      "authors": [
+        "Monika Henzinger",
+        "Sebastian Krinninger",
+        "Danupon Nanongkai"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-decremental-reach14",
+      "url": "https://doi.org/10.1145/2591796.2591869",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Maintains reachability and approximate SSSP after edge deletions; not insertion-only or fully dynamic performance.",
+      "primitives": [
+        {
+          "primitive_id": "model.decremental-updates",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "problem.single-source-shortest-paths",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "problem.graph-reachability",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "problem.dynamic-shortest-path",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-limited-indep95",
+      "title": "Chernoff–Hoeffding Bounds for Applications with Limited Independence",
+      "year": 1995,
+      "venue": "SIAM Journal on Discrete Mathematics 8(2)",
+      "authors": [
+        "Jeanette P. Schmidt",
+        "Alan Siegel",
+        "Aravind Srinivasan"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-limited-indep95",
+      "url": "https://doi.org/10.1137/S089548019223872X",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Chernoff-style tail bounds under bounded-wise independence enable randomness reduction and applications to job-shop scheduling.",
+      "primitives": [
+        {
+          "primitive_id": "technique.limited-independence",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "technique.chernoff-bound",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.job-shop",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-path-coupling97",
+      "title": "Path Coupling: A Technique for Proving Rapid Mixing in Markov Chains",
+      "year": 1997,
+      "venue": "FOCS 1997",
+      "authors": [
+        "Russ Bubley",
+        "Martin E. Dyer"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-path-coupling97",
+      "url": "https://doi.org/10.1109/SFCS.1997.646111",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Path-coupling arguments bound Markov-chain mixing rates in specific #P counting approximation settings, not arbitrary randomized algorithms.",
+      "primitives": [
+        {
+          "primitive_id": "technique.coupling",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.convergence-rate",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "task.approximation-algorithm",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-gallager-mst83",
+      "title": "A Distributed Algorithm for Minimum-Weight Spanning Trees",
+      "year": 1983,
+      "venue": "ACM Transactions on Programming Languages and Systems 5(1)",
+      "authors": [
+        "Robert G. Gallager",
+        "Pierre A. Humblet",
+        "Philip M. Spira"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-gallager-mst83",
+      "url": "https://doi.org/10.1145/357195.357200",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Classical asynchronous message-passing distributed MST construction assuming connected undirected graphs with distinct weights and reliable neighbor messages.",
+      "primitives": [
+        {
+          "primitive_id": "problem.distributed-spanning-tree",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.asynchronous-message-passing",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "problem.minimum-spanning-tree",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-usenix-graphstats21",
+      "title": "Locally Differentially Private Analysis of Graph Statistics",
+      "year": 2021,
+      "venue": "USENIX Security 2021",
+      "authors": [
+        "Jacob Imola",
+        "Takao Murakami",
+        "Kamalika Chaudhuri"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-usenix-graphstats21",
+      "url": "https://www.usenix.org/conference/usenixsecurity21/presentation/imola",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Local graph statistics with 1/2 round local randomizers; specifically node-held adjacency lists, not sequential graph stream.",
+      "primitives": [
+        {
+          "primitive_id": "model.local-edge-differential-privacy",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "property.differential-privacy",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-walukiewicz-pushdown01",
+      "title": "Pushdown Processes: Games and Model-Checking",
+      "year": 2001,
+      "venue": "Information and Computation 164(2)",
+      "authors": [
+        "Igor Walukiewicz"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-walukiewicz-pushdown01",
+      "url": "https://doi.org/10.1006/inco.2000.2894",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Pushdown configuration games with infinite-state regular winning conditions yield EXPTIME model-checking; does not solve finite parity games by that generalization alone.",
+      "primitives": [
+        {
+          "primitive_id": "model.pushdown-automaton",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "problem.model-checking",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-hopcroft-equivalence71",
+      "title": "A Linear Algorithm for Testing Equivalence of Finite Automata",
+      "year": 1971,
+      "venue": "Cornell University Technical Report 71-114",
+      "authors": [
+        "John E. Hopcroft",
+        "Richard M. Karp"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-hopcroft-equivalence71",
+      "url": "https://ecommons.cornell.edu/entities/publication/aa8cfe15-dcea-4be5-ae03-359120f548ea",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Decision procedure checks equivalence of deterministic finite-state automata for a common alphabet; not equivalence of arbitrary pushdown languages.",
+      "primitives": [
+        {
+          "primitive_id": "problem.language-equivalence",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.finite-automaton",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "task.decision-complexity",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-quantum-comms98",
+      "title": "Quantum vs. Classical Communication and Computation",
+      "year": 1998,
+      "venue": "STOC 1998",
+      "authors": [
+        "Harry Buhrman",
+        "Richard Cleve",
+        "Avi Wigderson"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-quantum-comms98",
+      "url": "https://doi.org/10.1145/276698.276713",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Black-box quantum algorithms induce communication protocols, separating selected quantum and classical communication tasks; not a universal quantum speedup.",
+      "primitives": [
+        {
+          "primitive_id": "model.quantum-communication-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "framework.communication-complexity",
+          "role": "technique",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "task.communication-lower-bound",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.quantum-query-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-scheduling-resources83",
+      "title": "Scheduling Subject to Resource Constraints: Classification and Complexity",
+      "year": 1983,
+      "venue": "Discrete Applied Mathematics 5(1)",
+      "authors": [
+        "Jacek Blazewicz",
+        "Jan Karel Lenstra",
+        "A. H. G. Rinnooy Kan"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-scheduling-resources83",
+      "url": "https://doi.org/10.1016/0166-218X(83)90012-4",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Classifies finite scheduling with additional limited resources and studies complexity with machine/job restrictions; not one universal NP-hardness statement.",
+      "primitives": [
+        {
+          "primitive_id": "problem.resource-constrained-scheduling",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.identical-parallel-machines",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "objective.makespan-minimization",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-tardiness-lawler77",
+      "title": "A 'Pseudopolynomial' Algorithm for Sequencing Jobs to Minimize Total Tardiness",
+      "year": 1977,
+      "venue": "Annals of Discrete Mathematics 1",
+      "authors": [
+        "Eugene L. Lawler"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-tardiness-lawler77",
+      "url": "https://doi.org/10.1016/S0167-5060(08)70742-8",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Weighted tardiness under agreeable weights on a single machine admits pseudopolynomial DP; weighted completion time is not the same objective and is removed.",
+      "primitives": [
+        {
+          "primitive_id": "objective.total-tardiness",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.single-machine-scheduling",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-maxflow-sched05",
+      "title": "On-line Scheduling to Minimize Max Flow Time: An Optimal Preemptive Algorithm",
+      "year": 2005,
+      "venue": "Operations Research Letters 33(6)",
+      "authors": [
+        "Christoph Ambühl",
+        "Monaldo Mastrolilli"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-maxflow-sched05",
+      "url": "https://doi.org/10.1016/j.orl.2004.10.006",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "Studies max flow time with online arrivals on identical parallel machines; the preemptive competitive ratio 2−1/m depends on machine model.",
+      "primitives": [
+        {
+          "primitive_id": "objective.maximum-flow-time",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.online-scheduling-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.preemptive-scheduling",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.identical-parallel-machines",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
+    },
+    {
+      "id": "round4-20261113-release-preempt04",
+      "title": "Minimizing Total Completion Time Subject to Job Release Dates and Preemption Penalties",
+      "year": 2004,
+      "venue": "Journal of Scheduling 7(4)",
+      "authors": [
+        "Zhaohui Liu",
+        "T. C. Edwin Cheng"
+      ],
+      "status": "published",
+      "source_id": "round4-20261113-release-preempt04",
+      "url": "https://doi.org/10.1023/B:JOSH.0000031424.35504.c4",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "editorial_publisher_or_author_record",
+      "provenance": "2026-11-13 selective primary-publisher/author abstract curation; paper-topic links, not theorem extraction",
+      "scope_note": "One-machine completion time minimization with release dates and preemption setup penalties is strongly NP-hard, unlike many penalty-free cases.",
+      "primitives": [
+        {
+          "primitive_id": "problem.scheduling-with-release-dates",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "model.preemptive-scheduling",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        },
+        {
+          "primitive_id": "objective.total-completion-time",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoped topic association with model-specific assumptions; not a theorem entailment."
+        }
+      ]
     }
   ],
   "updated_at": "2026-11-13"
