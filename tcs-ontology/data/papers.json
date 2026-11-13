@@ -13215,6 +13215,262 @@
           "note": "Scoped paper-topic association. Consult the paper and scope note for assumptions; this is not a theorem dependency."
         }
       ]
+    },
+    {
+      "id": "round3-20261113-borodin-cook-sort82",
+      "title": "A Time-Space Tradeoff for Sorting on a General Sequential Model of Computation",
+      "year": 1982,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Allan Borodin",
+        "Stephen A. Cook"
+      ],
+      "source_id": "round3-20261113-borodin-cook-sort82",
+      "url": "https://doi.org/10.1137/0211022",
+      "status": "published",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 official publisher/author abstract review; not theorem-level checking",
+      "scope_note": "Shows an explicit lower bound for time × space in a general sequential sorting model; time is a machine-specific resource, not a research task.",
+      "primitives": [
+        {
+          "primitive_id": "property.time-complexity",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        },
+        {
+          "primitive_id": "lens.space-time-tradeoffs",
+          "role": "lens",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        },
+        {
+          "primitive_id": "task.lower-bound",
+          "role": "task",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-beals-quantumquery01",
+      "title": "Quantum Lower Bounds by Polynomials",
+      "year": 2001,
+      "venue": "Journal of the ACM",
+      "authors": [
+        "Robert Beals",
+        "Harry Buhrman",
+        "Richard Cleve",
+        "Michele Mosca",
+        "Ronald de Wolf"
+      ],
+      "source_id": "round3-20261113-beals-quantumquery01",
+      "url": "https://doi.org/10.1145/502090.502097",
+      "status": "published",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 official publisher/author abstract review; not theorem-level checking",
+      "scope_note": "Bounds the number of oracle queries for quantum algorithms using polynomial methods; old task.query-complexity ID is deprecated and excluded.",
+      "primitives": [
+        {
+          "primitive_id": "property.query-complexity",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        },
+        {
+          "primitive_id": "model.quantum-query-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-ruzzo-nc81",
+      "title": "On Uniform Circuit Complexity",
+      "year": 1981,
+      "venue": "Journal of Computer and System Sciences",
+      "authors": [
+        "Walter L. Ruzzo"
+      ],
+      "source_id": "round3-20261113-ruzzo-nc81",
+      "url": "https://doi.org/10.1016/0022-0000(81)90038-6",
+      "status": "published",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 official publisher/author abstract review; not theorem-level checking",
+      "scope_note": "Characterizes uniform NC through circuit size/depth and bounded alternation; circuit depth and sequential time are different resources.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.nc",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        },
+        {
+          "primitive_id": "model.turing-machine",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        },
+        {
+          "primitive_id": "property.time-complexity",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-bennett-gill81",
+      "title": "Relative to a Random Oracle A, P^A != NP^A != co-NP^A with Probability 1",
+      "year": 1981,
+      "venue": "SIAM Journal on Computing",
+      "authors": [
+        "Charles H. Bennett",
+        "John Gill"
+      ],
+      "source_id": "round3-20261113-bennett-gill81",
+      "url": "https://doi.org/10.1137/0210008",
+      "status": "published",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 official publisher/author abstract review; not theorem-level checking",
+      "scope_note": "Relativized separation and containment results for complexity classes under a random oracle; they are not unrelativized separations.",
+      "primitives": [
+        {
+          "primitive_id": "complexity_class.pp",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        },
+        {
+          "primitive_id": "complexity_class.conp",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        },
+        {
+          "primitive_id": "complexity_class.bpp",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        },
+        {
+          "primitive_id": "complexity_class.np",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-ramalingam-reps96",
+      "title": "An Incremental Algorithm for a Generalization of the Shortest-Path Problem",
+      "year": 1996,
+      "venue": "Journal of Algorithms",
+      "authors": [
+        "G. Ramalingam",
+        "Thomas W. Reps"
+      ],
+      "source_id": "round3-20261113-ramalingam-reps96",
+      "url": "https://doi.org/10.1006/jagm.1996.0046",
+      "status": "published",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 official publisher/author abstract review; not theorem-level checking",
+      "scope_note": "Maintains positive-length single-source shortest paths following heterogeneous graph modifications; dynamic update sequences can include insertions, deletions and edge-length changes.",
+      "primitives": [
+        {
+          "primitive_id": "problem.single-source-shortest-paths",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        },
+        {
+          "primitive_id": "problem.dynamic-shortest-path",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        },
+        {
+          "primitive_id": "model.fully-dynamic-updates",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-patrascu-thorup06",
+      "title": "Time-Space Trade-Offs for Predecessor Search",
+      "year": 2006,
+      "venue": "STOC 2006",
+      "authors": [
+        "Mihai Pătraşcu",
+        "Mikkel Thorup"
+      ],
+      "source_id": "round3-20261113-patrascu-thorup06",
+      "url": "https://doi.org/10.1145/1132516.1132551",
+      "status": "published",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 official publisher/author abstract review; not theorem-level checking",
+      "scope_note": "Derives static predecessor data-structure cell-probe query-time/space bounds for specified word and universe sizes.",
+      "primitives": [
+        {
+          "primitive_id": "property.memory-query-tradeoff",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        },
+        {
+          "primitive_id": "property.time-complexity",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        },
+        {
+          "primitive_id": "problem.predecessor-search",
+          "role": "problem",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        }
+      ]
+    },
+    {
+      "id": "round3-20261113-mapreduce-efficiency10",
+      "title": "A Model of Computation for MapReduce",
+      "year": 2010,
+      "venue": "SODA 2010",
+      "authors": [
+        "Howard Karloff",
+        "Siddharth Suri",
+        "Sergei Vassilvitskii"
+      ],
+      "source_id": "round3-20261113-mapreduce-efficiency10",
+      "url": "https://doi.org/10.1137/1.9781611973075.76",
+      "status": "published",
+      "review_status": "editorial_abstract_checked",
+      "authors_completeness": "publisher_or_author_metadata",
+      "provenance": "2026-11-13 official publisher/author abstract review; not theorem-level checking",
+      "scope_note": "Defines memory-constrained MapReduce rounds with sequential and parallel work. The tagged time-complexity concept concerns model-specific computational resources, not a claim of PRAM work/depth equivalence.",
+      "primitives": [
+        {
+          "primitive_id": "model.mapreduce-model",
+          "role": "model",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        },
+        {
+          "primitive_id": "property.time-complexity",
+          "role": "metric",
+          "evidence": "publisher_or_author_abstract",
+          "note": "Scoping and resource-model conditions in paper-specific summary apply."
+        }
+      ]
     }
   ],
   "updated_at": "2026-11-13"
