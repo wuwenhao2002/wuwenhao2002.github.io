@@ -66,6 +66,16 @@
       "from": "property.influence-maximization",
       "to": "problem.influence-maximization",
       "reason": "Optimization problem, not a mathematical predicate"
+    },
+    {
+      "from": "task.time-complexity",
+      "to": "property.time-complexity",
+      "reason": "Reclassified complexity resource measure from task to property; redirect retained for legacy links."
+    },
+    {
+      "from": "task.query-complexity",
+      "to": "property.query-complexity",
+      "reason": "Reclassified complexity resource measure from task to property; redirect retained for legacy links."
     }
   ]
 }
