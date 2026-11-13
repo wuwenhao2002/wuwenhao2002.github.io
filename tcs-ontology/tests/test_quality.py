@@ -69,7 +69,8 @@ class QualityTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             target=Path(d)/"ontology.sqlite"
             ontology.export_sqlite(self.db,target)
-            with sqlite3.connect(target) as con:
+            from contextlib import closing
+            with closing(sqlite3.connect(target)) as con:
                 self.assertEqual(
                     con.execute("SELECT COUNT(*) FROM redirect").fetchone()[0],
                     len(self.db["redirects"]))
@@ -86,3 +87,4 @@ class QualityTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

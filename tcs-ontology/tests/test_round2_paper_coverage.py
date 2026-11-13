@@ -59,10 +59,16 @@ class Round2PaperCoverageTests(unittest.TestCase):
                 existing.add(title)
 
     def test_coverage_gain_is_nonzero_and_precise(self):
+        # Compare with earlier numbered campaigns only. Including later rounds
+        # in "previous" makes successful later curation erase this gain.
+        def precedes_batch(paper):
+            campaign = re.match(r"^round(\d+)(?:extra)?-20261113-", paper["id"])
+            return campaign is None or int(campaign.group(1)) < 2
+
         previous = {
             x["primitive_id"]
             for p in self.harvested + self.papers
-            if not p["id"].startswith(PREFIX)
+            if precedes_batch(p)
             for x in p["primitives"]
         }
         now = previous | {
@@ -74,3 +80,4 @@ class Round2PaperCoverageTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

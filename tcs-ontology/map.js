@@ -220,6 +220,8 @@ function draw(){
   ctx.textAlign="left";ctx.fillText(label.text,label.x,label.y,205);
   if(occupied.length>65)break;
  }
+}
+function renderSummary(){
  $("mapCounter").textContent=S.selected.size?"CO-USED / "+S.related.size+" CONCEPTS":"INDEX / "+S.nodes.length+" CONCEPTS";
  $("mapScope").textContent=S.selected.size?(S.selected.size+" SELECTED · "+S.matched.length+" MATCHING PAPERS"):"EXPLORE / FULL FIELD";
 }
@@ -235,24 +237,42 @@ function hitTest(x,y){
 }
 function update(){
  S.related=Graph.related(S.paperIndex,[...S.selected]);S.matched=Graph.matching(S.paperIndex,[...S.selected],S.paperQuery);
- computeFocus();renderChips();renderPapers();renderIndex();
+ computeFocus();renderChips();renderPapers();renderIndex();renderSummary();
  $("mapHeading").textContent=S.selected.size?[...S.selected].map(pName).join(" + "):"A universe of research ideas";
  document.querySelectorAll(".lens-chip").forEach(b=>{const on=S.selected.has(b.dataset.primitive);b.classList.toggle("active",on);b.setAttribute("aria-pressed",String(on));});
  S.needsDraw=true;
 }
+function syncView(){
+ const hashText=Graph.writeView({...S,selected:[...S.selected]});
+ try{history.replaceState(null,"",location.pathname+location.search+hashText);}catch{/* A restricted embed can still browse the graph. */}
+}
+function restoreView(){
+ if(!S.ready)return;
+ const view=Graph.readView(location.hash,new Set(S.nodeMap.keys()),new Set(S.items.flatMap(p=>p.areas)));
+ for(const key of ["term","paperQuery","area","review","evidence","focus"])S[key]=view[key];
+ S.selected=new Set(view.selected);
+ $("mapSearch").value=S.term;$("paperSearch").value=S.paperQuery;$("mapArea").value=S.area;
+ $("mapStatus").value=S.review;$("paperEvidence").value=S.evidence;
+ $("focusMode").setAttribute("aria-pressed",String(S.focus));
+ evidenceLayer();resetCamera();
+}
 function selection(ids,setHash=true,recenter=true){
+ const active=document.activeElement,focusId=active?.dataset?.primitiveId;
+ const fromIndex=active?.classList.contains("match");
  S.selected=new Set(ids.filter(id=>S.nodeMap.has(id)));
  S.paperLimit=30;update();if(recenter)resetCamera();
- if(setHash){
-  const hashText=S.selected.size?"#select="+encodeURIComponent([...S.selected].join(",")):"";
-  history.replaceState(null,"",location.pathname+location.search+hashText);
+ if(focusId){
+  const list=fromIndex?$("mapMatches"):$("selectedChips");
+  const replacement=[...list.querySelectorAll("button")].find(b=>b.dataset.primitiveId===focusId);
+  (replacement||$("mapSearch")).focus({preventScroll:true});
  }
+ if(setHash)syncView();
 }
 function toggle(n){if(!n)return;const ids=[...S.selected],i=ids.indexOf(n.id);if(i>=0)ids.splice(i,1);else ids.push(n.id);selection(ids);}
 function renderChips(){
  const root=$("selectedChips");root.replaceChildren();
  if(!S.selected.size){root.append(el("span","empty-chips","Select any primitive to reveal the papers connecting it to others."));return;}
- for(const id of S.selected){const pill=el("button","selected-chip");pill.type="button";pill.append(el("span","",pName(id)),el("span","chip-x","×"));pill.setAttribute("aria-label","Remove "+pName(id));pill.onclick=()=>toggle(S.nodeMap.get(id));root.append(pill);}
+ for(const id of S.selected){const pill=el("button","selected-chip");pill.type="button";pill.dataset.primitiveId=id;pill.append(el("span","",pName(id)),el("span","chip-x","×"));pill.setAttribute("aria-label","Remove "+pName(id));pill.onclick=()=>toggle(S.nodeMap.get(id));root.append(pill);}
 }
 function renderIndex(){
  if(!S.ready)return;
@@ -267,6 +287,7 @@ function renderIndex(){
  if(!rows.length){root.append(el("div","empty-index","No concepts found. Try a broader search."));return;}
  for(const n of rows.slice(0,q?100:60)){
   const button=el("button","match"+(S.selected.has(n.id)?" selected":""));button.type="button";
+  button.dataset.primitiveId=n.id;button.setAttribute("aria-pressed",String(S.selected.has(n.id)));
   const glyph=el("span","result-symbol",n.p.kind==="lens"?"✦":n.p.kind==="problem"?"⬡":n.p.kind==="property"?"◇":"·");
   const txt=el("span","result-body");
   txt.append(el("span","result-name",n.p.name),el("small","",n.area+" / "+n.p.kind));
@@ -283,7 +304,7 @@ function renderPapers(){
   const empty=el("div","empty-papers"),orb=el("div","empty-planet");orb.append(el("span","","✳"));
   empty.append(orb,el("h3","","Find your connection."),el("p","","Choose a concept in the map. Add another to see papers that combine them."));root.append(empty);return;
  }
- const papers=Graph.matching(S.paperIndex,[...S.selected],S.paperQuery);
+ const papers=S.matched;
  $("paperCount").textContent=papers.length.toLocaleString();$("morePapers").disabled=papers.length<=S.paperLimit;
  if(!papers.length){const empty=el("div","empty-papers"),orb=el("div","empty-planet");orb.append(el("span","","◌"));
   empty.append(orb,el("h3","","No indexed intersection."),el("p","","Try removing a filter or including title-derived candidates. No match does not mean no published research."));root.append(empty);return;}
@@ -301,6 +322,7 @@ function renderPapers(){
    const n=S.nodeMap.get(entry.primitive_id);
    if(!n||S.selected.has(n.id))continue;
    const button=el("button","paper-match",n.p.name+"  +");button.type="button";button.title="Include "+n.p.name+" in paper intersection";
+   button.dataset.primitiveId=n.id;
    button.onclick=()=>toggle(n);roleList.append(button);
   }
   if(roleList.childElementCount)box.append(roleList);
@@ -318,6 +340,12 @@ function zoomAt(factor,x=S.size.w/2,y=S.size.h/2){
  const k=clamp(S.view.scale*factor,.13,4.4)/S.view.scale;
  S.view.x=x-S.size.w/2-(x-S.size.w/2-S.view.x)*k;
  S.view.y=y-S.size.h/2-(y-S.size.h/2-S.view.y)*k;S.view.scale*=k;S.needsDraw=true;
+}
+function renderMotionControl(){
+ const button=$("motionToggle");
+ button.textContent=S.motion?"Ⅱ":"▶";
+ button.setAttribute("aria-pressed",String(!S.motion));
+ button.setAttribute("aria-label",S.motion?"Pause motion":"Resume motion");
 }
 stage.addEventListener("pointerdown",e=>{if(e.button!==0)return;stage.setPointerCapture(e.pointerId);S.pointer={x:e.clientX,y:e.clientY,dragged:false};stage.classList.add("dragging");});
 stage.addEventListener("pointermove",e=>{
@@ -353,17 +381,17 @@ stage.addEventListener("keydown",e=>{
 $("zoomIn").onclick=()=>zoomAt(1.22);
 $("zoomOut").onclick=()=>zoomAt(.82);
 $("resetView").onclick=resetCamera;
-$("focusMode").onclick=()=>{S.focus=!S.focus;$("focusMode").setAttribute("aria-pressed",String(S.focus));resetCamera();};
-$("motionToggle").onclick=()=>{S.motion=!S.motion;$("motionToggle").textContent=S.motion?"Ⅱ":"▶";$("motionToggle").setAttribute("aria-pressed",String(!S.motion));S.needsDraw=true;};
+$("focusMode").onclick=()=>{S.focus=!S.focus;$("focusMode").setAttribute("aria-pressed",String(S.focus));resetCamera();syncView();};
+$("motionToggle").onclick=()=>{S.motion=!S.motion;renderMotionControl();S.needsDraw=true;};
 $("clearSelection").onclick=()=>selection([]);
-$("mapSearch").oninput=e=>{S.term=e.target.value;renderIndex();S.needsDraw=true;};
-$("mapArea").onchange=e=>{S.area=e.target.value;renderIndex();S.needsDraw=true;};
-$("mapStatus").onchange=e=>{S.review=e.target.value;renderIndex();S.needsDraw=true;};
-$("paperEvidence").onchange=e=>{S.evidence=e.target.value;evidenceLayer();};
-$("paperSearch").oninput=e=>{S.paperQuery=e.target.value;S.paperLimit=30;renderPapers();};
+$("mapSearch").oninput=e=>{S.term=e.target.value;renderIndex();S.needsDraw=true;syncView();};
+$("mapArea").onchange=e=>{S.area=e.target.value;renderIndex();S.needsDraw=true;syncView();};
+$("mapStatus").onchange=e=>{S.review=e.target.value;renderIndex();S.needsDraw=true;syncView();};
+$("paperEvidence").onchange=e=>{S.evidence=e.target.value;evidenceLayer();syncView();};
+$("paperSearch").oninput=e=>{S.paperQuery=e.target.value;S.paperLimit=30;S.matched=Graph.matching(S.paperIndex,[...S.selected],S.paperQuery);renderPapers();renderSummary();S.needsDraw=true;syncView();};
 $("morePapers").onclick=()=>{S.paperLimit+=30;renderPapers();};
 $("exportPapers").onclick=()=>{
- const papers=S.selected.size?Graph.matching(S.paperIndex,[...S.selected],S.paperQuery):[];
+ const papers=S.selected.size?S.matched:[];
  const data=JSON.stringify({schema_version:"0.5.0",selected_primitives:[...S.selected],evidence:S.evidence,items:papers,warning:"Editorially mapped or title-inferred bibliographic labels; not independently peer-reviewed."},null,2);
  const file=new Blob([data],{type:"application/json;charset=utf-8"}),url=URL.createObjectURL(file),a=document.createElement("a");
  a.href=url;a.download="tcs-ontology-paper-graph.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),600);
@@ -375,6 +403,8 @@ document.addEventListener("keydown",e=>{
  const tag=document.activeElement?.tagName;
  if(e.key==="/"&&tag!=="INPUT"&&tag!=="TEXTAREA"&&tag!=="SELECT"){e.preventDefault();$("mapSearch").focus();}
 });
+window.addEventListener("hashchange",restoreView);
+window.addEventListener("popstate",restoreView);
 let resizeObserver=new ResizeObserver(sizeToCanvas);resizeObserver.observe(stage);
 function animate(now){
  S.time=(now-S.start)/1000;
@@ -395,14 +425,9 @@ async function init(){
   setup();S.ready=true;
   for(const area of [...new Set(S.items.flatMap(p=>p.areas))].sort()){const op=el("option","",area);op.value=area;$("mapArea").append(op);}
   sizeToCanvas();
-  evidenceLayer();
-  let ids=[];
-  if(location.hash.startsWith("#select=")){try{ids=decodeURIComponent(location.hash.slice(8)).split(",");}catch{ids=[];}}
-  else if(location.hash){try{ids=[decodeURIComponent(location.hash.slice(1))];}catch{ids=[];}}
-  selection(ids,false,false);
-  resetCamera();
-  $("motionToggle").textContent=S.motion?"Ⅱ":"▶";
-  $("motionToggle").setAttribute("aria-pressed",String(!S.motion));
+  restoreView();
+  renderMotionControl();
+
   requestAnimationFrame(animate);
  }catch(error){const m=$("mapError");m.hidden=false;m.textContent="Could not initialize research atlas: "+error.message;console.error(error);}
  finally{clearTimeout(timer);}

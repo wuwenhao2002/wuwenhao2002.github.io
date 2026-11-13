@@ -24,7 +24,13 @@ class DeepCurationTests(unittest.TestCase):
             for rel in p["primitives"]:
                 self.assertIn(rel["primitive_id"],self.ids)
                 self.assertIn(rel["role"],{"problem","model","lens","metric","technique","task","assumption"})
-                self.assertIn(rel.get("evidence"),{"official_abstract","publisher_abstract"})
+                # Later editorial campaigns distinguish an author-hosted
+                # abstract from a publisher abstract without upgrading either
+                # annotation to full-text or theorem verification.
+                self.assertIn(rel.get("evidence"),{
+                    "official_abstract", "publisher_abstract",
+                    "publisher_or_author_abstract",
+                })
                 self.assertTrue(rel.get("note"))
         self.assertGreaterEqual(direct,25)
     def test_mathematically_distinct_sensitivity_measures(self):
@@ -45,3 +51,4 @@ class DeepCurationTests(unittest.TestCase):
         self.assertGreaterEqual(len(added),35)
         self.assertGreater(sum(len(p["primitives"]) for p in added),105)
 if __name__=="__main__":unittest.main()
+

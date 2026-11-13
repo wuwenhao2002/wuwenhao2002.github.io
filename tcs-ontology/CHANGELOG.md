@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.6.4 — 2026-11-13
+
+- Fixed the catalog’s All review states filter, added shareable catalog filters, and preserved session ideas for export when browser storage is blocked or full.
+- Persisted graph selections and filters in shareable links; synchronized paper-search counts and restored keyboard focus after selections.
+- Removed per-frame summary DOM writes and deferred hidden catalog bibliography/source rendering.
+- Replaced stale current statistics with a reproducible README snapshot checked in CI: 830 primitives, 390 curated plus 130 title-inferred records, 511 distinct indexed papers, and 757 paper-linked primitives.
+- Fixed SQLite connection cleanup on Windows and isolated historical campaign coverage tests from later additions, preserving original acceptance thresholds.
+- Added catalog/storage and URL-state regression tests and expanded desktop/mobile browser smoke checks. No scientific records or review tiers changed.
+
+
 ## 0.6.3 — 2026-11-13
 
 - Round-four high-coverage literature campaign: 52 additional curated research papers, 176 direct paper-to-primitive assignments and six repaired associations from original STOC/FOCS/SODA papers. The strict at-least-two-valid-IDs-per-new-paper rule was preserved.
@@ -54,3 +64,4 @@ Source checks are editorial, not peer review. Most entries still require manual 
 ## 0.1.0 — 2026-11-12
 
 - Initial GitHub Pages prototype, 593 candidate vocabulary entries, JSON/SQLite interface and seven composition templates.
+

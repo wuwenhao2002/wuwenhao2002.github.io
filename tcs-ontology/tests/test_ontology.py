@@ -44,10 +44,11 @@ class OntologyTests(unittest.TestCase):
 
     def test_sqlite_export(self):
         import sqlite3
+        from contextlib import closing
         with tempfile.TemporaryDirectory() as tmp:
             dbfile = Path(tmp) / "ontology.sqlite"
             ontology.export_sqlite(self.db, dbfile)
-            with sqlite3.connect(dbfile) as con:
+            with closing(sqlite3.connect(dbfile)) as con:
                 self.assertEqual(
                     con.execute("SELECT COUNT(*) FROM primitive").fetchone()[0],
                     len(self.db["primitives"]),
@@ -57,3 +58,4 @@ class OntologyTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
